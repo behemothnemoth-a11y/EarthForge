@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L0_V001",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/l0/Redfield_POC_001_L0_v001.litematic",
+  "sha256": "9e9bac03cbd4f1e3b85732d8268dbb98026eeca6350889df51b93167b343f639",
+  "format": {
+    "litematica_version": 6,
+    "subversion": 1,
+    "minecraft_data_version": 4903,
+    "gzip": true,
+    "nbt_endianness": "big"
+  },
+  "region": {
+    "name": "REDFIELD_POC_001_L0",
+    "position": [
+      -3,
+      -1,
+      -153
+    ],
+    "size": [
+      163,
+      1,
+      157
+    ],
+    "volume": 25591,
+    "non_air_blocks": 18419,
+    "palette_size": 9,
+    "bits_per_block": 4
+  },
+  "registration": {
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "marker_block_position": [
+      0,
+      -1,
+      0
+    ],
+    "marker_block": "minecraft:yellow_concrete",
+    "verified": true
+  },
+  "checks": {
+    "region_position": true,
+    "region_size": true,
+    "palette": true,
+    "exact_block_map": true,
+    "registration_marker": true
+  },
+  "errors": []
+}

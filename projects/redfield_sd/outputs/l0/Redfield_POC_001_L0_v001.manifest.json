@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L0_V001",
+  "file": "projects/redfield_sd/outputs/l0/Redfield_POC_001_L0_v001.litematic",
+  "sha256": "9e9bac03cbd4f1e3b85732d8268dbb98026eeca6350889df51b93167b343f639",
+  "source_block_plan": "projects/redfield_sd/poc_001/l0_block_plan.csv",
+  "source_frame": "projects/redfield_sd/poc_001/locked_frame.json",
+  "region": {
+    "name": "REDFIELD_POC_001_L0",
+    "position": [
+      -3,
+      -1,
+      -153
+    ],
+    "size": [
+      163,
+      1,
+      157
+    ],
+    "volume": 25591,
+    "non_air_blocks": 18419,
+    "palette_size": 9,
+    "bits_per_block": 4
+  },
+  "palette": [
+    "minecraft:air",
+    "minecraft:black_concrete",
+    "minecraft:gray_concrete",
+    "minecraft:orange_concrete",
+    "minecraft:polished_andesite",
+    "minecraft:red_concrete",
+    "minecraft:smooth_stone",
+    "minecraft:white_concrete",
+    "minecraft:yellow_concrete"
+  ],
+  "placement": {
+    "instruction": "Stand on the yellow registration block and set schematic placement origin to the player feet block position.",
+    "origin_relative_marker": [
+      0,
+      -1,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none"
+  }
+}
