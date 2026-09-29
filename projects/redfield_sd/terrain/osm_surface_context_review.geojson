@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "name": "redfield_poc001_osm_surface_context_review",
+  "earthforge_status": "REVIEW_ONLY",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616779,
+        "tags": {
+          "amenity": "parking",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5164008,
+              44.8753824
+            ],
+            [
+              -98.516695,
+              44.8753832
+            ],
+            [
+              -98.5166947,
+              44.8754388
+            ],
+            [
+              -98.5164005,
+              44.875438
+            ],
+            [
+              -98.5164008,
+              44.8753824
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616780,
+        "tags": {
+          "amenity": "parking",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5162092,
+              44.8752587
+            ],
+            [
+              -98.5167061,
+              44.8752601
+            ],
+            [
+              -98.5167058,
+              44.8753166
+            ],
+            [
+              -98.5162089,
+              44.8753152
+            ],
+            [
+              -98.5162092,
+              44.8752587
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301415,
+        "tags": {
+          "amenity": "parking"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5191232,
+              44.8768461
+            ],
+            [
+              -98.5193761,
+              44.8768466
+            ],
+            [
+              -98.5193767,
+              44.8767034
+            ],
+            [
+              -98.5193136,
+              44.876703
+            ],
+            [
+              -98.5191238,
+              44.8767029
+            ],
+            [
+              -98.5191232,
+              44.8768461
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

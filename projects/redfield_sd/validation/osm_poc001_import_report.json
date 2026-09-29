@@ -1,0 +1,17 @@
+{
+  "source": "projects\\redfield_sd\\downloads\\osm_poc_001.json",
+  "status": "review_required",
+  "counts": {
+    "raw_elements": 95,
+    "building_features": 50,
+    "transport_features": 42,
+    "surface_context_features": 3,
+    "ignored_or_unsupported_elements": 0
+  },
+  "warnings": [
+    "This is not final EarthForge geometry.",
+    "OSM relations are not normalized in this first-pass importer.",
+    "All features must be compared against official mapping and visual references.",
+    "Do not generate the L1 build from this file until L0 review is complete."
+  ]
+}

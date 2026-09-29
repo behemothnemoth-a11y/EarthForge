@@ -1,0 +1,1718 @@
+{
+  "type": "FeatureCollection",
+  "name": "redfield_poc001_osm_transport_review",
+  "earthforge_status": "REVIEW_ONLY",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 9922355,
+        "tags": {
+          "highway": "residential",
+          "name": "East 6th Avenue"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5185357,
+            44.876945
+          ],
+          [
+            -98.5183583,
+            44.8769452
+          ],
+          [
+            -98.5176685,
+            44.8769457
+          ],
+          [
+            -98.5169771,
+            44.8769451
+          ],
+          [
+            -98.516843,
+            44.876945
+          ],
+          [
+            -98.5160083,
+            44.876944
+          ],
+          [
+            -98.515206,
+            44.876943
+          ],
+          [
+            -98.5144903,
+            44.876934
+          ],
+          [
+            -98.513452,
+            44.876921
+          ],
+          [
+            -98.5123228,
+            44.8769279
+          ],
+          [
+            -98.5122022,
+            44.8769267
+          ],
+          [
+            -98.5118559,
+            44.876948
+          ],
+          [
+            -98.5101972,
+            44.8769483
+          ],
+          [
+            -98.508565,
+            44.8769478
+          ],
+          [
+            -98.5067909,
+            44.8769342
+          ],
+          [
+            -98.506367,
+            44.876864
+          ],
+          [
+            -98.5060687,
+            44.8767429
+          ],
+          [
+            -98.5054506,
+            44.8765033
+          ],
+          [
+            -98.505298,
+            44.8764616
+          ],
+          [
+            -98.5051141,
+            44.8764414
+          ],
+          [
+            -98.5049589,
+            44.8764602
+          ],
+          [
+            -98.503696,
+            44.876727
+          ],
+          [
+            -98.5031669,
+            44.8767273
+          ],
+          [
+            -98.5008042,
+            44.8766986
+          ],
+          [
+            -98.500738,
+            44.8766978
+          ],
+          [
+            -98.5000691,
+            44.8767017
+          ],
+          [
+            -98.4994801,
+            44.8767023
+          ],
+          [
+            -98.49938,
+            44.87667
+          ],
+          [
+            -98.4993066,
+            44.8766094
+          ],
+          [
+            -98.4992687,
+            44.876432
+          ],
+          [
+            -98.499267,
+            44.876246
+          ],
+          [
+            -98.4991252,
+            44.8757717
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 9922358,
+        "tags": {
+          "NHS": "yes",
+          "expressway": "no",
+          "hgv": "designated",
+          "hgv:national_network": "yes",
+          "highway": "trunk",
+          "lanes": "4",
+          "maxspeed": "30 mph",
+          "name": "West 7th Avenue",
+          "ref": "US 212;US 281",
+          "source:hgv:national_network": "https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5218676,
+            44.8756888
+          ],
+          [
+            -98.5216396,
+            44.8757269
+          ],
+          [
+            -98.5213526,
+            44.8757497
+          ],
+          [
+            -98.5202429,
+            44.8757474
+          ],
+          [
+            -98.5201074,
+            44.875748
+          ],
+          [
+            -98.5194106,
+            44.8757508
+          ],
+          [
+            -98.518729,
+            44.8757536
+          ],
+          [
+            -98.5185387,
+            44.8757542
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 9922800,
+        "tags": {
+          "highway": "residential",
+          "name": "West 6th Avenue"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5185357,
+            44.876945
+          ],
+          [
+            -98.5187254,
+            44.8769453
+          ],
+          [
+            -98.5191558,
+            44.8769461
+          ],
+          [
+            -98.51941,
+            44.8769465
+          ],
+          [
+            -98.5201003,
+            44.8769477
+          ],
+          [
+            -98.5202389,
+            44.876948
+          ],
+          [
+            -98.520389,
+            44.876948
+          ],
+          [
+            -98.5210508,
+            44.8769445
+          ],
+          [
+            -98.521893,
+            44.87694
+          ],
+          [
+            -98.5227436,
+            44.8769483
+          ],
+          [
+            -98.52354,
+            44.876956
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 9923246,
+        "tags": {
+          "highway": "residential",
+          "name": "East 1st Street"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169211,
+            44.8647824
+          ],
+          [
+            -98.516921,
+            44.864874
+          ],
+          [
+            -98.5169585,
+            44.8660314
+          ],
+          [
+            -98.5169457,
+            44.8672154
+          ],
+          [
+            -98.5169403,
+            44.8684006
+          ],
+          [
+            -98.516928,
+            44.869556
+          ],
+          [
+            -98.5169009,
+            44.8706728
+          ],
+          [
+            -98.5168587,
+            44.8711662
+          ],
+          [
+            -98.5168668,
+            44.8716166
+          ],
+          [
+            -98.5168558,
+            44.8719303
+          ],
+          [
+            -98.5168465,
+            44.8734783
+          ],
+          [
+            -98.5168465,
+            44.8738375
+          ],
+          [
+            -98.5168492,
+            44.8739059
+          ],
+          [
+            -98.5168411,
+            44.8745199
+          ],
+          [
+            -98.51685,
+            44.8752265
+          ],
+          [
+            -98.5168515,
+            44.8753474
+          ],
+          [
+            -98.5168532,
+            44.8757585
+          ],
+          [
+            -98.5168523,
+            44.8758683
+          ],
+          [
+            -98.5168489,
+            44.8762536
+          ],
+          [
+            -98.5168438,
+            44.8768508
+          ],
+          [
+            -98.516843,
+            44.876945
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 44389034,
+        "tags": {
+          "NHS": "yes",
+          "expressway": "no",
+          "hgv": "designated",
+          "hgv:national_network": "yes",
+          "highway": "trunk",
+          "lanes": "4",
+          "maxspeed": "30 mph",
+          "name": "East 7th Avenue",
+          "ref": "US 212;US 281",
+          "source:hgv:national_network": "https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.513465,
+            44.875751
+          ],
+          [
+            -98.51521,
+            44.875769
+          ],
+          [
+            -98.515323,
+            44.875769
+          ],
+          [
+            -98.5162983,
+            44.8757639
+          ],
+          [
+            -98.5168532,
+            44.8757585
+          ],
+          [
+            -98.5169838,
+            44.8757582
+          ],
+          [
+            -98.5176739,
+            44.8757565
+          ],
+          [
+            -98.5183623,
+            44.8757547
+          ],
+          [
+            -98.5185387,
+            44.8757542
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616759,
+        "tags": {
+          "highway": "service",
+          "service": "alley",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5194104,
+            44.8762764
+          ],
+          [
+            -98.5201377,
+            44.8762732
+          ],
+          [
+            -98.5202412,
+            44.8762727
+          ],
+          [
+            -98.5210482,
+            44.8762689
+          ],
+          [
+            -98.5218791,
+            44.8762651
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616760,
+        "tags": {
+          "highway": "service",
+          "service": "alley",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5194094,
+            44.8781017
+          ],
+          [
+            -98.5194097,
+            44.8774506
+          ],
+          [
+            -98.5194098,
+            44.8774238
+          ],
+          [
+            -98.51941,
+            44.8769465
+          ],
+          [
+            -98.5194101,
+            44.8768609
+          ],
+          [
+            -98.5194101,
+            44.8767652
+          ],
+          [
+            -98.5194102,
+            44.8765615
+          ],
+          [
+            -98.5194104,
+            44.8762764
+          ],
+          [
+            -98.5194106,
+            44.8758717
+          ],
+          [
+            -98.5194106,
+            44.8757508
+          ],
+          [
+            -98.5194113,
+            44.8745214
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616769,
+        "tags": {
+          "highway": "service",
+          "service": "alley",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5176829,
+            44.8745255
+          ],
+          [
+            -98.5176739,
+            44.8757565
+          ],
+          [
+            -98.517675,
+            44.8758694
+          ],
+          [
+            -98.5176793,
+            44.8762612
+          ],
+          [
+            -98.5176698,
+            44.8768561
+          ],
+          [
+            -98.5176685,
+            44.8769457
+          ],
+          [
+            -98.5176605,
+            44.87811
+          ],
+          [
+            -98.5176636,
+            44.8792204
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616770,
+        "tags": {
+          "highway": "service",
+          "service": "alley",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5152083,
+            44.8762555
+          ],
+          [
+            -98.5160109,
+            44.8762546
+          ],
+          [
+            -98.5168489,
+            44.8762536
+          ],
+          [
+            -98.5169809,
+            44.8762548
+          ],
+          [
+            -98.5176793,
+            44.8762612
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616778,
+        "tags": {
+          "highway": "service",
+          "service": "alley",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5152022,
+            44.8752023
+          ],
+          [
+            -98.5160442,
+            44.8752197
+          ],
+          [
+            -98.51685,
+            44.8752265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 952616782,
+        "tags": {
+          "highway": "service",
+          "service": "parking_aisle",
+          "source": "esri"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5168515,
+            44.8753474
+          ],
+          [
+            -98.5163003,
+            44.8753474
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301408,
+        "tags": {
+          "crossing": "unmarked",
+          "crossing:markings": "no",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169835,
+            44.8758452
+          ],
+          [
+            -98.5169838,
+            44.8757582
+          ],
+          [
+            -98.5169841,
+            44.8756395
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301410,
+        "tags": {
+          "highway": "tertiary",
+          "name": "Main Street"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5185419,
+            44.8745312
+          ],
+          [
+            -98.5185387,
+            44.8757542
+          ],
+          [
+            -98.5185384,
+            44.8758706
+          ],
+          [
+            -98.5185359,
+            44.8768623
+          ],
+          [
+            -98.5185357,
+            44.876945
+          ],
+          [
+            -98.5185345,
+            44.8774232
+          ],
+          [
+            -98.5185327,
+            44.8781067
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301411,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5183884,
+            44.8758707
+          ],
+          [
+            -98.5183626,
+            44.8758707
+          ],
+          [
+            -98.517675,
+            44.8758694
+          ],
+          [
+            -98.5169834,
+            44.8758682
+          ],
+          [
+            -98.5169486,
+            44.8758681
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301412,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169413,
+            44.8768511
+          ],
+          [
+            -98.5168438,
+            44.8768508
+          ],
+          [
+            -98.5167391,
+            44.8768506
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301416,
+        "tags": {
+          "crossing": "unmarked",
+          "crossing:markings": "no",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5183573,
+            44.8770322
+          ],
+          [
+            -98.5183583,
+            44.8769452
+          ],
+          [
+            -98.5183591,
+            44.8768722
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301417,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5200997,
+            44.8770322
+          ],
+          [
+            -98.5201003,
+            44.8769477
+          ],
+          [
+            -98.5201007,
+            44.8768868
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301420,
+        "tags": {
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.51917,
+            44.8765627
+          ],
+          [
+            -98.5191198,
+            44.876563
+          ],
+          [
+            -98.5190785,
+            44.8765357
+          ],
+          [
+            -98.5190109,
+            44.8765347
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301422,
+        "tags": {
+          "crossing": "unmarked",
+          "crossing:markings": "no",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5203382,
+            44.8768571
+          ],
+          [
+            -98.5202392,
+            44.8768576
+          ],
+          [
+            -98.5201399,
+            44.8768582
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301423,
+        "tags": {
+          "highway": "residential",
+          "name": "West 1st Street"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5202471,
+            44.8745126
+          ],
+          [
+            -98.5202429,
+            44.8757474
+          ],
+          [
+            -98.5202425,
+            44.8758726
+          ],
+          [
+            -98.5202412,
+            44.8762727
+          ],
+          [
+            -98.5202392,
+            44.8768576
+          ],
+          [
+            -98.5202389,
+            44.876948
+          ],
+          [
+            -98.5202372,
+            44.8774468
+          ],
+          [
+            -98.520235,
+            44.8781017
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301424,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5186899,
+            44.8758706
+          ],
+          [
+            -98.5187288,
+            44.8758707
+          ],
+          [
+            -98.5194106,
+            44.8758717
+          ],
+          [
+            -98.5201047,
+            44.8758728
+          ],
+          [
+            -98.5201394,
+            44.8758728
+          ],
+          [
+            -98.5201509,
+            44.8758729
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301426,
+        "tags": {
+          "highway": "service",
+          "service": "alley"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5202372,
+            44.8774468
+          ],
+          [
+            -98.5194097,
+            44.8774506
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301427,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5201007,
+            44.8768868
+          ],
+          [
+            -98.5201009,
+            44.8768584
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301432,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.518725,
+            44.8770348
+          ],
+          [
+            -98.5187254,
+            44.8769453
+          ],
+          [
+            -98.5187257,
+            44.8768774
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301433,
+        "tags": {
+          "crossing": "unmarked",
+          "crossing:markings": "no",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5203391,
+            44.8758723
+          ],
+          [
+            -98.5202425,
+            44.8758726
+          ],
+          [
+            -98.5201509,
+            44.8758729
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301434,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169486,
+            44.8758681
+          ],
+          [
+            -98.5168523,
+            44.8758683
+          ],
+          [
+            -98.5167486,
+            44.8758684
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301436,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169835,
+            44.8758452
+          ],
+          [
+            -98.5169834,
+            44.8758682
+          ],
+          [
+            -98.5169809,
+            44.8762548
+          ],
+          [
+            -98.5169769,
+            44.8768513
+          ],
+          [
+            -98.5169768,
+            44.8768809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301438,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5187289,
+            44.8758511
+          ],
+          [
+            -98.5187288,
+            44.8758707
+          ],
+          [
+            -98.5187258,
+            44.8768634
+          ],
+          [
+            -98.5187257,
+            44.8768774
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301439,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5183627,
+            44.8758504
+          ],
+          [
+            -98.5183626,
+            44.8758707
+          ],
+          [
+            -98.518359,
+            44.8768609
+          ],
+          [
+            -98.5183591,
+            44.8768722
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301440,
+        "tags": {
+          "crossing": "traffic_signals",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5183627,
+            44.8758504
+          ],
+          [
+            -98.5183623,
+            44.8757547
+          ],
+          [
+            -98.5183619,
+            44.8756427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301441,
+        "tags": {
+          "crossing": "traffic_signals",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5186899,
+            44.8758706
+          ],
+          [
+            -98.5185384,
+            44.8758706
+          ],
+          [
+            -98.5183884,
+            44.8758707
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301445,
+        "tags": {
+          "highway": "service",
+          "service": "alley"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5194098,
+            44.8774238
+          ],
+          [
+            -98.5185345,
+            44.8774232
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301446,
+        "tags": {
+          "highway": "service",
+          "service": "parking_aisle"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5191558,
+            44.8769461
+          ],
+          [
+            -98.519158,
+            44.8768619
+          ],
+          [
+            -98.5191604,
+            44.8767652
+          ],
+          [
+            -98.5194101,
+            44.8767652
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301447,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5186886,
+            44.8768636
+          ],
+          [
+            -98.5187258,
+            44.8768634
+          ],
+          [
+            -98.519158,
+            44.8768619
+          ],
+          [
+            -98.5194101,
+            44.8768609
+          ],
+          [
+            -98.5201009,
+            44.8768584
+          ],
+          [
+            -98.5201351,
+            44.8768582
+          ],
+          [
+            -98.5201399,
+            44.8768582
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301448,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169413,
+            44.8768511
+          ],
+          [
+            -98.5169769,
+            44.8768513
+          ],
+          [
+            -98.5176698,
+            44.8768561
+          ],
+          [
+            -98.518359,
+            44.8768609
+          ],
+          [
+            -98.5183931,
+            44.8768611
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301449,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5186886,
+            44.8768636
+          ],
+          [
+            -98.5185359,
+            44.8768623
+          ],
+          [
+            -98.5183931,
+            44.8768611
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301450,
+        "tags": {
+          "highway": "path",
+          "informal": "yes"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5194102,
+            44.8765615
+          ],
+          [
+            -98.51917,
+            44.8765627
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301451,
+        "tags": {
+          "crossing": "uncontrolled",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5169774,
+            44.8770251
+          ],
+          [
+            -98.5169771,
+            44.8769451
+          ],
+          [
+            -98.5169768,
+            44.8768809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301452,
+        "tags": {
+          "highway": "steps"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5190109,
+            44.8765621
+          ],
+          [
+            -98.5191198,
+            44.876563
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301455,
+        "tags": {
+          "crossing": "traffic_signals",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5187291,
+            44.8756424
+          ],
+          [
+            -98.518729,
+            44.8757536
+          ],
+          [
+            -98.5187289,
+            44.8758511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301457,
+        "tags": {
+          "footway": "sidewalk",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5201351,
+            44.8768582
+          ],
+          [
+            -98.5201377,
+            44.8762732
+          ],
+          [
+            -98.5201394,
+            44.8758728
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301458,
+        "tags": {
+          "crossing": "unmarked",
+          "crossing:markings": "no",
+          "footway": "crossing",
+          "highway": "footway"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "transport"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.5201047,
+            44.8758728
+          ],
+          [
+            -98.5201074,
+            44.875748
+          ],
+          [
+            -98.5201097,
+            44.8756398
+          ]
+        ]
+      }
+    }
+  ]
+}
