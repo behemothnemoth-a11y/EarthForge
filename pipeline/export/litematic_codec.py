@@ -25,6 +25,44 @@ TAG_LONG_ARRAY = 12
 Coord = Tuple[int, int, int]
 
 
+def canonical_state(value: str) -> str:
+    value = value.strip()
+    if "[" not in value:
+        return value
+    name, rest = value.split("[", 1)
+    rest = rest.rstrip("]")
+    props = {}
+    for item in rest.split(","):
+        if not item.strip():
+            continue
+        k, v = item.split("=", 1)
+        props[k.strip()] = v.strip()
+    if not props:
+        return name.strip()
+    return name.strip() + "[" + ",".join(f"{k}={props[k]}" for k in sorted(props)) + "]"
+
+
+def parse_state(value: str):
+    value = canonical_state(value)
+    if "[" not in value:
+        return value, {}
+    name, rest = value.split("[", 1)
+    rest = rest.rstrip("]")
+    props = {}
+    for item in rest.split(","):
+        k, v = item.split("=", 1)
+        props[k] = v
+    return name, props
+
+
+def state_from_palette(entry: dict) -> str:
+    name = entry["Name"]
+    props = entry.get("Properties") or {}
+    if not props:
+        return name
+    return canonical_state(name + "[" + ",".join(f"{k}={v}" for k, v in props.items()) + "]")
+
+
 def _u16_string(value: str) -> bytes:
     raw = value.encode("utf-8")
     if len(raw) > 65535:
@@ -56,12 +94,7 @@ class NBTWriter:
         )
 
     def tag_list_compounds(self, name: str, payloads: List[bytes]) -> bytes:
-        return (
-            self.header(TAG_LIST, name)
-            + bytes([TAG_COMPOUND])
-            + struct.pack(">i", len(payloads))
-            + b"".join(payloads)
-        )
+        return self.header(TAG_LIST, name) + bytes([TAG_COMPOUND]) + struct.pack(">i", len(payloads)) + b"".join(payloads)
 
     def tag_compound(self, name: str, payload: bytes) -> bytes:
         return self.header(TAG_COMPOUND, name) + payload + bytes([TAG_END])
@@ -78,8 +111,13 @@ def _vec3(w: NBTWriter, x: int, y: int, z: int) -> bytes:
     return _payload([w.tag_int("x", x), w.tag_int("y", y), w.tag_int("z", z)])
 
 
-def _palette_entry(w: NBTWriter, name: str) -> bytes:
-    return w.tag_string("Name", name) + bytes([TAG_END])
+def _palette_entry(w: NBTWriter, state: str) -> bytes:
+    name, props = parse_state(state)
+    entries = [w.tag_string("Name", name)]
+    if props:
+        prop_payload = b"".join(w.tag_string(k, props[k]) for k in sorted(props))
+        entries.append(w.tag_compound("Properties", prop_payload))
+    return b"".join(entries) + bytes([TAG_END])
 
 
 def bits_needed(palette_size: int) -> int:
@@ -96,13 +134,11 @@ def pack_indices(values: List[int], nbits: int) -> List[int]:
         a = start >> 6
         b = ((index + 1) * nbits - 1) >> 6
         bit = start & 63
-
         arr[a] |= (value & mask) << bit
         arr[a] &= u64
-
         if a != b:
             shift = 64 - bit
-            arr[b] |= (value >> shift)
+            arr[b] |= value >> shift
             arr[b] &= u64
 
     return [v - (1 << 64) if v & (1 << 63) else v for v in arr]
@@ -112,21 +148,17 @@ def unpack_indices(values: List[int], count: int, nbits: int) -> List[int]:
     arr = [v & ((1 << 64) - 1) for v in values]
     mask = (1 << nbits) - 1
     out = []
-
     for index in range(count):
         start = index * nbits
         a = start >> 6
         b = ((index + 1) * nbits - 1) >> 6
         bit = start & 63
-
         if a == b:
             value = (arr[a] >> bit) & mask
         else:
             shift = 64 - bit
             value = ((arr[a] >> bit) | (arr[b] << shift)) & mask
-
         out.append(value)
-
     return out
 
 
@@ -224,32 +256,31 @@ def write_single_region_litematic(
     length = max_z - min_z + 1
     volume = width * height * length
 
+    normalized = {coord: canonical_state(state) for coord, state in blocks.items()}
+
     palette = ["minecraft:air"]
-    for block in sorted(set(blocks.values())):
-        if block != "minecraft:air" and block not in palette:
-            palette.append(block)
-    pindex = {name: i for i, name in enumerate(palette)}
+    for state in sorted(set(normalized.values())):
+        if state != "minecraft:air" and state not in palette:
+            palette.append(state)
+    pindex = {state: i for i, state in enumerate(palette)}
 
     states = [0] * volume
-    for (x, y, z), block in blocks.items():
+    for (x, y, z), state in normalized.items():
         if not (min_x <= x <= max_x and min_y <= y <= max_y and min_z <= z <= max_z):
             raise ValueError(f"Block outside bounds: {(x, y, z)}")
-        lx = x - min_x
-        ly = y - min_y
-        lz = z - min_z
+        lx, ly, lz = x - min_x, y - min_y, z - min_z
         index = ly * width * length + lz * width + lx
-        states[index] = pindex[block]
+        states[index] = pindex[state]
 
     nbits = bits_needed(len(palette))
     packed = pack_indices(states, nbits)
-
     w = NBTWriter()
     now = int(time.time() * 1000)
 
     region = _payload([
         w.tag_compound("Position", _vec3(w, min_x, min_y, min_z)),
         w.tag_compound("Size", _vec3(w, width, height, length)),
-        w.tag_list_compounds("BlockStatePalette", [_palette_entry(w, b) for b in palette]),
+        w.tag_list_compounds("BlockStatePalette", [_palette_entry(w, s) for s in palette]),
         w.tag_list_compounds("Entities", []),
         w.tag_list_compounds("TileEntities", []),
         w.tag_list_compounds("PendingBlockTicks", []),
@@ -262,11 +293,11 @@ def write_single_region_litematic(
         w.tag_string("Author", author),
         w.tag_string("Description", description),
         w.tag_string("Name", schematic_name),
-        w.tag_string("Software", "EarthForge_0.2"),
+        w.tag_string("Software", "EarthForge_0.3"),
         w.tag_int("RegionCount", 1),
         w.tag_long("TimeCreated", now),
         w.tag_long("TimeModified", now),
-        w.tag_int("TotalBlocks", len(blocks)),
+        w.tag_int("TotalBlocks", len(normalized)),
         w.tag_int("TotalVolume", volume),
         w.tag_int_array("PreviewImageData", []),
     ])
@@ -279,9 +310,8 @@ def write_single_region_litematic(
         w.tag_compound("Regions", w.tag_compound(region_name, region)),
     ])
 
-    raw = w.root(root_payload)
     path.parent.mkdir(parents=True, exist_ok=True)
-    write_gzip(path, raw)
+    write_gzip(path, w.root(root_payload))
 
     return {
         "palette": palette,
@@ -289,12 +319,12 @@ def write_single_region_litematic(
         "region_position": [min_x, min_y, min_z],
         "region_size": [width, height, length],
         "volume": volume,
-        "non_air_blocks": len(blocks),
+        "non_air_blocks": len(normalized),
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
     }
 
 
-def read_back_block_map(path: Path, region_name: str) -> tuple[dict, dict]:
+def read_back_block_map(path: Path, region_name: str):
     with gzip.open(path, "rb") as fh:
         root = NBTReader(fh.read()).root()
 
@@ -304,7 +334,7 @@ def read_back_block_map(path: Path, region_name: str) -> tuple[dict, dict]:
     min_x, min_y, min_z = pos["x"], pos["y"], pos["z"]
     width, height, length = size["x"], size["y"], size["z"]
 
-    palette = [entry["Name"] for entry in region["BlockStatePalette"]]
+    palette = [state_from_palette(entry) for entry in region["BlockStatePalette"]]
     nbits = bits_needed(len(palette))
     states = unpack_indices(region["BlockStates"], width * height * length, nbits)
 

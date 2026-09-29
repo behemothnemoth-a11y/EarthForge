@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "export_id": "REDFIELD_POC_001_L1_VISUAL_V004",
+  "stage": "L1_BLOCK_VISUAL",
+  "roads": {
+    "main_half_width_m": 9.0,
+    "avenue_half_width_m": 6.0,
+    "alley_half_width_m": 1.75,
+    "sidewalk_half_width_m": 3.0,
+    "crossing_half_width_m": 1.25,
+    "curb_x_offset_from_main_center": 9.5,
+    "parking_markings": true
+  },
+  "streetscape": {
+    "streetlights": true,
+    "light_z_positions": [
+      -23,
+      -48,
+      -73,
+      -98,
+      -118
+    ],
+    "light_x_positions": [
+      -12,
+      12
+    ],
+    "planters": true,
+    "benches": true
+  },
+  "registration": {
+    "marker_block": "minecraft:yellow_concrete",
+    "marker_schematic": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "preserve_across_revisions": true
+  },
+  "constraints": {
+    "microblocks": false,
+    "interiors": false,
+    "text_signs": false,
+    "all_visuals_photo_verified": false
+  }
+}

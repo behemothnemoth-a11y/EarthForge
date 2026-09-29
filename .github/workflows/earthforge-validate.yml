@@ -1,0 +1,31 @@
+name: EarthForge Validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate JSON
+        run: python tools/validate_json.py
+
+      - name: Test stateful Litematic codec
+        run: python tools/test_litematic_codec.py
+
+      - name: Test Redfield v004 facade generator
+        run: python pipeline/reconstruction/generate_redfield_poc001_l1_visual_v004.py --self-test
+
+      - name: Compile Python
+        run: python -m compileall -q pipeline tools

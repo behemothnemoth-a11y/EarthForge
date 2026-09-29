@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "source_id": "redfield_poc001_visual_v004",
+  "retrieved_at": "2026-09-29",
+  "scope": "600 block Main Street, Redfield, South Dakota",
+  "sources": [
+    {
+      "id": "redfield_21_feet",
+      "type": "city_tourism_site_archive",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/?cat=21+Feet",
+      "notes": [
+        "The project says each site includes an old image, site history, and a present-day image as of 2024.",
+        "Used for site sequence, construction/rebuild history, and current-reference discovery."
+      ]
+    },
+    {
+      "id": "redfield_downtown_2023_banner",
+      "type": "city_downtown_photo",
+      "url": "https://www.city.redfield-sd.com/media/userfiles/subsite_45/images/banners/downtown-2023-1.jpg",
+      "notes": [
+        "Visible historic brick storefronts, upper-window rhythm, projecting storefront awnings, globe streetlamps, sidewalk planters and street parking markings.",
+        "Used as a streetscape/detail reference, especially for the north-end historic storefront character."
+      ]
+    },
+    {
+      "id": "leos_exterior_tripadvisor",
+      "type": "current_or_recent_exterior_photo",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g54778-d2266317-Reviews-Leo_s_Good_Food-Redfield_South_Dakota.html",
+      "notes": [
+        "Exterior reference shows a low light-colored facade, dark/red accent bay, broad storefront glazing and the Leo's GOOD FOOD sign.",
+        "Used for 602 visual profile; text is represented only as a dark sign band in Minecraft."
+      ]
+    },
+    {
+      "id": "leos_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2447/602-main-street-leos-good-food?cat=main&featured=1&sort=name",
+      "notes": [
+        "1925 two-story brick building; second story removed in 1958.",
+        "Supports current low one-story mass."
+      ]
+    },
+    {
+      "id": "new_york_life_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2602/603-main-street-new-york-life",
+      "notes": [
+        "Older hotel demolished in the late 1960s; current New York Life-era building dates around 2000.",
+        "Supports a low modern facade rather than a historic two-story storefront."
+      ]
+    },
+    {
+      "id": "wildroots_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2603/604-main-street-wildroots",
+      "notes": [
+        "Current historical site incorporates former 606 and 608 lots.",
+        "Supports a wider multi-bay facade."
+      ]
+    },
+    {
+      "id": "mikes_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2625/605-main-street-mikes-furniture-and-mattress-store",
+      "notes": [
+        "Upper stories of the 605/607 building were removed after the 1962 fire.",
+        "Supports a low current mass despite the historic taller structure."
+      ]
+    },
+    {
+      "id": "studio_aura_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2626/610-main-street-studio-aura",
+      "notes": [
+        "Building erected in 1906 and historically contained upstairs uses.",
+        "Used for a taller historic storefront profile."
+      ]
+    },
+    {
+      "id": "lutter_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2627/611-main-street-lutter-realty",
+      "notes": [
+        "Earlier building burned in 1962; rebuilt in the mid-1960s.",
+        "Supports a lower mid-century facade profile."
+      ]
+    },
+    {
+      "id": "hair_company_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2643/625-main-street-hair-%26-company",
+      "notes": [
+        "Present building erected in 1906; Hair & Company listed from 2025.",
+        "Supports historic north-end mass and current occupancy."
+      ]
+    },
+    {
+      "id": "city_hall_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2644/626-main-street-city-hall",
+      "notes": [
+        "Merchants Bank building erected in 1915; City Hall since around 1980.",
+        "Supports a more formal civic/bank facade."
+      ]
+    },
+    {
+      "id": "youth_center_history",
+      "type": "site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2646/627-main-street-youth-center",
+      "notes": [
+        "Brick building erected in 1906; tourism history lists vacant in 2024.",
+        "Used as historical support for the paired north-end frontage."
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l1_alpha",
+  "status": "poc_001_l1_visual",
   "milestone": "REDFIELD_POC_001",
   "test_area": {
     "label": "Downtown 600 Block Main Street",
@@ -37,10 +37,11 @@
     }
   },
   "quality_gates": {
-    "current_target": "L1_BLOCK_ALPHA",
+    "current_target": "L1_BLOCK_VISUAL",
     "levels": [
       "L0_GEO",
       "L1_BLOCK_ALPHA",
+      "L1_BLOCK_VISUAL",
       "L1_BLOCK",
       "L2_DETAIL"
     ],
@@ -65,15 +66,15 @@
     "mirror": "none",
     "preserve_across_revisions": true
   },
-  "address_matching": {
-    "status": "inferred_sequence",
-    "file": "projects/redfield_sd/poc_001/address_match_v003.json",
-    "survey_verified": false
+  "visual_reconstruction": {
+    "status": "partial_photo_supported",
+    "spec": "projects/redfield_sd/poc_001/visual_v004.json",
+    "source_manifest": "projects/redfield_sd/source_manifests/redfield_poc001_visual_v004.json"
   },
   "notes": [
-    "v003 is the first L1-alpha architecture pass.",
+    "v004 adds stateful normal-block architectural details and streetscape.",
     "Microblocks remain disabled.",
-    "Facade palettes and exact heights are still provisional pending current-photo/Street View verification.",
-    "The yellow registration point remains invariant across every Redfield revision."
+    "Not every facade is current-photo verified yet.",
+    "Yellow registration origin remains invariant."
   ]
 }

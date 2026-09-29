@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "export_id": "REDFIELD_POC_001_L1_VISUAL_V004",
+  "status": "visual_reference_pass",
+  "photo_verified_all_facades": false,
+  "entries": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "side": "east",
+      "profile": "leos_current",
+      "height": 5,
+      "storeys": 1,
+      "wall": "minecraft:light_gray_concrete",
+      "wall_secondary": "minecraft:red_terracotta",
+      "trim": "minecraft:black_concrete",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "photo_supported",
+      "bays": 5
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "side": "east",
+      "profile": "wide_market",
+      "height": 7,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:smooth_sandstone",
+      "trim": "minecraft:sandstone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "history_supported",
+      "bays": 6
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "side": "east",
+      "profile": "historic_two_story",
+      "height": 9,
+      "storeys": 2,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:bricks",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "history_supported",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "side": "east",
+      "profile": "civic_low",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:bricks",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse dining room",
+      "side": "east",
+      "profile": "restaurant",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:brown_terracotta",
+      "trim": "minecraft:dark_oak_planks",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "side": "east",
+      "profile": "restaurant",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:brown_terracotta",
+      "trim": "minecraft:dark_oak_planks",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Office Plaza",
+      "side": "east",
+      "profile": "office_plaza",
+      "height": 8,
+      "storeys": 2,
+      "wall": "minecraft:stone_bricks",
+      "wall_secondary": "minecraft:light_gray_concrete",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:light_blue_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "inferred",
+      "bays": 6
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming site",
+      "side": "east",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:calcite",
+      "wall_secondary": "minecraft:pink_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "side": "east",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:black_concrete",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:polished_blackstone_slab",
+      "visual_confidence": "history_supported",
+      "bays": 4
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "side": "east",
+      "profile": "city_hall_bank",
+      "height": 10,
+      "storeys": 2,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:stone_bricks",
+      "trim": "minecraft:smooth_sandstone",
+      "glass": "minecraft:light_blue_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "history_supported",
+      "bays": 5
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "side": "west",
+      "profile": "modern_low",
+      "height": 5,
+      "storeys": 1,
+      "wall": "minecraft:light_gray_concrete",
+      "wall_secondary": "minecraft:blue_concrete",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:light_blue_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "history_supported",
+      "bays": 4
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "side": "west",
+      "profile": "wide_low",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:orange_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "history_supported",
+      "bays": 6
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "side": "west",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:yellow_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:oak_slab",
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty site",
+      "side": "west",
+      "profile": "midcentury_low",
+      "height": 5,
+      "storeys": 1,
+      "wall": "minecraft:light_gray_concrete",
+      "wall_secondary": "minecraft:blue_terracotta",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:light_blue_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "history_supported",
+      "bays": 5
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "side": "west",
+      "profile": "modern_low",
+      "height": 5,
+      "storeys": 1,
+      "wall": "minecraft:white_concrete",
+      "wall_secondary": "minecraft:red_concrete",
+      "trim": "minecraft:light_gray_concrete",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": null,
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "side": "west",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:stone_bricks",
+      "wall_secondary": "minecraft:cyan_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:light_blue_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "inferred",
+      "bays": 4
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "side": "west",
+      "profile": "wide_low",
+      "height": 6,
+      "storeys": 1,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:orange_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:smooth_stone_slab",
+      "visual_confidence": "inferred",
+      "bays": 7
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "side": "west",
+      "profile": "north_historic",
+      "height": 10,
+      "storeys": 2,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:green_terracotta",
+      "trim": "minecraft:smooth_sandstone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "photo_supported",
+      "bays": 5
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "side": "west",
+      "profile": "north_historic",
+      "height": 10,
+      "storeys": 2,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:green_terracotta",
+      "trim": "minecraft:smooth_sandstone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "photo_supported",
+      "bays": 5
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic site",
+      "side": "west",
+      "profile": "paired_north_historic",
+      "height": 11,
+      "storeys": 2,
+      "wall": "minecraft:bricks",
+      "wall_secondary": "minecraft:red_terracotta",
+      "wall_tertiary": "minecraft:green_terracotta",
+      "trim": "minecraft:smooth_sandstone",
+      "glass": "minecraft:black_stained_glass",
+      "door": "minecraft:dark_oak_door",
+      "awning": "minecraft:dark_oak_slab",
+      "visual_confidence": "photo_supported",
+      "bays": 6
+    }
+  ],
+  "secondary": [
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "height": 4
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "height": 5
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "height": 4
+    }
+  ]
+}
