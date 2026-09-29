@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://earthforge.local/schemas/project.schema.json",
+  "title": "EarthForge Project",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_id",
+    "name",
+    "coordinate_system"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string"
+    },
+    "coordinate_system": {
+      "type": "object"
+    },
+    "bounds": {},
+    "milestone": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

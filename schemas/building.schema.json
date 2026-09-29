@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://earthforge.local/schemas/building.schema.json",
+  "title": "EarthForge Building",
+  "type": "object",
+  "required": [
+    "building_id",
+    "footprint"
+  ],
+  "properties": {
+    "building_id": {
+      "type": "string"
+    },
+    "footprint": {
+      "type": "object"
+    },
+    "height_m": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "floors": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "roof": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "facades": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "additionalProperties": true
+}

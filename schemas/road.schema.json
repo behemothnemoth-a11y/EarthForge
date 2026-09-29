@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://earthforge.local/schemas/road.schema.json",
+  "title": "EarthForge Road Segment",
+  "type": "object",
+  "required": [
+    "road_id",
+    "centerline"
+  ],
+  "properties": {
+    "road_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "centerline": {
+      "type": "object"
+    },
+    "width_m": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lanes": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "sidewalks": {
+      "type": "object"
+    },
+    "surface": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sources": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}
