@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "scope": "600 block Main Street, Redfield SD",
+  "purpose": "Facts retained for later address/height/facade matching; not all are used in v002 massing.",
+  "notes": [
+    {
+      "address": "602 Main Street",
+      "reference_name": "Leo's Good Food",
+      "fact": "A two-story brick building was erected in 1925; the second story was removed in 1958 when the bank acquired the entire building.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2447/602-main-street-leos-good-food"
+    },
+    {
+      "address": "604 Main Street",
+      "reference_name": "Wildroots",
+      "fact": "The current 604 site includes lots formerly numbered 606 and 608; numbering was revised in the early 1970s.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2603/604-main-street-wildroots"
+    },
+    {
+      "address": "605 Main Street",
+      "reference_name": "Mike's Furniture and Mattress Store",
+      "fact": "The 605/607 building historically had three- and two-story portions; upper stories were removed in 1962 after the Anthony's fire.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2625/605-main-street-mikes-furniture-and-mattress-store"
+    },
+    {
+      "address": "603 Main Street",
+      "reference_name": "New York Life",
+      "fact": "The former hotel was demolished in the late 1960s; the site was a parking lot until the current-era New York Life building appeared around 2000.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2602/603-main-street-new-york-life"
+    },
+    {
+      "address": "611 Main Street",
+      "reference_name": "Lutter Realty",
+      "fact": "The earlier building burned in March 1962 and the site was rebuilt as the V-Store in the mid-1960s.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2627/611-main-street-lutter-realty"
+    },
+    {
+      "address": "626 Main Street",
+      "reference_name": "City Hall",
+      "fact": "The site became Merchants Bank in 1915 and later Spink County Bank; City Hall has occupied it since 1980.",
+      "use_now": false,
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2644/626-main-street-city-hall"
+    }
+  ],
+  "frontage_matching_status": "deferred_until_streetview_or_current-photo review"
+}

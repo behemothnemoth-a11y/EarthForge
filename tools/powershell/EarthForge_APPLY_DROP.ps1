@@ -35,7 +35,7 @@ function Resolve-EarthForgeRepo([string]$Requested) {
         }
     }
 
-    throw "Could not find the EarthForge repo automatically. Re-run with -RepoRoot `"C:\path\to\EarthForge`"."
+    throw "Could not find the EarthForge repo automatically. Re-run with -RepoRoot C:\path\to\EarthForge."
 }
 
 Require-Command "git"
@@ -68,13 +68,20 @@ try {
     }
 
     $branch = (& git branch --show-current)
-    if ($LASTEXITCODE -ne 0) { throw "Unable to read current Git branch." }
-    if (-not [string]::IsNullOrWhiteSpace($branch) -and $branch.Trim() -ne "main") {
-        Write-Host "WARNING: current branch is '$($branch.Trim())', not 'main'." -ForegroundColor Yellow
+    if ($LASTEXITCODE -ne 0) {
+        throw "Unable to read current Git branch."
     }
 
-    $backupRoot = Join-Path $RepoRoot ".earthforge_drop_backups\$($manifest.drop_id)"
-    New-Item -ItemType Directory -Force -Path $backupRoot | Out-Null
+    if (-not [string]::IsNullOrWhiteSpace([string]$branch) -and $branch.Trim() -ne "main") {
+        Write-Host "WARNING: current branch is '$($branch.Trim())', not main." -ForegroundColor Yellow
+    }
+
+    # Safety backups now live OUTSIDE the repo so they can never be committed.
+    $stamp = Get-Date -Format "yyyyMMdd_HHmmss"
+    $backupBase = Join-Path $env:LOCALAPPDATA "EarthForge\drop_backups"
+    $backupRoot = Join-Path $backupBase "$($manifest.drop_id)\$stamp"
+    $changed = 0
+    $unchanged = 0
 
     $items = Get-ChildItem -Path $payload -Recurse -File
     foreach ($item in $items) {
@@ -87,6 +94,15 @@ try {
         }
 
         if (Test-Path $dest) {
+            $sourceHash = (Get-FileHash -Algorithm SHA256 -Path $item.FullName).Hash
+            $destHash = (Get-FileHash -Algorithm SHA256 -Path $dest).Hash
+
+            if ($sourceHash -eq $destHash) {
+                Write-Host "  == $relative"
+                $unchanged++
+                continue
+            }
+
             $backup = Join-Path $backupRoot $relative
             $backupDir = Split-Path $backup -Parent
             if (-not (Test-Path $backupDir)) {
@@ -97,31 +113,44 @@ try {
 
         Copy-Item $item.FullName $dest -Force
         Write-Host "  -> $relative"
+        $changed++
     }
 
     Write-Host ""
+    Write-Host "Changed files  : $changed"
+    Write-Host "Unchanged files: $unchanged"
+    if (Test-Path $backupRoot) {
+        Write-Host "Safety backup  : $backupRoot"
+    }
+    Write-Host ""
+
     & git status --short
 
-    if (-not $NoCommit) {
+    if (-not $NoCommit.IsPresent) {
         & git add -A
-        if ($LASTEXITCODE -ne 0) { throw "git add failed." }
+        if ($LASTEXITCODE -ne 0) {
+            throw "git add failed."
+        }
 
         & git diff --cached --quiet
         if ($LASTEXITCODE -eq 0) {
             Write-Host "No staged changes; nothing to commit." -ForegroundColor Yellow
-        } else {
+        }
+        else {
             $message = [string]$manifest.commit_message
             if ([string]::IsNullOrWhiteSpace($message)) {
                 $message = "Apply EarthForge drop $($manifest.drop_id)"
             }
 
             & git commit -m $message
-            if ($LASTEXITCODE -ne 0) { throw "git commit failed." }
+            if ($LASTEXITCODE -ne 0) {
+                throw "git commit failed."
+            }
 
-            if (-not $NoPush) {
+            if (-not $NoPush.IsPresent) {
                 & git push origin HEAD:main
                 if ($LASTEXITCODE -ne 0) {
-                    throw "Commit succeeded, but git push failed. Your changes are safe locally."
+                    throw "Commit succeeded, but git push failed. Changes are safe locally."
                 }
             }
         }
@@ -129,6 +158,7 @@ try {
 
     Write-Host ""
     Write-Host "Drop applied successfully." -ForegroundColor Green
-} finally {
+}
+finally {
     Pop-Location
 }

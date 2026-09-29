@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "export_id": "REDFIELD_POC_001_MASSING_V002",
+  "status": "review_massing",
+  "source": {
+    "local_geometry": "projects/redfield_sd/poc_001/l0_geometry_local.json",
+    "l0_block_plan": "projects/redfield_sd/poc_001/l0_block_plan.csv",
+    "locked_frame": "projects/redfield_sd/poc_001/locked_frame.json"
+  },
+  "road": {
+    "main_street_paved_half_width_m": 10.0,
+    "status": "provisional_after_minecraft_v001_review",
+    "avenue_geometry": "retain L0 diagnostic avenue cells",
+    "alley_geometry": "retain L0 diagnostic alley cells"
+  },
+  "sidewalk": {
+    "source_line_half_width_m": 4.5,
+    "note": "Source sidewalk line lies near the storefront line; expansion is intentionally allowed under footprints, which building massing overwrites."
+  },
+  "massing": {
+    "primary_frontage_max_distance_from_main_m": 25.0,
+    "primary_wall_height_blocks": 5,
+    "primary_roof_y": 5,
+    "secondary_wall_height_blocks": 3,
+    "secondary_roof_y": 3,
+    "primary_wall_block": "minecraft:bricks",
+    "secondary_wall_block": "minecraft:stone_bricks",
+    "roof_block": "minecraft:polished_deepslate"
+  },
+  "registration": {
+    "marker_block": "minecraft:yellow_concrete",
+    "schematic_marker_position": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "preserve_across_revisions": true
+  },
+  "constraints": {
+    "microblocks": false,
+    "facade_reconstruction": false,
+    "interiors": false,
+    "individual_story_counts_claimed": false
+  }
+}
