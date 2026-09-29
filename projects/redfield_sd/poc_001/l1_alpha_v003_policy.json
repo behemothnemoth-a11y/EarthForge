@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "export_id": "REDFIELD_POC_001_L1_ALPHA_V003",
+  "stage": "L1_BLOCK_ALPHA",
+  "roads": {
+    "main_half_width_m": 9.0,
+    "avenue_half_width_m": 6.0,
+    "alley_half_width_m": 1.75,
+    "sidewalk_half_width_m": 3.0,
+    "crossing_half_width_m": 1.25,
+    "curb_block": "minecraft:light_gray_concrete",
+    "curb_end_inset_blocks": 7
+  },
+  "architecture": {
+    "roof_block": "minecraft:polished_deepslate",
+    "rear_roof_block": "minecraft:deepslate_tiles",
+    "door_placeholder": "minecraft:dark_oak_planks",
+    "default_parapet_extra": 1,
+    "hollow_shells": true,
+    "front_window_y": [
+      1,
+      2
+    ],
+    "upper_window_y": [
+      4,
+      5
+    ],
+    "sign_band_y": 3,
+    "facade_column_spacing": 4
+  },
+  "registration": {
+    "marker_block": "minecraft:yellow_concrete",
+    "marker_schematic": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "preserve_across_revisions": true
+  },
+  "constraints": {
+    "microblocks": false,
+    "interiors": false,
+    "facade_geometry_is_alpha": true,
+    "palette_is_current_photo_verified": false,
+    "story_heights_are_surveyed": false
+  }
+}

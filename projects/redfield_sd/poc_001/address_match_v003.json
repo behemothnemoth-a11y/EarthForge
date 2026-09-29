@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "mapping_id": "REDFIELD_600_MAIN_SEQUENCE_V003",
+  "status": "inferred_sequence",
+  "method": {
+    "description": "Match Main-facing OSM footprints by side parity and south-to-north address sequence.",
+    "east_side": "even addresses",
+    "west_side": "odd addresses",
+    "not_survey_verified": true
+  },
+  "primary": [
+    {
+      "osm_id": 1393414143,
+      "side": "east",
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "profile": "leos_corner",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:red_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current one-story condition supported by 1958 removal of second story."
+    },
+    {
+      "osm_id": 1474301435,
+      "side": "east",
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "profile": "historic_storefront",
+      "height": 6,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:green_terracotta",
+      "trim": "minecraft:sandstone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Historical 604 site includes former 606/608 lots; current business directories often use 608."
+    },
+    {
+      "osm_id": 1474301413,
+      "side": "east",
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "profile": "historic_storefront",
+      "height": 6,
+      "wall": "minecraft:smooth_sandstone",
+      "accent": "minecraft:purple_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Tourism archive says building erected in 1906."
+    },
+    {
+      "osm_id": 1474301431,
+      "side": "east",
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "profile": "civic_storefront",
+      "height": 6,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:blue_concrete",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current American Legion Post 92 address is 612 Main."
+    },
+    {
+      "osm_id": 1474301444,
+      "side": "east",
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse - dining room",
+      "profile": "restaurant_storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:brown_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Address sequence match; palette is provisional."
+    },
+    {
+      "osm_id": 1474301414,
+      "side": "east",
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "profile": "restaurant_storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:brown_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Address sequence match; palette is provisional."
+    },
+    {
+      "osm_id": 1474301442,
+      "side": "east",
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Office Plaza",
+      "profile": "office_plaza",
+      "height": 7,
+      "wall": "minecraft:stone_bricks",
+      "accent": "minecraft:quartz_block",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:light_blue_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current business listings identify 620 N Main as an office plaza with multiple suites."
+    },
+    {
+      "osm_id": 1474301425,
+      "side": "east",
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming",
+      "profile": "historic_storefront",
+      "height": 6,
+      "wall": "minecraft:calcite",
+      "accent": "minecraft:pink_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Archive address sequence match; current facade palette not yet photo-verified."
+    },
+    {
+      "osm_id": 1474301453,
+      "side": "east",
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "profile": "historic_storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:black_concrete",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current business directory confirms Alley Cuts at 624 Main."
+    },
+    {
+      "osm_id": 1210548944,
+      "side": "east",
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "profile": "city_hall",
+      "height": 8,
+      "wall": "minecraft:stone_bricks",
+      "accent": "minecraft:smooth_quartz",
+      "trim": "minecraft:chiseled_stone_bricks",
+      "glass": "minecraft:light_blue_stained_glass",
+      "confidence": "high_inferred",
+      "note": "1915 bank building; current City Hall address is 626 Main."
+    },
+    {
+      "osm_id": 1474301421,
+      "side": "west",
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "profile": "modern_low",
+      "height": 4,
+      "wall": "minecraft:light_gray_concrete",
+      "accent": "minecraft:blue_concrete",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:light_blue_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Earlier hotel demolished; current-era building dates from around 2000."
+    },
+    {
+      "osm_id": 1393414144,
+      "side": "west",
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "profile": "known_one_story",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:orange_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Upper stories of the historic 605/607 structure were removed after the 1962 fire."
+    },
+    {
+      "osm_id": 1474301454,
+      "side": "west",
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "profile": "historic_storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:yellow_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Tourism archive lists site as vacant from 2022; name retained as site reference."
+    },
+    {
+      "osm_id": 1474301418,
+      "side": "west",
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty",
+      "profile": "rebuilt_midcentury",
+      "height": 5,
+      "wall": "minecraft:light_gray_concrete",
+      "accent": "minecraft:blue_terracotta",
+      "trim": "minecraft:white_concrete",
+      "glass": "minecraft:light_blue_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Earlier building burned in 1962; rebuilt in the mid-1960s."
+    },
+    {
+      "osm_id": 1474301429,
+      "side": "west",
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "profile": "storefront",
+      "height": 5,
+      "wall": "minecraft:white_concrete",
+      "accent": "minecraft:red_concrete",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Address sequence match; facade still needs current-photo verification."
+    },
+    {
+      "osm_id": 1474301407,
+      "side": "west",
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "profile": "storefront",
+      "height": 6,
+      "wall": "minecraft:stone_bricks",
+      "accent": "minecraft:cyan_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:light_blue_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm 615 N Main."
+    },
+    {
+      "osm_id": 1474301456,
+      "side": "west",
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "profile": "wide_storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:orange_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Wide combined address site."
+    },
+    {
+      "osm_id": 1474301428,
+      "side": "west",
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "profile": "storefront",
+      "height": 5,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:blue_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm 621 N Main."
+    },
+    {
+      "osm_id": 1474301430,
+      "side": "west",
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "profile": "boutique_storefront",
+      "height": 6,
+      "wall": "minecraft:calcite",
+      "accent": "minecraft:magenta_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm Simply Charming at 623 Main."
+    },
+    {
+      "osm_id": 1474301419,
+      "side": "west",
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic Youth Center site",
+      "profile": "paired_625_627",
+      "height": 7,
+      "wall": "minecraft:bricks",
+      "accent": "minecraft:pink_terracotta",
+      "accent_secondary": "minecraft:blue_terracotta",
+      "trim": "minecraft:smooth_stone",
+      "glass": "minecraft:black_stained_glass",
+      "confidence": "medium_inferred",
+      "note": "Northernmost west footprint is treated as paired 625/627 frontage; 625 is Hair & Company in 2025+, while 627 sources conflict between vacant-2024 history and current directory Youth Center listing."
+    }
+  ],
+  "secondary": [
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "name": "604 rear structure",
+      "confidence": "medium_inferred"
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "name": "621 rear structure",
+      "confidence": "medium_inferred"
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "name": "624 rear structure",
+      "confidence": "medium_inferred"
+    }
+  ],
+  "sources": [
+    "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/?cat=main",
+    "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/?cat=historical+facts",
+    "https://ecdev.redfield-sd.com/data-and--resources/businesses",
+    "https://www.city.redfield-sd.com/"
+  ]
+}

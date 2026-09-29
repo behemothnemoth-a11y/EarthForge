@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "research_id": "REDFIELD_600_MAIN_V003",
+  "retrieved": "2026-09-29",
+  "facts": [
+    {
+      "site": "602",
+      "fact": "A two-story brick building was erected in 1925; the second story was removed in 1958.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2447/602-main-street-leos-good-food?cat=main&featured=1&sort=name"
+    },
+    {
+      "site": "603",
+      "fact": "The hotel was demolished in the late 1960s; the site was a parking lot until the current-era New York Life building appeared around 2000.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2602/603-main-street-new-york-life"
+    },
+    {
+      "site": "604",
+      "fact": "The current 604 historical site includes the former 606 and 608 lots; numbering was revised in the early 1970s.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2603/604-main-street-wildroots"
+    },
+    {
+      "site": "605",
+      "fact": "The 605/607 building had three- and two-story portions whose upper stories were removed after the 1962 fire.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2625/605-main-street-mikes-furniture-and-mattress-store"
+    },
+    {
+      "site": "611",
+      "fact": "The earlier building burned in March 1962 and was rebuilt as the V-Store in the mid-1960s.",
+      "source": "https://tourism.redfield-sd.com/campgrounds/p/item/2627/611-main-street-lutter-realty"
+    },
+    {
+      "site": "620",
+      "fact": "Current business listings identify 620 N Main as Main Street Office Plaza / multi-suite business space.",
+      "source": "https://ecdev.redfield-sd.com/data-and--resources/businesses"
+    },
+    {
+      "site": "625",
+      "fact": "The present building was erected in 1906; the site is listed as Hair & Company from 2025.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2643/625-main-street-hair-%26-company"
+    },
+    {
+      "site": "626",
+      "fact": "The current building was erected as Merchants Bank in 1915 and has been City Hall since around 1980.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2644/626-main-street-city-hall"
+    },
+    {
+      "site": "627",
+      "fact": "A brick building was erected in 1906. Tourism history lists the site vacant in 2024, while current business directories still list Redfield Youth Center at 627 Main.",
+      "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2646/627-main-street-youth-center"
+    }
+  ]
+}

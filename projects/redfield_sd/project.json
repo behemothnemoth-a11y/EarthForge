@@ -1,8 +1,8 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l0_frame",
+  "status": "poc_001_l1_alpha",
   "milestone": "REDFIELD_POC_001",
   "test_area": {
     "label": "Downtown 600 Block Main Street",
@@ -20,7 +20,7 @@
     "source_crs": "EPSG:4326",
     "working_local": "EarthForge local tangent approximation for POC 001",
     "anchor": {
-      "status": "derived_by_generator",
+      "status": "locked",
       "definition": "Main Street / 7th Avenue centerline intersection",
       "output_file": "projects/redfield_sd/poc_001/locked_frame.json"
     },
@@ -37,9 +37,10 @@
     }
   },
   "quality_gates": {
-    "current_target": "L0_GEO",
+    "current_target": "L1_BLOCK_ALPHA",
     "levels": [
       "L0_GEO",
+      "L1_BLOCK_ALPHA",
       "L1_BLOCK",
       "L2_DETAIL"
     ],
@@ -47,7 +48,7 @@
     "microblocks_unlock_condition": "L1_BLOCK accepted in Minecraft"
   },
   "litematica_registration": {
-    "enabled_when_export_exists": true,
+    "enabled": true,
     "block": "minecraft:yellow_concrete",
     "placement_reference": "player_feet",
     "placement_origin": [
@@ -62,13 +63,17 @@
     ],
     "rotation_policy": "fixed_by_project",
     "mirror": "none",
-    "preserve_across_revisions": true,
-    "local_reference": "reserved by Drop 0003 generator; translated to schematic origin during export"
+    "preserve_across_revisions": true
+  },
+  "address_matching": {
+    "status": "inferred_sequence",
+    "file": "projects/redfield_sd/poc_001/address_match_v003.json",
+    "survey_verified": false
   },
   "notes": [
-    "POC 001 starts with block-only reconstruction.",
-    "Do not use Astra Microblocks before L1 block-only review.",
-    "Drop 0003 generates an L0 diagnostic block plan, not a Litematica.",
-    "Address matching remains unresolved until visual/address evidence is reviewed."
+    "v003 is the first L1-alpha architecture pass.",
+    "Microblocks remain disabled.",
+    "Facade palettes and exact heights are still provisional pending current-photo/Street View verification.",
+    "The yellow registration point remains invariant across every Redfield revision."
   ]
 }
