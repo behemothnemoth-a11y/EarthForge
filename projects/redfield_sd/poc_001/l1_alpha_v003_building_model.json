@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_ALPHA_V003",
+  "address_mapping_status": "inferred_sequence",
+  "palette_current_photo_verified": false,
+  "story_heights_surveyed": false,
+  "entries": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "profile": "leos_corner",
+      "height": 5,
+      "side": "east",
+      "footprint_cells": 360,
+      "confidence": "high_inferred",
+      "note": "Current one-story condition supported by 1958 removal of second story."
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "profile": "historic_storefront",
+      "height": 6,
+      "side": "east",
+      "footprint_cells": 157,
+      "confidence": "high_inferred",
+      "note": "Historical 604 site includes former 606/608 lots; current business directories often use 608."
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "profile": "historic_storefront",
+      "height": 6,
+      "side": "east",
+      "footprint_cells": 576,
+      "confidence": "high_inferred",
+      "note": "Tourism archive says building erected in 1906."
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "profile": "civic_storefront",
+      "height": 6,
+      "side": "east",
+      "footprint_cells": 486,
+      "confidence": "high_inferred",
+      "note": "Current American Legion Post 92 address is 612 Main."
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse - dining room",
+      "profile": "restaurant_storefront",
+      "height": 5,
+      "side": "east",
+      "footprint_cells": 259,
+      "confidence": "high_inferred",
+      "note": "Address sequence match; palette is provisional."
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "profile": "restaurant_storefront",
+      "height": 5,
+      "side": "east",
+      "footprint_cells": 280,
+      "confidence": "high_inferred",
+      "note": "Address sequence match; palette is provisional."
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Office Plaza",
+      "profile": "office_plaza",
+      "height": 7,
+      "side": "east",
+      "footprint_cells": 315,
+      "confidence": "high_inferred",
+      "note": "Current business listings identify 620 N Main as an office plaza with multiple suites."
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming",
+      "profile": "historic_storefront",
+      "height": 6,
+      "side": "east",
+      "footprint_cells": 296,
+      "confidence": "high_inferred",
+      "note": "Archive address sequence match; current facade palette not yet photo-verified."
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "profile": "historic_storefront",
+      "height": 5,
+      "side": "east",
+      "footprint_cells": 540,
+      "confidence": "high_inferred",
+      "note": "Current business directory confirms Alley Cuts at 624 Main."
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "profile": "city_hall",
+      "height": 8,
+      "side": "east",
+      "footprint_cells": 380,
+      "confidence": "high_inferred",
+      "note": "1915 bank building; current City Hall address is 626 Main."
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "profile": "modern_low",
+      "height": 4,
+      "side": "west",
+      "footprint_cells": 192,
+      "confidence": "high_inferred",
+      "note": "Earlier hotel demolished; current-era building dates from around 2000."
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "profile": "known_one_story",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 224,
+      "confidence": "high_inferred",
+      "note": "Upper stories of the historic 605/607 structure were removed after the 1962 fire."
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "profile": "historic_storefront",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 240,
+      "confidence": "high_inferred",
+      "note": "Tourism archive lists site as vacant from 2022; name retained as site reference."
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty",
+      "profile": "rebuilt_midcentury",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 613,
+      "confidence": "high_inferred",
+      "note": "Earlier building burned in 1962; rebuilt in the mid-1960s."
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "profile": "storefront",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 259,
+      "confidence": "high_inferred",
+      "note": "Address sequence match; facade still needs current-photo verification."
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "profile": "storefront",
+      "height": 6,
+      "side": "west",
+      "footprint_cells": 195,
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm 615 N Main."
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "profile": "wide_storefront",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 315,
+      "confidence": "high_inferred",
+      "note": "Wide combined address site."
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "profile": "storefront",
+      "height": 5,
+      "side": "west",
+      "footprint_cells": 168,
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm 621 N Main."
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "profile": "boutique_storefront",
+      "height": 6,
+      "side": "west",
+      "footprint_cells": 675,
+      "confidence": "high_inferred",
+      "note": "Current business listings confirm Simply Charming at 623 Main."
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic Youth Center site",
+      "profile": "paired_625_627",
+      "height": 7,
+      "side": "west",
+      "footprint_cells": 480,
+      "confidence": "medium_inferred",
+      "note": "Northernmost west footprint is treated as paired 625/627 frontage; 625 is Hair & Company in 2025+, while 627 sources conflict between vacant-2024 history and current directory Youth Center listing."
+    },
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "name": "604 rear structure",
+      "profile": "rear_addition",
+      "height": 4,
+      "footprint_cells": 48,
+      "confidence": "medium_inferred"
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "name": "621 rear structure",
+      "profile": "rear_addition",
+      "height": 3,
+      "footprint_cells": 40,
+      "confidence": "medium_inferred"
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "name": "624 rear structure",
+      "profile": "rear_addition",
+      "height": 3,
+      "footprint_cells": 24,
+      "confidence": "medium_inferred"
+    }
+  ]
+}

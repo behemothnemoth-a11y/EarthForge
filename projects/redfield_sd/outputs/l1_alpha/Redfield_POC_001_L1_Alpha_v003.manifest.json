@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_ALPHA_V003",
+  "file": "projects/redfield_sd/outputs/l1_alpha/Redfield_POC_001_L1_Alpha_v003.litematic",
+  "sha256": "7f0344ab7ba247f697efd1920f59da8ff368c312c88509c7a2dfab8ab7162e2e",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    11,
+    157
+  ],
+  "placement": {
+    "instruction": "Stand on the existing yellow registration block and set placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL"
+  },
+  "review_targets": [
+    "street widths",
+    "sidewalk width",
+    "building/address sequence",
+    "skyline rhythm",
+    "storefront proportions",
+    "City Hall landmark mass",
+    "corner-building treatment"
+  ]
+}

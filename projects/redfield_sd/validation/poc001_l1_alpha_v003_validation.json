@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_ALPHA_V003",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/l1_alpha/Redfield_POC_001_L1_Alpha_v003.litematic",
+  "sha256": "7f0344ab7ba247f697efd1920f59da8ff368c312c88509c7a2dfab8ab7162e2e",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    11,
+    157
+  ],
+  "volume": 281501,
+  "non_air_blocks": 34154,
+  "palette_size": 33,
+  "palette": [
+    "minecraft:air",
+    "minecraft:black_concrete",
+    "minecraft:black_stained_glass",
+    "minecraft:blue_concrete",
+    "minecraft:blue_terracotta",
+    "minecraft:bricks",
+    "minecraft:brown_terracotta",
+    "minecraft:calcite",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:cyan_terracotta",
+    "minecraft:dark_oak_planks",
+    "minecraft:deepslate_tiles",
+    "minecraft:gray_concrete",
+    "minecraft:green_terracotta",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:light_gray_concrete",
+    "minecraft:magenta_terracotta",
+    "minecraft:orange_terracotta",
+    "minecraft:pink_terracotta",
+    "minecraft:polished_andesite",
+    "minecraft:polished_deepslate",
+    "minecraft:purple_terracotta",
+    "minecraft:quartz_block",
+    "minecraft:red_concrete",
+    "minecraft:red_terracotta",
+    "minecraft:sandstone",
+    "minecraft:smooth_quartz",
+    "minecraft:smooth_sandstone",
+    "minecraft:smooth_stone",
+    "minecraft:stone_bricks",
+    "minecraft:white_concrete",
+    "minecraft:yellow_concrete",
+    "minecraft:yellow_terracotta"
+  ],
+  "address_mapping": {
+    "status": "inferred_sequence",
+    "primary_footprints": 20,
+    "secondary_structures": 3,
+    "survey_verified": false
+  },
+  "roads": {
+    "main_half_width_m": 9.0,
+    "avenue_half_width_m": 6.0,
+    "alley_half_width_m": 1.75,
+    "sidewalk_half_width_m": 3.0,
+    "crossing_half_width_m": 1.25,
+    "curb_block": "minecraft:light_gray_concrete",
+    "curb_end_inset_blocks": 7
+  },
+  "checks": {
+    "mapping_exactly_covers_selected_geometry": true,
+    "exact_block_map": true,
+    "registration_marker": true,
+    "microblocks_used": false,
+    "hollow_shell_architecture": true
+  },
+  "registration": {
+    "marker_position": [
+      0,
+      -1,
+      0
+    ],
+    "marker_block": "minecraft:yellow_concrete",
+    "verified": true
+  },
+  "errors": []
+}
