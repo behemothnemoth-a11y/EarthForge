@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_VISUAL_V004",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/l1_visual/Redfield_POC_001_L1_Visual_v004.litematic",
+  "sha256": "9a25188632f40fb4c5904a2771168b451971478d36cacee6384f22b5395b1319",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    14,
+    157
+  ],
+  "non_air_blocks": 36665,
+  "palette_size": 41,
+  "stateful_palette_entries": 15,
+  "visual_confidence_counts": {
+    "photo_supported": 4,
+    "history_supported": 7,
+    "inferred": 9
+  },
+  "primary_sites": 20,
+  "secondary_structures": 3,
+  "streetscape": {
+    "streetlights": true,
+    "planters": true,
+    "benches": true,
+    "parking_markings": true
+  },
+  "registration": {
+    "marker_position": [
+      0,
+      -1,
+      0
+    ],
+    "marker_block": "minecraft:yellow_concrete",
+    "verified": true
+  },
+  "checks": {
+    "visual_spec_covers_geometry": true,
+    "exact_block_map": true,
+    "registration_marker": true,
+    "block_states_round_trip": true,
+    "microblocks_used": false
+  },
+  "errors": []
+}

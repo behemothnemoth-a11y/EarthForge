@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_VISUAL_V004",
+  "entries": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "profile": "leos_current",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 360
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "profile": "wide_market",
+      "height": 7,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 157
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "profile": "historic_two_story",
+      "height": 9,
+      "storeys": 2,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 576
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "profile": "civic_low",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 486
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse dining room",
+      "profile": "restaurant",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 259
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "profile": "restaurant",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 280
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Office Plaza",
+      "profile": "office_plaza",
+      "height": 8,
+      "storeys": 2,
+      "visual_confidence": "inferred",
+      "footprint_cells": 315
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming site",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 296
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 540
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "profile": "city_hall_bank",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 380
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "profile": "modern_low",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 192
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "profile": "wide_low",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 224
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 240
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty site",
+      "profile": "midcentury_low",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 613
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "profile": "modern_low",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 259
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "profile": "storefront",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 195
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "profile": "wide_low",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 315
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "profile": "north_historic",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 168
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "profile": "north_historic",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 675
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic site",
+      "profile": "paired_north_historic",
+      "height": 11,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 480
+    },
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "profile": "rear_addition",
+      "height": 4,
+      "visual_confidence": "inferred",
+      "footprint_cells": 48
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "profile": "rear_addition",
+      "height": 5,
+      "visual_confidence": "inferred",
+      "footprint_cells": 40
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "profile": "rear_addition",
+      "height": 4,
+      "visual_confidence": "inferred",
+      "footprint_cells": 24
+    }
+  ],
+  "all_facades_photo_verified": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_VISUAL_V004",
+  "file": "projects/redfield_sd/outputs/l1_visual/Redfield_POC_001_L1_Visual_v004.litematic",
+  "sha256": "9a25188632f40fb4c5904a2771168b451971478d36cacee6384f22b5395b1319",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    14,
+    157
+  ],
+  "placement": {
+    "instruction": "Stand on the existing yellow registration block and set placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL"
+  },
+  "review_targets": [
+    "Leo facade resemblance",
+    "north historic storefront rhythm",
+    "City Hall civic silhouette",
+    "road and parking proportions",
+    "streetlight/planter scale",
+    "which remaining facades need direct Street View correction"
+  ]
+}
