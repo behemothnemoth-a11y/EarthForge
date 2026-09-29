@@ -2,35 +2,74 @@
 
 Project ID: `redfield_sd`
 
+Milestone: `REDFIELD_POC_001`
+
+## Test area
+
+The first test area is the downtown 600 block of Main Street, approximately
+between 6th Avenue and 7th Avenue.
+
+The repository stores a deliberately wider provisional capture window around
+that block. Exact working bounds will be tightened after structured map
+geometry and visual references are compared.
+
 ## Goal
 
 Prove the complete EarthForge chain on one small, recognizable Redfield area
 before expanding to the whole town.
 
-## POC 001 acceptance criteria
+## Required sequence
 
-The first test area should contain enough variety to expose the pipeline:
+### Gate A — L0 GEO
 
-- at least one road intersection or comparable road geometry;
-- sidewalks / parking / lot transitions where present;
-- several separate building footprints;
-- at least one building with distinctive facade or roof geometry;
-- enough visible context that a Minecraft comparison is meaningful.
+Build and inspect:
 
-## Required outputs
+- terrain / grade context;
+- roads;
+- sidewalks / paths;
+- parking / hardscape;
+- building footprints;
+- simple footprint extrusions where useful.
 
-1. selected bounds and project anchor;
-2. normalized road geometry;
-3. normalized building footprints;
-4. terrain surface;
-5. Minecraft-scale road/lot layout;
-6. coarse building shells;
-7. at least one Build Studio-refined building;
-8. at least one Microblocks refinement pass;
-9. playable export;
-10. comparison notes and measured error.
+Do not begin facade reconstruction until this aligns.
 
-## Non-goal for POC 001
+### Gate B — L1 BLOCK
 
-Do not attempt the entire town before the small area successfully round-trips
-through the pipeline.
+Create a playable normal-block Minecraft reconstruction.
+
+This pass uses normal Minecraft blocks only. Astra Microblocks are explicitly
+disabled until the L1 version has been inspected in Minecraft.
+
+Required L1 checks:
+
+- road widths and intersections;
+- sidewalk / parking spacing;
+- lot and building placement;
+- building heights;
+- roof massing;
+- major window / door rhythm where it affects recognition;
+- player-scale feel.
+
+### Gate C — L2 DETAIL
+
+Only after L1 acceptance may selected structures receive Microblocks detail.
+
+L2 is not required for the initial proof that EarthForge works.
+
+## Litematica rule
+
+When Litematica export begins, every revision must use the EarthForge
+registration-block convention in `docs/LITEMATICA_REGISTRATION.md`.
+
+## POC 001 acceptance
+
+POC 001 is successful when:
+
+1. the selected downtown area is correctly georeferenced;
+2. an L0 geographic layout has been reviewed;
+3. an L1 normal-block reconstruction has been loaded in Minecraft;
+4. placement and scale are repeatable;
+5. a subsequent Litematica revision can use the fixed registration convention
+   without manual placement hunting.
+
+Microblocks are intentionally outside the first acceptance gate.

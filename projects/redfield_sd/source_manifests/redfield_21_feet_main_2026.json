@@ -1,0 +1,16 @@
+{
+  "source_id": "redfield_21_feet_main_2026",
+  "provider": "Redfield City Tourism",
+  "source_type": "historical_and_present_day_storefront_reference",
+  "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/?cat=main",
+  "external_id": null,
+  "acquired_at": "2026-09-29",
+  "coverage": "Main Street, Redfield",
+  "license_note": "Reference metadata only in repository unless image redistribution permission is established.",
+  "redistributable": false,
+  "local_private_path": "projects/redfield_sd/references/private/redfield_21_feet/",
+  "notes": [
+    "Provides address-by-address storefront history and present-day imagery context.",
+    "Used to seed the 600-block building inventory."
+  ]
+}

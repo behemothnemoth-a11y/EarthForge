@@ -1,5 +1,42 @@
 {
   "type": "FeatureCollection",
-  "name": "redfield_sd_poc_bounds",
-  "features": []
+  "name": "redfield_sd_poc001_bounds",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "REDFIELD_POC_001_CAPTURE",
+        "status": "provisional",
+        "purpose": "wide acquisition window around the 600 block of Main Street",
+        "not_a_survey": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.52055,
+              44.8748
+            ],
+            [
+              -98.51655,
+              44.8748
+            ],
+            [
+              -98.51655,
+              44.87765
+            ],
+            [
+              -98.52055,
+              44.87765
+            ],
+            [
+              -98.52055,
+              44.8748
+            ]
+          ]
+        ]
+      }
+    }
+  ]
 }

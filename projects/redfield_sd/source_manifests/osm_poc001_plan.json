@@ -1,0 +1,15 @@
+{
+  "source_id": "osm_redfield_poc001",
+  "provider": "OpenStreetMap contributors",
+  "source_type": "machine_readable_base_geometry",
+  "url": "https://www.openstreetmap.org/",
+  "external_id": "Overpass capture using project provisional bbox",
+  "acquired_at": null,
+  "coverage": "Redfield POC 001 provisional capture window",
+  "license_note": "OpenStreetMap data is ODbL; preserve required attribution in derived/public outputs.",
+  "redistributable": true,
+  "local_private_path": "projects/redfield_sd/downloads/osm_poc_001.json",
+  "notes": [
+    "Raw download remains ignored locally; normalized review GeoJSON may be committed after review."
+  ]
+}

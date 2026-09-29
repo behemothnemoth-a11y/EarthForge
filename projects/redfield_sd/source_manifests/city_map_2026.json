@@ -1,0 +1,16 @@
+{
+  "source_id": "redfield_city_map_2026",
+  "provider": "City of Redfield",
+  "source_type": "official_city_map",
+  "url": "https://www.city.redfield-sd.com/city-resources/maps-and-data",
+  "external_id": null,
+  "acquired_at": "2026-09-29",
+  "coverage": "City of Redfield",
+  "license_note": "Use as official reference; verify redistribution terms before committing raw files.",
+  "redistributable": null,
+  "local_private_path": null,
+  "notes": [
+    "Confirms Main Street and 6th/7th Avenue street layout.",
+    "City Hall is listed at 626 Main Street."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "sddot_cadd_redfield_2026",
+  "provider": "South Dakota Department of Transportation",
+  "source_type": "official_cadd_mapping_index",
+  "url": "https://dot.sd.gov/inside-sddot/forms-publications/maps/cadd-mapping",
+  "external_id": "Redfield city mapping entry",
+  "acquired_at": "2026-09-29",
+  "coverage": "Redfield, South Dakota",
+  "license_note": "Official mapping source; inspect file metadata/terms before redistribution.",
+  "redistributable": null,
+  "local_private_path": null,
+  "notes": [
+    "SDDOT exposes PDF, DGN and DWG city mapping entries for Redfield.",
+    "Candidate source for later geometry cross-checking."
+  ]
+}

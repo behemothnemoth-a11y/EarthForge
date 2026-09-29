@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "current_gate": "L0_GEO",
+  "rules": {
+    "horizontal_scale_blocks_per_meter": 1.0,
+    "vertical_scale_blocks_per_meter": 1.0,
+    "normal_minecraft_blocks_only_through_first_L1_review": true,
+    "microblocks": {
+      "enabled": false,
+      "unlock_after": "L1_BLOCK_ACCEPTED"
+    },
+    "build_studio": {
+      "enabled_for_L0": false,
+      "enabled_for_first_mass_pass": false,
+      "unlock_when": "L0_GEO_ACCEPTED",
+      "first_use": "L1 facade/roof refinement while preserving block-only geometry"
+    },
+    "interiors_required_for_poc001": false,
+    "facade_detail_required_for_L0": false
+  },
+  "diagnostic_priority": [
+    "placement",
+    "scale",
+    "road_width",
+    "sidewalk_spacing",
+    "building_footprints",
+    "building_height",
+    "roof_massing",
+    "player_scale"
+  ]
+}

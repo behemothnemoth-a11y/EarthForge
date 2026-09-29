@@ -1,0 +1,16 @@
+{
+  "source_id": "google_maps_streetview_redfield_poc001",
+  "provider": "Google Maps / Street View",
+  "source_type": "visual_verification_plan",
+  "url": "https://www.google.com/maps/search/?api=1&query=626+N+Main+St+Redfield+SD+57469",
+  "external_id": null,
+  "acquired_at": null,
+  "coverage": "Redfield POC 001, Main Street 600 block",
+  "license_note": "Do not commit raw imagery by default. Store panorama IDs/URLs/notes and keep captures local unless permitted.",
+  "redistributable": false,
+  "local_private_path": "projects/redfield_sd/references/private/google/",
+  "notes": [
+    "Use for curb/sidewalk/building placement verification and later facade reference.",
+    "Street View appearance evidence does not override structured footprint geometry without documented reason."
+  ]
+}

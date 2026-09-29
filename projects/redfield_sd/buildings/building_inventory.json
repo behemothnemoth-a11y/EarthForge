@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "inventory_id": "REDFIELD_POC_001_MAIN_600",
+  "status": "address_inventory_only",
+  "source_manifest_id": "redfield_21_feet_main_2026",
+  "buildings": [
+    {
+      "inventory_key": "MAIN_602",
+      "address_number": "602",
+      "street": "Main Street",
+      "reference_name": "Leo's Good Food",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_603",
+      "address_number": "603",
+      "street": "Main Street",
+      "reference_name": "New York Life",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_604",
+      "address_number": "604",
+      "street": "Main Street",
+      "reference_name": "Wildroots",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_605",
+      "address_number": "605",
+      "street": "Main Street",
+      "reference_name": "Mike's Furniture and Mattress Store",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_609",
+      "address_number": "609",
+      "street": "Main Street",
+      "reference_name": "The Bread Box",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_610",
+      "address_number": "610",
+      "street": "Main Street",
+      "reference_name": "Studio Aura",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_611",
+      "address_number": "611",
+      "street": "Main Street",
+      "reference_name": "Yada Trucking",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_612",
+      "address_number": "612",
+      "street": "Main Street",
+      "reference_name": "American Legion",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_613",
+      "address_number": "613",
+      "street": "Main Street",
+      "reference_name": "State Farm Insurance",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_614",
+      "address_number": "614",
+      "street": "Main Street",
+      "reference_name": "Terry's Steakhouse - dining room",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_615",
+      "address_number": "615",
+      "street": "Main Street",
+      "reference_name": "Redfield Chiropractic PC",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_616",
+      "address_number": "616",
+      "street": "Main Street",
+      "reference_name": "Terry's Steakhouse",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_617_619",
+      "address_number": "617-619",
+      "street": "Main Street",
+      "reference_name": "Bob's Floor Covering",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_620",
+      "address_number": "620",
+      "street": "Main Street",
+      "reference_name": "Main Street Plaza",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_621",
+      "address_number": "621",
+      "street": "Main Street",
+      "reference_name": "Carpets Plus",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_622",
+      "address_number": "622",
+      "street": "Main Street",
+      "reference_name": "Old Simply Charming",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_623",
+      "address_number": "623",
+      "street": "Main Street",
+      "reference_name": "Simply Charming",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_624",
+      "address_number": "624",
+      "street": "Main Street",
+      "reference_name": "Alley Cuts",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_625",
+      "address_number": "625",
+      "street": "Main Street",
+      "reference_name": "Sydney Olivia Photography",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_626",
+      "address_number": "626",
+      "street": "Main Street",
+      "reference_name": "City Hall",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    },
+    {
+      "inventory_key": "MAIN_627",
+      "address_number": "627",
+      "street": "Main Street",
+      "reference_name": "Youth Center",
+      "geometry_status": "unmatched",
+      "l0_status": "pending",
+      "l1_status": "pending",
+      "l2_status": "locked",
+      "microblocks_allowed": false
+    }
+  ],
+  "notes": [
+    "Inventory reflects the City tourism Main Street archive and is not yet a footprint-to-address match.",
+    "Some historical/current business names may change; building identity and address are more important than tenant branding."
+  ]
+}

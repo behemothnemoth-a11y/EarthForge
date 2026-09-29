@@ -1,5 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project_id": "redfield_sd",
-  "control_points": []
+  "control_points": [
+    {
+      "control_point_id": "RFD_CP_CITY_HALL_001",
+      "label": "Redfield City Hall / Chamber address control point",
+      "address": "626 N Main St, Redfield, SD 57469",
+      "latitude": 44.8762273,
+      "longitude": -98.5185512,
+      "elevation_m": null,
+      "status": "provisional",
+      "quality": "published business geocode; verify against map geometry before final anchor lock",
+      "source_manifest_id": "redfield_city_hall_control_2026"
+    }
+  ]
 }

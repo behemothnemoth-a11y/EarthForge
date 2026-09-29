@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "export_family": "REDFIELD_POC_001",
+  "registration": {
+    "marker_block": "minecraft:yellow_concrete",
+    "purpose": "stand-on revision registration block",
+    "placement_reference": "player_feet",
+    "schematic_origin": [
+      0,
+      0,
+      0
+    ],
+    "marker_offset_from_origin": [
+      0,
+      -1,
+      0
+    ],
+    "marker_is_real_world_geometry": false,
+    "rotation": "fixed",
+    "mirror": "none",
+    "must_persist_across_revisions": true
+  }
+}

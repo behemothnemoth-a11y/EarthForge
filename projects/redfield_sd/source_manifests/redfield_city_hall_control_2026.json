@@ -1,0 +1,17 @@
+{
+  "source_id": "redfield_city_hall_control_2026",
+  "provider": "City of Redfield + published business geocode",
+  "source_type": "control_point",
+  "url": "https://www.city.redfield-sd.com/city-resources/maps-and-data",
+  "external_id": "626 N Main St",
+  "acquired_at": "2026-09-29",
+  "coverage": "Redfield City Hall",
+  "license_note": null,
+  "redistributable": true,
+  "local_private_path": null,
+  "notes": [
+    "Official City source confirms City Hall address: 626 Main Street, Redfield, SD 57469.",
+    "Initial published geocode used for provisional control point: 44.8762273, -98.5185512.",
+    "Must be visually/structurally verified before becoming the final EarthForge anchor."
+  ]
+}
