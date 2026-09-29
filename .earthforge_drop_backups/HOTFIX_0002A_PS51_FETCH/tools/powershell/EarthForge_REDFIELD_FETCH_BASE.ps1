@@ -16,16 +16,12 @@ function Resolve-Repo([string]$Requested) {
 
 function Find-Python {
     $py = Get-Command py -ErrorAction SilentlyContinue
-    if ($null -ne $py) {
-        return "py"
-    }
+    if ($null -ne $py) { return "py" }
 
     $python = Get-Command python -ErrorAction SilentlyContinue
-    if ($null -ne $python) {
-        return "python"
-    }
+    if ($null -ne $python) { return "python" }
 
-    throw "Python was not found. Install Python or make py/python available in PATH."
+    throw "Python was not found. Install Python or make 'py'/'python' available in PATH."
 }
 
 $RepoRoot = Resolve-Repo $RepoRoot
@@ -62,7 +58,7 @@ out body geom;
 "@
 
 Write-Host ""
-Write-Host "EarthForge - Redfield POC 001 base acquisition" -ForegroundColor Cyan
+Write-Host "EarthForge — Redfield POC 001 base acquisition" -ForegroundColor Cyan
 Write-Host "BBox: $south,$west,$north,$east"
 Write-Host "Raw : $rawPath"
 Write-Host ""
@@ -79,8 +75,7 @@ $lastError = $null
 
 foreach ($endpoint in $endpoints) {
     try {
-        Write-Host "Requesting base geometry from $endpoint"
-
+        Write-Host "Requesting base geometry..."
         $response = Invoke-WebRequest `
             -Uri $endpoint `
             -Method Post `
@@ -89,20 +84,16 @@ foreach ($endpoint in $endpoints) {
             -UseBasicParsing `
             -TimeoutSec 120
 
-        $utf8NoBom = New-Object System.Text.UTF8Encoding -ArgumentList $false
         [System.IO.File]::WriteAllText(
             $rawPath,
             [string]$response.Content,
-            $utf8NoBom
+            [System.Text.UTF8Encoding]::new($false)
         )
-
         $downloaded = $true
         break
-    }
-    catch {
-        $lastError = $_.Exception.Message
+    } catch {
+        $lastError = $_
         Write-Host "Endpoint failed; trying fallback." -ForegroundColor Yellow
-        Write-Host "  $lastError" -ForegroundColor DarkYellow
     }
 }
 
@@ -113,16 +104,10 @@ if (-not $downloaded) {
 $python = Find-Python
 $normalizer = Join-Path $RepoRoot "pipeline\acquire\normalize_osm_poc001.py"
 
-if (-not (Test-Path $normalizer)) {
-    throw "Normalizer not found: $normalizer"
-}
-
 Write-Host "Normalizing review geometry..."
-
 if ($python -eq "py") {
     & py $normalizer
-}
-else {
+} else {
     & python $normalizer
 }
 
@@ -134,11 +119,9 @@ Write-Host ""
 Write-Host "Base geometry acquired." -ForegroundColor Green
 Write-Host "IMPORTANT: these GeoJSON files are REVIEW geometry, not build-ready truth."
 Write-Host ""
-
 Push-Location $RepoRoot
 try {
     & git status --short
-}
-finally {
+} finally {
     Pop-Location
 }
