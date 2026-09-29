@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_MASSING_V002",
+  "classification_rule": "primary_frontage when minimum |X| <= 25.0 m",
+  "primary_count": 20,
+  "secondary_count": 3,
+  "buildings": [
+    {
+      "osm_id": 1210548944,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 19.966,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 380,
+      "local_bounds_m": {
+        "min_x": 19.966,
+        "max_x": 49.335,
+        "min_z": -120.791,
+        "max_z": -107.334
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301419,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.58,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 480,
+      "local_bounds_m": {
+        "min_x": -46.156,
+        "max_x": -15.58,
+        "min_z": -120.736,
+        "max_z": -104.791
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301453,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.917,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 540,
+      "local_bounds_m": {
+        "min_x": 14.917,
+        "max_x": 51.796,
+        "min_z": -105.687,
+        "max_z": -89.543
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301430,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.675,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 675,
+      "local_bounds_m": {
+        "min_x": -61.144,
+        "max_x": -15.675,
+        "min_z": -104.913,
+        "max_z": -90.25
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301409,
+      "class": "secondary_rear",
+      "minimum_front_distance_m": 53.54,
+      "wall_height_blocks": 3,
+      "roof_y": 3,
+      "footprint_cells": 24,
+      "local_bounds_m": {
+        "min_x": 53.54,
+        "max_x": 59.961,
+        "min_z": -104.503,
+        "max_z": -100.335
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301428,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.722,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 168,
+      "local_bounds_m": {
+        "min_x": -37.25,
+        "max_x": -15.722,
+        "min_z": -90.328,
+        "max_z": -82.411
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301425,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.917,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 296,
+      "local_bounds_m": {
+        "min_x": 14.917,
+        "max_x": 51.575,
+        "min_z": -89.819,
+        "max_z": -82.013
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301443,
+      "class": "secondary_rear",
+      "minimum_front_distance_m": 48.357,
+      "wall_height_blocks": 3,
+      "roof_y": 3,
+      "footprint_cells": 40,
+      "local_bounds_m": {
+        "min_x": -55.883,
+        "max_x": -48.357,
+        "min_z": -87.066,
+        "max_z": -82.422
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301456,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.785,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 315,
+      "local_bounds_m": {
+        "min_x": -61.231,
+        "max_x": -15.785,
+        "min_z": -82.433,
+        "max_z": -75.157
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301442,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.949,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 315,
+      "local_bounds_m": {
+        "min_x": 14.949,
+        "max_x": 60.348,
+        "min_z": -82.145,
+        "max_z": -74.892
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301407,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.777,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 195,
+      "local_bounds_m": {
+        "min_x": -45.414,
+        "max_x": -15.777,
+        "min_z": -75.168,
+        "max_z": -67.24
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301414,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.862,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 280,
+      "local_bounds_m": {
+        "min_x": 14.862,
+        "max_x": 49.651,
+        "min_z": -75.024,
+        "max_z": -67.273
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301429,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.777,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 259,
+      "local_bounds_m": {
+        "min_x": -51.386,
+        "max_x": -15.777,
+        "min_z": -67.373,
+        "max_z": -59.445
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301444,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.846,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 259,
+      "local_bounds_m": {
+        "min_x": 14.846,
+        "max_x": 52.498,
+        "min_z": -67.329,
+        "max_z": -59.876
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301431,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.807,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 486,
+      "local_bounds_m": {
+        "min_x": 14.807,
+        "max_x": 52.506,
+        "min_z": -59.931,
+        "max_z": -47.016
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301418,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.801,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 613,
+      "local_bounds_m": {
+        "min_x": -58.115,
+        "max_x": -15.801,
+        "min_z": -59.61,
+        "max_z": -44.55
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301413,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.791,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 576,
+      "local_bounds_m": {
+        "min_x": 14.791,
+        "max_x": 63.329,
+        "min_z": -47.071,
+        "max_z": -35.074
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301454,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.761,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 240,
+      "local_bounds_m": {
+        "min_x": -46.077,
+        "max_x": -15.761,
+        "min_z": -44.661,
+        "max_z": -36.777
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1393414144,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.761,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 224,
+      "local_bounds_m": {
+        "min_x": -48.199,
+        "max_x": -15.761,
+        "min_z": -37.031,
+        "max_z": -29.601
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301435,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.767,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 157,
+      "local_bounds_m": {
+        "min_x": 14.767,
+        "max_x": 42.843,
+        "min_z": -35.118,
+        "max_z": -28.561
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301437,
+      "class": "secondary_rear",
+      "minimum_front_distance_m": 47.552,
+      "wall_height_blocks": 3,
+      "roof_y": 3,
+      "footprint_cells": 48,
+      "local_bounds_m": {
+        "min_x": 47.552,
+        "max_x": 55.748,
+        "min_z": -35.096,
+        "max_z": -28.517
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1393414143,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 14.76,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 360,
+      "local_bounds_m": {
+        "min_x": 14.76,
+        "max_x": 39.261,
+        "min_z": -28.583,
+        "max_z": -13.943
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    },
+    {
+      "osm_id": 1474301421,
+      "class": "primary_frontage",
+      "minimum_front_distance_m": 15.895,
+      "wall_height_blocks": 5,
+      "roof_y": 5,
+      "footprint_cells": 192,
+      "local_bounds_m": {
+        "min_x": -31.199,
+        "max_x": -15.895,
+        "min_z": -28.097,
+        "max_z": -14.12
+      },
+      "address": null,
+      "address_match_status": "deferred"
+    }
+  ]
+}

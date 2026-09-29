@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_MASSING_V002",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/massing/Redfield_POC_001_Massing_v002.litematic",
+  "sha256": "43610861da1c4605d8aeb17eb43718f1a7290724a202f5d818ff6aa763c5430d",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    7,
+    157
+  ],
+  "volume": 179137,
+  "non_air_blocks": 61651,
+  "palette": [
+    "minecraft:air",
+    "minecraft:black_concrete",
+    "minecraft:bricks",
+    "minecraft:gray_concrete",
+    "minecraft:polished_andesite",
+    "minecraft:polished_deepslate",
+    "minecraft:red_concrete",
+    "minecraft:smooth_stone",
+    "minecraft:stone_bricks",
+    "minecraft:white_concrete",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 4,
+  "ground_review": {
+    "main_street_paved_half_width_m": 10.0,
+    "main_street_paved_width_m": 20.0,
+    "sidewalk_source_half_width_m": 4.5
+  },
+  "massing": {
+    "primary_frontage_buildings": 20,
+    "secondary_rear_buildings": 3,
+    "primary_wall_height_blocks": 5,
+    "secondary_wall_height_blocks": 3,
+    "individual_story_counts_claimed": false
+  },
+  "registration": {
+    "marker_position": [
+      0,
+      -1,
+      0
+    ],
+    "marker_block": "minecraft:yellow_concrete",
+    "verified": true
+  },
+  "checks": {
+    "exact_block_map": true,
+    "registration_marker": true,
+    "same_horizontal_frame_as_v001": true,
+    "microblocks_used": false
+  },
+  "errors": []
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_MASSING_V002",
+  "file": "projects/redfield_sd/outputs/massing/Redfield_POC_001_Massing_v002.litematic",
+  "sha256": "43610861da1c4605d8aeb17eb43718f1a7290724a202f5d818ff6aa763c5430d",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    7,
+    157
+  ],
+  "placement": {
+    "instruction": "Stand on the existing yellow registration block from v001 and set the v002 placement origin to the player-feet block.",
+    "rotation": 0,
+    "mirror": "none",
+    "marker_relative_to_origin": [
+      0,
+      -1,
+      0
+    ],
+    "replace_blocks": "ALL"
+  },
+  "diagnostic_only": true
+}
