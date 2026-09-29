@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_TRUTH_V005",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/l1_truth/Redfield_POC_001_L1_Truth_v005.litematic",
+  "sha256": "98585c358597dc61795d02174077c23f56d1aae6884d29519409d8595d47b33f",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    17,
+    157
+  ],
+  "non_air_blocks": 38211,
+  "palette_size": 45,
+  "stateful_palette_entries": 19,
+  "primary_sites": 20,
+  "secondary_structures": 3,
+  "visual_confidence_counts": {
+    "photo_supported": 4,
+    "history_supported": 8,
+    "inferred": 8
+  },
+  "roof_equipment_items": 64,
+  "checks": {
+    "truth_spec_covers_geometry": true,
+    "exact_block_map": true,
+    "registration_marker": true,
+    "microblocks_used": false,
+    "building_specific_programs": true,
+    "rear_service_architecture": true
+  },
+  "registration": {
+    "marker_position": [
+      0,
+      -1,
+      0
+    ],
+    "marker_block": "minecraft:yellow_concrete",
+    "verified": true
+  },
+  "errors": []
+}

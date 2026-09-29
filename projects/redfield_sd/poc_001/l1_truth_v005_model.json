@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_TRUTH_V005",
+  "entries": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 360,
+      "parapet_style": "low_modern",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "height": 7,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 157,
+      "parapet_style": "stepped_center",
+      "roof_program": [
+        {
+          "type": "skylight",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 576,
+      "parapet_style": "historic_crest",
+      "roof_program": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 4,
+        "canopy": false
+      }
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "height": 7,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 486,
+      "parapet_style": "flat_piers",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 2,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse dining room",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 259,
+      "parapet_style": "restaurant_low",
+      "roof_program": [
+        {
+          "type": "vent",
+          "count": 3
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 1,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "height": 7,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 280,
+      "parapet_style": "stepped_center",
+      "roof_program": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Plaza",
+      "height": 9,
+      "storeys": 2,
+      "visual_confidence": "inferred",
+      "footprint_cells": 315,
+      "parapet_style": "office_flat",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 3
+        },
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 4,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming site",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 296,
+      "parapet_style": "boutique_low",
+      "roof_program": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      }
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 540,
+      "parapet_style": "low_modern",
+      "roof_program": [
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 1,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "height": 11,
+      "storeys": 2,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 380,
+      "parapet_style": "bank_civic",
+      "roof_program": [
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 192,
+      "parapet_style": "modern_low",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      }
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 224,
+      "parapet_style": "wide_low",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 2,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 240,
+      "parapet_style": "flat_piers",
+      "roof_program": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "chimney",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      }
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty site",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "history_supported",
+      "footprint_cells": 613,
+      "parapet_style": "midcentury_band",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "height": 5,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 259,
+      "parapet_style": "modern_low",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      }
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 195,
+      "parapet_style": "flat_piers",
+      "roof_program": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "height": 6,
+      "storeys": 1,
+      "visual_confidence": "inferred",
+      "footprint_cells": 315,
+      "parapet_style": "wide_low",
+      "roof_program": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 168,
+      "parapet_style": "north_historic",
+      "roof_program": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "access",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "height": 10,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 675,
+      "parapet_style": "north_historic",
+      "roof_program": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear_program": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic site",
+      "height": 11,
+      "storeys": 2,
+      "visual_confidence": "photo_supported",
+      "footprint_cells": 480,
+      "parapet_style": "paired_crest",
+      "roof_program": [
+        {
+          "type": "chimney",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "access",
+          "count": 1
+        }
+      ],
+      "rear_program": {
+        "doors": 2,
+        "windows": 4,
+        "canopy": true
+      }
+    },
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "profile": "rear_addition",
+      "height": 4,
+      "visual_confidence": "inferred",
+      "footprint_cells": 48
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "profile": "rear_addition",
+      "height": 5,
+      "visual_confidence": "inferred",
+      "footprint_cells": 40
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "profile": "rear_addition",
+      "height": 4,
+      "visual_confidence": "inferred",
+      "footprint_cells": 24
+    }
+  ]
+}
