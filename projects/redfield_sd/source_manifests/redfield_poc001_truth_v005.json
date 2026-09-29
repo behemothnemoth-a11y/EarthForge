@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "source_id": "redfield_poc001_truth_v005",
+  "retrieved_at": "2026-09-29",
+  "sources": [
+    {
+      "id": "redfield_downtown_2023",
+      "type": "current_streetscape_photo",
+      "url": "https://ecdev.redfield-sd.com/media/userfiles/subsite_47/images/Banners/downtown-2023-1.jpg",
+      "supports": [
+        "621",
+        "623",
+        "625",
+        "downtown streetlights",
+        "planters",
+        "angled parking"
+      ],
+      "notes": [
+        "Photo shows Carpets Plus at the left of the historic group, a pale-green neighboring storefront, and the Dakota Tan/Hair storefront.",
+        "Upper facades show red brick, strong historic cornices and differentiated window rhythms."
+      ]
+    },
+    {
+      "id": "redfield_main_archive",
+      "type": "city_site_archive",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/?cat=main",
+      "supports": [
+        "address sequence",
+        "site history",
+        "present-day-photo discovery"
+      ]
+    },
+    {
+      "id": "leos_current_pages",
+      "type": "current_business_exterior_reference",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g54778-d2266317-Reviews-Leo_s_Good_Food-Redfield_South_Dakota.html",
+      "supports": [
+        "602"
+      ],
+      "notes": [
+        "Traveler photo identifies Leo's on the downtown corner."
+      ]
+    },
+    {
+      "id": "leos_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2447/602-main-street-leos-good-food?cat=main&featured=1&sort=name",
+      "supports": [
+        "602"
+      ],
+      "notes": [
+        "Second story removed in 1958; supports the current low mass."
+      ]
+    },
+    {
+      "id": "studio_aura_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2626/610-main-street-studio-aura",
+      "supports": [
+        "610"
+      ],
+      "notes": [
+        "Present building erected in 1906 and historically had upstairs uses."
+      ]
+    },
+    {
+      "id": "mikes_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2625/605-main-street-mikes-furniture-and-mattress-store",
+      "supports": [
+        "605"
+      ],
+      "notes": [
+        "Upper stories removed after the 1962 fire."
+      ]
+    },
+    {
+      "id": "lutter_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2627/611-main-street-lutter-realty",
+      "supports": [
+        "611"
+      ],
+      "notes": [
+        "Earlier building burned in 1962; rebuilt in the mid-1960s."
+      ]
+    },
+    {
+      "id": "hair_company_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2643/625-main-street-hair-%26-company",
+      "supports": [
+        "625"
+      ],
+      "notes": [
+        "Present building erected in 1906; current listing Hair & Company."
+      ]
+    },
+    {
+      "id": "city_hall_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2644/626-main-street-city-hall?featured=1&sort=category",
+      "supports": [
+        "626"
+      ],
+      "notes": [
+        "Merchants Bank building erected in 1915; City Hall since around 1980."
+      ]
+    },
+    {
+      "id": "youth_center_history",
+      "type": "city_site_history",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/p/item/2646/627-main-street-youth-center?featured=1&sort=category",
+      "supports": [
+        "627"
+      ],
+      "notes": [
+        "Brick building erected in 1906; site listed vacant in 2024."
+      ]
+    }
+  ]
+}

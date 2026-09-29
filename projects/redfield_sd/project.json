@@ -1,8 +1,8 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l1_visual",
+  "status": "poc_001_l1_truth",
   "milestone": "REDFIELD_POC_001",
   "test_area": {
     "label": "Downtown 600 Block Main Street",
@@ -37,11 +37,12 @@
     }
   },
   "quality_gates": {
-    "current_target": "L1_BLOCK_VISUAL",
+    "current_target": "L1_BLOCK_TRUTH",
     "levels": [
       "L0_GEO",
       "L1_BLOCK_ALPHA",
       "L1_BLOCK_VISUAL",
+      "L1_BLOCK_TRUTH",
       "L1_BLOCK",
       "L2_DETAIL"
     ],
@@ -66,15 +67,15 @@
     "mirror": "none",
     "preserve_across_revisions": true
   },
-  "visual_reconstruction": {
-    "status": "partial_photo_supported",
-    "spec": "projects/redfield_sd/poc_001/visual_v004.json",
-    "source_manifest": "projects/redfield_sd/source_manifests/redfield_poc001_visual_v004.json"
+  "truth_reconstruction": {
+    "spec": "projects/redfield_sd/poc_001/truth_v005.json",
+    "source_manifest": "projects/redfield_sd/source_manifests/redfield_poc001_truth_v005.json",
+    "review_source": "projects/redfield_sd/poc_001/review_v004.json"
   },
   "notes": [
-    "v004 adds stateful normal-block architectural details and streetscape.",
+    "v005 is the first building-specific truth pass.",
     "Microblocks remain disabled.",
-    "Not every facade is current-photo verified yet.",
+    "Photo/history confidence is tracked per facade.",
     "Yellow registration origin remains invariant."
   ]
 }

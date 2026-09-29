@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "export_id": "REDFIELD_POC_001_L1_TRUTH_V005",
+  "stage": "L1_BLOCK_TRUTH",
+  "roads": {
+    "main_half_width_m": 9.0,
+    "avenue_half_width_m": 6.0,
+    "alley_half_width_m": 1.75,
+    "sidewalk_half_width_m": 3.0,
+    "crossing_half_width_m": 1.25
+  },
+  "parking": {
+    "enabled": true,
+    "stall_spacing_z": 9,
+    "stall_line_length": 4
+  },
+  "streetscape": {
+    "lamp_positions": [
+      [
+        -12,
+        -25
+      ],
+      [
+        12,
+        -39
+      ],
+      [
+        -12,
+        -58
+      ],
+      [
+        12,
+        -77
+      ],
+      [
+        -12,
+        -96
+      ],
+      [
+        12,
+        -115
+      ]
+    ],
+    "bench_positions": [
+      [
+        -13,
+        -47
+      ],
+      [
+        13,
+        -88
+      ]
+    ],
+    "planter_positions": [
+      [
+        -13,
+        -31
+      ],
+      [
+        13,
+        -66
+      ],
+      [
+        -13,
+        -104
+      ],
+      [
+        13,
+        -117
+      ]
+    ]
+  },
+  "registration": {
+    "marker_block": "minecraft:yellow_concrete",
+    "marker_schematic": [
+      0,
+      -1,
+      0
+    ],
+    "preserve_across_revisions": true
+  },
+  "constraints": {
+    "microblocks": false,
+    "interiors": false,
+    "text_signs": false,
+    "survey_grade": false
+  }
+}

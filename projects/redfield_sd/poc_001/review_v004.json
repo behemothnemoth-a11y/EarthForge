@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "review_id": "REDFIELD_POC_001_V004_MINECRAFT_REVIEW",
+  "source": "User Minecraft walkaround video, 2026-09-29",
+  "observations": [
+    "Street scale reads well enough to preserve the v004 horizontal frame.",
+    "Facade variation improved, but many buildings still share the same window/sign-band grammar.",
+    "Roofscape is too uniform and dominated by broad polished-deepslate rectangles.",
+    "City Hall is not distinctive enough relative to neighboring storefronts.",
+    "Historic north-end buildings need stronger upper-window/cornice identity.",
+    "Rear and alley elevations are too generic.",
+    "Street furniture is useful but should be less evenly procedural."
+  ],
+  "v005_actions": [
+    "Explicit facade programs per primary footprint.",
+    "Building-specific parapet and roof-equipment programs.",
+    "Split 625/627 facade and roofline.",
+    "Dedicated City Hall bank/civic program.",
+    "Rear service architecture.",
+    "Diagonal parking and less-uniform streetscape."
+  ]
+}

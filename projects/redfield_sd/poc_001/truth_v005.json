@@ -1,0 +1,1261 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "export_id": "REDFIELD_POC_001_L1_TRUTH_V005",
+  "status": "building_specific_truth_pass",
+  "entries": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "side": "east",
+      "visual_confidence": "photo_supported",
+      "height": 5,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:light_gray_concrete",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:black_concrete",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:red_terracotta"
+      },
+      "front": {
+        "bays": 5,
+        "door_fracs": [
+          0.66
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.02,
+              0.62
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "low_modern",
+          "material": "minecraft:black_concrete",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      },
+      "exposed_side": "south",
+      "note": "Low corner mass preserved; broad glazing and contrasting accent bay."
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "side": "east",
+      "visual_confidence": "history_supported",
+      "height": 7,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 7,
+        "door_fracs": [
+          0.25,
+          0.75
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:dark_oak_slab",
+          "ranges": [
+            [
+              0.02,
+              0.46
+            ],
+            [
+              0.54,
+              0.98
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "stepped_center",
+          "material": "minecraft:smooth_sandstone",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "skylight",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Wide merged-site facade given multiple entry/shop bays."
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "side": "east",
+      "visual_confidence": "history_supported",
+      "height": 10,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.5
+        ],
+        "upper_windows": 4,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.08,
+              0.92
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "historic_crest",
+          "material": "minecraft:bricks",
+          "extra": 3
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 4,
+        "canopy": false
+      },
+      "exposed_side": null,
+      "note": "1906 historic two-story treatment with regular upper bays."
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "side": "east",
+      "visual_confidence": "history_supported",
+      "height": 7,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:white_concrete",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 5,
+        "door_fracs": [
+          0.5
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.18,
+              0.82
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "flat_piers",
+          "material": "minecraft:white_concrete",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 2,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "More civic/clubhouse than retail; reduced storefront glazing."
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse dining room",
+      "side": "east",
+      "visual_confidence": "inferred",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:deepslate_bricks",
+        "trim": "minecraft:dark_oak_planks",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.78
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:dark_oak_slab",
+          "ranges": [
+            [
+              0.05,
+              0.95
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "restaurant_low",
+          "material": "minecraft:dark_oak_planks",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "vent",
+          "count": 3
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 1,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Paired material language with 616 but separate doorway rhythm."
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "side": "east",
+      "visual_confidence": "inferred",
+      "height": 7,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:deepslate_bricks",
+        "trim": "minecraft:dark_oak_planks",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 5,
+        "door_fracs": [
+          0.32
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:dark_oak_slab",
+          "ranges": [
+            [
+              0.04,
+              0.96
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "stepped_center",
+          "material": "minecraft:dark_oak_planks",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Main restaurant gets taller parapet and stronger roof-service profile."
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Plaza",
+      "side": "east",
+      "visual_confidence": "inferred",
+      "height": 9,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:stone_bricks",
+        "base": "minecraft:polished_andesite",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:light_blue_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:stone_bricks"
+      },
+      "front": {
+        "bays": 6,
+        "door_fracs": [
+          0.22,
+          0.78
+        ],
+        "upper_windows": 6,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.04,
+              0.46
+            ],
+            [
+              0.54,
+              0.96
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "office_flat",
+          "material": "minecraft:light_gray_concrete",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 3
+        },
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 4,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Office facade gets repeated upper bays and multiple entries."
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming site",
+      "side": "east",
+      "visual_confidence": "inferred",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:calcite",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:calcite"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.52
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.08,
+              0.92
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "boutique_low",
+          "material": "minecraft:calcite",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "side": "east",
+      "visual_confidence": "history_supported",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:black_concrete",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.35
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:polished_blackstone_slab",
+          "ranges": [
+            [
+              0.03,
+              0.97
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "low_modern",
+          "material": "minecraft:black_concrete",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 1,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "side": "east",
+      "visual_confidence": "history_supported",
+      "height": 11,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:light_blue_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 5,
+        "door_fracs": [
+          0.5
+        ],
+        "upper_windows": 5,
+        "awning": {
+          "material": null,
+          "ranges": [],
+          "y": 0
+        },
+        "parapet": {
+          "style": "bank_civic",
+          "material": "minecraft:smooth_sandstone",
+          "extra": 4
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "access",
+          "count": 1
+        },
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": "north",
+      "note": "1915 bank origin drives formal symmetrical civic treatment."
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "side": "west",
+      "visual_confidence": "history_supported",
+      "height": 5,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:light_gray_concrete",
+        "base": "minecraft:polished_andesite",
+        "trim": "minecraft:white_concrete",
+        "glass": "minecraft:light_blue_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:light_gray_concrete"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.35
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.12,
+              0.88
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "modern_low",
+          "material": "minecraft:blue_concrete",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      },
+      "exposed_side": "south",
+      "note": ""
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "side": "west",
+      "visual_confidence": "history_supported",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 6,
+        "door_fracs": [
+          0.22,
+          0.78
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.03,
+              0.97
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "wide_low",
+          "material": "minecraft:bricks",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 2,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Current low mass reflects 1962 upper-story removal."
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "side": "west",
+      "visual_confidence": "inferred",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.5
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:oak_slab",
+          "ranges": [
+            [
+              0.08,
+              0.92
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "flat_piers",
+          "material": "minecraft:smooth_sandstone",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "chimney",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty site",
+      "side": "west",
+      "visual_confidence": "history_supported",
+      "height": 5,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:light_gray_concrete",
+        "base": "minecraft:polished_andesite",
+        "trim": "minecraft:white_concrete",
+        "glass": "minecraft:light_blue_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:light_gray_concrete"
+      },
+      "front": {
+        "bays": 5,
+        "door_fracs": [
+          0.68
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": null,
+          "ranges": [],
+          "y": 0
+        },
+        "parapet": {
+          "style": "midcentury_band",
+          "material": "minecraft:blue_terracotta",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "Mid-1960s rebuild drives low horizontal facade."
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "side": "west",
+      "visual_confidence": "inferred",
+      "height": 5,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:white_concrete",
+        "base": "minecraft:light_gray_concrete",
+        "trim": "minecraft:red_concrete",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:white_concrete"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.55
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.12,
+              0.88
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "modern_low",
+          "material": "minecraft:red_concrete",
+          "extra": 1
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": false
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "side": "west",
+      "visual_confidence": "inferred",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:stone_bricks",
+        "base": "minecraft:polished_andesite",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:light_blue_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:stone_bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.4
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.05,
+              0.95
+            ]
+          ],
+          "y": 3
+        },
+        "parapet": {
+          "style": "flat_piers",
+          "material": "minecraft:smooth_stone",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "hvac",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 2,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "side": "west",
+      "visual_confidence": "inferred",
+      "height": 6,
+      "storeys": 1,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_stone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 7,
+        "door_fracs": [
+          0.24,
+          0.76
+        ],
+        "upper_windows": 0,
+        "awning": {
+          "material": "minecraft:smooth_stone_slab",
+          "ranges": [
+            [
+              0.02,
+              0.48
+            ],
+            [
+              0.52,
+              0.98
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "wide_low",
+          "material": "minecraft:bricks",
+          "extra": 2
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "hvac",
+          "count": 2
+        },
+        {
+          "type": "skylight",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": ""
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "side": "west",
+      "visual_confidence": "photo_supported",
+      "height": 10,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:dark_prismarine",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.32
+        ],
+        "upper_windows": 4,
+        "awning": {
+          "material": "minecraft:dark_prismarine_slab",
+          "ranges": [
+            [
+              0.04,
+              0.96
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "north_historic",
+          "material": "minecraft:bricks",
+          "extra": 3
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 1
+        },
+        {
+          "type": "access",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "2023 downtown photo supports dark/green lower treatment and taller historic brick frontage."
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "side": "west",
+      "visual_confidence": "photo_supported",
+      "height": 10,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:lime_terracotta",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 4,
+        "door_fracs": [
+          0.52
+        ],
+        "upper_windows": 4,
+        "awning": {
+          "material": "minecraft:dark_prismarine_slab",
+          "ranges": [
+            [
+              0.04,
+              0.96
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "north_historic",
+          "material": "minecraft:bricks",
+          "extra": 3
+        },
+        "subfacades": []
+      },
+      "roof": [
+        {
+          "type": "chimney",
+          "count": 1
+        },
+        {
+          "type": "vent",
+          "count": 2
+        }
+      ],
+      "rear": {
+        "doors": 1,
+        "windows": 3,
+        "canopy": true
+      },
+      "exposed_side": null,
+      "note": "2023 photo supports pale-green lower storefront within a taller brick historic frontage."
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic site",
+      "side": "west",
+      "visual_confidence": "photo_supported",
+      "height": 11,
+      "storeys": 2,
+      "materials": {
+        "wall": "minecraft:bricks",
+        "base": "minecraft:stone_bricks",
+        "trim": "minecraft:smooth_sandstone",
+        "glass": "minecraft:black_stained_glass",
+        "door": "minecraft:dark_oak_door",
+        "secondary": "minecraft:bricks"
+      },
+      "front": {
+        "bays": 7,
+        "door_fracs": [
+          0.24,
+          0.74
+        ],
+        "upper_windows": 6,
+        "awning": {
+          "material": "minecraft:dark_oak_slab",
+          "ranges": [
+            [
+              0.03,
+              0.47
+            ],
+            [
+              0.53,
+              0.97
+            ]
+          ],
+          "y": 4
+        },
+        "parapet": {
+          "style": "paired_crest",
+          "material": "minecraft:bricks",
+          "extra": 4
+        },
+        "subfacades": [
+          {
+            "range": [
+              0.0,
+              0.49
+            ],
+            "address": "627",
+            "base": "minecraft:dark_prismarine",
+            "trim": "minecraft:smooth_sandstone",
+            "awning": "minecraft:dark_prismarine_slab"
+          },
+          {
+            "range": [
+              0.51,
+              1.0
+            ],
+            "address": "625",
+            "base": "minecraft:red_terracotta",
+            "trim": "minecraft:smooth_sandstone",
+            "awning": "minecraft:dark_oak_slab"
+          }
+        ]
+      },
+      "roof": [
+        {
+          "type": "chimney",
+          "count": 2
+        },
+        {
+          "type": "vent",
+          "count": 2
+        },
+        {
+          "type": "access",
+          "count": 1
+        }
+      ],
+      "rear": {
+        "doors": 2,
+        "windows": 4,
+        "canopy": true
+      },
+      "exposed_side": "north",
+      "note": "Single OSM footprint split into 627 north segment and 625 south segment."
+    }
+  ],
+  "secondary": [
+    {
+      "osm_id": 1474301437,
+      "parent_osm_id": 1474301435,
+      "height": 4,
+      "profile": "rear_addition"
+    },
+    {
+      "osm_id": 1474301443,
+      "parent_osm_id": 1474301428,
+      "height": 5,
+      "profile": "rear_addition"
+    },
+    {
+      "osm_id": 1474301409,
+      "parent_osm_id": 1474301453,
+      "height": 4,
+      "profile": "rear_addition"
+    }
+  ]
+}
