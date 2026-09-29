@@ -1,0 +1,1104 @@
+{
+  "type": "FeatureCollection",
+  "name": "redfield_poc001_buildings_selected",
+  "earthforge_status": "POC001_SELECTED_REVIEW",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1210548944,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5182852,
+              44.8768367
+            ],
+            [
+              -98.5180992,
+              44.8768364
+            ],
+            [
+              -98.5180992,
+              44.8768466
+            ],
+            [
+              -98.5180609,
+              44.8768465
+            ],
+            [
+              -98.5180609,
+              44.8768362
+            ],
+            [
+              -98.5179133,
+              44.8768359
+            ],
+            [
+              -98.5179136,
+              44.8767249
+            ],
+            [
+              -98.5182856,
+              44.8767255
+            ],
+            [
+              -98.5182852,
+              44.8768367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1393414143,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.518041,
+              44.8760125
+            ],
+            [
+              -98.5180414,
+              44.8758803
+            ],
+            [
+              -98.5183516,
+              44.8758807
+            ],
+            [
+              -98.5183515,
+              44.8760127
+            ],
+            [
+              -98.5182459,
+              44.8760126
+            ],
+            [
+              -98.5181366,
+              44.8760126
+            ],
+            [
+              -98.518041,
+              44.8760125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1393414144,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187392,
+              44.8760219
+            ],
+            [
+              -98.5187385,
+              44.8760868
+            ],
+            [
+              -98.5191228,
+              44.8760889
+            ],
+            [
+              -98.519149,
+              44.8760891
+            ],
+            [
+              -98.5191497,
+              44.8760242
+            ],
+            [
+              -98.5187392,
+              44.8760219
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301407,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5190072,
+              44.876363
+            ],
+            [
+              -98.5187387,
+              44.8763623
+            ],
+            [
+              -98.5187388,
+              44.876434
+            ],
+            [
+              -98.5191143,
+              44.8764339
+            ],
+            [
+              -98.5191144,
+              44.8764021
+            ],
+            [
+              -98.5190459,
+              44.876402
+            ],
+            [
+              -98.5190459,
+              44.8763923
+            ],
+            [
+              -98.5190071,
+              44.8763923
+            ],
+            [
+              -98.5190072,
+              44.876363
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301409,
+        "tags": {
+          "building": "yes"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.51786,
+              44.8766988
+            ],
+            [
+              -98.5178596,
+              44.8766616
+            ],
+            [
+              -98.5177786,
+              44.8766621
+            ],
+            [
+              -98.517779,
+              44.8766993
+            ],
+            [
+              -98.51786,
+              44.8766988
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301413,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183512,
+              44.8760718
+            ],
+            [
+              -98.518351,
+              44.8761799
+            ],
+            [
+              -98.5178731,
+              44.8761794
+            ],
+            [
+              -98.5177363,
+              44.8761796
+            ],
+            [
+              -98.5177359,
+              44.8760716
+            ],
+            [
+              -98.517832,
+              44.8760714
+            ],
+            [
+              -98.5179353,
+              44.8760716
+            ],
+            [
+              -98.5179956,
+              44.8760714
+            ],
+            [
+              -98.5183512,
+              44.8760718
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301414,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183503,
+              44.8763631
+            ],
+            [
+              -98.5183492,
+              44.8764327
+            ],
+            [
+              -98.5179093,
+              44.8764315
+            ],
+            [
+              -98.5179095,
+              44.8763626
+            ],
+            [
+              -98.5183503,
+              44.8763631
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301418,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187397,
+              44.8761571
+            ],
+            [
+              -98.518739,
+              44.8762918
+            ],
+            [
+              -98.5191692,
+              44.8762928
+            ],
+            [
+              -98.5192742,
+              44.8762933
+            ],
+            [
+              -98.5192754,
+              44.8761588
+            ],
+            [
+              -98.519122,
+              44.8761581
+            ],
+            [
+              -98.5187397,
+              44.8761571
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301419,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187374,
+              44.8767019
+            ],
+            [
+              -98.5187362,
+              44.8768447
+            ],
+            [
+              -98.5191232,
+              44.8768461
+            ],
+            [
+              -98.5191238,
+              44.8767029
+            ],
+            [
+              -98.5187374,
+              44.8767019
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301421,
+        "tags": {
+          "building": "commercial"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187402,
+              44.8759932
+            ],
+            [
+              -98.5187404,
+              44.8758819
+            ],
+            [
+              -98.5189342,
+              44.8758821
+            ],
+            [
+              -98.518934,
+              44.8759907
+            ],
+            [
+              -98.5189037,
+              44.8759907
+            ],
+            [
+              -98.5189036,
+              44.8759965
+            ],
+            [
+              -98.5188863,
+              44.8759965
+            ],
+            [
+              -98.5188863,
+              44.8759924
+            ],
+            [
+              -98.5188357,
+              44.8759923
+            ],
+            [
+              -98.5188357,
+              44.8760083
+            ],
+            [
+              -98.5187704,
+              44.8760083
+            ],
+            [
+              -98.5187704,
+              44.8759932
+            ],
+            [
+              -98.5187402,
+              44.8759932
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301425,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183489,
+              44.8764971
+            ],
+            [
+              -98.5183496,
+              44.8765665
+            ],
+            [
+              -98.5178849,
+              44.876564
+            ],
+            [
+              -98.5178856,
+              44.8764959
+            ],
+            [
+              -98.5183489,
+              44.8764971
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301428,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187388,
+              44.8764996
+            ],
+            [
+              -98.518738,
+              44.8765704
+            ],
+            [
+              -98.5190109,
+              44.8765711
+            ],
+            [
+              -98.5190109,
+              44.8765621
+            ],
+            [
+              -98.5190109,
+              44.8765347
+            ],
+            [
+              -98.5190109,
+              44.8764995
+            ],
+            [
+              -98.5187388,
+              44.8764996
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301429,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5191692,
+              44.8762928
+            ],
+            [
+              -98.518739,
+              44.8762918
+            ],
+            [
+              -98.5187387,
+              44.8763623
+            ],
+            [
+              -98.5190072,
+              44.876363
+            ],
+            [
+              -98.5191694,
+              44.8763635
+            ],
+            [
+              -98.5191695,
+              44.876347
+            ],
+            [
+              -98.5191899,
+              44.876347
+            ],
+            [
+              -98.5191901,
+              44.8763134
+            ],
+            [
+              -98.5191691,
+              44.8763134
+            ],
+            [
+              -98.5191692,
+              44.8762928
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301430,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.518738,
+              44.8765704
+            ],
+            [
+              -98.5187374,
+              44.8767019
+            ],
+            [
+              -98.5191238,
+              44.8767029
+            ],
+            [
+              -98.5193136,
+              44.876703
+            ],
+            [
+              -98.5193138,
+              44.8765713
+            ],
+            [
+              -98.5190109,
+              44.8765711
+            ],
+            [
+              -98.518738,
+              44.8765704
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301431,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5178731,
+              44.8761794
+            ],
+            [
+              -98.518351,
+              44.8761799
+            ],
+            [
+              -98.5183505,
+              44.8762962
+            ],
+            [
+              -98.5178733,
+              44.8762957
+            ],
+            [
+              -98.5178731,
+              44.8761794
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301435,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183515,
+              44.8760127
+            ],
+            [
+              -98.5183512,
+              44.8760718
+            ],
+            [
+              -98.5179956,
+              44.8760714
+            ],
+            [
+              -98.5179956,
+              44.876056
+            ],
+            [
+              -98.5180116,
+              44.876056
+            ],
+            [
+              -98.5180116,
+              44.8760125
+            ],
+            [
+              -98.518041,
+              44.8760125
+            ],
+            [
+              -98.5181366,
+              44.8760126
+            ],
+            [
+              -98.5181474,
+              44.8760237
+            ],
+            [
+              -98.5182344,
+              44.876024
+            ],
+            [
+              -98.5182459,
+              44.8760126
+            ],
+            [
+              -98.5183515,
+              44.8760127
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301437,
+        "tags": {
+          "building": "yes"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5179353,
+              44.8760716
+            ],
+            [
+              -98.5179359,
+              44.8760127
+            ],
+            [
+              -98.5178326,
+              44.8760121
+            ],
+            [
+              -98.517832,
+              44.8760714
+            ],
+            [
+              -98.5179353,
+              44.8760716
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301442,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183492,
+              44.8764327
+            ],
+            [
+              -98.5183489,
+              44.8764971
+            ],
+            [
+              -98.5178856,
+              44.8764959
+            ],
+            [
+              -98.5177739,
+              44.876496
+            ],
+            [
+              -98.5177737,
+              44.8764317
+            ],
+            [
+              -98.5179093,
+              44.8764315
+            ],
+            [
+              -98.5183492,
+              44.8764327
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301443,
+        "tags": {
+          "building": "yes"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5191517,
+              44.8764997
+            ],
+            [
+              -98.5191518,
+              44.8765416
+            ],
+            [
+              -98.5192471,
+              44.8765414
+            ],
+            [
+              -98.519247,
+              44.8764996
+            ],
+            [
+              -98.5191517,
+              44.8764997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301444,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5178733,
+              44.8762957
+            ],
+            [
+              -98.5178732,
+              44.8763625
+            ],
+            [
+              -98.5179095,
+              44.8763626
+            ],
+            [
+              -98.5183503,
+              44.8763631
+            ],
+            [
+              -98.5183505,
+              44.8762962
+            ],
+            [
+              -98.5178733,
+              44.8762957
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301453,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5183496,
+              44.8765665
+            ],
+            [
+              -98.5183494,
+              44.87671
+            ],
+            [
+              -98.5182152,
+              44.8767091
+            ],
+            [
+              -98.5182153,
+              44.8766974
+            ],
+            [
+              -98.5178821,
+              44.8766953
+            ],
+            [
+              -98.5178849,
+              44.876564
+            ],
+            [
+              -98.5183496,
+              44.8765665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301454,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5191228,
+              44.8760889
+            ],
+            [
+              -98.5187385,
+              44.8760868
+            ],
+            [
+              -98.5187397,
+              44.8761571
+            ],
+            [
+              -98.519122,
+              44.8761581
+            ],
+            [
+              -98.5191228,
+              44.8760889
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 1474301456,
+        "tags": {
+          "building": "retail"
+        },
+        "earthforge_status": "unverified",
+        "earthforge_class": "building"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.5187388,
+              44.876434
+            ],
+            [
+              -98.5187388,
+              44.8764996
+            ],
+            [
+              -98.5190109,
+              44.8764995
+            ],
+            [
+              -98.5191517,
+              44.8764997
+            ],
+            [
+              -98.519247,
+              44.8764996
+            ],
+            [
+              -98.5193147,
+              44.8764997
+            ],
+            [
+              -98.5193149,
+              44.8764342
+            ],
+            [
+              -98.5191143,
+              44.8764339
+            ],
+            [
+              -98.5187388,
+              44.876434
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

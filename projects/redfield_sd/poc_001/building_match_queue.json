@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "matching_policy": "Do not infer addresses from geometry order alone.",
+  "selected_count": 23,
+  "queue": [
+    {
+      "osm_id": 1393414143,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51819466666666,
+        "lat": 44.87596856666667
+      },
+      "centroid_local_m": {
+        "x": 27.139,
+        "z": -23.703
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301435,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.5181384,
+        "lat": 44.876033254545455
+      },
+      "centroid_local_m": {
+        "x": 31.578,
+        "z": -30.856
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301437,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51788395,
+        "lat": 44.87604195
+      },
+      "centroid_local_m": {
+        "x": 51.65,
+        "z": -31.818
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "yes"
+    },
+    {
+      "osm_id": 1474301413,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.5179763,
+        "lat": 44.8761120875
+      },
+      "centroid_local_m": {
+        "x": 44.365,
+        "z": -39.573
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301431,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.518111975,
+        "lat": 44.8762378
+      },
+      "centroid_local_m": {
+        "x": 33.662,
+        "z": -53.474
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301444,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51807136,
+        "lat": 44.87633602
+      },
+      "centroid_local_m": {
+        "x": 36.866,
+        "z": -64.334
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301414,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.518129575,
+        "lat": 44.876397475000005
+      },
+      "centroid_local_m": {
+        "x": 32.274,
+        "z": -71.129
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301442,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51800676666666,
+        "lat": 44.876464150000004
+      },
+      "centroid_local_m": {
+        "x": 41.962,
+        "z": -78.502
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301425,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51811725,
+        "lat": 44.876530875
+      },
+      "centroid_local_m": {
+        "x": 33.246,
+        "z": -85.88
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301453,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51814941666667,
+        "lat": 44.876657050000006
+      },
+      "centroid_local_m": {
+        "x": 30.709,
+        "z": -99.832
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301409,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.5178193,
+        "lat": 44.876680449999995
+      },
+      "centroid_local_m": {
+        "x": 56.75,
+        "z": -102.419
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "yes"
+    },
+    {
+      "osm_id": 1210548944,
+      "side_of_main": "east",
+      "centroid_wgs84": {
+        "lon": -98.51808973749999,
+        "lat": 44.8768110875
+      },
+      "centroid_local_m": {
+        "x": 35.417,
+        "z": -116.864
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301421,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.518845075,
+        "lat": 44.875977175
+      },
+      "centroid_local_m": {
+        "x": -24.169,
+        "z": -24.655
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "commercial"
+    },
+    {
+      "osm_id": 1393414144,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51897984,
+        "lat": 44.876062180000005
+      },
+      "centroid_local_m": {
+        "x": -34.8,
+        "z": -34.055
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301454,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51893075,
+        "lat": 44.876122725
+      },
+      "centroid_local_m": {
+        "x": -30.927,
+        "z": -40.749
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301418,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51905325,
+        "lat": 44.87622531666667
+      },
+      "centroid_local_m": {
+        "x": -40.591,
+        "z": -52.093
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301429,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51906023333333,
+        "lat": 44.87633268888889
+      },
+      "centroid_local_m": {
+        "x": -41.141,
+        "z": -63.966
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301407,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.5189765375,
+        "lat": 44.8763977375
+      },
+      "centroid_local_m": {
+        "x": -34.539,
+        "z": -71.159
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301456,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.5190788875,
+        "lat": 44.876475025
+      },
+      "centroid_local_m": {
+        "x": -42.613,
+        "z": -79.705
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301443,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51919939999999,
+        "lat": 44.876520575
+      },
+      "centroid_local_m": {
+        "x": -52.12,
+        "z": -84.741
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "yes"
+    },
+    {
+      "osm_id": 1474301428,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51892006666667,
+        "lat": 44.87653956666667
+      },
+      "centroid_local_m": {
+        "x": -30.084,
+        "z": -86.841
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301430,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51903958333334,
+        "lat": 44.87663676666667
+      },
+      "centroid_local_m": {
+        "x": -39.512,
+        "z": -97.589
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    },
+    {
+      "osm_id": 1474301419,
+      "side_of_main": "west",
+      "centroid_wgs84": {
+        "lon": -98.51893015,
+        "lat": 44.8767739
+      },
+      "centroid_local_m": {
+        "x": -30.88,
+        "z": -112.752
+      },
+      "address": null,
+      "match_status": "unmatched",
+      "source_name": null,
+      "building_tag": "retail"
+    }
+  ]
+}

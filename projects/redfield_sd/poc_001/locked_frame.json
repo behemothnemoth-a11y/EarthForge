@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "status": "locked_for_l0_review",
+  "anchor": {
+    "description": "Main Street / 7th Avenue centerline intersection",
+    "wgs84": {
+      "lon": -98.5185387,
+      "lat": 44.8757542
+    },
+    "minecraft_horizontal": {
+      "x": 0,
+      "z": 0
+    }
+  },
+  "north_control": {
+    "description": "Main Street / 6th Avenue centerline intersection",
+    "wgs84": {
+      "lon": -98.5185357,
+      "lat": 44.876945
+    },
+    "local_m": {
+      "x": 0.237,
+      "z": -131.672
+    }
+  },
+  "orientation": {
+    "x_positive": "east",
+    "z_positive": "south",
+    "minecraft_north": "-Z",
+    "rotation_locked": true,
+    "mirror": "none"
+  },
+  "side_boundaries": {
+    "west_alley_osm_id": 952616760,
+    "east_alley_osm_id": 952616769,
+    "west_alley_lon_mean": -98.5194102,
+    "east_alley_lon_mean": -98.5176716875,
+    "west_local_x_m": -68.749,
+    "east_local_x_m": 68.395
+  },
+  "plan_bounds_blocks": {
+    "min_x": -81,
+    "min_z": -144,
+    "max_x": 81,
+    "max_z": 12
+  },
+  "future_litematica_registration": {
+    "player_feet_x": -78,
+    "player_feet_z": 9,
+    "marker_y_offset": -1,
+    "status": "reserved_for_future_litematica"
+  },
+  "selected_building_osm_ids": [
+    1210548944,
+    1393414143,
+    1393414144,
+    1474301407,
+    1474301409,
+    1474301413,
+    1474301414,
+    1474301418,
+    1474301419,
+    1474301421,
+    1474301425,
+    1474301428,
+    1474301429,
+    1474301430,
+    1474301431,
+    1474301435,
+    1474301437,
+    1474301442,
+    1474301443,
+    1474301444,
+    1474301453,
+    1474301454,
+    1474301456
+  ]
+}
