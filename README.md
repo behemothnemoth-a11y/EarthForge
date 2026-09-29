@@ -10,21 +10,28 @@ and Minecraft export.
 
 `projects/redfield_sd/` is the first test project.
 
-The first milestone is intentionally small:
+Current stage: **REDFIELD_POC_001 / L0 GEO**
 
-1. choose one recognizable Redfield test area,
-2. anchor real-world coordinates to Minecraft coordinates,
-3. reconstruct terrain, roads, lots, and footprints,
-4. reconstruct a small set of buildings from reference imagery,
-5. add microblock detail only where normal blocks are insufficient,
-6. export a playable Minecraft section,
-7. compare the result against the real location and iterate.
+The selected test area is the downtown Main Street block between 7th Avenue
+and 6th Avenue. Drop 0003 derives the exact working frame from imported
+geometry, converts it into EarthForge local meters / Minecraft XZ, and produces
+a diagnostic normal-block plan plus SVG preview.
+
+Run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tools\powershell\EarthForge_REDFIELD_GENERATE_L0.ps1
+```
+
+The first playable reconstruction remains normal-block-only. Astra Microblocks
+stay locked until the L1 block build is reviewed in Minecraft.
 
 ## Repository roles
 
 - **EarthForge**: world-scale orchestration and geospatial truth.
 - **Build Studio**: building/image reconstruction.
-- **Astra Microblocks**: fine geometry and detail.
+- **Astra Microblocks**: fine geometry and detail after L1 acceptance.
 - **Minecraft exporters**: world / schematic / Litematica output.
 
-See `docs/PIPELINE.md` and `docs/REDFIELD_POC.md`.
+See `docs/PIPELINE.md`, `docs/REDFIELD_POC.md`, and
+`docs/REDFIELD_L0_FRAME.md`.

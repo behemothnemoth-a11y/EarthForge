@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "milestone": "REDFIELD_POC_001",
+  "stage": "L0_GEO",
+  "frame_derivation": {
+    "south": "Main Street x 7th Avenue centerline",
+    "north": "Main Street x 6th Avenue centerline",
+    "west": "nearest qualifying north-south service alley west of Main Street",
+    "east": "nearest qualifying north-south service alley east of Main Street"
+  },
+  "minecraft_orientation": {
+    "x_positive": "east",
+    "x_negative": "west",
+    "z_positive": "south",
+    "z_negative": "north",
+    "rotation_locked": true,
+    "mirror": "none"
+  },
+  "scale": {
+    "horizontal_blocks_per_meter": 1.0
+  },
+  "diagnostic_palette": {
+    "building_footprint": "minecraft:orange_concrete",
+    "main_street": "minecraft:black_concrete",
+    "avenue": "minecraft:gray_concrete",
+    "alley": "minecraft:polished_andesite",
+    "sidewalk": "minecraft:smooth_stone",
+    "crossing": "minecraft:white_concrete",
+    "project_anchor": "minecraft:red_concrete"
+  },
+  "rules": [
+    "No Astra Microblocks.",
+    "No facade reconstruction.",
+    "No inferred address-to-footprint assignment.",
+    "Diagnostic road widths are provisional until visual/official-map validation.",
+    "Buildings override diagnostic road/sidewalk cells if source geometries overlap."
+  ]
+}

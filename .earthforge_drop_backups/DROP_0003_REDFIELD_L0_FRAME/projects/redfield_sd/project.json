@@ -1,14 +1,14 @@
 {
-  "schema_version": 3,
+  "schema_version": 2,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l0_frame",
+  "status": "poc_001_foundation",
   "milestone": "REDFIELD_POC_001",
   "test_area": {
     "label": "Downtown 600 Block Main Street",
-    "description": "Main Street between 7th Avenue and 6th Avenue, bounded by the nearest parallel service alleys",
+    "description": "Main Street approximately between 6th Avenue and 7th Avenue",
     "selection_status": "locked",
-    "capture_bounds_status": "source_window",
+    "capture_bounds_status": "provisional",
     "capture_bbox_wgs84": {
       "west": -98.52055,
       "south": 44.8748,
@@ -18,21 +18,18 @@
   },
   "coordinate_system": {
     "source_crs": "EPSG:4326",
-    "working_local": "EarthForge local tangent approximation for POC 001",
+    "working_crs": "EPSG:32614",
     "anchor": {
-      "status": "derived_by_generator",
-      "definition": "Main Street / 7th Avenue centerline intersection",
-      "output_file": "projects/redfield_sd/poc_001/locked_frame.json"
+      "status": "provisional_control_point",
+      "control_point_id": "RFD_CP_CITY_HALL_001",
+      "note": "Use as a reproducible control point until the final project anchor is selected from reviewed geometry."
     },
     "minecraft": {
       "blocks_per_meter_horizontal": 1.0,
       "blocks_per_meter_vertical": 1.0,
       "world_orientation": {
-        "status": "locked",
-        "x_positive": "east",
-        "z_positive": "south",
-        "minecraft_north": "-Z",
-        "mirror": "none"
+        "status": "not_locked",
+        "note": "Lock after first reviewed geometry import; preserve thereafter."
       }
     }
   },
@@ -62,13 +59,12 @@
     ],
     "rotation_policy": "fixed_by_project",
     "mirror": "none",
-    "preserve_across_revisions": true,
-    "local_reference": "reserved by Drop 0003 generator; translated to schematic origin during export"
+    "preserve_across_revisions": true
   },
   "notes": [
     "POC 001 starts with block-only reconstruction.",
     "Do not use Astra Microblocks before L1 block-only review.",
-    "Drop 0003 generates an L0 diagnostic block plan, not a Litematica.",
-    "Address matching remains unresolved until visual/address evidence is reviewed."
+    "Keep licensed/raw reference imagery in ignored local folders.",
+    "Provisional capture bounds are wider than the intended final build area."
   ]
 }
