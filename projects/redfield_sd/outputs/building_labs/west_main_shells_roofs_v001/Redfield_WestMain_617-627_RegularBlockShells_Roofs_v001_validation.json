@@ -1,0 +1,84 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:gray_concrete",
+    "minecraft:light_gray_concrete",
+    "minecraft:stone",
+    "minecraft:stone_bricks",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 4,
+  "region_position": [
+    -54,
+    -1,
+    -19
+  ],
+  "region_size": [
+    56,
+    15,
+    50
+  ],
+  "volume": 42000,
+  "non_air_blocks": 8271,
+  "tile_entities": 1016,
+  "sha256": "8e561e59105c95ed9feb723a08cc8ddd2f96bc6789927c5c099f432e1369bc2c",
+  "new_regular_blocks": 7009,
+  "new_material_counts": {
+    "minecraft:stone": 1927,
+    "minecraft:bricks": 2960,
+    "minecraft:gray_concrete": 784,
+    "minecraft:stone_bricks": 195,
+    "minecraft:light_gray_concrete": 1143
+  },
+  "retained_astra_hosts": 1016,
+  "new_astra_hosts": 0,
+  "roof_deck_y": 10,
+  "validation": {
+    "exact_readback": true,
+    "all_original_cells_and_air_preserved": true,
+    "all_original_host_cells_preserved": true,
+    "new_blocks_full_vanilla_only": true,
+    "continuous_roof_coverage": true,
+    "building_connected_components": 1,
+    "hollow_interior_columns": {
+      "617-619": 430,
+      "621": 487,
+      "623": 249,
+      "625-627": 420
+    },
+    "in_game_test": false
+  },
+  "footprint_fit": {
+    "osm_way_ids_used_as_combined_outline": [
+      1474301419,
+      1474301430,
+      1474301428,
+      1474301456
+    ],
+    "metres_per_block_fit": 0.9161722079989545,
+    "combined_frontage_metres_approx": 45.808610399947725,
+    "frontage_blocks": 50,
+    "mapping": "North edge -> Z=-19; south edge -> Z=31; street boundary -> X=-4. Uniform scale in plan.",
+    "source_geographic_extent": {
+      "north": 44.8768461,
+      "south": 44.8764339,
+      "east": -98.5187362
+    },
+    "source_sha256": "145f517a987c8211fc4f3daf6e39d76b70615a985cf2088a463c88721b03e630",
+    "warning": "OSM address labels from older EarthForge files are not used. Internal address/roof boundaries remain inferred.",
+    "block_depth_range": [
+      24,
+      50
+    ]
+  },
+  "source_schematic_sha256": "618471f14f3bad7fed3da9402866d96ed632020915a41ee5a0153b153de124cc",
+  "confidence": {
+    "outer_plan": "Mapped combined outline, visually checked against overhead imagery; not surveyed.",
+    "roof_shape": "Flat block decks represent low-slope roofs. Falls, drainage and roof equipment not resolved.",
+    "roof_height": "Relative deck Y=10 chosen below the existing front parapets; not measured eave elevations.",
+    "partitions": "Follow accepted facade boundaries; internal legal/structural boundaries unverified."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-09-30",
+  "purpose": "Outer footprint and roof blockout behind approved photo facades",
+  "geometry_source": "projects/redfield_sd/buildings/poc001_buildings_selected.geojson",
+  "osm_credit": "OpenStreetMap contributors; ODbL",
+  "osm_ways": [
+    "https://www.openstreetmap.org/way/1474301419",
+    "https://www.openstreetmap.org/way/1474301430",
+    "https://www.openstreetmap.org/way/1474301428",
+    "https://www.openstreetmap.org/way/1474301456"
+  ],
+  "overhead_source": "Esri World Imagery; Esri and imagery contributors",
+  "service": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "tiles": {
+    "zoom": 19,
+    "x": [
+      118664,
+      118665,
+      118666
+    ],
+    "y": [
+      188852,
+      188853,
+      188854
+    ],
+    "url_template": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+  },
+  "image_capture_date": "Not established; retrieval date is not capture date",
+  "private_visual_reference": "projects/redfield_sd/references/private/roof_blockout_20260930/aerial_mosaic.png",
+  "interpretation": "Combined outline fitted to accepted 50-block frontage. Old per-address footprint matches deliberately not used. Roof height, party walls and exact roof subdivision remain provisional."
+}
