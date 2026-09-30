@@ -1,0 +1,52 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:stone_bricks",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -1,
+    -3
+  ],
+  "region_size": [
+    7,
+    14,
+    7
+  ],
+  "volume": 686,
+  "non_air_blocks": 177,
+  "tile_entities": 149,
+  "sha256": "94b3bb3daded60a68e166033bdb6c49be02bcfb201889afdc3d1404e6c4597e3",
+  "facade_counts": {
+    "microblock": 149,
+    "full_block": 19
+  },
+  "pad_blocks": 9,
+  "vanilla_fraction_of_facade_volume": 0.2248,
+  "microcells": 268295,
+  "validation": {
+    "exact_readback": true,
+    "facade_connected_components": 1,
+    "materials_supported": true,
+    "marker_at_0_minus1_0": true,
+    "no_runtime_test": true,
+    "palette_material_count": 109,
+    "gray_glass_replaces_clear_glass": true
+  },
+  "confidence": {
+    "primary": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2642/623-main-street-simply-charming",
+    "supplemental": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2640/621-main-street-carpets-plus",
+    "appearance": "Modern comparison photos published by city archive; exact capture dates unconfirmed",
+    "width": "Provisional 7 blocks; image proportions, not surveyed",
+    "top": "Visible upper-left portion from adjacent Carpets Plus photograph; far-right parapet continuation provisional",
+    "photo_sha256": "fae433056640d80382f73e6beb4953c4460aacc7bbcd9af2bec9fa8f3c40c8ec",
+    "texture_method": "Bounded palettes sampled from masonry, boarding, dark wood and original logo; no generated reference imagery.",
+    "glass": "Gray stained glass replaces opaque-bordered clear glass; remaining host-boundary texture contrast requires in-game review."
+  },
+  "source_sha256": "63f5081d116ef5a6f9cace58d47c9b31f3f64a70a83b1e7ee14419afca64cf7f"
+}

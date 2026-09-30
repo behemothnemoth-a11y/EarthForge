@@ -1,0 +1,16 @@
+{
+  "installed_jar_version": "0.6.0",
+  "hosts_checked": 254,
+  "rgb_cells_by_material": {
+    "astra_microblocks:rgb_a99b83": 29849,
+    "astra_microblocks:rgb_91836e": 23312,
+    "astra_microblocks:rgb_28483b": 24925,
+    "astra_microblocks:rgb_9b7746": 447,
+    "astra_microblocks:rgb_716657": 3958,
+    "astra_microblocks:rgb_3c5b49": 2544,
+    "astra_microblocks:rgb_51705a": 257,
+    "astra_microblocks:rgb_c1b49a": 1215
+  },
+  "all_materials_supported_by_installed_catalog_or_RGB_format": true,
+  "runtime_render_test": "not performed"
+}

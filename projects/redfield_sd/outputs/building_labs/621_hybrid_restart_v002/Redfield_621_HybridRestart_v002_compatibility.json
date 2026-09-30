@@ -1,0 +1,11 @@
+{
+  "installed_jar_version": "0.6.0",
+  "hosts_checked": 254,
+  "rgb_cells_by_material": {
+    "astra_microblocks:rgb_d6ceba": 57831,
+    "astra_microblocks:rgb_28483b": 25074,
+    "astra_microblocks:rgb_3c5b49": 2544
+  },
+  "all_materials_supported_by_installed_catalog_or_RGB_format": true,
+  "runtime_render_test": "not performed"
+}

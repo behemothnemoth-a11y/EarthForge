@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "REDFIELD_621_HYBRID_RESTART_V001",
+  "id": "REDFIELD_621_HYBRID_RESTART_V003",
   "address": "621 Main Street",
   "design_basis": "Latest approved generated streetscape concept; not a surveyed historic reconstruction",
   "reference": "projects/redfield_sd/references/generated/historic_voxel_main_street_facade.png",
@@ -20,34 +20,43 @@
   },
   "upper_windows": [
     {
-      "u0": 16,
-      "u1": 32
+      "u0": 14,
+      "u1": 34
     },
     {
-      "u0": 56,
-      "u1": 72
+      "u0": 54,
+      "u1": 74
     },
     {
-      "u0": 96,
-      "u1": 112
+      "u0": 94,
+      "u1": 114
     }
   ],
   "materials": {
     "brick": "minecraft:bricks",
-    "trim": "minecraft:smooth_sandstone",
-    "green": "minecraft:dark_prismarine",
-    "green_inset": "minecraft:green_terracotta",
+    "trim": "astra_microblocks:rgb_a99b83",
+    "green": "astra_microblocks:rgb_28483b",
+    "green_inset": "astra_microblocks:rgb_3c5b49",
     "frame": "minecraft:polished_blackstone",
     "wood": "minecraft:dark_oak_planks",
     "base": "minecraft:stone_bricks",
     "floor": "minecraft:spruce_planks",
-    "metal": "minecraft:gold_block"
+    "metal": "minecraft:gold_block",
+    "green_core": "minecraft:dark_prismarine",
+    "stone_shadow": "astra_microblocks:rgb_716657",
+    "stone_mid": "astra_microblocks:rgb_91836e",
+    "stone_edge": "astra_microblocks:rgb_c1b49a",
+    "bronze": "astra_microblocks:rgb_9b7746",
+    "green_light": "astra_microblocks:rgb_51705a",
+    "glass_clear": "minecraft:glass",
+    "glass_smoke": "minecraft:light_gray_stained_glass",
+    "glass_amber": "minecraft:yellow_stained_glass"
   },
   "authoring_policy": {
     "full_blocks": "Wall cores, piers, continuous masonry bands and floor strips",
     "microblocks": "Fractional openings, reveals, mouldings, pediments, awning, narrow frames and ornaments",
-    "promotion": "Every homogeneous full cube becomes a vanilla block; exact half-height homogeneous cubes become vanilla slabs when supported",
-    "no_glass": true,
+    "promotion": "Homogeneous registered Minecraft cubes and supported half cubes become vanilla blocks/slabs. RGB materials remain Astra hosts.",
+    "no_glass": false,
     "no_arbitrary_microblock_percentage": true,
     "source_reproducible_without_old_schematic": true
   },
@@ -66,5 +75,18 @@
     ]
   },
   "status": "REJECTED_AS_REDFIELD_REFERENCE: generated concept architecture does not reproduce verified Redfield photographs",
+  "requires_astra": "0.6.0 or later with native RGB support",
+  "changes_from_v001": [
+    "Three flat RGB finish colors over textured vanilla masonry and storefront cores",
+    "Upper windows widened from 16 to 20 microcells",
+    "Window frames moved forward from 24/16 to 5/16 block recess",
+    "Layered five-step cornice profile"
+  ],
+  "changes_from_v002": [
+    "Warm midtone stone with explicit contrasting shadow and edge courses",
+    "Reeded jambs, inset lintels/brackets, bronze rosettes and pinstripes",
+    "Clear shop glass, light gray upper glazing, amber leaded shop transoms",
+    "Subtle green awning seams"
+  ],
   "reference_correction": "2026-09-30: Use verified_city_archive_sources.json; re-evaluate frontage widths and address matching. Technical block/microblock experiments only."
 }

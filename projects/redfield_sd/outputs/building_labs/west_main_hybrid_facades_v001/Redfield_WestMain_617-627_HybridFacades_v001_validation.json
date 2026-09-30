@@ -1,0 +1,152 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:brick_slab[type=bottom,waterlogged=false]",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:dark_prismarine",
+    "minecraft:spruce_slab[type=bottom,waterlogged=false]",
+    "minecraft:stone_bricks"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    59,
+    0,
+    -130
+  ],
+  "region_size": [
+    7,
+    15,
+    46
+  ],
+  "volume": 4830,
+  "non_air_blocks": 1651,
+  "tile_entities": 1430,
+  "sha256": "7e19881445341babada528f89070ee50b57040820fc7bf5b5f0a905b90f7260e",
+  "counts": {
+    "microblock": 1430,
+    "full_block": 200,
+    "vanilla_slab": 21
+  },
+  "astra_microcells": 2672254,
+  "vanilla_volume_share": 0.2439,
+  "validation": {
+    "exact_geometry_and_material_readback": true,
+    "connected_components": 1,
+    "all_entrances_clear": true,
+    "accepted_621_v003_unchanged": true,
+    "materials_checked_against_installed_astra_060": true,
+    "runtime_test": "not performed"
+  },
+  "materials": {
+    "minecraft:bricks": 1357436,
+    "minecraft:spruce_planks": 5632,
+    "minecraft:stone_bricks": 236100,
+    "astra_microblocks:rgb_a99b83": 105378,
+    "minecraft:dark_oak_planks": 429140,
+    "minecraft:dark_prismarine": 75240,
+    "astra_microblocks:rgb_91836e": 195851,
+    "astra_microblocks:rgb_c1b49a": 27262,
+    "astra_microblocks:rgb_733f36": 13880,
+    "minecraft:glass": 14284,
+    "astra_microblocks:rgb_482a26": 10184,
+    "astra_microblocks:rgb_2d4951": 13880,
+    "astra_microblocks:rgb_1c3036": 10184,
+    "astra_microblocks:rgb_28483b": 53957,
+    "astra_microblocks:rgb_3c5b49": 21624,
+    "minecraft:polished_blackstone": 13284,
+    "astra_microblocks:rgb_62452f": 12944,
+    "astra_microblocks:rgb_382c23": 6948,
+    "minecraft:yellow_stained_glass": 8324,
+    "astra_microblocks:rgb_9b7746": 4927,
+    "minecraft:light_gray_stained_glass": 17580,
+    "astra_microblocks:rgb_716657": 19777,
+    "astra_microblocks:rgb_9b6150": 3325,
+    "astra_microblocks:rgb_56767b": 3325,
+    "astra_microblocks:rgb_51705a": 6675,
+    "astra_microblocks:rgb_8b6b48": 2953,
+    "astra_microblocks:rgb_e8bc69": 2160
+  },
+  "buildings": [
+    {
+      "address": "627",
+      "z0": -130,
+      "width": 8,
+      "height": 190,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "red",
+        "red_light",
+        "red_shadow"
+      ]
+    },
+    {
+      "address": "625",
+      "z0": -122,
+      "width": 8,
+      "height": 188,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "blue",
+        "blue_light",
+        "blue_shadow"
+      ]
+    },
+    {
+      "address": "623",
+      "z0": -114,
+      "width": 15,
+      "height": 200,
+      "window_centers": [
+        24,
+        72,
+        120,
+        168,
+        216
+      ],
+      "paint": [
+        "green",
+        "green_light",
+        "green_inset"
+      ]
+    },
+    {
+      "address": "621",
+      "z0": -99,
+      "width": 8,
+      "height": 208,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "green",
+        "green_light",
+        "green_inset"
+      ]
+    },
+    {
+      "address": "617-619",
+      "z0": -91,
+      "width": 7,
+      "height": 108,
+      "window_centers": [],
+      "paint": [
+        "brown",
+        "brown_light",
+        "brown_shadow"
+      ]
+    }
+  ],
+  "source_sha256": "b16cab90c1e0cf75a675be7d9dda3744b04ec8e316474827b4c9b402d293cc8d"
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "REDFIELD_WEST_MAIN_HYBRID_FACADES_V001",
+  "address": "617-627 Main Street",
+  "design_basis": "Latest approved generated streetscape concept; not a surveyed historic reconstruction",
+  "reference": "projects/redfield_sd/references/generated/historic_voxel_main_street_facade.png",
+  "scope": "Five facade sections only; shallow returns; no roofs or interiors",
+  "coordinates": {
+    "front_boundary_x": 63,
+    "min_z": -130,
+    "width_blocks": 46,
+    "cell_resolution": 16
+  },
+  "dimensions_cells": {
+    "height": 224,
+    "depth_min": -48,
+    "depth_max": 32,
+    "wall_back": -32,
+    "wall_front": 0
+  },
+  "materials": {
+    "brick": "minecraft:bricks",
+    "trim": "astra_microblocks:rgb_a99b83",
+    "green": "astra_microblocks:rgb_28483b",
+    "green_inset": "astra_microblocks:rgb_3c5b49",
+    "frame": "minecraft:polished_blackstone",
+    "wood": "minecraft:dark_oak_planks",
+    "base": "minecraft:stone_bricks",
+    "floor": "minecraft:spruce_planks",
+    "metal": "minecraft:gold_block",
+    "green_core": "minecraft:dark_prismarine",
+    "stone_shadow": "astra_microblocks:rgb_716657",
+    "stone_mid": "astra_microblocks:rgb_91836e",
+    "stone_edge": "astra_microblocks:rgb_c1b49a",
+    "bronze": "astra_microblocks:rgb_9b7746",
+    "green_light": "astra_microblocks:rgb_51705a",
+    "glass_clear": "minecraft:glass",
+    "glass_smoke": "minecraft:light_gray_stained_glass",
+    "glass_amber": "minecraft:yellow_stained_glass",
+    "blue": "astra_microblocks:rgb_2d4951",
+    "blue_light": "astra_microblocks:rgb_56767b",
+    "blue_shadow": "astra_microblocks:rgb_1c3036",
+    "red": "astra_microblocks:rgb_733f36",
+    "red_light": "astra_microblocks:rgb_9b6150",
+    "red_shadow": "astra_microblocks:rgb_482a26",
+    "brown": "astra_microblocks:rgb_62452f",
+    "brown_light": "astra_microblocks:rgb_8b6b48",
+    "brown_shadow": "astra_microblocks:rgb_382c23",
+    "lamp_warm": "astra_microblocks:rgb_e8bc69"
+  },
+  "authoring_policy": {
+    "full_blocks": "Wall cores, piers, continuous masonry bands and floor strips",
+    "microblocks": "Fractional openings, reveals, mouldings, pediments, awning, narrow frames and ornaments",
+    "promotion": "Homogeneous registered Minecraft cubes and supported half cubes become vanilla blocks/slabs. RGB materials remain Astra hosts.",
+    "no_glass": false,
+    "no_arbitrary_microblock_percentage": true,
+    "source_reproducible_without_old_schematic": true
+  },
+  "placement": {
+    "origin": "Existing Redfield registration/player-feet origin",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL",
+    "region_bounds": [
+      59,
+      0,
+      -130,
+      65,
+      14,
+      -85
+    ]
+  },
+  "status": "REJECTED_AS_REDFIELD_REFERENCE: generated concept architecture does not reproduce verified Redfield photographs",
+  "requires_astra": "0.6.0 or later with native RGB support",
+  "preview_colors": {
+    "blue": "#2d4951",
+    "blue_light": "#56767b",
+    "blue_shadow": "#1c3036",
+    "red": "#733f36",
+    "red_light": "#9b6150",
+    "red_shadow": "#482a26",
+    "brown": "#62452f",
+    "brown_light": "#8b6b48",
+    "brown_shadow": "#382c23",
+    "lamp_warm": "#e8bc69"
+  },
+  "buildings": [
+    {
+      "address": "627",
+      "z0": -130,
+      "width": 8,
+      "height": 190,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "red",
+        "red_light",
+        "red_shadow"
+      ]
+    },
+    {
+      "address": "625",
+      "z0": -122,
+      "width": 8,
+      "height": 188,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "blue",
+        "blue_light",
+        "blue_shadow"
+      ]
+    },
+    {
+      "address": "623",
+      "z0": -114,
+      "width": 15,
+      "height": 200,
+      "window_centers": [
+        24,
+        72,
+        120,
+        168,
+        216
+      ],
+      "paint": [
+        "green",
+        "green_light",
+        "green_inset"
+      ]
+    },
+    {
+      "address": "621",
+      "z0": -99,
+      "width": 8,
+      "height": 208,
+      "window_centers": [
+        24,
+        64,
+        104
+      ],
+      "paint": [
+        "green",
+        "green_light",
+        "green_inset"
+      ]
+    },
+    {
+      "address": "617-619",
+      "z0": -91,
+      "width": 7,
+      "height": 108,
+      "window_centers": [],
+      "paint": [
+        "brown",
+        "brown_light",
+        "brown_shadow"
+      ]
+    }
+  ],
+  "reference_confidence": "Approved generated streetscape concept; existing slots fix widths. Ornament and heights interpreted; no survey accuracy claim.",
+  "reference_correction": "2026-09-30: Use verified_city_archive_sources.json; re-evaluate frontage widths and address matching. Technical block/microblock experiments only."
+}

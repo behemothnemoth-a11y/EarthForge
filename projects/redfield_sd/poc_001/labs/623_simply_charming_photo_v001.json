@@ -1,0 +1,83 @@
+{
+  "id": "REDFIELD_623_SIMPLY_CHARMING_PHOTO_V001",
+  "coordinates": {
+    "front_boundary_x": -4,
+    "min_z": -3,
+    "width_blocks": 7,
+    "cell_resolution": 16
+  },
+  "dimensions_cells": {
+    "height": 208,
+    "depth_min": -16,
+    "depth_max": 32
+  },
+  "materials": {
+    "brick_core": "minecraft:bricks",
+    "mortar": "astra_microblocks:rgb_a99ea0",
+    "brick": "astra_microblocks:rgb_a08d91",
+    "brick_alt": "astra_microblocks:rgb_ad999b",
+    "brick_dark": "astra_microblocks:rgb_927f84",
+    "green": "astra_microblocks:rgb_738774",
+    "green_dark": "astra_microblocks:rgb_657966",
+    "green_light": "astra_microblocks:rgb_80917c",
+    "charcoal": "astra_microblocks:rgb_5c5c5d",
+    "charcoal_dark": "astra_microblocks:rgb_525354",
+    "charcoal_light": "astra_microblocks:rgb_656568",
+    "stone": "astra_microblocks:rgb_ac8d73",
+    "stone_light": "astra_microblocks:rgb_c2ab8e",
+    "stone_dark": "astra_microblocks:rgb_816c58",
+    "metal": "astra_microblocks:rgb_c4c8c7",
+    "white": "astra_microblocks:rgb_ebebec",
+    "sign_white": "astra_microblocks:rgb_eef3ef",
+    "sign_pink": "astra_microblocks:rgb_cba5a7",
+    "ink": "astra_microblocks:rgb_474145",
+    "glass": "minecraft:glass",
+    "glass_dark": "minecraft:gray_stained_glass",
+    "wood_core": "minecraft:dark_oak_planks"
+  },
+  "placement": {
+    "region_bounds": [
+      -5,
+      -1,
+      -3,
+      1,
+      12,
+      3
+    ],
+    "origin": "Player feet directly above yellow marker (0,-1,0)",
+    "rotation": 0,
+    "mirror": "none",
+    "mode": "standalone study; not an address-verified in-place strip patch"
+  },
+  "reference": {
+    "primary": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2642/623-main-street-simply-charming",
+    "supplemental": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2640/621-main-street-carpets-plus",
+    "appearance": "Modern comparison photos published by city archive; exact capture dates unconfirmed",
+    "width": "Provisional 7 blocks; image proportions, not surveyed",
+    "top": "Visible upper-left portion from adjacent Carpets Plus photograph; far-right parapet continuation provisional"
+  },
+  "preview_colors": {
+    "brick_core": "#9a6255",
+    "mortar": "#a99ea0",
+    "brick": "#a08d91",
+    "brick_alt": "#ad999b",
+    "brick_dark": "#927f84",
+    "green": "#738774",
+    "green_dark": "#657966",
+    "green_light": "#80917c",
+    "charcoal": "#5c5c5d",
+    "charcoal_dark": "#525354",
+    "charcoal_light": "#656568",
+    "stone": "#ac8d73",
+    "stone_light": "#c2ab8e",
+    "stone_dark": "#816c58",
+    "metal": "#c4c8c7",
+    "white": "#ebebec",
+    "sign_white": "#eef3ef",
+    "sign_pink": "#cba5a7",
+    "ink": "#474145",
+    "glass": "#667f87",
+    "glass_dark": "#40514f",
+    "wood_core": "#493b30"
+  }
+}
