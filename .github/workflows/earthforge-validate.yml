@@ -24,11 +24,14 @@ jobs:
       - name: Test stateful Litematic codec
         run: python tools/test_litematic_codec.py
 
-      - name: Test Redfield v004 visual generator
-        run: python pipeline/reconstruction/generate_redfield_poc001_l1_visual_v004.py --self-test
+      - name: Test direct Astra Microblock NBT
+        run: python tools/test_astra_microblock_codec.py
 
       - name: Test Redfield v005 truth generator
         run: python pipeline/reconstruction/generate_redfield_poc001_l1_truth_v005.py --self-test
+
+      - name: Test Redfield v006 micro generator
+        run: python pipeline/microblocks/generate_redfield_micro_v006.py --self-test
 
       - name: Compile Python
         run: python -m compileall -q pipeline tools

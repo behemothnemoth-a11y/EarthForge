@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EarthForge Build Studio Job",
+  "type": "object",
+  "required": [
+    "building_id",
+    "footprint",
+    "facade",
+    "confidence"
+  ],
+  "properties": {
+    "building_id": {
+      "type": "string"
+    },
+    "footprint": {
+      "type": "object"
+    },
+    "facade": {
+      "type": "object"
+    },
+    "micro_overlay": {
+      "type": "object"
+    },
+    "interior_program": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "object"
+    }
+  }
+}

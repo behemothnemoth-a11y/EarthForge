@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "export_id": "REDFIELD_POC_001_L1_MICRO_ALPHA_V006",
+  "base_export": "REDFIELD_POC_001_L1_TRUTH_V005",
+  "base_file": "projects/redfield_sd/outputs/l1_truth/Redfield_POC_001_L1_Truth_v005.litematic",
+  "global": {
+    "enabled": true,
+    "host_block": "astra_microblocks:test_host[orientation=0]",
+    "block_entity_id": "astra_microblocks:test_host",
+    "resolution": 16,
+    "max_hosts": 600,
+    "light_cornice_every_n_blocks": 2,
+    "default_material": "minecraft:bricks",
+    "supported_material_subset": [
+      "minecraft:bricks",
+      "minecraft:stone_bricks",
+      "minecraft:smooth_sandstone",
+      "minecraft:black_concrete",
+      "minecraft:light_gray_concrete",
+      "minecraft:red_terracotta",
+      "minecraft:oak_planks"
+    ]
+  },
+  "priority": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "level": "medium",
+      "material": "minecraft:black_concrete",
+      "features": [
+        "cornice",
+        "mullions",
+        "sign_frame"
+      ]
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "level": "medium",
+      "material": "minecraft:smooth_sandstone",
+      "features": [
+        "cornice",
+        "upper_mullions",
+        "pilasters"
+      ]
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "level": "high",
+      "material": "minecraft:smooth_sandstone",
+      "features": [
+        "cornice",
+        "upper_mullions",
+        "pilasters",
+        "transoms"
+      ]
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "level": "high",
+      "material": "minecraft:smooth_sandstone",
+      "features": [
+        "cornice",
+        "upper_mullions",
+        "pilasters",
+        "transoms"
+      ]
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "level": "high",
+      "material": "minecraft:smooth_sandstone",
+      "features": [
+        "cornice",
+        "upper_mullions",
+        "pilasters",
+        "center_divider",
+        "transoms"
+      ]
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "level": "high",
+      "material": "minecraft:smooth_sandstone",
+      "features": [
+        "cornice",
+        "upper_mullions",
+        "entry_surround",
+        "pilasters",
+        "transoms"
+      ]
+    }
+  ],
+  "rules": [
+    "Microblocks never replace primary structural mass.",
+    "Vanilla glass stays behind micro mullions because Astra's material catalog excludes transparent glass.",
+    "Priority overlays may replace projecting vanilla slab/stair trim where the micro host supersedes it.",
+    "No Microblocks are placed inside building interiors in v006."
+  ]
+}

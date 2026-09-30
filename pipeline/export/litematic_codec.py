@@ -30,16 +30,12 @@ def canonical_state(value: str) -> str:
     if "[" not in value:
         return value
     name, rest = value.split("[", 1)
-    rest = rest.rstrip("]")
     props = {}
-    for item in rest.split(","):
-        if not item.strip():
-            continue
-        k, v = item.split("=", 1)
-        props[k.strip()] = v.strip()
-    if not props:
-        return name.strip()
-    return name.strip() + "[" + ",".join(f"{k}={props[k]}" for k in sorted(props)) + "]"
+    for item in rest.rstrip("]").split(","):
+        if item.strip():
+            k, v = item.split("=", 1)
+            props[k.strip()] = v.strip()
+    return name.strip() + ("[" + ",".join(f"{k}={props[k]}" for k in sorted(props)) + "]" if props else "")
 
 
 def parse_state(value: str):
@@ -47,9 +43,8 @@ def parse_state(value: str):
     if "[" not in value:
         return value, {}
     name, rest = value.split("[", 1)
-    rest = rest.rstrip("]")
     props = {}
-    for item in rest.split(","):
+    for item in rest.rstrip("]").split(","):
         k, v = item.split("=", 1)
         props[k] = v
     return name, props
@@ -65,14 +60,15 @@ def state_from_palette(entry: dict) -> str:
 
 def _u16_string(value: str) -> bytes:
     raw = value.encode("utf-8")
-    if len(raw) > 65535:
-        raise ValueError("NBT string too long")
     return struct.pack(">H", len(raw)) + raw
 
 
 class NBTWriter:
     def header(self, tag_type: int, name: str) -> bytes:
         return bytes([tag_type]) + _u16_string(name)
+
+    def tag_byte(self, name: str, value: int) -> bytes:
+        return self.header(TAG_BYTE, name) + struct.pack(">b", int(value))
 
     def tag_int(self, name: str, value: int) -> bytes:
         return self.header(TAG_INT, name) + struct.pack(">i", int(value))
@@ -84,14 +80,10 @@ class NBTWriter:
         return self.header(TAG_STRING, name) + _u16_string(value)
 
     def tag_int_array(self, name: str, values: List[int]) -> bytes:
-        return self.header(TAG_INT_ARRAY, name) + struct.pack(">i", len(values)) + b"".join(
-            struct.pack(">i", int(v)) for v in values
-        )
+        return self.header(TAG_INT_ARRAY, name) + struct.pack(">i", len(values)) + b"".join(struct.pack(">i", int(v)) for v in values)
 
     def tag_long_array(self, name: str, values: List[int]) -> bytes:
-        return self.header(TAG_LONG_ARRAY, name) + struct.pack(">i", len(values)) + b"".join(
-            struct.pack(">q", int(v)) for v in values
-        )
+        return self.header(TAG_LONG_ARRAY, name) + struct.pack(">i", len(values)) + b"".join(struct.pack(">q", int(v)) for v in values)
 
     def tag_list_compounds(self, name: str, payloads: List[bytes]) -> bytes:
         return self.header(TAG_LIST, name) + bytes([TAG_COMPOUND]) + struct.pack(">i", len(payloads)) + b"".join(payloads)
@@ -115,8 +107,7 @@ def _palette_entry(w: NBTWriter, state: str) -> bytes:
     name, props = parse_state(state)
     entries = [w.tag_string("Name", name)]
     if props:
-        prop_payload = b"".join(w.tag_string(k, props[k]) for k in sorted(props))
-        entries.append(w.tag_compound("Properties", prop_payload))
+        entries.append(w.tag_compound("Properties", b"".join(w.tag_string(k, props[k]) for k in sorted(props))))
     return b"".join(entries) + bytes([TAG_END])
 
 
@@ -128,7 +119,6 @@ def pack_indices(values: List[int], nbits: int) -> List[int]:
     arr = [0] * math.ceil(len(values) * nbits / 64)
     mask = (1 << nbits) - 1
     u64 = (1 << 64) - 1
-
     for index, value in enumerate(values):
         start = index * nbits
         a = start >> 6
@@ -137,10 +127,8 @@ def pack_indices(values: List[int], nbits: int) -> List[int]:
         arr[a] |= (value & mask) << bit
         arr[a] &= u64
         if a != b:
-            shift = 64 - bit
-            arr[b] |= value >> shift
+            arr[b] |= value >> (64 - bit)
             arr[b] &= u64
-
     return [v - (1 << 64) if v & (1 << 63) else v for v in arr]
 
 
@@ -156,8 +144,7 @@ def unpack_indices(values: List[int], count: int, nbits: int) -> List[int]:
         if a == b:
             value = (arr[a] >> bit) & mask
         else:
-            shift = 64 - bit
-            value = ((arr[a] >> bit) | (arr[b] << shift)) & mask
+            value = ((arr[a] >> bit) | (arr[b] << (64 - bit))) & mask
         out.append(value)
     return out
 
@@ -249,13 +236,13 @@ def write_single_region_litematic(
     version: int = 6,
     subversion: int = 1,
     author: str = "EarthForge",
+    tile_entity_payloads: List[bytes] | None = None,
 ) -> dict:
     min_x, min_y, min_z, max_x, max_y, max_z = bounds
     width = max_x - min_x + 1
     height = max_y - min_y + 1
     length = max_z - min_z + 1
     volume = width * height * length
-
     normalized = {coord: canonical_state(state) for coord, state in blocks.items()}
 
     palette = ["minecraft:air"]
@@ -269,8 +256,7 @@ def write_single_region_litematic(
         if not (min_x <= x <= max_x and min_y <= y <= max_y and min_z <= z <= max_z):
             raise ValueError(f"Block outside bounds: {(x, y, z)}")
         lx, ly, lz = x - min_x, y - min_y, z - min_z
-        index = ly * width * length + lz * width + lx
-        states[index] = pindex[state]
+        states[ly * width * length + lz * width + lx] = pindex[state]
 
     nbits = bits_needed(len(palette))
     packed = pack_indices(states, nbits)
@@ -282,7 +268,7 @@ def write_single_region_litematic(
         w.tag_compound("Size", _vec3(w, width, height, length)),
         w.tag_list_compounds("BlockStatePalette", [_palette_entry(w, s) for s in palette]),
         w.tag_list_compounds("Entities", []),
-        w.tag_list_compounds("TileEntities", []),
+        w.tag_list_compounds("TileEntities", tile_entity_payloads or []),
         w.tag_list_compounds("PendingBlockTicks", []),
         w.tag_list_compounds("PendingFluidTicks", []),
         w.tag_long_array("BlockStates", packed),
@@ -293,7 +279,7 @@ def write_single_region_litematic(
         w.tag_string("Author", author),
         w.tag_string("Description", description),
         w.tag_string("Name", schematic_name),
-        w.tag_string("Software", "EarthForge_0.3"),
+        w.tag_string("Software", "EarthForge_0.4"),
         w.tag_int("RegionCount", 1),
         w.tag_long("TimeCreated", now),
         w.tag_long("TimeModified", now),
@@ -309,7 +295,6 @@ def write_single_region_litematic(
         w.tag_compound("Metadata", metadata),
         w.tag_compound("Regions", w.tag_compound(region_name, region)),
     ])
-
     path.parent.mkdir(parents=True, exist_ok=True)
     write_gzip(path, w.root(root_payload))
 
@@ -320,6 +305,7 @@ def write_single_region_litematic(
         "region_size": [width, height, length],
         "volume": volume,
         "non_air_blocks": len(normalized),
+        "tile_entities": len(tile_entity_payloads or []),
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
     }
 
@@ -333,7 +319,6 @@ def read_back_block_map(path: Path, region_name: str):
     size = region["Size"]
     min_x, min_y, min_z = pos["x"], pos["y"], pos["z"]
     width, height, length = size["x"], size["y"], size["z"]
-
     palette = [state_from_palette(entry) for entry in region["BlockStatePalette"]]
     nbits = bits_needed(len(palette))
     states = unpack_indices(region["BlockStates"], width * height * length, nbits)
@@ -354,5 +339,6 @@ def read_back_block_map(path: Path, region_name: str):
         "bits_per_block": nbits,
         "region_position": [min_x, min_y, min_z],
         "region_size": [width, height, length],
+        "tile_entities": region.get("TileEntities") or [],
     }
     return blocks, meta

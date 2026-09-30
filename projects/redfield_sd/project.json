@@ -1,24 +1,11 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l1_truth",
+  "status": "poc_001_l1_micro_alpha",
   "milestone": "REDFIELD_POC_001",
-  "test_area": {
-    "label": "Downtown 600 Block Main Street",
-    "description": "Main Street between 7th Avenue and 6th Avenue, bounded by the nearest parallel service alleys",
-    "selection_status": "locked",
-    "capture_bounds_status": "source_window",
-    "capture_bbox_wgs84": {
-      "west": -98.52055,
-      "south": 44.8748,
-      "east": -98.51655,
-      "north": 44.87765
-    }
-  },
   "coordinate_system": {
     "source_crs": "EPSG:4326",
-    "working_local": "EarthForge local tangent approximation for POC 001",
     "anchor": {
       "status": "locked",
       "definition": "Main Street / 7th Avenue centerline intersection",
@@ -37,17 +24,23 @@
     }
   },
   "quality_gates": {
-    "current_target": "L1_BLOCK_TRUTH",
+    "current_target": "L1_MICRO_ALPHA",
     "levels": [
       "L0_GEO",
       "L1_BLOCK_ALPHA",
       "L1_BLOCK_VISUAL",
       "L1_BLOCK_TRUTH",
+      "L1_MICRO_ALPHA",
       "L1_BLOCK",
+      "I0_INTERIOR_PROGRAM",
+      "I1_INTERIOR_SEED",
+      "I2_INTERIOR_BLOCKS",
       "L2_DETAIL"
     ],
-    "microblocks_allowed": false,
-    "microblocks_unlock_condition": "L1_BLOCK accepted in Minecraft"
+    "microblocks_allowed": true,
+    "microblock_scope": "facade precision overlays only",
+    "interior_blocks_allowed": false,
+    "interior_metadata_allowed": true
   },
   "litematica_registration": {
     "enabled": true,
@@ -67,15 +60,15 @@
     "mirror": "none",
     "preserve_across_revisions": true
   },
-  "truth_reconstruction": {
-    "spec": "projects/redfield_sd/poc_001/truth_v005.json",
-    "source_manifest": "projects/redfield_sd/source_manifests/redfield_poc001_truth_v005.json",
-    "review_source": "projects/redfield_sd/poc_001/review_v004.json"
+  "microblocks": {
+    "implementation": "direct Astra block entity NBT",
+    "spec": "projects/redfield_sd/poc_001/micro_v006.json",
+    "codec": "pipeline/microblocks/astra_microblock_codec.py",
+    "base": "REDFIELD_POC_001_L1_TRUTH_V005"
   },
-  "notes": [
-    "v005 is the first building-specific truth pass.",
-    "Microblocks remain disabled.",
-    "Photo/history confidence is tracked per facade.",
-    "Yellow registration origin remains invariant."
-  ]
+  "interiors": {
+    "status": "planning_only",
+    "program": "projects/redfield_sd/poc_001/interior_program_v001.json",
+    "seed_output": "projects/redfield_sd/poc_001/interior_seed_v001.json"
+  }
 }

@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "project_id": "redfield_sd",
+  "program_id": "REDFIELD_POC_001_INTERIOR_PROGRAM_V001",
+  "status": "planning_only",
+  "programs": [
+    {
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "category": "restaurant",
+      "ground_floor": {
+        "front_zone": "dining/counter",
+        "rear_zone": "kitchen/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_side",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "category": "retail",
+      "ground_floor": {
+        "front_zone": "sales/display",
+        "rear_zone": "stock/service",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "category": "salon",
+      "ground_floor": {
+        "front_zone": "public salon/studio",
+        "rear_zone": "staff/storage",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "studio/office_or_historic_unknown",
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "category": "civic_club",
+      "ground_floor": {
+        "front_zone": "public hall",
+        "rear_zone": "support/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_side",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "category": "restaurant",
+      "ground_floor": {
+        "front_zone": "dining",
+        "rear_zone": "kitchen/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "shared_rear",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "category": "restaurant",
+      "ground_floor": {
+        "front_zone": "dining/bar",
+        "rear_zone": "kitchen/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "shared_rear",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "category": "office",
+      "ground_floor": {
+        "front_zone": "lobby/suites",
+        "rear_zone": "service/corridor",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "office_suites",
+      "vertical_circulation": "rear_core",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "category": "retail",
+      "ground_floor": {
+        "front_zone": "sales/display",
+        "rear_zone": "stock/service",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "category": "salon",
+      "ground_floor": {
+        "front_zone": "salon/chairs",
+        "rear_zone": "wash/storage",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "category": "civic",
+      "ground_floor": {
+        "front_zone": "public_lobby/counter",
+        "rear_zone": "offices/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "offices/meeting",
+      "vertical_circulation": "rear_core",
+      "interior_confidence": "history_supported",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "category": "office",
+      "ground_floor": {
+        "front_zone": "lobby/office",
+        "rear_zone": "service/storage",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "category": "retail_large",
+      "ground_floor": {
+        "front_zone": "showroom",
+        "rear_zone": "stock/loading",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "category": "retail_or_food",
+      "ground_floor": {
+        "front_zone": "public/front",
+        "rear_zone": "service/rear",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "category": "office",
+      "ground_floor": {
+        "front_zone": "public office",
+        "rear_zone": "service/storage",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "category": "office",
+      "ground_floor": {
+        "front_zone": "reception/office",
+        "rear_zone": "service/storage",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "category": "clinic",
+      "ground_floor": {
+        "front_zone": "reception/treatment",
+        "rear_zone": "staff/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_core",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "category": "retail_large",
+      "ground_floor": {
+        "front_zone": "showroom",
+        "rear_zone": "stock/loading",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": null,
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "inferred",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "category": "retail",
+      "ground_floor": {
+        "front_zone": "sales/display",
+        "rear_zone": "stock/service",
+        "front_depth_fraction": 0.56,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "historic_upper_unknown",
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "photo_supported",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "category": "retail_boutique",
+      "ground_floor": {
+        "front_zone": "sales/display",
+        "rear_zone": "stock/service",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "historic_upper_unknown",
+      "vertical_circulation": "rear_corner",
+      "interior_confidence": "photo_supported",
+      "generate_blocks_now": false
+    },
+    {
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "category": "paired_mixed",
+      "ground_floor": {
+        "front_zone": "two_front_tenants",
+        "rear_zone": "rear_service_split",
+        "front_depth_fraction": 0.62,
+        "service_entrance": "rear"
+      },
+      "upper_floor": "historic_upper_unknown",
+      "vertical_circulation": "two_rear_stairs",
+      "interior_confidence": "photo_supported",
+      "generate_blocks_now": false
+    }
+  ]
+}

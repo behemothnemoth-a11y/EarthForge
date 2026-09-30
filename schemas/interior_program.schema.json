@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EarthForge Interior Program",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "programs"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "osm_id",
+          "category",
+          "ground_floor"
+        ]
+      }
+    }
+  }
+}
