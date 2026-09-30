@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "source_id": "redfield_621_carpets_plus_truth_lab_v001",
+  "building": {
+    "address": "621 N Main St, Redfield, SD 57469",
+    "business": "Carpets Plus",
+    "osm_id": 1474301428
+  },
+  "sources": [
+    {
+      "id": "redfield_downtown_2023",
+      "type": "current_streetscape_photo",
+      "url": "https://www.city.redfield-sd.com/media/userfiles/subsite_45/images/banners/downtown-2023-1.jpg",
+      "confidence": "direct_visual_reference",
+      "notes": [
+        "City downtown photo visibly includes the historic storefront group containing Carpets Plus.",
+        "Used for red-brick upper facade, dark/green lower storefront language, historic cornice character and streetscape proportions."
+      ]
+    },
+    {
+      "id": "redfield_business_directory_621",
+      "type": "current_business_directory",
+      "url": "https://ecdev.redfield-sd.com/business-resources/business-directory?page=4&pager=36",
+      "confidence": "address_confirmed",
+      "notes": [
+        "Confirms Carpets Plus at 621 N Main St."
+      ]
+    },
+    {
+      "id": "loc8nearme_621_gallery",
+      "type": "photo_gallery_index",
+      "url": "https://www.loc8nearme.com/south-dakota/redfield/carpets-plus-inc/3308472/gallery/",
+      "confidence": "additional_photo_source_not_ingested",
+      "notes": [
+        "Gallery exposes additional business photos but EarthForge does not yet automatically ingest/rectify them.",
+        "This is one of the gaps the Truth Lab is intended to expose."
+      ]
+    },
+    {
+      "id": "redfield_21_feet",
+      "type": "city_historic_site_archive",
+      "url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/?cat=21+Feet",
+      "confidence": "site_sequence_and_context",
+      "notes": [
+        "Redfield's project explains the historic approximately 21-foot storefront allotment and provides present-day photos as of 2024."
+      ]
+    }
+  ]
+}

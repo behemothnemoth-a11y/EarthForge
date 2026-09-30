@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_CARPETS_PLUS_TRUTH_LAB_V001",
+  "project_id": "redfield_sd",
+  "osm_id": 1474301428,
+  "addresses": [
+    "621"
+  ],
+  "name": "Carpets Plus",
+  "mode": "single_building_patch",
+  "base_export": "REDFIELD_POC_001_L1_MICRO_ALPHA_V006",
+  "base_file": "projects/redfield_sd/outputs/l1_micro/Redfield_POC_001_L1_Micro_Alpha_v006.litematic",
+  "building": {
+    "side_of_main": "west",
+    "wall_height_blocks": 10,
+    "storeys": 2,
+    "wall_material": "minecraft:bricks",
+    "ground_storefront_material": "minecraft:dark_prismarine",
+    "trim_material": "minecraft:smooth_sandstone",
+    "glass_material": "minecraft:black_stained_glass",
+    "door_material": "minecraft:dark_oak_door",
+    "roof_material": "minecraft:polished_deepslate"
+  },
+  "facade": {
+    "lower_window_bays": 3,
+    "door_fraction": 0.78,
+    "upper_window_bays": 3,
+    "upper_window_y": [
+      5,
+      6,
+      7
+    ],
+    "sign_band_y": 3,
+    "awning_y": 4,
+    "awning_material": "minecraft:dark_prismarine_slab",
+    "parapet": "historic_stepped",
+    "reference_confidence": "partial_photo_supported"
+  },
+  "microblocks": {
+    "enabled": true,
+    "material": "minecraft:smooth_sandstone",
+    "secondary_material": "minecraft:green_terracotta",
+    "features": [
+      "ground_mullions",
+      "ground_transom",
+      "upper_mullions",
+      "upper_sills",
+      "edge_pilasters",
+      "cornice",
+      "roundel_ornaments"
+    ],
+    "host_budget": 90
+  },
+  "patch": {
+    "horizontal_margin_rear": 1,
+    "horizontal_margin_front": 2,
+    "vertical_min_y": -1,
+    "vertical_max_y": 14,
+    "copy_base_ground": true,
+    "wipe_old_building_above_ground": true
+  }
+}
