@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "ready_for_review",
+  "building_programs": 20,
+  "blocks_generated": 0,
+  "all_primary_buildings_covered": true,
+  "next_gate": "Exterior building pipeline approval before I2 block interior generation"
+}

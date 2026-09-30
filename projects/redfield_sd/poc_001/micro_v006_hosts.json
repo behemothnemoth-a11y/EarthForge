@@ -1,0 +1,8992 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_MICRO_ALPHA_V006",
+  "host_count": 365,
+  "occupied_microcells": 93840,
+  "skipped": [
+    {
+      "coord": [
+        92,
+        3,
+        -33
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=bottom,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1393414143,
+        "addresses": [
+          "602"
+        ],
+        "feature": "sign_frame"
+      }
+    },
+    {
+      "coord": [
+        92,
+        8,
+        -53
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301413,
+        "addresses": [
+          "610"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        92,
+        8,
+        -51
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301413,
+        "addresses": [
+          "610"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        92,
+        8,
+        -48
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301413,
+        "addresses": [
+          "610"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -98
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -96
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -95
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -93
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -97
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -96
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -96
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -96
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -96
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -94
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -111
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -108
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -106
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -103
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -111
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -111
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -111
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -111
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -107
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -104
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -128
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -126
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -123
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -121
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -119
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -117
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -128
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -128
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -128
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -128
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -126
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -126
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -126
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -126
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -124
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -121
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -121
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -121
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -121
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -119
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -119
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -119
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -119
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -117
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -117
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -117
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -117
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        62,
+        2,
+        -123
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        62,
+        4,
+        -123
+      ],
+      "existing": "minecraft:dark_prismarine_slab[type=bottom,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        62,
+        5,
+        -123
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        62,
+        6,
+        -123
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        62,
+        8,
+        -123
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        62,
+        12,
+        -123
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "feature": "center_divider"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -128
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -126
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -121
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -119
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "transom"
+      }
+    },
+    {
+      "coord": [
+        97,
+        8,
+        -127
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        97,
+        8,
+        -125
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        97,
+        8,
+        -122
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        97,
+        8,
+        -120
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "pilaster"
+      }
+    },
+    {
+      "coord": [
+        97,
+        2,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "entry_surround"
+      }
+    },
+    {
+      "coord": [
+        97,
+        4,
+        -124
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=bottom,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "entry_surround"
+      }
+    },
+    {
+      "coord": [
+        97,
+        5,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "entry_surround"
+      }
+    },
+    {
+      "coord": [
+        97,
+        6,
+        -124
+      ],
+      "existing": "astra_microblocks:test_host[orientation=0]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "entry_surround"
+      }
+    },
+    {
+      "coord": [
+        97,
+        8,
+        -124
+      ],
+      "existing": "minecraft:smooth_stone_slab[type=top,waterlogged=false]",
+      "reason": "occupied",
+      "metadata": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "feature": "entry_surround"
+      }
+    }
+  ],
+  "hosts": [
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -44
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        109
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -42
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        111
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -40
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        113
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -69
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        84
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -67
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        86
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -65
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        88
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -63
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        90
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -61
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        92
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -59
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        94
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -57
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        96
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -76
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        77
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -74
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        79
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -72
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        81
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -70
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        83
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -84
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        69
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -82
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        71
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -80
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        73
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        8,
+        -78
+      ],
+      "relative_tile_coord": [
+        95,
+        9,
+        75
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        10,
+        -91
+      ],
+      "relative_tile_coord": [
+        95,
+        11,
+        62
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        10,
+        -89
+      ],
+      "relative_tile_coord": [
+        95,
+        11,
+        64
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        10,
+        -87
+      ],
+      "relative_tile_coord": [
+        95,
+        11,
+        66
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        10,
+        -85
+      ],
+      "relative_tile_coord": [
+        95,
+        11,
+        68
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -99
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        54
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -97
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        56
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -95
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        58
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -93
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        60
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -115
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        38
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -113
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        40
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -111
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        42
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -109
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        44
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -107
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        46
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -105
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        48
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -103
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        50
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -101
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        52
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -37
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        116
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -35
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        118
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -33
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        120
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -31
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        122
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -29
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        124
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -27
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        126
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -25
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        128
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -46
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        107
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -44
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        109
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -42
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        111
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -40
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        113
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -54
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        99
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -52
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        101
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -50
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        103
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -48
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        105
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -69
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        84
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -67
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        86
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -65
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        88
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -63
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        90
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -61
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        92
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -59
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        94
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -57
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        96
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -55
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        98
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -76
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        77
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -74
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        79
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -72
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        81
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -70
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        83
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -84
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        69
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -82
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        71
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -80
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        73
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -78
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        75
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:stone_bricks"
+      ],
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -91
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        62
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -89
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        64
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -87
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        66
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -85
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        68
+      ],
+      "occupied_microcells": 144,
+      "materials": [
+        "minecraft:bricks"
+      ],
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "feature": "light_cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -38
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        115
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -36
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        117
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -34
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        119
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -32
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        121
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -30
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        123
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -28
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        125
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -26
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        127
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -24
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        129
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -36
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        117
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -36
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        117
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -33
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        120
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -33
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        120
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -31
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        122
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -31
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        122
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -29
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        124
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -29
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        124
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -26
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        127
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -26
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        127
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        3,
+        -38
+      ],
+      "relative_tile_coord": [
+        95,
+        4,
+        115
+      ],
+      "occupied_microcells": 224,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "sign_frame"
+    },
+    {
+      "schematic_coord": [
+        92,
+        3,
+        -28
+      ],
+      "relative_tile_coord": [
+        95,
+        4,
+        125
+      ],
+      "occupied_microcells": 224,
+      "materials": [
+        "minecraft:black_concrete"
+      ],
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "feature": "sign_frame"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -56
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        97
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -54
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        99
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -52
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        101
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -50
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        103
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        105
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        11,
+        -46
+      ],
+      "relative_tile_coord": [
+        95,
+        12,
+        107
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -54
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        99
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -54
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        99
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -52
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        101
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -52
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        101
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -49
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        104
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -49
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        104
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -47
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        106
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -47
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        106
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        92,
+        0,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        1,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        3,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        4,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        9,
+        -53
+      ],
+      "relative_tile_coord": [
+        95,
+        10,
+        100
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        0,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        1,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        3,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        4,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        9,
+        -51
+      ],
+      "relative_tile_coord": [
+        95,
+        10,
+        102
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        0,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        1,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        1,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        2,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        2,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        3,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        3,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        4,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        5,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        6,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        6,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        7,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        7,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        8,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        92,
+        9,
+        -48
+      ],
+      "relative_tile_coord": [
+        95,
+        10,
+        105
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -99
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        54
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -98
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        55
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        56
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        57
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -95
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        58
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        59
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -93
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        60
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -92
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        61
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -98
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        55
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -98
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        55
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        57
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        57
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -95
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        58
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -95
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        58
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -93
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        60
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -93
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        60
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -98
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        55
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        57
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -95
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        58
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -93
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        60
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -97
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        56
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        57
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        57
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        57
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        57
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -96
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        57
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -94
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        59
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -114
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        39
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -113
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        40
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -112
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        41
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        42
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -110
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        43
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -109
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        44
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -108
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        45
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        46
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -106
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        47
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -105
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        48
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        49
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -103
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        50
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -102
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        51
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -101
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        52
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -100
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        53
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        42
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        42
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -108
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        45
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -108
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        45
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -106
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        47
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -106
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        47
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -103
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        50
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -103
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        50
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        42
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -108
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        45
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -106
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        47
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -103
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        50
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        42
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        42
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        42
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        42
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -111
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        42
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -107
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        46
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -104
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        49
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -130
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        23
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -129
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        24
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        25
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -127
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        26
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        27
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -125
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        28
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        29
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        30
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -122
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        31
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        32
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -120
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        33
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        34
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -118
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        35
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        36
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -116
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        37
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        12,
+        -115
+      ],
+      "relative_tile_coord": [
+        65,
+        13,
+        38
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        30
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        30
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        5,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        6,
+        36
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        6,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        7,
+        36
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        30
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        2,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        3,
+        36
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -128
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        25
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -126
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        27
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -124
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        29
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -121
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        32
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -119
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        34
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -117
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        36
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        62,
+        0,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        1,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        1,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        2,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        3,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        4,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        7,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        8,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        9,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        10,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        10,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        11,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        62,
+        11,
+        -123
+      ],
+      "relative_tile_coord": [
+        65,
+        12,
+        30
+      ],
+      "occupied_microcells": 640,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "feature": "center_divider"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -130
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        23
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -129
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        24
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -128
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        25
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        26
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -126
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        27
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        28
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        29
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -123
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        30
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        31
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -121
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        32
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        33
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -119
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        34
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -118
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        35
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        12,
+        -117
+      ],
+      "relative_tile_coord": [
+        100,
+        13,
+        36
+      ],
+      "occupied_microcells": 256,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "cornice"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -128
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -128
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -126
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -126
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -121
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -121
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -119
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -119
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "upper_mullion"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -128
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        25
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -126
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        27
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        29
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -121
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        32
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -119
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        34
+      ],
+      "occupied_microcells": 64,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "transom"
+    },
+    {
+      "schematic_coord": [
+        97,
+        0,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        1,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        1,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        2,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        3,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        4,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        7,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        8,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        9,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        10,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        10,
+        -127
+      ],
+      "relative_tile_coord": [
+        100,
+        11,
+        26
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        0,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        1,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        1,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        2,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        3,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        4,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        7,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        8,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        9,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        10,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        10,
+        -125
+      ],
+      "relative_tile_coord": [
+        100,
+        11,
+        28
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        0,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        1,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        1,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        2,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        3,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        4,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        7,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        8,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        9,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        10,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        10,
+        -122
+      ],
+      "relative_tile_coord": [
+        100,
+        11,
+        31
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        0,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        1,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        1,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        2,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        2,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        3,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        3,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        4,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        5,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        6,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        6,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        7,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        7,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        8,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        9,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        10,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        10,
+        -120
+      ],
+      "relative_tile_coord": [
+        100,
+        11,
+        33
+      ],
+      "occupied_microcells": 384,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "pilaster"
+    },
+    {
+      "schematic_coord": [
+        97,
+        0,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        1,
+        29
+      ],
+      "occupied_microcells": 960,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "entry_surround"
+    },
+    {
+      "schematic_coord": [
+        97,
+        1,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        2,
+        29
+      ],
+      "occupied_microcells": 960,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "entry_surround"
+    },
+    {
+      "schematic_coord": [
+        97,
+        3,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        4,
+        29
+      ],
+      "occupied_microcells": 960,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "entry_surround"
+    },
+    {
+      "schematic_coord": [
+        97,
+        7,
+        -124
+      ],
+      "relative_tile_coord": [
+        100,
+        8,
+        29
+      ],
+      "occupied_microcells": 960,
+      "materials": [
+        "minecraft:smooth_sandstone"
+      ],
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "feature": "entry_surround"
+    }
+  ]
+}

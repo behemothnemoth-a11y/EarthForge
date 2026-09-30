@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_MICRO_ALPHA_V006",
+  "file": "projects/redfield_sd/outputs/l1_micro/Redfield_POC_001_L1_Micro_Alpha_v006.litematic",
+  "sha256": "1e819ea0f4664c4896ab0f65b484afc33b55aac64c8b2ac723d8087923e4bcc0",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    17,
+    157
+  ],
+  "placement": {
+    "instruction": "Stand on existing yellow registration block and set placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL"
+  },
+  "requires_mod": "Astra Microblocks 0.4.0-compatible save contract",
+  "compatibility_strip": "projects/redfield_sd/outputs/l1_micro/Astra_EarthForge_Compatibility_v001.litematic"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/l1_micro/Astra_EarthForge_Compatibility_v001.litematic",
+  "sha256": "7099e96363458bf19aaf886d66992439d8d01e83bdef2e5accbf81979b243eff",
+  "hosts": 5,
+  "patterns": [
+    "cornice",
+    "mullion",
+    "transom",
+    "pilaster",
+    "mixed"
+  ],
+  "read_back_tile_entities": 5
+}

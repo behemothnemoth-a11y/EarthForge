@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "export_id": "REDFIELD_POC_001_L1_MICRO_ALPHA_V006",
+  "status": "valid",
+  "base_sha256": "98585c358597dc61795d02174077c23f56d1aae6884d29519409d8595d47b33f",
+  "file": "projects/redfield_sd/outputs/l1_micro/Redfield_POC_001_L1_Micro_Alpha_v006.litematic",
+  "sha256": "1e819ea0f4664c4896ab0f65b484afc33b55aac64c8b2ac723d8087923e4bcc0",
+  "region_position": [
+    -3,
+    -1,
+    -153
+  ],
+  "region_size": [
+    163,
+    17,
+    157
+  ],
+  "non_air_blocks": 38442,
+  "micro_host_blocks": 365,
+  "micro_occupied_cells": 93840,
+  "micro_materials": [
+    "minecraft:black_concrete",
+    "minecraft:bricks",
+    "minecraft:smooth_sandstone",
+    "minecraft:stone_bricks"
+  ],
+  "skipped_micro_hosts": 75,
+  "tile_entities": 365,
+  "checks": {
+    "base_is_v005": true,
+    "exact_block_map": true,
+    "registration_marker": true,
+    "astra_tile_entity_count": true,
+    "astra_volume_v4_decode": true,
+    "micro_host_budget_ok": true,
+    "interior_blocks_generated": false
+  },
+  "errors": []
+}

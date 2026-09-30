@@ -1,0 +1,3099 @@
+{
+  "schema_version": 1,
+  "job_set": "REDFIELD_POC_001_BUILD_STUDIO_V001",
+  "jobs": [
+    {
+      "building_id": "redfield_sd_osm_1393414143",
+      "osm_id": 1393414143,
+      "addresses": [
+        "602"
+      ],
+      "name": "Leo's Good Food",
+      "footprint": {
+        "local_xz_m": [
+          [
+            39.261,
+            -28.561
+          ],
+          [
+            39.23,
+            -13.943
+          ],
+          [
+            14.76,
+            -13.988
+          ],
+          [
+            14.767,
+            -28.583
+          ],
+          [
+            23.098,
+            -28.572
+          ],
+          [
+            31.72,
+            -28.572
+          ],
+          [
+            39.261,
+            -28.561
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 5,
+        "storeys": 1,
+        "program": {
+          "bays": 5,
+          "door_fracs": [
+            0.66
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.02,
+                0.62
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "low_modern",
+            "material": "minecraft:black_concrete",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:light_gray_concrete",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:black_concrete",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:red_terracotta"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1393414143,
+          "addresses": [
+            "602"
+          ],
+          "level": "medium",
+          "material": "minecraft:black_concrete",
+          "features": [
+            "cornice",
+            "mullions",
+            "sign_frame"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1393414143,
+        "addresses": [
+          "602"
+        ],
+        "category": "restaurant",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.76,
+          -28.583,
+          39.261,
+          -13.943
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "dining/counter",
+            "box": [
+              14.76,
+              -28.583,
+              29.951,
+              -13.943
+            ]
+          },
+          "rear": {
+            "label": "kitchen/service",
+            "box": [
+              29.951,
+              -28.583,
+              39.261,
+              -13.943
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 37.261,
+          "z": -26.583,
+          "strategy": "rear_side"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "photo_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301435",
+      "osm_id": 1474301435,
+      "addresses": [
+        "604"
+      ],
+      "name": "Wild Roots / Wildroots",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.767,
+            -28.583
+          ],
+          [
+            14.791,
+            -35.118
+          ],
+          [
+            42.843,
+            -35.074
+          ],
+          [
+            42.843,
+            -33.371
+          ],
+          [
+            41.581,
+            -33.371
+          ],
+          [
+            41.581,
+            -28.561
+          ],
+          [
+            39.261,
+            -28.561
+          ],
+          [
+            31.72,
+            -28.572
+          ],
+          [
+            30.868,
+            -29.8
+          ],
+          [
+            24.005,
+            -29.833
+          ],
+          [
+            23.098,
+            -28.572
+          ],
+          [
+            14.767,
+            -28.583
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 7,
+        "storeys": 1,
+        "program": {
+          "bays": 7,
+          "door_fracs": [
+            0.25,
+            0.75
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:dark_oak_slab",
+            "ranges": [
+              [
+                0.02,
+                0.46
+              ],
+              [
+                0.54,
+                0.98
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "stepped_center",
+            "material": "minecraft:smooth_sandstone",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301435,
+        "addresses": [
+          "604"
+        ],
+        "category": "retail",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.767,
+          -35.118,
+          42.843,
+          -28.561
+        ],
+        "floor_height_blocks": 7,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "sales/display",
+            "box": [
+              14.767,
+              -35.118,
+              30.49,
+              -28.561
+            ]
+          },
+          "rear": {
+            "label": "stock/service",
+            "box": [
+              30.49,
+              -35.118,
+              42.843,
+              -28.561
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 40.843,
+          "z": -33.118,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301413",
+      "osm_id": 1474301413,
+      "addresses": [
+        "610"
+      ],
+      "name": "Studio Aura",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.791,
+            -35.118
+          ],
+          [
+            14.807,
+            -47.071
+          ],
+          [
+            52.506,
+            -47.016
+          ],
+          [
+            63.298,
+            -47.038
+          ],
+          [
+            63.329,
+            -35.096
+          ],
+          [
+            55.748,
+            -35.074
+          ],
+          [
+            47.6,
+            -35.096
+          ],
+          [
+            42.843,
+            -35.074
+          ],
+          [
+            14.791,
+            -35.118
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 10,
+        "storeys": 2,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.5
+          ],
+          "upper_windows": 4,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.08,
+                0.92
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "historic_crest",
+            "material": "minecraft:bricks",
+            "extra": 3
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1474301413,
+          "addresses": [
+            "610"
+          ],
+          "level": "medium",
+          "material": "minecraft:smooth_sandstone",
+          "features": [
+            "cornice",
+            "upper_mullions",
+            "pilasters"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301413,
+        "addresses": [
+          "610"
+        ],
+        "category": "salon",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.791,
+          -47.071,
+          63.329,
+          -35.074
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "public salon/studio",
+            "box": [
+              14.791,
+              -47.071,
+              41.972,
+              -35.074
+            ]
+          },
+          "rear": {
+            "label": "staff/storage",
+            "box": [
+              41.972,
+              -47.071,
+              63.329,
+              -35.074
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 61.329,
+          "z": -45.071,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": "studio/office_or_historic_unknown",
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301431",
+      "osm_id": 1474301431,
+      "addresses": [
+        "612"
+      ],
+      "name": "American Legion",
+      "footprint": {
+        "local_xz_m": [
+          [
+            52.506,
+            -47.016
+          ],
+          [
+            14.807,
+            -47.071
+          ],
+          [
+            14.846,
+            -59.931
+          ],
+          [
+            52.491,
+            -59.876
+          ],
+          [
+            52.506,
+            -47.016
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 7,
+        "storeys": 1,
+        "program": {
+          "bays": 5,
+          "door_fracs": [
+            0.5
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.18,
+                0.82
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "flat_piers",
+            "material": "minecraft:white_concrete",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:white_concrete",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301431,
+        "addresses": [
+          "612"
+        ],
+        "category": "civic_club",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.807,
+          -59.931,
+          52.506,
+          -47.016
+        ],
+        "floor_height_blocks": 7,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "public hall",
+            "box": [
+              14.807,
+              -59.931,
+              38.18,
+              -47.016
+            ]
+          },
+          "rear": {
+            "label": "support/service",
+            "box": [
+              38.18,
+              -59.931,
+              52.506,
+              -47.016
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 50.506,
+          "z": -57.931,
+          "strategy": "rear_side"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301444",
+      "osm_id": 1474301444,
+      "addresses": [
+        "614"
+      ],
+      "name": "Terry's Steakhouse dining room",
+      "footprint": {
+        "local_xz_m": [
+          [
+            52.491,
+            -59.876
+          ],
+          [
+            52.498,
+            -67.262
+          ],
+          [
+            49.635,
+            -67.273
+          ],
+          [
+            14.862,
+            -67.329
+          ],
+          [
+            14.846,
+            -59.931
+          ],
+          [
+            52.491,
+            -59.876
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.78
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:dark_oak_slab",
+            "ranges": [
+              [
+                0.05,
+                0.95
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "restaurant_low",
+            "material": "minecraft:dark_oak_planks",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:deepslate_bricks",
+          "trim": "minecraft:dark_oak_planks",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301444,
+        "addresses": [
+          "614"
+        ],
+        "category": "restaurant",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.846,
+          -67.329,
+          52.498,
+          -59.876
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "dining",
+            "box": [
+              14.846,
+              -67.329,
+              38.19,
+              -59.876
+            ]
+          },
+          "rear": {
+            "label": "kitchen/service",
+            "box": [
+              38.19,
+              -67.329,
+              52.498,
+              -59.876
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 50.498,
+          "z": -65.329,
+          "strategy": "shared_rear"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301414",
+      "osm_id": 1474301414,
+      "addresses": [
+        "616"
+      ],
+      "name": "Terry's Steakhouse",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.862,
+            -67.329
+          ],
+          [
+            14.949,
+            -75.024
+          ],
+          [
+            49.651,
+            -74.892
+          ],
+          [
+            49.635,
+            -67.273
+          ],
+          [
+            14.862,
+            -67.329
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 7,
+        "storeys": 1,
+        "program": {
+          "bays": 5,
+          "door_fracs": [
+            0.32
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:dark_oak_slab",
+            "ranges": [
+              [
+                0.04,
+                0.96
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "stepped_center",
+            "material": "minecraft:dark_oak_planks",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:deepslate_bricks",
+          "trim": "minecraft:dark_oak_planks",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301414,
+        "addresses": [
+          "616"
+        ],
+        "category": "restaurant",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.862,
+          -75.024,
+          49.651,
+          -67.273
+        ],
+        "floor_height_blocks": 7,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "dining/bar",
+            "box": [
+              14.862,
+              -75.024,
+              36.431,
+              -67.273
+            ]
+          },
+          "rear": {
+            "label": "kitchen/service",
+            "box": [
+              36.431,
+              -75.024,
+              49.651,
+              -67.273
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 47.651,
+          "z": -73.024,
+          "strategy": "shared_rear"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301442",
+      "osm_id": 1474301442,
+      "addresses": [
+        "620"
+      ],
+      "name": "Main Street Plaza",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.949,
+            -75.024
+          ],
+          [
+            14.972,
+            -82.145
+          ],
+          [
+            51.52,
+            -82.013
+          ],
+          [
+            60.332,
+            -82.024
+          ],
+          [
+            60.348,
+            -74.914
+          ],
+          [
+            49.651,
+            -74.892
+          ],
+          [
+            14.949,
+            -75.024
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 9,
+        "storeys": 2,
+        "program": {
+          "bays": 6,
+          "door_fracs": [
+            0.22,
+            0.78
+          ],
+          "upper_windows": 6,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.04,
+                0.46
+              ],
+              [
+                0.54,
+                0.96
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "office_flat",
+            "material": "minecraft:light_gray_concrete",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:stone_bricks",
+          "base": "minecraft:polished_andesite",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:light_blue_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:stone_bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301442,
+        "addresses": [
+          "620"
+        ],
+        "category": "office",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.949,
+          -82.145,
+          60.348,
+          -74.892
+        ],
+        "floor_height_blocks": 4,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "lobby/suites",
+            "box": [
+              14.949,
+              -82.145,
+              40.372,
+              -74.892
+            ]
+          },
+          "rear": {
+            "label": "service/corridor",
+            "box": [
+              40.372,
+              -82.145,
+              60.348,
+              -74.892
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 58.348,
+          "z": -80.145,
+          "strategy": "rear_core"
+        },
+        "upper_floor": "office_suites",
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301425",
+      "osm_id": 1474301425,
+      "addresses": [
+        "622"
+      ],
+      "name": "Old Simply Charming site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.972,
+            -82.145
+          ],
+          [
+            14.917,
+            -89.819
+          ],
+          [
+            51.575,
+            -89.543
+          ],
+          [
+            51.52,
+            -82.013
+          ],
+          [
+            14.972,
+            -82.145
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.52
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.08,
+                0.92
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "boutique_low",
+            "material": "minecraft:calcite",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:calcite",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:calcite"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301425,
+        "addresses": [
+          "622"
+        ],
+        "category": "retail",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.917,
+          -89.819,
+          51.575,
+          -82.013
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "sales/display",
+            "box": [
+              14.917,
+              -89.819,
+              35.445,
+              -82.013
+            ]
+          },
+          "rear": {
+            "label": "stock/service",
+            "box": [
+              35.445,
+              -89.819,
+              51.575,
+              -82.013
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 49.575,
+          "z": -87.819,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301453",
+      "osm_id": 1474301453,
+      "addresses": [
+        "624"
+      ],
+      "name": "Alley Cuts",
+      "footprint": {
+        "local_xz_m": [
+          [
+            14.917,
+            -89.819
+          ],
+          [
+            14.933,
+            -105.687
+          ],
+          [
+            25.52,
+            -105.587
+          ],
+          [
+            25.512,
+            -104.293
+          ],
+          [
+            51.796,
+            -104.061
+          ],
+          [
+            51.575,
+            -89.543
+          ],
+          [
+            14.917,
+            -89.819
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.35
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:polished_blackstone_slab",
+            "ranges": [
+              [
+                0.03,
+                0.97
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "low_modern",
+            "material": "minecraft:black_concrete",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:black_concrete",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301453,
+        "addresses": [
+          "624"
+        ],
+        "category": "salon",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          14.917,
+          -105.687,
+          51.796,
+          -89.543
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "salon/chairs",
+            "box": [
+              14.917,
+              -105.687,
+              35.569,
+              -89.543
+            ]
+          },
+          "rear": {
+            "label": "wash/storage",
+            "box": [
+              35.569,
+              -105.687,
+              51.796,
+              -89.543
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 49.796,
+          "z": -103.687,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1210548944",
+      "osm_id": 1210548944,
+      "addresses": [
+        "626"
+      ],
+      "name": "Redfield City Hall",
+      "footprint": {
+        "local_xz_m": [
+          [
+            19.998,
+            -119.696
+          ],
+          [
+            34.67,
+            -119.663
+          ],
+          [
+            34.67,
+            -120.791
+          ],
+          [
+            37.692,
+            -120.78
+          ],
+          [
+            37.692,
+            -119.641
+          ],
+          [
+            49.335,
+            -119.608
+          ],
+          [
+            49.311,
+            -107.334
+          ],
+          [
+            19.966,
+            -107.401
+          ],
+          [
+            19.998,
+            -119.696
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "east",
+        "height_blocks": 11,
+        "storeys": 2,
+        "program": {
+          "bays": 5,
+          "door_fracs": [
+            0.5
+          ],
+          "upper_windows": 5,
+          "awning": {
+            "material": null,
+            "ranges": [],
+            "y": 0
+          },
+          "parapet": {
+            "style": "bank_civic",
+            "material": "minecraft:smooth_sandstone",
+            "extra": 4
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:light_blue_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1210548944,
+          "addresses": [
+            "626"
+          ],
+          "level": "high",
+          "material": "minecraft:smooth_sandstone",
+          "features": [
+            "cornice",
+            "upper_mullions",
+            "entry_surround",
+            "pilasters",
+            "transoms"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1210548944,
+        "addresses": [
+          "626"
+        ],
+        "category": "civic",
+        "facade_side": "east",
+        "footprint_local_bounds": [
+          19.966,
+          -120.791,
+          49.335,
+          -107.334
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "public_lobby/counter",
+            "box": [
+              19.966,
+              -120.791,
+              38.175,
+              -107.334
+            ]
+          },
+          "rear": {
+            "label": "offices/service",
+            "box": [
+              38.175,
+              -120.791,
+              49.335,
+              -107.334
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": 47.335,
+          "z": -118.791,
+          "strategy": "rear_core"
+        },
+        "upper_floor": "offices/meeting",
+        "generate_blocks_now": false,
+        "confidence": "history_supported"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301421",
+      "osm_id": 1474301421,
+      "addresses": [
+        "603"
+      ],
+      "name": "New York Life site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.895,
+            -26.427
+          ],
+          [
+            -15.911,
+            -14.12
+          ],
+          [
+            -31.199,
+            -14.142
+          ],
+          [
+            -31.183,
+            -26.151
+          ],
+          [
+            -28.793,
+            -26.151
+          ],
+          [
+            -28.785,
+            -26.792
+          ],
+          [
+            -27.421,
+            -26.792
+          ],
+          [
+            -27.421,
+            -26.339
+          ],
+          [
+            -23.429,
+            -26.328
+          ],
+          [
+            -23.429,
+            -28.097
+          ],
+          [
+            -18.278,
+            -28.097
+          ],
+          [
+            -18.278,
+            -26.427
+          ],
+          [
+            -15.895,
+            -26.427
+          ]
+        ],
+        "source_tags": {
+          "building": "commercial"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 5,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.35
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.12,
+                0.88
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "modern_low",
+            "material": "minecraft:blue_concrete",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:light_gray_concrete",
+          "base": "minecraft:polished_andesite",
+          "trim": "minecraft:white_concrete",
+          "glass": "minecraft:light_blue_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:light_gray_concrete"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301421,
+        "addresses": [
+          "603"
+        ],
+        "category": "office",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -31.199,
+          -28.097,
+          -15.895,
+          -14.12
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "lobby/office",
+            "box": [
+              -24.465,
+              -28.097,
+              -15.895,
+              -14.12
+            ]
+          },
+          "rear": {
+            "label": "service/storage",
+            "box": [
+              -31.199,
+              -28.097,
+              -24.465,
+              -14.12
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -29.199,
+          "z": -26.097,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1393414144",
+      "osm_id": 1393414144,
+      "addresses": [
+        "605"
+      ],
+      "name": "Mike's Furniture",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.817,
+            -29.601
+          ],
+          [
+            -15.761,
+            -36.777
+          ],
+          [
+            -46.077,
+            -37.009
+          ],
+          [
+            -48.144,
+            -37.031
+          ],
+          [
+            -48.199,
+            -29.855
+          ],
+          [
+            -15.817,
+            -29.601
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 6,
+          "door_fracs": [
+            0.22,
+            0.78
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.03,
+                0.97
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "wide_low",
+            "material": "minecraft:bricks",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1393414144,
+        "addresses": [
+          "605"
+        ],
+        "category": "retail_large",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -48.199,
+          -37.031,
+          -15.761,
+          -29.601
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "showroom",
+            "box": [
+              -35.873,
+              -37.031,
+              -15.761,
+              -29.601
+            ]
+          },
+          "rear": {
+            "label": "stock/loading",
+            "box": [
+              -48.199,
+              -37.031,
+              -35.873,
+              -29.601
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -46.199,
+          "z": -35.031,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301454",
+      "osm_id": 1474301454,
+      "addresses": [
+        "609"
+      ],
+      "name": "The Bread Box site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -46.077,
+            -37.009
+          ],
+          [
+            -15.761,
+            -36.777
+          ],
+          [
+            -15.856,
+            -44.55
+          ],
+          [
+            -46.014,
+            -44.661
+          ],
+          [
+            -46.077,
+            -37.009
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.5
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:oak_slab",
+            "ranges": [
+              [
+                0.08,
+                0.92
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "flat_piers",
+            "material": "minecraft:smooth_sandstone",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301454,
+        "addresses": [
+          "609"
+        ],
+        "category": "retail_or_food",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -46.077,
+          -44.661,
+          -15.761,
+          -36.777
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "public/front",
+            "box": [
+              -34.557,
+              -44.661,
+              -15.761,
+              -36.777
+            ]
+          },
+          "rear": {
+            "label": "service/rear",
+            "box": [
+              -46.077,
+              -44.661,
+              -34.557,
+              -36.777
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -44.077,
+          "z": -42.661,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301418",
+      "osm_id": 1474301418,
+      "addresses": [
+        "611"
+      ],
+      "name": "Lutter Realty site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.856,
+            -44.55
+          ],
+          [
+            -15.801,
+            -59.445
+          ],
+          [
+            -49.737,
+            -59.555
+          ],
+          [
+            -58.02,
+            -59.61
+          ],
+          [
+            -58.115,
+            -44.738
+          ],
+          [
+            -46.014,
+            -44.661
+          ],
+          [
+            -15.856,
+            -44.55
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 5,
+        "storeys": 1,
+        "program": {
+          "bays": 5,
+          "door_fracs": [
+            0.68
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": null,
+            "ranges": [],
+            "y": 0
+          },
+          "parapet": {
+            "style": "midcentury_band",
+            "material": "minecraft:blue_terracotta",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:light_gray_concrete",
+          "base": "minecraft:polished_andesite",
+          "trim": "minecraft:white_concrete",
+          "glass": "minecraft:light_blue_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:light_gray_concrete"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301418,
+        "addresses": [
+          "611"
+        ],
+        "category": "office",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -58.115,
+          -59.61,
+          -15.801,
+          -44.55
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "public office",
+            "box": [
+              -39.497,
+              -59.61,
+              -15.801,
+              -44.55
+            ]
+          },
+          "rear": {
+            "label": "service/storage",
+            "box": [
+              -58.115,
+              -59.61,
+              -39.497,
+              -44.55
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -56.115,
+          "z": -57.61,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "history_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301429",
+      "osm_id": 1474301429,
+      "addresses": [
+        "613"
+      ],
+      "name": "State Farm Insurance site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -49.737,
+            -59.555
+          ],
+          [
+            -15.801,
+            -59.445
+          ],
+          [
+            -15.777,
+            -67.24
+          ],
+          [
+            -36.958,
+            -67.317
+          ],
+          [
+            -49.753,
+            -67.373
+          ],
+          [
+            -49.761,
+            -65.548
+          ],
+          [
+            -51.37,
+            -65.548
+          ],
+          [
+            -51.386,
+            -61.833
+          ],
+          [
+            -49.73,
+            -61.833
+          ],
+          [
+            -49.737,
+            -59.555
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 5,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.55
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.12,
+                0.88
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "modern_low",
+            "material": "minecraft:red_concrete",
+            "extra": 1
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:white_concrete",
+          "base": "minecraft:light_gray_concrete",
+          "trim": "minecraft:red_concrete",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:white_concrete"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301429,
+        "addresses": [
+          "613"
+        ],
+        "category": "office",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -51.386,
+          -67.373,
+          -15.777,
+          -59.445
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "reception/office",
+            "box": [
+              -35.718,
+              -67.373,
+              -15.777,
+              -59.445
+            ]
+          },
+          "rear": {
+            "label": "service/storage",
+            "box": [
+              -51.386,
+              -67.373,
+              -35.718,
+              -59.445
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -49.386,
+          "z": -65.373,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301407",
+      "osm_id": 1474301407,
+      "addresses": [
+        "615"
+      ],
+      "name": "Redfield Chiropractic",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -36.958,
+            -67.317
+          ],
+          [
+            -15.777,
+            -67.24
+          ],
+          [
+            -15.785,
+            -75.168
+          ],
+          [
+            -45.407,
+            -75.157
+          ],
+          [
+            -45.414,
+            -71.641
+          ],
+          [
+            -40.011,
+            -71.63
+          ],
+          [
+            -40.011,
+            -70.557
+          ],
+          [
+            -36.95,
+            -70.557
+          ],
+          [
+            -36.958,
+            -67.317
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.4
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.05,
+                0.95
+              ]
+            ],
+            "y": 3
+          },
+          "parapet": {
+            "style": "flat_piers",
+            "material": "minecraft:smooth_stone",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:stone_bricks",
+          "base": "minecraft:polished_andesite",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:light_blue_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:stone_bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301407,
+        "addresses": [
+          "615"
+        ],
+        "category": "clinic",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -45.414,
+          -75.168,
+          -15.777,
+          -67.24
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "reception/treatment",
+            "box": [
+              -34.152,
+              -75.168,
+              -15.777,
+              -67.24
+            ]
+          },
+          "rear": {
+            "label": "staff/service",
+            "box": [
+              -45.414,
+              -75.168,
+              -34.152,
+              -67.24
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -43.414,
+          "z": -73.168,
+          "strategy": "rear_core"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301456",
+      "osm_id": 1474301456,
+      "addresses": [
+        "617-619"
+      ],
+      "name": "Bob's Floor Covering site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.785,
+            -75.168
+          ],
+          [
+            -15.785,
+            -82.422
+          ],
+          [
+            -37.25,
+            -82.411
+          ],
+          [
+            -48.357,
+            -82.433
+          ],
+          [
+            -55.875,
+            -82.422
+          ],
+          [
+            -61.215,
+            -82.433
+          ],
+          [
+            -61.231,
+            -75.19
+          ],
+          [
+            -45.407,
+            -75.157
+          ],
+          [
+            -15.785,
+            -75.168
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 6,
+        "storeys": 1,
+        "program": {
+          "bays": 7,
+          "door_fracs": [
+            0.24,
+            0.76
+          ],
+          "upper_windows": 0,
+          "awning": {
+            "material": "minecraft:smooth_stone_slab",
+            "ranges": [
+              [
+                0.02,
+                0.48
+              ],
+              [
+                0.52,
+                0.98
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "wide_low",
+            "material": "minecraft:bricks",
+            "extra": 2
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_stone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": false,
+        "program": null,
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301456,
+        "addresses": [
+          "617-619"
+        ],
+        "category": "retail_large",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -61.231,
+          -82.433,
+          -15.785,
+          -75.157
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 1,
+        "ground_floor_zones": {
+          "front": {
+            "label": "showroom",
+            "box": [
+              -43.962,
+              -82.433,
+              -15.785,
+              -75.157
+            ]
+          },
+          "rear": {
+            "label": "stock/loading",
+            "box": [
+              -61.231,
+              -82.433,
+              -43.962,
+              -75.157
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -59.231,
+          "z": -80.433,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": null,
+        "generate_blocks_now": false,
+        "confidence": "inferred"
+      },
+      "confidence": {
+        "visual": "inferred",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301428",
+      "osm_id": 1474301428,
+      "addresses": [
+        "621"
+      ],
+      "name": "Carpets Plus",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.785,
+            -82.422
+          ],
+          [
+            -15.722,
+            -90.25
+          ],
+          [
+            -37.25,
+            -90.328
+          ],
+          [
+            -37.25,
+            -89.333
+          ],
+          [
+            -37.25,
+            -86.303
+          ],
+          [
+            -37.25,
+            -82.411
+          ],
+          [
+            -15.785,
+            -82.422
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 10,
+        "storeys": 2,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.32
+          ],
+          "upper_windows": 4,
+          "awning": {
+            "material": "minecraft:dark_prismarine_slab",
+            "ranges": [
+              [
+                0.04,
+                0.96
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "north_historic",
+            "material": "minecraft:bricks",
+            "extra": 3
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:dark_prismarine",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1474301428,
+          "addresses": [
+            "621"
+          ],
+          "level": "high",
+          "material": "minecraft:smooth_sandstone",
+          "features": [
+            "cornice",
+            "upper_mullions",
+            "pilasters",
+            "transoms"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301428,
+        "addresses": [
+          "621"
+        ],
+        "category": "retail",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -37.25,
+          -90.328,
+          -15.722,
+          -82.411
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "sales/display",
+            "box": [
+              -27.778,
+              -90.328,
+              -15.722,
+              -82.411
+            ]
+          },
+          "rear": {
+            "label": "stock/service",
+            "box": [
+              -37.25,
+              -90.328,
+              -27.778,
+              -82.411
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -35.25,
+          "z": -88.328,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": "historic_upper_unknown",
+        "generate_blocks_now": false,
+        "confidence": "photo_supported"
+      },
+      "confidence": {
+        "visual": "photo_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301430",
+      "osm_id": 1474301430,
+      "addresses": [
+        "623"
+      ],
+      "name": "Simply Charming",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.722,
+            -90.25
+          ],
+          [
+            -15.675,
+            -104.791
+          ],
+          [
+            -46.156,
+            -104.902
+          ],
+          [
+            -61.128,
+            -104.913
+          ],
+          [
+            -61.144,
+            -90.35
+          ],
+          [
+            -37.25,
+            -90.328
+          ],
+          [
+            -15.722,
+            -90.25
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 10,
+        "storeys": 2,
+        "program": {
+          "bays": 4,
+          "door_fracs": [
+            0.52
+          ],
+          "upper_windows": 4,
+          "awning": {
+            "material": "minecraft:dark_prismarine_slab",
+            "ranges": [
+              [
+                0.04,
+                0.96
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "north_historic",
+            "material": "minecraft:bricks",
+            "extra": 3
+          },
+          "subfacades": []
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:lime_terracotta",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1474301430,
+          "addresses": [
+            "623"
+          ],
+          "level": "high",
+          "material": "minecraft:smooth_sandstone",
+          "features": [
+            "cornice",
+            "upper_mullions",
+            "pilasters",
+            "transoms"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301430,
+        "addresses": [
+          "623"
+        ],
+        "category": "retail_boutique",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -61.144,
+          -104.913,
+          -15.675,
+          -90.25
+        ],
+        "floor_height_blocks": 5,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "sales/display",
+            "box": [
+              -43.866,
+              -104.913,
+              -15.675,
+              -90.25
+            ]
+          },
+          "rear": {
+            "label": "stock/service",
+            "box": [
+              -61.144,
+              -104.913,
+              -43.866,
+              -90.25
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -59.144,
+          "z": -102.913,
+          "strategy": "rear_corner"
+        },
+        "upper_floor": "historic_upper_unknown",
+        "generate_blocks_now": false,
+        "confidence": "photo_supported"
+      },
+      "confidence": {
+        "visual": "photo_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    },
+    {
+      "building_id": "redfield_sd_osm_1474301419",
+      "osm_id": 1474301419,
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "name": "Hair & Company / 627 historic site",
+      "footprint": {
+        "local_xz_m": [
+          [
+            -15.675,
+            -104.791
+          ],
+          [
+            -15.58,
+            -120.581
+          ],
+          [
+            -46.109,
+            -120.736
+          ],
+          [
+            -46.156,
+            -104.902
+          ],
+          [
+            -15.675,
+            -104.791
+          ]
+        ],
+        "source_tags": {
+          "building": "retail"
+        }
+      },
+      "facade": {
+        "side": "west",
+        "height_blocks": 11,
+        "storeys": 2,
+        "program": {
+          "bays": 7,
+          "door_fracs": [
+            0.24,
+            0.74
+          ],
+          "upper_windows": 6,
+          "awning": {
+            "material": "minecraft:dark_oak_slab",
+            "ranges": [
+              [
+                0.03,
+                0.47
+              ],
+              [
+                0.53,
+                0.97
+              ]
+            ],
+            "y": 4
+          },
+          "parapet": {
+            "style": "paired_crest",
+            "material": "minecraft:bricks",
+            "extra": 4
+          },
+          "subfacades": [
+            {
+              "range": [
+                0.0,
+                0.49
+              ],
+              "address": "627",
+              "base": "minecraft:dark_prismarine",
+              "trim": "minecraft:smooth_sandstone",
+              "awning": "minecraft:dark_prismarine_slab"
+            },
+            {
+              "range": [
+                0.51,
+                1.0
+              ],
+              "address": "625",
+              "base": "minecraft:red_terracotta",
+              "trim": "minecraft:smooth_sandstone",
+              "awning": "minecraft:dark_oak_slab"
+            }
+          ]
+        },
+        "materials": {
+          "wall": "minecraft:bricks",
+          "base": "minecraft:stone_bricks",
+          "trim": "minecraft:smooth_sandstone",
+          "glass": "minecraft:black_stained_glass",
+          "door": "minecraft:dark_oak_door",
+          "secondary": "minecraft:bricks"
+        }
+      },
+      "micro_overlay": {
+        "enabled": true,
+        "program": {
+          "osm_id": 1474301419,
+          "addresses": [
+            "625",
+            "627"
+          ],
+          "level": "high",
+          "material": "minecraft:smooth_sandstone",
+          "features": [
+            "cornice",
+            "upper_mullions",
+            "pilasters",
+            "center_divider",
+            "transoms"
+          ]
+        },
+        "allowed_uses": [
+          "cornice",
+          "mullion",
+          "transom",
+          "pilaster",
+          "surround",
+          "thin_trim"
+        ]
+      },
+      "interior_program": {
+        "osm_id": 1474301419,
+        "addresses": [
+          "625",
+          "627"
+        ],
+        "category": "paired_mixed",
+        "facade_side": "west",
+        "footprint_local_bounds": [
+          -46.156,
+          -120.736,
+          -15.58,
+          -104.791
+        ],
+        "floor_height_blocks": 6,
+        "storeys": 2,
+        "ground_floor_zones": {
+          "front": {
+            "label": "two_front_tenants",
+            "box": [
+              -34.537,
+              -120.736,
+              -15.58,
+              -104.791
+            ]
+          },
+          "rear": {
+            "label": "rear_service_split",
+            "box": [
+              -46.156,
+              -120.736,
+              -34.537,
+              -104.791
+            ]
+          }
+        },
+        "stair_seed": {
+          "x": -44.156,
+          "z": -118.736,
+          "strategy": "two_rear_stairs"
+        },
+        "upper_floor": "historic_upper_unknown",
+        "generate_blocks_now": false,
+        "confidence": "photo_supported"
+      },
+      "confidence": {
+        "visual": "photo_supported",
+        "footprint": "osm_reviewed",
+        "height": "block-scale inferred/history-supported"
+      },
+      "earthforge_authority": [
+        "world_position",
+        "orientation",
+        "footprint",
+        "registration_origin",
+        "final_export"
+      ]
+    }
+  ]
+}
