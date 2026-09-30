@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_DEPTH_V003",
+  "project_id": "redfield_sd",
+  "osm_id": 1474301428,
+  "addresses": [
+    "621"
+  ],
+  "name": "621 Main / Micro Depth Prototype",
+  "mode": "micro_only_sectional_depth_patch",
+  "base_file": "projects/redfield_sd/outputs/l1_micro/Redfield_POC_001_L1_Micro_Alpha_v006.litematic",
+  "reference_image": "projects/redfield_sd/references/generated/621_ornate_micro_target.png",
+  "materials": {
+    "brick": "minecraft:bricks",
+    "green": "minecraft:green_concrete",
+    "green_shadow": "minecraft:green_terracotta",
+    "trim": "minecraft:smooth_sandstone",
+    "lattice": "minecraft:black_concrete",
+    "door": "minecraft:dark_oak_planks",
+    "handle": "minecraft:gold_block",
+    "roof": "minecraft:polished_deepslate",
+    "floor": "minecraft:spruce_planks"
+  },
+  "dimensions": {
+    "ground_floor_top_y": 4,
+    "second_floor_plate_y": 4,
+    "cornice_y": 8,
+    "parapet_base_y": 9,
+    "parapet_max_y": 11,
+    "roof_y": 9
+  },
+  "facade_program": {
+    "frontage_slots": 8,
+    "corner_columns": [
+      0,
+      7
+    ],
+    "left_display": [
+      1,
+      2
+    ],
+    "door_pair": [
+      3,
+      4
+    ],
+    "right_display": [
+      5,
+      6
+    ],
+    "upper_windows": [
+      1,
+      3,
+      5
+    ],
+    "bracket_slots": [
+      1,
+      3,
+      5
+    ]
+  },
+  "depth_cells": {
+    "wall_body_thickness": 5,
+    "storefront_reveal": 8,
+    "storefront_lattice_setback": 8,
+    "door_setback": 9,
+    "upper_window_reveal": 7,
+    "upper_lattice_setback": 7,
+    "trim_projection": 3,
+    "sign_fascia_projection": 7,
+    "cornice_projection": 13,
+    "awning_projection": 15,
+    "sill_header_projection": 5,
+    "pilaster_projection": 6,
+    "parapet_setback": 2
+  },
+  "micro": {
+    "floor_thickness_cells": 2,
+    "roof_thickness_cells": 3,
+    "host_budget": 1200
+  },
+  "validation": {
+    "minimum_depth_tiers": 6,
+    "minimum_storefront_recess_cells": 7,
+    "minimum_upper_window_recess_cells": 6,
+    "minimum_cornice_projection_cells": 11,
+    "minimum_door_recess_cells": 8,
+    "minimum_parapet_levels": 3,
+    "glass_allowed": false,
+    "vanilla_building_above_ground_allowed": false
+  }
+}

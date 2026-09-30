@@ -27,8 +27,8 @@ jobs:
       - name: Test Astra Microblock NBT
         run: python tools/test_astra_microblock_codec.py
 
-      - name: Test 621 Micro-Only architecture
-        run: python pipeline/reconstruction/generate_redfield_621_micro_only_v002.py --self-test
+      - name: Test 621 depth architecture
+        run: python pipeline/reconstruction/generate_redfield_621_micro_depth_v003.py --self-test
 
       - name: Compile Python
         run: python -m compileall -q pipeline tools
