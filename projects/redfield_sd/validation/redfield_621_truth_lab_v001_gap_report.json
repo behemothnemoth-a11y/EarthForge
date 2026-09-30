@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_CARPETS_PLUS_TRUTH_LAB_V001",
+  "purpose": "Identify what remains unsolved after pushing one building harder than the town-wide pipeline.",
+  "known_before_test": [
+    "OSM footprint / world placement",
+    "Main-facing side",
+    "current business/address",
+    "current downtown visual context",
+    "basic two-storey historic storefront character"
+  ],
+  "pipeline_gaps_to_measure": [
+    {
+      "id": "reference_ingestion",
+      "question": "Can EarthForge ingest and preserve the actual pixels/metadata from Street View and business photo galleries instead of relying on manual interpretation?"
+    },
+    {
+      "id": "perspective_rectification",
+      "question": "Can Build Studio/EarthForge rectify an oblique facade photo to an elevation using known footprint width/control points?"
+    },
+    {
+      "id": "opening_measurement",
+      "question": "Can window and door positions be measured automatically in meters rather than hand-authored bay fractions?"
+    },
+    {
+      "id": "height_estimation",
+      "question": "Can story/parapet height be estimated from calibrated imagery rather than a style heuristic?"
+    },
+    {
+      "id": "micro_host_composition",
+      "question": "Can multiple micro features be composited into one Astra host instead of competing for the same host block?"
+    },
+    {
+      "id": "transparent_micro_materials",
+      "question": "Astra currently excludes glass as a sculpting material; do vanilla glass + opaque micro mullions remain visually adequate?"
+    },
+    {
+      "id": "signage",
+      "question": "What is the right block/microblock representation for real text/sign logos without custom textures?"
+    },
+    {
+      "id": "roof_truth",
+      "question": "Street-level imagery does not establish rear roof equipment and roof setbacks; aerial/oblique sources are needed."
+    },
+    {
+      "id": "rear_truth",
+      "question": "The rear elevation is still inferred from footprint and commercial-building conventions."
+    },
+    {
+      "id": "interior_truth",
+      "question": "The exterior pipeline still lacks verified room layouts; interior generation should remain gated."
+    }
+  ],
+  "measured_from_build": {
+    "frontage_width_blocks": 8,
+    "building_depth_blocks": 21,
+    "normal_non_air_blocks": 1082,
+    "micro_host_blocks": 52,
+    "micro_occupied_cells": 10985,
+    "upper_window_centers_z": [
+      -97,
+      -96,
+      -94
+    ],
+    "lower_window_centers_z": [
+      -97,
+      -96,
+      -94
+    ],
+    "door_z": -94
+  },
+  "conclusion": {
+    "status": "requires_in_game_reference_comparison",
+    "interpretation": "If v001 reads materially closer to the 2023 reference than the town-wide 621, keep the isolated-building workflow and move its measured facade program back into the shared pipeline. If not, the next missing step is calibrated image measurement rather than more hand-authored Minecraft detail."
+  }
+}

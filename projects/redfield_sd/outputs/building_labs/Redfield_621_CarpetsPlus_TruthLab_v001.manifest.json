@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_CARPETS_PLUS_TRUTH_LAB_V001",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_CarpetsPlus_TruthLab_v001.litematic",
+  "sha256": "a4b7b6f6f20f846a82ff06ad7974433bda11222b2cae6e1a0a16b30a96545878",
+  "patch_only": true,
+  "target": "621 Main Street / Carpets Plus",
+  "placement": {
+    "instruction": "Stand on the existing EarthForge yellow registration block and set the schematic placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL",
+    "warning": "This patch intentionally wipes and rebuilds only the tight 621 region."
+  },
+  "review_views": [
+    "straight-on Main Street facade",
+    "three-quarter view showing depth/roof",
+    "close-up upper windows/cornice",
+    "close-up lower storefront/mullions",
+    "rear alley elevation"
+  ]
+}

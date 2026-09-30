@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_CARPETS_PLUS_TRUTH_LAB_V001",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_CarpetsPlus_TruthLab_v001.litematic",
+  "sha256": "a4b7b6f6f20f846a82ff06ad7974433bda11222b2cae6e1a0a16b30a96545878",
+  "patch_bounds": [
+    40,
+    -1,
+    -99,
+    63,
+    14,
+    -92
+  ],
+  "region_position": [
+    40,
+    -1,
+    -99
+  ],
+  "region_size": [
+    24,
+    16,
+    8
+  ],
+  "non_air_blocks": 1082,
+  "footprint_cells": 168,
+  "frontage_width_blocks": 8,
+  "building_depth_blocks": 21,
+  "micro_host_blocks": 52,
+  "micro_occupied_cells": 10985,
+  "checks": {
+    "exact_block_map": true,
+    "astra_tile_entities": true,
+    "astra_microcell_decode": true,
+    "neighbors_outside_patch_z_bounds": true,
+    "interior_room_layout_generated": false
+  },
+  "errors": []
+}
