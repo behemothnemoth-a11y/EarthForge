@@ -1,0 +1,52 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:stone_bricks",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -1,
+    -19
+  ],
+  "region_size": [
+    7,
+    15,
+    50
+  ],
+  "volume": 5250,
+  "non_air_blocks": 1262,
+  "tile_entities": 1016,
+  "sha256": "618471f14f3bad7fed3da9402866d96ed632020915a41ee5a0153b153de124cc",
+  "facade_counts": {
+    "microblock": 1016,
+    "full_block": 237
+  },
+  "pad_blocks": 9,
+  "microcells": 1411558,
+  "vanilla_fraction_of_facade_volume": 0.4075,
+  "validation": {
+    "exact_readback": true,
+    "independent_palette_check": true,
+    "connected_facade": 1,
+    "approved_623_exact_cell_match": true,
+    "registration_preserved": true,
+    "materials_supported": true,
+    "in_game_test": false,
+    "material_count": 242
+  },
+  "confidence": {
+    "opening_counts": "High: visible modern city archive photographs",
+    "dimensions": "Photo-proportional, not survey verified: widths 14/13/7/16 blocks",
+    "hidden_areas": "Truck-obscured bottom of 621 glazing and occluded 625-627 right details inferred locally",
+    "dates": "Archive comparison appearance, not a claim of September 2026 business occupancy",
+    "617_details": "Small antennas, cables and tiny inscriptions omitted below useful resolution",
+    "signs": "Photographed sign color samples; small lettering is resolution limited",
+    "623": "Accepted v003 copied exactly, including its provisional parapet continuation"
+  },
+  "generator_sha256": "f99316737494139a7024ae560b807c2fea10db9a22965a013ebd359f2097c5c7"
+}
