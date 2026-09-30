@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_DEPTH_V003",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_MicroDepth_v003.litematic",
+  "sha256": "193ccff74456fef77b915ad5f3882d38ad08e8b4b9f92109e62f8d0284798e78",
+  "patch_only": true,
+  "no_glass": true,
+  "requires_mod": "Astra Microblocks 0.4.0-compatible save contract",
+  "placement": {
+    "instruction": "Stand on the existing EarthForge yellow registration block and set placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL"
+  },
+  "review_targets": [
+    "3/4 view depth read",
+    "storefront recess",
+    "door setback",
+    "upper window pocket depth",
+    "trim projection",
+    "layered cornice shadow",
+    "parapet silhouette",
+    "eye-level negative space"
+  ]
+}

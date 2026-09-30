@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_DEPTH_V003",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_MicroDepth_v003.litematic",
+  "sha256": "193ccff74456fef77b915ad5f3882d38ad08e8b4b9f92109e62f8d0284798e78",
+  "region_position": [
+    40,
+    -1,
+    -99
+  ],
+  "region_size": [
+    25,
+    14,
+    8
+  ],
+  "micro_host_blocks": 939,
+  "micro_occupied_cells": 804552,
+  "materials": [
+    "minecraft:black_concrete",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:gold_block",
+    "minecraft:green_concrete",
+    "minecraft:green_terracotta",
+    "minecraft:polished_deepslate",
+    "minecraft:smooth_sandstone",
+    "minecraft:spruce_planks"
+  ],
+  "glass_materials": [],
+  "vanilla_building_blocks_above_ground": 0,
+  "depth": {
+    "tiers": [
+      -7,
+      0,
+      3,
+      7,
+      13,
+      15
+    ],
+    "tier_count": 6,
+    "storefront_reveal_cells": 8,
+    "door_setback_cells": 9,
+    "upper_window_reveal_cells": 7,
+    "trim_projection_cells": 3,
+    "sign_fascia_projection_cells": 7,
+    "cornice_projection_cells": 13,
+    "awning_projection_cells": 15,
+    "parapet_levels": 3
+  },
+  "checks": {
+    "exact_block_map": true,
+    "astra_host_count": true,
+    "astra_microcell_decode": true,
+    "no_glass": true,
+    "micro_only_above_ground": true,
+    "minimum_depth_tiers": true,
+    "parapet_hierarchy": true,
+    "interior_room_layout_generated": false
+  },
+  "errors": []
+}
