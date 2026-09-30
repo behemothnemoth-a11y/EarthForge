@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_ONLY_V002",
+  "status": "valid",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_MicroOnly_v002.litematic",
+  "sha256": "4a3d89372526f591ffa32781453023ea5dec6c41e9fcd7c5c421e01f7449d47d",
+  "patch_bounds": [
+    40,
+    -1,
+    -99,
+    63,
+    12,
+    -92
+  ],
+  "region_position": [
+    40,
+    -1,
+    -99
+  ],
+  "region_size": [
+    24,
+    14,
+    8
+  ],
+  "micro_host_blocks": 902,
+  "micro_occupied_cells": 753498,
+  "micro_materials": [
+    "minecraft:black_concrete",
+    "minecraft:bricks",
+    "minecraft:dark_oak_planks",
+    "minecraft:gold_block",
+    "minecraft:green_concrete",
+    "minecraft:polished_deepslate",
+    "minecraft:smooth_sandstone",
+    "minecraft:spruce_planks"
+  ],
+  "glass_materials": [],
+  "vanilla_building_blocks_above_ground": 0,
+  "checks": {
+    "exact_block_map": true,
+    "astra_host_count": true,
+    "astra_microcell_decode": true,
+    "no_glass": true,
+    "building_above_ground_is_micro_only": true,
+    "interior_room_layout_generated": false
+  },
+  "errors": []
+}

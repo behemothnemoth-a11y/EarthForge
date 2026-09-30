@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_ONLY_V002",
+  "file": "projects/redfield_sd/outputs/building_labs/Redfield_621_MicroOnly_v002.litematic",
+  "sha256": "4a3d89372526f591ffa32781453023ea5dec6c41e9fcd7c5c421e01f7449d47d",
+  "patch_only": true,
+  "requires_mod": "Astra Microblocks 0.4.0-compatible save contract",
+  "no_glass": true,
+  "placement": {
+    "instruction": "Stand on the existing EarthForge yellow registration block and set placement origin to player feet.",
+    "rotation": 0,
+    "mirror": "none",
+    "replace_blocks": "ALL"
+  },
+  "review_targets": [
+    "overall resemblance to approved ornate target",
+    "storefront frame proportions",
+    "upper window trim/lattice",
+    "cornice depth",
+    "parapet silhouette",
+    "micro-only wall/roof visual quality",
+    "performance with one complete micro-only building"
+  ]
+}
