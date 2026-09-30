@@ -1,0 +1,54 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:dark_prismarine",
+    "minecraft:spruce_slab[type=bottom,waterlogged=false]",
+    "minecraft:stone_bricks"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    59,
+    0,
+    -99
+  ],
+  "region_size": [
+    7,
+    15,
+    8
+  ],
+  "volume": 840,
+  "non_air_blocks": 310,
+  "tile_entities": 194,
+  "sha256": "c54484aefda0b1e8d2fa1d6d49f8bf9ab2b1bbbc5d94f4c975b211f435792901",
+  "id": "REDFIELD_621_HYBRID_RESTART_V001",
+  "counts": {
+    "full_block": 106,
+    "vanilla_slab": 10,
+    "microblock": 194
+  },
+  "occupied_cell_equivalents_by_type": {
+    "full_block": 434176,
+    "vanilla_slab": 20480,
+    "microblock": 279059
+  },
+  "vanilla_share_of_occupied_volume": 0.6197,
+  "astra_microcells": 279059,
+  "validation": {
+    "block_readback": true,
+    "exact_material_and_geometry_readback": true,
+    "connected_components": 1,
+    "unnecessary_homogeneous_full_cube_hosts": 0,
+    "clear_entry_width_blocks": 1.25,
+    "clear_entry_height_blocks": 2.5,
+    "neighbor_slots_untouched": true,
+    "glass": false,
+    "roof": false,
+    "full_building_body": false,
+    "in_game_validation": "not performed",
+    "independent_regeneration_matches": true
+  },
+  "source_sha256": "5e60aa2bf44cde66fc7c48bb4cd5281788e899c0fe14195f7c0b958bd277b35c",
+  "config_sha256": "46a52c2dc3010aa2e1aa7ab9d01c1e1f871a71d8f8159214e44feac5fe639409"
+}

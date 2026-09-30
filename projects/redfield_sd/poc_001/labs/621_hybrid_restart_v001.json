@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "REDFIELD_621_HYBRID_RESTART_V001",
+  "address": "621 Main Street",
+  "design_basis": "Latest approved generated streetscape concept; not a surveyed historic reconstruction",
+  "reference": "projects/redfield_sd/references/generated/historic_voxel_main_street_facade.png",
+  "scope": "Independent 621 facade and shallow structural returns; no adjacent storefronts, full building body, roof, or interior fit-out",
+  "coordinates": {"front_boundary_x": 63, "min_z": -99, "width_blocks": 8, "cell_resolution": 16},
+  "dimensions_cells": {"height": 208, "depth_min": -48, "depth_max": 32, "wall_back": -32, "wall_front": 0},
+  "upper_windows": [{"u0": 16, "u1": 32}, {"u0": 56, "u1": 72}, {"u0": 96, "u1": 112}],
+  "materials": {
+    "brick": "minecraft:bricks",
+    "trim": "minecraft:smooth_sandstone",
+    "green": "minecraft:dark_prismarine",
+    "green_inset": "minecraft:green_terracotta",
+    "frame": "minecraft:polished_blackstone",
+    "wood": "minecraft:dark_oak_planks",
+    "base": "minecraft:stone_bricks",
+    "floor": "minecraft:spruce_planks",
+    "metal": "minecraft:gold_block"
+  },
+  "authoring_policy": {
+    "full_blocks": "Wall cores, piers, continuous masonry bands and floor strips",
+    "microblocks": "Fractional openings, reveals, mouldings, pediments, awning, narrow frames and ornaments",
+    "promotion": "Every homogeneous full cube becomes a vanilla block; exact half-height homogeneous cubes become vanilla slabs when supported",
+    "no_glass": true,
+    "no_arbitrary_microblock_percentage": true,
+    "source_reproducible_without_old_schematic": true
+  },
+  "placement": {"origin": "Existing Redfield registration/player-feet origin", "rotation": 0, "mirror": "none", "replace_blocks": "ALL", "region_bounds": [59, 0, -99, 65, 14, -92]},
+  "status": "Prototype for in-game review; separate restart, not replacement of the accepted whole strip"
+}
