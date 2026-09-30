@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "layout_id": "FORT_GARRY_MAIN_FLOOR_NOV2025_V001",
+  "source_date": "2025-11",
+  "scale_feet_per_block": 1.5,
+  "rooms": {
+    "Restaurant": [
+      -55,
+      -27,
+      -27,
+      -3
+    ],
+    "Broadway Annex": [
+      -26,
+      -6,
+      -10,
+      -3
+    ],
+    "Entry Vestibule": [
+      -5,
+      5,
+      -10,
+      -3
+    ],
+    "Provencher Alcove": [
+      6,
+      22,
+      -10,
+      -3
+    ],
+    "Provencher Ballroom": [
+      23,
+      49,
+      -66,
+      -3
+    ],
+    "Main Lobby": [
+      -16,
+      22,
+      -46,
+      -11
+    ],
+    "Restaurant Reception": [
+      -26,
+      -17,
+      -18,
+      -11
+    ],
+    "Fitness Centre": [
+      -55,
+      -27,
+      -36,
+      -28
+    ],
+    "Sales & Catering": [
+      -55,
+      -39,
+      -53,
+      -37
+    ],
+    "Men's W/C": [
+      -55,
+      -47,
+      -68,
+      -54
+    ],
+    "Women's W/C": [
+      -46,
+      -38,
+      -68,
+      -54
+    ],
+    "Parkade Entry/Stairs": [
+      -37,
+      -22,
+      -70,
+      -55
+    ],
+    "Concierge": [
+      -37,
+      -29,
+      -53,
+      -41
+    ],
+    "Service Space": [
+      10,
+      22,
+      -53,
+      -39
+    ],
+    "Elevators": [
+      11,
+      22,
+      -37,
+      -21
+    ],
+    "West Hall": [
+      -38,
+      -17,
+      -55,
+      -35
+    ],
+    "Mid Hall": [
+      -27,
+      -16,
+      -37,
+      -19
+    ],
+    "North Lobby": [
+      -20,
+      22,
+      -53,
+      -45
+    ],
+    "Elevator Hall": [
+      5,
+      22,
+      -39,
+      -18
+    ]
+  },
+  "oval_room": {
+    "center_xz": [
+      -6.0,
+      -55.0
+    ],
+    "radius_x_blocks": 7.5,
+    "radius_z_blocks": 6.0,
+    "wall_height_blocks": 17,
+    "microblock_wall": true
+  },
+  "dimension_checks": {
+    "Provencher Ballroom": {
+      "official_ft": [
+        96,
+        40
+      ],
+      "minecraft_blocks": [
+        64,
+        27
+      ],
+      "modeled_ft": [
+        96,
+        40.5
+      ]
+    },
+    "Restaurant": {
+      "official_ft": [
+        43,
+        36.5
+      ],
+      "minecraft_blocks": [
+        29,
+        24
+      ],
+      "modeled_ft": [
+        43.5,
+        36
+      ]
+    },
+    "Broadway Annex": {
+      "official_ft": [
+        32,
+        12
+      ],
+      "minecraft_blocks": [
+        21,
+        8
+      ],
+      "modeled_ft": [
+        31.5,
+        12
+      ]
+    },
+    "Provencher Alcove": {
+      "official_ft": [
+        26,
+        12
+      ],
+      "minecraft_blocks": [
+        17,
+        8
+      ],
+      "modeled_ft": [
+        25.5,
+        12
+      ]
+    },
+    "Oval Room": {
+      "official_ft": [
+        22,
+        18
+      ],
+      "minecraft_blocks": [
+        15,
+        12
+      ],
+      "modeled_ft": [
+        22.5,
+        18
+      ]
+    }
+  }
+}

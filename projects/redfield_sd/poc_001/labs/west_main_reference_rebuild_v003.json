@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "strip_id": "REDFIELD_WEST_MAIN_REFERENCE_REBUILD_V003",
+  "reference_image": "projects/redfield_sd/references/generated/historic_voxel_main_street_facade.png",
+  "target_sequence": [
+    "617-619",
+    "621",
+    "623",
+    "625",
+    "627"
+  ],
+  "world_z_ranges": {
+    "617-619": [
+      -91,
+      -85
+    ],
+    "621": [
+      -99,
+      -92
+    ],
+    "623": [
+      -114,
+      -100
+    ],
+    "625": [
+      -122,
+      -115
+    ],
+    "627": [
+      -130,
+      -123
+    ]
+  },
+  "mode": "full_front_facade_wipe_and_rebuild",
+  "rules": {
+    "glass": false,
+    "continuous_microcell_authoring": true,
+    "allow_depth_more_than_one_block": true,
+    "detached_solids": "forbidden",
+    "full_building_depth": "not yet",
+    "interiors": "not yet"
+  },
+  "future_compressed_building_depths": {
+    "617-619": 14,
+    "621": 14,
+    "623": 14,
+    "625": 14,
+    "627": 14
+  }
+}

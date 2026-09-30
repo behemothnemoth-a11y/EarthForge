@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "strip_id": "REDFIELD_WEST_MAIN_REFERENCE_REBUILD_V003",
+  "status": "valid",
+  "file": "Redfield_WestMain_617-627_ReferenceRebuild_v003.litematic",
+  "sha256": "75bdd80a58f18f506bca6ecc1d1b50c180b94bad5888e42caf2bfec48aa5b05e",
+  "region_position": [
+    59,
+    0,
+    -130
+  ],
+  "region_size": [
+    6,
+    13,
+    46
+  ],
+  "micro_host_blocks": 1705,
+  "occupied_microcells": 2581012,
+  "material_count": 18,
+  "materials": [
+    "minecraft:blue_terracotta",
+    "minecraft:bricks",
+    "minecraft:brown_terracotta",
+    "minecraft:calcite",
+    "minecraft:chiseled_sandstone",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:cut_sandstone",
+    "minecraft:cyan_terracotta",
+    "minecraft:dark_oak_planks",
+    "minecraft:dark_prismarine",
+    "minecraft:gold_block",
+    "minecraft:green_terracotta",
+    "minecraft:mud_bricks",
+    "minecraft:polished_andesite",
+    "minecraft:polished_blackstone",
+    "minecraft:red_terracotta",
+    "minecraft:smooth_sandstone",
+    "minecraft:smooth_stone"
+  ],
+  "glass_materials": [],
+  "facades": [
+    {
+      "name": "617-619",
+      "width_microcells": 112,
+      "height_microcells": 128,
+      "depth_min_cells": -39,
+      "depth_max_cells": 27,
+      "depth_span_cells": 67,
+      "connected_components": 1,
+      "hidden_tie_cells_added": 40,
+      "sloped_features": 11,
+      "round_features": 0
+    },
+    {
+      "name": "621",
+      "width_microcells": 128,
+      "height_microcells": 196,
+      "depth_min_cells": -39,
+      "depth_max_cells": 32,
+      "depth_span_cells": 72,
+      "connected_components": 1,
+      "hidden_tie_cells_added": 61,
+      "sloped_features": 27,
+      "round_features": 1
+    },
+    {
+      "name": "623",
+      "width_microcells": 240,
+      "height_microcells": 196,
+      "depth_min_cells": -39,
+      "depth_max_cells": 30,
+      "depth_span_cells": 70,
+      "connected_components": 1,
+      "hidden_tie_cells_added": 123,
+      "sloped_features": 46,
+      "round_features": 1
+    },
+    {
+      "name": "625",
+      "width_microcells": 128,
+      "height_microcells": 188,
+      "depth_min_cells": -39,
+      "depth_max_cells": 27,
+      "depth_span_cells": 67,
+      "connected_components": 1,
+      "hidden_tie_cells_added": 97,
+      "sloped_features": 26,
+      "round_features": 0
+    },
+    {
+      "name": "627",
+      "width_microcells": 128,
+      "height_microcells": 196,
+      "depth_min_cells": -39,
+      "depth_max_cells": 28,
+      "depth_span_cells": 68,
+      "connected_components": 1,
+      "hidden_tie_cells_added": 38,
+      "sloped_features": 26,
+      "round_features": 1
+    }
+  ],
+  "checks": {
+    "full_previous_facade_region_wiped_by_patch": true,
+    "exact_block_map": true,
+    "astra_host_count": true,
+    "astra_microcell_decode": true,
+    "no_glass": true,
+    "all_facades_connected": true,
+    "deep_recesses_beyond_one_block": true,
+    "diagonal_geometry_present": true,
+    "continuous_microcell_authoring": true
+  },
+  "errors": []
+}

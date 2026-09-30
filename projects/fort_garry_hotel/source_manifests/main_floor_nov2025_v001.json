@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "source_id": "fort_garry_main_floor_current_2025_11",
+  "sources": [
+    {
+      "url": "https://admin.fortgarryhotel.com/wp-content/uploads/2025/11/21319-FGH-Floorplans-ALL8.5x11-Nov2025-FNL1.pdf",
+      "type": "official_current_floor_plan",
+      "supports": [
+        "Main Floor layout",
+        "major room dimensions",
+        "support-space labels"
+      ]
+    },
+    {
+      "url": "https://www.fortgarryhotel.com/dining/oval-room",
+      "type": "official_current_venue_page",
+      "supports": [
+        "Oval Room Brasserie current use"
+      ]
+    },
+    {
+      "url": "https://www.fortgarryhotel.com/meeting-spaces/provencher-ballroom",
+      "type": "official_current_venue_page",
+      "supports": [
+        "Provencher Ballroom current Lobby Level use",
+        "96x40 ft",
+        "22 ft ceiling",
+        "original 1913 character"
+      ]
+    },
+    {
+      "url": "https://www.fortgarryhotel.com/faqs",
+      "type": "official_current_hotel_page",
+      "supports": [
+        "Oval Room restored 1913 character",
+        "lobby/parkade context"
+      ]
+    }
+  ],
+  "confidence": {
+    "major_room_geometry": "high",
+    "support_room_partitioning": "medium-high",
+    "furniture_and_decor": "alpha/inferred; not survey exact"
+  }
+}

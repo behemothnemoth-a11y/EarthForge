@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "project_id": "fort_garry_hotel",
+  "name": "Fort Garry Hotel - Winnipeg",
+  "stage": "main_floor_interior_alpha",
+  "orientation": {
+    "x_positive": "east",
+    "z_positive": "south",
+    "north": "-Z"
+  },
+  "scale": {
+    "feet_per_block": 1.5,
+    "meters_per_block": 0.4572,
+    "reason": "Interior-first scale for current plan and ornate public-room detail."
+  },
+  "registration": {
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "marker": [
+      0,
+      -1,
+      0
+    ],
+    "block": "minecraft:yellow_concrete"
+  },
+  "scope": {
+    "included": [
+      "current main/lobby floor layout",
+      "floors",
+      "walls",
+      "major partitions",
+      "doors/openings",
+      "stairs/elevator cores",
+      "public-room alpha furnishings",
+      "curved Oval Room wall"
+    ],
+    "excluded": [
+      "roof",
+      "rafters",
+      "ceilings",
+      "mezzanine",
+      "1st floor",
+      "upper hotel floors",
+      "full exterior facade"
+    ]
+  }
+}

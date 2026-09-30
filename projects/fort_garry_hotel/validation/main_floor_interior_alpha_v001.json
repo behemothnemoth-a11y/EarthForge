@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "export_id": "FORT_GARRY_MAIN_FLOOR_INTERIOR_ALPHA_V001",
+  "status": "valid",
+  "file": "projects/fort_garry_hotel/outputs/main_floor/FortGarry_MainFloor_InteriorAlpha_v001.litematic",
+  "sha256": "2c41ee9073a56a4c43afc8214f1d436355a7f16bd76eb551fb53ed0ff287c28c",
+  "region_position": [
+    -56,
+    -1,
+    -71
+  ],
+  "region_size": [
+    107,
+    19,
+    73
+  ],
+  "non_air_blocks": 15605,
+  "astra_host_blocks": 884,
+  "astra_occupied_microcells": 537472,
+  "dimension_checks": {
+    "Provencher Ballroom": {
+      "official_ft": [
+        96,
+        40
+      ],
+      "minecraft_blocks": [
+        64,
+        27
+      ],
+      "modeled_ft": [
+        96,
+        40.5
+      ]
+    },
+    "Restaurant": {
+      "official_ft": [
+        43,
+        36.5
+      ],
+      "minecraft_blocks": [
+        29,
+        24
+      ],
+      "modeled_ft": [
+        43.5,
+        36
+      ]
+    },
+    "Broadway Annex": {
+      "official_ft": [
+        32,
+        12
+      ],
+      "minecraft_blocks": [
+        21,
+        8
+      ],
+      "modeled_ft": [
+        31.5,
+        12
+      ]
+    },
+    "Provencher Alcove": {
+      "official_ft": [
+        26,
+        12
+      ],
+      "minecraft_blocks": [
+        17,
+        8
+      ],
+      "modeled_ft": [
+        25.5,
+        12
+      ]
+    },
+    "Oval Room": {
+      "official_ft": [
+        22,
+        18
+      ],
+      "minecraft_blocks": [
+        15,
+        12
+      ],
+      "modeled_ft": [
+        22.5,
+        18
+      ]
+    }
+  },
+  "checks": {
+    "exact_block_map": true,
+    "astra_tile_entity_count": true,
+    "astra_microcell_decode": true,
+    "registration_marker": true,
+    "roof_generated": false,
+    "rafters_generated": false,
+    "ceilings_generated": false
+  }
+}
