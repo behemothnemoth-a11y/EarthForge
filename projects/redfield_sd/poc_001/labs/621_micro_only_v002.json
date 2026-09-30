@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "lab_id": "REDFIELD_621_MICRO_ONLY_V002",
+  "project_id": "redfield_sd",
+  "osm_id": 1474301428,
+  "addresses": [
+    "621"
+  ],
+  "name": "Carpets Plus / ornate micro-only prototype",
+  "mode": "micro_only_building_patch",
+  "base_file": "projects/redfield_sd/outputs/l1_micro/Redfield_POC_001_L1_Micro_Alpha_v006.litematic",
+  "reference_image": "projects/redfield_sd/references/generated/621_ornate_micro_target.png",
+  "materials": {
+    "brick": "minecraft:bricks",
+    "green": "minecraft:green_concrete",
+    "green_secondary": "minecraft:green_terracotta",
+    "trim": "minecraft:smooth_sandstone",
+    "door": "minecraft:dark_oak_planks",
+    "roof": "minecraft:polished_deepslate",
+    "floor": "minecraft:spruce_planks",
+    "metal": "minecraft:black_concrete",
+    "handle": "minecraft:gold_block"
+  },
+  "dimensions": {
+    "wall_levels": 9,
+    "roof_y": 9,
+    "parapet_max_y": 11,
+    "ground_floor_top": 4,
+    "second_floor_plate_y": 4
+  },
+  "facade": {
+    "storefront_pattern": {
+      "corner_columns": [
+        0,
+        7
+      ],
+      "left_window": [
+        1,
+        2
+      ],
+      "door": [
+        3,
+        4
+      ],
+      "right_window": [
+        5,
+        6
+      ]
+    },
+    "upper_windows": [
+      1,
+      3,
+      5
+    ],
+    "sign_band_y": 3,
+    "awning_y": 4,
+    "cornice_y": 8,
+    "parapet_base_y": 9
+  },
+  "micro": {
+    "wall_thickness_cells": 3,
+    "floor_thickness_cells": 2,
+    "roof_thickness_cells": 4,
+    "frame_thickness_cells": 2,
+    "lattice_thickness_cells": 1,
+    "awning_depth_cells": 12,
+    "host_budget": 1100
+  },
+  "glass": {
+    "enabled": false,
+    "reason": "Transparent materials are not yet implemented in Astra Microblocks."
+  },
+  "interiors": {
+    "room_layout": false,
+    "ground_floor_skin": true,
+    "second_floor_plate": true
+  }
+}
