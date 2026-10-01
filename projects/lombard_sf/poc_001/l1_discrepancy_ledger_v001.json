@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-01",
+  "project": "lombard_sf",
+  "rows": [
+    {
+      "id": "endpoint_drop",
+      "feature": "Hyde-to-Leavenworth vertical drop",
+      "evidence": "NOAA/USGS 2010 class-2 LiDAR",
+      "value_m": 32.85,
+      "status": "locked_source_truth",
+      "confidence": "high"
+    },
+    {
+      "id": "crooked_centerline",
+      "feature": "crooked road plan alignment",
+      "evidence": "OSM way 402111597, 157 source nodes + Esri aerial visual cross-check",
+      "value_m": 197.38971985075952,
+      "status": "locked_for_l1",
+      "confidence": "high"
+    },
+    {
+      "id": "crooked_road_width",
+      "feature": "brick vehicle path width",
+      "evidence": "DataSF ROW width minus DataSF 10-ft minimum side corridors; aerial visual fit",
+      "current_value_m": 5.5,
+      "status": "review_in_game_then_current_streetview",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "stairs",
+      "feature": "north/south pedestrian stairs",
+      "evidence": "OSM step ways + LiDAR endpoints; explicit OSM counts used where present",
+      "status": "source_derived_needs_visual_detail",
+      "confidence": "high_geometry_medium_detail"
+    },
+    {
+      "id": "hedges",
+      "feature": "garden hedge geometry",
+      "evidence": "OSM barrier=hedge + aerial",
+      "status": "massing_only",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "retaining_edges",
+      "feature": "low retaining/planter walls and wall caps",
+      "evidence": "aerial hints; current Street View still needed for exact material/profile",
+      "status": "not_generated",
+      "confidence": "pending"
+    },
+    {
+      "id": "house_massing",
+      "feature": "adjacent houses/garages/roofs",
+      "evidence": "DataSF footprints + LiDAR height stats + aerial",
+      "status": "deferred_until_L1_approved",
+      "confidence": "pending_L2"
+    }
+  ]
+}
