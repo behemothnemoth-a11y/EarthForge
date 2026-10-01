@@ -1,0 +1,112 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gray_concrete",
+    "minecraft:smooth_stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    0,
+    -1,
+    -141
+  ],
+  "region_size": [
+    95,
+    3,
+    142
+  ],
+  "volume": 40470,
+  "non_air_blocks": 8472,
+  "tile_entities": 4266,
+  "sha256": "95d8d163bacca060bc432b1364f036838c8bc878943005604908d2582c113902",
+  "astra_min_version": "0.7.0",
+  "rendering_model": "chunk-baked world rendering",
+  "project_frame": {
+    "anchor": {
+      "description": "Main Street / 7th Avenue centerline intersection",
+      "wgs84": {
+        "lon": -98.5185387,
+        "lat": 44.8757542
+      },
+      "minecraft_horizontal": {
+        "x": 0,
+        "z": 0
+      }
+    },
+    "orientation": {
+      "x_positive": "east",
+      "z_positive": "south",
+      "minecraft_north": "-Z",
+      "rotation_locked": true,
+      "mirror": "none"
+    },
+    "registration_project_local": [
+      -78,
+      -1,
+      9
+    ],
+    "registration_schematic": [
+      0,
+      -1,
+      0
+    ]
+  },
+  "surface": {
+    "local_z_range": [
+      -132,
+      0
+    ],
+    "road_x_range": [
+      -9,
+      9
+    ],
+    "curb_x": [
+      -10,
+      10
+    ],
+    "west_sidewalk_x_range": [
+      -16,
+      -11
+    ],
+    "east_sidewalk_x_range": [
+      11,
+      16
+    ],
+    "base_lidar_elevation_m": 396.57,
+    "profile_range_microcells": 16,
+    "profile_range_m": 1.0,
+    "main_7th_to_main_6th_rise_m": 0.7900000000000205,
+    "max_adjacent_row_jump_microcells": 1,
+    "curb_sidewalk_raise_microcells": 2,
+    "center_crown_microcells": 1,
+    "building_overlap_columns_skipped": 184
+  },
+  "microblocks": {
+    "host_count": 4266,
+    "occupied_microcells": 8553472,
+    "materials": {
+      "astra_microblocks:rgb_55585a": 2406,
+      "astra_microblocks:rgb_c8c5bb": 292,
+      "astra_microblocks:rgb_b7b4aa": 1568
+    }
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_microcell_readback": true,
+    "registration_marker": true,
+    "accepted_photo_facades_modified": false,
+    "in_game_test": false
+  },
+  "source": {
+    "lidar_manifest": "projects/redfield_sd/source_manifests/lidar_spink_2012_poc001_v001.json",
+    "lidar_roi_sha256": "3ece58c285b08eb903a13fadeef22fc7dd94926807a6635b70d36129aaf05415",
+    "horizontal_width_policy": "projects/redfield_sd/poc_001/l1_truth_v005_policy.json"
+  },
+  "limitations": [
+    "2012 LiDAR is used for durable grade/elevation evidence, not current appearance.",
+    "Main Street lateral curb/sidewalk widths remain the current EarthForge truth-policy values pending direct current street-level verification.",
+    "This export is a geospatial surface layer only; buildings and accepted photo facades are intentionally absent."
+  ]
+}

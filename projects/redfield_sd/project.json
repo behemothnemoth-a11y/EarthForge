@@ -1,8 +1,8 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "project_id": "redfield_sd",
   "name": "Redfield, South Dakota POC",
-  "status": "poc_001_l1_micro_alpha",
+  "status": "poc_001_multisource_micro_geo",
   "milestone": "REDFIELD_POC_001",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -24,13 +24,14 @@
     }
   },
   "quality_gates": {
-    "current_target": "L1_MICRO_ALPHA",
+    "current_target": "L1_MICRO_GEO_TRUTH",
     "levels": [
       "L0_GEO",
       "L1_BLOCK_ALPHA",
       "L1_BLOCK_VISUAL",
       "L1_BLOCK_TRUTH",
       "L1_MICRO_ALPHA",
+      "L1_MICRO_GEO_TRUTH",
       "L1_BLOCK",
       "I0_INTERIOR_PROGRAM",
       "I1_INTERIOR_SEED",
@@ -38,7 +39,7 @@
       "L2_DETAIL"
     ],
     "microblocks_allowed": true,
-    "microblock_scope": "facade precision overlays only",
+    "microblock_scope": "facades, sub-block terrain/grade, curbs/sidewalks, roof transitions, streetscape, and evidence-driven precision geometry",
     "interior_blocks_allowed": false,
     "interior_metadata_allowed": true
   },
@@ -62,9 +63,12 @@
   },
   "microblocks": {
     "implementation": "direct Astra block entity NBT",
-    "spec": "projects/redfield_sd/poc_001/micro_v006.json",
+    "spec": "projects/redfield_sd/poc_001/micro_v007.json",
     "codec": "pipeline/microblocks/astra_microblock_codec.py",
-    "base": "REDFIELD_POC_001_L1_TRUTH_V005"
+    "base": "REDFIELD_POC_001_L1_TRUTH_V005",
+    "minimum_astra_version": "0.7.0",
+    "rendering": "chunk-baked world rendering",
+    "performance_policy": "No fixed host cap; validate dense exports in game."
   },
   "interiors": {
     "status": "planning_only",

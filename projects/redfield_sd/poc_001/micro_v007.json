@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "project_id": "redfield_sd",
+  "astra_min_version": "0.7.0",
+  "rendering_contract": {
+    "model": "chunk-baked world rendering",
+    "conservative_host_cap": null,
+    "note": "Astra 0.7.0 validated large stress builds without perceptible lag; EarthForge may use dense microblocks when they materially improve reconstruction accuracy."
+  },
+  "capabilities": {
+    "native_rgb": true,
+    "glass_and_translucent_materials": true,
+    "litematica_transforms": true,
+    "persistent_16x16x16_hosts": true,
+    "exact_collision": true,
+    "saved_nbt_compatible_with_0_6_x": true
+  },
+  "allowed_scopes": [
+    "photo-derived facade detail",
+    "curbs and sidewalk edges",
+    "sub-block terrain and street grade",
+    "road crown and surface transitions",
+    "roof edges and low-slope roof transitions",
+    "street furniture and utility geometry",
+    "architectural curves, diagonals and fine structure",
+    "selective interior detail when interiors are authorized"
+  ],
+  "rules": [
+    "Use full vanilla blocks for bulk mass where micro-resolution adds no evidence-driven value.",
+    "Use Astra hosts freely when the source evidence requires sub-block height, curvature, thin geometry, texture or material precision.",
+    "Do not impose a fixed host-count budget; validate actual game performance on dense exports.",
+    "Keep provenance and confidence separate from rendering capability: better performance does not justify invented detail.",
+    "Preserve project registration and orientation across all revisions."
+  ]
+}
