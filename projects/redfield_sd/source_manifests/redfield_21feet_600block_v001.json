@@ -1,0 +1,886 @@
+{
+  "schema_version": 1,
+  "source_id": "redfield_21feet_600block_v001",
+  "provider": "Redfield City Tourism",
+  "acquired_at": "2026-10-01",
+  "index_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/?cat=main",
+  "raw_policy": "raw images/page HTML private and gitignored",
+  "items": [
+    {
+      "address_hint": "602",
+      "sort_address": 602,
+      "item_id": "2447",
+      "slug": "602-main-street-leos-good-food",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2447/602-main-street-leos-good-food",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Leos-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/602-main-street-leos-good-food/image_01.png",
+          "bytes": 533728,
+          "width_px": 597,
+          "height_px": 432,
+          "near_white_fraction": 0.0184
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Leos-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/602-main-street-leos-good-food/image_02.png",
+          "bytes": 312065,
+          "width_px": 622,
+          "height_px": 424,
+          "near_white_fraction": 0.0296
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Leos-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/602-main-street-leos-good-food/image_02.png",
+        "bytes": 312065,
+        "width_px": 622,
+        "height_px": 424,
+        "near_white_fraction": 0.0296
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "603",
+      "sort_address": 603,
+      "item_id": "2602",
+      "slug": "603-main-street-new-york-life",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2602/603-main-street-new-york-life",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/New_York_Life-1a.png",
+          "private_file": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/image_01.png",
+          "bytes": 890351,
+          "width_px": 1318,
+          "height_px": 718,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/New_York_Life-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/image_02.png",
+          "bytes": 1041588,
+          "width_px": 1321,
+          "height_px": 832,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 3,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/New_York_Life-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/image_03.png",
+          "bytes": 811302,
+          "width_px": 1000,
+          "height_px": 666,
+          "near_white_fraction": 0.0009
+        }
+      ],
+      "selected_current_reference": {
+        "index": 3,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/New_York_Life-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/image_03.png",
+        "bytes": 811302,
+        "width_px": 1000,
+        "height_px": 666,
+        "near_white_fraction": 0.0009
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "604",
+      "sort_address": 604,
+      "item_id": "2603",
+      "slug": "604-main-street-wildroots",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2603/604-main-street-wildroots",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Wildroots-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/604-main-street-wildroots/image_01.png",
+          "bytes": 461560,
+          "width_px": 710,
+          "height_px": 567,
+          "near_white_fraction": 0.2131
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Wildroots-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/604-main-street-wildroots/image_02.png",
+          "bytes": 834603,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0065
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Wildroots-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/604-main-street-wildroots/image_02.png",
+        "bytes": 834603,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0065
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "605",
+      "sort_address": 605,
+      "item_id": "2625",
+      "slug": "605-main-street-mikes-furniture-and-mattress-store",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2625/605-main-street-mikes-furniture-and-mattress-store",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MikesFurniture-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/605-main-street-mikes-furniture-and-mattress-store/image_01.png",
+          "bytes": 1422505,
+          "width_px": 1635,
+          "height_px": 1068,
+          "near_white_fraction": 0.0062
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MikesFurniture-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/605-main-street-mikes-furniture-and-mattress-store/image_02.png",
+          "bytes": 1609307,
+          "width_px": 1635,
+          "height_px": 967,
+          "near_white_fraction": 0.0076
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MikesFurniture-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/605-main-street-mikes-furniture-and-mattress-store/image_02.png",
+        "bytes": 1609307,
+        "width_px": 1635,
+        "height_px": 967,
+        "near_white_fraction": 0.0076
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "609",
+      "sort_address": 609,
+      "item_id": "2445",
+      "slug": "609-main-street-the-bread-box",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2445/609-main-street-the-bread-box",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Bread%20Box-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/609-main-street-the-bread-box/image_01.png",
+          "bytes": 225795,
+          "width_px": 415,
+          "height_px": 385,
+          "near_white_fraction": 0.0168
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Bread%20Box-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/609-main-street-the-bread-box/image_02.png",
+          "bytes": 312704,
+          "width_px": 590,
+          "height_px": 399,
+          "near_white_fraction": 0.0275
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Bread%20Box-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/609-main-street-the-bread-box/image_02.png",
+        "bytes": 312704,
+        "width_px": 590,
+        "height_px": 399,
+        "near_white_fraction": 0.0275
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "610",
+      "sort_address": 610,
+      "item_id": "2626",
+      "slug": "610-main-street-studio-aura",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2626/610-main-street-studio-aura",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StudioAura-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/610-main-street-studio-aura/image_01.png",
+          "bytes": 2420370,
+          "width_px": 1475,
+          "height_px": 1188,
+          "near_white_fraction": 0.168
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StudioAura-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/610-main-street-studio-aura/image_02.png",
+          "bytes": 924627,
+          "width_px": 1000,
+          "height_px": 671,
+          "near_white_fraction": 0.0001
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StudioAura-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/610-main-street-studio-aura/image_02.png",
+        "bytes": 924627,
+        "width_px": 1000,
+        "height_px": 671,
+        "near_white_fraction": 0.0001
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "611",
+      "sort_address": 611,
+      "item_id": "2627",
+      "slug": "611-main-street-lutter-realty",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2627/611-main-street-lutter-realty",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/YadaTrucking-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/611-main-street-lutter-realty/image_01.png",
+          "bytes": 1105149,
+          "width_px": 1000,
+          "height_px": 775,
+          "near_white_fraction": 0.3823
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/YadaTrucking-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/611-main-street-lutter-realty/image_02.png",
+          "bytes": 856215,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0011
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/YadaTrucking-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/611-main-street-lutter-realty/image_02.png",
+        "bytes": 856215,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0011
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "612",
+      "sort_address": 612,
+      "item_id": "2633",
+      "slug": "612-main-street-american-legion",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2633/612-main-street-american-legion",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/AmericanLegion-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/612-main-street-american-legion/image_01.png",
+          "bytes": 630618,
+          "width_px": 700,
+          "height_px": 563,
+          "near_white_fraction": 0.1627
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/AmericanLegion-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/612-main-street-american-legion/image_02.png",
+          "bytes": 482071,
+          "width_px": 700,
+          "height_px": 472,
+          "near_white_fraction": 0.0009
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/612_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/612-main-street-american-legion/image_03.png",
+          "bytes": 161871,
+          "width_px": 1000,
+          "height_px": 607,
+          "near_white_fraction": 0.8348
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/AmericanLegion-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/612-main-street-american-legion/image_02.png",
+        "bytes": 482071,
+        "width_px": 700,
+        "height_px": 472,
+        "near_white_fraction": 0.0009
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "613",
+      "sort_address": 613,
+      "item_id": "2634",
+      "slug": "613-main-street-state-farm-insurance",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2634/613-main-street-state-farm-insurance",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StateFarmIns-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/image_01.png",
+          "bytes": 411006,
+          "width_px": 645,
+          "height_px": 475,
+          "near_white_fraction": 0.1332
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StateFarmIns-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/image_02.png",
+          "bytes": 917849,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0005
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/613_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/image_03.png",
+          "bytes": 89115,
+          "width_px": 978,
+          "height_px": 355,
+          "near_white_fraction": 0.8077
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StateFarmIns-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/image_02.png",
+        "bytes": 917849,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0005
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "614",
+      "sort_address": 614,
+      "item_id": "2635",
+      "slug": "614-main-street-terrys-steakhouse-dining-room",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2635/614-main-street-terrys-steakhouse-dining-room",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Terrys-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/image_01.png",
+          "bytes": 517176,
+          "width_px": 1000,
+          "height_px": 795,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Terrys-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/image_02.png",
+          "bytes": 1083609,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0008
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/614_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/image_03.png",
+          "bytes": 134916,
+          "width_px": 888,
+          "height_px": 510,
+          "near_white_fraction": 0.7996
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Terrys-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/image_02.png",
+        "bytes": 1083609,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0008
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "615",
+      "sort_address": 615,
+      "item_id": "2636",
+      "slug": "615-main-street-redfield-chiropractic-pc",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2636/615-main-street-redfield-chiropractic-pc",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/RedfieldChiropractic-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/image_01.png",
+          "bytes": 699474,
+          "width_px": 1000,
+          "height_px": 638,
+          "near_white_fraction": 0.0053
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/RedfieldChiropractic-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/image_02.png",
+          "bytes": 1025394,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0002
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/615_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/image_03.png",
+          "bytes": 118461,
+          "width_px": 815,
+          "height_px": 509,
+          "near_white_fraction": 0.8291
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/RedfieldChiropractic-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/image_02.png",
+        "bytes": 1025394,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0002
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "616",
+      "sort_address": 616,
+      "item_id": "2639",
+      "slug": "616-main-street-terrys-steakhouse",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2639/616-main-street-terrys-steakhouse",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Terrys-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/image_01.png",
+          "bytes": 517176,
+          "width_px": 1000,
+          "height_px": 795,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/TerrysSteakHouse-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/image_02.png",
+          "bytes": 814920,
+          "width_px": 1000,
+          "height_px": 672,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/616_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/image_03.png",
+          "bytes": 150127,
+          "width_px": 1000,
+          "height_px": 642,
+          "near_white_fraction": 0.8515
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/TerrysSteakHouse-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/image_02.png",
+        "bytes": 814920,
+        "width_px": 1000,
+        "height_px": 672,
+        "near_white_fraction": 0.0
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "617619",
+      "sort_address": 617,
+      "item_id": "2637",
+      "slug": "617619-main-street-bobs-floor-covering",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2637/617619-main-street-bobs-floor-covering",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/BobsFloorCovering-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/image_01.png",
+          "bytes": 1068722,
+          "width_px": 1000,
+          "height_px": 740,
+          "near_white_fraction": 0.0125
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/BobsFloorCovering-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/image_02.png",
+          "bytes": 962847,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0009
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/617-619_Main_Street-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/image_03.png",
+          "bytes": 247701,
+          "width_px": 1000,
+          "height_px": 682,
+          "near_white_fraction": 0.7674
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/BobsFloorCovering-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/image_02.png",
+        "bytes": 962847,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0009
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "620",
+      "sort_address": 620,
+      "item_id": "2638",
+      "slug": "620-main-main-street-plaza",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2638/620-main-main-street-plaza",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MainStreetPlaza-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/image_01.png",
+          "bytes": 968286,
+          "width_px": 1050,
+          "height_px": 720,
+          "near_white_fraction": 0.3071
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MainStreetPlaza-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/image_02.png",
+          "bytes": 890785,
+          "width_px": 1050,
+          "height_px": 637,
+          "near_white_fraction": 0.0975
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/620_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/image_03.png",
+          "bytes": 139811,
+          "width_px": 1000,
+          "height_px": 536,
+          "near_white_fraction": 0.8476
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MainStreetPlaza-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/image_02.png",
+        "bytes": 890785,
+        "width_px": 1050,
+        "height_px": 637,
+        "near_white_fraction": 0.0975
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "621",
+      "sort_address": 621,
+      "item_id": "2640",
+      "slug": "621-main-street-carpets-plus",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2640/621-main-street-carpets-plus",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/CarpetPlus-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/image_01.png",
+          "bytes": 888879,
+          "width_px": 1000,
+          "height_px": 727,
+          "near_white_fraction": 0.1327
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/CarpetPlus-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/image_02.png",
+          "bytes": 862889,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0045
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/621_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/image_03.png",
+          "bytes": 142582,
+          "width_px": 600,
+          "height_px": 875,
+          "near_white_fraction": 0.8149
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/CarpetPlus-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/image_02.png",
+        "bytes": 862889,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0045
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "622",
+      "sort_address": 622,
+      "item_id": "2641",
+      "slug": "622-main-street-old-simply-charming",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2641/622-main-street-old-simply-charming",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/OldSimplyCharming-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/image_01.png",
+          "bytes": 1273304,
+          "width_px": 1000,
+          "height_px": 825,
+          "near_white_fraction": 0.2168
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/OldSimplyCharming-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/image_02.png",
+          "bytes": 751888,
+          "width_px": 1000,
+          "height_px": 675,
+          "near_white_fraction": 0.0918
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/622_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/image_03.png",
+          "bytes": 17712,
+          "width_px": 448,
+          "height_px": 563,
+          "near_white_fraction": 0.8608
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/OldSimplyCharming-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/image_02.png",
+        "bytes": 751888,
+        "width_px": 1000,
+        "height_px": 675,
+        "near_white_fraction": 0.0918
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "623",
+      "sort_address": 623,
+      "item_id": "2642",
+      "slug": "623-main-street-simply-charming",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2642/623-main-street-simply-charming",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/SimplyCharming-1(1).png",
+          "private_file": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/image_01.png",
+          "bytes": 762225,
+          "width_px": 948,
+          "height_px": 726,
+          "near_white_fraction": 0.0629
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/SimplyCharming-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/image_02.png",
+          "bytes": 916432,
+          "width_px": 1000,
+          "height_px": 639,
+          "near_white_fraction": 0.0076
+        },
+        {
+          "index": 3,
+          "url": "https://tourism.redfield-sd.com/media/userfiles/subsite_52/images/21_Feet/623_Main_Street.png",
+          "private_file": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/image_03.png",
+          "bytes": 130346,
+          "width_px": 600,
+          "height_px": 566,
+          "near_white_fraction": 0.8319
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/SimplyCharming-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/image_02.png",
+        "bytes": 916432,
+        "width_px": 1000,
+        "height_px": 639,
+        "near_white_fraction": 0.0076
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "624",
+      "sort_address": 624,
+      "item_id": "2645",
+      "slug": "624-main-street-alley-cuts",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2645/624-main-street-alley-cuts",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Alley_Cuts-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/624-main-street-alley-cuts/image_01.png",
+          "bytes": 739071,
+          "width_px": 1000,
+          "height_px": 789,
+          "near_white_fraction": 0.0145
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Alley_Cuts-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/624-main-street-alley-cuts/image_02.png",
+          "bytes": 769899,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.1614
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Alley_Cuts-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/624-main-street-alley-cuts/image_02.png",
+        "bytes": 769899,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.1614
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "625",
+      "sort_address": 625,
+      "item_id": "2643",
+      "slug": "625-main-street-hair-&-company",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2643/625-main-street-hair-&-company",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/625_Main_Street-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/625-main-street-hair-&-company/image_01.png",
+          "bytes": 1412504,
+          "width_px": 1000,
+          "height_px": 642,
+          "near_white_fraction": 0.0013
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/625_Main_Street-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/625-main-street-hair-&-company/image_02.png",
+          "bytes": 807057,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0011
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/625_Main_Street-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/625-main-street-hair-&-company/image_02.png",
+        "bytes": 807057,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0011
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "626",
+      "sort_address": 626,
+      "item_id": "2644",
+      "slug": "626-main-street-city-hall",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2644/626-main-street-city-hall",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/626_Main_Street-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/626-main-street-city-hall/image_01.png",
+          "bytes": 1123893,
+          "width_px": 1000,
+          "height_px": 569,
+          "near_white_fraction": 0.0
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/626_Main_Street-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/626-main-street-city-hall/image_02.png",
+          "bytes": 694828,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.3311
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/626_Main_Street-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/626-main-street-city-hall/image_02.png",
+        "bytes": 694828,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.3311
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    },
+    {
+      "address_hint": "627",
+      "sort_address": 627,
+      "item_id": "2646",
+      "slug": "627-main-street-youth-center",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2646/627-main-street-youth-center",
+      "images": [
+        {
+          "index": 1,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Youth_Center-1.png",
+          "private_file": "references/private/redfield_21_feet_600block/627-main-street-youth-center/image_01.png",
+          "bytes": 1301664,
+          "width_px": 1000,
+          "height_px": 588,
+          "near_white_fraction": 0.0008
+        },
+        {
+          "index": 2,
+          "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Youth_Center-2.png",
+          "private_file": "references/private/redfield_21_feet_600block/627-main-street-youth-center/image_02.png",
+          "bytes": 805916,
+          "width_px": 1000,
+          "height_px": 673,
+          "near_white_fraction": 0.0011
+        }
+      ],
+      "selected_current_reference": {
+        "index": 2,
+        "url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Youth_Center-2.png",
+        "private_file": "references/private/redfield_21_feet_600block/627-main-street-youth-center/image_02.png",
+        "bytes": 805916,
+        "width_px": 1000,
+        "height_px": 673,
+        "near_white_fraction": 0.0011
+      },
+      "selection_rule": "last distinct non-text-card item image (near-white fraction < 0.70); pattern visually verified against known 617-627 current photos; exact capture date not claimed"
+    }
+  ]
+}
