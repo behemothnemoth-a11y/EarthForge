@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "artifact_id": "LOMBARD_SF_L0_FRAME_V001",
+  "status": "valid",
+  "geometry_truth": false,
+  "diagnostic_only": true,
+  "file": "projects/lombard_sf/outputs/l0_frame/Lombard_SF_L0_Frame_v001.litematic",
+  "sha256": "94c49948335061aba8e6408e24b95cd1ab280bf74e372b0f8060c8aea6ed313e",
+  "registration": {
+    "marker": [
+      0,
+      -1,
+      0
+    ],
+    "marker_ok": true,
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "checks": {
+    "exact_block_map": true,
+    "marker": true
+  },
+  "region": [
+    240,
+    2,
+    144
+  ],
+  "non_air_blocks": 703
+}
