@@ -1,0 +1,53 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:gray_concrete",
+    "minecraft:smooth_stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    0,
+    -1,
+    -151
+  ],
+  "region_size": [
+    151,
+    16,
+    155
+  ],
+  "volume": 374480,
+  "non_air_blocks": 34738,
+  "tile_entities": 20895,
+  "sha256": "a1bc7ca4bab0df14a72e6a2cd4d0e84c30b893da548f61de9fb04ca4385ec1d6",
+  "source_full_block_alpha": "projects/redfield_sd/outputs/full_block_alpha_v001/Redfield_POC_001_FullBlock_FacadeAlpha_v001.litematic",
+  "astra": {
+    "hosts": 20895,
+    "occupied_microcells": 29953912
+  },
+  "features": {
+    "main_double_yellow": true,
+    "angled_parking_marks": true,
+    "7th_crosswalks": true,
+    "7th_mast_arm_signals": 4,
+    "main_globe_lamps": 10,
+    "west_alley": true,
+    "east_alley": true,
+    "6th_current_signalization_added": false
+  },
+  "evidence": {
+    "7th_signals": "KartaView sequence 473900 + OSM traffic-signal crossing tags",
+    "parking_markings": "repeated current Redfield archive storefront photos",
+    "globe_lamps": "repeated current Redfield archive storefront photos; longitudinal positions are inferred municipal rhythm",
+    "alleys": "locked OSM/Esri alley controls",
+    "cross_street_elevation": "2012 SDGS LiDAR class-2 ground"
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_readback": true,
+    "registration_marker": true,
+    "in_game_review": false
+  }
+}
