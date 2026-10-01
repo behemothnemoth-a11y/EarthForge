@@ -103,3 +103,33 @@ Cross-source conflicts are tracked in:
 The first entries preserve the known OSM/photo frontage conflict, provisional
 roof-height uncertainty, and pending curb/rear verification instead of silently
 choosing one source.
+
+## First derived evidence pass
+
+### KartaView
+
+A 2017 KartaView/OpenStreetCam sequence (473900) crosses Main at 7th Avenue.
+It confirms the signalized intersection, MAIN ST blade, marked crosswalks,
+yellow curb returns and useful sidewalk/utility context. It does not provide a
+direct 617-627 storefront sequence, and it does not reach Main/6th closely
+enough to replace Google/Mapillary there.
+
+Derived metadata:
+`projects/redfield_sd/source_manifests/kartaview_main7_2017_v001.json`
+
+### LiDAR
+
+Rather than downloading the 51.8 GB Spink County LAS archive, EarthForge used
+the county tile index plus HTTP byte ranges to extract only the two 1 km LAS
+tiles intersecting the POC: 14tnq3769 and 14tnq3869.
+
+The class-2 ground profile shows Main Street rising about **0.805 m** from
+Main/7th to Main/6th across 131.672 m, approximately **0.61%**. The roof-return
+profile also shows several distinct roof-height bands; the current uniform
+roof-deck blockout is therefore a placeholder, not final height truth.
+
+Derived metadata:
+`projects/redfield_sd/source_manifests/lidar_spink_2012_poc001_v001.json`
+
+Reusable selective ZIP reader:
+`pipeline/acquire/fetch_remote_zip_member_range.py`

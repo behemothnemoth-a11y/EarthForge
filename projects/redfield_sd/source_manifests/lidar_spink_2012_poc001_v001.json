@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "source_id": "sdgs_spink_2012_lidar_redfield_poc001_v001",
+  "provider": "South Dakota Geological Survey / 2012 South Dakota LiDAR project",
+  "source_dataset": "https://gis.usd.edu/lidar/statewide/Spink/2012_OEM",
+  "source_zip": "https://gis.usd.edu/lidar/statewide/Spink/2012_OEM/LAS.zip",
+  "acquired": "2026-10-01",
+  "datum": {
+    "horizontal": "NAD83(HARN)",
+    "projection": "UTM Zone 14N",
+    "horizontal_units": "meters",
+    "vertical": "NAVD88",
+    "geoid": "Geoid09"
+  },
+  "las": {
+    "version": "1.2",
+    "point_format": 1,
+    "classes": {
+      "1": "processed/unclassified",
+      "2": "ground",
+      "7": "noise",
+      "9": "water",
+      "10": "ignored ground",
+      "11": "withheld"
+    }
+  },
+  "selected_tiles": [
+    {
+      "name": "14tnq3869.las",
+      "bounds_utm_m": [
+        538000.0,
+        4969000.0,
+        538999.99,
+        4970000.0
+      ],
+      "bytes": 47266228
+    },
+    {
+      "name": "14tnq3769.las",
+      "bounds_utm_m": [
+        537000.0,
+        4969000.0,
+        538000.0,
+        4970000.0
+      ],
+      "bytes": 34023600
+    }
+  ],
+  "selection_reason": "The locked Main/7th anchor and the west Main 600-block footprint straddle the E=538000 UTM tile boundary; only these two 1 km tiles were extracted from the 51.8 GB county LAS ZIP using byte ranges.",
+  "derived_roi": {
+    "x_local_m": [
+      -95,
+      85
+    ],
+    "z_local_m": [
+      -155,
+      25
+    ],
+    "accepted_elevation_m": [
+      350,
+      450
+    ],
+    "points": 57994,
+    "class_counts": {
+      "1": 31890,
+      "2": 20682,
+      "11": 5422
+    }
+  },
+  "ground_profile_main_street": [
+    {
+      "z_local_m": 0,
+      "road_m": 396.8,
+      "west_sidewalk_m": 396.81
+    },
+    {
+      "z_local_m": -20,
+      "road_m": 396.595,
+      "west_sidewalk_m": 396.52
+    },
+    {
+      "z_local_m": -40,
+      "road_m": 396.69,
+      "west_sidewalk_m": 396.63
+    },
+    {
+      "z_local_m": -60,
+      "road_m": 396.87,
+      "west_sidewalk_m": 396.76
+    },
+    {
+      "z_local_m": -80,
+      "road_m": 397.09,
+      "west_sidewalk_m": 396.975
+    },
+    {
+      "z_local_m": -100,
+      "road_m": 397.42,
+      "west_sidewalk_m": 397.3
+    },
+    {
+      "z_local_m": -120,
+      "road_m": 397.5,
+      "west_sidewalk_m": 397.385
+    },
+    {
+      "z_local_m": -132,
+      "road_m": 397.605,
+      "west_sidewalk_m": 397.49
+    }
+  ],
+  "derived_findings": {
+    "main_7th_to_main_6th_rise_m": 0.805,
+    "main_7th_to_main_6th_run_m": 131.672,
+    "approx_grade_percent": 0.611,
+    "roof_profile": "Multiple distinct roof levels are present; a single uniform roof-deck height is not supported by the LiDAR.",
+    "stable_roof_height_bands_m_above_local_ground": [
+      {
+        "z_local_m": [
+          -65,
+          -61
+        ],
+        "approx_m": [
+          6.15,
+          6.64
+        ]
+      },
+      {
+        "z_local_m": [
+          -73,
+          -67
+        ],
+        "approx_m": [
+          4.64,
+          5.36
+        ]
+      },
+      {
+        "z_local_m": [
+          -81,
+          -75
+        ],
+        "approx_m": [
+          4.96,
+          5.51
+        ]
+      },
+      {
+        "z_local_m": [
+          -103,
+          -91
+        ],
+        "approx_m": [
+          3.62,
+          3.77
+        ]
+      },
+      {
+        "z_local_m": [
+          -119,
+          -105
+        ],
+        "approx_m": [
+          5.31,
+          5.61
+        ]
+      }
+    ]
+  },
+  "local_private_or_ignored_files": [
+    "projects/redfield_sd/downloads/multisource_v001/lidar_spink_2012/14tnq3769.las",
+    "projects/redfield_sd/downloads/multisource_v001/lidar_spink_2012/14tnq3869.las",
+    "projects/redfield_sd/downloads/multisource_v001/lidar_spink_2012/redfield_poc001_roi_points.csv",
+    "projects/redfield_sd/downloads/multisource_v001/lidar_spink_2012/west_main_roof_profile_2m.csv"
+  ],
+  "limitations": [
+    "2012 capture date is historical relative to the current streetscape.",
+    "Unclassified first returns can include vegetation, vehicles, poles and outliers; roof-mode bands require aerial/street-level corroboration.",
+    "WGS84-to-UTM conversion used for local analysis is sufficiently close for tile selection/POC profiling but is not a survey transform to NAD83(HARN)."
+  ]
+}

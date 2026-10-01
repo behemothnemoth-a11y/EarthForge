@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source_id": "kartaview_redfield_main7_2017_v001",
+  "provider": "KartaView / OpenStreetCam",
+  "acquired": "2026-10-01",
+  "sequence_id": "473900",
+  "shot_date": "2017-06-25",
+  "contributor": "malina-transportation-4",
+  "coverage": "7th Avenue approach through Main Street; useful at Main/7th but not a direct 617-627 frontage sequence and not useful at Main/6th.",
+  "nearest_main7_frames": [
+    {
+      "id": "50566513",
+      "lat": 44.875847,
+      "lon": -98.518638,
+      "heading_deg": 273.75,
+      "distance_to_main7_anchor_m": 12.95
+    },
+    {
+      "id": "50566512",
+      "lat": 44.875842,
+      "lon": -98.518407,
+      "heading_deg": 273.75,
+      "distance_to_main7_anchor_m": 14.25
+    },
+    {
+      "id": "50566514",
+      "lat": 44.875847,
+      "lon": -98.518876,
+      "heading_deg": 273.75,
+      "distance_to_main7_anchor_m": 28.51
+    },
+    {
+      "id": "50566511",
+      "lat": 44.875857,
+      "lon": -98.518197,
+      "heading_deg": 273.75,
+      "distance_to_main7_anchor_m": 29.25
+    }
+  ],
+  "available_private_frames": [
+    "50566507",
+    "50566508",
+    "50566509",
+    "50566510",
+    "50566511",
+    "50566513",
+    "50566514",
+    "50566515"
+  ],
+  "visual_evidence": [
+    "signalized Main/7th intersection",
+    "overhead/mast-arm traffic signals",
+    "MAIN ST street-name blade",
+    "marked crosswalk",
+    "yellow-painted curb returns",
+    "broad multi-lane 7th Avenue",
+    "sidewalk and utility-pole context west of Main"
+  ],
+  "negative_evidence": [
+    "No useful straight-on 617-627 storefront coverage in the recovered sequence.",
+    "No close Main/6th coverage; nearest recovered frames are roughly 122 m away near Main/7th."
+  ],
+  "api": {
+    "nearby_photos": "https://api.openstreetcam.org/1.0/list/nearby-photos/",
+    "photo_detail": "https://api.openstreetcam.org/2.0/photo/{id}"
+  },
+  "local_private_path": "projects/redfield_sd/references/private/kartaview/2017_main_7th_sequence_473900/",
+  "license_note": "Raw images remain under ignored private references; commit only metadata/observations and derived geometry."
+}

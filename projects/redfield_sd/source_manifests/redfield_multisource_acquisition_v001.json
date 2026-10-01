@@ -89,7 +89,7 @@
       "id": "sdgs_lidar_spink_2012_oem",
       "provider": "South Dakota Geological Survey",
       "class": "lidar",
-      "status": "available_subset_not_yet_downloaded",
+      "status": "two_intersecting_las_tiles_acquired_and_profiled",
       "use": [
         "terrain grade",
         "curb/street elevation",
@@ -97,7 +97,8 @@
       ],
       "portal": "https://www.sdgs.usd.edu/digitaldata/lidar.aspx",
       "spink_dataset": "https://gis.usd.edu/lidar/statewide/Spink/2012_OEM",
-      "fallback": "https://apps.nationalmap.gov/lidar-explorer/"
+      "fallback": "https://apps.nationalmap.gov/lidar-explorer/",
+      "derived_manifest": "projects/redfield_sd/source_manifests/lidar_spink_2012_poc001_v001.json"
     },
     {
       "id": "sdgs_historical_doq_spink",
@@ -148,14 +149,15 @@
       "id": "kartaview_redfield_600",
       "provider": "KartaView",
       "class": "street_level_imagery",
-      "status": "coverage_to_verify",
+      "status": "partial_2017_main7_coverage_acquired",
       "redistributable": false,
       "use": [
         "alternate street-level sequence when coverage exists"
       ],
       "url": "https://kartaview.org/",
       "search_hint": "Redfield, South Dakota / 44.8763,-98.51854",
-      "local_private_path": "projects/redfield_sd/references/private/kartaview/"
+      "local_private_path": "projects/redfield_sd/references/private/kartaview/",
+      "derived_manifest": "projects/redfield_sd/source_manifests/kartaview_main7_2017_v001.json"
     },
     {
       "id": "redfield_21_feet_history",
@@ -207,11 +209,10 @@
     }
   ],
   "next_actions": [
-    "Run tools/powershell/EarthForge_REDFIELD_FETCH_MULTISOURCE.ps1 to reproduce public-source downloads.",
-    "Capture Google Street View panorama IDs/dates/headings for every street-level target; keep screenshots private.",
-    "Check Mapillary and KartaView coverage for the same target list and record sequence/image IDs where available.",
-    "Select/download only the Spink LiDAR tiles intersecting the 600 block rather than the entire county.",
+    "Capture Google Street View panorama IDs/dates/headings for 617-627 and Main/6th; keep screenshots private.",
+    "Check Mapillary coverage for the same street-level target list and record sequence/image IDs where available.",
     "Locate the 600 block on the acquired 1916 Sanborn set and georeference the relevant sheet against the locked EarthForge frame.",
-    "Compare SDDOT CAD, OSM, aerial, LiDAR and street-level evidence before changing accepted facade geometry."
+    "Use LiDAR grade/roof profile plus SDDOT CAD and street-level evidence to build the first geospatial correction pass.",
+    "Do not modify accepted photo facades unless multisource evidence shows a real geometry mismatch."
   ]
 }
