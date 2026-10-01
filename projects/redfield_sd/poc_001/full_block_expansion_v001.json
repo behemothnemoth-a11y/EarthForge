@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "REDFIELD_POC001_FULL_BLOCK_EXPANSION_V001",
+  "status": "gated_waiting_for_west_main_trueframe_v002_ingame_approval",
+  "gate": {
+    "required_export": "projects/redfield_sd/outputs/trueframe_west_main_v002/Redfield_POC_001_WestMain_TrueFrame_v002.litematic",
+    "required_result": "user confirms facade proportions, street scale, MicroGrade, and LiDAR roof method are acceptable in game",
+    "rule": "Do not propagate the pipeline to the rest of the block until this gate passes."
+  },
+  "locked_methods_after_gate": [
+    "one shared photo-to-true-frame frontage scale where modern photo evidence contradicts per-address OSM splits",
+    "combined mapped outer footprint as geometry authority unless stronger evidence exists",
+    "LiDAR class-2 ground for longitudinal grade and local elevation",
+    "LiDAR/aerial/street-level cross-check for roof massing and height bands",
+    "Astra Microblocks 0.7.0 for evidence-driven sub-block geometry without a fixed host cap",
+    "full vanilla blocks for bulk mass where micro-resolution adds no fidelity",
+    "permanent EarthForge registration marker/orientation preserved across all exports"
+  ],
+  "block_scope": {
+    "south_control": "Main Street / 7th Avenue",
+    "north_control": "Main Street / 6th Avenue",
+    "west_boundary": "west service alley",
+    "east_boundary": "east service alley",
+    "includes": [
+      "west Main frontage",
+      "east Main frontage",
+      "both alleys",
+      "Main/6th intersection",
+      "Main/7th intersection",
+      "parking/service areas",
+      "sidewalks/curbs",
+      "signals/signs/poles/street furniture",
+      "rear additions",
+      "roofs and terrain"
+    ]
+  },
+  "phases": [
+    {
+      "phase": 1,
+      "name": "west_side_complete",
+      "work": "Extend the proven 617-627 method to every remaining west-side building and rear/alley geometry."
+    },
+    {
+      "phase": 2,
+      "name": "east_side_complete",
+      "work": "Reconstruct all east-side Main Street buildings using the same evidence hierarchy and native facade authoring."
+    },
+    {
+      "phase": 3,
+      "name": "intersections_and_streetscape",
+      "work": "Current curb returns, crosswalks, signals, poles, signs, lamps, planters, benches, parking markings and street furniture."
+    },
+    {
+      "phase": 4,
+      "name": "alleys_rears_and_roofs",
+      "work": "Rear doors/additions, utilities, service areas and LiDAR/aerial roof refinement."
+    },
+    {
+      "phase": 5,
+      "name": "full_block_review_candidate",
+      "work": "One registered Litematic containing the entire Main/6th-to-Main/7th block for in-game review."
+    }
+  ],
+  "evidence_priority": {
+    "geometry": [
+      "SDDOT CADD",
+      "OSM/structured GIS",
+      "aerial/orthophoto",
+      "LiDAR",
+      "street-level imagery"
+    ],
+    "appearance": [
+      "current Google/Mapillary/KartaView imagery",
+      "Redfield city archive modern photos",
+      "other current photos",
+      "historical archive/Sanborn"
+    ],
+    "conflicts": "Record source conflicts in the multisource discrepancy ledger; do not silently pick one."
+  }
+}
