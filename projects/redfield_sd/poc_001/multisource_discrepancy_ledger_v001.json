@@ -61,6 +61,16 @@
       "current_resolution": "Use KartaView for 2017 fixture placement evidence, then cross-check current Google Street View before final current-state placement.",
       "status": "evidence_acquired",
       "confidence": "high"
+    },
+    {
+      "id": "east_main_address_footprint_assignment",
+      "feature": "602-626 per-address building boundaries",
+      "source_a": "OSM inferred address-to-footprint sequence",
+      "source_b": "Redfield 21 Feet current facade photographs + address histories",
+      "discrepancy": "Several east-side assignments are visually impossible: Wild Roots (604, historically absorbing 606/608) is broad while Studio Aura (610) is narrow, but OSM assignment gives 604 ~6.6 m and 610 ~12.0 m; Main Street Office Plaza is broad while Alley Cuts is narrow, but OSM assignment gives 620 ~7.3 m and 624 ~16.1 m.",
+      "current_resolution": "Preserve the combined mapped east-side outer frontage but repartition internal facade widths using current photo/history visual-lot weights. Do not treat per-address OSM party walls as authoritative.",
+      "status": "confirmed_mismatch",
+      "confidence": "high"
     }
   ]
 }

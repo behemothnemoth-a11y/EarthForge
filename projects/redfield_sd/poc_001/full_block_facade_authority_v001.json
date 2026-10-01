@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "spec_id": "REDFIELD_FULL_BLOCK_FACADE_AUTHORITY_V001",
+  "created": "2026-10-01",
+  "outer_frame": {
+    "south_7th_z": 0.0,
+    "north_6th_z": -131.672,
+    "west_alley_x": -68.749,
+    "east_alley_x": 68.395
+  },
+  "policy": {
+    "per_address_osm": "Use only where current photographic evidence does not contradict frontage assignment.",
+    "east_internal_widths": "Photo/history weighted contiguous partition across mapped east-side outer frontage. 604 receives three visual lots because archive history includes former 606/608; 620 receives two because archive says two buildings were combined and 618 dropped.",
+    "west_617_627": "Use locked v002 photo-proportional widths.",
+    "raw_images": "private/gitignored; repo contains provenance and derived module geometry only."
+  },
+  "east_visual_lot_scale_m": 7.006426,
+  "facades": [
+    {
+      "id": "602",
+      "addresses": [
+        "602"
+      ],
+      "side": "east",
+      "osm_id": 1393414143,
+      "name": "Leo's Good Food",
+      "z0_m": -29.7075,
+      "z1_m": -13.943,
+      "width_m": 15.7645,
+      "front_x_m": 14.76,
+      "facade_height_m": 6.5,
+      "style": "corner_restaurant_tower",
+      "palette": {
+        "body": "rgb_6e2d28",
+        "tower": "rgb_7b2d27",
+        "sign": "rgb_d6d4c4",
+        "trim": "rgb_ddd6c7",
+        "glass": "rgb_273435"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/602-main-street-leos-good-food/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "604",
+      "addresses": [
+        "604"
+      ],
+      "side": "east",
+      "osm_id": 1474301435,
+      "name": "Wild Roots / Wildroots",
+      "z0_m": -50.7267,
+      "z1_m": -29.7075,
+      "width_m": 21.0193,
+      "front_x_m": 14.767,
+      "facade_height_m": 4.6,
+      "style": "one_story_full_awning",
+      "palette": {
+        "body": "rgb_9e5549",
+        "awning": "rgb_d89b5f",
+        "base": "rgb_8e7559",
+        "trim": "rgb_d8c2a1",
+        "glass": "rgb_26383b"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/604-main-street-wildroots/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "610",
+      "addresses": [
+        "610"
+      ],
+      "side": "east",
+      "osm_id": 1474301413,
+      "name": "Studio Aura",
+      "z0_m": -57.7332,
+      "z1_m": -50.7267,
+      "width_m": 7.0064,
+      "front_x_m": 14.791,
+      "facade_height_m": 8.1,
+      "style": "two_story_metal_infill",
+      "palette": {
+        "body": "rgb_75848c",
+        "brick": "rgb_784739",
+        "trim": "rgb_d3d4cf",
+        "glass": "rgb_304247"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/610-main-street-studio-aura/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "612",
+      "addresses": [
+        "612"
+      ],
+      "side": "east",
+      "osm_id": 1474301431,
+      "name": "American Legion",
+      "z0_m": -64.7396,
+      "z1_m": -57.7332,
+      "width_m": 7.0064,
+      "front_x_m": 14.807,
+      "facade_height_m": 6.0,
+      "style": "brick_parapet_orange",
+      "palette": {
+        "brick": "rgb_68463c",
+        "body": "rgb_b66d32",
+        "trim": "rgb_c6ab82",
+        "glass": "rgb_293839"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/612-main-street-american-legion/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "614",
+      "addresses": [
+        "614"
+      ],
+      "side": "east",
+      "osm_id": 1474301444,
+      "name": "Terry's Steakhouse - dining room",
+      "z0_m": -71.746,
+      "z1_m": -64.7396,
+      "width_m": 7.0064,
+      "front_x_m": 14.846,
+      "facade_height_m": 5.0,
+      "style": "terrys_low",
+      "palette": {
+        "body": "rgb_756553",
+        "stone": "rgb_786b5b",
+        "roof": "rgb_4b4a45",
+        "trim": "rgb_b0a58f",
+        "glass": "rgb_263235"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "616",
+      "addresses": [
+        "616"
+      ],
+      "side": "east",
+      "osm_id": 1474301414,
+      "name": "Terry's Steakhouse",
+      "z0_m": -78.7524,
+      "z1_m": -71.746,
+      "width_m": 7.0064,
+      "front_x_m": 14.862,
+      "facade_height_m": 8.5,
+      "style": "terrys_ornate",
+      "palette": {
+        "brick": "rgb_8f664e",
+        "accent": "rgb_6d3430",
+        "body": "rgb_756553",
+        "stone": "rgb_786b5b",
+        "roof": "rgb_4b4a45",
+        "trim": "rgb_c1ab8b",
+        "glass": "rgb_263235"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "620",
+      "addresses": [
+        "620"
+      ],
+      "side": "east",
+      "osm_id": 1474301442,
+      "name": "Main Street Office Plaza",
+      "z0_m": -92.7653,
+      "z1_m": -78.7524,
+      "width_m": 14.0129,
+      "front_x_m": 14.949,
+      "facade_height_m": 4.8,
+      "style": "low_mansard_office",
+      "palette": {
+        "body": "rgb_315d64",
+        "roof": "rgb_454b50",
+        "trim": "rgb_c7b69f",
+        "glass": "rgb_26383b"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "622",
+      "addresses": [
+        "622"
+      ],
+      "side": "east",
+      "osm_id": 1474301425,
+      "name": "Old Simply Charming",
+      "z0_m": -99.7717,
+      "z1_m": -92.7653,
+      "width_m": 7.0064,
+      "front_x_m": 14.917,
+      "facade_height_m": 4.6,
+      "style": "low_white_storefront",
+      "palette": {
+        "body": "rgb_d7d5cf",
+        "parapet": "rgb_292d30",
+        "trim": "rgb_4b5053",
+        "glass": "rgb_354447"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "624",
+      "addresses": [
+        "624"
+      ],
+      "side": "east",
+      "osm_id": 1474301453,
+      "name": "Alley Cuts",
+      "z0_m": -106.7781,
+      "z1_m": -99.7717,
+      "width_m": 7.0064,
+      "front_x_m": 14.917,
+      "facade_height_m": 5.6,
+      "style": "modern_sign_box",
+      "palette": {
+        "body": "rgb_60625e",
+        "trim": "rgb_d3d3ce",
+        "sign": "rgb_38506a",
+        "glass": "rgb_35474b"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/624-main-street-alley-cuts/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "626",
+      "addresses": [
+        "626"
+      ],
+      "side": "east",
+      "osm_id": 1210548944,
+      "name": "Redfield City Hall",
+      "z0_m": -120.791,
+      "z1_m": -106.7781,
+      "width_m": 14.0129,
+      "front_x_m": 19.966,
+      "facade_height_m": 9.2,
+      "style": "neoclassical_city_hall",
+      "palette": {
+        "brick": "rgb_c7bdb0",
+        "stone": "rgb_b0aaa1",
+        "dark": "rgb_242729",
+        "trim": "rgb_d4cdc1",
+        "glass": "rgb_34464a"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/626-main-street-city-hall/",
+      "geometry_authority": "photo_history_weighted_east",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "603",
+      "addresses": [
+        "603"
+      ],
+      "side": "west",
+      "osm_id": 1474301421,
+      "name": "New York Life site",
+      "z0_m": -28.097,
+      "z1_m": -14.12,
+      "width_m": 13.977,
+      "front_x_m": -15.895,
+      "facade_height_m": 6.2,
+      "style": "gabled_office",
+      "palette": {
+        "body": "rgb_c8c1b6",
+        "trim": "rgb_f0eee7",
+        "dark": "rgb_54483f",
+        "glass": "rgb_26393d"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "605",
+      "addresses": [
+        "605"
+      ],
+      "side": "west",
+      "osm_id": 1393414144,
+      "name": "Mike's Furniture",
+      "z0_m": -37.031,
+      "z1_m": -29.601,
+      "width_m": 7.43,
+      "front_x_m": -15.761,
+      "facade_height_m": 5.2,
+      "style": "wide_mansard_storefront",
+      "palette": {
+        "brick": "rgb_9a5142",
+        "roof": "rgb_7b3826",
+        "trim": "rgb_e6c088",
+        "glass": "rgb_26383b"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/605-main-street-mikes-furniture-and-mattress-store/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "609",
+      "addresses": [
+        "609"
+      ],
+      "side": "west",
+      "osm_id": 1474301454,
+      "name": "The Bread Box site",
+      "z0_m": -44.661,
+      "z1_m": -36.777,
+      "width_m": 7.884,
+      "front_x_m": -15.761,
+      "facade_height_m": 7.4,
+      "style": "two_story_pastry",
+      "palette": {
+        "upper": "rgb_d78e80",
+        "lower": "rgb_e5d18a",
+        "trim": "rgb_e7e0cd",
+        "glass": "rgb_2f3b3e"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/609-main-street-the-bread-box/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "611",
+      "addresses": [
+        "611"
+      ],
+      "side": "west",
+      "osm_id": 1474301418,
+      "name": "Lutter Realty",
+      "z0_m": -59.61,
+      "z1_m": -44.55,
+      "width_m": 15.06,
+      "front_x_m": -15.801,
+      "facade_height_m": 5.2,
+      "style": "midcentury_awning",
+      "palette": {
+        "upper": "rgb_c1c1bb",
+        "awning": "rgb_56473e",
+        "base": "rgb_8e8074",
+        "trim": "rgb_d1c9ba",
+        "glass": "rgb_2c3b3e"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/611-main-street-lutter-realty/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "613",
+      "addresses": [
+        "613"
+      ],
+      "side": "west",
+      "osm_id": 1474301429,
+      "name": "State Farm Insurance site",
+      "z0_m": -67.373,
+      "z1_m": -59.445,
+      "width_m": 7.928,
+      "front_x_m": -15.777,
+      "facade_height_m": 8.2,
+      "style": "two_story_black_mansard",
+      "palette": {
+        "brick": "rgb_a34d3b",
+        "roof": "rgb_282c2f",
+        "lower": "rgb_9a6b58",
+        "trim": "rgb_d2c4b3",
+        "glass": "rgb_28373a"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "615",
+      "addresses": [
+        "615"
+      ],
+      "side": "west",
+      "osm_id": 1474301407,
+      "name": "Redfield Chiropractic",
+      "z0_m": -75.168,
+      "z1_m": -67.24,
+      "width_m": 7.928,
+      "front_x_m": -15.777,
+      "facade_height_m": 8.8,
+      "style": "historic_stonebase",
+      "palette": {
+        "brick": "rgb_9a5945",
+        "cream": "rgb_d8c7a4",
+        "stone": "rgb_b49a72",
+        "trim": "rgb_c3ac8b",
+        "glass": "rgb_314044"
+      },
+      "current_reference_folder": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/",
+      "geometry_authority": "osm_frontage_photo_checked",
+      "confidence": "medium_high"
+    },
+    {
+      "id": "617-619",
+      "addresses": [
+        "617-619"
+      ],
+      "side": "west",
+      "osm_id": 1474301456,
+      "name": "Bob's Floor Covering site",
+      "z0_m": -87.9375,
+      "z1_m": -75.1875,
+      "width_m": 12.75,
+      "front_x_m": -15.785,
+      "facade_height_m": 7.0,
+      "style": "accepted_v002",
+      "palette": {},
+      "current_reference_folder": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/",
+      "geometry_authority": "v002_photo_proportions",
+      "confidence": "high"
+    },
+    {
+      "id": "621",
+      "addresses": [
+        "621"
+      ],
+      "side": "west",
+      "osm_id": 1474301428,
+      "name": "Carpets Plus",
+      "z0_m": -99.8125,
+      "z1_m": -87.9375,
+      "width_m": 11.875,
+      "front_x_m": -15.722,
+      "facade_height_m": 10.0,
+      "style": "accepted_v002",
+      "palette": {},
+      "current_reference_folder": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/",
+      "geometry_authority": "v002_photo_proportions",
+      "confidence": "high"
+    },
+    {
+      "id": "623",
+      "addresses": [
+        "623"
+      ],
+      "side": "west",
+      "osm_id": 1474301430,
+      "name": "Simply Charming",
+      "z0_m": -106.1875,
+      "z1_m": -99.8125,
+      "width_m": 6.375,
+      "front_x_m": -15.675,
+      "facade_height_m": 5.5,
+      "style": "accepted_v002",
+      "palette": {},
+      "current_reference_folder": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/",
+      "geometry_authority": "v002_photo_proportions",
+      "confidence": "high"
+    },
+    {
+      "id": "625-627",
+      "addresses": [
+        "625",
+        "627"
+      ],
+      "side": "west",
+      "osm_id": 1474301419,
+      "name": "Hair & Company / 627 historic Youth Center site",
+      "z0_m": -120.75,
+      "z1_m": -106.1875,
+      "width_m": 14.5625,
+      "front_x_m": -15.58,
+      "facade_height_m": 8.0,
+      "style": "accepted_v002",
+      "palette": {},
+      "current_reference_folder": "references/private/redfield_21_feet_600block/625-main-street-hair-&-company/",
+      "geometry_authority": "v002_photo_proportions",
+      "confidence": "high"
+    }
+  ]
+}
