@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "purpose": "Canonical toolchain and repo entrypoints for the Lombard hard-mode reconstruction. Reuse these components; do not invent parallel pipelines unless a documented gap requires it.",
+  "project_docs": [
+    "docs/LOMBARD_SF_HARDMODE.md",
+    "docs/PIPELINE.md",
+    "docs/SOURCE_POLICY.md",
+    "docs/LITEMATICA_REGISTRATION.md",
+    "docs/LITEMATICA_EXPORT.md",
+    "docs/MICROBLOCK_OVERLAY_PIPELINE.md"
+  ],
+  "project_state": [
+    "projects/lombard_sf/project.json",
+    "projects/lombard_sf/bounds.geojson",
+    "projects/lombard_sf/control_points.json",
+    "projects/lombard_sf/source_manifests/sources.json",
+    "projects/lombard_sf/source_manifests/discrepancies.json"
+  ],
+  "acquisition": {
+    "required_source_classes": [
+      "San Francisco city GIS / street centerline / ROW",
+      "San Francisco elevation contours / survey-derived vertical controls",
+      "USGS 3DEP / LiDAR / DEM",
+      "orthophoto / aerial",
+      "building footprints / parcel context",
+      "OpenStreetMap topology seed",
+      "street-level imagery metadata from Google Street View / Mapillary / KartaView where available"
+    ],
+    "repo_stage": "pipeline/acquire/",
+    "reusable_helpers": [
+      "pipeline/acquire/fetch_remote_zip_member_range.py"
+    ],
+    "rule": "Add Lombard-specific acquisition scripts under pipeline/acquire/. Raw licensed imagery stays ignored/private."
+  },
+  "georeference": {
+    "repo_stage": "pipeline/georeference/",
+    "rule": "All source coordinates must be transformed through the locked project CRS/frame before Minecraft geometry is generated."
+  },
+  "terrain": {
+    "repo_stage": "pipeline/terrain/",
+    "rule": "Terrain truth comes from reconciled LiDAR/DEM/city elevation evidence; previews and profiles precede export."
+  },
+  "roads": {
+    "repo_stage": "pipeline/roads/",
+    "rule": "Switchbacks, curbs, sidewalks, stairs, terraces, retaining walls, and planters must derive from verified source geometry."
+  },
+  "litematica": {
+    "codec": "pipeline/export/litematic_codec.py",
+    "registration": "docs/LITEMATICA_REGISTRATION.md",
+    "test": "tools/test_litematic_codec.py",
+    "invariants": {
+      "marker": [
+        0,
+        -1,
+        0
+      ],
+      "placement_origin": "player feet",
+      "rotation": 0,
+      "mirror": "none",
+      "exact_readback": true
+    }
+  },
+  "astra_microblocks": {
+    "minimum_version": "0.7.0",
+    "codec": "pipeline/microblocks/astra_microblock_codec.py",
+    "test": "tools/test_astra_microblock_codec.py",
+    "integration_contract": "integrations/astra_microblocks/CONTRACT.md",
+    "resolution": "16x16x16 cells per Minecraft block",
+    "rule": "Use for sub-meter fidelity where vanilla geometry is too coarse; validate exact block-entity and microcell readback."
+  },
+  "validation": {
+    "repo_stage": "projects/lombard_sf/validation/",
+    "required": [
+      "source provenance + confidence",
+      "discrepancy ledger",
+      "real-world dimensional checks",
+      "exact Litematica block-map readback",
+      "exact Astra block-entity/microcell readback when used",
+      "visual gate before propagation"
+    ]
+  },
+  "banned_shortcuts": [
+    "decorative approximation used as truth",
+    "generic eight-turn template",
+    "whole-site detailed generation before slice review",
+    "silent source conflict resolution",
+    "using screenshots as coordinate truth when structured geometry exists",
+    "copying Redfield-specific architectural assumptions into Lombard"
+  ]
+}

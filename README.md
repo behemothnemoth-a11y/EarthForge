@@ -6,11 +6,17 @@ The project coordinates geographic source data, terrain/road reconstruction,
 building reconstruction, Build Studio integration, Astra Microblocks detail,
 and Minecraft export.
 
-## First proof of concept
+## Active projects
 
-`projects/redfield_sd/` is the first test project.
+EarthForge is now multi-project. Each project owns a durable source-of-truth folder under `projects/<project_id>/` and may add a project-specific workflow document that refines the global pipeline without silently overriding it.
 
-Current stage: **REDFIELD_POC_001 / L0 GEO**
+Current projects include:
+- `projects/redfield_sd/` — original proof of concept and reconstruction lessons.
+- `projects/lombard_sf/` — hard-mode 1:1 real-world reconstruction of the crooked Lombard Street block between Hyde and Leavenworth.
+
+For Lombard, start with `docs/LOMBARD_SF_HARDMODE.md` and `projects/lombard_sf/toolchain.json`.
+
+Historical Redfield stage reference: **REDFIELD_POC_001 / L0 GEO**
 
 The selected test area is the downtown Main Street block between 7th Avenue
 and 6th Avenue. Drop 0003 derives the exact working frame from imported

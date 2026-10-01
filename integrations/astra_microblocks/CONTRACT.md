@@ -12,6 +12,11 @@ Good candidates:
 - shaped facade elements
 - roof-edge geometry
 - small utility details
+- curved curbs and curb returns
+- sloped transitions
+- planter lips / caps
+- fine retaining-wall geometry
+- evidence-supported stair and terrace corrections
 
 EarthForge should send:
 - parent building/object ID

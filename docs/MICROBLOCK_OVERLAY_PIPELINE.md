@@ -69,7 +69,7 @@ The block entity contains:
 - packed 4096-cell material indices
 - saved Astra orientation
 
-The serialization mirrors the current Astra Microblocks 0.4.0 source contract.
+The serialization path must match the currently supported Astra Microblocks contract. Lombard requires Astra Microblocks **0.7.0 or newer compatible serialization**, and exact block-entity/microcell readback is required before promotion.
 
 ## v006 limits
 
