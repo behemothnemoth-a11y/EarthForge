@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "spec_id": "REDFIELD_WEST_MAIN_TRUEFRAME_FACADE_SPEC_V002",
+  "created": "2026-10-01",
+  "purpose": "Native facade re-authoring at true geographic frontage after v001 exposed severe nonuniform stretching/compression from OSM internal address boundaries.",
+  "critical_correction": {
+    "combined_frontage_source": "Use only the combined outer mapped west-Main outline.",
+    "internal_boundaries": "Do NOT use per-address OSM polygon boundaries. They conflict with the verified modern facade photographs.",
+    "photo_proportion_source": "Accepted 50-block photo-facade strip proportions 256:112:208:224.",
+    "global_scale_from_visual_strip_to_true_frame": 0.91125,
+    "combined_target_microcells": 729,
+    "combined_target_m": 45.5625,
+    "north_edge_local_z_m": -120.75,
+    "south_edge_local_z_m": -75.1875
+  },
+  "facades": {
+    "625-627": {
+      "z0_micro": -1932,
+      "z1_micro": -1699,
+      "width_microcells": 233,
+      "width_m": 14.5625,
+      "source_width_microcells": 256,
+      "visible_height_m": 8.0,
+      "identity": "One shared historic upper facade with two modern ground-floor storefronts.",
+      "upper_modules": {
+        "left_arch": [
+          13,
+          36
+        ],
+        "center_windows": [
+          [
+            55,
+            68
+          ],
+          [
+            75,
+            90
+          ],
+          [
+            97,
+            114
+          ],
+          [
+            120,
+            136
+          ],
+          [
+            144,
+            159
+          ],
+          [
+            167,
+            180
+          ]
+        ],
+        "right_arch": [
+          196,
+          219
+        ],
+        "end_pavilions": "retain raised end masses and round parapet tablets"
+      },
+      "ground_modules": {
+        "625_red_storefront": [
+          0,
+          108
+        ],
+        "627_peach_storefront": [
+          108,
+          233
+        ],
+        "rule": "Treat split as storefront composition, not a structural upper-facade division."
+      },
+      "native_rebuild_rules": [
+        "keep arch ends round at microcell resolution",
+        "keep six narrow center bays discrete",
+        "keep canopy as one continuous thin element",
+        "do not horizontally stretch signs or glazing"
+      ]
+    },
+    "623": {
+      "z0_micro": -1699,
+      "z1_micro": -1597,
+      "width_microcells": 102,
+      "width_m": 6.375,
+      "source_width_microcells": 112,
+      "visible_height_m": 5.5,
+      "identity": "Narrow Simply Charming storefront; should read much narrower than 621.",
+      "upper_modules": {
+        "green_boarded_field": [
+          22,
+          87
+        ],
+        "small_upper_window": [
+          31,
+          72
+        ],
+        "awning": [
+          29,
+          74
+        ],
+        "stone_shelf": [
+          15,
+          92
+        ]
+      },
+      "ground_modules": {
+        "left_solid_door": [
+          21,
+          36
+        ],
+        "right_glazed_entry_display": [
+          47,
+          93
+        ],
+        "sign_fascia": [
+          6,
+          96
+        ]
+      },
+      "native_rebuild_rules": [
+        "preserve strong vertical brick side piers",
+        "keep sign disc centered",
+        "keep ground floor asymmetric",
+        "avoid banner-like stretching"
+      ]
+    },
+    "621": {
+      "z0_micro": -1597,
+      "z1_micro": -1407,
+      "width_microcells": 190,
+      "width_m": 11.875,
+      "source_width_microcells": 208,
+      "visible_height_m": 10.0,
+      "identity": "Broad Carpets Plus facade with six tall upper openings and a wide modern storefront.",
+      "upper_modules": {
+        "windows": [
+          [
+            19,
+            36
+          ],
+          [
+            41,
+            58
+          ],
+          [
+            78,
+            94
+          ],
+          [
+            100,
+            117
+          ],
+          [
+            136,
+            153
+          ],
+          [
+            158,
+            174
+          ]
+        ],
+        "window_count": 6,
+        "rule": "Six separate vertical bays must remain readable; do not collapse into broad panels."
+      },
+      "ground_modules": {
+        "left_side_entry": [
+          1,
+          38
+        ],
+        "main_sign_and_storefront": [
+          38,
+          181
+        ],
+        "paired_entry": "retain centered paired doors within main storefront"
+      },
+      "native_rebuild_rules": [
+        "restore broad horizontal proportion relative to 623",
+        "preserve six-window rhythm",
+        "keep purple sign band shallow and continuous",
+        "retain separate left side-entry bay"
+      ]
+    },
+    "617-619": {
+      "z0_micro": -1407,
+      "z1_micro": -1203,
+      "width_microcells": 204,
+      "width_m": 12.75,
+      "source_width_microcells": 224,
+      "visible_height_m": 7.0,
+      "identity": "Wide altered commercial facade with three boarded upper bays and irregular marquee.",
+      "upper_modules": {
+        "boarded_bays": [
+          [
+            15,
+            69
+          ],
+          [
+            79,
+            132
+          ],
+          [
+            145,
+            195
+          ]
+        ],
+        "rule": "Three large upper bays, not three compressed pseudo-windows."
+      },
+      "ground_modules": {
+        "left_door": [
+          12,
+          26
+        ],
+        "left_display": [
+          35,
+          64
+        ],
+        "middle_shop": [
+          84,
+          133
+        ],
+        "right_shop": [
+          148,
+          199
+        ],
+        "marquee_panels": [
+          [
+            2,
+            67
+          ],
+          [
+            67,
+            89
+          ],
+          [
+            89,
+            107
+          ],
+          [
+            107,
+            203
+          ]
+        ]
+      },
+      "native_rebuild_rules": [
+        "keep broad frontage",
+        "preserve marquee irregularity",
+        "keep exposed timber posts independent",
+        "retain asymmetric modern lower facade"
+      ]
+    }
+  },
+  "vertical_rules": {
+    "base": "Fit each facade to the accepted MicroGrade sidewalk elevation at its frontage.",
+    "parapet": "Keep photographed facade/parapet morphology; roof deck height does not define visible facade height.",
+    "roof": "Use LiDAR roof bands behind the facade. Do not force facade top to equal roof deck.",
+    "micro_resolution": "16 cells per block for all facade module boundaries."
+  },
+  "implementation_rules": [
+    "Re-author each facade from module primitives at target width; do not nearest-neighbor scale completed facade cells.",
+    "Photo textures/material samples may be re-sampled locally inside a module, but architectural edges must come from this spec.",
+    "Preserve native glass now supported by Astra 0.7.0 where appropriate.",
+    "Keep total combined frontage exactly 729 microcells so the outer mapped frame remains locked.",
+    "Use the existing accepted photo studies as material/feature references, not as geometry blobs to stretch."
+  ]
+}
