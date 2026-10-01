@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "source_id": "redfield_poc001_multisource_acquisition_v001",
+  "created": "2026-10-01",
+  "coverage": "Redfield POC 001, Main Street 600 block; west-side 617-627 plus opposing curb, intersections, alleys, side/rear context",
+  "center_wgs84": {
+    "lat": 44.8763,
+    "lon": -98.51854
+  },
+  "policy": {
+    "geometry_precedence": [
+      "survey_or_official_cad",
+      "structured_gis",
+      "aerial_or_lidar",
+      "street_level_imagery",
+      "historic_photo_inference"
+    ],
+    "appearance_precedence": [
+      "current_street_level_imagery",
+      "current_city_archive_photo",
+      "other_current_photos",
+      "historical_imagery"
+    ],
+    "licensed_raw_imagery": "keep local under references/private or downloads; commit metadata and derived geometry only"
+  },
+  "sources": [
+    {
+      "id": "sddot_redfield_cadd",
+      "provider": "South Dakota DOT",
+      "class": "official_cad",
+      "status": "acquired_local_ignored",
+      "redistributable": "source terms apply; raw files kept in ignored downloads",
+      "use": [
+        "road centerlines",
+        "street geometry",
+        "intersection geometry",
+        "official city mapping cross-check"
+      ],
+      "urls": {
+        "catalog": "https://dot.sd.gov/inside-sddot/forms-publications/maps/CADD-Mapping",
+        "pdf": "https://dotfiles.sd.gov/cadd/city/pdf/redfield.pdf",
+        "dgn": "https://dotfiles.sd.gov/cadd/city/DGN/redfield.dgn",
+        "dwg": "https://dotfiles.sd.gov/cadd/city/DWG/redfield.dwg"
+      },
+      "local_path": "projects/redfield_sd/downloads/multisource_v001/sddot/"
+    },
+    {
+      "id": "osm_redfield_poc001",
+      "provider": "OpenStreetMap contributors",
+      "class": "structured_gis",
+      "status": "existing",
+      "use": [
+        "building footprints",
+        "roads",
+        "alleys",
+        "topology"
+      ],
+      "local_path": "projects/redfield_sd/downloads/osm_poc_001.json",
+      "license": "ODbL"
+    },
+    {
+      "id": "esri_world_imagery_roof_context",
+      "provider": "Esri World Imagery and imagery contributors",
+      "class": "aerial_imagery",
+      "status": "existing_private_reference",
+      "use": [
+        "roof/rear form",
+        "setbacks",
+        "parking",
+        "alley context"
+      ],
+      "manifest": "projects/redfield_sd/source_manifests/redfield_west_main_roof_blockout_v001.json"
+    },
+    {
+      "id": "sdgs_naip_2020_spink",
+      "provider": "South Dakota Geological Survey / USDA NAIP",
+      "class": "orthophoto",
+      "status": "portal_verified_legacy_spink_zip_404_on_2026-10-01",
+      "use": [
+        "orthorectified footprint cross-check",
+        "rear additions",
+        "surface layout"
+      ],
+      "portal": "https://www.sdgs.usd.edu/digitaldata/naip.aspx",
+      "legacy_spink_zip": "http://gis.usd.edu/basedata/doq/fsa20/ZIP/Spink_2020.zip",
+      "alternate": "https://gdg.sc.egov.usda.gov/"
+    },
+    {
+      "id": "sdgs_lidar_spink_2012_oem",
+      "provider": "South Dakota Geological Survey",
+      "class": "lidar",
+      "status": "available_subset_not_yet_downloaded",
+      "use": [
+        "terrain grade",
+        "curb/street elevation",
+        "building-height and roof-height cross-check when returns permit"
+      ],
+      "portal": "https://www.sdgs.usd.edu/digitaldata/lidar.aspx",
+      "spink_dataset": "https://gis.usd.edu/lidar/statewide/Spink/2012_OEM",
+      "fallback": "https://apps.nationalmap.gov/lidar-explorer/"
+    },
+    {
+      "id": "sdgs_historical_doq_spink",
+      "provider": "South Dakota Geological Survey",
+      "class": "historical_orthophoto",
+      "status": "portal_verified_subset_selection_pending",
+      "use": [
+        "rear-addition chronology",
+        "demolished structures",
+        "historic parking/alley context"
+      ],
+      "portal": "https://www.sdgs.usd.edu/digitaldata/doq/doq_pages/spink.aspx"
+    },
+    {
+      "id": "google_street_view_redfield_600",
+      "provider": "Google Maps / Street View",
+      "class": "street_level_imagery",
+      "status": "capture_plan_ready_manual_metadata_pending",
+      "redistributable": false,
+      "use": [
+        "facade depth",
+        "sidewalks",
+        "curbs",
+        "street furniture",
+        "utility poles",
+        "signs",
+        "side walls",
+        "entrances",
+        "alley mouths"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=626+N+Main+St+Redfield+SD+57469",
+      "local_private_path": "projects/redfield_sd/references/private/google/",
+      "capture_plan": "projects/redfield_sd/source_manifests/street_level_capture_targets_v001.json"
+    },
+    {
+      "id": "mapillary_redfield_600",
+      "provider": "Mapillary",
+      "class": "street_level_imagery",
+      "status": "coverage_to_verify",
+      "redistributable": false,
+      "use": [
+        "alternate street-level angles and dates when coverage exists"
+      ],
+      "url": "https://www.mapillary.com/app/?lat=44.8763&lng=-98.51854&z=18",
+      "local_private_path": "projects/redfield_sd/references/private/mapillary/"
+    },
+    {
+      "id": "kartaview_redfield_600",
+      "provider": "KartaView",
+      "class": "street_level_imagery",
+      "status": "coverage_to_verify",
+      "redistributable": false,
+      "use": [
+        "alternate street-level sequence when coverage exists"
+      ],
+      "url": "https://kartaview.org/",
+      "search_hint": "Redfield, South Dakota / 44.8763,-98.51854",
+      "local_private_path": "projects/redfield_sd/references/private/kartaview/"
+    },
+    {
+      "id": "redfield_21_feet_history",
+      "provider": "City of Redfield / Redfield Tourism",
+      "class": "current_and_historical_storefront_archive",
+      "status": "existing_verified_private_captures",
+      "use": [
+        "modern facade appearance",
+        "historical facade evolution",
+        "storefront identity"
+      ],
+      "manifest": "projects/redfield_sd/references/verified_city_archive_sources.json"
+    },
+    {
+      "id": "loc_sanborn_redfield_1916",
+      "provider": "Library of Congress / Sanborn Map Company",
+      "class": "historical_fire_insurance_map",
+      "status": "acquired_7_sheet_preview_set_local_ignored",
+      "redistributable": true,
+      "rights": "Library of Congress states online Sanborn Maps Collection is public domain and free to use/reuse",
+      "use": [
+        "historic lot widths",
+        "party walls",
+        "building footprints",
+        "construction/use history"
+      ],
+      "item": "https://www.loc.gov/item/sanborn08259_006/",
+      "local_path": "projects/redfield_sd/downloads/multisource_v001/sanborn_1916/",
+      "related_items": {
+        "1884": "https://www.loc.gov/item/sanborn08259_001/",
+        "1892": "https://www.loc.gov/item/sanborn08259_002/",
+        "1898": "https://www.loc.gov/item/sanborn08259_003/",
+        "1904": "https://www.loc.gov/item/sanborn08259_004/",
+        "1910": "https://www.loc.gov/item/sanborn08259_005/",
+        "1929_1937": "https://www.loc.gov/item/sanborn08259_008/"
+      }
+    },
+    {
+      "id": "spink_county_mapping",
+      "provider": "Spink County",
+      "class": "county_mapping_and_gis_contact",
+      "status": "portal_verified",
+      "use": [
+        "county-road context",
+        "possible parcel/GIS follow-up through Equalization/GIS office"
+      ],
+      "maps": "https://www.spinkcounty-sd.org/maps.html",
+      "equalization": "https://www.spinkcounty-sd.org/equalization.html"
+    }
+  ],
+  "next_actions": [
+    "Run tools/powershell/EarthForge_REDFIELD_FETCH_MULTISOURCE.ps1 to reproduce public-source downloads.",
+    "Capture Google Street View panorama IDs/dates/headings for every street-level target; keep screenshots private.",
+    "Check Mapillary and KartaView coverage for the same target list and record sequence/image IDs where available.",
+    "Select/download only the Spink LiDAR tiles intersecting the 600 block rather than the entire county.",
+    "Locate the 600 block on the acquired 1916 Sanborn set and georeference the relevant sheet against the locked EarthForge frame.",
+    "Compare SDDOT CAD, OSM, aerial, LiDAR and street-level evidence before changing accepted facade geometry."
+  ]
+}

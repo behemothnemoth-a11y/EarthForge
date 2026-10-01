@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "capture_set_id": "REDFIELD_600_STREET_LEVEL_V001",
+  "created": "2026-10-01",
+  "center_wgs84": {
+    "lat": 44.8763,
+    "lon": -98.51854
+  },
+  "raw_capture_policy": "Do not commit Google/Mapillary/KartaView screenshots by default. Store IDs, dates, URLs, headings, notes and confidence; raw images stay in ignored private folders.",
+  "targets": [
+    {
+      "id": "617_619_front",
+      "label": "617-619 N Main west facade",
+      "query": "617 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=617+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "straight_on_from_opposite_curb",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "facade_geometry",
+        "facade_depth",
+        "entrances",
+        "sidewalk_width",
+        "curb",
+        "signage",
+        "street_furniture",
+        "utility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "621_front",
+      "label": "621 N Main / Carpets Plus",
+      "query": "621 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=621+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "straight_on_from_opposite_curb",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "facade_geometry",
+        "facade_depth",
+        "entrances",
+        "sidewalk_width",
+        "curb",
+        "signage",
+        "street_furniture",
+        "utility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "623_front",
+      "label": "623 N Main / Simply Charming",
+      "query": "623 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=623+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "straight_on_from_opposite_curb",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "facade_geometry",
+        "facade_depth",
+        "entrances",
+        "sidewalk_width",
+        "curb",
+        "signage",
+        "street_furniture",
+        "utility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "625_front",
+      "label": "625 N Main",
+      "query": "625 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=625+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "straight_on_from_opposite_curb",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "facade_geometry",
+        "facade_depth",
+        "entrances",
+        "sidewalk_width",
+        "curb",
+        "signage",
+        "street_furniture",
+        "utility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "627_front",
+      "label": "627 N Main",
+      "query": "627 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=627+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "straight_on_from_opposite_curb",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "facade_geometry",
+        "facade_depth",
+        "entrances",
+        "sidewalk_width",
+        "curb",
+        "signage",
+        "street_furniture",
+        "utility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "east_curb_reference",
+      "label": "Opposite east curb / block-wide view",
+      "query": "626 N Main St Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=626+N+Main+St+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "west_facing_blockwide",
+        "north_oblique",
+        "south_oblique"
+      ],
+      "evidence": [
+        "frontage_alignment",
+        "curb",
+        "sidewalk",
+        "parking",
+        "street_furniture",
+        "signal_visibility"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "main_7th",
+      "label": "Main Street and 7th Avenue intersection",
+      "query": "Main St and 7th Ave Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Main+St+and+7th+Ave+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "northbound",
+        "southbound",
+        "west_sidewalk",
+        "east_sidewalk"
+      ],
+      "evidence": [
+        "intersection_geometry",
+        "crosswalks",
+        "signals",
+        "curb_returns",
+        "grade",
+        "street_width"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "main_6th",
+      "label": "Main Street and 6th Avenue intersection",
+      "query": "Main St and 6th Ave Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Main+St+and+6th+Ave+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "northbound",
+        "southbound",
+        "west_sidewalk",
+        "east_sidewalk"
+      ],
+      "evidence": [
+        "intersection_geometry",
+        "crosswalks",
+        "signals",
+        "curb_returns",
+        "grade",
+        "street_width"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "west_alley",
+      "label": "West alley behind 617-627 block",
+      "query": "Main Street west alley between 6th Ave and 7th Ave Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Main+Street+west+alley+between+6th+Ave+and+7th+Ave+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "north_alley_view",
+        "south_alley_view",
+        "rear_obliques"
+      ],
+      "evidence": [
+        "rear_walls",
+        "rear_additions",
+        "service_doors",
+        "utility",
+        "roof_edges",
+        "alley_width"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "block_context",
+      "label": "600 block Main Street overall context",
+      "query": "600 block Main Street Redfield SD 57469",
+      "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=600+block+Main+Street+Redfield+SD+57469",
+      "providers": [
+        "google_street_view",
+        "mapillary",
+        "kartaview"
+      ],
+      "requested_views": [
+        "northbound_sequence",
+        "southbound_sequence"
+      ],
+      "evidence": [
+        "building_spacing",
+        "streetscape_rhythm",
+        "tree_canopy",
+        "light_poles",
+        "parking",
+        "road_markings"
+      ],
+      "status": "pending",
+      "record": {
+        "provider_id": null,
+        "capture_date": null,
+        "heading": null,
+        "pitch": null,
+        "notes": null,
+        "confidence": null
+      }
+    }
+  ]
+}

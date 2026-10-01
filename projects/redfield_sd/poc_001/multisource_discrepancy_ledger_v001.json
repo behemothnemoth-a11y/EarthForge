@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-01",
+  "rows": [
+    {
+      "id": "west_main_address_footprint_assignment",
+      "feature": "617-627 per-address building boundaries",
+      "source_a": "OSM selected ways",
+      "source_b": "accepted city-archive photo frontage",
+      "discrepancy": "OSM address assignments do not match accepted photographic frontage proportions",
+      "current_resolution": "Use combined outer outline only; do not trust per-address party-wall assignment",
+      "status": "open",
+      "confidence": "high"
+    },
+    {
+      "id": "west_main_roof_height",
+      "feature": "617-627 roof elevations and parapets",
+      "source_a": "Esri World Imagery",
+      "source_b": "current provisional roof blockout",
+      "discrepancy": "aerial supports low-slope roofs but does not establish exact elevation/fall",
+      "current_resolution": "Keep roof decks provisional until LiDAR/street-level cross-check",
+      "status": "open",
+      "confidence": "medium"
+    },
+    {
+      "id": "west_main_curb_sidewalk",
+      "feature": "west curb, sidewalk and storefront setback",
+      "source_a": "OSM/SDDOT geometry",
+      "source_b": "street-level imagery",
+      "discrepancy": "street-level verification not yet recorded",
+      "current_resolution": "Pending Google/Mapillary/KartaView capture pass",
+      "status": "pending_capture",
+      "confidence": "unknown"
+    },
+    {
+      "id": "west_main_rear_form",
+      "feature": "rear additions and alley openings",
+      "source_a": "aerial/OSM",
+      "source_b": "street-level/alley imagery",
+      "discrepancy": "rear wall openings are not yet visually verified",
+      "current_resolution": "Pending alley imagery plus LiDAR/orthophoto subset",
+      "status": "pending_capture",
+      "confidence": "medium"
+    }
+  ]
+}

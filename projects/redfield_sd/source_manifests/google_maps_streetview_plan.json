@@ -11,6 +11,9 @@
   "local_private_path": "projects/redfield_sd/references/private/google/",
   "notes": [
     "Use for curb/sidewalk/building placement verification and later facade reference.",
-    "Street View appearance evidence does not override structured footprint geometry without documented reason."
-  ]
+    "Street View appearance evidence does not override structured footprint geometry without documented reason.",
+    "Google Street View is now one layer in the multisource acquisition stack, not the sole visual source."
+  ],
+  "superseded_by": "projects/redfield_sd/source_manifests/redfield_multisource_acquisition_v001.json",
+  "capture_plan": "projects/redfield_sd/source_manifests/street_level_capture_targets_v001.json"
 }

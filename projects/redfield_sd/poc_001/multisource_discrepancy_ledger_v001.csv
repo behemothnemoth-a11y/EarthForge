@@ -1,0 +1,5 @@
+﻿id,feature,source_a,source_b,discrepancy,current_resolution,status,confidence
+west_main_address_footprint_assignment,617-627 per-address building boundaries,OSM selected ways,accepted city-archive photo frontage,OSM address assignments do not match accepted photographic frontage proportions,Use combined outer outline only; do not trust per-address party-wall assignment,open,high
+west_main_roof_height,617-627 roof elevations and parapets,Esri World Imagery,current provisional roof blockout,aerial supports low-slope roofs but does not establish exact elevation/fall,Keep roof decks provisional until LiDAR/street-level cross-check,open,medium
+west_main_curb_sidewalk,"west curb, sidewalk and storefront setback",OSM/SDDOT geometry,street-level imagery,street-level verification not yet recorded,Pending Google/Mapillary/KartaView capture pass,pending_capture,unknown
+west_main_rear_form,rear additions and alley openings,aerial/OSM,street-level/alley imagery,rear wall openings are not yet visually verified,Pending alley imagery plus LiDAR/orthophoto subset,pending_capture,medium
