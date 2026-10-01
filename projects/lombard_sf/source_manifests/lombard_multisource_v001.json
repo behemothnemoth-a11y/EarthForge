@@ -165,6 +165,21 @@
         "garden massing",
         "house visual context"
       ]
+    },
+    {
+      "id": "sfcta_existing_conditions_2017",
+      "provider": "San Francisco County Transportation Authority",
+      "class": "official_existing_conditions_study",
+      "status": "verified_public_report",
+      "url": "https://www.sfcta.org/sites/default/files/2019-03/Lombard_final_report_020918.pdf",
+      "use": [
+        "official Hyde-to-Leavenworth block scope",
+        "one-way eastbound circulation",
+        "pedestrian stairway context",
+        "intersection and visitor-flow diagrams",
+        "visual hardscape and roadway context"
+      ],
+      "note": "Use as official context and diagram source; do not derive survey-grade dimensions from presentation graphics."
     }
   ],
   "measured_truth": {
@@ -187,7 +202,8 @@
   },
   "next_actions": [
     "In-game review L1 terrain/hardscape v002 before generating houses.",
-    "Use curated Commons/current Street View references to refine only visually confirmed wall/planter profiles.",
-    "After L1 approval, map DataSF structures to addresses and create L2 massing with footprint + LiDAR heights before facade detail."
+    "Verify retaining/planter wall profiles, stair landing geometry, curb-edge thickness and garden terrace boundaries against current Street View plus curated Commons references.",
+    "Cross-check every detected hairpin against the locked 8-turn control table before any L1 v003.",
+    "After user approval, generate L2 house massing from DataSF footprints + LiDAR height stats; no facade detailing until building massing is approved."
   ]
 }
