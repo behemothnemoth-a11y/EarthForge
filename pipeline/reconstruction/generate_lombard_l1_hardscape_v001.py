@@ -1,0 +1,488 @@
+#!/usr/bin/env python3
+"""Lombard Street POC 001 - L1 terrain and hardscape.
+
+Builds the crooked Hyde-to-Leavenworth block from source-derived terrain and
+public-realm geometry. Houses are intentionally absent at this gate.
+"""
+from __future__ import annotations
+
+import json
+import math
+import statistics
+import sys
+import xml.etree.ElementTree as ET
+from collections import Counter
+from pathlib import Path
+
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from pyproj import Transformer
+from shapely.geometry import LineString, Point, Polygon, box, shape
+from shapely.ops import unary_union, transform as shp_transform
+from shapely.prepared import prep
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+
+from pipeline.export.litematic_codec import (
+    NBTWriter,
+    canonical_state,
+    read_back_block_map,
+    write_single_region_litematic,
+)
+from pipeline.microblocks.astra_microblock_codec import (
+    BLOCK_ENTITY_ID,
+    HOST_STATE,
+    MicroVolume,
+    decode_volume_v4,
+    tile_entity_payload,
+)
+
+PROJECT=ROOT/"projects"/"lombard_sf"
+POC=PROJECT/"poc_001"
+RAW=PROJECT/"downloads"/"raw"
+OUT=PROJECT/"outputs"/"l1_hardscape_v001"
+
+TRUTH=POC/"l0_source_truth_v001.json"
+CENTER=POC/"l0_crooked_centerline_v001.json"
+HARDSCAPE=POC/"l0_osm_hardscape_v001.json"
+CITY=POC/"l0_city_layers_v001.json"
+GRID=RAW/"lombard_poc001_ground_grid_050cm_v001.npz"
+OSM=RAW/"osm_map_poc001.osm"
+
+NAME="Lombard_POC_001_L1_Terrain_Hardscape_v001"
+REGION="LOMBARD_POC001_L1_TERRAIN_HARDSCAPE_V001"
+DATA_VERSION=4903
+
+# Permanent project registration: outside the upper/west site.
+REG_LOCAL_X=-30.0
+REG_LOCAL_Z=-20.0
+BASE_Y=-42
+TERRAIN_CLIP=(-20.0,-45.0,165.0,45.0)
+
+STONE="minecraft:stone"
+DIRT="minecraft:dirt"
+PAD="minecraft:polished_andesite"
+MARKER="minecraft:yellow_concrete"
+
+GRASS="astra_microblocks:rgb_637a49"
+GARDEN="astra_microblocks:rgb_526d3f"
+SOIL="astra_microblocks:rgb_665244"
+ROAD_A="astra_microblocks:rgb_9d5041"
+ROAD_B="astra_microblocks:rgb_87453a"
+CURB="astra_microblocks:rgb_c8c3b8"
+SIDEWALK="astra_microblocks:rgb_aeaba2"
+ASPHALT="astra_microblocks:rgb_565958"
+CONCRETE="astra_microblocks:rgb_858784"
+BRICK_STEP="astra_microblocks:rgb_986052"
+CONCRETE_STEP="astra_microblocks:rgb_a7a49b"
+HEDGE_A="astra_microblocks:rgb_3d6339"
+HEDGE_B="astra_microblocks:rgb_506f45"
+RAIL="astra_microblocks:rgb_777b79"
+CABLE_SLOT="astra_microblocks:rgb_303233"
+
+def font(size):
+    p=Path("C:/Windows/Fonts/segoeui.ttf")
+    return ImageFont.truetype(str(p),size) if p.exists() else None
+
+def floor16(v:int):
+    h=math.floor(v/16)
+    return h,v-h*16
+
+class Builder:
+    def __init__(self):
+        self.blocks={}
+        self.hosts={}
+        self.terrain_top={} # (local integer x,z) -> surface microheight
+        self.stats=Counter()
+
+    def set_micro_schematic(self,sx,sy,sz,material):
+        hx,lx=floor16(int(sx));hy,ly=floor16(int(sy));hz,lz=floor16(int(sz))
+        pos=(hx,hy,hz)
+        if pos in self.blocks and self.blocks[pos]!=HOST_STATE:
+            old=self.blocks[pos]
+            v=MicroVolume(old)
+            v.fill_box(0,0,0,16,16,16,old)
+            self.hosts[pos]=v
+            self.blocks[pos]=HOST_STATE
+        v=self.hosts.get(pos)
+        if v is None:
+            v=MicroVolume(STONE);self.hosts[pos]=v;self.blocks[pos]=HOST_STATE
+        v.set(lx,ly,lz,material)
+
+    def set_micro_local(self,x_micro,y_micro,z_micro,material):
+        sx=x_micro-round(REG_LOCAL_X*16)
+        sz=z_micro-round(REG_LOCAL_Z*16)
+        self.set_micro_schematic(sx,y_micro,sz,material)
+
+    def fill_local_vertical(self,x_micro,z_micro,y0,y1,material):
+        for y in range(int(y0),int(y1)):
+            self.set_micro_local(x_micro,y,z_micro,material)
+
+    def clear_local_vertical(self,x_micro,z_micro,y0,y1):
+        self.fill_local_vertical(x_micro,z_micro,y0,y1,None)
+
+    def add_terrain_column(self,x,z,top_micro):
+        sx=round(x-REG_LOCAL_X); sz=round(z-REG_LOCAL_Z)
+        top_block=math.floor((top_micro-1)/16)
+        cap=top_micro-top_block*16
+        # full bulk; top 1m below surface is dirt
+        for y in range(BASE_Y,top_block):
+            self.blocks[(sx,y,sz)]=DIRT if y>=top_block-1 else STONE
+        pos=(sx,top_block,sz)
+        v=MicroVolume(DIRT)
+        v.fill_box(0,0,0,16,cap,16,DIRT)
+        self.hosts[pos]=v;self.blocks[pos]=HOST_STATE
+        # green top layer
+        if cap>0:
+            for lx in range(16):
+                for lz in range(16):
+                    v.set(lx,cap-1,lz,GRASS)
+        self.terrain_top[(x,z)]=top_micro
+
+    def existing_top(self,x_micro,z_micro):
+        bx=math.floor(x_micro/16);bz=math.floor(z_micro/16)
+        return self.terrain_top.get((bx,bz))
+
+    def surface(self,x_micro,z_micro,top_micro,material,thickness=2,clear_margin=6):
+        existing=self.existing_top(x_micro,z_micro)
+        if existing is not None and existing>top_micro:
+            self.clear_local_vertical(x_micro,z_micro,top_micro,existing+clear_margin)
+        for y in range(top_micro-thickness,top_micro):
+            self.set_micro_local(x_micro,y,z_micro,material)
+
+def load_grid():
+    d=np.load(GRID)
+    return d["grid"],{k:float(d[k]) for k in ("xmin","xmax","zmin","zmax","res")}
+
+def grid_sample(grid,m,x,z):
+    fx=(x-m["xmin"])/m["res"];fz=(z-m["zmin"])/m["res"]
+    fx=max(0,min(grid.shape[1]-1.001,fx));fz=max(0,min(grid.shape[0]-1.001,fz))
+    ix=int(math.floor(fx));iz=int(math.floor(fz));tx=fx-ix;tz=fz-iz
+    ix1=min(grid.shape[1]-1,ix+1);iz1=min(grid.shape[0]-1,iz+1)
+    return float(
+        grid[iz,ix]*(1-tx)*(1-tz)+grid[iz,ix1]*tx*(1-tz)+
+        grid[iz1,ix]* (1-tx)*tz+grid[iz1,ix1]*tx*tz
+    )
+def local_city_geometry(rec):
+    return shape(rec["geometry"])
+
+def row_geometries(city):
+    bycnn={}
+    for r in city["right_of_way"]:
+        cnn=str(r["properties"].get("cnn"))
+        bycnn.setdefault(cnn,[]).append(local_city_geometry(r))
+    def uni(ids):
+        arr=[]
+        for i in ids:arr.extend(bycnn.get(i,[]))
+        return unary_union(arr) if arr else Polygon()
+    return {
+        "crooked":uni(["8448000","8449000"]),
+        "hyde":uni(["7144000","7145000"]),
+        "leavenworth":uni(["8268000","8269000"]),
+    }
+
+def street_lines(city):
+    d={}
+    for r in city["streets"]:
+        cnn=str(r["properties"].get("cnn"))
+        d[cnn]=local_city_geometry(r)
+    return d
+
+def parse_osm_local(truth):
+    root=ET.parse(OSM).getroot()
+    nodes={n.attrib["id"]:(float(n.attrib["lat"]),float(n.attrib["lon"])) for n in root.findall("node")}
+    tf=Transformer.from_crs(4326,3717,always_xy=True)
+    ae=truth["coordinate_frame"]["anchor_epsg3717_m"]["easting"]
+    an=truth["coordinate_frame"]["anchor_epsg3717_m"]["northing"]
+    def loc(lon,lat):
+        e,n=tf.transform(lon,lat);return e-ae,an-n
+    ways=[]
+    for w in root.findall("way"):
+        tags={t.attrib["k"]:t.attrib["v"] for t in w.findall("tag")}
+        coords=[]
+        for nd in w.findall("nd"):
+            if nd.attrib["ref"] in nodes:
+                lat,lon=nodes[nd.attrib["ref"]];coords.append(loc(lon,lat))
+        if len(coords)>=2:ways.append({"id":w.attrib["id"],"tags":tags,"line":LineString(coords),"closed":coords[0]==coords[-1]})
+    return ways
+
+def terrain_mask(rows):
+    clip=box(*TERRAIN_CLIP)
+    public=unary_union([rows["crooked"],rows["hyde"],rows["leavenworth"]])
+    # Six-meter soil/yard context around public ROW, enough to read terrain
+    # without pretending to reconstruct whole private parcels at L1.
+    return public.buffer(6.0,join_style=2).intersection(clip), public.intersection(clip)
+
+def micro_bbox(poly,margin=0):
+    a,b,c,d=poly.bounds
+    return (
+        math.floor((a-margin)*16),math.ceil((c+margin)*16),
+        math.floor((b-margin)*16),math.ceil((d+margin)*16)
+    )
+
+def iter_micro_polygon(poly,step=1):
+    pp=prep(poly)
+    x0,x1,z0,z1=micro_bbox(poly)
+    for xm in range(x0,x1,step):
+        x=(xm+.5)/16
+        for zm in range(z0,z1,step):
+            if pp.contains(Point(x,(zm+.5)/16)):
+                yield xm,zm
+
+def surface_height(grid,gm,top_navd,xm,zm):
+    e=grid_sample(grid,gm,(xm+.5)/16,(zm+.5)/16)
+    return round((e-top_navd)*16)
+
+def add_micro_surface(builder,poly,grid,gm,top_navd,material_fn,thickness=2,raise_cells=0):
+    n=0
+    for xm,zm in iter_micro_polygon(poly):
+        top=surface_height(grid,gm,top_navd,xm,zm)+raise_cells
+        mat=material_fn(xm,zm) if callable(material_fn) else material_fn
+        builder.surface(xm,zm,top,mat,thickness)
+        n+=1
+    return n
+
+def add_hedge(builder,line,grid,gm,top_navd,height_cells=13):
+    poly=line.buffer(.24,cap_style=1,join_style=1)
+    n=0
+    for xm,zm in iter_micro_polygon(poly):
+        top=surface_height(grid,gm,top_navd,xm,zm)
+        for y in range(top,top+height_cells):
+            builder.set_micro_local(xm,y,zm,HEDGE_A if ((xm//3+zm//3+y//3)&1)==0 else HEDGE_B)
+        n+=1
+    return n
+
+def add_step_way(builder,line,tags,grid,gm,top_navd):
+    poly=line.buffer(.72,cap_style=2,join_style=2)
+    e0=grid_sample(grid,gm,*line.coords[0]);e1=grid_sample(grid,gm,*line.coords[-1])
+    count=tags.get("step_count")
+    if count:
+        count=max(1,int(count))
+    else:
+        count=max(1,round(abs(e1-e0)/0.18))
+    material=BRICK_STEP if tags.get("surface")=="bricks" else CONCRETE_STEP
+    pp=prep(poly);x0,x1,z0,z1=micro_bbox(poly);n=0
+    for xm in range(x0,x1):
+        x=(xm+.5)/16
+        for zm in range(z0,z1):
+            z=(zm+.5)/16
+            pt=Point(x,z)
+            if not pp.contains(pt):continue
+            frac=line.project(pt,normalized=True)
+            idx=min(count,max(0,math.floor(frac*count)))
+            elev=e0+(e1-e0)*(idx/count)
+            top=round((elev-top_navd)*16)+1
+            builder.surface(xm,zm,top,material,3,10)
+            n+=1
+    return {"cells":n,"count":count,"endpoint_drop_m":e0-e1,"material":material}
+def add_footway(builder,line,tags,grid,gm,top_navd):
+    width=1.2
+    poly=line.buffer(width/2,cap_style=2,join_style=2)
+    mat=BRICK_STEP if tags.get("surface")=="bricks" else SIDEWALK
+    return add_micro_surface(builder,poly,grid,gm,top_navd,mat,2,1)
+
+def road_brick(xm,zm):
+    # restrained paver variation with a staggered six-by-three-cell rhythm.
+    row=math.floor(zm/3)
+    col=math.floor((xm+(row&1)*3)/6)
+    return ROAD_B if ((row+col)%7==0) else ROAD_A
+
+def add_cable_rail(builder,line,grid,gm,top_navd):
+    # Track way represents one rail alignment in OSM. Two-cell steel strip with
+    # a dark one-cell cable/slot shadow beside it.
+    n=0
+    length=line.length
+    steps=max(1,math.ceil(length*16))
+    for i in range(steps+1):
+        pt=line.interpolate(i/steps,normalized=True)
+        xm=round(pt.x*16);zm=round(pt.y*16)
+        top=surface_height(grid,gm,top_navd,xm,zm)+1
+        builder.surface(xm,zm,top,RAIL,2,4)
+        builder.surface(xm+2,zm,top,CABLE_SLOT,1,4)
+        n+=1
+    return n
+
+def add_registration(builder):
+    # Permanent pad surface y=-1 so player feet are exactly schematic y=0.
+    for x in range(-5,6):
+        for z in range(-5,6):
+            builder.blocks[(x,-1,z)]=PAD
+    builder.blocks[(0,-1,0)]=MARKER
+    # East-pointing gold arrow on pad.
+    for x in range(1,5):builder.blocks[(x,-1,0)]="minecraft:gold_block"
+    for z in (-1,1):builder.blocks[(4,-1,z)]="minecraft:gold_block"
+
+def main():
+    OUT.mkdir(parents=True,exist_ok=True)
+    truth=json.loads(TRUTH.read_text())
+    center=json.loads(CENTER.read_text())
+    hard=json.loads(HARDSCAPE.read_text())
+    city=json.loads(CITY.read_text())
+    grid,gm=load_grid()
+    top_navd=truth["coordinate_frame"]["vertical_zero_navd88_m"]
+    rows=row_geometries(city); streets=street_lines(city)
+    ways=parse_osm_local(truth)
+    terrain,public=terrain_mask(rows)
+
+    b=Builder()
+    # Terrain bulk at 1 m, micro-quantized top.
+    pp=prep(terrain)
+    xmin,xmax,zmin,zmax=map(math.floor,(terrain.bounds[0],terrain.bounds[2],terrain.bounds[1],terrain.bounds[3]))
+    # explicit bounds order for clarity
+    minx,maxx=math.floor(terrain.bounds[0]),math.ceil(terrain.bounds[2])
+    minz,maxz=math.floor(terrain.bounds[1]),math.ceil(terrain.bounds[3])
+    tcount=0
+    for x in range(minx,maxx):
+        for z in range(minz,maxz):
+            if not pp.contains(Point(x+.5,z+.5)):continue
+            elev=grid_sample(grid,gm,x+.5,z+.5)
+            top=round((elev-top_navd)*16)
+            b.add_terrain_column(x,z,top);tcount+=1
+
+    # Public ROW remainder gets a darker garden/terrace surface.
+    garden=rows["crooked"].difference(LineString([tuple(r["x_m"] for r in [])]) if False else Polygon())
+    garden_cells=add_micro_surface(b,rows["crooked"],grid,gm,top_navd,GARDEN,1,0)
+
+    # Crooked road + curbs.
+    road_line=LineString([(r["x_m"],r["z_m"]) for r in center])
+    road_poly=road_line.buffer(2.75,cap_style=2,join_style=1,resolution=16)
+    curb_outer=road_line.buffer(3.05,cap_style=2,join_style=1,resolution=16)
+    curb_poly=curb_outer.difference(road_poly)
+    road_cells=add_micro_surface(b,road_poly,grid,gm,top_navd,road_brick,2,0)
+    curb_cells=add_micro_surface(b,curb_poly,grid,gm,top_navd,CURB,3,3)
+
+    # Cross streets and straight Lombard context.
+    cross_specs=[
+        ("7144000",5.4,CONCRETE),("7145000",5.4,ASPHALT),
+        ("8268000",5.2,ASPHALT),("8269000",5.2,ASPHALT),
+        ("8450000",5.2,ASPHALT),("8447000",5.2,CONCRETE),
+    ]
+    cross_cells=0
+    clip=box(*TERRAIN_CLIP)
+    for cnn,half,mat in cross_specs:
+        line=streets.get(cnn)
+        if line is None:continue
+        poly=line.buffer(half,cap_style=2,join_style=1).intersection(clip)
+        cross_cells+=add_micro_surface(b,poly,grid,gm,top_navd,mat,2,0)
+        ring=line.buffer(half+.28,cap_style=2,join_style=1).difference(line.buffer(half,cap_style=2,join_style=1)).intersection(clip)
+        cross_cells+=add_micro_surface(b,ring,grid,gm,top_navd,CURB,3,3)
+
+    # Steps, footways, hedges. Restrict to immediate crooked-block context.
+    main_context=rows["crooked"].buffer(5)
+    step_audit=[];foot_cells=0;hedge_cells=0
+    for f in hard["features"]:
+        tags=f["tags"];line=LineString(f["line_xz_m"])
+        if not line.intersects(main_context):continue
+        if tags.get("highway")=="steps":
+            step_audit.append({"osm_id":f["osm_id"],**add_step_way(b,line,tags,grid,gm,top_navd)})
+        elif tags.get("highway") in ("footway","path"):
+            foot_cells+=add_footway(b,line,tags,grid,gm,top_navd)
+        elif tags.get("barrier")=="hedge":
+            hedge_cells+=add_hedge(b,line,grid,gm,top_navd)
+
+    # Hyde cable-car rail ways.
+    rail_cells=0
+    rail_clip=rows["hyde"].intersection(box(-20,-42,25,42))
+    for w in ways:
+        if w["tags"].get("railway")=="tram":
+            seg=w["line"].intersection(rail_clip)
+            if seg.is_empty:continue
+            if seg.geom_type=="MultiLineString":
+                for s in seg.geoms:rail_cells+=add_cable_rail(b,s,grid,gm,top_navd)
+            elif seg.geom_type=="LineString":
+                rail_cells+=add_cable_rail(b,seg,grid,gm,top_navd)
+
+    add_registration(b)
+    for p in b.hosts:b.blocks[p]=HOST_STATE
+
+    xs=[p[0] for p in b.blocks];ys=[p[1] for p in b.blocks];zs=[p[2] for p in b.blocks]
+    bounds=(min(xs),min(ys),min(zs),max(xs),max(ys),max(zs))
+    writer=NBTWriter();tes=[]
+    for (x,y,z),v in sorted(b.hosts.items()):
+        tes.append(tile_entity_payload(writer,(x-bounds[0],y-bounds[1],z-bounds[2]),v))
+
+    litematic=OUT/f"{NAME}.litematic"
+    stats=write_single_region_litematic(
+        litematic,b.blocks,bounds,REGION,NAME,
+        "Lombard Street Hyde-to-Leavenworth L1 source-truth terrain/hardscape: 2010 LiDAR grade, OSM 157-node crooked centerline, DataSF ROW, mapped stairways/footways/hedges, curb and cable-car rail context. No houses yet.",
+        data_version=DATA_VERSION,tile_entity_payloads=tes
+    )
+
+    reread,meta=read_back_block_map(litematic,REGION)
+    expected={p:canonical_state(s) for p,s in b.blocks.items()}
+    assert reread==expected
+    rp=meta["region_position"];decoded={}
+    for te in meta["tile_entities"]:
+        if te.get("id")==BLOCK_ENTITY_ID:
+            p=(te["x"]+rp[0],te["y"]+rp[1],te["z"]+rp[2])
+            decoded[p]=decode_volume_v4(te["volume_v4"])
+    assert set(decoded)==set(b.hosts)
+    for p,v in b.hosts.items():assert decoded[p]==v.cells,p
+    assert reread.get((0,-1,0))==MARKER
+
+    # Review preview from exact vectors + height shade.
+    W,H=1600,950;im=Image.new("RGB",(W,H),"#efeee8");d=ImageDraw.Draw(im)
+    d.text((35,25),"LOMBARD / L1 TERRAIN + HARDSCAPE v001",font=font(30),fill="#243c39")
+    d.text((35,70),f"LiDAR drop {truth['crooked_road']['endpoint_drop_m']:.2f}m | crooked centerline {truth['crooked_road']['horizontal_centerline_length_m']:.1f}m | no houses",font=font(17),fill="#56605d")
+    pxmin,pxmax,pzmin,pzmax=-38,170,-48,48
+    sc=min(1430/(pxmax-pxmin),770/(pzmax-pzmin));ox=70-pxmin*sc;oz=120-pzmin*sc
+    def pt(x,z):return ox+x*sc,oz+z*sc
+    # terrain mask
+    for geom,col in [(terrain,"#8b9a72"),(rows["crooked"],"#6f8656"),(road_poly,"#9d5041"),(curb_poly,"#c8c3b8")]:
+        geoms=list(geom.geoms) if hasattr(geom,"geoms") else [geom]
+        for g in geoms:
+            if g.geom_type!="Polygon":continue
+            d.polygon([pt(x,z) for x,z in g.exterior.coords],fill=col if geom!=terrain else None,outline=col)
+    for f in hard["features"]:
+        line=LineString(f["line_xz_m"])
+        if not line.intersects(main_context):continue
+        coords=[pt(x,z) for x,z in line.coords]
+        if f["tags"].get("highway")=="steps":d.line(coords,fill="#8a6657",width=4)
+        elif f["tags"].get("barrier")=="hedge":d.line(coords,fill="#315d36",width=4)
+    d.line([pt(r["x_m"],r["z_m"]) for r in center],fill="#5c2520",width=2)
+    # registration
+    rx,rz=pt(REG_LOCAL_X,REG_LOCAL_Z);d.rectangle((rx-6,rz-6,rx+6,rz+6),fill="#e3b72e",outline="#222")
+    d.text((rx+10,rz-10),"LOAD PAD",font=font(14),fill="#243c39")
+    im.save(OUT/f"{NAME}_plan.png")
+
+    report={
+        **stats,
+        "astra_min_version":"0.7.0",
+        "source_truth":"projects/lombard_sf/poc_001/l0_source_truth_v001.json",
+        "registration":{"project_local_m":[REG_LOCAL_X,REG_LOCAL_Z],"schematic_marker":[0,-1,0],"player_feet":[0,0,0],"rotation":0,"mirror":"none"},
+        "features":{
+            "terrain_columns":tcount,"garden_surface_microcells":garden_cells,
+            "road_surface_microcells":road_cells,"curb_microcells":curb_cells,
+            "cross_street_surface_microcells":cross_cells,
+            "step_ways":step_audit,"footway_microcells":foot_cells,
+            "hedge_plan_microcells":hedge_cells,"cable_track_samples":rail_cells
+        },
+        "astra":{"host_count":len(b.hosts),"occupied_microcells":sum(v.occupied_count() for v in b.hosts.values()),"materials":sorted({m for v in b.hosts.values() for m in v.materials()})},
+        "terrain":{"base_y_blocks":BASE_Y,"hyde_surface_y_blocks":0.0,"leavenworth_surface_y_blocks":round(-truth["crooked_road"]["endpoint_drop_m"],3)},
+        "validation":{"exact_block_readback":True,"exact_astra_cell_readback":True,"registration_marker":True,"buildings_generated":False,"roofs_generated":False,"interiors_generated":False,"in_game_review":False},
+        "limitations":[
+            "Road width is a source-derived first-pass fit from DataSF ROW minus 10-foot minimum side corridors; current Street View will refine curb edges if needed.",
+            "Mapped hedges are modeled as massing, not botanical reconstruction.",
+            "Private house/building geometry is deliberately deferred to L2."
+        ]
+    }
+    (OUT/f"{NAME}_validation.json").write_text(json.dumps(report,indent=2)+"\n")
+    (OUT/f"{NAME}_placement.json").write_text(json.dumps({"yellow_marker":[0,-1,0],"stand_above_marker":True,"placement_origin":"player feet","rotation":0,"mirror":"none","replace_blocks":"ALL"},indent=2)+"\n")
+    (OUT/"Build_notes.md").write_text(
+        "# Lombard POC 001 - L1 Terrain + Hardscape v001\n\n"
+        "This is the first build gate. It intentionally contains no houses. The purpose is to prove the hill, eight-turn road geometry, stairs, public ROW, curb/planter relationship, mapped hedges and Hyde cable-car context before architecture is added.\n\n"
+        f"Measured LiDAR drop Hyde-to-Leavenworth: **{truth['crooked_road']['endpoint_drop_m']:.2f} m**. OSM crooked centerline: **{truth['crooked_road']['horizontal_centerline_length_m']:.1f} m** across 157 nodes.\n"
+    )
+
+    print(json.dumps({
+        "file":str(litematic),"sha256":stats["sha256"],
+        "region_position":stats["region_position"],"region_size":stats["region_size"],
+        "terrain_columns":tcount,"astra_hosts":len(b.hosts),
+        "occupied_microcells":sum(v.occupied_count() for v in b.hosts.values()),
+        "road_cells":road_cells,"curb_cells":curb_cells,
+        "steps":len(step_audit),"validation":"PASS"
+    },indent=2))
+
+if __name__=="__main__":
+    main()

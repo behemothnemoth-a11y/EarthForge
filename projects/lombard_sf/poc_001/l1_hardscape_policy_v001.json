@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "policy_id": "LOMBARD_POC001_L1_V001",
+  "target": "terrain and public hardscape only",
+  "terrain": {
+    "source": "2010 NOAA/USGS class-2 LiDAR",
+    "horizontal_resolution": "0.5 m derived ground grid; Minecraft bulk cells 1m with 1/16m microcaps",
+    "vertical_resolution": "1/16 block"
+  },
+  "crooked_road": {
+    "centerline": "OSM way 402111597, 157 nodes",
+    "surface": "red brick",
+    "road_half_width_m": 2.75,
+    "basis": "~11.7m DataSF ROW width minus two 10ft minimum side corridors yields ~5.6m road; visual/aerial cross-check",
+    "curb_width_m": 0.3
+  },
+  "stairs": {
+    "source": "OSM mapped step ways",
+    "known_step_count": "use OSM when supplied; derive local count from LiDAR drop for unmapped counts",
+    "width_m": 1.5
+  },
+  "landscape": {
+    "source": "OSM hedge geometry + DataSF ROW remainder",
+    "first_pass": "terrain/hedge masses only; no invented flower-by-flower placement"
+  },
+  "intersections": {
+    "Hyde": "include street surface and cable-car rails",
+    "Leavenworth": "include street surface",
+    "context_extent_m": 30
+  },
+  "buildings": "No building geometry in L1; footprints shown only in previews/source truth."
+}

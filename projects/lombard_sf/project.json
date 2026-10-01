@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "name": "Lombard Street Crooked Block - San Francisco",
+  "status": "POC_001_L1_TERRAIN_HARDSCAPE",
+  "scope": "Iconic crooked Lombard Street block between Hyde Street (top/west) and Leavenworth Street (bottom/east), plus immediate intersections and bordering context.",
+  "coordinate_frame": {
+    "anchor": "Hyde Street / Lombard Street centerline intersection, OSM node 65360287",
+    "anchor_wgs84": {
+      "lat": 37.8019952,
+      "lon": -122.4196302
+    },
+    "anchor_epsg3717_m": {
+      "easting": 551091.8362985816,
+      "northing": 4184004.9548091358
+    },
+    "x_positive": "east",
+    "z_positive": "south",
+    "scale": "1 meter = 1 Minecraft block",
+    "vertical_datum": "NAVD88 meters",
+    "vertical_zero": "Hyde/Lombard class-2 LiDAR median ground elevation",
+    "vertical_zero_navd88_m": 85.86895648637517
+  },
+  "orientation": {
+    "x_positive": "east",
+    "z_positive": "south",
+    "vertical": "NAVD88 relative to Hyde/Lombard top control"
+  },
+  "scale": "1 meter = 1 Minecraft block",
+  "registration": {
+    "project_local_x_m": -30.0,
+    "project_local_z_m": -20.0,
+    "player_feet_schematic": [
+      0,
+      0,
+      0
+    ],
+    "yellow_marker_schematic": [
+      0,
+      -1,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "quality_gates": [
+    "L0_SOURCE_TRUTH",
+    "L1_TERRAIN_HARDSCAPE",
+    "L2_BUILDING_MASSING",
+    "L3_MICRO_REFINEMENT"
+  ],
+  "current_gate": "L1_TERRAIN_HARDSCAPE",
+  "microblocks": {
+    "minimum_astra_version": "0.7.0",
+    "policy": "Use dense microblocks for curved roads, fractional grade, curbs, stairs, hedge/planter edges and thin civic geometry; full blocks for bulk terrain."
+  },
+  "constraints": [
+    "No invented house facade detail in L1.",
+    "Licensed imagery stays private/gitignored.",
+    "Terrain and hardscape must be source-traceable before surrounding building massing."
+  ]
+}
