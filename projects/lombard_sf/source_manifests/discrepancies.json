@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "discrepancies": [
+    {
+      "id": "LOM_DISC_001",
+      "topic": "vertical datum",
+      "sources": [
+        "datasf_elevation_contours",
+        "datasf_building_footprints_2017",
+        "usgs_lidar_explorer"
+      ],
+      "status": "open",
+      "issue": "DataSF contours use San Francisco Elevation Datum while building/LiDAR metadata references NAVD88-derived elevations. Do not mix Z values until the datum relationship is explicitly resolved.",
+      "impact": "Blocks all terrain truth and grade propagation."
+    },
+    {
+      "id": "LOM_DISC_002",
+      "topic": "published grade/length summaries",
+      "sources": [
+        "general public descriptions",
+        "street imagery"
+      ],
+      "status": "open",
+      "issue": "Common summaries cite approximate slope/length values. These are descriptive, not survey controls and must not drive the Minecraft profile.",
+      "impact": "Use LiDAR/city geometry for actual grade and path length."
+    },
+    {
+      "id": "LOM_DISC_003",
+      "topic": "Hyde control",
+      "sources": [
+        "maplogs_hyde_lombard_2026",
+        "city GIS pending"
+      ],
+      "status": "open",
+      "issue": "Provisional third-party Hyde/Lombard point exists, but authoritative city centerline/ROW intersection has not yet been ingested.",
+      "impact": "Project anchor remains provisional."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "artifact_id": "LOMBARD_SF_L0_FRAME_V001",
+  "status": "diagnostic_only_not_geometry_truth",
+  "registration": {
+    "marker": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet_origin": [
+      0,
+      0,
+      0
+    ],
+    "block": "minecraft:yellow_concrete",
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "diagnostic_frame": {
+    "build_offset_blocks": [
+      16,
+      0,
+      16
+    ],
+    "size_blocks": [
+      224,
+      1,
+      128
+    ],
+    "purpose": "Visible acquisition envelope and orientation frame only. It must not be mistaken for road/terrain truth."
+  },
+  "colors": {
+    "perimeter": "minecraft:light_gray_concrete",
+    "east_axis": "minecraft:red_concrete",
+    "south_axis": "minecraft:blue_concrete",
+    "unresolved_control": "minecraft:orange_concrete"
+  },
+  "generation_gate": "May generate before terrain lock because it encodes no interpreted road/terrain geometry."
+}
