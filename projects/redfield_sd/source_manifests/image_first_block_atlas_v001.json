@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "atlas_id": "REDFIELD_600_BLOCK_IMAGE_FIRST_V001",
+  "created": "2026-10-01",
+  "status": "reference_only_no_geometry",
+  "purpose": "Establish the entire block visually before any new facade/roof/build geometry is authored.",
+  "rules": [
+    "No new block-scale geometry until both side atlases are reviewed with the user.",
+    "Do not infer roofs from facade photos alone. Roof plans must be separately reconciled from aerial/LiDAR after facade massing is approved.",
+    "Do not use per-address OSM boundaries as facade proportions unless imagery supports them.",
+    "Every facade must first have an approved image interpretation: width/rhythm, story count, parapet/cornice, openings, storefront depth, side returns visible in imagery.",
+    "Raw/derived image boards remain private and gitignored; commit only metadata and interpretations."
+  ],
+  "side_order": {
+    "west": [
+      "603",
+      "605",
+      "609",
+      "611",
+      "613",
+      "615",
+      "617619",
+      "621",
+      "623",
+      "625"
+    ],
+    "east": [
+      "602",
+      "604",
+      "610",
+      "612",
+      "614",
+      "616",
+      "620",
+      "622",
+      "624",
+      "626"
+    ]
+  },
+  "selected_current_references": [
+    {
+      "side": "west",
+      "order_south_to_north": 1,
+      "address": "603",
+      "source_address_hint": "603",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2602/603-main-street-new-york-life",
+      "selected_image_index": 3,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/New_York_Life-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/603-main-street-new-york-life/image_03.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 2,
+      "address": "605",
+      "source_address_hint": "605",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2625/605-main-street-mikes-furniture-and-mattress-store",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MikesFurniture-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/605-main-street-mikes-furniture-and-mattress-store/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 3,
+      "address": "609",
+      "source_address_hint": "609",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2445/609-main-street-the-bread-box",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Bread%20Box-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/609-main-street-the-bread-box/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 4,
+      "address": "611",
+      "source_address_hint": "611",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2627/611-main-street-lutter-realty",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/YadaTrucking-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/611-main-street-lutter-realty/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 5,
+      "address": "613",
+      "source_address_hint": "613",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2634/613-main-street-state-farm-insurance",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StateFarmIns-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/613-main-street-state-farm-insurance/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 6,
+      "address": "615",
+      "source_address_hint": "615",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2636/615-main-street-redfield-chiropractic-pc",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/RedfieldChiropractic-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/615-main-street-redfield-chiropractic-pc/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 7,
+      "address": "617-619",
+      "source_address_hint": "617619",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2637/617619-main-street-bobs-floor-covering",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/BobsFloorCovering-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/617619-main-street-bobs-floor-covering/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 8,
+      "address": "621",
+      "source_address_hint": "621",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2640/621-main-street-carpets-plus",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/CarpetPlus-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/621-main-street-carpets-plus/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 9,
+      "address": "623",
+      "source_address_hint": "623",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2642/623-main-street-simply-charming",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/SimplyCharming-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/623-main-street-simply-charming/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "west",
+      "order_south_to_north": 10,
+      "address": "625-627 shared facade photo",
+      "source_address_hint": "625",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2643/625-main-street-hair-&-company",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/625_Main_Street-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/625-main-street-hair-&-company/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 1,
+      "address": "602",
+      "source_address_hint": "602",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2447/602-main-street-leos-good-food",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Leos-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/602-main-street-leos-good-food/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 2,
+      "address": "604",
+      "source_address_hint": "604",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2603/604-main-street-wildroots",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Wildroots-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/604-main-street-wildroots/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 3,
+      "address": "610",
+      "source_address_hint": "610",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2626/610-main-street-studio-aura",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/StudioAura-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/610-main-street-studio-aura/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 4,
+      "address": "612",
+      "source_address_hint": "612",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2633/612-main-street-american-legion",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/AmericanLegion-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/612-main-street-american-legion/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 5,
+      "address": "614",
+      "source_address_hint": "614",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2635/614-main-street-terrys-steakhouse-dining-room",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Terrys-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/614-main-street-terrys-steakhouse-dining-room/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 6,
+      "address": "616",
+      "source_address_hint": "616",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2639/616-main-street-terrys-steakhouse",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/TerrysSteakHouse-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/616-main-street-terrys-steakhouse/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 7,
+      "address": "620",
+      "source_address_hint": "620",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2638/620-main-main-street-plaza",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/MainStreetPlaza-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/620-main-main-street-plaza/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 8,
+      "address": "622",
+      "source_address_hint": "622",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2641/622-main-street-old-simply-charming",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/OldSimplyCharming-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/622-main-street-old-simply-charming/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 9,
+      "address": "624",
+      "source_address_hint": "624",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2645/624-main-street-alley-cuts",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/Alley_Cuts-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/624-main-street-alley-cuts/image_02.png",
+      "status": "current facade reference visually selected"
+    },
+    {
+      "side": "east",
+      "order_south_to_north": 10,
+      "address": "626",
+      "source_address_hint": "626",
+      "page_url": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/main-street/p/item/2644/626-main-street-city-hall",
+      "selected_image_index": 2,
+      "selected_image_url": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_52/images/21_Feet/626_Main_Street-2.png",
+      "private_file": "references/private/redfield_21_feet_600block/626-main-street-city-hall/image_02.png",
+      "status": "current facade reference visually selected"
+    }
+  ],
+  "private_boards": [
+    "references/private/image_first_block_atlas_v001/west_current_facades_south_to_north.jpg",
+    "references/private/image_first_block_atlas_v001/east_current_facades_south_to_north.jpg"
+  ]
+}
