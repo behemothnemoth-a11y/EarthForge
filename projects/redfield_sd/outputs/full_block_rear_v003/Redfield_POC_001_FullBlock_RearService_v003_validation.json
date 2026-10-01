@@ -1,0 +1,91 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:bricks",
+    "minecraft:gray_concrete",
+    "minecraft:smooth_stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    0,
+    -1,
+    -151
+  ],
+  "region_size": [
+    151,
+    16,
+    155
+  ],
+  "volume": 374480,
+  "non_air_blocks": 35496,
+  "tile_entities": 21456,
+  "sha256": "e8cc8a9e3821e0b83e46da6dce2013ba408038b4217e587379d5e0326f7dd209",
+  "secondary_structures": {
+    "1474301437": {
+      "name": "604 rear structure",
+      "footprint_blocks": 48,
+      "height_m": 3.25,
+      "lidar_return_count": 108,
+      "base_microcells": 9,
+      "top_microcells": 61
+    },
+    "1474301443": {
+      "name": "621 rear structure",
+      "footprint_blocks": 40,
+      "height_m": 2.75,
+      "lidar_return_count": 46,
+      "base_microcells": 15,
+      "top_microcells": 59
+    },
+    "1474301409": {
+      "name": "624 rear structure",
+      "footprint_blocks": 24,
+      "height_m": 3.4,
+      "lidar_return_count": 0,
+      "base_microcells": 18,
+      "top_microcells": 72
+    }
+  },
+  "service_surfaces": {
+    "1474301446": {
+      "role": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "surface_blocks": 183
+    },
+    "1474301450": {
+      "role": {
+        "highway": "path",
+        "informal": "yes"
+      },
+      "surface_blocks": 46
+    },
+    "1474301420": {
+      "role": {
+        "highway": "footway"
+      },
+      "surface_blocks": 36
+    },
+    "1474301452": {
+      "role": {
+        "highway": "steps"
+      },
+      "surface_blocks": 23
+    }
+  },
+  "astra": {
+    "hosts": 21456,
+    "occupied_microcells": 31130296
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_readback": true,
+    "registration_marker": true,
+    "invented_rear_doors": false,
+    "invented_utilities": false,
+    "in_game_review": false
+  }
+}
