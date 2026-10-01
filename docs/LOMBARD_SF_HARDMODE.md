@@ -4,6 +4,8 @@
 
 Lombard is a **real-world site geometry first** reconstruction.
 
+The final reconstruction target is **1:1 real-world scale in Minecraft**. Use 1 block = 1 meter as the bulk coordinate/grid scale, then use Astra Microblocks 0.7.0 for evidence-supported sub-meter geometry rather than compressing, exaggerating, or beautifying dimensions. Horizontal and vertical proportions must remain tied to measured real-world data. Any unavoidable Minecraft quantization must be recorded as an explicit approximation, not silently absorbed.
+
 The Redfield image-first architectural reset does **not** override the global EarthForge geospatial pipeline for this project. It applies to uncertain architectural interpretation. For Lombard, terrain, road, curb, stair, terrace, retaining-wall and footprint geometry must be established from structured real-world data before Minecraft generation.
 
 ## Source authority by feature
