@@ -261,5 +261,10 @@
     "Preserve native glass now supported by Astra 0.7.0 where appropriate.",
     "Keep total combined frontage exactly 729 microcells so the outer mapped frame remains locked.",
     "Use the existing accepted photo studies as material/feature references, not as geometry blobs to stretch."
-  ]
+  ],
+  "historical_module_corroboration": {
+    "source": "https://tourism.redfield-sd.com/candnw-rr-depot/21-feet-of-history/",
+    "fact": "Redfield Main Street was platted with 21-foot storefront allotments; some businesses used multiple lots and some building widths were reduced by walkways.",
+    "use": "Corroborates a narrow 623 module and broader multi-module neighboring facades; not used as an exact cadastral boundary."
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "origin": "player feet directly above permanent yellow marker",
+  "marker": [
+    0,
+    -1,
+    0
+  ],
+  "rotation": 0,
+  "mirror": "none",
+  "replace_blocks": "ALL",
+  "note": "This combined export supersedes the standalone MicroGrade for testing; it contains that surface plus the true-frame west-side buildings."
+}
