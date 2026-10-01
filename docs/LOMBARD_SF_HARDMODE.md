@@ -116,6 +116,18 @@ Every promoted revision requires:
 
 No uncertain interpretation may be automatically propagated across the block.
 
+Do **not** try to finish the whole site at once.
+
+The default working unit is the smallest meaningful slice that proves the method:
+- one control/elevation slice;
+- one switchback turn plus adjacent curb/stair/terrace relationships;
+- one retaining-wall/planter condition;
+- one bordering-house massing group.
+
+Expand only after that slice passes source, visual, and Minecraft review.
+
+The only permitted whole-site early pass is an explicitly labeled **rough blockout** used to test overall scale, grade, spacing, and relationships. A rough blockout is disposable and must never be promoted to geometry truth without rebuilding from verified source data.
+
 Generate and review in verified stages:
 1. terrain
 2. switchback/curbs/stairs
