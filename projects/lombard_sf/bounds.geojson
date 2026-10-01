@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "name": "lombard_sf_acquisition_bounds_v0",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LOMBARD_SF_L0_CAPTURE_V0",
+        "status": "provisional_acquisition_window_not_survey",
+        "purpose": "Crooked Lombard block between Hyde and Leavenworth plus immediate bordering houses and intersection controls.",
+        "exact_geometry_gate": "NOT_PASSED",
+        "note": "This is intentionally wider than the final build envelope; final bounds lock follows city GIS/orthophoto/LiDAR reconciliation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.4201,
+              37.80125
+            ],
+            [
+              -122.41755,
+              37.80125
+            ],
+            [
+              -122.41755,
+              37.8027
+            ],
+            [
+              -122.4201,
+              37.8027
+            ],
+            [
+              -122.4201,
+              37.80125
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

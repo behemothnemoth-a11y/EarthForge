@@ -1,0 +1,72 @@
+{
+  "schema_version": 8,
+  "project_id": "lombard_sf",
+  "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
+  "status": "L0_SITE_TRUTH_ACQUISITION",
+  "milestone": "LOMBARD_L0_SITE_FRAME",
+  "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
+  "coordinate_system": {
+    "source_crs": "EPSG:4326",
+    "working_crs": "NAD83(2011) / San Francisco CS13 meters (EPSG:7131) preferred for city geometry",
+    "anchor": {
+      "status": "provisional_pending_city_gis_lock",
+      "definition": "Hyde Street / Lombard Street control at west/top end; exact project origin will be locked only after city GIS/LiDAR cross-check."
+    },
+    "minecraft": {
+      "blocks_per_meter_horizontal": 1,
+      "blocks_per_meter_vertical": 1,
+      "world_orientation": {
+        "status": "locked",
+        "x_positive": "east",
+        "z_positive": "south",
+        "minecraft_north": "-Z",
+        "mirror": "none"
+      }
+    }
+  },
+  "build_order": [
+    "L0_SITE_TERRAIN_TRUTH",
+    "L1_HARDSCAPE_SKELETON",
+    "L2_LANDSCAPE_MASSING",
+    "L3_HOUSE_MASSING",
+    "L4_MICROBLOCK_REFINEMENT"
+  ],
+  "quality_policy": {
+    "staged_visual_gates": true,
+    "propagate_only_verified_geometry": true,
+    "discrepancy_log_required": true,
+    "no_auto_propagation_of_uncertain_interpretation": true
+  },
+  "litematica_registration": {
+    "enabled": true,
+    "block": "minecraft:yellow_concrete",
+    "placement_reference": "player_feet",
+    "placement_origin": [
+      0,
+      0,
+      0
+    ],
+    "registration_block_offset": [
+      0,
+      -1,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none",
+    "preserve_across_revisions": true
+  },
+  "microblocks": {
+    "minimum_astra_version": "0.7.0",
+    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and façade detail; vanilla blocks remain default bulk mass.",
+    "validation": "exact Astra block-entity and microcell readback required"
+  },
+  "validation": {
+    "litematica": "exact block readback required",
+    "astra": "exact block-entity/microcell readback required"
+  },
+  "source_policy": {
+    "provenance_and_confidence_required": true,
+    "discrepancies_recorded_not_hidden": true,
+    "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "project_id": "lombard_sf",
+  "control_points": [
+    {
+      "control_point_id": "LOM_CP_HYDE_001",
+      "label": "Lombard St / Hyde St — west/top control",
+      "latitude": 37.8020045,
+      "longitude": -122.4196371,
+      "elevation_m": 85,
+      "status": "provisional",
+      "quality": "Third-party geocode/elevation reference only; must be replaced or confirmed by city GIS/LiDAR before anchor lock.",
+      "source_manifest_id": "maplogs_hyde_lombard_2026"
+    },
+    {
+      "control_point_id": "LOM_CP_LEAVENWORTH_001",
+      "label": "Lombard St / Leavenworth St — east/bottom control",
+      "latitude": null,
+      "longitude": null,
+      "elevation_m": null,
+      "status": "pending_authoritative_geometry",
+      "quality": "Do not infer coordinates from imagery. Populate from city centerline/ROW or surveyed GIS source."
+    }
+  ],
+  "lock_rule": "No Minecraft terrain/road propagation beyond L0 frame until both intersection controls and vertical datum relationship are reconciled."
+}
