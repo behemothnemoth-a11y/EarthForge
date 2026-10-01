@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block - San Francisco",
-  "status": "POC_001_L1_TERRAIN_HARDSCAPE",
+  "status": "POC_001_L1_TERRAIN_HARDSCAPE_V002_REVIEW",
   "scope": "Iconic crooked Lombard Street block between Hyde Street (top/west) and Leavenworth Street (bottom/east), plus immediate intersections and bordering context.",
   "coordinate_frame": {
     "anchor": "Hyde Street / Lombard Street centerline intersection, OSM node 65360287",
@@ -49,7 +49,7 @@
     "L2_BUILDING_MASSING",
     "L3_MICRO_REFINEMENT"
   ],
-  "current_gate": "L1_TERRAIN_HARDSCAPE",
+  "current_gate": "L1_TERRAIN_HARDSCAPE_V002_INGAME_REVIEW",
   "microblocks": {
     "minimum_astra_version": "0.7.0",
     "policy": "Use dense microblocks for curved roads, fractional grade, curbs, stairs, hedge/planter edges and thin civic geometry; full blocks for bulk terrain."
@@ -58,5 +58,7 @@
     "No invented house facade detail in L1.",
     "Licensed imagery stays private/gitignored.",
     "Terrain and hardscape must be source-traceable before surrounding building massing."
-  ]
+  ],
+  "current_output": "projects/lombard_sf/outputs/l1_hardscape_v002/Lombard_POC_001_L1_Terrain_Hardscape_v002.litematic",
+  "review_rule": "Do not generate L2 house geometry until user approves L1 v002 terrain, road, stairs, retaining edges and overall scale in Minecraft."
 }

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "audit_id": "LOMBARD_POC001_TURN_GRADE_AUDIT_V001",
+  "source_centerline": "OSM way 402111597",
+  "terrain": "2010 NOAA/USGS class-2 LiDAR derived 0.5m grid",
+  "path_length_m": 197.39,
+  "turn_count_detected": 8,
+  "controls": [
+    {
+      "label": "Hyde/top",
+      "path_station_m": 0,
+      "x_m": 0.0,
+      "z_m": 0.0,
+      "ground_navd88_m": 85.864
+    },
+    {
+      "label": "Turn 1",
+      "path_station_m": 27.0,
+      "x_m": 22.661,
+      "z_m": -11.243,
+      "ground_navd88_m": 82.169,
+      "from_previous_path_m": 27.0,
+      "drop_from_previous_m": 3.695,
+      "path_grade_percent": 13.68,
+      "approx_centerline_radius_m": 6.18
+    },
+    {
+      "label": "Turn 2",
+      "path_station_m": 46.5,
+      "x_m": 37.971,
+      "z_m": -0.458,
+      "ground_navd88_m": 78.584,
+      "from_previous_path_m": 19.5,
+      "drop_from_previous_m": 3.585,
+      "path_grade_percent": 18.38,
+      "approx_centerline_radius_m": 5.76
+    },
+    {
+      "label": "Turn 3",
+      "path_station_m": 69.0,
+      "x_m": 51.5,
+      "z_m": -16.044,
+      "ground_navd88_m": 74.6,
+      "from_previous_path_m": 22.5,
+      "drop_from_previous_m": 3.984,
+      "path_grade_percent": 17.71,
+      "approx_centerline_radius_m": 6.26
+    },
+    {
+      "label": "Turn 4",
+      "path_station_m": 88.5,
+      "x_m": 66.829,
+      "z_m": -5.244,
+      "ground_navd88_m": 70.944,
+      "from_previous_path_m": 19.5,
+      "drop_from_previous_m": 3.656,
+      "path_grade_percent": 18.75,
+      "approx_centerline_radius_m": 5.69
+    },
+    {
+      "label": "Turn 5",
+      "path_station_m": 111.0,
+      "x_m": 80.387,
+      "z_m": -20.852,
+      "ground_navd88_m": 66.842,
+      "from_previous_path_m": 22.5,
+      "drop_from_previous_m": 4.102,
+      "path_grade_percent": 18.23,
+      "approx_centerline_radius_m": 6.21
+    },
+    {
+      "label": "Turn 6",
+      "path_station_m": 130.5,
+      "x_m": 95.724,
+      "z_m": -10.051,
+      "ground_navd88_m": 63.165,
+      "from_previous_path_m": 19.5,
+      "drop_from_previous_m": 3.677,
+      "path_grade_percent": 18.86,
+      "approx_centerline_radius_m": 5.72
+    },
+    {
+      "label": "Turn 7",
+      "path_station_m": 153.0,
+      "x_m": 109.252,
+      "z_m": -25.658,
+      "ground_navd88_m": 59.308,
+      "from_previous_path_m": 22.5,
+      "drop_from_previous_m": 3.857,
+      "path_grade_percent": 17.14,
+      "approx_centerline_radius_m": 6.28
+    },
+    {
+      "label": "Turn 8",
+      "path_station_m": 172.5,
+      "x_m": 124.555,
+      "z_m": -14.847,
+      "ground_navd88_m": 55.667,
+      "from_previous_path_m": 19.5,
+      "drop_from_previous_m": 3.641,
+      "path_grade_percent": 18.67,
+      "approx_centerline_radius_m": 5.71
+    },
+    {
+      "label": "Leavenworth/bottom",
+      "path_station_m": 197.39,
+      "x_m": 144.512,
+      "z_m": -25.686,
+      "ground_navd88_m": 53.012,
+      "from_previous_path_m": 24.89,
+      "drop_from_previous_m": 2.655,
+      "path_grade_percent": 10.67
+    }
+  ],
+  "note": "Turn radii are local three-point centerline estimates over +/-4m and are for reconstruction QA, not civil-survey dimensions."
+}

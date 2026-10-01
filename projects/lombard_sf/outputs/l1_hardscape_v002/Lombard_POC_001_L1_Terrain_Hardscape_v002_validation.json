@@ -1,0 +1,168 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:dirt",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -42,
+    -78
+  ],
+  "region_size": [
+    200,
+    52,
+    192
+  ],
+  "volume": 1996800,
+  "non_air_blocks": 242084,
+  "tile_entities": 13197,
+  "sha256": "88b23451b1c5c03ce5f1b6d6f7cc12f6e5a92db9f503235eaa3179ffc3452b33",
+  "astra_min_version": "0.7.0",
+  "source_truth": "projects/lombard_sf/poc_001/l0_source_truth_v001.json",
+  "registration": {
+    "project_local_m": [
+      -30.0,
+      -20.0
+    ],
+    "schematic_marker": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet": [
+      0,
+      0,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "features": {
+    "terrain_columns": 8836,
+    "garden_surface_microcells": 617454,
+    "road_surface_microcells": 277827,
+    "curb_microcells": 30299,
+    "cross_street_surface_microcells": 595117,
+    "step_ways": [
+      {
+        "osm_id": "110803261",
+        "cells": 15397,
+        "count": 57,
+        "endpoint_drop_m": -10.335548400878906,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "119458101",
+        "cells": 18900,
+        "count": 59,
+        "endpoint_drop_m": -10.57861328125,
+        "material": "astra_microblocks:rgb_a7a49b"
+      },
+      {
+        "osm_id": "179749156",
+        "cells": 8642,
+        "count": 38,
+        "endpoint_drop_m": -6.8502960205078125,
+        "material": "astra_microblocks:rgb_a7a49b"
+      },
+      {
+        "osm_id": "198877614",
+        "cells": 29866,
+        "count": 169,
+        "endpoint_drop_m": 20.10247802734375,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562143",
+        "cells": 5449,
+        "count": 29,
+        "endpoint_drop_m": 3.7997512817382812,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562145",
+        "cells": 5758,
+        "count": 36,
+        "endpoint_drop_m": 3.9375534057617188,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562146",
+        "cells": 818,
+        "count": 5,
+        "endpoint_drop_m": 0.43514251708984375,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562147",
+        "cells": 1742,
+        "count": 11,
+        "endpoint_drop_m": 1.0384674072265625,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562148",
+        "cells": 900,
+        "count": 16,
+        "endpoint_drop_m": 1.0854415893554688,
+        "material": "astra_microblocks:rgb_986052"
+      }
+    ],
+    "footway_microcells": 63387,
+    "hedge_plan_microcells": 62610,
+    "handrail_microcells": 18732,
+    "marked_crossing_microcells": 42585,
+    "retaining_wall_microcells": 5922,
+    "cable_track_samples": 2063
+  },
+  "astra": {
+    "host_count": 13197,
+    "occupied_microcells": 24522940,
+    "materials": [
+      "astra_microblocks:rgb_303233",
+      "astra_microblocks:rgb_3d6339",
+      "astra_microblocks:rgb_506f45",
+      "astra_microblocks:rgb_526d3f",
+      "astra_microblocks:rgb_565958",
+      "astra_microblocks:rgb_637a49",
+      "astra_microblocks:rgb_777b79",
+      "astra_microblocks:rgb_858784",
+      "astra_microblocks:rgb_87453a",
+      "astra_microblocks:rgb_918a7d",
+      "astra_microblocks:rgb_986052",
+      "astra_microblocks:rgb_9d5041",
+      "astra_microblocks:rgb_a7a49b",
+      "astra_microblocks:rgb_aeaba2",
+      "astra_microblocks:rgb_b4aea3",
+      "astra_microblocks:rgb_c8c3b8",
+      "astra_microblocks:rgb_e2dfd4",
+      "minecraft:dirt",
+      "minecraft:stone"
+    ]
+  },
+  "terrain": {
+    "base_y_blocks": -42,
+    "hyde_surface_y_blocks": 0.0,
+    "leavenworth_surface_y_blocks": -32.85
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_cell_readback": true,
+    "registration_marker": true,
+    "buildings_generated": false,
+    "roofs_generated": false,
+    "interiors_generated": false,
+    "in_game_review": false
+  },
+  "limitations": [
+    "Road width is a source-derived first-pass fit from DataSF ROW minus 10-foot minimum side corridors; current Street View will refine curb edges if needed.",
+    "Mapped hedges are modeled as massing, not botanical reconstruction.",
+    "Private house/building geometry is deliberately deferred to L2."
+  ]
+}

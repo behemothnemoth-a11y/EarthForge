@@ -133,6 +133,38 @@
         "current road/curb/stair/planter and house visual verification"
       ],
       "private_path": "projects/lombard_sf/references/private/google/"
+    },
+    {
+      "id": "datasf_dpw_roadway_structures",
+      "provider": "San Francisco Public Works / DataSF",
+      "class": "maintained_roadway_structure_asset",
+      "dataset": "x5tj-txci",
+      "status": "official_asset_verified",
+      "asset_id": "22",
+      "asset_desc": "LOMBARD ST ROADWAY",
+      "onstreet": "LOMBARD ST.",
+      "fromstreet": "HYDE ST.",
+      "tostreet": "LEAVENWORTH ST.",
+      "latitude": 37.802119,
+      "longitude": -122.418773,
+      "use": [
+        "official confirmation that the Hyde-to-Leavenworth crooked block is a maintained roadway structure",
+        "hardscape scope cross-check"
+      ]
+    },
+    {
+      "id": "wikimedia_commons_lombard",
+      "provider": "Wikimedia Commons contributors",
+      "class": "freely_licensed_street_and_architecture_photos",
+      "status": "50_category_images_acquired_and_8_curated",
+      "manifest": "projects/lombard_sf/source_manifests/wikimedia_commons_lombard_v001.json",
+      "curated_manifest": "projects/lombard_sf/source_manifests/wikimedia_commons_lombard_curated_v001.json",
+      "use": [
+        "road/curb/retaining-wall visual character",
+        "stairs and handrails",
+        "garden massing",
+        "house visual context"
+      ]
     }
   ],
   "measured_truth": {
@@ -152,5 +184,10 @@
       "aerial/street-level visual correction"
     ],
     "licensed_raw_imagery": "private/gitignored only"
-  }
+  },
+  "next_actions": [
+    "In-game review L1 terrain/hardscape v002 before generating houses.",
+    "Use curated Commons/current Street View references to refine only visually confirmed wall/planter profiles.",
+    "After L1 approval, map DataSF structures to addresses and create L2 massing with footprint + LiDAR heights before facade detail."
+  ]
 }
