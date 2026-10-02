@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_ROAD_TEXTURE_V007",
+  "geometry_source": "projects/lombard_sf/outputs/road_only_v006/Lombard_Road_Only_Astra_v006.litematic",
+  "geometry_lock": "occupied Astra microcell mask must be identical to v006",
+  "reference": "projects/lombard_sf/references/private/wikimedia_commons/007_Crooked_Section_of_Lombard_Street.jpg.jpg",
+  "pattern": "running bond aligned to local road tangent",
+  "nominal_paver_m": [
+    0.2,
+    0.1
+  ],
+  "texture_only": true,
+  "excluded": [
+    "curbs",
+    "terrain",
+    "stairs",
+    "walls",
+    "planters",
+    "hedges",
+    "buildings",
+    "cross streets",
+    "cable-car context"
+  ],
+  "review_focus": [
+    "brick scale",
+    "running-bond read",
+    "color restraint",
+    "joint read",
+    "curved-road orientation"
+  ]
+}
