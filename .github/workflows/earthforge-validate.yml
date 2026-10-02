@@ -33,6 +33,12 @@ jobs:
       - name: Test contour profile derivation
         run: python tools/test_contour_profile.py
 
+      - name: Test Lombard DataSF acquisition logic
+        run: python tools/test_lombard_acquisition.py
+
+      - name: Test Lombard local frame
+        run: python tools/test_lombard_frame.py
+
       - name: Test 621 depth architecture
         run: python pipeline/reconstruction/generate_redfield_621_micro_depth_v003.py --self-test
 
