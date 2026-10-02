@@ -254,3 +254,15 @@ For Lombard:
 - no floating or unsupported feature may be created simply because its complete real-world source geometry is available.
 
 Rejected v013 is the canonical failure case: complete mapped stair ways were generated before surrounding terrain had been built far enough outward.
+
+## Review-boundary non-geometry rule
+
+A temporary review boundary is **metadata, not physical site geometry**.
+
+When a reconstruction pass is intentionally clipped for review:
+- do not generate a wall, cliff, cap, curb, soil face, or other visible geometry merely because the current review footprint ends there;
+- let the accepted surface stop/open cleanly at that boundary;
+- render a vertical face only when an independent real-world source supports an actual retaining/cut condition;
+- when the footprint expands later, the prior review edge must disappear without leaving a seam artifact.
+
+v014 is the canonical failure case: a generic terrace-edge treatment made the temporary cutoff look like real cliffs. v014b removes only those artificial faces while preserving the LiDAR ground band.

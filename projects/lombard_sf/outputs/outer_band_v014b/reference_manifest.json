@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_OUTER_BAND_V014B",
+  "purpose": "Reference bundle for temporary review-boundary cleanup.",
+  "boundary_map": "Lombard_Outer_Band_v014b_boundary_map.png",
+  "cleanup": {
+    "source": "projects/lombard_sf/outputs/outer_band_v014/Lombard_Outer_Band_Astra_v014.litematic",
+    "only_generic_review_edge_faces_changed": true,
+    "changed_microcells": 34436,
+    "changes_outside_review_boundary": 0,
+    "changes_not_from_generic_terrace_edge": 0,
+    "replacement_counts": {
+      "minecraft:light_gray_concrete->astra_microblocks:rgb_584a3d": 25827,
+      "minecraft:light_gray_concrete->astra_microblocks:rgb_6b604b": 8609
+    }
+  },
+  "items": [
+    {
+      "role": "continuous hillside",
+      "title": "File:Lombard Street (10064478253).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+      "license": "CC BY 2.0",
+      "verify": "ground continues beyond current build"
+    },
+    {
+      "role": "behind retaining wall",
+      "title": "File:Lombard Street (10064415846).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064415846%29.jpg",
+      "license": "CC BY 2.0",
+      "verify": "planted slope rather than cutoff cliff"
+    },
+    {
+      "role": "outer garden continuity",
+      "title": "File:Lombard Street (5102863893).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%285102863893%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "verify": "open continuation toward properties"
+    }
+  ]
+}
