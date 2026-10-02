@@ -1,5 +1,9 @@
 # Lombard SF Hard-Mode Reconstruction
 
+## Active review — landscape forms v019
+
+The next realism pass refines existing bed plants and tree crowns with simple materials. It preserves v018 buildings and all non-botanical geometry. See `docs/LOMBARD_LANDSCAPE_REALISM_V019.md`; individual plant placement remains illustrative. Architectural details, ground-support gaps and paint overlays remain outstanding.
+
 ## Current scope update — surrounding blockout v018
 
 The user now authorizes surrounding buildings and their immediate site context with simple materials; photoreal texturing remains deferred. This explicitly supersedes the no-houses limit for the v018 candidate. Preserve v017 as the accepted public-corridor baseline. See `docs/LOMBARD_NEIGHBORHOOD_BLOCKOUT_V018.md`.

@@ -88,7 +88,8 @@
     "ground_support_tests": "python -m unittest discover -s tests -p test_ground_support.py -v",
     "public_realm_audit": "python tools/test_lombard_public_realm_v1.py",
     "decoded_preview": "python tools/render_lombard_public_realm_v1.py",
-    "neighborhood_pedestrian_audit": "python tools/test_lombard_public_realm_v1.py --blockout"
+    "neighborhood_pedestrian_audit": "python tools/test_lombard_public_realm_v1.py --blockout",
+    "landscape_pedestrian_audit": "python tools/test_lombard_public_realm_v1.py --landscape"
   },
   "banned_shortcuts": [
     "decorative approximation used as truth",
@@ -98,6 +99,6 @@
     "using screenshots as coordinate truth when structured geometry exists",
     "copying Redfield-specific architectural assumptions into Lombard"
   ],
-  "active_generator": "pipeline/reconstruction/generate_lombard_neighborhood_v018.py",
-  "milestone_authorization": "2026-10-02: user authorizes surrounding building and site blockout; defers photoreal texturing."
+  "active_generator": "pipeline/reconstruction/generate_lombard_landscape_v019.py",
+  "milestone_authorization": "2026-10-02: user requests realism work on the established neighborhood base, retaining the no-photoreal-texture constraint."
 }

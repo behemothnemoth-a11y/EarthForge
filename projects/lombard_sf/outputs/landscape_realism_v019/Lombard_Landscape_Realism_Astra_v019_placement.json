@@ -1,0 +1,12 @@
+{
+  "yellow_marker": [
+    0,
+    -1,
+    0
+  ],
+  "placement_origin": "same player-feet origin as v015/v016",
+  "rotation": 0,
+  "mirror": "none",
+  "replace_blocks": "ALL",
+  "paste_air": true
+}

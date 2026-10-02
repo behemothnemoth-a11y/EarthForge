@@ -1,0 +1,61 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50521,
+  "tile_entities": 50400,
+  "sha256": "d825687d078156d74fca510235a8a1cc7b9ce31f6f3df10593d7e22a41d7074c",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "unchanged_hosts_preserved": true,
+    "only_approved_botanical_cells_changed": true,
+    "vanilla_and_marker_preserved": true
+  },
+  "parent_sha256": "b34fc93a7e64549d5bff9b65d69aa6b4eedc0f512f444dfd2a4f68a0d2197328",
+  "removed_flat_plant_cells": 794279,
+  "shrub_cluster_count": 741,
+  "plant_cells_added": 1265718,
+  "crown_cells_recolored": 1723605,
+  "outer_crown_cells_thinned": 62417,
+  "changed_microcells": 2948011,
+  "preserved": [
+    "all building masses",
+    "road and curbs",
+    "stairs paths rails and crossings",
+    "ground surfaces",
+    "mapped hedge borders",
+    "tree trunks and locations",
+    "registration"
+  ],
+  "reference": {
+    "url": "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064478253).jpg",
+    "credit": "Andrew Napier",
+    "license": "CC BY 2.0",
+    "interpretation": "Rounded flowering shrub masses inside clipped hedge beds; crowns with varied green masses. Individual plant positions, sizes, season and colors are illustrative, not surveyed."
+  },
+  "not_addressed": [
+    "building architectural detail and real roof forms",
+    "unsupported outer terrain gaps",
+    "raised paint overlays",
+    "site retaining/entrance connections"
+  ],
+  "review": "LANDSCAPE_REALISM_V019_FLYAROUND_REQUIRED"
+}

@@ -11,10 +11,17 @@ from pipeline.reconstruction.generate_lombard_stairs_v013 import load_core_stair
 def main():
     global OUT,NAME,REGION
     data_out=OUT;data_name=NAME
-    if '--blockout' in sys.argv:
+    if '--landscape' in sys.argv:
+        from pipeline.reconstruction.generate_lombard_landscape_v019 import OUT as out,NAME as name,REGION as region
+        OUT,NAME,REGION=out,name,region
+    elif '--blockout' in sys.argv:
         from pipeline.reconstruction.generate_lombard_neighborhood_v018 import OUT as out,NAME as name,REGION as region
         OUT,NAME,REGION=out,name,region
     artifact=OUT/f'{NAME}.litematic';blocks,hosts=read(artifact,REGION)
+    foliage_materials={LEAF,LEAF2}
+    if '--landscape' in sys.argv:
+        from pipeline.reconstruction.generate_lombard_landscape_v019 import LEAVES,SHRUB
+        foliage_materials.update(LEAVES+SHRUB)
     cache=np.load(data_out/'surface_preview.npz');tops={tuple(k):int(t) for k,t in zip(cache['xz'],cache['top'])}
     def cell(x,y,z):
         p,i=position(x,y,z);v=hosts.get(p);return v.cells[i] if v else None
@@ -23,7 +30,7 @@ def main():
         x,z=map(int,key);t=int(t);checked+=1
         if cell(x,t-1,z) is None:missing.append([x,t-1,z])
         for y in range(t,t+36):
-            if cell(x,y,z) in {LEAF,LEAF2}:foliage.append([x,y,z])
+            if cell(x,y,z) in foliage_materials:foliage.append([x,y,z])
     stairs=[];obstacles=[]
     for feature in json.loads((data_out/f'{data_name}_validation.json').read_text())['features']:
         if feature['type']!='stairs':continue

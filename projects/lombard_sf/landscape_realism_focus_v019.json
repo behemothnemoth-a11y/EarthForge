@@ -1,0 +1,10 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review rounded flowering shrub forms and varied existing tree crowns at walking height.",
+  "notes": [
+    "Simple materials, no photoreal texture pass",
+    "Building architecture and ground/support gaps remain separate pending work",
+    "Roads, curbs, stairs, rails, buildings, ground, mapped hedges and tree trunks preserved",
+    "Same placement; rotation 0; mirror none; replace ALL including air"
+  ]
+}
