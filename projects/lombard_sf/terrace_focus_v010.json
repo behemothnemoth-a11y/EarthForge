@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_TERRACE_BASE_V010",
+  "locked_parent": "projects/lombard_sf/outputs/curb_v009/Lombard_Curb_Astra_v009.litematic",
+  "parent_lock": "all 962398 occupied v009 road/curb microcells remain exact",
+  "source_geometry": "DataSF crooked ROW CNN 8448000 + 8449000, clipped to 4.5 m road-support band",
+  "elevation_source": "2010 NOAA/USGS San Francisco Bay class-2 LiDAR, 0.5 m project grid",
+  "elevation_smoothing": "3x3 grid / about 1.5 m box average",
+  "materials": {
+    "surface": "astra_microblocks:rgb_6b604b",
+    "subsurface": "astra_microblocks:rgb_584a3d",
+    "minimal_edge_face": "minecraft:light_gray_concrete"
+  },
+  "included": [
+    "v009 textured road + curb",
+    "immediate terrace/planter soil shelves",
+    "minimal exposed edge faces"
+  ],
+  "excluded": [
+    "stairs",
+    "landings",
+    "detailed retaining walls",
+    "hedges",
+    "flowers",
+    "trees",
+    "buildings",
+    "broad hillside terrain",
+    "cross-street context",
+    "cable-car context"
+  ],
+  "reference_bundle": "projects/lombard_sf/outputs/terrace_base_v010/Lombard_Terrace_Base_v010_reference_sheet.jpg",
+  "reference_manifest": "projects/lombard_sf/outputs/terrace_base_v010/reference_manifest.json",
+  "review_focus": [
+    "terrace footprint",
+    "level rhythm",
+    "road-to-planter relationship",
+    "slope",
+    "edge-face scale"
+  ]
+}

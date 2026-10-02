@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_TERRACE_BASE_V010",
+  "purpose": "Compact reference bundle for Minecraft flyaround review.",
+  "items": [
+    {
+      "role": "source-derived plan",
+      "file": "Lombard_Terrace_Base_Astra_v010_plan.png",
+      "verify": "terrace/island footprint"
+    },
+    {
+      "role": "street-level overview",
+      "title": "File:Lombard Street (10064478253).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+      "artist": "Andrew Napier",
+      "license": "CC BY 2.0",
+      "verify": "terrace rhythm and level spacing"
+    },
+    {
+      "role": "garden/road detail",
+      "title": "File:Lombard Street (5102863893).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%285102863893%29.jpg",
+      "artist": "Toi & Moi from au bord de la mer M\u00e9diterran\u00e9e, France",
+      "license": "CC BY-SA 2.0",
+      "verify": "road-to-planter mass and slope"
+    },
+    {
+      "role": "hairpin oblique",
+      "title": "File:Lombard Street-Coit Tower-San Francisco-2.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street-Coit_Tower-San_Francisco-2.jpg",
+      "artist": "Yair-haklai",
+      "license": "CC BY-SA 4.0",
+      "verify": "island edges and low retaining faces"
+    }
+  ]
+}
