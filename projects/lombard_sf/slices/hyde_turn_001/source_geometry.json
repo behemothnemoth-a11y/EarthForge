@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "slice_id": "LOMBARD_HYDE_TURN_001",
+  "purpose": "First stress-build slice: Hyde entry and first verified switchback centerline only.",
+  "source_dataset": "DataSF Streets Active and Retired (3psu-pn9h)",
+  "source_cnn": "8449000",
+  "source_data_as_of": "2026-10-01T03:56:00.000",
+  "source_vertex_range": [
+    0,
+    8
+  ],
+  "working_crs": "EPSG:7131",
+  "minecraft_scale": "1 block = 1 meter bulk grid",
+  "orientation": "+X east, +Z south",
+  "export_translation_blocks": [
+    20,
+    0,
+    20
+  ],
+  "truth_scope": [
+    "centerline plan geometry"
+  ],
+  "explicitly_not_truth_yet": [
+    "terrain elevation",
+    "road width",
+    "curbs",
+    "sidewalks",
+    "stairs",
+    "retaining walls",
+    "planters",
+    "landscaping",
+    "houses"
+  ],
+  "vertices": [
+    {
+      "source_vertex_index": 0,
+      "longitude": -122.419613973,
+      "latitude": 37.801994863,
+      "easting_m": 50676.0582,
+      "northing_m": 29771.5018,
+      "local_x_m": 0.0,
+      "local_z_m": -0.0,
+      "chainage_m": 0.0
+    },
+    {
+      "source_vertex_index": 1,
+      "longitude": -122.419529413,
+      "latitude": 37.801979011,
+      "easting_m": 50683.5059,
+      "northing_m": 29769.7447,
+      "local_x_m": 7.4477,
+      "local_z_m": 1.757,
+      "chainage_m": 7.6521
+    },
+    {
+      "source_vertex_index": 2,
+      "longitude": -122.419500421,
+      "latitude": 37.801973245,
+      "easting_m": 50686.0594,
+      "northing_m": 29769.1056,
+      "local_x_m": 10.0012,
+      "local_z_m": 2.3962,
+      "chainage_m": 10.2844
+    },
+    {
+      "source_vertex_index": 3,
+      "longitude": -122.419474696,
+      "latitude": 37.801992375,
+      "easting_m": 50688.3243,
+      "northing_m": 29771.2296,
+      "local_x_m": 12.266,
+      "local_z_m": 0.2722,
+      "chainage_m": 13.3894
+    },
+    {
+      "source_vertex_index": 4,
+      "longitude": -122.419392865,
+      "latitude": 37.802072706,
+      "easting_m": 50695.5281,
+      "northing_m": 29780.1482,
+      "local_x_m": 19.4699,
+      "local_z_m": -8.6464,
+      "chainage_m": 24.854
+    },
+    {
+      "source_vertex_index": 5,
+      "longitude": -122.419359275,
+      "latitude": 37.802091963,
+      "easting_m": 50698.4856,
+      "northing_m": 29782.2866,
+      "local_x_m": 22.4274,
+      "local_z_m": -10.7848,
+      "chainage_m": 28.5036
+    },
+    {
+      "source_vertex_index": 6,
+      "longitude": -122.419303805,
+      "latitude": 37.802076235,
+      "easting_m": 50703.3714,
+      "northing_m": 29780.5425,
+      "local_x_m": 27.3131,
+      "local_z_m": -9.0407,
+      "chainage_m": 33.6913
+    },
+    {
+      "source_vertex_index": 7,
+      "longitude": -122.419220136,
+      "latitude": 37.801984044,
+      "easting_m": 50710.7433,
+      "northing_m": 29770.3123,
+      "local_x_m": 34.6851,
+      "local_z_m": 1.1895,
+      "chainage_m": 46.3009
+    },
+    {
+      "source_vertex_index": 8,
+      "longitude": -122.419185849,
+      "latitude": 37.801976287,
+      "easting_m": 50713.7632,
+      "northing_m": 29769.4523,
+      "local_x_m": 37.705,
+      "local_z_m": 2.0495,
+      "chainage_m": 49.4409
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source_id": "datasf_streets_active_retired_3psu-pn9h",
+  "dataset_id": "3psu-pn9h",
+  "dataset_url": "https://data.sfgov.org/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h",
+  "query_streets": [
+    "LOMBARD",
+    "HYDE",
+    "LEAVENWORTH"
+  ],
+  "query_active": true,
+  "selection_bbox_wgs84": [
+    -122.421,
+    37.8008,
+    -122.417,
+    37.8032
+  ],
+  "raw_record_count": 137,
+  "selected_record_count": 13,
+  "derived_geojson": "projects/lombard_sf/roads/datasf_street_controls_v001.geojson",
+  "raw_local_file": "projects/lombard_sf/references/raw/datasf_streets_active_lombard_hyde_leavenworth.json",
+  "raw_git_ignored": true,
+  "purpose": "Authoritative city street centerline controls for Lombard/Hyde/Leavenworth intersection lock.",
+  "confidence": "high for city-maintained street centerline control; not a cadastral/survey replacement"
+}

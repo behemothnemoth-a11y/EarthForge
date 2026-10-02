@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "slice_id": "LOMBARD_HYDE_TURN_001",
+  "status": "valid",
+  "file": "projects/lombard_sf/outputs/slices/hyde_turn_001/Lombard_HydeTurn_Centerline_v001.litematic",
+  "sha256": "bc6e776400a741c5dbfaefda6f1ed582a17ae3c5588099b702cc0bc884bd2f84",
+  "source_cnn": "8449000",
+  "source_vertex_range": [
+    0,
+    8
+  ],
+  "source_polyline_length_m": 49.4409,
+  "raster_centerline_blocks": 65,
+  "registration_marker_ok": true,
+  "exact_block_map": true,
+  "review_gate": "USER_MINECRAFT_FLYAROUND_REQUIRED",
+  "notes_requested": [
+    "overall 1:1 scale impression",
+    "curve shape/spacing",
+    "orientation/readability",
+    "whether this is a useful slice size"
+  ]
+}
