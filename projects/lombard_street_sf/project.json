@@ -103,4 +103,4 @@
     "candidate_status": "pending_generation_and_review",
     "rule": "Filtered/smoothed output is diagnostic until explicitly accepted; raw LiDAR remains immutable source evidence."
   }
-}\n
+}
