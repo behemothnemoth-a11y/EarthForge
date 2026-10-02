@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_OUTER_BAND_V014",
+  "accepted_parent": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_Astra_v012.litematic",
+  "rejected_predecessor": "LOMBARD_STAIRS_V013",
+  "road_curb_lock": {
+    "source": "projects/lombard_sf/outputs/curb_v009/Lombard_Curb_Astra_v009.litematic",
+    "all_existing_cells_identical": true,
+    "v009_host_count": 1966,
+    "missing_v009_hosts": 0,
+    "checked_v009_microcells": 962398,
+    "mismatched_v009_microcells": 0
+  },
+  "controlled_expansion": {
+    "source": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_Astra_v012.litematic",
+    "all_changes_confined_to_outer_band_or_seam": true,
+    "changed_microcells": 259568,
+    "added_microcells": 250568,
+    "removed_microcells": 0,
+    "replaced_microcells": 9000,
+    "changes_outside_outer_band_or_seam": 0
+  },
+  "inner_radius_m": 4.5,
+  "outer_radius_m": 6.5,
+  "band_width_m": 2.0,
+  "outer_band_area_m2": 244.90382954445852,
+  "source_geometry": "DataSF crooked-block ROW",
+  "elevation_source": "2010 NOAA/USGS class-2 LiDAR 0.5m project grid, same 1.5m smoothing as v012",
+  "new_feature_systems": false,
+  "included": [
+    "accepted v012 road/curb/terrace/retaining system",
+    "one additional LiDAR-driven ground band"
+  ],
+  "excluded": [
+    "stairs",
+    "landings",
+    "railings",
+    "hedges",
+    "flowers",
+    "trees",
+    "buildings",
+    "cross-street context",
+    "cable-car context"
+  ],
+  "reference_bundle": "projects/lombard_sf/outputs/outer_band_v014/Lombard_Outer_Band_v014_reference_sheet.jpg",
+  "reference_manifest": "projects/lombard_sf/outputs/outer_band_v014/reference_manifest.json",
+  "review_focus": [
+    "band depth",
+    "ground continuity",
+    "outer review edge",
+    "where to expand next"
+  ]
+}

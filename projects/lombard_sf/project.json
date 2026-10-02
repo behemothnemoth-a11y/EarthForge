@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "STAIRS_V013_REVIEW",
-  "milestone": "LOMBARD_STAIRS_V013",
+  "status": "OUTER_BAND_V014_REVIEW",
+  "milestone": "LOMBARD_OUTER_BAND_V014",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,21 +70,27 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_Astra_v013.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_stairs_v013.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/outer_band_v014/Lombard_Outer_Band_Astra_v014.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_outer_band_v014.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the nine mapped stair systems and 47 flat landings cut into the accepted v012 terrace/retaining geometry.",
+    "purpose": "Review one controlled 2m ground band farther outward from accepted v012, with no stairs or other new feature systems.",
     "notes": [
-      "stair corridor placement",
-      "tread size and step rhythm",
-      "landing size and flatness",
-      "stair-to-terrace transitions",
-      "stair-to-curb termination",
-      "places where retaining walls should open more or less",
-      "no railings yet"
+      "whether the new band is the right depth",
+      "surface continuity behind retaining walls",
+      "whether the new outer boundary feels like a useful next construction gate",
+      "areas where the band should stop sooner or extend slightly farther",
+      "no stairs yet"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/stairs_focus_v013.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_v013_reference_sheet.jpg"
+  "active_focus_config": "projects/lombard_sf/outer_band_focus_v014.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/outer_band_v014/Lombard_Outer_Band_v014_reference_sheet.jpg",
+  "rejected_review_artifacts": [
+    {
+      "review_id": "LOMBARD_STAIRS_V013",
+      "artifact": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_Astra_v013.litematic",
+      "status": "rejected_premature_layer",
+      "reason": "Full stair systems were generated before the reconstruction had physically expanded out to support them; floating/outboard stairs violated the road-outward workflow."
+    }
+  ]
 }

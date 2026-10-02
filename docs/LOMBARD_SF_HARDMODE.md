@@ -241,3 +241,16 @@ Examples:
 When possible, pair the Minecraft flyaround with the corresponding reference views side-by-side or in a compact comparison sheet.
 
 Raw licensed imagery remains private/ignored; committed review bundles should use redistributable references or metadata/pointers where required.
+
+## Physical expansion rule
+
+EarthForge must expand the reconstruction **physically outward from already accepted geometry**. A source feature is not permission to build that feature early.
+
+For Lombard:
+- accepted road/curb/hardscape establishes the current built footprint;
+- each new pass may expand that footprint only by the explicitly reviewed band or layer;
+- stairs, paths, landscaping, buildings, and other source-known features may be generated only where the accepted ground/hardscape footprint has reached them;
+- a feature that continues beyond the current footprint must stop at the review boundary and retain its source continuation for a later expansion pass;
+- no floating or unsupported feature may be created simply because its complete real-world source geometry is available.
+
+Rejected v013 is the canonical failure case: complete mapped stair ways were generated before surrounding terrain had been built far enough outward.

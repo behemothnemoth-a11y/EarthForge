@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_OUTER_BAND_V014",
+  "purpose": "Reference bundle for controlled outward ground expansion.",
+  "band_map": "Lombard_Outer_Band_v014_band_map.png",
+  "inner_radius_m": 4.5,
+  "outer_radius_m": 6.5,
+  "band_width_m": 2.0,
+  "outer_band_area_m2": 244.90382954445852,
+  "items": [
+    {
+      "role": "bottom-up context",
+      "title": "File:Lombard Street (10064478253).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+      "license": "CC BY 2.0",
+      "verify": "how far terrace mass extends outward"
+    },
+    {
+      "role": "terrace/property side",
+      "title": "File:Lombard Street (10064415846).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064415846%29.jpg",
+      "license": "CC BY 2.0",
+      "verify": "ground continuation behind retaining walls"
+    },
+    {
+      "role": "garden band depth",
+      "title": "File:Lombard Street (5102863893).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%285102863893%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "verify": "whether new band is too shallow or deep"
+    }
+  ]
+}
