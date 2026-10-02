@@ -1,8 +1,8 @@
 {
   "schema_version": 8,
   "project_id": "lombard_sf",
-  "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
-  "status": "CORE_ISOLATION_V005_PREP",
+  "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
+  "status": "CORE_ISOLATION_V005_REVIEW",
   "milestone": "LOMBARD_CORE_ISOLATION_V005",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
@@ -58,7 +58,7 @@
   },
   "microblocks": {
     "minimum_astra_version": "0.7.0",
-    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and façade detail; vanilla blocks remain default bulk mass.",
+    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and fa\u00e7ade detail; vanilla blocks remain default bulk mass.",
     "validation": "exact Astra block-entity and microcell readback required"
   },
   "validation": {
@@ -70,17 +70,17 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/stairs_retaining_v004/Lombard_Stairs_Retaining_Astra_v004.litematic",
+  "active_review_artifact": "projects/lombard_sf/outputs/core_isolation_v005/Lombard_Core_Isolation_Astra_v005.litematic",
   "active_generator": "pipeline/reconstruction/generate_lombard_core_isolation_v005.py",
   "review_gate": {
-    "required": "CORE_ISOLATION_REBUILD_THEN_USER_MINECRAFT_FLYAROUND",
-    "purpose": "Remove outer context that is obscuring review and finish the crooked-road core before reintroducing surroundings.",
+    "required": "USER_MINECRAFT_FLYAROUND",
+    "purpose": "Review the isolated crooked-road core without outer buildings, broad streets, peripheral context, or outer terrain shelves.",
     "notes": [
+      "areas that still do not make spatial sense",
       "road/curb coherence",
-      "stairs and landings",
-      "retaining and planter continuity",
-      "terrace structure",
-      "areas that still do not make spatial sense"
+      "stairs and landing logic",
+      "retaining/planter continuity",
+      "terrace structure"
     ]
   },
   "active_focus_config": "projects/lombard_sf/core_focus_v005.json"

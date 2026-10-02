@@ -1,0 +1,213 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:dirt",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -37,
+    -78
+  ],
+  "region_size": [
+    189,
+    41,
+    192
+  ],
+  "volume": 1487808,
+  "non_air_blocks": 20763,
+  "tile_entities": 7870,
+  "sha256": "37acb67db8670345189ac3bed277b78bdd59fc54f6032e12d80abb5aa50895aa",
+  "astra_min_version": "0.7.0",
+  "source_truth": "projects/lombard_sf/poc_001/l0_source_truth_v001.json",
+  "registration": {
+    "project_local_m": [
+      -30.0,
+      -20.0
+    ],
+    "schematic_marker": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet": [
+      0,
+      0,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "features": {
+    "terrain_columns": 4509,
+    "garden_surface_microcells": 617454,
+    "road_surface_microcells": 291448,
+    "curb_microcells": 29692,
+    "road_geometry": {
+      "method": "157-node centerline + curvature-driven variable width",
+      "straight_halfwidth_m": 2.7,
+      "max_halfwidth_m": 3.25,
+      "actual_min_halfwidth_m": 2.7068831037863212,
+      "actual_max_halfwidth_m": 3.25,
+      "mean_full_width_m": 5.6665264211929145,
+      "curb_ring_m": 0.28
+    },
+    "cross_street_surface_microcells": 0,
+    "step_ways": [
+      {
+        "osm_id": "110803261",
+        "cells": 16253,
+        "count": 57,
+        "endpoint_drop_m": -10.335548400878906,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 2,
+        "landing_microcells": 1002,
+        "stair_sidewall_microcells": 2936
+      },
+      {
+        "osm_id": "119458101",
+        "cells": 19972,
+        "count": 59,
+        "endpoint_drop_m": -10.57861328125,
+        "material": "astra_microblocks:rgb_a7a49b",
+        "landing_count": 8,
+        "landing_microcells": 3997,
+        "stair_sidewall_microcells": 4226
+      },
+      {
+        "osm_id": "179749156",
+        "cells": 9127,
+        "count": 38,
+        "endpoint_drop_m": -6.8502960205078125,
+        "material": "astra_microblocks:rgb_a7a49b",
+        "landing_count": 8,
+        "landing_microcells": 4004,
+        "stair_sidewall_microcells": 773
+      },
+      {
+        "osm_id": "198877614",
+        "cells": 31533,
+        "count": 169,
+        "endpoint_drop_m": 20.10247802734375,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 16,
+        "landing_microcells": 8007,
+        "stair_sidewall_microcells": 323
+      },
+      {
+        "osm_id": "1011562143",
+        "cells": 5752,
+        "count": 29,
+        "endpoint_drop_m": 3.7997512817382812,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 2,
+        "landing_microcells": 1004,
+        "stair_sidewall_microcells": 0
+      },
+      {
+        "osm_id": "1011562145",
+        "cells": 6079,
+        "count": 36,
+        "endpoint_drop_m": 3.9375534057617188,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 3,
+        "landing_microcells": 1499,
+        "stair_sidewall_microcells": 535
+      },
+      {
+        "osm_id": "1011562146",
+        "cells": 863,
+        "count": 5,
+        "endpoint_drop_m": 0.43514251708984375,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 3,
+        "landing_microcells": 1500,
+        "stair_sidewall_microcells": 65
+      },
+      {
+        "osm_id": "1011562147",
+        "cells": 1839,
+        "count": 11,
+        "endpoint_drop_m": 1.0384674072265625,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 3,
+        "landing_microcells": 1500,
+        "stair_sidewall_microcells": 30
+      },
+      {
+        "osm_id": "1011562148",
+        "cells": 952,
+        "count": 16,
+        "endpoint_drop_m": 1.0854415893554688,
+        "material": "astra_microblocks:rgb_986052",
+        "landing_count": 2,
+        "landing_microcells": 999,
+        "stair_sidewall_microcells": 1
+      }
+    ],
+    "footway_microcells": 63387,
+    "stair_system": {
+      "landing_count": 47,
+      "landing_microcells": 23512,
+      "stair_sidewall_microcells": 8889
+    },
+    "hedge_plan_microcells": 62610,
+    "handrail_microcells": 18732,
+    "marked_crossing_microcells": 42585,
+    "retaining_wall_microcells": 9156,
+    "cable_track_samples": 0,
+    "building_massing": {
+      "structure_count": 0,
+      "status": "temporarily excluded by core isolation v005"
+    }
+  },
+  "astra": {
+    "host_count": 7870,
+    "occupied_microcells": 13652964,
+    "materials": [
+      "astra_microblocks:rgb_3d6339",
+      "astra_microblocks:rgb_506f45",
+      "astra_microblocks:rgb_526d3f",
+      "astra_microblocks:rgb_637a49",
+      "astra_microblocks:rgb_777b79",
+      "astra_microblocks:rgb_87453a",
+      "astra_microblocks:rgb_918a7d",
+      "astra_microblocks:rgb_986052",
+      "astra_microblocks:rgb_9d5041",
+      "astra_microblocks:rgb_a7a49b",
+      "astra_microblocks:rgb_aeaba2",
+      "astra_microblocks:rgb_b4aea3",
+      "astra_microblocks:rgb_c8c3b8",
+      "astra_microblocks:rgb_e2dfd4",
+      "minecraft:dirt",
+      "minecraft:stone"
+    ]
+  },
+  "terrain": {
+    "base_y_blocks": -42,
+    "hyde_surface_y_blocks": 0.0,
+    "leavenworth_surface_y_blocks": -32.85
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_cell_readback": true,
+    "registration_marker": true,
+    "buildings_generated": false,
+    "roofs_generated": false,
+    "interiors_generated": false,
+    "in_game_review": false,
+    "review_status": "CORE_ISOLATION_V005_FLYAROUND_REQUIRED",
+    "outer_context_excluded": true
+  },
+  "limitations": [
+    "v005 intentionally removes outer context so the crooked-road core can be finished without placeholder buildings, broad street context, or outer terrain obscuring review.",
+    "The detailed 157-node centerline remains plan authority. DataSF ROW and the 15 ft SIDEWALK_F records are treated as public-envelope/width evidence, not literal pavement polygons.",
+    "Mapped hedges and retaining conditions are massing/evidence layers, not final landscape or wall reconstruction.",
+    "Buildings use DataSF footprints and LiDAR median heights only; garages, facade planes, roof forms, openings and architectural details are intentionally deferred."
+  ]
+}

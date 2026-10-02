@@ -662,7 +662,7 @@ def main():
         },
         "astra":{"host_count":len(b.hosts),"occupied_microcells":sum(v.occupied_count() for v in b.hosts.values()),"materials":sorted({m for v in b.hosts.values() for m in v.materials()})},
         "terrain":{"base_y_blocks":BASE_Y,"hyde_surface_y_blocks":0.0,"leavenworth_surface_y_blocks":round(-truth["crooked_road"]["endpoint_drop_m"],3)},
-        "validation":{"exact_block_readback":True,"exact_astra_cell_readback":True,"registration_marker":True,"buildings_generated":True,"roofs_generated":True,"interiors_generated":False,"in_game_review":False,"review_status":"CORE_ISOLATION_V005_FLYAROUND_REQUIRED"},
+        "validation":{"exact_block_readback":True,"exact_astra_cell_readback":True,"registration_marker":True,"buildings_generated":False,"roofs_generated":False,"interiors_generated":False,"in_game_review":False,"review_status":"CORE_ISOLATION_V005_FLYAROUND_REQUIRED"},
         "limitations":[
             "v005 intentionally removes outer context so the crooked-road core can be finished without placeholder buildings, broad street context, or outer terrain obscuring review.",
             "The detailed 157-node centerline remains plan authority. DataSF ROW and the 15 ft SIDEWALK_F records are treated as public-envelope/width evidence, not literal pavement polygons.",
