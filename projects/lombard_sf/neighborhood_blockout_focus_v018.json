@@ -1,0 +1,10 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review surrounding blockout proportions, height envelopes, setback spaces and source/public-layout conflicts before architectural detail.",
+  "notes": [
+    "Photoreal textures deferred",
+    "No unverified facade, patio, awning or entrance details",
+    "v017 public corridor and registration preserved",
+    "Same placement, rotation 0, mirror none, replace ALL with air"
+  ]
+}

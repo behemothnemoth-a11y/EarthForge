@@ -9,8 +9,13 @@ from pipeline.reconstruction.generate_lombard_terrain_repair_v016 import read,po
 from pipeline.reconstruction.generate_lombard_stairs_v013 import load_core_stairs
 
 def main():
+    global OUT,NAME,REGION
+    data_out=OUT;data_name=NAME
+    if '--blockout' in sys.argv:
+        from pipeline.reconstruction.generate_lombard_neighborhood_v018 import OUT as out,NAME as name,REGION as region
+        OUT,NAME,REGION=out,name,region
     artifact=OUT/f'{NAME}.litematic';blocks,hosts=read(artifact,REGION)
-    cache=np.load(OUT/'surface_preview.npz');tops={tuple(k):int(t) for k,t in zip(cache['xz'],cache['top'])}
+    cache=np.load(data_out/'surface_preview.npz');tops={tuple(k):int(t) for k,t in zip(cache['xz'],cache['top'])}
     def cell(x,y,z):
         p,i=position(x,y,z);v=hosts.get(p);return v.cells[i] if v else None
     pedestrian=np.isin(cache['material'],[WALK,WALKJOINT,BRICK,STEP]);missing=[];foliage=[];checked=0
@@ -20,7 +25,7 @@ def main():
         for y in range(t,t+36):
             if cell(x,y,z) in {LEAF,LEAF2}:foliage.append([x,y,z])
     stairs=[];obstacles=[]
-    for feature in json.loads((OUT/f'{NAME}_validation.json').read_text())['features']:
+    for feature in json.loads((data_out/f'{data_name}_validation.json').read_text())['features']:
         if feature['type']!='stairs':continue
         s={'line':LineString(feature['modeled_line_xz_m']),'osm_id':feature['osm_id']}
         count=0;absent=0

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-02",
+  "parent": "Lombard_Complete_No_Houses_V1_Astra_v017",
+  "user_feedback": "Build came out great; realism pass requested",
+  "capture": "C:/Users/behem/Videos/Captures/Minecraft_ 26.2 - Singleplayer 2026-10-02 17-33-24.mp4",
+  "status": "visual_diagnosis_complete_changes_not_generated",
+  "issues": [
+    {
+      "id": "planting",
+      "priority": 1,
+      "time_s": 10,
+      "observation": "Flat scattered flower-colored squares and visible regular green surface striping dominate the garden beds.",
+      "next_change": "Reference-led shrub volumes and clustered flowers, species/form variation, restrained color changes; preserve ground elevations."
+    },
+    {
+      "id": "trees",
+      "priority": 2,
+      "time_s": 20,
+      "observation": "Dense simple crowns repeat a similar silhouette; trunk/branch articulation is limited.",
+      "next_change": "Individual crown profiles from views, branch structure and graded canopy edges; retain source locations and pedestrian clearance."
+    },
+    {
+      "id": "railings_walls",
+      "priority": 2,
+      "time_s": 20,
+      "observation": "Railings and vertical curb/retaining faces look visually heavy and highly repetitive.",
+      "next_change": "Compare real post spacing, rail sections, finish and wall joints. Keep locked curb occupied cells unless user explicitly releases geometry."
+    },
+    {
+      "id": "markings",
+      "priority": 1,
+      "time_s": 35,
+      "observation": "Crossing stripes are visibly raised and cast slab-like edges; rail/slot detailing also needs close-up comparison.",
+      "next_change": "Investigate a surface/decal-capable material representation; do not silently replace the accepted pavement to hide the 1/16m overlay."
+    },
+    {
+      "id": "street_context",
+      "priority": 3,
+      "time_s": 5,
+      "observation": "Large sidewalk and asphalt surfaces are uniform; stop signs are blank shapes.",
+      "next_change": "Source-match expansion joints, restrained wear, sign text and mounting. No houses in this pass."
+    }
+  ],
+  "invariants": [
+    "No houses",
+    "Preserve accepted road and curb cells",
+    "Preserve coordinate frame and review-boundary non-geometry",
+    "Re-run exact export and pedestrian checks for any next artifact"
+  ],
+  "not_diagnosed": "Distant floating scene fragments may belong to other placements; capture alone cannot attribute them to this schematic."
+}
