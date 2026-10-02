@@ -23,6 +23,11 @@ def cell_index(x: int, y: int, z: int) -> int:
 
 class MicroVolume:
     def __init__(self, original: str = "minecraft:stone"):
+        # Astra 0.7.0 requires `original` to resolve to a supported solid
+        # HostMaterial. Empty cells are represented by None; using air as the
+        # original causes volume_v4 rejection and a legacy stone fallback.
+        if original == "minecraft:air":
+            raise ValueError("Astra MicroVolume original cannot be minecraft:air; use a supported solid material")
         self.original = original
         self.cells: List[str | None] = [None] * CELL_COUNT
 

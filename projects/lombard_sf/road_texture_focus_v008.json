@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_ROAD_TEXTURE_V008",
+  "supersedes": "LOMBARD_ROAD_TEXTURE_V007",
+  "fix": "Use supported minecraft:bricks as volume_v4 original. minecraft:air caused Astra 0.7.0 VolumePalette.read rejection and legacy stone fallback.",
+  "geometry_source": "projects/lombard_sf/outputs/road_only_v006/Lombard_Road_Only_Astra_v006.litematic",
+  "geometry_lock": "occupied Astra microcell mask identical to v006",
+  "host_original": "minecraft:bricks",
+  "rgb_materials": true,
+  "texture_only": true,
+  "review_focus": [
+    "RGB render",
+    "brick scale",
+    "running bond",
+    "color restraint",
+    "hairpin texture orientation"
+  ]
+}

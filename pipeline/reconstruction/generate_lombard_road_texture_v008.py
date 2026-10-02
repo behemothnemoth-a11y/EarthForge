@@ -33,10 +33,11 @@ from pipeline.microblocks.astra_microblock_codec import (
 PROJECT=ROOT/"projects"/"lombard_sf"
 POC=PROJECT/"poc_001"
 CENTER=POC/"l0_crooked_centerline_v001.json"
-OUT=PROJECT/"outputs"/"road_only_v006"
+OUT=PROJECT/"outputs"/"road_texture_v008"
+V006=PROJECT/"outputs"/"road_only_v006"/"Lombard_Road_Only_Astra_v006.litematic"
 
-NAME="Lombard_Road_Only_Astra_v006"
-REGION="LOMBARD_ROAD_ONLY_ASTRA_V006"
+NAME="Lombard_Road_Texture_Astra_v008"
+REGION="LOMBARD_ROAD_TEXTURE_ASTRA_V008"
 DATA_VERSION=4903
 
 # Permanent registration convention inherited from Lombard project.
@@ -45,10 +46,19 @@ REG_LOCAL_Z=-20.0
 
 MARKER="minecraft:yellow_concrete"
 PAD="minecraft:polished_andesite"
-ROAD_A="astra_microblocks:rgb_9d5041"
-ROAD_B="astra_microblocks:rgb_87453a"
+ROAD_BASE="astra_microblocks:rgb_75433f"
+BRICK_COLORS=[
+    "astra_microblocks:rgb_995750",
+    "astra_microblocks:rgb_a05b53",
+    "astra_microblocks:rgb_94514d",
+    "astra_microblocks:rgb_8a4b47",
+]
+JOINT="astra_microblocks:rgb_684b47"
 MICRO=16
 ROAD_THICKNESS_CELLS=3
+BRICK_LENGTH_M=0.20
+BRICK_WIDTH_M=0.10
+JOINT_SAMPLE_M=0.006
 
 def font(size:int):
     path=Path("C:/Windows/Fonts/segoeui.ttf")
@@ -81,9 +91,10 @@ class RoadBuilder:
         sz=z_micro-round(REG_LOCAL_Z*MICRO)
         self.set_micro_schematic(sx,y_micro,sz,material)
 
-    def road_slab(self,x_micro:int,z_micro:int,top_micro:int,material:str):
-        for y in range(top_micro-ROAD_THICKNESS_CELLS,top_micro):
-            self.set_micro_local(x_micro,y,z_micro,material)
+    def road_slab(self,x_micro:int,z_micro:int,top_micro:int,top_material:str):
+        for y in range(top_micro-ROAD_THICKNESS_CELLS,top_micro-1):
+            self.set_micro_local(x_micro,y,z_micro,ROAD_BASE)
+        self.set_micro_local(x_micro,top_micro-1,z_micro,top_material)
 
 def variable_road_polygon(road_line:LineString):
     """Retain the v003 reviewed plan logic: narrow straights, modest hairpin flare."""
@@ -110,11 +121,41 @@ def variable_road_polygon(road_line:LineString):
     poly=unary_union(pieces).buffer(.04,join_style=1).buffer(-.04,join_style=1)
     return poly,halfwidths
 
-def road_material(xm:int,zm:int):
-    # Restrained brick variation. No decorative curb/stripe geometry in v006.
-    row=math.floor(zm/3)
-    col=math.floor((xm+(row&1)*3)/6)
-    return ROAD_B if ((row+col)%7==0) else ROAD_A
+def brick_surface_material(road_line:LineString,pt:Point,station:float):
+    # Reference-driven running bond: ~20x10cm clay pavers, long axis following
+    # the local road tangent. The 1/16m grid quantizes the real brick size.
+    d=.45
+    a=road_line.interpolate(max(0.0,station-d))
+    b=road_line.interpolate(min(road_line.length,station+d))
+    tx=b.x-a.x
+    tz=b.y-a.y
+    ll=max(1e-9,math.hypot(tx,tz))
+    tx/=ll
+    tz/=ll
+    nx=-tz
+    nz=tx
+    center=road_line.interpolate(station)
+    lateral=(pt.x-center.x)*nx+(pt.y-center.y)*nz
+
+    row=math.floor(lateral/BRICK_WIDTH_M)
+    stagger=(BRICK_LENGTH_M*.5) if (row&1) else 0.0
+    u=(station+stagger)%BRICK_LENGTH_M
+
+    # A narrow, slightly dark brick-end joint. We deliberately do not draw
+    # full row joints because one Astra cell is wider than a real mortar line.
+    if min(u,BRICK_LENGTH_M-u)<JOINT_SAMPLE_M:
+        return JOINT
+
+    brick=math.floor((station+stagger)/BRICK_LENGTH_M)
+    h=((brick*73856093)^(row*19349663))&0xffffffff
+    roll=h%100
+    if roll<68:
+        return BRICK_COLORS[0]
+    if roll<84:
+        return BRICK_COLORS[1]
+    if roll<96:
+        return BRICK_COLORS[2]
+    return BRICK_COLORS[3]
 
 def build_engineered_profile(center:list[dict]):
     """Smooth LiDAR centerline elevations into a continuous downhill road profile."""
@@ -179,7 +220,8 @@ def rasterize_road(builder:RoadBuilder,road_poly,road_line,profile):
                 profile["elev_rel_m"],
             ))
             top_micro=round(elev*MICRO)
-            builder.road_slab(gx,gz,top_micro,road_material(gx,gz))
+            top_material=brick_surface_material(road_line,pt,station)
+            builder.road_slab(gx,gz,top_micro,top_material)
             columns+=1
             cells+=ROAD_THICKNESS_CELLS
     return columns,cells
@@ -194,6 +236,36 @@ def add_registration(builder:RoadBuilder):
         builder.blocks[(x,-1,0)]="minecraft:gold_block"
     for z in (-1,1):
         builder.blocks[(4,-1,z)]="minecraft:gold_block"
+
+def compare_v006_occupancy(builder:RoadBuilder):
+    # Texture passes are not allowed to alter approved v006 road geometry.
+    _,meta=read_back_block_map(V006,"LOMBARD_ROAD_ONLY_ASTRA_V006")
+    rp=meta["region_position"]
+    old={}
+    for te in meta["tile_entities"]:
+        if te.get("id")!=BLOCK_ENTITY_ID:
+            continue
+        pos=(te["x"]+rp[0],te["y"]+rp[1],te["z"]+rp[2])
+        old[pos]=decode_volume_v4(te["volume_v4"])
+
+    same_hosts=set(old)==set(builder.hosts)
+    mismatched_cells=0
+    if same_hosts:
+        for pos,old_cells in old.items():
+            new_cells=builder.hosts[pos].cells
+            mismatched_cells+=sum(
+                1 for a,b in zip(old_cells,new_cells)
+                if (a is None)!=(b is None)
+            )
+    else:
+        # Host mismatch is already a geometry failure; no need to fake a cell count.
+        mismatched_cells=-1
+    return same_hosts and mismatched_cells==0,{
+        "same_host_positions":same_hosts,
+        "mismatched_occupancy_cells":mismatched_cells,
+        "v006_host_count":len(old),
+        "v007_host_count":len(builder.hosts),
+    }
 
 def render_previews(center,road_poly,profile):
     OUT.mkdir(parents=True,exist_ok=True)
@@ -213,7 +285,7 @@ def render_previews(center,road_poly,profile):
         if geom.geom_type=="Polygon":
             draw.polygon([pp(x,z) for x,z in geom.exterior.coords],fill=(157,80,65),outline=(45,45,45))
     draw.line([pp(r["x_m"],r["z_m"]) for r in center],fill=(25,25,25),width=2)
-    draw.text((20,15),"LOMBARD ROAD ONLY v006 / 1:1 / no context",font=font(22),fill=(20,20,20))
+    draw.text((20,15),"LOMBARD ROAD TEXTURE v007 / geometry locked to v006",font=font(22),fill=(20,20,20))
     im.save(OUT/f"{NAME}_plan.png")
 
     # Longitudinal profile comparison.
@@ -268,7 +340,7 @@ def main():
         bounds,
         REGION,
         NAME,
-        "Lombard road-only truth reset v006. Air-backed Astra brick roadway only, with a smoothed LiDAR-derived downhill profile. No curbs, terrain, stairs, walls, hedges, buildings, or outer context.",
+        "Lombard road texture v007. Geometry is locked to approved road-only v006; only Astra material assignments change to a reference-driven running-bond clay-paver surface.",
         data_version=DATA_VERSION,
         tile_entity_payloads=tile_entities,
     )
@@ -286,6 +358,7 @@ def main():
         decoded[pos]=decode_volume_v4(te["volume_v4"])
     exact_hosts=set(decoded)==set(builder.hosts)
     exact_cells=exact_hosts and all(decoded[p]==builder.hosts[p].cells for p in builder.hosts)
+    geometry_matches_v006,geometry_compare=compare_v006_occupancy(builder)
 
     render_previews(center,road_poly,profile)
 
@@ -294,15 +367,16 @@ def main():
         for m in vol.cells:
             if m:
                 materials[m]+=1
-    forbidden=[m for m in materials if m not in (ROAD_A,ROAD_B)]
+    allowed_materials={ROAD_BASE,JOINT,*BRICK_COLORS}
+    forbidden=[m for m in materials if m not in allowed_materials]
 
     report={
         **stats,
         "schema_version":1,
         "project_id":"lombard_sf",
-        "review_id":"LOMBARD_ROAD_ONLY_V006",
-        "status":"valid" if exact_blocks and exact_cells and not forbidden else "invalid",
-        "scope":"road only",
+        "review_id":"LOMBARD_ROAD_TEXTURE_V008",
+        "status":"valid" if exact_blocks and exact_cells and geometry_matches_v006 and not forbidden else "invalid",
+        "scope":"road texture only; geometry locked to v006",
         "source_centerline":"projects/lombard_sf/poc_001/l0_crooked_centerline_v001.json",
         "centerline_nodes":len(center),
         "centerline_length_m":road_line.length,
@@ -322,8 +396,25 @@ def main():
             "mean_abs_smoothing_correction_m":profile["mean_abs_smoothing_correction_m"],
             "monotonic_downhill":bool(np.all(np.diff(profile["elev_rel_m"])<=1e-9)),
         },
+        "texture":{
+            "reference":"projects/lombard_sf/references/private/wikimedia_commons/007_Crooked_Section_of_Lombard_Street.jpg.jpg",
+            "pattern":"running bond aligned to local road tangent",
+            "nominal_brick_length_m":BRICK_LENGTH_M,
+            "nominal_brick_width_m":BRICK_WIDTH_M,
+            "joint_sampling_m":JOINT_SAMPLE_M,
+            "brick_palette":BRICK_COLORS,
+            "joint_material":JOINT,
+            "base_material":ROAD_BASE,
+        },
+        "geometry_lock_to_v006":{
+            "source":"projects/lombard_sf/outputs/road_only_v006/Lombard_Road_Only_Astra_v006.litematic",
+            "occupancy_identical":geometry_matches_v006,
+            **geometry_compare,
+        },
         "astra":{
-            "air_backed_hosts":True,
+            "empty_cells_remain_empty":True,
+            "host_original":"minecraft:bricks",
+            "host_original_supported":True,
             "host_count":len(builder.hosts),
             "road_surface_columns":road_columns,
             "occupied_road_microcells":road_cells,
@@ -347,7 +438,8 @@ def main():
             "exact_astra_host_set":exact_hosts,
             "exact_astra_microcell_readback":exact_cells,
             "registration_marker":actual.get((0,-1,0))==MARKER,
-            "review_status":"ROAD_ONLY_V006_FLYAROUND_REQUIRED",
+            "geometry_matches_v006":geometry_matches_v006,
+            "review_status":"ROAD_TEXTURE_V008_FLYAROUND_REQUIRED",
         }
     }
     (OUT/f"{NAME}_validation.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
@@ -360,11 +452,10 @@ def main():
         "replace_blocks":"ALL"
     },indent=2)+"\n",encoding="utf-8")
     (OUT/"Build_notes.md").write_text(
-        "# Lombard Road Only v006\n\n"
-        "Hard reset to the road itself. This artifact contains only the brick roadway plus the permanent registration pad. "
-        "All context layers are excluded until the road passes Minecraft flyaround review. "
-        "The road plan keeps the detailed 157-node centerline and reviewed variable-width logic; the vertical profile is rebuilt as a smoothed, continuously downhill engineered surface from the LiDAR centerline elevations. "
-        "Astra hosts are air-backed so no hidden stone/terrain volume is introduced.\n",
+        "# Lombard Road Texture v008\n\n"
+        "Texture-only pass on approved road-only v006 geometry. This fixes the v007 Astra serialization bug by using a supported minecraft:bricks host original; occupied Astra geometry remains identical to v006. "
+        "The surface uses a reference-driven running bond of roughly 20x10 cm red clay pavers aligned to the local road tangent, with staggered rows, restrained per-brick color variation, and sparse dark brick-end joints. "
+        "The lower two cells of the three-cell road slab use a dark red structural paver base; only material assignments change. No curbs, terrain, stairs, walls, vegetation, buildings, or context are present.\n",
         encoding="utf-8"
     )
 

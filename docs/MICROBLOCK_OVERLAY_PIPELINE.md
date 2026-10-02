@@ -71,6 +71,12 @@ The block entity contains:
 
 The serialization path must match the currently supported Astra Microblocks contract. Lombard requires Astra Microblocks **0.7.0 or newer compatible serialization**, and exact block-entity/microcell readback is required before promotion.
 
+### Host-original material rule
+
+`volume_v4.original` must resolve to a supported Astra solid material. **Never use `minecraft:air` as the host original.** Empty space is represented by unoccupied / `None` microcells. Astra 0.7.0 rejects a `volume_v4` whose original material is unsupported; when the legacy occupancy grid is also present this can silently fall back to the host's stone material, making otherwise-valid RGB/custom palettes render as stone.
+
+EarthForge validation must therefore check both serialization integrity and Astra runtime material compatibility. A successful NBT encode/decode round trip alone is not sufficient evidence that the client renderer will accept the palette.
+
 ## v006 limits
 
 The first Redfield micro pass is deliberately bounded.

@@ -22,6 +22,14 @@ def main():
         astra.pilaster("west","minecraft:bricks"),
         astra.mixed_frame("east","minecraft:smooth_sandstone","minecraft:red_terracotta")
     ]
+    # Astra 0.7.0 requires a supported solid `original`; air would make
+    # volume_v4 fail runtime palette resolution and fall back to legacy stone.
+    try:
+        astra.MicroVolume("minecraft:air")
+        raise AssertionError("minecraft:air original unexpectedly accepted")
+    except ValueError:
+        pass
+
     writer=codec.NBTWriter()
     for i,v in enumerate(patterns):
         payload=astra.tile_entity_payload(writer,(i,0,0),v)

@@ -81,7 +81,7 @@ class RoadBuilder:
         pos=(hx,hy,hz)
         vol=self.hosts.get(pos)
         if vol is None:
-            vol=MicroVolume("minecraft:air")
+            vol=MicroVolume("minecraft:bricks")
             self.hosts[pos]=vol
             self.blocks[pos]=HOST_STATE
         vol.set(lx,ly,lz,material)

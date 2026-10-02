@@ -60,7 +60,7 @@ def rasterize(poly):
             key=(hx,-1,hz)
             vol=hosts.get(key)
             if vol is None:
-                vol=MicroVolume("minecraft:air"); hosts[key]=vol
+                vol=MicroVolume("minecraft:bricks"); hosts[key]=vol
             for cy in SLAB_Y: vol.set(cx,cy,cz,ROAD_MATERIAL)
             occupied+=len(SLAB_Y)
     return hosts,occupied
