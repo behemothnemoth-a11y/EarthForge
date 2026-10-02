@@ -1,8 +1,8 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "project_id": "lombard_street_sf",
   "name": "Lombard Street - Hyde to Leavenworth",
-  "status": "road_truth_acquisition",
+  "status": "road_truth_vertical_acquisition",
   "milestone": "LOMBARD_ROAD_TRUTH_001",
   "coordinate_system": {
     "acquisition_crs": {
@@ -11,9 +11,9 @@
       "reason": "DataSF GeoJSON realization coordinates are acquired in longitude/latitude."
     },
     "working_frame": {
-      "status": "generated_from_acquired_centerline",
+      "status": "locked",
       "method": "wgs84_local_tangent_first_order_ellipsoid",
-      "anchor": "Hyde endpoint of the selected Lombard centerline",
+      "anchor": "Hyde endpoint of the assembled Lombard centerline",
       "units": "meters",
       "x_positive": "east",
       "z_positive": "south",
@@ -26,18 +26,30 @@
     }
   },
   "vertical_reference": {
-    "status": "source_identified_pending_profile_lock",
-    "source": "DataSF Elevation Contours",
-    "datum": "San Francisco Elevation Datum",
-    "source_unit": "feet",
-    "canonical_unit": "meters",
-    "source_manifest": "source_manifests/datasf_elevation_contours_2026.json"
+    "status": "primary_source_selected_profile_pending",
+    "primary": {
+      "source": "2025 San Francisco Bay-Delta LiDAR DEM",
+      "datum": "NAVD88",
+      "source_unit": "US survey foot",
+      "canonical_unit": "meter",
+      "source_manifest": "source_manifests/dwr_sfbay_delta_lidar_2025_zone3.json",
+      "output": "road_truth/lidar_profile_navd88.json"
+    },
+    "secondary_check": {
+      "source": "DataSF Elevation Contours",
+      "datum": "San Francisco Elevation Datum",
+      "source_unit": "feet",
+      "source_manifest": "source_manifests/datasf_elevation_contours_2026.json",
+      "output": "road_truth/elevation_candidates.json"
+    },
+    "mixing_rule": "Do not numerically merge the two vertical datums without an explicit vertical transformation."
   },
   "acquisition": {
     "script": "pipeline/acquire/lombard_datasf.py",
     "output_dir": "projects/lombard_street_sf/acquired",
     "centerline_source": "source_manifests/datasf_streets_active_retired_2026.json",
-    "elevation_source": "source_manifests/datasf_elevation_contours_2026.json"
+    "contour_source": "source_manifests/datasf_elevation_contours_2026.json",
+    "lidar_source": "source_manifests/dwr_sfbay_delta_lidar_2025_zone3.json"
   },
   "georeference": {
     "script": "pipeline/georeference/generate_lombard_frame.py",
@@ -46,7 +58,12 @@
   "scope": {
     "road": "Lombard Street",
     "from": "Hyde Street",
+    "via": "Montclair Terrace centerline split",
     "to": "Leavenworth Street",
+    "source_cnns": [
+      "8449000",
+      "8448000"
+    ],
     "include_initially": [
       "road centerline",
       "elevation / grade controls",
@@ -65,10 +82,12 @@
   },
   "quality_gates": {
     "current_target": "ROAD_TRUTH",
-    "source_snapshot_acquired": false,
-    "local_frame_locked": false,
-    "road_geometry_locked": false,
+    "source_snapshot_acquired": true,
+    "local_frame_locked": true,
+    "centerline_locked": true,
+    "raw_lidar_profile_acquired": false,
     "elevation_profile_locked": false,
+    "road_geometry_locked": false,
     "curbs_allowed": false,
     "sidewalks_allowed": false,
     "adjacent_sitework_allowed": false,

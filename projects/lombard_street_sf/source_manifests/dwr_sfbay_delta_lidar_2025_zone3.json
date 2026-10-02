@@ -1,0 +1,23 @@
+{
+  "source_id": "dwr_sfbay_delta_lidar_2025_zone3",
+  "provider": "California Department of Water Resources",
+  "source_type": "official_quality_level_1_lidar_dem_imageserver",
+  "url": "https://gis.water.ca.gov/arcgisimg/rest/services/elevation/SFBay_Delta_Zone3_Hydroflattened_2025_LIDAR/ImageServer",
+  "external_id": "elevation/SFBay_Delta_Zone3_Hydroflattened_2025_LIDAR",
+  "acquired_at": "2026-10-02",
+  "coverage": "San Francisco Bay and Delta areas falling in California State Plane Zone 3",
+  "license_note": "Public-facing California DWR enterprise GIS service. Preserve provider attribution and source metadata with derived samples; verify terms before redistributing bulk raster data.",
+  "redistributable": null,
+  "local_private_path": null,
+  "horizontal_reference": "NAD83(2011), California Coordinate System Zone 3, 2025.00 epoch, US survey feet",
+  "vertical_reference": "NAVD88, US survey feet, Geoid 18",
+  "pixel_size": "1 US survey foot",
+  "acquisition_dates": "2025-08-22 through 2025-10-06",
+  "quality_level": "USGS 3DEP Quality Level 1",
+  "notes": [
+    "Primary high-resolution elevation source for the Lombard road profile.",
+    "EarthForge samples the public ImageServer along the source-backed Lombard centerline rather than committing the full raster.",
+    "Do not mix NAVD88 LiDAR elevations numerically with DataSF San Francisco Elevation Datum contour values unless an explicit datum transformation is applied.",
+    "DataSF five-foot contours remain an independent geometry/profile sanity check."
+  ]
+}
