@@ -161,3 +161,24 @@ For every meaningful reconstruction slice:
 The purpose is to train and harden the pipeline through observed Minecraft results. Confidence to generate larger areas in one pass must be earned from repeated accepted slices, not assumed.
 
 Do not pre-build downstream geometry, even as hidden candidate output, unless the user explicitly asks for a rough whole-site blockout.
+
+## Core-corridor isolation rule
+
+When a whole-site rough blockout begins to obscure review of the section currently being refined, temporarily remove outer context instead of trying to repair everything at once.
+
+For the active Lombard core-review phase, keep only:
+- the complete crooked road between Hyde and Leavenworth;
+- immediate curb / planter / terrace structure;
+- mapped stairs, landings, handrails, footways and retaining conditions that directly serve the crooked block;
+- hedges / planting masses that define those terraces;
+- the shallow terrain shell required to support and visually explain those features;
+- minimal endpoint tie-ins and the permanent registration pad.
+
+Temporarily exclude:
+- bordering house / building massing;
+- broad Hyde and Leavenworth street extensions;
+- unrelated cross-street context;
+- outer terrain shelves not needed to support the core corridor;
+- peripheral scenery / context that is not part of the current review gate.
+
+Reintroduce outer context only after the crooked-road core passes its own flyaround gates. Context returns in deliberate layers and must not be allowed to hide unresolved core geometry.
