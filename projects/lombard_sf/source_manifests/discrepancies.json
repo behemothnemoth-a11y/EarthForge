@@ -44,9 +44,9 @@
         "datasf_sidewalk",
         "recovered_l1_hardscape_policy"
       ],
-      "status": "open_review_priority",
-      "issue": "DataSF SIDEWALK_F reports 15 ft actual sidewalk width on both crooked CNN segments, while the recovered hardscape policy used a 10 ft minimum side corridor / approximately 5.5 m road ribbon.",
-      "impact": "The rough full-site v001 road/curb envelope is intentionally provisional. Flyaround and imagery/ROW reconciliation must refine road width, curb lines, planter edges and stair-side relationships before promotion."
+      "status": "v003_candidate_under_flyaround_review",
+      "issue": "Direct ROW inset is unsuitable as pavement geometry because it breaks into disconnected polygons. v003 therefore keeps the detailed 157-node centerline as plan authority, uses ROW + 15 ft SIDEWALK_F only as envelope/width evidence, and applies 5.4 m straight pavement widening up to 6.5 m at tight curvature.",
+      "impact": "Flyaround v003 before accepting curb/road envelope; stairs/walls remain downstream."
     }
   ]
 }

@@ -1,0 +1,478 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:dirt",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:stone",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -38,
+    -78
+  ],
+  "region_size": [
+    205,
+    62,
+    192
+  ],
+  "volume": 2440320,
+  "non_air_blocks": 86378,
+  "tile_entities": 45487,
+  "sha256": "c04e7908113254dc831a13ae207050909c15f4e941415e43c90f519e99f0873a",
+  "astra_min_version": "0.7.0",
+  "source_truth": "projects/lombard_sf/poc_001/l0_source_truth_v001.json",
+  "registration": {
+    "project_local_m": [
+      -30.0,
+      -20.0
+    ],
+    "schematic_marker": [
+      0,
+      -1,
+      0
+    ],
+    "player_feet": [
+      0,
+      0,
+      0
+    ],
+    "rotation": 0,
+    "mirror": "none"
+  },
+  "features": {
+    "terrain_columns": 15185,
+    "garden_surface_microcells": 617454,
+    "road_surface_microcells": 291448,
+    "curb_microcells": 29692,
+    "road_geometry": {
+      "method": "157-node centerline + curvature-driven variable width",
+      "straight_halfwidth_m": 2.7,
+      "max_halfwidth_m": 3.25,
+      "actual_min_halfwidth_m": 2.7068831037863212,
+      "actual_max_halfwidth_m": 3.25,
+      "mean_full_width_m": 5.6665264211929145,
+      "curb_ring_m": 0.28
+    },
+    "cross_street_surface_microcells": 783026,
+    "step_ways": [
+      {
+        "osm_id": "110803261",
+        "cells": 15397,
+        "count": 57,
+        "endpoint_drop_m": -10.335548400878906,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "119458101",
+        "cells": 18900,
+        "count": 59,
+        "endpoint_drop_m": -10.57861328125,
+        "material": "astra_microblocks:rgb_a7a49b"
+      },
+      {
+        "osm_id": "179749156",
+        "cells": 8642,
+        "count": 38,
+        "endpoint_drop_m": -6.8502960205078125,
+        "material": "astra_microblocks:rgb_a7a49b"
+      },
+      {
+        "osm_id": "198877614",
+        "cells": 29866,
+        "count": 169,
+        "endpoint_drop_m": 20.10247802734375,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562143",
+        "cells": 5449,
+        "count": 29,
+        "endpoint_drop_m": 3.7997512817382812,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562145",
+        "cells": 5758,
+        "count": 36,
+        "endpoint_drop_m": 3.9375534057617188,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562146",
+        "cells": 818,
+        "count": 5,
+        "endpoint_drop_m": 0.43514251708984375,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562147",
+        "cells": 1742,
+        "count": 11,
+        "endpoint_drop_m": 1.0384674072265625,
+        "material": "astra_microblocks:rgb_986052"
+      },
+      {
+        "osm_id": "1011562148",
+        "cells": 900,
+        "count": 16,
+        "endpoint_drop_m": 1.0854415893554688,
+        "material": "astra_microblocks:rgb_986052"
+      }
+    ],
+    "footway_microcells": 63387,
+    "hedge_plan_microcells": 62610,
+    "handrail_microcells": 18732,
+    "marked_crossing_microcells": 42585,
+    "retaining_wall_microcells": 9156,
+    "cable_track_samples": 2063,
+    "building_massing": {
+      "structure_count": 29,
+      "source": "projects/lombard_sf/poc_001/l2_building_source_truth_v002.json",
+      "height_policy": "DataSF LiDAR hgt_median_m",
+      "audit": [
+        {
+          "wall_microcells": 914328,
+          "roof_microcells": 98276,
+          "base_y_micro": -112,
+          "top_y_micro": 92,
+          "height_m": 12.78,
+          "address": "2320;2322",
+          "street": "Hyde Street",
+          "sf16_bldgid": "201006.0026522"
+        },
+        {
+          "wall_microcells": 1207014,
+          "roof_microcells": 205578,
+          "base_y_micro": -90,
+          "top_y_micro": 132,
+          "height_m": 13.87,
+          "address": "2310",
+          "street": "Hyde Street",
+          "sf16_bldgid": "201006.0009299"
+        },
+        {
+          "wall_microcells": 856896,
+          "roof_microcells": 126366,
+          "base_y_micro": -217,
+          "top_y_micro": -25,
+          "height_m": 11.98,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0016872"
+        },
+        {
+          "wall_microcells": 479219,
+          "roof_microcells": 44666,
+          "base_y_micro": -228,
+          "top_y_micro": -35,
+          "height_m": 12.06,
+          "address": "25",
+          "street": "Montclair Terrace",
+          "sf16_bldgid": "201006.0145296"
+        },
+        {
+          "wall_microcells": 457448,
+          "roof_microcells": 36316,
+          "base_y_micro": -225,
+          "top_y_micro": -14,
+          "height_m": 13.16,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0155546"
+        },
+        {
+          "wall_microcells": 141288,
+          "roof_microcells": 23946,
+          "base_y_micro": -278,
+          "top_y_micro": -194,
+          "height_m": 5.24,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0160976"
+        },
+        {
+          "wall_microcells": 613614,
+          "roof_microcells": 84918,
+          "base_y_micro": -283,
+          "top_y_micro": -97,
+          "height_m": 11.62,
+          "address": "4",
+          "street": "Montclair Terrace",
+          "sf16_bldgid": "201006.0038369"
+        },
+        {
+          "wall_microcells": 719546,
+          "roof_microcells": 90730,
+          "base_y_micro": -325,
+          "top_y_micro": -131,
+          "height_m": 12.1,
+          "address": "1040",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0032105"
+        },
+        {
+          "wall_microcells": 738994,
+          "roof_microcells": 123076,
+          "base_y_micro": -362,
+          "top_y_micro": -211,
+          "height_m": 9.45,
+          "address": "1028;1030",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0017533"
+        },
+        {
+          "wall_microcells": 256828,
+          "roof_microcells": 24492,
+          "base_y_micro": -357,
+          "top_y_micro": -214,
+          "height_m": 8.96,
+          "address": "1016;1018",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0160749"
+        },
+        {
+          "wall_microcells": 424799,
+          "roof_microcells": 62496,
+          "base_y_micro": -343,
+          "top_y_micro": -194,
+          "height_m": 9.31,
+          "address": "1016;1018",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0093585"
+        },
+        {
+          "wall_microcells": 525776,
+          "roof_microcells": 110822,
+          "base_y_micro": -450,
+          "top_y_micro": -314,
+          "height_m": 8.47,
+          "address": "1010",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0020805"
+        },
+        {
+          "wall_microcells": 631400,
+          "roof_microcells": 91388,
+          "base_y_micro": -521,
+          "top_y_micro": -346,
+          "height_m": 10.96,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0031502"
+        },
+        {
+          "wall_microcells": 665496,
+          "roof_microcells": 70594,
+          "base_y_micro": -62,
+          "top_y_micro": 154,
+          "height_m": 13.5,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0067998"
+        },
+        {
+          "wall_microcells": 619264,
+          "roof_microcells": 50736,
+          "base_y_micro": -45,
+          "top_y_micro": 191,
+          "height_m": 14.74,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0130884"
+        },
+        {
+          "wall_microcells": 1400432,
+          "roof_microcells": 83430,
+          "base_y_micro": -66,
+          "top_y_micro": 370,
+          "height_m": 27.28,
+          "address": "2250",
+          "street": "Hyde Street",
+          "sf16_bldgid": "201006.0040348"
+        },
+        {
+          "wall_microcells": 513084,
+          "roof_microcells": 79496,
+          "base_y_micro": -93,
+          "top_y_micro": 50,
+          "height_m": 8.92,
+          "address": "1079",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0046886"
+        },
+        {
+          "wall_microcells": 690408,
+          "roof_microcells": 108522,
+          "base_y_micro": -149,
+          "top_y_micro": 23,
+          "height_m": 10.73,
+          "address": "1079",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0021655"
+        },
+        {
+          "wall_microcells": 125568,
+          "roof_microcells": 31336,
+          "base_y_micro": -189,
+          "top_y_micro": -125,
+          "height_m": 2.82,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0157808"
+        },
+        {
+          "wall_microcells": 720981,
+          "roof_microcells": 83598,
+          "base_y_micro": -216,
+          "top_y_micro": -9,
+          "height_m": 12.95,
+          "address": "1073",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0040139"
+        },
+        {
+          "wall_microcells": 289351,
+          "roof_microcells": 40878,
+          "base_y_micro": -236,
+          "top_y_micro": -139,
+          "height_m": 6.04,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0150617"
+        },
+        {
+          "wall_microcells": 742525,
+          "roof_microcells": 111434,
+          "base_y_micro": -335,
+          "top_y_micro": -160,
+          "height_m": 10.95,
+          "address": "1055;1057",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0020610"
+        },
+        {
+          "wall_microcells": 583848,
+          "roof_microcells": 89424,
+          "base_y_micro": -384,
+          "top_y_micro": -222,
+          "height_m": 10.14,
+          "address": "1047;1049",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0033339"
+        },
+        {
+          "wall_microcells": 548973,
+          "roof_microcells": 66374,
+          "base_y_micro": -388,
+          "top_y_micro": -207,
+          "height_m": 11.29,
+          "address": "1033;1035;1037",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0080952"
+        },
+        {
+          "wall_microcells": 875468,
+          "roof_microcells": 135728,
+          "base_y_micro": -476,
+          "top_y_micro": -274,
+          "height_m": 12.61,
+          "address": "1025",
+          "street": "Lombard Street",
+          "sf16_bldgid": "201006.0015325"
+        },
+        {
+          "wall_microcells": 633144,
+          "roof_microcells": 82224,
+          "base_y_micro": -500,
+          "top_y_micro": -316,
+          "height_m": 11.51,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0042184"
+        },
+        {
+          "wall_microcells": 739008,
+          "roof_microcells": 89784,
+          "base_y_micro": -512,
+          "top_y_micro": -320,
+          "height_m": 11.99,
+          "address": "2239;2241;2243",
+          "street": "Leavenworth Street",
+          "sf16_bldgid": "201006.0032957"
+        },
+        {
+          "wall_microcells": 902132,
+          "roof_microcells": 99384,
+          "base_y_micro": -506,
+          "top_y_micro": -304,
+          "height_m": 12.65,
+          "address": "2233;2235;2237",
+          "street": "Leavenworth Street",
+          "sf16_bldgid": "201006.0025902"
+        },
+        {
+          "wall_microcells": 563031,
+          "roof_microcells": 67210,
+          "base_y_micro": -518,
+          "top_y_micro": -329,
+          "height_m": 11.79,
+          "address": null,
+          "street": null,
+          "sf16_bldgid": "201006.0078342"
+        }
+      ]
+    }
+  },
+  "astra": {
+    "host_count": 45487,
+    "occupied_microcells": 69756697,
+    "materials": [
+      "astra_microblocks:rgb_303233",
+      "astra_microblocks:rgb_3d6339",
+      "astra_microblocks:rgb_506f45",
+      "astra_microblocks:rgb_526d3f",
+      "astra_microblocks:rgb_565958",
+      "astra_microblocks:rgb_637a49",
+      "astra_microblocks:rgb_6f706d",
+      "astra_microblocks:rgb_777b79",
+      "astra_microblocks:rgb_858784",
+      "astra_microblocks:rgb_87453a",
+      "astra_microblocks:rgb_918a7d",
+      "astra_microblocks:rgb_986052",
+      "astra_microblocks:rgb_9d5041",
+      "astra_microblocks:rgb_a7a49b",
+      "astra_microblocks:rgb_aeaba2",
+      "astra_microblocks:rgb_b4aea3",
+      "astra_microblocks:rgb_c8c3b8",
+      "astra_microblocks:rgb_d8d0af",
+      "astra_microblocks:rgb_e2dfd4",
+      "minecraft:dirt",
+      "minecraft:stone"
+    ]
+  },
+  "terrain": {
+    "base_y_blocks": -42,
+    "hyde_surface_y_blocks": 0.0,
+    "leavenworth_surface_y_blocks": -32.85
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_cell_readback": true,
+    "registration_marker": true,
+    "buildings_generated": true,
+    "roofs_generated": true,
+    "interiors_generated": false,
+    "in_game_review": false,
+    "review_status": "ROAD_CURB_TERRACE_V003_FLYAROUND_REQUIRED"
+  },
+  "limitations": [
+    "v003 refines only the crooked road, curb and planter/retaining relationship; terrain and building massing are intentionally frozen.",
+    "The detailed 157-node centerline remains plan authority. DataSF ROW and the 15 ft SIDEWALK_F records are treated as public-envelope/width evidence, not literal pavement polygons.",
+    "Mapped hedges and retaining conditions are massing/evidence layers, not final landscape or wall reconstruction.",
+    "Buildings use DataSF footprints and LiDAR median heights only; garages, facade planes, roof forms, openings and architectural details are intentionally deferred."
+  ]
+}
