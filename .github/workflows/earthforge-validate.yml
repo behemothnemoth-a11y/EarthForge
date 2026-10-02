@@ -30,6 +30,9 @@ jobs:
       - name: Test road / terrain corridor core
         run: python tools/test_road_corridor.py
 
+      - name: Test contour profile derivation
+        run: python tools/test_contour_profile.py
+
       - name: Test 621 depth architecture
         run: python pipeline/reconstruction/generate_redfield_621_micro_depth_v003.py --self-test
 
