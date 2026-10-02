@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "frame_id": "lombard_hyde_anchor_v001",
+  "status": "locked_from_acquired_centerline",
+  "anchor_role": "Lombard / Hyde centerline endpoint",
+  "anchor_wgs84": {
+    "longitude": -122.419613973,
+    "latitude": 37.801994863
+  },
+  "transform": {
+    "method": "wgs84_local_tangent_first_order_ellipsoid",
+    "source_crs": "EPSG:4326",
+    "anchor_lon": -122.419613973,
+    "anchor_lat": 37.801994863,
+    "x_positive": "east",
+    "z_positive": "south",
+    "units": "meters",
+    "ellipsoid": "WGS84"
+  },
+  "axis_convention": {
+    "x_positive": "east",
+    "z_positive": "south",
+    "y_positive": "up"
+  },
+  "source_centerline": {
+    "segment_cnns": [
+      "8449000",
+      "8448000"
+    ],
+    "segment_count": 2,
+    "route_nodes": [
+      "HYDE",
+      "MONTCLAIR TER",
+      "LEAVENWORTH"
+    ],
+    "vertex_count": 38,
+    "length_m": 204.591596,
+    "station_0": "Hyde Street",
+    "station_end": "Leavenworth Street"
+  },
+  "minecraft": {
+    "horizontal_scale": "1 meter = 1 block",
+    "vertical_scale": "1 meter = 1 block",
+    "registration_status": "pending_generated_output_anchor"
+  }
+}

@@ -209,12 +209,21 @@ def _load_centerline(spec: dict) -> list:
     if "centerline" in spec:
         return spec["centerline"]
 
+    if spec.get("type") == "FeatureCollection":
+        features = spec.get("features") or []
+        if len(features) != 1:
+            raise ValueError(
+                "Centerline FeatureCollection must contain exactly one feature"
+            )
+        spec = features[0]
+
     geometry = spec.get("geometry") or {}
     if geometry.get("type") == "LineString":
         return geometry.get("coordinates") or []
 
     raise ValueError(
-        "Centerline input must contain 'centerline' or a LineString geometry"
+        "Centerline input must contain 'centerline', one LineString Feature, "
+        "or a one-feature LineString FeatureCollection"
     )
 
 

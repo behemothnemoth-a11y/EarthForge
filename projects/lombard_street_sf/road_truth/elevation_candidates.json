@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "coordinate_requirement": "centerline and contours must share one projected metric coordinate space",
+  "elevation_field": "elevation",
+  "source_elevation_unit": "feet",
+  "road_length_m": 204.591596,
+  "intersection_count": 21,
+  "skipped_features_missing_elevation": 0,
+  "covers_start": false,
+  "covers_end": false,
+  "controls": [
+    {
+      "station_m": 16.148489,
+      "elevation_m": 80.772,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        14.000299,
+        -1.869704
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 23.933411,
+      "elevation_m": 79.248,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        18.893986,
+        -7.924193
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 33.598219,
+      "elevation_m": 77.724,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        27.228471,
+        -9.062945
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 41.88609,
+      "elevation_m": 76.2,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        32.104786,
+        -2.381512
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 51.664846,
+      "elevation_m": 74.676,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        39.700272,
+        1.08064
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 60.920196,
+      "elevation_m": 73.152,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        44.684433,
+        -6.408974
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 68.765948,
+      "elevation_m": 71.628,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        48.627184,
+        -13.106704
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 74.167146,
+      "elevation_m": 70.104,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        53.455624,
+        -13.819077
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 84.247276,
+      "elevation_m": 68.58,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        60.517936,
+        -7.126507
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 93.614226,
+      "elevation_m": 67.056,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        67.772709,
+        -3.711967
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 101.764386,
+      "elevation_m": 65.532,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        72.417542,
+        -10.217616
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 109.483538,
+      "elevation_m": 64.008,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        76.139344,
+        -16.975887
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 115.124113,
+      "elevation_m": 62.484,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        81.175206,
+        -19.117131
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 125.374082,
+      "elevation_m": 60.96,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        88.538415,
+        -12.645168
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 137.058185,
+      "elevation_m": 59.436,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        97.644004,
+        -8.455003
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 145.075127,
+      "elevation_m": 57.912,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        101.847549,
+        -15.121624
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 153.474316,
+      "elevation_m": 56.388,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        106.014484,
+        -22.409506
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 160.345341,
+      "elevation_m": 54.864,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        112.127727,
+        -23.493426
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 169.554804,
+      "elevation_m": 53.34,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        117.771816,
+        -16.242591
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 179.535749,
+      "elevation_m": 51.816,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        125.194824,
+        -13.606384
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    },
+    {
+      "station_m": 189.324182,
+      "elevation_m": 50.292,
+      "method": "centerline_contour_intersection",
+      "point_xz_m": [
+        132.332115,
+        -20.299714
+      ],
+      "source_id": "datasf_elevation_contours_2026"
+    }
+  ]
+}

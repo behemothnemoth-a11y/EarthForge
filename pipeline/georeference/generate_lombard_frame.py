@@ -142,7 +142,11 @@ def build_frame(centerline_collection: dict, contours_collection: dict) -> tuple
 
     props = source_feature.get("properties") or {}
     lower_props = {str(k).lower(): v for k, v in props.items()}
-    cnn = lower_props.get("cnn", lower_props.get("cnntext"))
+    segment_cnns = lower_props.get("earthforge_segment_cnns")
+    if not segment_cnns:
+        cnn = lower_props.get("cnn", lower_props.get("cnntext"))
+        segment_cnns = [] if cnn is None else [str(cnn)]
+    segment_cnns = [str(value) for value in segment_cnns]
 
     locked_frame = {
         "schema_version": 1,
@@ -161,7 +165,9 @@ def build_frame(centerline_collection: dict, contours_collection: dict) -> tuple
             "y_positive": "up",
         },
         "source_centerline": {
-            "cnn": cnn,
+            "segment_cnns": segment_cnns,
+            "segment_count": len(segment_cnns),
+            "route_nodes": lower_props.get("earthforge_route_nodes"),
             "vertex_count": len(local_coords),
             "length_m": round(stations[-1], 6),
             "station_0": "Hyde Street",
@@ -217,7 +223,7 @@ def main() -> int:
 
     print(
         f"Locked {locked['frame_id']} | "
-        f"CNN {locked['source_centerline']['cnn']} | "
+        f"CNNs {','.join(locked['source_centerline']['segment_cnns'])} | "
         f"{locked['source_centerline']['length_m']:.2f} m"
     )
     return 0

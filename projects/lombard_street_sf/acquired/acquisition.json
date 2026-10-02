@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "acquired_at": "2026-10-02T21:13:10.237009+00:00",
+  "centerline": {
+    "dataset_id": "3psu-pn9h",
+    "request_url": "https://data.sf.gov/api/v3/views/3psu-pn9h/query.geojson?query=SELECT+%2A+WHERE+street%3D%27LOMBARD%27+LIMIT+500",
+    "selected_cnns": [
+      "8449000",
+      "8448000"
+    ],
+    "segment_count": 2,
+    "route_nodes": [
+      "HYDE",
+      "MONTCLAIR TER",
+      "LEAVENWORTH"
+    ],
+    "route_from": "HYDE",
+    "route_to": "LEAVENWORTH",
+    "source_bbox_wgs84": [
+      -122.419613973,
+      37.801973245,
+      -122.417966229,
+      37.802223892
+    ],
+    "output": "centerline_wgs84.geojson",
+    "segments_output": "centerline_segments_wgs84.geojson"
+  },
+  "contours": {
+    "dataset_id": "6d73-6c4f",
+    "request_url": "https://data.sf.gov/api/v3/views/6d73-6c4f/query.geojson?query=SELECT+%2A+WHERE+intersects%28the_geom%2C+%27POLYGON+%28%28-122.42052350+37.80125338%2C+-122.41705670+37.80125338%2C+-122.41705670+37.80294376%2C+-122.42052350+37.80294376%2C+-122.42052350+37.80125338%29%29%27%29+LIMIT+5000",
+    "query_bbox_wgs84": [
+      -122.42052350258237,
+      37.80125338033456,
+      -122.41705669941763,
+      37.80294375666544
+    ],
+    "margin_m": 80.0,
+    "feature_count": 71,
+    "output": "contours_wgs84.geojson"
+  }
+}

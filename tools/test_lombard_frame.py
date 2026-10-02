@@ -26,9 +26,18 @@ def centerline_collection():
                 "type": "Feature",
                 "properties": {
                     "street": "Lombard",
-                    "f_st": "Hyde St",
-                    "t_st": "Leavenworth St",
-                    "cnn": 123,
+                    "earthforge_route_from": "HYDE",
+                    "earthforge_route_to": "LEAVENWORTH",
+                    "earthforge_route_nodes": [
+                        "HYDE",
+                        "MONTCLAIR TER",
+                        "LEAVENWORTH",
+                    ],
+                    "earthforge_segment_cnns": [
+                        "8449000",
+                        "8448000",
+                    ],
+                    "earthforge_segment_count": 2,
                 },
                 "geometry": {
                     "type": "LineString",
@@ -79,7 +88,16 @@ def test_build_frame():
     )
 
     assert locked["anchor_role"] == "Lombard / Hyde centerline endpoint"
-    assert locked["source_centerline"]["cnn"] == 123
+    assert locked["source_centerline"]["segment_cnns"] == [
+        "8449000",
+        "8448000",
+    ]
+    assert locked["source_centerline"]["segment_count"] == 2
+    assert locked["source_centerline"]["route_nodes"] == [
+        "HYDE",
+        "MONTCLAIR TER",
+        "LEAVENWORTH",
+    ]
     assert locked["source_centerline"]["station_0"] == "Hyde Street"
     assert locked["source_centerline"]["station_end"] == "Leavenworth Street"
     assert 80 < locked["source_centerline"]["length_m"] < 95

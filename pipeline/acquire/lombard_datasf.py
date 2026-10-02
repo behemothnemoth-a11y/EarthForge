@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 
 STREETS_DATASET_ID = "3psu-pn9h"
 CONTOURS_DATASET_ID = "6d73-6c4f"
-DATASF_RESOURCE_ROOT = "https://data.sfgov.org/resource"
+DATASF_QUERY_ROOT = "https://data.sf.gov/api/v3/views"
 
 HYDE = "HYDE"
 LEAVENWORTH = "LEAVENWORTH"
@@ -30,10 +30,11 @@ def normalize_street(value: Any) -> str:
 
 
 def build_geojson_url(dataset_id: str, *, where: str | None = None, limit: int = 5000) -> str:
-    params = {"$limit": str(limit)}
+    query = "SELECT *"
     if where:
-        params["$where"] = where
-    return f"{DATASF_RESOURCE_ROOT}/{dataset_id}.geojson?{urlencode(params)}"
+        query += f" WHERE {where}"
+    query += f" LIMIT {int(limit)}"
+    return f"{DATASF_QUERY_ROOT}/{dataset_id}/query.geojson?{urlencode({'query': query})}"
 
 
 def fetch_geojson(url: str) -> dict:
@@ -93,15 +94,55 @@ def _cross_streets(feature: dict) -> tuple[str, str]:
     )
 
 
-def select_crooked_block(features: list[dict]) -> dict:
-    candidates = [f for f in features if is_active_lombard(f)]
-    exact = []
-    for feature in candidates:
-        from_st, to_st = _cross_streets(feature)
-        if {from_st, to_st} == {HYDE, LEAVENWORTH}:
-            exact.append(feature)
+def _reverse_feature_geometry(feature: dict) -> dict:
+    clone = json.loads(json.dumps(feature))
+    geometry = clone["geometry"]
+    if geometry["type"] == "LineString":
+        geometry["coordinates"].reverse()
+    elif geometry["type"] == "MultiLineString" and len(geometry["coordinates"]) == 1:
+        geometry["coordinates"][0].reverse()
+    else:
+        raise ValueError("Cannot reverse unexpected centerline geometry")
+    clone.setdefault("properties", {})["earthforge_source_direction_reversed"] = True
+    return clone
 
-    if len(exact) != 1:
+
+def _orient_segment_from(feature: dict, start_node: str) -> tuple[dict, str]:
+    from_st, to_st = _cross_streets(feature)
+    if from_st == start_node:
+        return feature, to_st
+    if to_st == start_node:
+        return _reverse_feature_geometry(feature), from_st
+    raise ValueError(
+        f"Segment {_cross_streets(feature)} does not touch route node {start_node!r}"
+    )
+
+
+def assemble_crooked_block(features: list[dict]) -> tuple[dict, list[dict]]:
+    candidates = [f for f in features if is_active_lombard(f)]
+    graph: dict[str, list[tuple[int, str]]] = {}
+    for index, feature in enumerate(candidates):
+        from_st, to_st = _cross_streets(feature)
+        if not from_st or not to_st:
+            continue
+        graph.setdefault(from_st, []).append((index, to_st))
+        graph.setdefault(to_st, []).append((index, from_st))
+
+    queue: list[tuple[str, list[int], set[str]]] = [(HYDE, [], {HYDE})]
+    paths: list[list[int]] = []
+    while queue:
+        node, path, seen_nodes = queue.pop(0)
+        if node == LEAVENWORTH:
+            paths.append(path)
+            continue
+        if len(path) >= 12:
+            continue
+        for segment_index, other in graph.get(node, []):
+            if segment_index in path or other in seen_nodes:
+                continue
+            queue.append((other, path + [segment_index], seen_nodes | {other}))
+
+    if len(paths) != 1:
         diagnostic = [
             {
                 "cnn": prop(feature_properties(f), "cnn", "cnntext"),
@@ -111,32 +152,57 @@ def select_crooked_block(features: list[dict]) -> dict:
             for f in candidates
         ]
         raise ValueError(
-            "Expected exactly one active Lombard centerline segment between "
-            f"Hyde and Leavenworth; found {len(exact)}. Candidates: {diagnostic}"
+            "Expected exactly one active Lombard path from Hyde to Leavenworth; "
+            f"found {len(paths)}. Candidates: {diagnostic}"
         )
-    _line_coordinates(exact[0])
-    return exact[0]
 
+    current = HYDE
+    route_coords: list[list[float]] = []
+    oriented_segments: list[dict] = []
+    route_nodes = [HYDE]
 
-def orient_hyde_to_leavenworth(feature: dict) -> dict:
-    from_st, to_st = _cross_streets(feature)
-    if from_st == HYDE and to_st == LEAVENWORTH:
-        return feature
-    if from_st == LEAVENWORTH and to_st == HYDE:
-        clone = json.loads(json.dumps(feature))
-        geometry = clone["geometry"]
-        if geometry["type"] == "LineString":
-            geometry["coordinates"].reverse()
-        elif geometry["type"] == "MultiLineString" and len(geometry["coordinates"]) == 1:
-            geometry["coordinates"][0].reverse()
+    for segment_index in paths[0]:
+        oriented, next_node = _orient_segment_from(candidates[segment_index], current)
+        coords = _line_coordinates(oriented)
+        if route_coords:
+            ax, ay = route_coords[-1][:2]
+            bx, by = coords[0][:2]
+            if math.hypot(float(ax) - float(bx), float(ay) - float(by)) > 1e-6:
+                raise ValueError(
+                    f"Lombard source segments do not meet at {current}: "
+                    f"{route_coords[-1]} vs {coords[0]}"
+                )
+            route_coords.extend(coords[1:])
         else:
-            raise ValueError("Cannot reverse unexpected centerline geometry")
-        clone.setdefault("properties", {})["earthforge_source_direction_reversed"] = True
-        return clone
-    raise ValueError(
-        f"Centerline cross streets are {from_st!r} -> {to_st!r}; "
-        "cannot prove Hyde-to-Leavenworth orientation"
-    )
+            route_coords.extend(coords)
+        oriented_segments.append(oriented)
+        current = next_node
+        route_nodes.append(current)
+
+    if current != LEAVENWORTH:
+        raise ValueError(f"Assembled Lombard route ended at {current}, not Leavenworth")
+
+    segment_cnns = [
+        str(prop(feature_properties(f), "cnn", "cnntext"))
+        for f in oriented_segments
+    ]
+    assembled = {
+        "type": "Feature",
+        "properties": {
+            "street": "LOMBARD",
+            "streetname": "LOMBARD ST",
+            "earthforge_route_from": HYDE,
+            "earthforge_route_to": LEAVENWORTH,
+            "earthforge_route_nodes": route_nodes,
+            "earthforge_segment_cnns": segment_cnns,
+            "earthforge_segment_count": len(oriented_segments),
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": route_coords,
+        },
+    }
+    return assembled, oriented_segments
 
 
 def bbox_of_line(feature: dict) -> tuple[float, float, float, float]:
@@ -157,18 +223,22 @@ def expand_wgs84_bbox(
     return west - lon_margin, south - lat_margin, east + lon_margin, north + lat_margin
 
 
-def within_box_where(
+def bbox_intersects_where(
     geometry_field: str, bbox: tuple[float, float, float, float]
 ) -> str:
     west, south, east, north = bbox
-    return (
-        f"within_box({geometry_field},"
-        f"{north:.8f},{west:.8f},{south:.8f},{east:.8f})"
+    polygon = (
+        f"POLYGON (({west:.8f} {south:.8f}, "
+        f"{east:.8f} {south:.8f}, "
+        f"{east:.8f} {north:.8f}, "
+        f"{west:.8f} {north:.8f}, "
+        f"{west:.8f} {south:.8f}))"
     )
+    return f"intersects({geometry_field}, '{polygon}')"
 
 
 def acquisition_urls(margin_m: float = 80.0) -> dict:
-    street_where = "upper(street)='LOMBARD' AND active=1"
+    street_where = "street='LOMBARD'"
     return {
         "streets": build_geojson_url(
             STREETS_DATASET_ID,
@@ -176,8 +246,8 @@ def acquisition_urls(margin_m: float = 80.0) -> dict:
             limit=500,
         ),
         "contours_template": (
-            f"{DATASF_RESOURCE_ROOT}/{CONTOURS_DATASET_ID}.geojson?"
-            "$limit=5000&$where=<within_box(the_geom,N,W,S,E)>"
+            f"{DATASF_QUERY_ROOT}/{CONTOURS_DATASET_ID}/query.geojson?"
+            "query=SELECT%20*%20WHERE%20within_box(the_geom,N,W,S,E)%20LIMIT%205000"
         ),
         "margin_m": margin_m,
     }
@@ -188,18 +258,23 @@ def acquire(output_dir: Path, *, margin_m: float = 80.0) -> dict:
     urls = acquisition_urls(margin_m)
 
     streets = fetch_geojson(urls["streets"])
-    selected = orient_hyde_to_leavenworth(
-        select_crooked_block(streets.get("features") or [])
+    selected, source_segments = assemble_crooked_block(
+        streets.get("features") or []
     )
     selected_collection = {
         "type": "FeatureCollection",
         "name": "lombard_hyde_to_leavenworth_centerline",
         "features": [selected],
     }
+    segments_collection = {
+        "type": "FeatureCollection",
+        "name": "lombard_hyde_to_leavenworth_source_segments",
+        "features": source_segments,
+    }
 
     source_bbox = bbox_of_line(selected)
     query_bbox = expand_wgs84_bbox(source_bbox, margin_m)
-    contour_where = within_box_where("the_geom", query_bbox)
+    contour_where = bbox_intersects_where("the_geom", query_bbox)
     contour_url = build_geojson_url(
         CONTOURS_DATASET_ID,
         where=contour_where,
@@ -208,11 +283,16 @@ def acquire(output_dir: Path, *, margin_m: float = 80.0) -> dict:
     contours = fetch_geojson(contour_url)
 
     centerline_path = output_dir / "centerline_wgs84.geojson"
+    segments_path = output_dir / "centerline_segments_wgs84.geojson"
     contours_path = output_dir / "contours_wgs84.geojson"
     manifest_path = output_dir / "acquisition.json"
 
     centerline_path.write_text(
         json.dumps(selected_collection, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    segments_path.write_text(
+        json.dumps(segments_collection, indent=2) + "\n",
         encoding="utf-8",
     )
     contours_path.write_text(
@@ -228,11 +308,14 @@ def acquire(output_dir: Path, *, margin_m: float = 80.0) -> dict:
         "centerline": {
             "dataset_id": STREETS_DATASET_ID,
             "request_url": urls["streets"],
-            "selected_cnn": prop(props, "cnn", "cnntext"),
-            "from_street": prop(props, "f_st", "from_st", "from_street"),
-            "to_street": prop(props, "t_st", "to_st", "to_street"),
+            "selected_cnns": props.get("earthforge_segment_cnns"),
+            "segment_count": props.get("earthforge_segment_count"),
+            "route_nodes": props.get("earthforge_route_nodes"),
+            "route_from": props.get("earthforge_route_from"),
+            "route_to": props.get("earthforge_route_to"),
             "source_bbox_wgs84": list(source_bbox),
             "output": centerline_path.name,
+            "segments_output": segments_path.name,
         },
         "contours": {
             "dataset_id": CONTOURS_DATASET_ID,
@@ -273,7 +356,7 @@ def main() -> int:
     result = acquire(args.output_dir, margin_m=args.margin_m)
     print(
         f"Wrote Lombard acquisition to {args.output_dir} | "
-        f"CNN {result['centerline']['selected_cnn']} | "
+        f"CNNs {','.join(result['centerline']['selected_cnns'] or [])} | "
         f"{result['contours']['feature_count']} contour features"
     )
     return 0

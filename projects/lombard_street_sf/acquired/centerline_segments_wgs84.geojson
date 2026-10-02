@@ -1,0 +1,256 @@
+{
+  "type": "FeatureCollection",
+  "name": "lombard_hyde_to_leavenworth_source_segments",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.419613973,
+            37.801994863
+          ],
+          [
+            -122.419529413,
+            37.801979011
+          ],
+          [
+            -122.419500421,
+            37.801973245
+          ],
+          [
+            -122.419474696,
+            37.801992375
+          ],
+          [
+            -122.419392865,
+            37.802072706
+          ],
+          [
+            -122.419359275,
+            37.802091963
+          ],
+          [
+            -122.419303805,
+            37.802076235
+          ],
+          [
+            -122.419220136,
+            37.801984044
+          ],
+          [
+            -122.419185849,
+            37.801976287
+          ],
+          [
+            -122.41914691,
+            37.801991473
+          ],
+          [
+            -122.419129262,
+            37.802018786
+          ],
+          [
+            -122.419068667,
+            37.802109166
+          ],
+          [
+            -122.419037645,
+            37.802126303
+          ],
+          [
+            -122.419003358,
+            37.802118545
+          ]
+        ]
+      },
+      "properties": {
+        "cnn": "8449000",
+        "lf_fadd": "1067.0",
+        "lf_toadd": "1099.0",
+        "rt_fadd": "1070.0",
+        "rt_toadd": "1098.0",
+        "street": "LOMBARD",
+        "st_type": "ST",
+        "f_st": "MONTCLAIR TER",
+        "t_st": "HYDE ST",
+        "f_node_cnn": "25568000.0",
+        "t_node_cnn": "25565000.0",
+        "accepted": true,
+        "active": true,
+        "classcode": "5",
+        "date_added": "1998-07-01T00:00:00.000",
+        "date_altered": "2000-06-12T00:00:00.000",
+        "date_dropped": null,
+        "gds_chg_id_add": null,
+        "gds_chg_id_altered": "2000-039",
+        "gds_chg_id_dropped": null,
+        "jurisdiction": "DPW",
+        "layer": "STREETS",
+        "nhood": "Russian Hill",
+        "oneway": "T",
+        "street_gc": "LOMBARD",
+        "streetname": "LOMBARD ST",
+        "streetname_gc": "LOMBARD ST",
+        "zip_code": "94109",
+        "analysis_neighborhood": "Russian Hill",
+        "supervisor_district": "3",
+        "data_as_of": "2026-10-02T03:56:00.000",
+        "data_loaded_at": "2026-10-02T10:34:01.496",
+        ":id": "row-grrm~ftyn_yyja",
+        ":version": "rv-qz5u-g4e6.nvdp",
+        ":created_at": "2026-10-02T17:34:11.720Z",
+        ":updated_at": "2026-10-02T17:34:11.720Z",
+        "earthforge_source_direction_reversed": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.419003358,
+            37.802118545
+          ],
+          [
+            -122.418966287,
+            37.802104596
+          ],
+          [
+            -122.418898722,
+            37.802026696
+          ],
+          [
+            -122.418874972,
+            37.802020845
+          ],
+          [
+            -122.418838493,
+            37.802029755
+          ],
+          [
+            -122.418818008,
+            37.802048798
+          ],
+          [
+            -122.418749766,
+            37.802147619
+          ],
+          [
+            -122.418718744,
+            37.802164755
+          ],
+          [
+            -122.418689966,
+            37.802167302
+          ],
+          [
+            -122.418658299,
+            37.802159501
+          ],
+          [
+            -122.418572118,
+            37.802071509
+          ],
+          [
+            -122.418553503,
+            37.802061417
+          ],
+          [
+            -122.418522105,
+            37.802064007
+          ],
+          [
+            -122.418496163,
+            37.802074824
+          ],
+          [
+            -122.418425407,
+            37.802177843
+          ],
+          [
+            -122.418405083,
+            37.802203121
+          ],
+          [
+            -122.418373899,
+            37.802214022
+          ],
+          [
+            -122.418339611,
+            37.802206265
+          ],
+          [
+            -122.418242625,
+            37.802105975
+          ],
+          [
+            -122.418216307,
+            37.802102245
+          ],
+          [
+            -122.418182772,
+            37.802123579
+          ],
+          [
+            -122.418056758,
+            37.802219181
+          ],
+          [
+            -122.418022793,
+            37.802223892
+          ],
+          [
+            -122.417998999,
+            37.802214914
+          ],
+          [
+            -122.417966229,
+            37.802201309
+          ]
+        ]
+      },
+      "properties": {
+        "cnn": "8448000",
+        "lf_fadd": "1001.0",
+        "lf_toadd": "1065.0",
+        "rt_fadd": "1000.0",
+        "rt_toadd": "1068.0",
+        "street": "LOMBARD",
+        "st_type": "ST",
+        "f_st": "LEAVENWORTH ST",
+        "t_st": "MONTCLAIR TER",
+        "f_node_cnn": "25530000.0",
+        "t_node_cnn": "25568000.0",
+        "accepted": true,
+        "active": true,
+        "classcode": "5",
+        "date_added": "1998-07-01T00:00:00.000",
+        "date_altered": "2000-06-12T00:00:00.000",
+        "date_dropped": null,
+        "gds_chg_id_add": null,
+        "gds_chg_id_altered": "2000-039",
+        "gds_chg_id_dropped": null,
+        "jurisdiction": "DPW",
+        "layer": "STREETS",
+        "nhood": "Russian Hill",
+        "oneway": "T",
+        "street_gc": "LOMBARD",
+        "streetname": "LOMBARD ST",
+        "streetname_gc": "LOMBARD ST",
+        "zip_code": "94109",
+        "analysis_neighborhood": "Russian Hill",
+        "supervisor_district": "3",
+        "data_as_of": "2026-10-02T03:56:00.000",
+        "data_loaded_at": "2026-10-02T10:34:01.496",
+        ":id": "row-esuj-5twc~9v4g",
+        ":version": "rv-z2c5-6mu4_2r32",
+        ":created_at": "2026-10-02T17:34:11.720Z",
+        ":updated_at": "2026-10-02T17:34:11.720Z",
+        "earthforge_source_direction_reversed": true
+      }
+    }
+  ]
+}
