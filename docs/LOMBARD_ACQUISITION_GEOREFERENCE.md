@@ -74,13 +74,7 @@ Outputs:
 After source acquisition and frame generation:
 
 ```powershell
-python .\pipeline\terrain\derive_profile_from_contours.py \
-  .\projects\lombard_street_sf\road_truth\centerline_local.json \
-  .\projects\lombard_street_sf\road_truth\contours_local.geojson \
-  .\projects\lombard_street_sf\road_truth\elevation_candidates.json \
-  --elevation-field elevation \
-  --elevation-unit feet \
-  --source-id datasf_elevation_contours_2026
+python .\pipeline\terrain\derive_profile_from_contours.py .\projects\lombard_street_sf\road_truth\centerline_local.json .\projects\lombard_street_sf\road_truth\contours_local.geojson .\projects\lombard_street_sf\road_truth\elevation_candidates.json --elevation-field elevation --elevation-unit feet --source-id datasf_elevation_contours_2026
 ```
 
 Contour intersections are candidate controls. They still need endpoint
