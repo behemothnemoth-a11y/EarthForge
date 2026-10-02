@@ -218,3 +218,26 @@ Reintroduce layers only after road acceptance, one layer at a time. The intended
 6. architecture and fine detail.
 
 A downstream layer may not silently alter previously accepted road geometry.
+
+## Review reference bundle rule
+
+Every Minecraft flyaround gate must include a small, purpose-built reference bundle so the user can judge reconstruction fidelity against the real site while reviewing the schematic.
+
+For each review artifact, prepare:
+- **1 aerial / plan reference** showing the feature in site context;
+- **1 street-level overview** showing how the feature reads at human scale;
+- **1–3 close detail references** focused on the exact layer being reviewed;
+- a short note saying what each image is meant to verify.
+
+The reference bundle should be selected for the current gate only. Do not flood the review with unrelated imagery.
+
+Examples:
+- road pass → aerial alignment + street-level road view + close paver detail;
+- curb pass → curb/road-edge close views + one wider hairpin view;
+- stairs pass → stair runs, landings, railings, retaining interfaces;
+- landscape pass → hedge/planter/terrace massing and spacing;
+- house pass → frontage, garage relationships, roofline and setback views.
+
+When possible, pair the Minecraft flyaround with the corresponding reference views side-by-side or in a compact comparison sheet.
+
+Raw licensed imagery remains private/ignored; committed review bundles should use redistributable references or metadata/pointers where required.
