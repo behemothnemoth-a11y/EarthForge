@@ -1,9 +1,9 @@
 {
   "schema_version": 8,
   "project_id": "lombard_sf",
-  "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "STAIRS_RETAINING_V004_REVIEW",
-  "milestone": "LOMBARD_STAIRS_RETAINING_V004",
+  "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
+  "status": "CORE_ISOLATION_V005_PREP",
+  "milestone": "LOMBARD_CORE_ISOLATION_V005",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -58,7 +58,7 @@
   },
   "microblocks": {
     "minimum_astra_version": "0.7.0",
-    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and fa\u00e7ade detail; vanilla blocks remain default bulk mass.",
+    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and façade detail; vanilla blocks remain default bulk mass.",
     "validation": "exact Astra block-entity and microcell readback required"
   },
   "validation": {
@@ -73,15 +73,15 @@
   "active_review_artifact": "projects/lombard_sf/outputs/stairs_retaining_v004/Lombard_Stairs_Retaining_Astra_v004.litematic",
   "active_generator": "pipeline/reconstruction/generate_lombard_stairs_retaining_v004.py",
   "review_gate": {
-    "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review mapped stair runs, landings, handrails, side retaining walls, and their relationship to the frozen v003 road/curb geometry.",
+    "required": "CORE_ISOLATION_REBUILD_THEN_USER_MINECRAFT_FLYAROUND",
+    "purpose": "Remove outer context that is obscuring review and finish the crooked-road core before reintroducing surroundings.",
     "notes": [
-      "stair run readability",
-      "landing size/placement",
-      "curb-to-stair transitions",
-      "retaining wall continuity",
-      "handrail placement",
-      "terrace structure"
+      "road/curb coherence",
+      "stairs and landings",
+      "retaining and planter continuity",
+      "terrace structure",
+      "areas that still do not make spatial sense"
     ]
-  }
+  },
+  "active_focus_config": "projects/lombard_sf/core_focus_v005.json"
 }
