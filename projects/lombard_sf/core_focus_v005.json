@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_CORE_ISOLATION_V005",
+  "purpose": "Temporarily isolate the crooked-road core so stairs, landings, retaining walls, terrace structure, curbs, and road geometry can be finished without outer context obscuring review.",
+  "keep": [
+    "complete crooked road Hyde-to-Leavenworth",
+    "road curb and planter/terrace edge system",
+    "mapped stairs and landings directly serving the crooked block",
+    "mapped handrails and footways directly serving the crooked block",
+    "retaining conditions tied to road or stair system",
+    "hedges/planting masses that define immediate terraces",
+    "shallow terrain shell needed to support visible core geometry",
+    "minimal endpoint tie-ins",
+    "permanent registration pad"
+  ],
+  "temporarily_exclude": [
+    "all bordering house/building massing",
+    "broad Hyde street context beyond minimal tie-in",
+    "broad Leavenworth street context beyond minimal tie-in",
+    "unrelated cross-street surfaces",
+    "outer terrain shelves not supporting the core",
+    "peripheral cable-car/context geometry unless required at the Hyde endpoint"
+  ],
+  "geometry_policy": {
+    "core_seed": "DataSF crooked ROW plus v003/v004 road/stair hardscape",
+    "terrain_rule": "Retain terrain only within the core corridor and around included hardscape, with a small support margin.",
+    "building_rule": "No building shells in the active core review artifact.",
+    "reintroduction_rule": "Outer context returns only after the core corridor passes flyaround review."
+  },
+  "next_artifact": "Lombard_Core_Isolation_Astra_v005.litematic",
+  "review_focus": [
+    "road/curb coherence",
+    "stairs and landing logic",
+    "retaining wall and planter continuity",
+    "terrace layering",
+    "places where geometry still makes no sense"
+  ]
+}
