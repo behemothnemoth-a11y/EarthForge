@@ -2,7 +2,7 @@
   "schema_version": 3,
   "project_id": "lombard_street_sf",
   "name": "Lombard Street - Hyde to Leavenworth",
-  "status": "road_truth_vertical_acquisition",
+  "status": "road_truth_surface_candidate",
   "milestone": "LOMBARD_ROAD_TRUTH_001",
   "coordinate_system": {
     "acquisition_crs": {
@@ -85,14 +85,22 @@
     "source_snapshot_acquired": true,
     "local_frame_locked": true,
     "centerline_locked": true,
-    "raw_lidar_profile_acquired": false,
+    "raw_lidar_profile_acquired": true,
     "elevation_profile_locked": false,
     "road_geometry_locked": false,
     "curbs_allowed": false,
     "sidewalks_allowed": false,
     "adjacent_sitework_allowed": false,
-    "buildings_allowed": false
+    "buildings_allowed": false,
+    "road_surface_candidate_generated": false
   },
   "road_truth_plan": "projects/lombard_street_sf/road_truth_plan.json",
-  "control_points": "projects/lombard_street_sf/control_points.json"
-}
+  "control_points": "projects/lombard_street_sf/control_points.json",
+  "terrain_processing": {
+    "raw_profile": "projects/lombard_street_sf/road_truth/lidar_profile_navd88.json",
+    "candidate_generator": "pipeline/terrain/derive_road_surface_profile.py",
+    "candidate_output": "projects/lombard_street_sf/road_truth/road_surface_candidate_v001.json",
+    "candidate_status": "pending_generation_and_review",
+    "rule": "Filtered/smoothed output is diagnostic until explicitly accepted; raw LiDAR remains immutable source evidence."
+  }
+}\n

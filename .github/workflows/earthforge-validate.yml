@@ -42,6 +42,9 @@ jobs:
       - name: Test Lombard LiDAR profile logic
         run: python tools/test_lidar_profile.py
 
+      - name: Test Lombard road-surface profile logic
+        run: python tools/test_road_surface_profile.py
+
       - name: Test 621 depth architecture
         run: python pipeline/reconstruction/generate_redfield_621_micro_depth_v003.py --self-test
 

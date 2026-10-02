@@ -25,3 +25,30 @@ for the generated Lombard road grade.
 
 Do not place stairs, terraces, landscaping, lots, or buildings into the
 authoritative pipeline before the road stages are accepted.
+
+
+## Road-surface interpretation
+
+Dense 1 m LiDAR sampling is source evidence, not automatically the drivable road
+surface. Very short interval spikes can be caused by raster cells, curb/edge
+capture, centerline offset, vehicles/objects, interpolation, or the fact that a
+mathematical centerline is not guaranteed to follow the smoothest wheel path.
+
+Use:
+
+```powershell
+python .\pipeline\terrain\derive_road_surface_profile.py
+```
+
+to generate `road_surface_candidate_v001.json`.
+
+That candidate:
+
+- preserves the raw LiDAR profile unchanged;
+- uses a short station-window median only to suppress isolated vertical spikes;
+- reports grades over a longer baseline;
+- flags extreme raw interval grades;
+- remains explicitly `review_candidate_not_locked`.
+
+Do not generate accepted Minecraft road elevation from the candidate until its
+turns, endpoints, and suspicious grade changes have been reviewed.
