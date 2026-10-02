@@ -1,0 +1,12 @@
+{
+  "yellow_marker": [
+    0,
+    -1,
+    0
+  ],
+  "stand_above_marker": true,
+  "placement_origin": "player feet",
+  "rotation": 0,
+  "mirror": "none",
+  "replace_blocks": "ALL"
+}

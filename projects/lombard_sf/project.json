@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "ROAD_CURB_TERRACE_V003_REVIEW",
-  "milestone": "LOMBARD_ROAD_CURB_TERRACE_V003",
+  "status": "STAIRS_RETAINING_V004_REVIEW",
+  "milestone": "LOMBARD_STAIRS_RETAINING_V004",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,18 +70,18 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/road_curb_terrace_v003/Lombard_Road_Curb_Terrace_Astra_v003.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_road_curb_terrace_v003.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/stairs_retaining_v004/Lombard_Stairs_Retaining_Astra_v004.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_stairs_retaining_v004.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review road width, hairpin flare, curb edge, and planter/retaining relationship with terrain and house massing frozen.",
+    "purpose": "Review mapped stair runs, landings, handrails, side retaining walls, and their relationship to the frozen v003 road/curb geometry.",
     "notes": [
-      "straight-run road width",
-      "hairpin flare",
-      "curb continuity",
-      "planter/retaining lips",
-      "stair-to-curb relationship",
-      "overall Lombard read"
+      "stair run readability",
+      "landing size/placement",
+      "curb-to-stair transitions",
+      "retaining wall continuity",
+      "handrail placement",
+      "terrace structure"
     ]
   }
 }
