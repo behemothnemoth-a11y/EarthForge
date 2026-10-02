@@ -17,8 +17,28 @@
         "null"
       ]
     },
+    "coordinate_space": {
+      "type": "string"
+    },
     "centerline": {
-      "type": "object"
+      "description": "Source or project-local road centerline. Project-local corridor input uses [[x,z], ...] meters.",
+      "oneOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      ]
     },
     "width_m": {
       "type": [
@@ -40,6 +60,70 @@
         "string",
         "null"
       ]
+    },
+    "sample_interval_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "elevation_profile": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "station_m",
+          "elevation_m"
+        ],
+        "properties": {
+          "station_m": {
+            "type": "number"
+          },
+          "elevation_m": {
+            "type": "number"
+          },
+          "source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "cross_section": {
+      "type": "object",
+      "properties": {
+        "roadway_width_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "curb_width_left_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "curb_width_right_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sidewalk_width_left_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sidewalk_width_right_m": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
     },
     "sources": {
       "type": "array"
