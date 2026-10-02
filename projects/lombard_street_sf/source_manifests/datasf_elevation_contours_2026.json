@@ -1,0 +1,19 @@
+{
+  "source_id": "datasf_elevation_contours_2026",
+  "provider": "DataSF",
+  "source_type": "official_gis_elevation_contours",
+  "url": "https://data.sf.gov/Energy-and-Environment/Elevation-Contours/6d73-6c4f",
+  "external_id": "6d73-6c4f",
+  "acquired_at": "2026-10-02",
+  "coverage": "San Francisco mainland and Treasure Island / Yerba Buena Island",
+  "license_note": "Open Data Commons Public Domain Dedication and License (PDDL 1.0) as published by DataSF.",
+  "redistributable": true,
+  "local_private_path": null,
+  "notes": [
+    "Five-foot elevation contours.",
+    "Based on the San Francisco Elevation Datum.",
+    "Current dataset exposes ELEVATION as numeric field and the_geom as line geometry.",
+    "Legacy DataSF identifier rnbg-2qxw is retained only as historical provenance; EarthForge acquisition uses current dataset 6d73-6c4f.",
+    "EarthForge fetches only a local bounding-box slice around the selected Lombard centerline."
+  ]
+}

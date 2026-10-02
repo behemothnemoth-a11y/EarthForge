@@ -1,0 +1,18 @@
+{
+  "source_id": "datasf_streets_active_retired_2026",
+  "provider": "San Francisco Public Works / DataSF",
+  "source_type": "official_street_centerline_network",
+  "url": "https://data.sf.gov/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h",
+  "external_id": "3psu-pn9h",
+  "acquired_at": "2026-10-02",
+  "coverage": "San Francisco active and retired street centerlines",
+  "license_note": "Open Data Commons Public Domain Dedication and License (PDDL 1.0) as published by DataSF/Data.gov.",
+  "redistributable": true,
+  "local_private_path": null,
+  "notes": [
+    "Department of Public Works basemap centerline network using CNN identifiers.",
+    "Dataset refreshes daily, though source geometry may not change every day.",
+    "EarthForge selects the active Lombard segment whose cross streets are Hyde and Leavenworth.",
+    "Acquisition records the exact request URL, selected CNN, and source snapshot metadata."
+  ]
+}

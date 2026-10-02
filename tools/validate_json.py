@@ -7,8 +7,13 @@ targets = [
     ROOT / "projects" / "redfield_sd" / "project.json",
     ROOT / "projects" / "redfield_sd" / "control_points.json",
     ROOT / "projects" / "redfield_sd" / "bounds.geojson",
+    ROOT / "projects" / "lombard_street_sf" / "project.json",
+    ROOT / "projects" / "lombard_street_sf" / "control_points.json",
+    ROOT / "projects" / "lombard_street_sf" / "road_truth_plan.json",
+    ROOT / "projects" / "lombard_street_sf" / "georeference_plan.json",
 ]
 targets += sorted((ROOT / "schemas").glob("*.json"))
+targets += sorted((ROOT / "projects" / "lombard_street_sf" / "source_manifests").glob("*.json"))
 
 failed = False
 for path in targets:

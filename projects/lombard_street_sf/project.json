@@ -1,32 +1,47 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project_id": "lombard_street_sf",
   "name": "Lombard Street - Hyde to Leavenworth",
   "status": "road_truth_acquisition",
   "milestone": "LOMBARD_ROAD_TRUTH_001",
   "coordinate_system": {
-    "source_crs": {
-      "status": "per_source_manifest"
+    "acquisition_crs": {
+      "epsg": 4326,
+      "name": "WGS 84",
+      "reason": "DataSF GeoJSON realization coordinates are acquired in longitude/latitude."
     },
-    "working_crs": {
-      "status": "pending_dataset_metadata_lock",
-      "units": "meters"
-    },
-    "canonical_axes": {
+    "working_frame": {
+      "status": "generated_from_acquired_centerline",
+      "method": "wgs84_local_tangent_first_order_ellipsoid",
+      "anchor": "Hyde endpoint of the selected Lombard centerline",
+      "units": "meters",
       "x_positive": "east",
       "z_positive": "south",
-      "y_positive": "up"
+      "output": "projects/lombard_street_sf/road_truth/locked_frame.json"
     },
     "minecraft": {
       "blocks_per_meter_horizontal": 1,
       "blocks_per_meter_vertical": 1,
-      "status": "output_adapter_only"
+      "status": "generated_output_adapter"
     }
   },
   "vertical_reference": {
-    "status": "source_backed_not_yet_locked",
-    "primary_candidate": "San Francisco Elevation Datum",
-    "source_manifest": "source_manifests/datasf_elevation_contours_2025.json"
+    "status": "source_identified_pending_profile_lock",
+    "source": "DataSF Elevation Contours",
+    "datum": "San Francisco Elevation Datum",
+    "source_unit": "feet",
+    "canonical_unit": "meters",
+    "source_manifest": "source_manifests/datasf_elevation_contours_2026.json"
+  },
+  "acquisition": {
+    "script": "pipeline/acquire/lombard_datasf.py",
+    "output_dir": "projects/lombard_street_sf/acquired",
+    "centerline_source": "source_manifests/datasf_streets_active_retired_2026.json",
+    "elevation_source": "source_manifests/datasf_elevation_contours_2026.json"
+  },
+  "georeference": {
+    "script": "pipeline/georeference/generate_lombard_frame.py",
+    "plan": "projects/lombard_street_sf/georeference_plan.json"
   },
   "scope": {
     "road": "Lombard Street",
@@ -50,6 +65,8 @@
   },
   "quality_gates": {
     "current_target": "ROAD_TRUTH",
+    "source_snapshot_acquired": false,
+    "local_frame_locked": false,
     "road_geometry_locked": false,
     "elevation_profile_locked": false,
     "curbs_allowed": false,

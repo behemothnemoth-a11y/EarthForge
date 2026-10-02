@@ -1,17 +1,17 @@
 {
-  "source_id": "datasf_elevation_contours_2025",
+  "source_id": "datasf_elevation_contours_2025_legacy",
   "provider": "DataSF",
-  "source_type": "official_gis_elevation_contours",
+  "source_type": "legacy_dataset_reference",
   "url": "https://data.sfgov.org/-/Elevation-Contours/rnbg-2qxw",
   "external_id": "rnbg-2qxw",
   "acquired_at": "2026-10-02",
-  "coverage": "San Francisco mainland and Treasure Island / Yerba Buena Island",
-  "license_note": "Verify dataset export metadata and applicable license before redistributing raw extracts.",
+  "coverage": "San Francisco elevation contours",
+  "license_note": "Legacy identifier retained for provenance only; current EarthForge acquisition uses dataset 6d73-6c4f.",
   "redistributable": null,
-  "local_private_path": "projects/lombard_street_sf/references/private/datasf_elevation/",
+  "local_private_path": null,
+  "superseded_by": "source_manifests/datasf_elevation_contours_2026.json",
   "notes": [
-    "DataSF describes this dataset as five-foot elevation contours.",
-    "Dataset is based on the San Francisco Elevation Datum.",
-    "Use structured contour geometry to derive road-station elevation controls after CRS / vertical-unit metadata are locked."
+    "Do not use this identifier for new acquisition.",
+    "Kept so earlier notes and external references remain understandable."
   ]
 }

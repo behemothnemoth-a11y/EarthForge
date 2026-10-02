@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "frame_id": "lombard_hyde_anchor_v001",
+  "status": "awaiting_acquired_centerline",
+  "source_coordinate_system": "EPSG:4326",
+  "canonical_coordinate_space": "project_local_meters",
+  "anchor": {
+    "role": "corridor_start_top",
+    "definition": "Hyde endpoint of the selected Lombard St centerline feature",
+    "longitude": null,
+    "latitude": null,
+    "rule": "Never fill from a guessed map click; derive from acquired centerline geometry."
+  },
+  "transform": {
+    "method": "wgs84_local_tangent_first_order_ellipsoid",
+    "ellipsoid": "WGS84",
+    "x_positive": "east",
+    "z_positive": "south",
+    "y_positive": "up"
+  },
+  "expected_outputs": [
+    "road_truth/locked_frame.json",
+    "road_truth/centerline_local.json",
+    "road_truth/contours_local.geojson"
+  ],
+  "next_step": {
+    "script": "pipeline/terrain/derive_profile_from_contours.py",
+    "elevation_field": "elevation",
+    "elevation_unit": "feet",
+    "source_id": "datasf_elevation_contours_2026"
+  }
+}
