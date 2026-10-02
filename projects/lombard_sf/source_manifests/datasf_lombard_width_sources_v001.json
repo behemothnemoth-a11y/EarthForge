@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "row_source": {
+    "dataset": "h8n7-e4ns",
+    "url": "https://data.sfgov.org/resource/h8n7-e4ns.json?%24select=cnn%2Ccnntext%2Cshape_area%2Cshape_leng%2Cdistance%2Cthe_geom&%24where=cnn+in+%288448000%2C8449000%29&%24limit=50",
+    "note": "2014 ROW analysis; not engineering survey accuracy"
+  },
+  "sidewalk_source": {
+    "dataset": "4g86-grxu",
+    "url": "https://data.sfgov.org/resource/4g86-grxu.json?%24select=cnn%2Cstreet%2Cst_type%2Cwidth_min%2Cwidth_reco%2Csidewalk_f%2Cside%2Cshape%2Cdata_as_of&%24where=cnn+in+%28%278448000%27%2C%278449000%27%29&%24limit=50",
+    "field_definition": "SIDEWALK_F is actual sidewalk width in feet; negative means variable, most zero means unknown"
+  },
+  "segments": {
+    "8448000": {
+      "actual_sidewalk_width_ft": 15.0,
+      "side": "Both",
+      "minimum_ft": 10.0,
+      "recommended_ft": 12.0,
+      "data_as_of": "2024-06-17T10:06:33.830"
+    },
+    "8449000": {
+      "actual_sidewalk_width_ft": 15.0,
+      "side": "Both",
+      "minimum_ft": 10.0,
+      "recommended_ft": 12.0,
+      "data_as_of": "2024-06-17T10:06:33.830"
+    }
+  },
+  "derived_row_geojson": "projects/lombard_sf/roads/datasf_row_lombard_v001.geojson",
+  "raw_local_file": "projects/lombard_sf/references/raw/datasf_lombard_width_sources_v001.json",
+  "raw_git_ignored": true
+}

@@ -1,0 +1,41 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 2,
+  "region_position": [
+    0,
+    -1,
+    0
+  ],
+  "region_size": [
+    95,
+    1,
+    52
+  ],
+  "volume": 4940,
+  "non_air_blocks": 426,
+  "tile_entities": 425,
+  "sha256": "8df6b17a86795d1f0fcf56fd332a7f55fe9e8c0ff6b65360651155ec5666ac11",
+  "schema_version": 1,
+  "slice_id": "LOMBARD_HYDE_MONTCLAIR_ROAD_001",
+  "status": "valid",
+  "astra_min_version": "0.7.0",
+  "astra_hosts": 425,
+  "occupied_microcells": 194590,
+  "exact_block_readback": true,
+  "exact_astra_host_set": true,
+  "exact_astra_microcell_readback": true,
+  "registration_marker": true,
+  "review_gate": "USER_MINECRAFT_FLYAROUND_REQUIRED",
+  "review_focus": [
+    "road footprint width",
+    "switchback spacing",
+    "curve shape",
+    "1:1 player-scale feel",
+    "whether this slice is large enough for productive review"
+  ],
+  "derivation_file": "projects/lombard_sf/slices/hyde_montclair_road_001/derivation.json"
+}

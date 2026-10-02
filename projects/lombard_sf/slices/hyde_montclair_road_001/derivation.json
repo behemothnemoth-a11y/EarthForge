@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "slice_id": "LOMBARD_HYDE_MONTCLAIR_ROAD_001",
+  "cnn": "8449000",
+  "scope": "Hyde Street node to Montclair Terrace node, complete CNN 8449000",
+  "working_crs": "EPSG:7131",
+  "minecraft_scale": "1 block = 1 meter; Astra cells = 1/16 meter",
+  "derivation": "DataSF ROW polygon h8n7-e4ns inset uniformly by DataSF SIDEWALK_F actual sidewalk width for CNN 8449000",
+  "actual_sidewalk_width_ft": 15.0,
+  "actual_sidewalk_width_m": 4.572,
+  "source_limitations": [
+    "ROW source is a 2014 analysis and explicitly not engineering survey accuracy.",
+    "SIDEWALK_F source reports 15 ft, Both.",
+    "This is a source-backed road-body candidate for Minecraft review, not final curb truth."
+  ],
+  "road_candidate_area_m2": 380.08767740811004,
+  "centerline_length_m": 74.50048885238024,
+  "local_bounds_m": [
+    13.97086622632196,
+    -13.35557992032409,
+    46.60904961241613,
+    3.5062656572190463
+  ],
+  "terrain_included": false,
+  "curb_detail_included": false,
+  "landscape_included": false
+}
