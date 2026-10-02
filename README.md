@@ -1,12 +1,10 @@
 # EarthForge
 
-EarthForge is a **1:1 real-world reconstruction pipeline and canonical world-data
-compiler**.
+EarthForge is a **1:1 real-world reconstruction pipeline and canonical world-data compiler**.
 
-Its job is to turn geographic, architectural, photographic, survey, and other
-reference evidence into reproducible world truth. Minecraft is the first
-renderer and validation environment, not the architectural ceiling of the
-project.
+Its job is to turn geographic, architectural, photographic, survey, and other reference evidence into reproducible world truth **and generate the user's Minecraft reconstruction from that truth**.
+
+Minecraft is the current primary realization target. The Minecraft build is not a separate handcrafted project that merely consults EarthForge: it is generated from EarthForge project state and should remain reproducible from the repository.
 
 EarthForge coordinates:
 
@@ -14,8 +12,8 @@ EarthForge coordinates:
 - reconstruction truth: building form, facade organization, roofs, interiors;
 - material/appearance evidence and confidence;
 - source provenance and licensing metadata;
-- output adapters for Minecraft, Astra Microblocks, future Micrology/native
-  world rendering, and preview/analysis formats.
+- deterministic Minecraft realization through normal blocks, Litematica, Astra Microblocks, and related build artifacts;
+- future adapters for Micrology/native world rendering and preview/analysis formats.
 
 ## Current proof-of-concept state
 
@@ -26,32 +24,41 @@ Current Redfield quality level: **L1_MICRO_ALPHA**.
 The repository also contains:
 
 - Fort Garry Hotel main-floor interior alpha work;
-- the generic Stage 3/4 road + terrain corridor core for measured grades,
-  road edges, curbs, and sidewalks;
+- Lombard Street road-truth work;
+- the generic Stage 3/4 road + terrain corridor core for measured grades, road edges, curbs, and sidewalks;
 - Litematica and Astra Microblocks output/compatibility paths.
-
-The Redfield pipeline remains the proving ground for deterministic acquisition,
-georeferencing, reconstruction, validation, and export. EarthForge should not
-special-case itself into Redfield or Minecraft assumptions as it grows.
 
 ## Core rule
 
-**EarthForge owns truth; output adapters own realization.**
+**EarthForge owns truth and generates the Minecraft build.**
 
-Canonical geometry should remain real-world, metric, traceable, and renderer
-independent. Minecraft block coordinates, Astra microblocks, meshes, or a
-future native engine representation are generated views of that truth.
+Canonical geometry should remain real-world, metric, traceable, and renderer independent, while Minecraft geometry is a deterministic realization of that state.
+
+Minecraft review is part of the loop:
+
+```text
+source evidence
+    ↓
+EarthForge canonical truth
+    ↓
+generated Minecraft realization
+    ↓
+in-game visual / spatial review
+    ↓
+correction written back into EarthForge
+    ↓
+regenerated Minecraft realization
+```
+
+A manual in-game correction is not considered authoritative until the corresponding correction is represented in EarthForge. The Minecraft world must not become a second source of truth that silently drifts away from the repository.
 
 ## Repository roles
 
-- **EarthForge**: world-scale orchestration, geospatial/reconstruction truth,
-  provenance, confidence, and reproducible derived data.
+- **EarthForge**: authoritative world-scale orchestration, geospatial/reconstruction truth, provenance, confidence, and generation state.
 - **Build Studio**: building/image reconstruction support.
-- **Astra Microblocks**: high-resolution geometry/detail for Minecraft and a
-  visual reference for future native rendering.
-- **Minecraft exporters**: world / schematic / Litematica realization.
-- **Future Micrology/native adapter**: consumes EarthForge world truth; runtime
-  physics/destruction remain engine concerns rather than EarthForge concerns.
+- **Astra Microblocks**: high-resolution Minecraft geometry/detail generated as part of the EarthForge realization path.
+- **Minecraft exporters**: world / schematic / Litematica realization generated from EarthForge.
+- **Future Micrology/native adapter**: consumes the same EarthForge truth; runtime physics/destruction remain engine concerns rather than EarthForge concerns.
 
 See:
 

@@ -1,6 +1,12 @@
 # Lombard Street - Hyde to Leavenworth
 
-This EarthForge project is the steep-street / constrained-urban stress case.
+This EarthForge project is the steep-street / constrained-urban stress case and the generator source for the user's Minecraft Lombard build.
+
+## Generation rule
+
+The Minecraft Lombard reconstruction is generated from this project.
+
+In-game review is expected and important, but a correction discovered in Minecraft must be written back into EarthForge and regenerated. Do not allow a manual world edit to become the only copy of accepted geometry.
 
 ## Locked scope
 
@@ -29,7 +35,7 @@ No approximate centerline coordinates, endpoint elevations, turn radii, curb hei
 
 The repository contains source manifests for the official SFCTA Lombard study and DataSF elevation contours. Exact geometry should be imported or measured from structured source data before generation.
 
-## Truth pipeline
+## Truth / generation loop
 
 official / structured source geometry
 -> project-local metric frame
@@ -37,5 +43,9 @@ official / structured source geometry
 -> contour / elevation intersections
 -> accepted elevation controls
 -> road corridor
+-> generated Minecraft road
+-> in-game review
+-> corrections written back to EarthForge
+-> regeneration
 -> curbs + sidewalks
 -> everything outward
