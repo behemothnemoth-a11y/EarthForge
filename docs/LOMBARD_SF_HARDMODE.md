@@ -139,3 +139,21 @@ Generate and review in verified stages:
 6. microblock refinement
 
 A failed or unresolved gate blocks downstream geometry generation.
+
+## Stress-build review loop
+
+Lombard is also the EarthForge workflow stress build. Do not skip ahead simply because the next pipeline stage is technically possible.
+
+For every meaningful reconstruction slice:
+1. gather/derive only the data needed for that slice;
+2. generate only that slice into a pasteable Minecraft artifact;
+3. paste it into the test world using the permanent registration convention;
+4. perform a player-scale flyaround / visual review;
+5. collect the user's notes;
+6. revise the slice until accepted;
+7. write the resulting lesson/rule back into EarthForge;
+8. only then proceed to the next slice.
+
+The purpose is to train and harden the pipeline through observed Minecraft results. Confidence to generate larger areas in one pass must be earned from repeated accepted slices, not assumed.
+
+Do not pre-build downstream geometry, even as hidden candidate output, unless the user explicitly asks for a rough whole-site blockout.
