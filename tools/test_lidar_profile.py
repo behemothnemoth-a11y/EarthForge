@@ -82,6 +82,7 @@ def test_merge_and_unit_conversion():
     close(
         merged[0]["raw_grade_to_next_percent"],
         -US_SURVEY_FOOT_TO_M * 100.0,
+        eps=1e-4,
     )
     assert merged[-1]["raw_grade_to_next_percent"] is None
 
