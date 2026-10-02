@@ -41,7 +41,7 @@ from pipeline.microblocks.astra_microblock_codec import (
 PROJECT=ROOT/"projects"/"lombard_sf"
 POC=PROJECT/"poc_001"
 RAW=PROJECT/"downloads"/"raw"
-OUT=PROJECT/"outputs"/"rough_fullsite_v001"
+OUT=PROJECT/"outputs"/"rough_fullsite_v002"
 
 TRUTH=POC/"l0_source_truth_v001.json"
 CENTER=POC/"l0_crooked_centerline_v001.json"
@@ -51,14 +51,15 @@ BUILDINGS=POC/"l2_building_source_truth_v002.json"
 GRID=RAW/"lombard_poc001_ground_grid_050cm_v001.npz"
 OSM=RAW/"osm_map_poc001.osm"
 
-NAME="Lombard_RoughFullSite_Astra_v001"
-REGION="LOMBARD_ROUGH_FULLSITE_ASTRA_V001"
+NAME="Lombard_RoughFullSite_Astra_v002"
+REGION="LOMBARD_ROUGH_FULLSITE_ASTRA_V002"
 DATA_VERSION=4903
 
 # Permanent project registration: outside the upper/west site.
 REG_LOCAL_X=-30.0
 REG_LOCAL_Z=-20.0
 BASE_Y=-42
+TERRAIN_SHELL_DEPTH_BLOCKS=4
 TERRAIN_CLIP=(-25.0,-70.0,170.0,50.0)
 
 STONE="minecraft:stone"
@@ -133,8 +134,11 @@ class Builder:
         sx=round(x-REG_LOCAL_X); sz=round(z-REG_LOCAL_Z)
         top_block=math.floor((top_micro-1)/16)
         cap=top_micro-top_block*16
-        # full bulk; top 1m below surface is dirt
-        for y in range(BASE_Y,top_block):
+        # Hollow terrain policy: preserve only a shallow structural shell under
+        # the visible surface. Deep buried fill does not contribute to the
+        # reconstruction and is intentionally omitted.
+        shell_bottom=max(BASE_Y, top_block-(TERRAIN_SHELL_DEPTH_BLOCKS-1))
+        for y in range(shell_bottom,top_block):
             self.blocks[(sx,y,sz)]=DIRT if y>=top_block-1 else STONE
         pos=(sx,top_block,sz)
         v=MicroVolume(DIRT)
@@ -584,7 +588,7 @@ def main():
         },
         "astra":{"host_count":len(b.hosts),"occupied_microcells":sum(v.occupied_count() for v in b.hosts.values()),"materials":sorted({m for v in b.hosts.values() for m in v.materials()})},
         "terrain":{"base_y_blocks":BASE_Y,"hyde_surface_y_blocks":0.0,"leavenworth_surface_y_blocks":round(-truth["crooked_road"]["endpoint_drop_m"],3)},
-        "validation":{"exact_block_readback":True,"exact_astra_cell_readback":True,"registration_marker":True,"buildings_generated":True,"roofs_generated":True,"interiors_generated":False,"in_game_review":False,"review_status":"ROUGH_FULLSITE_FLYAROUND_REQUIRED"},
+        "validation":{"exact_block_readback":True,"exact_astra_cell_readback":True,"registration_marker":True,"buildings_generated":True,"roofs_generated":True,"interiors_generated":False,"in_game_review":False,"review_status":"ROUGH_FULLSITE_HOLLOW_SHELL_FLYAROUND_REQUIRED"},
         "limitations":[
             "This is deliberately a rough full-site blockout for flyaround review, not final reconstruction truth.",
             "Crooked road width is a first-pass fit around the detailed centerline; DataSF Sidewalk Widths reports 15 ft actual width and the curb/road envelope remains an explicit refinement target.",

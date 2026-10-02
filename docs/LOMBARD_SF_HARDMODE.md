@@ -140,6 +140,10 @@ Generate and review in verified stages:
 
 A failed or unresolved gate blocks downstream geometry generation.
 
+### Terrain volume rule
+
+Default terrain realization should be a **shallow visible/structural shell**, not a solid mass down to an arbitrary base plane. Preserve enough depth for exposed cuts, retaining conditions, foundations, road support, stairs, and any area the player can see or enter. Omit deep buried fill that contributes nothing to the reconstruction. Full subterranean volume is opt-in only when the real site or gameplay requires it.
+
 ## Stress-build review loop
 
 Lombard is also the EarthForge workflow stress build. Do not skip ahead simply because the next pipeline stage is technically possible.

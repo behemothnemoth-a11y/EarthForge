@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "ROUGH_FULLSITE_ASTRA_REVIEW",
-  "milestone": "LOMBARD_ROUGH_FULLSITE_V001",
+  "status": "ROUGH_FULLSITE_ASTRA_REVIEW_HOLLOW_SHELL",
+  "milestone": "LOMBARD_ROUGH_FULLSITE_V002",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,11 +70,11 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/rough_fullsite_v001/Lombard_RoughFullSite_Astra_v001.litematic",
+  "active_review_artifact": "projects/lombard_sf/outputs/rough_fullsite_v002/Lombard_RoughFullSite_Astra_v002.litematic",
   "active_generator": "pipeline/reconstruction/generate_lombard_rough_fullsite_v001.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the rough full-site relationships before any refinement pass.",
+    "purpose": "Review same rough full-site geometry after buried-volume hollowing.",
     "notes": [
       "overall site scale",
       "hill/grade read",
