@@ -1,0 +1,11 @@
+{
+  "schematic_sha256": "545c56eda0174cf975b0796387317c3f7ef2218dec7e56dd2ee11dc73df2a493",
+  "bloom_cells": 99375,
+  "connected_components": 756,
+  "components_smaller_than_8_cells": 0,
+  "unsupported_components": 0,
+  "unsupported_examples": [],
+  "minimum_component_cells": 9,
+  "pass": true,
+  "limits": "Connectivity and structural support only; plant spacing and visual character still require flyaround."
+}

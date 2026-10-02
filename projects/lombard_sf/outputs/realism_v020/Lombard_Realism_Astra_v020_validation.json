@@ -1,0 +1,144 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50527,
+  "tile_entities": 50406,
+  "sha256": "545c56eda0174cf975b0796387317c3f7ef2218dec7e56dd2ee11dc73df2a493",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "untouched_hosts_preserved": true,
+    "vanilla_and_marker_preserved": true,
+    "accepted_pavement_occupancy_preserved": true,
+    "accepted_material_changes_only_flush_paint": true,
+    "paint_has_no_added_layer": true
+  },
+  "parent_sha256": "d825687d078156d74fca510235a8a1cc7b9ce31f6f3df10593d7e22a41d7074c",
+  "changes": {
+    "planting": 2504032,
+    "paint_overlay_removal": 24566,
+    "paint_surface_recolor": 24566,
+    "ground_color_only": 337295,
+    "context_ground_resampling": 3955447,
+    "building_group": 1397908,
+    "entry_apron_color": 636
+  },
+  "round_flower_heads": 869,
+  "shrubs": 589,
+  "flush_paint_columns": 24566,
+  "accepted_road_cells_checked": 1876518,
+  "accepted_road_cells_missing": 0,
+  "accepted_material_recolors": 20820,
+  "first_building_group": [
+    {
+      "id": "201006.0032105",
+      "address": "1040 Lombard",
+      "style": "blue_framed",
+      "front_edge_xz": [
+        [
+          76.68966116209049,
+          -26.416462344583124
+        ],
+        [
+          87.45953890646342,
+          -28.30818949220702
+        ]
+      ],
+      "photo": "Lombard_Street_(10064415846).jpg",
+      "identity_confidence": "visible 1040 garage number",
+      "dimensions": "mapped footprint and existing envelope; subdivisions and roof slopes provisional photo interpretation",
+      "entry_apron_recolored_cells": 636,
+      "entry_geometry": "existing ground retained; access levels require closer source evidence"
+    },
+    {
+      "id": "201006.0038369",
+      "address": "4 Montclair / neighbor west of 1040",
+      "style": "mansard",
+      "front_edge_xz": [
+        [
+          66.37117596238386,
+          -25.73762065777555
+        ],
+        [
+          74.81073424837086,
+          -27.14473162498325
+        ]
+      ],
+      "photo": "Lombard_Street_(10064415846).jpg",
+      "identity_confidence": "adjacency match; address association provisional",
+      "dimensions": "mapped footprint and existing envelope; subdivisions and roof slopes provisional photo interpretation",
+      "entry_apron_recolored_cells": 0,
+      "entry_geometry": "existing ground retained; access levels require closer source evidence"
+    }
+  ],
+  "ground_bands": {
+    "finding": "v017 surface quantization on sloped ground; geometry unchanged here",
+    "resolution_m": 0.0625,
+    "action": "non-horizontal low-contrast color variation; larger connected planting masses",
+    "unsupported_outer_ground": "No fabricated fill or boundary walls; unresolved v018 support gaps retained."
+  },
+  "hyde_red_endpoint": {
+    "finding": "Part of accepted v009 footprint; available photos do not establish exact replacement edge at Hyde",
+    "action": "Preserved pending a directly registered intersection reference"
+  },
+  "remaining": [
+    "unsourced patios and retaining levels",
+    "unsupported outer ground gaps",
+    "other building facades",
+    "exact roof and entry measurements",
+    "Hyde red apron material boundary"
+  ],
+  "review": "USER_FLYAROUND_REQUIRED",
+  "outer_ground": {
+    "columns_examined": 659999,
+    "supported_resampled": 659598,
+    "unsupported_preserved": 401,
+    "old_sampling_m": 0.25,
+    "new_sampling_m": 0.0625,
+    "source": "Original class-2 LiDAR TIN; 5m nearest / 20m triangle gates",
+    "max_absolute_height_change_m": 0.3125,
+    "new_scope_or_boundary_walls": false
+  },
+  "tiny_bloom_cells_replaced_with_leaves": 4,
+  "source_files": [
+    {
+      "path": "projects\\lombard_sf\\downloads\\raw\\lombard_poc001_lidar_roi_v001.npz",
+      "sha256": "87671f8c5e6ceeda94a4adcf22071b5d0ecb4c71992bdd3d74451072f9b15fe3"
+    },
+    {
+      "path": "projects\\lombard_sf\\outputs\\neighborhood_blockout_v018\\building_envelopes.geojson",
+      "sha256": "017a0bd236a79c2c2a4d7348b88d7a758573a7668909988d8a6d73054989f434"
+    },
+    {
+      "path": "projects\\lombard_sf\\outputs\\public_realm_v1\\surface_preview.npz",
+      "sha256": "e641297488dd6c9d24c1058f0c8779a6379ad91c3c6e06c3565d70c4215e4ca9"
+    }
+  ],
+  "photo_sources": {
+    "urls": [
+      "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064415846).jpg",
+      "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064478253).jpg"
+    ],
+    "credit": "Andrew Napier",
+    "license": "CC BY 2.0",
+    "raw_images_embedded": false
+  }
+}

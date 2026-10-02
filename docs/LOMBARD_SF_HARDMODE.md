@@ -1,5 +1,9 @@
 # Lombard SF Hard-Mode Reconstruction
 
+## Active review: integrated realism v020
+
+The current candidate is `realism_v020/Lombard_Realism_Astra_v020.litematic`. See `docs/LOMBARD_REALISM_V020.md` for changes, source limitations and mandatory audits. Older active-review statements below are historical. Accepted pavement occupancy is preserved, with a narrowly recorded paint recoloring exception. Stop for the user flyaround after installing the validated candidate.
+
 ## Active review — landscape forms v019
 
 The next realism pass refines existing bed plants and tree crowns with simple materials. It preserves v018 buildings and all non-botanical geometry. See `docs/LOMBARD_LANDSCAPE_REALISM_V019.md`; individual plant placement remains illustrative. Architectural details, ground-support gaps and paint overlays remain outstanding.

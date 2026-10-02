@@ -1,0 +1,11 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review connected blooms, flush crossings, finer outer ground and first two photo-led buildings.",
+  "notes": [
+    "Simple materials; no new photoreal texturing",
+    "Accepted road occupancy preserved; flush paint is a documented material-only exception",
+    "Unsupported context gaps and Hyde red apron boundary remain unresolved",
+    "Two building facades and roof interpretation are provisional, not surveyed",
+    "Same placement; rotation 0; mirror none; replace ALL including air"
+  ]
+}

@@ -99,6 +99,10 @@
     "using screenshots as coordinate truth when structured geometry exists",
     "copying Redfield-specific architectural assumptions into Lombard"
   ],
-  "active_generator": "pipeline/reconstruction/generate_lombard_landscape_v019.py",
-  "milestone_authorization": "2026-10-02: user requests realism work on the established neighborhood base, retaining the no-photoreal-texture constraint."
+  "active_generator": "pipeline/reconstruction/generate_lombard_realism_v020.py",
+  "milestone_authorization": "2026-10-02: user requested work on all five realism findings and a new Redfield full block; evidence limits remain explicit.",
+  "realism_validation_commands": [
+    "python tools/test_lombard_public_realm_v1.py --realism",
+    "python tools/test_lombard_realism_v020.py"
+  ]
 }

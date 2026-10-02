@@ -5,15 +5,18 @@ import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
 from pipeline.reconstruction.generate_lombard_terrain_repair_v016 import read
-LANDSCAPE='--landscape' in sys.argv
+REALISM='--realism' in sys.argv
+LANDSCAPE='--landscape' in sys.argv or REALISM
 BLOCKOUT='--blockout' in sys.argv or LANDSCAPE
-if LANDSCAPE:
+if REALISM:
+ from pipeline.reconstruction.generate_lombard_realism_v020 import OUT,NAME,REGION
+elif LANDSCAPE:
  from pipeline.reconstruction.generate_lombard_landscape_v019 import OUT,NAME,REGION
 elif BLOCKOUT:
  from pipeline.reconstruction.generate_lombard_neighborhood_v018 import OUT,NAME,REGION
 else:
  from pipeline.reconstruction.generate_lombard_public_realm_v1 import OUT,NAME,REGION
-PREFIX='Lombard_Landscape_V019' if LANDSCAPE else ('Lombard_Blockout_V018' if BLOCKOUT else 'Lombard_V1')
+PREFIX='Lombard_Realism_V020' if REALISM else ('Lombard_Landscape_V019' if LANDSCAPE else ('Lombard_Blockout_V018' if BLOCKOUT else 'Lombard_V1'))
 O=Path(sys.argv[1]) if len(sys.argv)>1 else OUT;O.mkdir(parents=True,exist_ok=True)
 blocks,hosts=read(OUT/f'{NAME}.litematic',REGION)
 materials=sorted({m for v in hosts.values() for m in v.cells if m is not None}|{str(s) for p,s in blocks.items() if p not in hosts})
@@ -71,15 +74,15 @@ for i in np.argsort(depth):
  polygon=xy[i]+projected[int(axes[i])]
  draw.polygon([tuple(v) for v in polygon],fill=tuple(colors[i]))
 font=lambda n:ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',n)
-draw.text((55,28),('LOMBARD / LANDSCAPE FORM PASS V019' if LANDSCAPE else ('LOMBARD / NEIGHBORHOOD BLOCKOUT' if BLOCKOUT else 'LOMBARD / COMPLETE PUBLIC REALM V1')),font=font(42),fill='#173a36')
-draw.text((58,87),('Rounded flowering shrubs and varied tree crowns / Simple colors / Buildings and hardscape preserved' if LANDSCAPE else ('City footprints and height envelopes / Plain materials / Existing corridor preserved' if BLOCKOUT else 'Full crooked block / No houses / Existing 50m endpoint streets')),font=font(25),fill='#526a64')
+draw.text((55,28),('LOMBARD / REALISM REVIEW V020' if REALISM else 'LOMBARD / LANDSCAPE FORM PASS V019' if LANDSCAPE else ('LOMBARD / NEIGHBORHOOD BLOCKOUT' if BLOCKOUT else 'LOMBARD / COMPLETE PUBLIC REALM V1')),font=font(42),fill='#173a36')
+draw.text((58,87),('Round blooms / Flush crossings / Finer outer ground / First photo-led building group' if REALISM else 'Rounded flowering shrubs and varied tree crowns / Simple colors / Buildings and hardscape preserved' if LANDSCAPE else ('City footprints and height envelopes / Plain materials / Existing corridor preserved' if BLOCKOUT else 'Full crooked block / No houses / Existing 50m endpoint streets')),font=font(25),fill='#526a64')
 draw.text((58,H-67),'Decoded schematic preview at 0.25 m display sampling. Geometry and export validation remain at 1/16 m.',font=font(23),fill='#526a64')
 image.save(O/f'{PREFIX}_Overview.png')
 # Plan from the same decoded volume: the highest visible surface in each column.
 iy=np.max(np.where(occupied,np.arange(array.shape[0])[:,None,None],-1),axis=0)
 iz,ix=np.indices(iy.shape);ids=array[np.maximum(iy,0),iz,ix];rgb=palette[ids];rgb[iy<0]=(237,240,233)
 plan=Image.fromarray(rgb).resize((rgb.shape[1]*3,rgb.shape[0]*3),Image.Resampling.NEAREST)
-canvas=Image.new('RGB',(plan.width,plan.height+120),'#edf0e9');canvas.paste(plan,(0,105));dr=ImageDraw.Draw(canvas);dr.text((24,16),('Lombard v019 / landscape form plan' if LANDSCAPE else ('Lombard v018 / neighborhood massing plan' if BLOCKOUT else 'Lombard V1 / decoded schematic plan')),font=font(35),fill='#173a36');dr.text((24,61),('North is up; Hyde at left. Flat caps indicate height envelopes, not verified roof forms.' if BLOCKOUT else 'North is up; Hyde at left, Leavenworth at right. Buildings intentionally absent.'),font=font(22),fill='#526a64');canvas.save(O/f'{PREFIX}_Plan.png')
+canvas=Image.new('RGB',(plan.width,plan.height+120),'#edf0e9');canvas.paste(plan,(0,105));dr=ImageDraw.Draw(canvas);dr.text((24,16),('Lombard v020 / realism review plan' if REALISM else 'Lombard v019 / landscape form plan' if LANDSCAPE else ('Lombard v018 / neighborhood massing plan' if BLOCKOUT else 'Lombard V1 / decoded schematic plan')),font=font(35),fill='#173a36');dr.text((24,61),('North is up; Hyde at left. Flat caps indicate height envelopes, not verified roof forms.' if BLOCKOUT else 'North is up; Hyde at left, Leavenworth at right. Buildings intentionally absent.'),font=font(22),fill='#526a64');canvas.save(O/f'{PREFIX}_Plan.png')
 for filename in [f'{PREFIX}_Overview.png',f'{PREFIX}_Plan.png']:
  import shutil
  if O.resolve()!=OUT.resolve():shutil.copy2(O/filename,OUT/filename)

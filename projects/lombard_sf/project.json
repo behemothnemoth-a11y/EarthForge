@@ -70,20 +70,21 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/landscape_realism_v019/Lombard_Landscape_Realism_Astra_v019.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_landscape_v019.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/realism_v020/Lombard_Realism_Astra_v020.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_realism_v020.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review rounded flowering shrub forms and varied existing tree crowns at walking height.",
+    "purpose": "Review connected blooms, flush crossings, finer outer ground and first two photo-led buildings.",
     "notes": [
-      "Simple materials, no photoreal texture pass",
-      "Building architecture and ground/support gaps remain separate pending work",
-      "Roads, curbs, stairs, rails, buildings, ground, mapped hedges and tree trunks preserved",
+      "Simple materials; no new photoreal texturing",
+      "Accepted road occupancy preserved; flush paint is a documented material-only exception",
+      "Unsupported context gaps and Hyde red apron boundary remain unresolved",
+      "Two building facades and roof interpretation are provisional, not surveyed",
       "Same placement; rotation 0; mirror none; replace ALL including air"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/landscape_realism_focus_v019.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/landscape_realism_v019/Lombard_Landscape_V019_Overview.png",
+  "active_focus_config": "projects/lombard_sf/realism_focus_v020.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/realism_v020/Lombard_Realism_V020_Overview.png",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
