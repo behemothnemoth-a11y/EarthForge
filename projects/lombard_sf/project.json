@@ -71,7 +71,7 @@
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
   "active_review_artifact": "projects/lombard_sf/outputs/stairs_retaining_v004/Lombard_Stairs_Retaining_Astra_v004.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_stairs_retaining_v004.py",
+  "active_generator": "pipeline/reconstruction/generate_lombard_core_isolation_v005.py",
   "review_gate": {
     "required": "CORE_ISOLATION_REBUILD_THEN_USER_MINECRAFT_FLYAROUND",
     "purpose": "Remove outer context that is obscuring review and finish the crooked-road core before reintroducing surroundings.",
