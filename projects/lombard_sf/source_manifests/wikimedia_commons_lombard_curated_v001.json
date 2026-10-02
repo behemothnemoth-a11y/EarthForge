@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "source_id": "wikimedia_commons_lombard_curated_v001",
+  "created": "2026-10-01",
+  "purpose": "Curated visual evidence for Lombard POC hardscape and later architecture; working images remain private even where reuse license permits.",
+  "items": [
+    {
+      "index": 7,
+      "title": "File:Crooked Section of Lombard Street.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ACrooked_Section_of_Lombard_Street.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Crooked_Section_of_Lombard_Street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/007_Crooked_Section_of_Lombard_Street.jpg.jpg",
+      "artist": "Cornflower123",
+      "license_short_name": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "credit": "Own work",
+      "description": "Cars traversing the crooked section of Lombard Street in the Russian Hill neighborhood of San Francisco.",
+      "date_time_original": "2024-02-16 16:39:23",
+      "priority": "high",
+      "supports": [
+        "red-brick road material",
+        "light concrete curb/planter edges",
+        "black metal stair rails",
+        "turn-scale vehicle fit",
+        "adjacent house context"
+      ],
+      "notes": "Close crooked-block view with road, curb, garden edge and pedestrian rail in the same frame."
+    },
+    {
+      "index": 21,
+      "title": "File:Lombard Street (10064415846).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064415846%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lombard_Street_%2810064415846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/021_Lombard_Street_10064415846_.jpg.jpg",
+      "artist": "Andrew Napier",
+      "license_short_name": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "credit": "Lombard Street",
+      "description": "Lombard Street",
+      "date_time_original": "2013-10-02 14:15",
+      "priority": "high",
+      "supports": [
+        "1040 Lombard visual identity",
+        "garden terraces",
+        "brick planter/retaining edges",
+        "stair railings",
+        "hedge/tree massing"
+      ],
+      "notes": "Strong house + garden composition reference on crooked block."
+    },
+    {
+      "index": 22,
+      "title": "File:Lombard Street (10064478253).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Lombard_Street_%2810064478253%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/022_Lombard_Street_10064478253_.jpg.jpg",
+      "artist": "Andrew Napier",
+      "license_short_name": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "credit": "Lombard Street",
+      "description": "Lombard Street",
+      "date_time_original": "2013-10-02 14:10",
+      "priority": "high",
+      "supports": [
+        "full-block uphill visual rhythm",
+        "north/south house massing relationship",
+        "stair corridors",
+        "hedge terraces",
+        "overhead utility wires"
+      ],
+      "notes": "Excellent bottom-up overview tying buildings to hardscape."
+    },
+    {
+      "index": 24,
+      "title": "File:Lombard Street (5102863893).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%285102863893%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Lombard_Street_%285102863893%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/024_Lombard_Street_5102863893_.jpg.jpg",
+      "artist": "Toi & Moi from au bord de la mer M\u00e9diterran\u00e9e, France",
+      "license_short_name": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "credit": "Lombard Street",
+      "description": "la rue la plus sinueuse avec ses 10 virages entre la Hyde Street et Leavenworth",
+      "date_time_original": "2010-09-30 18:19",
+      "priority": "high",
+      "supports": [
+        "garden density",
+        "road/planter relationship",
+        "tree massing",
+        "curb profile",
+        "pedestrian stair context"
+      ],
+      "notes": "Strong uphill garden/road view."
+    },
+    {
+      "index": 33,
+      "title": "File:Lombard Street Cherry Blossom.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_Cherry_Blossom.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Lombard_Street_Cherry_Blossom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/033_Lombard_Street_Cherry_Blossom.jpg.jpg",
+      "artist": "Cornflower123",
+      "license_short_name": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "credit": "Own work",
+      "description": "Cars traversing the crooked section of Lombard Street in the Russian Hill neighborhood of San Francisco.",
+      "date_time_original": "2024-02-16 16:36:09",
+      "priority": "medium_high",
+      "supports": [
+        "low retaining wall profile",
+        "upper garden edge",
+        "house setbacks",
+        "tree/hedge layering"
+      ],
+      "notes": "Useful for wall/planting scale."
+    },
+    {
+      "index": 49,
+      "title": "File:Lombard Street-Coit Tower-San Francisco-2.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street-Coit_Tower-San_Francisco-2.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Lombard_Street-Coit_Tower-San_Francisco-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/049_Lombard_Street-Coit_Tower-San_Francisco-2.jpg.jpg",
+      "artist": "Yair-haklai",
+      "license_short_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Own work",
+      "description": "Lombard Street-Coit Tower-San Francisco",
+      "date_time_original": "2012-06-04 20:42:23",
+      "priority": "high",
+      "supports": [
+        "one hairpin geometry",
+        "garden planter edge",
+        "house placement",
+        "hedge height"
+      ],
+      "notes": "High-value partial plan/oblique view."
+    },
+    {
+      "index": 31,
+      "title": "File:Lombard Street - panoramio (9).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_-_panoramio_%289%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lombard_Street_-_panoramio_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/031_Lombard_Street_-_panoramio_9_.jpg.jpg",
+      "artist": "Dan Dascalescu",
+      "license_short_name": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "https://web.archive.org/web/20161031151259/http://www.panoramio.com/photo/106864815",
+      "description": "Lombard Street",
+      "date_time_original": "Taken on 7 May 2014",
+      "priority": "medium",
+      "supports": [
+        "concrete stair tread profile",
+        "black metal handrail",
+        "building/stair setback"
+      ],
+      "notes": "Stair detail; location association should be visually cross-checked before exact placement."
+    },
+    {
+      "index": 25,
+      "title": "File:Lombard Street (San Francisco)-View July 2022.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%28San_Francisco%29-View_July_2022.JPG",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Lombard_Street_%28San_Francisco%29-View_July_2022.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "private_file": "references/private/wikimedia_commons/025_Lombard_Street_San_Francisco_-View_July_2022.JPG.jpg",
+      "artist": "Beno\u00eet Prieur",
+      "license_short_name": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "credit": "Own work",
+      "description": "Lombard Street (San Francisco) View July 2022",
+      "date_time_original": "2022-07-20 15:54:20",
+      "priority": "medium",
+      "supports": [
+        "Russian Hill street grade context",
+        "street tree/parking scale"
+      ],
+      "notes": "Broader neighborhood slope/context rather than crooked-block geometry."
+    }
+  ],
+  "locked_visual_facts": [
+    "crooked roadway is red brick/paver surface",
+    "curb/low planter edges are predominantly light concrete or light masonry",
+    "pedestrian stair rails are black/dark metal",
+    "landscape is dense layered hedge/flower/tree mass rather than flat grass",
+    "houses sit immediately against steep terraced public/private edges"
+  ],
+  "cautions": [
+    "Do not infer exact planter/wall dimensions from perspective photos alone.",
+    "Do not assign a facade to a DataSF footprint solely from visual resemblance; use spatial/address evidence.",
+    "Vegetation changes seasonally and should be treated as massing/character unless a current source is available."
+  ]
+}

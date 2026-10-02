@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "raw_policy": "Google captures remain private/ignored; commit pano IDs/dates/headings and derived observations only.",
+  "targets": [
+    {
+      "id": "curve_00",
+      "road_node_index": 0,
+      "local_x_m": 0.0,
+      "local_z_m": 0.0,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_01",
+      "road_node_index": 20,
+      "local_x_m": 25.155852704658173,
+      "local_z_m": -10.76343454606831,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_02",
+      "road_node_index": 40,
+      "local_x_m": 43.026357459137216,
+      "local_z_m": -3.8510726601816714,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_03",
+      "road_node_index": 60,
+      "local_x_m": 56.53947241115384,
+      "local_z_m": -13.865443554706872,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_04",
+      "road_node_index": 80,
+      "local_x_m": 74.66703852720093,
+      "local_z_m": -16.585560403764248,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_05",
+      "road_node_index": 100,
+      "local_x_m": 91.20298741245642,
+      "local_z_m": -11.928467433899641,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_06",
+      "road_node_index": 120,
+      "local_x_m": 104.61874795379117,
+      "local_z_m": -23.429097581654787,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_07",
+      "road_node_index": 140,
+      "local_x_m": 123.54670338483993,
+      "local_z_m": -14.947941014077514,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    },
+    {
+      "id": "curve_08",
+      "road_node_index": 156,
+      "local_x_m": 144.51194851996843,
+      "local_z_m": -25.685663130134344,
+      "purpose": [
+        "road_width",
+        "curb",
+        "planter",
+        "retaining_edge",
+        "stairs",
+        "adjacent_house_context"
+      ],
+      "status": "pending_private_capture"
+    }
+  ]
+}

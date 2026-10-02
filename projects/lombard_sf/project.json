@@ -1,16 +1,17 @@
 {
   "schema_version": 8,
   "project_id": "lombard_sf",
-  "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
-  "status": "L0_SITE_TRUTH_ACQUISITION",
-  "milestone": "LOMBARD_L0_SITE_FRAME",
+  "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
+  "status": "ROUGH_FULLSITE_ASTRA_REVIEW",
+  "milestone": "LOMBARD_ROUGH_FULLSITE_V001",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
     "working_crs": "NAD83(2011) / San Francisco CS13 meters (EPSG:7131) preferred for city geometry",
     "anchor": {
-      "status": "provisional_pending_city_gis_lock",
-      "definition": "Hyde Street / Lombard Street control at west/top end; exact project origin will be locked only after city GIS/LiDAR cross-check."
+      "status": "rough_review_locked_not_final_survey",
+      "definition": "Hyde/Lombard anchor from recovered Lombard source truth (OSM node 65360287 / EPSG:3717), cross-checked against DataSF street centerline; preserve for rough review revisions until an explicit frame correction is approved.",
+      "output_file": "projects/lombard_sf/poc_001/l0_source_truth_v001.json"
     },
     "minecraft": {
       "blocks_per_meter_horizontal": 1,
@@ -57,7 +58,7 @@
   },
   "microblocks": {
     "minimum_astra_version": "0.7.0",
-    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and façade detail; vanilla blocks remain default bulk mass.",
+    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and fa\u00e7ade detail; vanilla blocks remain default bulk mass.",
     "validation": "exact Astra block-entity and microcell readback required"
   },
   "validation": {
@@ -68,5 +69,19 @@
     "provenance_and_confidence_required": true,
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
+  },
+  "active_review_artifact": "projects/lombard_sf/outputs/rough_fullsite_v001/Lombard_RoughFullSite_Astra_v001.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_rough_fullsite_v001.py",
+  "review_gate": {
+    "required": "USER_MINECRAFT_FLYAROUND",
+    "purpose": "Review the rough full-site relationships before any refinement pass.",
+    "notes": [
+      "overall site scale",
+      "hill/grade read",
+      "eight-turn road shape and width",
+      "stairs/terraces/retaining relationships",
+      "landscape massing",
+      "house placement/height massing"
+    ]
   }
 }

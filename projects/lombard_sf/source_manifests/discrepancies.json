@@ -29,12 +29,24 @@
       "id": "LOM_DISC_003",
       "topic": "Hyde control",
       "sources": [
-        "maplogs_hyde_lombard_2026",
-        "city GIS pending"
+        "osm_poc001",
+        "datasf_streets_active_retired_3psu-pn9h"
       ],
-      "status": "open",
-      "issue": "Provisional third-party Hyde/Lombard point exists, but authoritative city centerline/ROW intersection has not yet been ingested.",
-      "impact": "Project anchor remains provisional."
+      "status": "resolved_for_rough_review",
+      "issue": "Recovered OSM Hyde/Lombard anchor and DataSF street-centerline Hyde node differ by 1.430 m.",
+      "impact": "Preserve recovered source-truth frame for the rough review build; revisit only if later survey/curb evidence justifies a frame correction."
+    },
+    {
+      "id": "LOM_DISC_004",
+      "topic": "road and sidewalk envelope",
+      "sources": [
+        "datasf_row",
+        "datasf_sidewalk",
+        "recovered_l1_hardscape_policy"
+      ],
+      "status": "open_review_priority",
+      "issue": "DataSF SIDEWALK_F reports 15 ft actual sidewalk width on both crooked CNN segments, while the recovered hardscape policy used a 10 ft minimum side corridor / approximately 5.5 m road ribbon.",
+      "impact": "The rough full-site v001 road/curb envelope is intentionally provisional. Flyaround and imagery/ROW reconciliation must refine road width, curb lines, planter edges and stair-side relationships before promotion."
     }
   ]
 }

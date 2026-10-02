@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "source_id": "lombard_sf_poc001_multisource_v001",
+  "created": "2026-10-01",
+  "coverage": "Lombard crooked block, Hyde to Leavenworth",
+  "sources": [
+    {
+      "id": "osm_poc001",
+      "provider": "OpenStreetMap contributors",
+      "class": "structured_gis",
+      "status": "acquired",
+      "license": "ODbL",
+      "use": [
+        "crooked road centerline",
+        "steps/footways",
+        "hedges",
+        "railway/cable-car alignments",
+        "building/context topology"
+      ],
+      "local_private": "projects/lombard_sf/downloads/raw/osm_map_poc001.osm"
+    },
+    {
+      "id": "datasf_building_footprints",
+      "provider": "City and County of San Francisco / SFGIS",
+      "class": "building_footprints_lidar_stats",
+      "dataset": "ynuv-fyni",
+      "status": "acquired_subset",
+      "license": "PDDL/public-domain dedication",
+      "use": [
+        "building footprints",
+        "ground and first-return LiDAR statistics",
+        "future L2 building height cross-check"
+      ]
+    },
+    {
+      "id": "datasf_contours",
+      "provider": "City and County of San Francisco / SFGIS",
+      "class": "5ft_elevation_contours",
+      "dataset": "6d73-6c4f",
+      "status": "acquired_subset",
+      "use": [
+        "terrain cross-check"
+      ]
+    },
+    {
+      "id": "datasf_streets",
+      "provider": "City and County of San Francisco / SFGIS",
+      "class": "street_centerline",
+      "dataset": "3psu-pn9h",
+      "status": "acquired",
+      "use": [
+        "official active street segments/CNNs",
+        "street naming and direction cross-check"
+      ]
+    },
+    {
+      "id": "datasf_row",
+      "provider": "San Francisco Public Works",
+      "class": "right_of_way_polygons",
+      "dataset": "h8n7-e4ns",
+      "status": "acquired_subset",
+      "use": [
+        "public ROW envelope",
+        "crooked-block hardscape width"
+      ]
+    },
+    {
+      "id": "datasf_sidewalk",
+      "provider": "SFMTA",
+      "class": "sidewalk_widths_2014",
+      "dataset": "4g86-grxu",
+      "status": "acquired",
+      "use": [
+        "sidewalk/stair corridor width cross-check"
+      ],
+      "note": "Crooked-block records show 10 ft minimum / 12 ft recommended on both sides."
+    },
+    {
+      "id": "noaa_usgs_lidar_2010",
+      "provider": "NOAA Digital Coast / USGS",
+      "class": "classified_lidar",
+      "status": "acquired_exact_tile_and_roi",
+      "tile": "20100225_C5505_41835_ld_p1005.copc.laz",
+      "crs": "EPSG:3717 + NAVD88",
+      "point_density_source": "2010 San Francisco Bay lidar",
+      "use": [
+        "terrain",
+        "road grade",
+        "stairs/terraces",
+        "future roof/building height"
+      ]
+    },
+    {
+      "id": "sfcta_lombard_2017",
+      "provider": "San Francisco County Transportation Authority",
+      "class": "official_study",
+      "status": "acquired",
+      "url": "https://www.sfcta.org/projects/lombard-crooked-street",
+      "use": [
+        "block limits",
+        "circulation",
+        "official study diagrams and context"
+      ]
+    },
+    {
+      "id": "esri_world_imagery",
+      "provider": "Esri World Imagery contributors",
+      "class": "aerial_imagery",
+      "status": "acquired_private_reference",
+      "redistributable": false,
+      "use": [
+        "road edge/planter/roof visual cross-check"
+      ],
+      "private_file": "projects/lombard_sf/references/private/esri/lombard_poc001_world_imagery.jpg"
+    },
+    {
+      "id": "kartaview",
+      "provider": "KartaView/OpenStreetCam",
+      "class": "street_level_imagery",
+      "status": "partial_2016_Hyde_coverage",
+      "use": [
+        "Hyde/top context"
+      ],
+      "private_metadata": "projects/lombard_sf/downloads/raw/kartaview_nearby.json"
+    },
+    {
+      "id": "google_street_view",
+      "provider": "Google Maps / Street View",
+      "class": "street_level_imagery",
+      "status": "capture_plan_pending",
+      "redistributable": false,
+      "use": [
+        "current road/curb/stair/planter and house visual verification"
+      ],
+      "private_path": "projects/lombard_sf/references/private/google/"
+    },
+    {
+      "id": "datasf_dpw_roadway_structures",
+      "provider": "San Francisco Public Works / DataSF",
+      "class": "maintained_roadway_structure_asset",
+      "dataset": "x5tj-txci",
+      "status": "official_asset_verified",
+      "asset_id": "22",
+      "asset_desc": "LOMBARD ST ROADWAY",
+      "onstreet": "LOMBARD ST.",
+      "fromstreet": "HYDE ST.",
+      "tostreet": "LEAVENWORTH ST.",
+      "latitude": 37.802119,
+      "longitude": -122.418773,
+      "use": [
+        "official confirmation that the Hyde-to-Leavenworth crooked block is a maintained roadway structure",
+        "hardscape scope cross-check"
+      ]
+    },
+    {
+      "id": "wikimedia_commons_lombard",
+      "provider": "Wikimedia Commons contributors",
+      "class": "freely_licensed_street_and_architecture_photos",
+      "status": "50_category_images_acquired_and_8_curated",
+      "manifest": "projects/lombard_sf/source_manifests/wikimedia_commons_lombard_v001.json",
+      "curated_manifest": "projects/lombard_sf/source_manifests/wikimedia_commons_lombard_curated_v001.json",
+      "use": [
+        "road/curb/retaining-wall visual character",
+        "stairs and handrails",
+        "garden massing",
+        "house visual context"
+      ]
+    }
+  ],
+  "measured_truth": {
+    "hyde_top_navd88_m": 85.86895648637517,
+    "leavenworth_bottom_navd88_m": 53.01895648637517,
+    "endpoint_drop_m": 32.85,
+    "straight_control_distance_m": 146.7768938064597,
+    "lidar_endpoint_grade_percent": 22.380906931656476,
+    "osm_crooked_centerline_length_m": 197.38971985075952,
+    "road_node_count": 157
+  },
+  "policy": {
+    "geometry_precedence": [
+      "NOAA/USGS LiDAR terrain",
+      "DataSF ROW/street geometry",
+      "OSM detailed hardscape geometry",
+      "aerial/street-level visual correction"
+    ],
+    "licensed_raw_imagery": "private/gitignored only"
+  },
+  "next_actions": [
+    "In-game review L1 terrain/hardscape v002 before generating houses.",
+    "Use curated Commons/current Street View references to refine only visually confirmed wall/planter profiles.",
+    "After L1 approval, map DataSF structures to addresses and create L2 massing with footprint + LiDAR heights before facade detail."
+  ]
+}
