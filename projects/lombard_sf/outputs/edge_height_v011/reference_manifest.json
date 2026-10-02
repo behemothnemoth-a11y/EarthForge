@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_EDGE_HEIGHT_V011",
+  "purpose": "Reference bundle for local edge-height review.",
+  "correction_map": "Lombard_Edge_Height_v011_correction_map.png",
+  "raised_rule": "0.125-0.50m terrace excess above standard curb",
+  "deferred_rule": ">0.50m excess deferred to retaining-wall pass",
+  "items": [
+    {
+      "role": "road/planter edge",
+      "title": "File:Crooked Section of Lombard Street.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ACrooked_Section_of_Lombard_Street.jpg",
+      "license": "CC0",
+      "verify": "curb-to-low-wall transition"
+    },
+    {
+      "role": "low retaining profile",
+      "title": "File:Lombard Street Cherry Blossom.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_Cherry_Blossom.jpg",
+      "license": "CC0",
+      "verify": "where curb becomes planter wall"
+    },
+    {
+      "role": "hairpin edge",
+      "title": "File:Lombard Street-Coit Tower-San Francisco-2.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street-Coit_Tower-San_Francisco-2.jpg",
+      "license": "CC BY-SA 4.0",
+      "verify": "wall height versus terrace level"
+    }
+  ]
+}
