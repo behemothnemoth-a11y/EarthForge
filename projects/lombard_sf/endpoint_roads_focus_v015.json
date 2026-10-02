@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_ENDPOINT_ROADS_V015",
+  "parent": "projects/lombard_sf/outputs/outer_band_v014b/Lombard_Outer_Band_Astra_v014b.litematic",
+  "parent_change_constraint": {
+    "source": "projects/lombard_sf/outputs/outer_band_v014b/Lombard_Outer_Band_Astra_v014b.litematic",
+    "all_changes_confined_to_endpoint_road_footprints": true,
+    "changed_microcells": 914120,
+    "added_microcells": 914120,
+    "removed_microcells": 0,
+    "replaced_microcells": 0,
+    "changes_outside_endpoint_road_footprints": 0
+  },
+  "road_curb_lock": true,
+  "roads": [
+    {
+      "name": "Hyde Street",
+      "cnns": [
+        "7144000",
+        "7145000"
+      ],
+      "width_m": 11.96,
+      "top": "astra_microblocks:rgb_77736b",
+      "base": "astra_microblocks:rgb_615e59",
+      "sidewalk_ft": 15.0,
+      "segment_length_m": 50.00000000000002,
+      "half_length_each_side_m": 25.0,
+      "intersection_station_m": 25.0,
+      "surface_columns": 153098,
+      "road_microcells_written": 422992,
+      "carve_operations": 5195012,
+      "protected_v009_cell_skips": 46622,
+      "profile_start_rel_m": 0.8185938787668192,
+      "profile_intersection_rel_m": -0.00024203238629638663,
+      "profile_end_rel_m": -2.722816339460479,
+      "max_profile_smoothing_correction_m": 0.05230943558151946
+    },
+    {
+      "name": "Leavenworth Street",
+      "cnns": [
+        "8268000",
+        "8269000"
+      ],
+      "width_m": 13.48,
+      "top": "astra_microblocks:rgb_555452",
+      "base": "astra_microblocks:rgb_444442",
+      "sidewalk_ft": 12.0,
+      "segment_length_m": 49.999999999999986,
+      "half_length_each_side_m": 25.0,
+      "intersection_station_m": 25.0,
+      "surface_columns": 172542,
+      "road_microcells_written": 491128,
+      "carve_operations": 5849840,
+      "protected_v009_cell_skips": 43086,
+      "profile_start_rel_m": -31.903610084130406,
+      "profile_intersection_rel_m": -32.84199702817227,
+      "profile_end_rel_m": -33.39339041183049,
+      "max_profile_smoothing_correction_m": 0.01721299372865559
+    }
+  ],
+  "included": [
+    "v014b core and outer band",
+    "50m Hyde roadway segment",
+    "50m Leavenworth roadway segment"
+  ],
+  "excluded": [
+    "Hyde cable-car rails",
+    "endpoint road curbs",
+    "endpoint sidewalks",
+    "parking/road markings",
+    "buildings",
+    "stairs",
+    "landscape"
+  ],
+  "reference_bundle": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_v015_reference_sheet.jpg",
+  "reference_manifest": "projects/lombard_sf/outputs/endpoint_roads_v015/reference_manifest.json",
+  "review_focus": [
+    "intersection placement",
+    "road width",
+    "endpoint grade",
+    "brick-to-asphalt transition",
+    "bottom terrain context"
+  ]
+}

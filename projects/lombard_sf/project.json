@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "OUTER_BAND_V014B_REVIEW",
-  "milestone": "LOMBARD_OUTER_BAND_V014B",
+  "status": "ENDPOINT_ROADS_V015_REVIEW",
+  "milestone": "LOMBARD_ENDPOINT_ROADS_V015",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,21 +70,21 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/outer_band_v014b/Lombard_Outer_Band_Astra_v014b.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_outer_band_v014b.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_Astra_v015.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_endpoint_roads_v015.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the same 2m outward LiDAR/ROW ground band as v014 after removing all fake physical faces at the temporary review boundary.",
+    "purpose": "Review the source-based top Hyde and bottom Leavenworth roadway segments before using them to correct endpoint terrain.",
     "notes": [
-      "confirm the fake cliffs/wedges are gone",
-      "judge the 2m band depth itself",
-      "check continuous ground behind retaining walls",
-      "identify where the next outward band should begin",
-      "no stairs yet"
+      "Hyde intersection placement, width, and grade",
+      "Leavenworth intersection placement, width, and grade",
+      "how the brick Lombard road meets each cross street",
+      "whether the lower weird terrain makes more sense once Leavenworth exists",
+      "no sidewalks, endpoint curbs, or Hyde cable-car rails yet"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/outer_band_focus_v014b.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/outer_band_v014b/Lombard_Outer_Band_v014b_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/endpoint_roads_focus_v015.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_v015_reference_sheet.jpg",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
