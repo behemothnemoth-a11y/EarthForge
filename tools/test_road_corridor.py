@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import math
 from pathlib import Path
+import subprocess
 import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -82,6 +85,38 @@ def test_corner_preserves_source_vertex():
     close(corner["tangent_xz"][1], expected, 1e-8)
 
 
+def test_cli_direct_launch():
+    spec = {
+        "road_id": "cli_smoke",
+        "centerline": [[0, 0], [4, 0]],
+        "elevation_profile": [
+            {"station_m": 0, "elevation_m": 10},
+            {"station_m": 4, "elevation_m": 11},
+        ],
+    }
+    with tempfile.TemporaryDirectory() as tmp:
+        tmpdir = Path(tmp)
+        input_path = tmpdir / "input.json"
+        output_path = tmpdir / "output.json"
+        input_path.write_text(json.dumps(spec), encoding="utf-8")
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "pipeline" / "roads" / "road_corridor.py"),
+                str(input_path),
+                str(output_path),
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        if completed.returncode != 0:
+            raise AssertionError(completed.stderr or completed.stdout)
+        result = json.loads(output_path.read_text(encoding="utf-8"))
+        assert result["road_id"] == "cli_smoke"
+        close(result["total_length_m"], 4.0)
+
+
 def test_profile_must_cover_road():
     try:
         build_corridor(
@@ -104,5 +139,6 @@ if __name__ == "__main__":
     test_elevation_profile()
     test_straight_corridor()
     test_corner_preserves_source_vertex()
+    test_cli_direct_launch()
     test_profile_must_cover_road()
     print("EarthForge road corridor tests passed")

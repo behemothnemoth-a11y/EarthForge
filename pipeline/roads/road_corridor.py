@@ -6,7 +6,12 @@ import argparse
 import json
 import math
 from pathlib import Path
+import sys
 from typing import Iterable, Sequence
+
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from pipeline.terrain.elevation_profile import ElevationProfile
 
@@ -64,9 +69,6 @@ def point_tangent_at_station(
 
     s = min(max(station_m, 0.0), total)
 
-    # At an interior source vertex, use the angle bisector when possible. This
-    # keeps cross-sections stable through ordinary corners while preserving
-    # the vertex itself as geometric truth.
     for vertex_index in range(1, len(stations) - 1):
         if abs(s - stations[vertex_index]) <= 1e-9:
             incoming = _segment_tangent(points, vertex_index - 1)
@@ -158,8 +160,6 @@ def build_corridor(spec: dict) -> dict:
     rows = []
     for station in stations:
         point, tangent = point_tangent_at_station(centerline, vertex_stations, station)
-        # EarthForge local axes are +X east, +Z south. For an eastbound tangent,
-        # geographic left is north (-Z), hence left normal = (tz, -tx).
         left_normal = (tangent[1], -tangent[0])
         y = profile.elevation_at(station)
         rows.append(
