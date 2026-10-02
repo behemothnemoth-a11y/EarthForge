@@ -1,0 +1,61 @@
+{
+  "schematic_sha256": "c595b1e55a2e04a88ee7f0a46057ab42e61034b8e655a6c783df1f6498dfc176",
+  "pedestrian_columns_checked": 264700,
+  "missing_pedestrian_surface_cells": 0,
+  "foliage_below_2_25m_over_pedestrian_surfaces": 0,
+  "stair_centerline_checks": [
+    {
+      "osm_id": "1011562143",
+      "samples": 116,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "1011562145",
+      "samples": 130,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "1011562146",
+      "samples": 15,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "1011562147",
+      "samples": 35,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "1011562148",
+      "samples": 17,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "110803261",
+      "samples": 334,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "119458101",
+      "samples": 412,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "179749156",
+      "samples": 190,
+      "unsupported_samples": 0
+    },
+    {
+      "osm_id": "198877614",
+      "samples": 667,
+      "unsupported_samples": 0
+    }
+  ],
+  "stair_centerline_obstacle_samples": 0,
+  "examples": {
+    "missing": [],
+    "foliage": [],
+    "obstacles": []
+  },
+  "limits": "Checks modeled pedestrian surfaces and 0.125m stair centerline samples; does not replace an in-game walking or collision test.",
+  "pass": true
+}

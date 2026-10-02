@@ -54,6 +54,21 @@
       "evidence": "DataSF footprints + LiDAR height stats + aerial",
       "status": "deferred_until_L1_approved",
       "confidence": "pending_L2"
+    },
+    {
+      "id": "v017_stair_road_reconciliation",
+      "feature": "OSM stair traces overlap accepted road footprint",
+      "evidence": "Independent source-centerline audit found clipped stretches; accepted road retained; source/modeled traces recorded in v017 validation",
+      "status": "reconciled_for_v1_user_review",
+      "confidence": "medium; reconstruction fit, not new survey",
+      "max_outward_offset_m": 2.25
+    },
+    {
+      "id": "v017_landscape_detail",
+      "feature": "Tree crowns, flower distribution, stair width/landing depth and fixture details",
+      "status": "explicit_v1_approximations",
+      "confidence": "mapped locations; illustrative massing/details",
+      "evidence": "OSM geometry and attributes, original LiDAR, cached reference imagery; no houses"
     }
   ]
 }

@@ -85,7 +85,9 @@
       "exact Astra block-entity/microcell readback when used",
       "visual gate before propagation"
     ],
-    "ground_support_tests": "python -m unittest discover -s tests -p test_ground_support.py -v"
+    "ground_support_tests": "python -m unittest discover -s tests -p test_ground_support.py -v",
+    "public_realm_audit": "python tools/test_lombard_public_realm_v1.py",
+    "decoded_preview": "python tools/render_lombard_public_realm_v1.py"
   },
   "banned_shortcuts": [
     "decorative approximation used as truth",
@@ -94,5 +96,7 @@
     "silent source conflict resolution",
     "using screenshots as coordinate truth when structured geometry exists",
     "copying Redfield-specific architectural assumptions into Lombard"
-  ]
+  ],
+  "active_generator": "pipeline/reconstruction/generate_lombard_public_realm_v1.py",
+  "milestone_authorization": "2026-10-02: user requests complete no-house v1 across full crooked public corridor and existing 50m endpoint street sections"
 }

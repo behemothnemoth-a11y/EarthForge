@@ -1,0 +1,23 @@
+{
+  "artifact_sha256": "c595b1e55a2e04a88ee7f0a46057ab42e61034b8e655a6c783df1f6498dfc176",
+  "inputs": [
+    {
+      "path": "projects\\lombard_sf\\poc_001\\l0_city_layers_v001.json",
+      "sha256": "e6fd573e9b391bafb2250d90cb73fca33b106c6f7e40978a7b1d1f7be6bfcf76"
+    },
+    {
+      "path": "projects\\lombard_sf\\poc_001\\l0_crooked_centerline_v001.json",
+      "sha256": "b88ad7e72c120e7a515ed3875693ee24d9818a9381b19a8358a09db476d8ce92"
+    },
+    {
+      "path": "projects\\lombard_sf\\downloads\\raw\\lombard_poc001_lidar_roi_v001.npz",
+      "sha256": "87671f8c5e6ceeda94a4adcf22071b5d0ecb4c71992bdd3d74451072f9b15fe3"
+    }
+  ],
+  "reference_character": {
+    "url": "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064478253).jpg",
+    "credit": "Andrew Napier",
+    "license": "CC BY 2.0"
+  },
+  "historical_terrain_evidence": "../Lombard_v016/Lombard_v016_Evidence_and_Review.html"
+}

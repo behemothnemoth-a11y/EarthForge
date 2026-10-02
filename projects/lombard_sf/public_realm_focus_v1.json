@@ -1,0 +1,19 @@
+{
+  "milestone": "LOMBARD_PUBLIC_REALM_V1_V017",
+  "scope": "Full crooked Lombard public corridor and existing 50m Hyde and 50m Leavenworth street sections; no houses.",
+  "user_authorization": "Continue to a complete v1, no houses yet, the entirety of Lombard and the sections of street already present.",
+  "review": {
+    "required": "USER_MINECRAFT_FLYAROUND",
+    "purpose": "Review the complete assembled no-house v1 authorized after the v016 diagnosis.",
+    "notes": [
+      "Whole crooked corridor plus existing endpoint street lengths",
+      "Road outward: supporting ground, paths and stairs, then rails and landscape",
+      "Accepted v009 and v015 occupied road cells remain immutable",
+      "Check stair/curb reconciliations, end connections, planting and original lower terrain trouble spots",
+      "Same origin, rotation 0, mirror none, replace ALL including air",
+      "No houses and no geometry derived from temporary review boundaries"
+    ]
+  },
+  "locked_road_cells": 1876518,
+  "next_action": "User flyaround; no automatic visual acceptance"
+}

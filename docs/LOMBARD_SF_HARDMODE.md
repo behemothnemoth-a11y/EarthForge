@@ -1,5 +1,9 @@
 # Lombard SF Hard-Mode Reconstruction
 
+## Current authorized milestone — complete no-house v1 (v017)
+
+The user explicitly expanded the v016 terrain-only task to the whole crooked public corridor and the existing 50m Hyde/Leavenworth sections, without houses. The active artifact is now `public_realm_v1/Lombard_Complete_No_Houses_V1_Astra_v017.litematic`. Earlier single-layer stop instructions are historical; the next gate is the assembled v1 flyaround. See `docs/LOMBARD_PUBLIC_REALM_V1.md`. Preserve the accepted road cells and boundary-non-geometry rule. Always run the decoded pedestrian audit: mapped stair traces can conflict with the accepted road footprint, so counting stair ways alone does not establish continuity. Record original and modeled traces for any local reconciliation.
+
 ## Project-specific rule
 
 Lombard is a **real-world site geometry first** reconstruction.

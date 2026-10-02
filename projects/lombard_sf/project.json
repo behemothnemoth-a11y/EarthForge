@@ -1,10 +1,10 @@
 {
-  "schema_version": 9,
+  "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "TERRAIN_REPAIR_V016_REVIEW",
-  "milestone": "LOMBARD_TERRAIN_REPAIR_V016",
-  "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
+  "status": "COMPLETE_NO_HOUSES_V1_REVIEW",
+  "milestone": "LOMBARD_PUBLIC_REALM_V1_V017",
+  "scope": "Full crooked Lombard public corridor and existing 50m Hyde and 50m Leavenworth street sections; no houses.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
     "working_crs": "NAD83(2011) / San Francisco CS13 meters (EPSG:7131) preferred for city geometry",
@@ -70,21 +70,22 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/terrain_repair_v016/Lombard_Terrain_Repair_Astra_v016.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_terrain_repair_v016.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/public_realm_v1/Lombard_Complete_No_Houses_V1_Astra_v017.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_public_realm_v1.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review evidence-backed local repair of A/B/C lower terrain artifacts before further expansion.",
+    "purpose": "Review the complete assembled no-house v1 authorized after the v016 diagnosis.",
     "notes": [
-      "Check tall fin A, lower shoulder B and smaller upstream tip C",
-      "Check dependent wall/edge transitions",
-      "v009 road/curb and v015 endpoint pavements remain locked",
-      "Same placement origin, rotation 0, mirror none, replace ALL with air",
-      "No new stairs, planting, buildings or review-boundary faces"
+      "Whole crooked corridor plus existing endpoint street lengths",
+      "Road outward: supporting ground, paths and stairs, then rails and landscape",
+      "Accepted v009 and v015 occupied road cells remain immutable",
+      "Check stair/curb reconciliations, end connections, planting and original lower terrain trouble spots",
+      "Same origin, rotation 0, mirror none, replace ALL including air",
+      "No houses and no geometry derived from temporary review boundaries"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/terrain_repair_focus_v016.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/terrain_repair_v016/source_comparison.png",
+  "active_focus_config": "projects/lombard_sf/public_realm_focus_v1.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/public_realm_v1/Lombard_V1_Overview.png",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
