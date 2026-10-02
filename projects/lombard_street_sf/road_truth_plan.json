@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "corridor_id": "lombard_hyde_to_leavenworth",
+  "status": "awaiting_exact_source_geometry",
+  "direction": {
+    "start": "Hyde Street",
+    "end": "Leavenworth Street",
+    "semantic": "top_to_bottom"
+  },
+  "required_inputs": [
+    {
+      "id": "centerline_geometry",
+      "status": "required",
+      "rule": "Must come from structured GIS / survey / measured reconstruction data; do not trace a screenshot as primary truth."
+    },
+    {
+      "id": "endpoint_coordinates",
+      "status": "required",
+      "rule": "Lock Hyde/Lombard and Leavenworth/Lombard control points from a recorded source."
+    },
+    {
+      "id": "endpoint_elevations",
+      "status": "required",
+      "rule": "Use the same explicit vertical reference as the elevation profile."
+    },
+    {
+      "id": "elevation_contours_or_surface",
+      "status": "source_identified",
+      "source_manifest": "source_manifests/datasf_elevation_contours_2025.json"
+    },
+    {
+      "id": "road_cross_section",
+      "status": "required_before_curbs",
+      "rule": "Roadway, curb, and sidewalk widths must be measured or sourced; no default widths may be accepted as Lombard truth."
+    }
+  ],
+  "acceptance_order": [
+    "centerline",
+    "elevation_profile",
+    "roadway_edges",
+    "curb_edges",
+    "sidewalk_edges",
+    "retaining_and_edge_structures",
+    "stairs",
+    "terraces_and_landscape",
+    "lot_interfaces",
+    "buildings"
+  ],
+  "hard_invariants": [
+    "Preserve source centerline vertices.",
+    "Keep all canonical geometry in real-world metric units.",
+    "Do not silently extrapolate elevation beyond accepted controls.",
+    "Do not use a published headline grade as a substitute for the measured switchback profile.",
+    "Do not build stairs, terraces, or buildings to compensate for an incorrect road."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_id": "datasf_dpw_roadway_structures_2026",
+  "provider": "San Francisco Public Works / DataSF",
+  "source_type": "official_roadway_structure_inventory",
+  "url": "https://data.sfgov.org/api/views/x5tj-txci/rows.pdf?accessType=DOWNLOAD",
+  "external_id": "x5tj-txci",
+  "acquired_at": "2026-10-02",
+  "coverage": "San Francisco DPW maintained roadway structures",
+  "license_note": "Reference metadata only until dataset reuse terms are checked.",
+  "redistributable": null,
+  "local_private_path": null,
+  "notes": [
+    "Useful later for checking maintained stairs, retaining walls, and miscellaneous roadway structures.",
+    "This source does not override the road-first acceptance order."
+  ]
+}

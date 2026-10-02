@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "name": "Lombard Street - Hyde to Leavenworth",
+  "status": "road_truth_acquisition",
+  "milestone": "LOMBARD_ROAD_TRUTH_001",
+  "coordinate_system": {
+    "source_crs": {
+      "status": "per_source_manifest"
+    },
+    "working_crs": {
+      "status": "pending_dataset_metadata_lock",
+      "units": "meters"
+    },
+    "canonical_axes": {
+      "x_positive": "east",
+      "z_positive": "south",
+      "y_positive": "up"
+    },
+    "minecraft": {
+      "blocks_per_meter_horizontal": 1,
+      "blocks_per_meter_vertical": 1,
+      "status": "output_adapter_only"
+    }
+  },
+  "vertical_reference": {
+    "status": "source_backed_not_yet_locked",
+    "primary_candidate": "San Francisco Elevation Datum",
+    "source_manifest": "source_manifests/datasf_elevation_contours_2025.json"
+  },
+  "scope": {
+    "road": "Lombard Street",
+    "from": "Hyde Street",
+    "to": "Leavenworth Street",
+    "include_initially": [
+      "road centerline",
+      "elevation / grade controls",
+      "switchback roadway geometry",
+      "curbs",
+      "sidewalks"
+    ],
+    "defer_until_road_acceptance": [
+      "retaining walls",
+      "stairs",
+      "terraces",
+      "landscaping",
+      "lots",
+      "bordering buildings"
+    ]
+  },
+  "quality_gates": {
+    "current_target": "ROAD_TRUTH",
+    "road_geometry_locked": false,
+    "elevation_profile_locked": false,
+    "curbs_allowed": false,
+    "sidewalks_allowed": false,
+    "adjacent_sitework_allowed": false,
+    "buildings_allowed": false
+  },
+  "road_truth_plan": "projects/lombard_street_sf/road_truth_plan.json",
+  "control_points": "projects/lombard_street_sf/control_points.json"
+}

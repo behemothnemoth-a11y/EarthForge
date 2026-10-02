@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_street_sf",
+  "coordinate_status": "unlocked",
+  "policy": "Do not insert guessed coordinates. Lock each point only from a recorded structured or measured source.",
+  "anchors": [
+    {
+      "control_id": "lombard_hyde",
+      "role": "corridor_start_top",
+      "description": "Lombard Street / Hyde Street",
+      "status": "needs_source_coordinate",
+      "position": null,
+      "elevation": null
+    },
+    {
+      "control_id": "lombard_leavenworth",
+      "role": "corridor_end_bottom",
+      "description": "Lombard Street / Leavenworth Street",
+      "status": "needs_source_coordinate",
+      "position": null,
+      "elevation": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "sfcta_lombard_study_2017",
+  "provider": "San Francisco County Transportation Authority",
+  "source_type": "official_transportation_study",
+  "url": "https://www.sfcta.org/sites/default/files/2019-03/Lombard_final_report_020918.pdf",
+  "external_id": "Managing Access to the Crooked Street",
+  "acquired_at": "2026-10-02",
+  "coverage": "Lombard Street between Hyde Street and Leavenworth Street, San Francisco",
+  "license_note": "Repository stores source metadata and derived notes; verify reuse terms before redistributing source figures.",
+  "redistributable": null,
+  "local_private_path": null,
+  "notes": [
+    "Official study identifies the Crooked Street as Lombard Street between Hyde and Leavenworth.",
+    "Useful for scope, circulation, conceptual dimensions, and contextual diagrams.",
+    "Conceptual dimensions are not treated as survey-grade geometry."
+  ]
+}
