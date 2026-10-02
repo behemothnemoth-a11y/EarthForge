@@ -1,0 +1,327 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -34,
+    -13
+  ],
+  "region_size": [
+    183,
+    35,
+    39
+  ],
+  "volume": 249795,
+  "non_air_blocks": 3910,
+  "tile_entities": 3789,
+  "sha256": "1b73c83bebd5738ccd572af8ad8e2d3d189b86ddaeeb2031778ef543341f9857",
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "review_id": "LOMBARD_RETAINING_V012",
+  "status": "valid",
+  "scope": "retaining-wall-only layer added to approved v011 road+curb+terrace+local edge corrections",
+  "source_centerline": "projects/lombard_sf/poc_001/l0_crooked_centerline_v001.json",
+  "centerline_nodes": 157,
+  "centerline_length_m": 197.38971985075952,
+  "road_area_m2": 1138.6068872180788,
+  "width_model": {
+    "straight_full_width_m": 5.4,
+    "max_full_width_m": 6.5,
+    "actual_min_full_width_m": 5.4137662075726425,
+    "actual_max_full_width_m": 6.5,
+    "mean_full_width_m": 5.6665264211929145
+  },
+  "profile": {
+    "method": "LiDAR centerline -> 0.125m resample -> ~2m moving average -> monotonic downhill -> endpoint drop relock",
+    "source_endpoint_drop_m": -32.85243606567383,
+    "generated_endpoint_drop_m": -32.85243606567383,
+    "max_abs_smoothing_correction_m": 0.054350501937349804,
+    "mean_abs_smoothing_correction_m": 0.005951954166552461,
+    "monotonic_downhill": true
+  },
+  "texture": {
+    "reference": "projects/lombard_sf/references/private/wikimedia_commons/007_Crooked_Section_of_Lombard_Street.jpg.jpg",
+    "pattern": "running bond aligned to local road tangent",
+    "nominal_brick_length_m": 0.2,
+    "nominal_brick_width_m": 0.1,
+    "joint_sampling_m": 0.006,
+    "brick_palette": [
+      "astra_microblocks:rgb_995750",
+      "astra_microblocks:rgb_a05b53",
+      "astra_microblocks:rgb_94514d",
+      "astra_microblocks:rgb_8a4b47"
+    ],
+    "joint_material": "astra_microblocks:rgb_684b47",
+    "base_material": "astra_microblocks:rgb_75433f"
+  },
+  "v011_lock": {
+    "source": "projects/lombard_sf/outputs/edge_height_v011/Lombard_Edge_Height_Astra_v011.litematic",
+    "all_existing_cells_identical": true,
+    "v011_host_count": 3764,
+    "missing_v011_hosts": 0,
+    "checked_v011_microcells": 2068913,
+    "mismatched_v011_microcells": 0
+  },
+  "curb": {
+    "source": "SF Public Works Standard Plan 87,169 + Section 202.01 nominal 6-inch curb height",
+    "nominal_top_width_m": 0.1524,
+    "modeled_top_width_m": 0.125,
+    "nominal_exposed_height_m": 0.1524,
+    "modeled_exposed_height_m": 0.125,
+    "base_width_m": 0.1875,
+    "material": "minecraft:light_gray_concrete",
+    "base_columns": 18838,
+    "top_columns": 12543,
+    "microcells": 87895
+  },
+  "terrace_base": {
+    "source_geometry": "DataSF crooked-block ROW intersected with a 4.5 m road-support band",
+    "elevation_source": "2010 NOAA/USGS class-2 LiDAR 0.5 m grid",
+    "elevation_smoothing_m": 1.5,
+    "support_radius_m": 4.5,
+    "surface_material": "astra_microblocks:rgb_6b604b",
+    "sub_material": "astra_microblocks:rgb_584a3d",
+    "edge_material": "minecraft:light_gray_concrete",
+    "surface_columns": 273264,
+    "surface_microcells": 273264,
+    "sub_microcells": 819792,
+    "edge_columns": 8700,
+    "edge_microcells": 34800
+  },
+  "edge_height_corrections": {
+    "rule": "raise only where smoothed LiDAR terrace sits 0.125-0.50 m above the standard curb; >0.50 m is deferred to the retaining-wall pass",
+    "material": "minecraft:light_gray_concrete",
+    "raised_columns": 2641,
+    "added_microcells": 15234,
+    "min_excess_m": 0.125,
+    "max_excess_m": 0.5,
+    "mean_applied_excess_m": 0.29829371892473727,
+    "max_applied_excess_m": 0.4998589561726696,
+    "raised_station_bands": [
+      {
+        "station_start_m": 14.44,
+        "station_end_m": 15.2,
+        "length_m": 0.76
+      },
+      {
+        "station_start_m": 17.15,
+        "station_end_m": 18.3,
+        "length_m": 1.15
+      },
+      {
+        "station_start_m": 35.08,
+        "station_end_m": 38.93,
+        "length_m": 3.85
+      },
+      {
+        "station_start_m": 43.92,
+        "station_end_m": 52.77,
+        "length_m": 8.85
+      },
+      {
+        "station_start_m": 85.11,
+        "station_end_m": 88.41,
+        "length_m": 3.3
+      },
+      {
+        "station_start_m": 90.3,
+        "station_end_m": 99.39,
+        "length_m": 9.09
+      },
+      {
+        "station_start_m": 113.7,
+        "station_end_m": 141.71,
+        "length_m": 28.01
+      },
+      {
+        "station_start_m": 154.6,
+        "station_end_m": 161.66,
+        "length_m": 7.06
+      },
+      {
+        "station_start_m": 169.3,
+        "station_end_m": 176.09,
+        "length_m": 6.79
+      },
+      {
+        "station_start_m": 184.97,
+        "station_end_m": 185.84,
+        "length_m": 0.87
+      }
+    ],
+    "deferred_retaining_station_bands": [
+      {
+        "station_start_m": 15.08,
+        "station_end_m": 24.27,
+        "length_m": 9.19
+      },
+      {
+        "station_start_m": 38.9,
+        "station_end_m": 43.92,
+        "length_m": 5.02
+      },
+      {
+        "station_start_m": 53.14,
+        "station_end_m": 66.18,
+        "length_m": 13.04
+      },
+      {
+        "station_start_m": 83.53,
+        "station_end_m": 85.22,
+        "length_m": 1.69
+      },
+      {
+        "station_start_m": 93.59,
+        "station_end_m": 97.75,
+        "length_m": 4.16
+      },
+      {
+        "station_start_m": 98.88,
+        "station_end_m": 108.21,
+        "length_m": 9.33
+      },
+      {
+        "station_start_m": 126.95,
+        "station_end_m": 128.34,
+        "length_m": 1.39
+      },
+      {
+        "station_start_m": 141.65,
+        "station_end_m": 150.13,
+        "length_m": 8.48
+      },
+      {
+        "station_start_m": 154.0,
+        "station_end_m": 154.6,
+        "length_m": 0.6
+      },
+      {
+        "station_start_m": 161.36,
+        "station_end_m": 169.81,
+        "length_m": 8.45
+      },
+      {
+        "station_start_m": 176.9,
+        "station_end_m": 186.98,
+        "length_m": 10.08
+      }
+    ],
+    "deferred_reason": "terrace exceeds standard curb by >0.50 m; treat as retaining-wall geometry, not taller curb"
+  },
+  "retaining_walls": {
+    "wall_columns": 3787,
+    "face_microcells": 45996,
+    "cap_microcells": 7574,
+    "total_added_microcells": 53570,
+    "min_height_m": 0.5625,
+    "mean_height_m": 0.8841101135463427,
+    "max_height_m": 2.0,
+    "station_bands": [
+      {
+        "station_start_m": 15.08,
+        "station_end_m": 24.27,
+        "length_m": 9.19
+      },
+      {
+        "station_start_m": 38.9,
+        "station_end_m": 43.92,
+        "length_m": 5.02
+      },
+      {
+        "station_start_m": 53.14,
+        "station_end_m": 66.18,
+        "length_m": 13.04
+      },
+      {
+        "station_start_m": 83.53,
+        "station_end_m": 85.22,
+        "length_m": 1.69
+      },
+      {
+        "station_start_m": 93.59,
+        "station_end_m": 97.75,
+        "length_m": 4.16
+      },
+      {
+        "station_start_m": 98.88,
+        "station_end_m": 108.21,
+        "length_m": 9.33
+      },
+      {
+        "station_start_m": 126.95,
+        "station_end_m": 128.34,
+        "length_m": 1.39
+      },
+      {
+        "station_start_m": 141.65,
+        "station_end_m": 150.13,
+        "length_m": 8.48
+      },
+      {
+        "station_start_m": 154.0,
+        "station_end_m": 154.6,
+        "length_m": 0.6
+      },
+      {
+        "station_start_m": 161.36,
+        "station_end_m": 169.81,
+        "length_m": 8.45
+      },
+      {
+        "station_start_m": 176.9,
+        "station_end_m": 186.98,
+        "length_m": 10.08
+      }
+    ],
+    "face_material": "minecraft:light_gray_concrete",
+    "cap_material": "minecraft:smooth_stone",
+    "source_rule": "build only where smoothed LiDAR terrace exceeds standard curb by >0.50 m"
+  },
+  "astra": {
+    "empty_cells_remain_empty": true,
+    "host_original": "minecraft:bricks",
+    "host_original_supported": true,
+    "host_count": 3789,
+    "road_surface_columns": 291501,
+    "occupied_road_microcells": 874503,
+    "thickness_cells": 3,
+    "materials": {
+      "minecraft:light_gray_concrete": 179678,
+      "astra_microblocks:rgb_75433f": 583002,
+      "astra_microblocks:rgb_8a4b47": 11150,
+      "astra_microblocks:rgb_995750": 184392,
+      "astra_microblocks:rgb_94514d": 32768,
+      "astra_microblocks:rgb_684b47": 18986,
+      "astra_microblocks:rgb_a05b53": 44205,
+      "minecraft:smooth_stone": 7574,
+      "astra_microblocks:rgb_584a3d": 793692,
+      "astra_microblocks:rgb_6b604b": 264564
+    },
+    "forbidden_materials": []
+  },
+  "excluded": {
+    "curbs": false,
+    "terrain": false,
+    "stairs": true,
+    "landings": true,
+    "retaining_walls": false,
+    "hedges": true,
+    "buildings": true,
+    "cross_streets": true,
+    "cable_car_context": true
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_host_set": true,
+    "exact_astra_microcell_readback": true,
+    "registration_marker": true,
+    "v011_locked": true,
+    "review_status": "RETAINING_V012_FLYAROUND_REQUIRED"
+  }
+}
