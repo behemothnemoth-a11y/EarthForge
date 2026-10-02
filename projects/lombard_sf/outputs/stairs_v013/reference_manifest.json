@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_STAIRS_V013",
+  "purpose": "Reference bundle for stair and landing review.",
+  "stair_map": "Lombard_Stairs_v013_stair_map.png",
+  "stair_count": 9,
+  "landing_count": 47,
+  "items": [
+    {
+      "role": "stair detail",
+      "title": "File:Lombard Street - panoramio (9).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_-_panoramio_%289%29.jpg",
+      "license": "CC BY-SA 3.0",
+      "verify": "tread profile and landing scale"
+    },
+    {
+      "role": "road/stair interface",
+      "title": "File:Crooked Section of Lombard Street.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ACrooked_Section_of_Lombard_Street.jpg",
+      "license": "CC0",
+      "verify": "stairs meeting terrace and road edge"
+    },
+    {
+      "role": "stair rhythm",
+      "title": "File:Lombard Street (10064478253).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+      "license": "CC BY 2.0",
+      "verify": "stair corridors across terrace levels"
+    }
+  ]
+}

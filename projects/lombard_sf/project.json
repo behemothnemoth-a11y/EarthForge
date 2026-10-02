@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "RETAINING_V012_REVIEW",
-  "milestone": "LOMBARD_RETAINING_V012",
+  "status": "STAIRS_V013_REVIEW",
+  "milestone": "LOMBARD_STAIRS_V013",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,19 +70,21 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_Astra_v012.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_retaining_v012.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_Astra_v013.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_stairs_v013.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review only the retaining-wall layer added to the locked v011 road/curb/terrace/edge system.",
+    "purpose": "Review the nine mapped stair systems and 47 flat landings cut into the accepted v012 terrace/retaining geometry.",
     "notes": [
-      "wall height against real references",
-      "wall/curb continuity through hairpins",
-      "wall top meeting terrace naturally",
-      "whether any wall reads too tall, too thin, or too continuous",
-      "whether smooth-stone caps feel appropriate"
+      "stair corridor placement",
+      "tread size and step rhythm",
+      "landing size and flatness",
+      "stair-to-terrace transitions",
+      "stair-to-curb termination",
+      "places where retaining walls should open more or less",
+      "no railings yet"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/retaining_focus_v012.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_v012_reference_sheet.jpg"
+  "active_focus_config": "projects/lombard_sf/stairs_focus_v013.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_v013_reference_sheet.jpg"
 }

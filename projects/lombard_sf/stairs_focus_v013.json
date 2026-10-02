@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_STAIRS_V013",
+  "locked_road_curb": "projects/lombard_sf/outputs/curb_v009/Lombard_Curb_Astra_v009.litematic",
+  "road_curb_lock": {
+    "source": "projects/lombard_sf/outputs/curb_v009/Lombard_Curb_Astra_v009.litematic",
+    "all_existing_cells_identical": true,
+    "v009_host_count": 1966,
+    "missing_v009_hosts": 0,
+    "checked_v009_microcells": 962398,
+    "mismatched_v009_microcells": 0
+  },
+  "controlled_parent": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_Astra_v012.litematic",
+  "controlled_carve": {
+    "source": "projects/lombard_sf/outputs/retaining_v012/Lombard_Retaining_Astra_v012.litematic",
+    "all_changes_confined_to_stair_corridors": true,
+    "changed_microcells": 317515,
+    "added_microcells": 238271,
+    "removed_microcells": 28542,
+    "replaced_microcells": 50702,
+    "changes_outside_stair_corridors": 0
+  },
+  "source": "projects/lombard_sf/poc_001/l0_osm_hardscape_v001.json",
+  "stair_count": 9,
+  "landing_count": 47,
+  "corridor_width_m": 1.45,
+  "landing_size_m": [
+    1.7,
+    1.15
+  ],
+  "railings_included": false,
+  "stairs": [
+    {
+      "osm_id": "1011562143",
+      "surface": "bricks",
+      "source_step_count": 29,
+      "modeled_step_count": 29,
+      "segment_step_counts": [
+        29
+      ],
+      "landing_count": 2,
+      "landing_surface_microcells": 1004,
+      "stair_surface_microcells": 5487,
+      "carve_operations": 254604,
+      "endpoint_elevations_rel_m": [
+        -0.1878577099487586,
+        -3.941578390485674
+      ]
+    },
+    {
+      "osm_id": "1011562145",
+      "surface": "bricks",
+      "source_step_count": 36,
+      "modeled_step_count": 36,
+      "segment_step_counts": [
+        10,
+        26
+      ],
+      "landing_count": 3,
+      "landing_surface_microcells": 1186,
+      "stair_surface_microcells": 5224,
+      "carve_operations": 266257,
+      "endpoint_elevations_rel_m": [
+        -6.284931434804804,
+        -10.20689746576717
+      ]
+    },
+    {
+      "osm_id": "1011562146",
+      "surface": "bricks",
+      "source_step_count": 5,
+      "modeled_step_count": 5,
+      "segment_step_counts": [
+        4,
+        1
+      ],
+      "landing_count": 3,
+      "landing_surface_microcells": 1500,
+      "stair_surface_microcells": 823,
+      "carve_operations": 61362,
+      "endpoint_elevations_rel_m": [
+        -12.288752176609918,
+        -12.736336007865674
+      ]
+    },
+    {
+      "osm_id": "1011562147",
+      "surface": "bricks",
+      "source_step_count": 11,
+      "modeled_step_count": 11,
+      "segment_step_counts": [
+        9,
+        2
+      ],
+      "landing_count": 3,
+      "landing_surface_microcells": 1500,
+      "stair_surface_microcells": 1752,
+      "carve_operations": 100842,
+      "endpoint_elevations_rel_m": [
+        -10.20689746576717,
+        -11.228761215857432
+      ]
+    },
+    {
+      "osm_id": "1011562148",
+      "surface": "bricks",
+      "source_step_count": 16,
+      "modeled_step_count": 16,
+      "segment_step_counts": [
+        16
+      ],
+      "landing_count": 2,
+      "landing_surface_microcells": 999,
+      "stair_surface_microcells": 908,
+      "carve_operations": 62202,
+      "endpoint_elevations_rel_m": [
+        -11.228761215857432,
+        -12.288752176609918
+      ]
+    },
+    {
+      "osm_id": "110803261",
+      "surface": "bricks",
+      "source_step_count": null,
+      "modeled_step_count": 57,
+      "segment_step_counts": [
+        57
+      ],
+      "landing_count": 2,
+      "landing_surface_microcells": 1002,
+      "stair_surface_microcells": 15231,
+      "carve_operations": 674256,
+      "endpoint_elevations_rel_m": [
+        -10.568730341238648,
+        -0.3212878763263092
+      ]
+    },
+    {
+      "osm_id": "119458101",
+      "surface": "concrete",
+      "source_step_count": null,
+      "modeled_step_count": 71,
+      "segment_step_counts": [
+        36,
+        6,
+        13,
+        2,
+        4,
+        5,
+        5
+      ],
+      "landing_count": 8,
+      "landing_surface_microcells": 3997,
+      "stair_surface_microcells": 19010,
+      "carve_operations": 840714,
+      "endpoint_elevations_rel_m": [
+        -30.267546291618167,
+        -19.41405035309009
+      ]
+    },
+    {
+      "osm_id": "179749156",
+      "surface": "concrete",
+      "source_step_count": null,
+      "modeled_step_count": 38,
+      "segment_step_counts": [
+        2,
+        14,
+        2,
+        2,
+        11,
+        5,
+        2
+      ],
+      "landing_count": 8,
+      "landing_surface_microcells": 3961,
+      "stair_surface_microcells": 8425,
+      "carve_operations": 407151,
+      "endpoint_elevations_rel_m": [
+        -19.41405035309009,
+        -12.536035815053182
+      ]
+    },
+    {
+      "osm_id": "198877614",
+      "surface": "bricks",
+      "source_step_count": 169,
+      "modeled_step_count": 169,
+      "segment_step_counts": [
+        17,
+        8,
+        8,
+        12,
+        11,
+        23,
+        13,
+        21,
+        3,
+        7,
+        5,
+        5,
+        5,
+        23,
+        8
+      ],
+      "landing_count": 16,
+      "landing_surface_microcells": 7747,
+      "stair_surface_microcells": 29381,
+      "carve_operations": 1328591,
+      "endpoint_elevations_rel_m": [
+        -12.736336007865674,
+        -32.86278565601164
+      ]
+    }
+  ],
+  "reference_bundle": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_v013_reference_sheet.jpg",
+  "reference_manifest": "projects/lombard_sf/outputs/stairs_v013/reference_manifest.json",
+  "review_focus": [
+    "tread rhythm",
+    "landing scale",
+    "terrace carve",
+    "curb termination",
+    "stair placement"
+  ]
+}
