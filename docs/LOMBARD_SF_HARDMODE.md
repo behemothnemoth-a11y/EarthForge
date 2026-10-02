@@ -266,3 +266,24 @@ When a reconstruction pass is intentionally clipped for review:
 - when the footprint expands later, the prior review edge must disappear without leaving a seam artifact.
 
 v014 is the canonical failure case: a generic terrace-edge treatment made the temporary cutoff look like real cliffs. v014b removes only those artificial faces while preserving the LiDAR ground band.
+
+## Ground-support and gap-fill gate (v016)
+
+Class-2 input alone does not certify a derived terrain raster. Preserve an
+observed-versus-inferred mask, nearest original-ground distance, interpolation
+support limits, source hashes, and the original unfilled observations. Never
+use an inferred cell as a donor for another missing cell. Unsupported cells
+must remain missing and block dependent geometry, rather than inherit a height.
+
+Before promoting terrain, compare suspicious local peaks and cutoff-adjacent
+surfaces to original classified returns and independent elevation/imagery.
+Use `pipeline/terrain/ground_support.py` and a documented residual threshold;
+record exceptions as unresolved instead of smoothing them away. A scan-order
+dependent surface is an automatic failure. Tests must include missing-ground
+voids, permutation invariance, supported planes and rejection of false fins.
+
+For repairs, lock the accepted parent, alter only evidence-backed patches and
+their dependent cells, and validate exact old/new scope plus both export
+readbacks. Do not replace the accepted road/frame with a newer candidate merely
+because its data are newer. See `docs/LOMBARD_TERRAIN_REPAIR_V016.md` for the
+reproduced failure, evidence and narrowly corrected review artifact.

@@ -1,0 +1,178 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -34,
+    -30
+  ],
+  "region_size": [
+    192,
+    35,
+    76
+  ],
+  "volume": 510720,
+  "non_air_blocks": 5870,
+  "tile_entities": 5749,
+  "sha256": "b6a2bb857f5777edfa5bba5be032d546a979e6d6db77c9e13e41cad4405440a9",
+  "schema_version": 1,
+  "status": "valid",
+  "review_status": "TERRAIN_REPAIR_V016_FLYAROUND_REQUIRED",
+  "parent": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_Astra_v015.litematic",
+  "parent_sha256": "84d478790c067f6b7420a0a6874ad27c4b8435f80b2a9d59a991c3c9c1d8854b",
+  "validation": {
+    "exact_litematica_readback": true,
+    "exact_astra_host_set": true,
+    "exact_astra_microcell_and_original_readback": true,
+    "v009_road_curb_locked": true,
+    "v015_other_cells_unchanged": true,
+    "registration_marker": true,
+    "no_new_boundary_faces": true,
+    "parent_bounds_retained": true
+  },
+  "road_curb_lock": {
+    "v009_host_count": 1966,
+    "missing_v009_hosts": 0,
+    "checked_v009_microcells": 962398,
+    "mismatched_v009_microcells": 0
+  },
+  "changed_terrain_columns": 17970,
+  "changed_terrain_area_m2": 70.1953125,
+  "changed_microcells": 131507,
+  "dependent_wall_edge_cell_changes": 1875,
+  "max_terrain_lowering_m": 5.75,
+  "changed_bounds_local_xyz_m": [
+    [
+      96.90625,
+      -33.1875,
+      -32.40625
+    ],
+    [
+      134.78125,
+      -22.25,
+      -23.15625
+    ]
+  ],
+  "geometry_scope": "Existing terrain shell in A/B/C and its derived road-edge wall heights only; no footprint expansion",
+  "source_support_gate": {
+    "samples": 17970,
+    "max_abs_residual_m": 0.5531769420179273,
+    "tolerance_m": 1.0
+  },
+  "source_audit": {
+    "schema_version": 1,
+    "source_points_sha256": "87671f8c5e6ceeda94a4adcf22071b5d0ecb4c71992bdd3d74451072f9b15fe3",
+    "legacy_grid_sha256": "ec3feec76f7735e92db0bfa213275929ed812e981c872ab181a9195137dd9b58",
+    "source_class": 2,
+    "ground_points": 41852,
+    "cause": "recursive in-place gap fill propagates synthesized elevations; clipping exposes the erroneous surface",
+    "classification": "c: reconstruction/interpolation artifact; canopy contributes to observation gaps, not proven class-2 tree contamination",
+    "legacy_reproduction_max_abs_m": 3.428578179409669e-05,
+    "observed_bins_unchanged": true,
+    "changed_missing_grid_bins": 652,
+    "support_limits": {
+      "nearest_ground_m": 3,
+      "longest_triangle_edge_m": 20,
+      "outside_convex_hull": "reject"
+    },
+    "smoothing": "same 3x3 / 1.5m box as v015",
+    "areas": [
+      {
+        "id": "A",
+        "name": "tall fin",
+        "bounds": [
+          113,
+          -33,
+          124,
+          -25
+        ],
+        "probe": [
+          120.5,
+          -30
+        ],
+        "probe_observed_bin": false,
+        "legacy_raw_navd88_m": 62.622962951660156,
+        "original_point_tin_navd88_m": 56.91461823848205,
+        "legacy_reversed_scan_navd88_m": 56.34520626068115,
+        "nearest_ground_m": 1.1111832780087236,
+        "longest_triangle_edge_m": 3.286730864505923,
+        "ground_returns_within_2m": 7,
+        "nearby_ground_range_m": [
+          56.19895553588867,
+          56.77895736694336
+        ],
+        "old_smoothed_navd88_m": 62.62453333536778,
+        "corrected_smoothed_navd88_m": 56.89453287971094
+      },
+      {
+        "id": "B",
+        "name": "lower shoulder",
+        "bounds": [
+          124,
+          -35,
+          138,
+          -24
+        ],
+        "probe": [
+          131.5,
+          -29.5
+        ],
+        "probe_observed_bin": false,
+        "legacy_raw_navd88_m": 56.78437805175781,
+        "original_point_tin_navd88_m": 53.663807018961585,
+        "legacy_reversed_scan_navd88_m": 53.28418990969658,
+        "nearest_ground_m": 1.1651252723079155,
+        "longest_triangle_edge_m": 4.660389905017192,
+        "ground_returns_within_2m": 2,
+        "nearby_ground_range_m": [
+          53.26895523071289,
+          53.36895751953125
+        ],
+        "old_smoothed_navd88_m": 56.776857164171,
+        "corrected_smoothed_navd88_m": 53.67914876659028
+      },
+      {
+        "id": "C",
+        "name": "smaller upstream tip",
+        "bounds": [
+          96,
+          -30,
+          103,
+          -24
+        ],
+        "probe": [
+          99.5,
+          -26.5
+        ],
+        "probe_observed_bin": false,
+        "legacy_raw_navd88_m": 64.30043029785156,
+        "original_point_tin_navd88_m": 62.136922145553065,
+        "legacy_reversed_scan_navd88_m": 61.9239559173584,
+        "nearest_ground_m": 0.7182133557348779,
+        "longest_triangle_edge_m": 2.0601022772788227,
+        "ground_returns_within_2m": 24,
+        "nearby_ground_range_m": [
+          61.54895782470703,
+          62.61895751953125
+        ],
+        "old_smoothed_navd88_m": 63.41610039605035,
+        "corrected_smoothed_navd88_m": 62.18318291738487
+      }
+    ]
+  },
+  "open_discrepancies": [
+    "DWR 2025 versus 2010 TIN offsets retained as independent evidence; no whole-site datum replacement",
+    "Corrected inferred surface remains provisional until user flyaround"
+  ],
+  "open_discrepancy_count": 4,
+  "visual_gate": {
+    "source_comparison": "PASS: source maps, cross-sections and before/after surface inspected",
+    "minecraft": "PENDING_USER_FLYAROUND"
+  }
+}

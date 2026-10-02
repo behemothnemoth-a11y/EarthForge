@@ -47,6 +47,30 @@
       "status": "v003_candidate_under_flyaround_review",
       "issue": "Direct ROW inset is unsuitable as pavement geometry because it breaks into disconnected polygons. v003 therefore keeps the detailed 157-node centerline as plan authority, uses ROW + 15 ft SIDEWALK_F only as envelope/width evidence, and applies 5.4 m straight pavement widening up to 6.5 m at tight curvature.",
       "impact": "Flyaround v003 before accepting curb/road envelope; stairs/walls remain downstream."
+    },
+    {
+      "id": "LOM_DISC_005",
+      "topic": "lower terrain false fins",
+      "status": "cause_established_v016_flyaround_required",
+      "sources": [
+        "2010 class-2 original returns",
+        "v015 grid",
+        "DWR 2025 DEM",
+        "user capture 2026-10-02 16-23-19"
+      ],
+      "issue": "In-place gap fill reused synthesized heights and produced order-dependent fins at A/B/C. v016 repairs local inferred ground and dependent wall cells only.",
+      "impact": "Block further outward expansion pending user review."
+    },
+    {
+      "id": "LOM_DISC_006",
+      "topic": "2010 versus 2025 local elevation offsets",
+      "status": "open",
+      "sources": [
+        "2010 NOAA/USGS COPC",
+        "DWR 2025 NAVD88 DEM"
+      ],
+      "issue": "DWR probe elevations are 0.52-0.89m below original-point 2010 TIN. Acquisition/realization/interpolation differences not fully reconciled.",
+      "impact": "Use DWR only as independent shape corroboration in v016; preserve existing frame, vertical zero and accepted road."
     }
   ]
 }

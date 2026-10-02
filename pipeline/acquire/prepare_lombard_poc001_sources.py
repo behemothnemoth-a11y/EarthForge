@@ -7,6 +7,7 @@ Outputs are small derived JSON/CSV/PNG files suitable for review and Git.
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import math
 import statistics
@@ -17,6 +18,7 @@ from pathlib import Path
 
 import laspy
 import numpy as np
+from scipy.spatial import cKDTree
 from laspy.copc import Bounds, CopcReader
 from PIL import Image, ImageDraw, ImageFont
 from pyproj import Transformer
@@ -24,6 +26,8 @@ from shapely.geometry import shape, Point, LineString, Polygon
 from shapely.ops import transform as shp_transform
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT))
+from pipeline.terrain.ground_support import interpolate_ground, observed_grid
 PROJECT = ROOT / "projects" / "lombard_sf"
 RAW = PROJECT / "downloads" / "raw"
 POC = PROJECT / "poc_001"
@@ -111,27 +115,16 @@ def ground_grid(arr,xmin=-40,xmax=185,zmin=-75,zmax=75,res=0.5):
     g=arr[arr[:,3]==2]
     nx=round((xmax-xmin)/res)+1
     nz=round((zmax-zmin)/res)+1
-    bins=defaultdict(list)
-    for x,z,e,*_ in g:
-        ix=round((x-xmin)/res); iz=round((z-zmin)/res)
-        if 0<=ix<nx and 0<=iz<nz: bins[(ix,iz)].append(float(e))
-    grid=np.full((nz,nx),np.nan,dtype=np.float32)
-    for (ix,iz),vals in bins.items():grid[iz,ix]=statistics.median(vals)
-
-    # Deterministic nearest/local fill. Ground density is high; most gaps are
-    # beneath buildings and dense vegetation. Expand neighborhood up to 8 m.
-    missing=np.argwhere(np.isnan(grid))
-    for iz,ix in missing:
-        found=[]
-        for rad in range(1,17):
-            a=max(0,iz-rad);b=min(nz,iz+rad+1);c=max(0,ix-rad);d=min(nx,ix+rad+1)
-            block=grid[a:b,c:d]
-            vals=block[np.isfinite(block)]
-            if vals.size:
-                found=vals
-                break
-        if len(found):grid[iz,ix]=float(np.median(found))
-    return grid,dict(xmin=xmin,xmax=xmax,zmin=zmin,zmax=zmax,res=res)
+    grid=observed_grid(g[:,:2],g[:,2],(nz,nx),xmin,zmin,res)
+    missing=~np.isfinite(grid)
+    iz,ix=np.where(missing)
+    # v016 lesson: use original returns only. Missing/unsupported cells remain
+    # NaN; never extend inferred values through a canopy/building void.
+    values,_=interpolate_ground(g[:,:2],g[:,2],np.c_[xmin+ix*res,zmin+iz*res],
+        max_distance_m=3.0,max_triangle_edge_m=20.0)
+    grid[missing]=values
+    return grid.astype(np.float32),dict(xmin=xmin,xmax=xmax,zmin=zmin,zmax=zmax,res=res,
+        interpolation_method='immutable_class2_TIN_v016',unsupported_cells=int(np.isnan(grid).sum()))
 
 def sample_grid(grid,meta,x,z):
     fx=(x-meta["xmin"])/meta["res"]; fz=(z-meta["zmin"])/meta["res"]
@@ -139,6 +132,8 @@ def sample_grid(grid,meta,x,z):
     iz0=max(0,min(grid.shape[0]-1,int(math.floor(fz))))
     ix1=min(grid.shape[1]-1,ix0+1); iz1=min(grid.shape[0]-1,iz0+1)
     tx=fx-ix0;tz=fz-iz0
+    if not np.isfinite(grid[iz0:iz1+1,ix0:ix1+1]).all():
+        raise ValueError(f'Unsupported ground interpolation at local {(x,z)}; acquire evidence before geometry')
     return float(
         grid[iz0,ix0]*(1-tx)*(1-tz)+grid[iz0,ix1]*tx*(1-tz)+
         grid[iz1,ix0]*(1-tx)*tz+grid[iz1,ix1]*tx*tz
@@ -164,7 +159,15 @@ def main():
         return_number=arr[:,4].astype(np.uint8),num_returns=arr[:,5].astype(np.uint8),
     )
     grid,gmeta=ground_grid(arr)
-    np.savez_compressed(RAW/"lombard_poc001_ground_grid_050cm_v001.npz",grid=grid,**gmeta)
+    original_ground=arr[arr[:,3]==2]
+    observed=observed_grid(original_ground[:,:2],original_ground[:,2],grid.shape,
+        gmeta['xmin'],gmeta['zmin'],gmeta['res'])
+    gx,gz=np.meshgrid(gmeta['xmin']+np.arange(grid.shape[1])*gmeta['res'],
+        gmeta['zmin']+np.arange(grid.shape[0])*gmeta['res'])
+    nearest=cKDTree(original_ground[:,:2]).query(np.c_[gx.ravel(),gz.ravel()])[0].reshape(grid.shape)
+    np.savez_compressed(RAW/"lombard_poc001_ground_grid_050cm_v001.npz",grid=grid,
+        observed_mask=np.isfinite(observed),nearest_original_ground_m=nearest,
+        source_roi_sha256=hashlib.sha256((RAW/'lombard_poc001_lidar_roi_v001.npz').read_bytes()).hexdigest(),**gmeta)
 
     top_e=median_near(arr,0,0,2.5,2)
     bottom_e=median_near(arr,bx,bz,3.0,2)

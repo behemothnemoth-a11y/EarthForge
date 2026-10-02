@@ -27,6 +27,12 @@ jobs:
       - name: Test Astra Microblock NBT
         run: python tools/test_astra_microblock_codec.py
 
+      - name: Install terrain support test dependencies
+        run: python -m pip install numpy scipy
+
+      - name: Test ground support and artifact rejection
+        run: python -m unittest discover -s tests -p test_ground_support.py -v
+
       - name: Test 621 depth architecture
         run: python pipeline/reconstruction/generate_redfield_621_micro_depth_v003.py --self-test
 

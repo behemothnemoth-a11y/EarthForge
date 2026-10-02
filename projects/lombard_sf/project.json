@@ -1,9 +1,9 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "ENDPOINT_ROADS_V015_REVIEW",
-  "milestone": "LOMBARD_ENDPOINT_ROADS_V015",
+  "status": "TERRAIN_REPAIR_V016_REVIEW",
+  "milestone": "LOMBARD_TERRAIN_REPAIR_V016",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,21 +70,21 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_Astra_v015.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_endpoint_roads_v015.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/terrain_repair_v016/Lombard_Terrain_Repair_Astra_v016.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_terrain_repair_v016.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the source-based top Hyde and bottom Leavenworth roadway segments before using them to correct endpoint terrain.",
+    "purpose": "Review evidence-backed local repair of A/B/C lower terrain artifacts before further expansion.",
     "notes": [
-      "Hyde intersection placement, width, and grade",
-      "Leavenworth intersection placement, width, and grade",
-      "how the brick Lombard road meets each cross street",
-      "whether the lower weird terrain makes more sense once Leavenworth exists",
-      "no sidewalks, endpoint curbs, or Hyde cable-car rails yet"
+      "Check tall fin A, lower shoulder B and smaller upstream tip C",
+      "Check dependent wall/edge transitions",
+      "v009 road/curb and v015 endpoint pavements remain locked",
+      "Same placement origin, rotation 0, mirror none, replace ALL with air",
+      "No new stairs, planting, buildings or review-boundary faces"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/endpoint_roads_focus_v015.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/endpoint_roads_v015/Lombard_Endpoint_Roads_v015_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/terrain_repair_focus_v016.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/terrain_repair_v016/source_comparison.png",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",

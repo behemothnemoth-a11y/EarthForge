@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "review_id": "LOMBARD_TERRAIN_REPAIR_V016",
+  "parent": "LOMBARD_ENDPOINT_ROADS_V015",
+  "cause": "recursive interpolation of missing ground cells",
+  "areas": [
+    {
+      "id": "A",
+      "name": "tall fin",
+      "bounds": [
+        113,
+        -33,
+        124,
+        -25
+      ],
+      "probe": [
+        120.5,
+        -30
+      ],
+      "probe_observed_bin": false,
+      "legacy_raw_navd88_m": 62.622962951660156,
+      "original_point_tin_navd88_m": 56.91461823848205,
+      "legacy_reversed_scan_navd88_m": 56.34520626068115,
+      "nearest_ground_m": 1.1111832780087236,
+      "longest_triangle_edge_m": 3.286730864505923,
+      "ground_returns_within_2m": 7,
+      "nearby_ground_range_m": [
+        56.19895553588867,
+        56.77895736694336
+      ],
+      "old_smoothed_navd88_m": 62.62453333536778,
+      "corrected_smoothed_navd88_m": 56.89453287971094
+    },
+    {
+      "id": "B",
+      "name": "lower shoulder",
+      "bounds": [
+        124,
+        -35,
+        138,
+        -24
+      ],
+      "probe": [
+        131.5,
+        -29.5
+      ],
+      "probe_observed_bin": false,
+      "legacy_raw_navd88_m": 56.78437805175781,
+      "original_point_tin_navd88_m": 53.663807018961585,
+      "legacy_reversed_scan_navd88_m": 53.28418990969658,
+      "nearest_ground_m": 1.1651252723079155,
+      "longest_triangle_edge_m": 4.660389905017192,
+      "ground_returns_within_2m": 2,
+      "nearby_ground_range_m": [
+        53.26895523071289,
+        53.36895751953125
+      ],
+      "old_smoothed_navd88_m": 56.776857164171,
+      "corrected_smoothed_navd88_m": 53.67914876659028
+    },
+    {
+      "id": "C",
+      "name": "smaller upstream tip",
+      "bounds": [
+        96,
+        -30,
+        103,
+        -24
+      ],
+      "probe": [
+        99.5,
+        -26.5
+      ],
+      "probe_observed_bin": false,
+      "legacy_raw_navd88_m": 64.30043029785156,
+      "original_point_tin_navd88_m": 62.136922145553065,
+      "legacy_reversed_scan_navd88_m": 61.9239559173584,
+      "nearest_ground_m": 0.7182133557348779,
+      "longest_triangle_edge_m": 2.0601022772788227,
+      "ground_returns_within_2m": 24,
+      "nearby_ground_range_m": [
+        61.54895782470703,
+        62.61895751953125
+      ],
+      "old_smoothed_navd88_m": 63.41610039605035,
+      "corrected_smoothed_navd88_m": 62.18318291738487
+    }
+  ],
+  "stop_after": "USER_MINECRAFT_FLYAROUND",
+  "road_outward": true,
+  "review_boundary_is_geometry": false,
+  "source_support_gate": {
+    "samples": 17970,
+    "max_abs_residual_m": 0.5531769420179273,
+    "tolerance_m": 1.0
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "review": "LOMBARD_TERRAIN_REPAIR_V016",
+  "capture": {
+    "filename": "Minecraft_ 26.2 - Singleplayer 2026-10-02 16-23-19.mp4",
+    "frames_seconds": [
+      9,
+      12,
+      15
+    ],
+    "sha256": "396f5fedf850465a907a17a3bce4d5bad44c068737d2da0e9af14c452952f1d9",
+    "redistribution": "user-private; extracted frames are delivered locally, not committed"
+  },
+  "DWR_2025": {
+    "source": "dwr_sfbay_delta_lidar_2025_zone3",
+    "service": "https://gis.water.ca.gov/arcgisimg/rest/services/elevation/SFBay_Delta_Zone3_Hydroflattened_2025_LIDAR/ImageServer",
+    "request": "https://gis.water.ca.gov/arcgisimg/rest/services/elevation/SFBay_Delta_Zone3_Hydroflattened_2025_LIDAR/ImageServer/exportImage?f=json&bbox=551190.5862985816%2C4184014.7048091358%2C551232.0862985816%2C4184043.2048091358&bboxSR=3717&imageSR=3717&size=83%2C57&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noDataInterpretation=esriNoDataMatchAny&adjustAspectRatio=false",
+    "sha256_raw_tiff": "883ef4fa036e463e88d7eff6fc224307760153b3af1cb834b36176d75a64f030",
+    "vertical_units": "NAVD88 US survey feet; converted using 1200/3937",
+    "use": "independent corroboration only; no 2025 heights inserted into schematic",
+    "probe_navd88_m": {
+      "A": 56.019840240478516,
+      "B": 53.13871383666992,
+      "C": 61.418052673339844
+    }
+  },
+  "street_reference": {
+    "index": 22,
+    "title": "File:Lombard Street (10064478253).jpg",
+    "page_url": "https://commons.wikimedia.org/wiki/File%3ALombard_Street_%2810064478253%29.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Lombard_Street_%2810064478253%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "private_file": "references/private/wikimedia_commons/022_Lombard_Street_10064478253_.jpg.jpg",
+    "artist": "Andrew Napier",
+    "license_short_name": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "credit": "Lombard Street",
+    "description": "Lombard Street",
+    "date_time_original": "2013-10-02 14:10",
+    "priority": "high",
+    "supports": [
+      "full-block uphill visual rhythm",
+      "north/south house massing relationship",
+      "stair corridors",
+      "hedge terraces",
+      "overhead utility wires"
+    ],
+    "notes": "Excellent bottom-up overview tying buildings to hardscape."
+  },
+  "image_changes": {
+    "reference_uphill_2013.jpg": "unchanged",
+    "reference_lower_terraces_detail.jpg": "crop of reference_uphill_2013.jpg",
+    "capture_09s_annotated.jpg": "extracted frame with A/B labels and arrows"
+  },
+  "aerial_reference": {
+    "id": "esri_world_imagery",
+    "use": "inspected privately for tree cover and nearby roofs; uncalibrated screenshot, not coordinate truth; not redistributed"
+  },
+  "newer_repo_guidance": {
+    "origin_main": "6a10802",
+    "read": [
+      "docs/LOMBARD_STREET_WORKFLOW.md",
+      "docs/ROAD_TERRAIN_CORRIDOR.md",
+      "docs/LOMBARD_ACQUISITION_GEOREFERENCE.md",
+      "pipeline/terrain/sample_lidar_profile.py"
+    ],
+    "decision": "Use newer DEM for corroboration; retain accepted v015 EPSG:3717 source frame and road geometry. New main-branch centerline/frame are candidates in a separate project and are not substituted."
+  }
+}

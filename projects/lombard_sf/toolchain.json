@@ -8,7 +8,8 @@
     "docs/SOURCE_POLICY.md",
     "docs/LITEMATICA_REGISTRATION.md",
     "docs/LITEMATICA_EXPORT.md",
-    "docs/MICROBLOCK_OVERLAY_PIPELINE.md"
+    "docs/MICROBLOCK_OVERLAY_PIPELINE.md",
+    "docs/LOMBARD_TERRAIN_REPAIR_V016.md"
   ],
   "project_state": [
     "projects/lombard_sf/project.json",
@@ -39,7 +40,12 @@
   },
   "terrain": {
     "repo_stage": "pipeline/terrain/",
-    "rule": "Terrain truth comes from reconciled LiDAR/DEM/city elevation evidence; previews and profiles precede export."
+    "rule": "Terrain truth comes from reconciled LiDAR/DEM/city elevation evidence; previews and profiles precede export.",
+    "reusable_helpers": [
+      "pipeline/terrain/ground_support.py",
+      "pipeline/terrain/audit_lombard_ground_v016.py"
+    ],
+    "promotion_gate": "Original observations only; explicit missingness and support limits; residual gate; scan-order invariance; source comparison before local geometry correction."
   },
   "roads": {
     "repo_stage": "pipeline/roads/",
@@ -78,7 +84,8 @@
       "exact Litematica block-map readback",
       "exact Astra block-entity/microcell readback when used",
       "visual gate before propagation"
-    ]
+    ],
+    "ground_support_tests": "python -m unittest discover -s tests -p test_ground_support.py -v"
   },
   "banned_shortcuts": [
     "decorative approximation used as truth",
