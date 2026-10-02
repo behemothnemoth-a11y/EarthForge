@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_ROAD_ONLY_V006",
+  "purpose": "Hard reset to the road itself so plan geometry and vertical geometry can be perfected before any context returns.",
+  "keep": [
+    "Hyde-to-Leavenworth crooked road",
+    "permanent registration pad"
+  ],
+  "exclude": [
+    "curbs",
+    "sidewalks",
+    "terrain",
+    "stairs",
+    "landings",
+    "retaining walls",
+    "planters",
+    "hedges",
+    "landscape",
+    "buildings",
+    "cross streets",
+    "cable-car context"
+  ],
+  "plan_geometry": {
+    "centerline_source": "projects/lombard_sf/poc_001/l0_crooked_centerline_v001.json",
+    "source_nodes": 157,
+    "width_model": "reviewed variable width: 5.4m straight, up to 6.5m at tight curvature",
+    "status": "flyaround review required"
+  },
+  "vertical_geometry": {
+    "source": "LiDAR elevations embedded in l0_crooked_centerline_v001.json",
+    "method": "0.125m station resample, ~2m moving average, monotonic downhill, exact endpoint-drop relock",
+    "source_endpoint_drop_m": 32.85243606567383,
+    "status": "flyaround review required"
+  },
+  "astra": {
+    "minimum_version": "0.7.0",
+    "host_default": "minecraft:air",
+    "slab_thickness_microcells": 3
+  },
+  "next_artifact": "projects/lombard_sf/outputs/road_only_v006/Lombard_Road_Only_Astra_v006.litematic",
+  "review_focus": [
+    "curve shape",
+    "straight width",
+    "hairpin flare",
+    "grade smoothness",
+    "vertical transitions",
+    "brick surface continuity"
+  ]
+}

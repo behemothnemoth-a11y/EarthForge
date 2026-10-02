@@ -182,3 +182,39 @@ Temporarily exclude:
 - peripheral scenery / context that is not part of the current review gate.
 
 Reintroduce outer context only after the crooked-road core passes its own flyaround gates. Context returns in deliberate layers and must not be allowed to hide unresolved core geometry.
+
+## Road-first rebuild rule
+
+The active Lombard reconstruction is reset to **road first**.
+
+Until the road itself passes player-scale review, the active review artifact must contain only:
+- the Hyde-to-Leavenworth crooked roadway;
+- the permanent registration pad.
+
+Everything else is downstream and must stay out:
+- curbs;
+- sidewalks;
+- terrain;
+- stairs and landings;
+- retaining walls;
+- planter edges;
+- hedges / landscaping;
+- buildings;
+- cross-street context;
+- cable-car context.
+
+Road truth has two independent parts that must both pass:
+1. **plan geometry** — centerline, width, turn flare, curve shape, endpoint tie-ins;
+2. **vertical geometry** — downhill grade, smoothness, transition behavior and endpoint drop.
+
+The road surface should be generated into **air-backed Astra hosts**. Do not use terrain-backed or stone-filled host defaults for road-only review.
+
+Reintroduce layers only after road acceptance, one layer at a time. The intended sequence after road approval is:
+1. curb / road-edge construction;
+2. immediate terrain / planter terrace structure;
+3. stairs / landings / retaining walls;
+4. landscape massing;
+5. building massing;
+6. architecture and fine detail.
+
+A downstream layer may not silently alter previously accepted road geometry.

@@ -1,0 +1,78 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -34,
+    -9
+  ],
+  "region_size": [
+    183,
+    34,
+    33
+  ],
+  "volume": 205326,
+  "non_air_blocks": 1943,
+  "tile_entities": 1822,
+  "sha256": "94c95cbac033e98d13e49a167728ecacfa648bb8021af1527959ed3470976e90",
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "review_id": "LOMBARD_ROAD_ONLY_V006",
+  "status": "valid",
+  "scope": "road only",
+  "source_centerline": "projects/lombard_sf/poc_001/l0_crooked_centerline_v001.json",
+  "centerline_nodes": 157,
+  "centerline_length_m": 197.38971985075952,
+  "road_area_m2": 1138.6068872180788,
+  "width_model": {
+    "straight_full_width_m": 5.4,
+    "max_full_width_m": 6.5,
+    "actual_min_full_width_m": 5.4137662075726425,
+    "actual_max_full_width_m": 6.5,
+    "mean_full_width_m": 5.6665264211929145
+  },
+  "profile": {
+    "method": "LiDAR centerline -> 0.125m resample -> ~2m moving average -> monotonic downhill -> endpoint drop relock",
+    "source_endpoint_drop_m": -32.85243606567383,
+    "generated_endpoint_drop_m": -32.85243606567383,
+    "max_abs_smoothing_correction_m": 0.054350501937349804,
+    "mean_abs_smoothing_correction_m": 0.005951954166552461,
+    "monotonic_downhill": true
+  },
+  "astra": {
+    "air_backed_hosts": true,
+    "host_count": 1822,
+    "road_surface_columns": 291501,
+    "occupied_road_microcells": 874503,
+    "thickness_cells": 3,
+    "materials": {
+      "astra_microblocks:rgb_9d5041": 749721,
+      "astra_microblocks:rgb_87453a": 124782
+    },
+    "forbidden_materials": []
+  },
+  "excluded": {
+    "curbs": true,
+    "terrain": true,
+    "stairs": true,
+    "landings": true,
+    "retaining_walls": true,
+    "hedges": true,
+    "buildings": true,
+    "cross_streets": true,
+    "cable_car_context": true
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_host_set": true,
+    "exact_astra_microcell_readback": true,
+    "registration_marker": true,
+    "review_status": "ROAD_ONLY_V006_FLYAROUND_REQUIRED"
+  }
+}
