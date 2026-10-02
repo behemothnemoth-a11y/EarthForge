@@ -11,7 +11,10 @@ from pipeline.reconstruction.generate_lombard_stairs_v013 import load_core_stair
 def main():
     global OUT,NAME,REGION
     data_out=OUT;data_name=NAME
-    if '--realism' in sys.argv:
+    if '--road-finish' in sys.argv:
+        from pipeline.reconstruction.generate_lombard_road_finish_v021 import OUT as out,NAME as name,REGION as region
+        OUT,NAME,REGION=out,name,region
+    elif '--realism' in sys.argv:
         from pipeline.reconstruction.generate_lombard_realism_v020 import OUT as out,NAME as name,REGION as region
         OUT,NAME,REGION=out,name,region
     elif '--landscape' in sys.argv:
@@ -22,7 +25,7 @@ def main():
         OUT,NAME,REGION=out,name,region
     artifact=OUT/f'{NAME}.litematic';blocks,hosts=read(artifact,REGION)
     foliage_materials={LEAF,LEAF2}
-    if '--landscape' in sys.argv or '--realism' in sys.argv:
+    if '--landscape' in sys.argv or '--realism' in sys.argv or '--road-finish' in sys.argv:
         from pipeline.reconstruction.generate_lombard_landscape_v019 import LEAVES,SHRUB
         foliage_materials.update(LEAVES+SHRUB)
     cache=np.load(data_out/'surface_preview.npz');tops={tuple(k):int(t) for k,t in zip(cache['xz'],cache['top'])}

@@ -1,6 +1,10 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: integrated realism v020
+## Active review: road joins and pavers v021
+
+Load `road_finish_v021/Lombard_Road_Joins_And_Pavers_Astra_v021.litematic`. See `docs/LOMBARD_ROAD_FINISH_V021.md` for source diagnosis, explicit geometry exceptions and mandatory regression checks. Blue facade interpretation is rejected and unchanged for this road-focused review. Older active statements below are historical. Stop for flyaround.
+
+## Historical review: integrated realism v020
 
 The current candidate is `realism_v020/Lombard_Realism_Astra_v020.litematic`. See `docs/LOMBARD_REALISM_V020.md` for changes, source limitations and mandatory audits. Older active-review statements below are historical. Accepted pavement occupancy is preserved, with a narrowly recorded paint recoloring exception. Stop for the user flyaround after installing the validated candidate.
 

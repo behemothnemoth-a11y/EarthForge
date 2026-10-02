@@ -70,21 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/realism_v020/Lombard_Realism_Astra_v020.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_realism_v020.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/road_finish_v021/Lombard_Road_Joins_And_Pavers_Astra_v021.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_road_finish_v021.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review connected blooms, flush crossings, finer outer ground and first two photo-led buildings.",
+    "purpose": "Review corrected Hyde/Leavenworth joins and reference-sampled paver colors.",
     "notes": [
-      "Simple materials; no new photoreal texturing",
-      "Accepted road occupancy preserved; flush paint is a documented material-only exception",
-      "Unsupported context gaps and Hyde red apron boundary remain unresolved",
-      "Two building facades and roof interpretation are provisional, not surveyed",
-      "Same placement; rotation 0; mirror none; replace ALL including air"
+      "Authorized correction of inherited rounded caps and short approach joins; other geometry preserved",
+      "Blue facade interpretation rejected; source-led rebuild still outstanding",
+      "Same placement; rotation 0; mirror none; replace ALL including air",
+      "Paver colors are photo-sampled, not calibrated photoreal materials"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/realism_focus_v020.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/realism_v020/Lombard_Realism_V020_Overview.png",
+  "active_focus_config": "docs/LOMBARD_ROAD_FINISH_V021.md",
+  "active_reference_bundle": "projects/lombard_sf/outputs/road_finish_v021/Lombard_V021_Hyde_Join.png",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",

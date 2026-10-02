@@ -1,0 +1,27 @@
+{
+  "schematic_sha256": "172a0b021699f125df2f448680caebbc6c106b619530f55376f03d34ff1b9742",
+  "display_sampling_m": 0.0625,
+  "crops": [
+    [
+      "Pavers",
+      28,
+      46,
+      -18,
+      -4
+    ],
+    [
+      "Hyde_Join",
+      -7,
+      15,
+      -12,
+      12
+    ],
+    [
+      "Leavenworth_Join",
+      134,
+      155,
+      -38,
+      -13
+    ]
+  ]
+}

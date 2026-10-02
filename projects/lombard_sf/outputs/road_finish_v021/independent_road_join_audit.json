@@ -1,0 +1,13 @@
+{
+  "schematic_sha256": "172a0b021699f125df2f448680caebbc6c106b619530f55376f03d34ff1b9742",
+  "corrected_columns": 37194,
+  "neighbor_checks": 148605,
+  "checks_across_edit_boundary": 10641,
+  "max_adjacent_surface_step_m": 0.125,
+  "steps_above_0_125m": 0,
+  "examples": [],
+  "missing_three_cell_support_columns": 0,
+  "red_cap_surface_columns_remaining": 0,
+  "pass": true,
+  "limits": "Local road-surface continuity at corrected joins, including the unedited boundary; not a full-world physics simulation."
+}
