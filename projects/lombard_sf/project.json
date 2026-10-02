@@ -2,8 +2,8 @@
   "schema_version": 8,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "ROAD_TEXTURE_V008_REVIEW",
-  "milestone": "LOMBARD_ROAD_TEXTURE_V008",
+  "status": "CURB_V009_REVIEW",
+  "milestone": "LOMBARD_CURB_V009",
   "scope": "Crooked Lombard block only, with immediate Hyde/Leavenworth context and bordering house massing; no interiors in first major pass.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,18 +70,19 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/road_texture_v008/Lombard_Road_Texture_Astra_v008.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_road_texture_v008.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/curb_v009/Lombard_Curb_Astra_v009.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_curb_v009.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Verify the corrected RGB running-bond texture renders in Astra while preserving v006 geometry exactly.",
+    "purpose": "Review the first curb-only layer around the approved v008 road before any terrain or terrace structure returns.",
     "notes": [
-      "RGB colors actually render",
-      "brick scale",
-      "running-bond readability",
-      "color restraint",
-      "texture through hairpins"
+      "curb height at player scale",
+      "curb width",
+      "hairpin continuity",
+      "road-to-curb contact",
+      "open Hyde/Leavenworth tie-ins",
+      "whether the curb reads as real concrete rather than a decorative outline"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/road_focus_v006.json"
+  "active_focus_config": "projects/lombard_sf/curb_focus_v009.json"
 }

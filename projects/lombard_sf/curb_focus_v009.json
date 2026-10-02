@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_CURB_V009",
+  "road_source": "projects/lombard_sf/outputs/road_texture_v008/Lombard_Road_Texture_Astra_v008.litematic",
+  "road_lock": "all 874503 occupied v008 road microcells must retain exact material and position",
+  "official_sources": [
+    {
+      "name": "San Francisco Public Works Standard Curbs \u2014 File 87,169",
+      "url": "https://sfpublicworks.org/sites/default/files/87%2C169.pdf",
+      "facts": [
+        "6-inch top width standard section",
+        "6- or 8-inch curb height",
+        "1:4 batter",
+        "3/4-inch top radii"
+      ]
+    },
+    {
+      "name": "SF Public Works Street Improvement \u2014 Section 202.01",
+      "url": "https://sfpublicworks.org/services/permits/street-improvement",
+      "facts": [
+        "nominal curb height is 6 inches unless otherwise specified"
+      ]
+    }
+  ],
+  "astra_quantization": {
+    "grid_m": 0.0625,
+    "nominal_top_width_m": 0.1524,
+    "modeled_top_width_m": 0.125,
+    "nominal_exposed_height_m": 0.1524,
+    "modeled_exposed_height_m": 0.125,
+    "modeled_base_width_m": 0.1875,
+    "endpoint_clearance_m": 0.75
+  },
+  "material": "minecraft:light_gray_concrete",
+  "included": [
+    "v008 textured road",
+    "concrete curb"
+  ],
+  "excluded": [
+    "terrain",
+    "sidewalks",
+    "stairs",
+    "landings",
+    "retaining walls",
+    "planters",
+    "landscape",
+    "buildings",
+    "cross-street context",
+    "cable-car context"
+  ],
+  "review_focus": [
+    "curb scale",
+    "curb continuity",
+    "hairpin behavior",
+    "road contact",
+    "endpoint openings"
+  ]
+}

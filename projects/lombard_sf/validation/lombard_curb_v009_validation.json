@@ -1,0 +1,121 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -5,
+    -34,
+    -9
+  ],
+  "region_size": [
+    183,
+    35,
+    33
+  ],
+  "volume": 211365,
+  "non_air_blocks": 2087,
+  "tile_entities": 1966,
+  "sha256": "d2d7ea3426f32ca605b0c316964f9d7016f8557d84db836bfbc43fc3ac76a1b3",
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "review_id": "LOMBARD_CURB_V009",
+  "status": "valid",
+  "scope": "curb-only layer added around road locked to v008",
+  "source_centerline": "projects/lombard_sf/poc_001/l0_crooked_centerline_v001.json",
+  "centerline_nodes": 157,
+  "centerline_length_m": 197.38971985075952,
+  "road_area_m2": 1138.6068872180788,
+  "width_model": {
+    "straight_full_width_m": 5.4,
+    "max_full_width_m": 6.5,
+    "actual_min_full_width_m": 5.4137662075726425,
+    "actual_max_full_width_m": 6.5,
+    "mean_full_width_m": 5.6665264211929145
+  },
+  "profile": {
+    "method": "LiDAR centerline -> 0.125m resample -> ~2m moving average -> monotonic downhill -> endpoint drop relock",
+    "source_endpoint_drop_m": -32.85243606567383,
+    "generated_endpoint_drop_m": -32.85243606567383,
+    "max_abs_smoothing_correction_m": 0.054350501937349804,
+    "mean_abs_smoothing_correction_m": 0.005951954166552461,
+    "monotonic_downhill": true
+  },
+  "texture": {
+    "reference": "projects/lombard_sf/references/private/wikimedia_commons/007_Crooked_Section_of_Lombard_Street.jpg.jpg",
+    "pattern": "running bond aligned to local road tangent",
+    "nominal_brick_length_m": 0.2,
+    "nominal_brick_width_m": 0.1,
+    "joint_sampling_m": 0.006,
+    "brick_palette": [
+      "astra_microblocks:rgb_995750",
+      "astra_microblocks:rgb_a05b53",
+      "astra_microblocks:rgb_94514d",
+      "astra_microblocks:rgb_8a4b47"
+    ],
+    "joint_material": "astra_microblocks:rgb_684b47",
+    "base_material": "astra_microblocks:rgb_75433f"
+  },
+  "road_lock_to_v008": {
+    "source": "projects/lombard_sf/outputs/road_texture_v008/Lombard_Road_Texture_Astra_v008.litematic",
+    "road_cells_identical": true,
+    "v008_host_count": 1822,
+    "missing_v008_hosts": 0,
+    "checked_road_microcells": 874503,
+    "mismatched_road_microcells": 0
+  },
+  "curb": {
+    "source": "SF Public Works Standard Plan 87,169 + Section 202.01 nominal 6-inch curb height",
+    "nominal_top_width_m": 0.1524,
+    "modeled_top_width_m": 0.125,
+    "nominal_exposed_height_m": 0.1524,
+    "modeled_exposed_height_m": 0.125,
+    "base_width_m": 0.1875,
+    "material": "minecraft:light_gray_concrete",
+    "base_columns": 18838,
+    "top_columns": 12543,
+    "microcells": 87895
+  },
+  "astra": {
+    "empty_cells_remain_empty": true,
+    "host_original": "minecraft:bricks",
+    "host_original_supported": true,
+    "host_count": 1966,
+    "road_surface_columns": 291501,
+    "occupied_road_microcells": 874503,
+    "thickness_cells": 3,
+    "materials": {
+      "minecraft:light_gray_concrete": 87895,
+      "astra_microblocks:rgb_75433f": 583002,
+      "astra_microblocks:rgb_8a4b47": 11150,
+      "astra_microblocks:rgb_995750": 184392,
+      "astra_microblocks:rgb_94514d": 32768,
+      "astra_microblocks:rgb_684b47": 18986,
+      "astra_microblocks:rgb_a05b53": 44205
+    },
+    "forbidden_materials": []
+  },
+  "excluded": {
+    "curbs": false,
+    "terrain": true,
+    "stairs": true,
+    "landings": true,
+    "retaining_walls": true,
+    "hedges": true,
+    "buildings": true,
+    "cross_streets": true,
+    "cable_car_context": true
+  },
+  "validation": {
+    "exact_block_readback": true,
+    "exact_astra_host_set": true,
+    "exact_astra_microcell_readback": true,
+    "registration_marker": true,
+    "road_matches_v008": true,
+    "review_status": "CURB_V009_FLYAROUND_REQUIRED"
+  }
+}
