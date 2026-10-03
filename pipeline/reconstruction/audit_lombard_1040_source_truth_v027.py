@@ -1,0 +1,75 @@
+"""B0 evidence audit for 1040 Lombard. Produces no Minecraft geometry."""
+from __future__ import annotations
+import json, math
+from collections import Counter
+from pathlib import Path
+import numpy as np
+from PIL import Image, ImageDraw
+from pyproj import Transformer
+from shapely import contains_xy
+from shapely.geometry import LineString, shape
+
+ROOT=Path(__file__).resolve().parents[2]
+PROJECT=ROOT/"projects"/"lombard_sf"
+OUT=PROJECT/"outputs"/"house_1040_source_truth_v027"
+BUILDING_ID="201006.0032105"
+
+def qstats(values):
+    if len(values)==0:return {"count":0}
+    q=np.percentile(values,[0,5,25,50,75,95,100])
+    return {"count":int(len(values)),"min":float(q[0]),"p05":float(q[1]),"p25":float(q[2]),"median":float(q[3]),"p75":float(q[4]),"p95":float(q[5]),"max":float(q[6])}
+
+def main():
+    OUT.mkdir(parents=True,exist_ok=True)
+    truth=json.loads((PROJECT/"poc_001/l0_source_truth_v001.json").read_text())
+    buildings=json.loads((PROJECT/"poc_001/l2_building_source_truth_v002.json").read_text())
+    manifest=json.loads((PROJECT/"source_manifests/1040_lombard_source_truth_v027.json").read_text())
+    rec=next(b for b in buildings["buildings"] if b["sf16_bldgid"]==BUILDING_ID)
+    geom=shape(rec["geometry_local"]);poly=max(geom.geoms,key=lambda g:g.area) if hasattr(geom,"geoms") else geom
+    road=LineString(truth["crooked_road"]["centerline_nodes"])
+    edges=[]
+    coords=list(poly.exterior.coords)
+    for a,b in zip(coords,coords[1:]):
+        seg=LineString([a,b])
+        edges.append({"a":[float(a[0]),float(a[1])],"b":[float(b[0]),float(b[1])],"length_m":float(seg.length),"distance_to_road_m":float(seg.distance(road))})
+    street_edge=min(edges,key=lambda e:e["distance_to_road_m"])
+
+    frame=truth["coordinate_frame"];anchor_e=frame["anchor_epsg3717_m"]["easting"];anchor_n=frame["anchor_epsg3717_m"]["northing"]
+    tf=Transformer.from_crs(4326,3717,always_xy=True)
+    cameras=[]
+    for image in manifest["imagery"]:
+        camera=image.get("camera")
+        if not camera:continue
+        lat,lon=camera;e,n=tf.transform(lon,lat);x=float(e-anchor_e);z=float(anchor_n-n)
+        dx=float(poly.centroid.x-x);dz=float(poly.centroid.y-z)
+        cameras.append({"date":image["date"],"title":image["title"],"local_x_m":x,"local_z_m":z,"distance_to_building_centroid_m":math.hypot(dx,dz),"bearing_to_building_local_deg":math.degrees(math.atan2(dx,-dz))%360.0,"camera_altitude_m":image.get("camera_altitude_m"),"source_page":image["page"]})
+
+    raw_path=PROJECT/"downloads/raw/lombard_poc001_lidar_roi_v001.npz";raw=np.load(raw_path)
+    inside=contains_xy(poly,raw["x"],raw["z"]);near=contains_xy(poly.buffer(1.5),raw["x"],raw["z"])
+    ground=inside&(raw["classification"]==2);nonground=inside&(raw["classification"]!=2)
+    lidar={"raw_source":str(raw_path.relative_to(ROOT)),"inside_footprint_points":int(inside.sum()),"inside_class_counts":{str(k):v for k,v in sorted(Counter(map(int,raw["classification"][inside])).items())},"within_1_5m_class_counts":{str(k):v for k,v in sorted(Counter(map(int,raw["classification"][near])).items())},"ground_elevation_navd88_m":qstats(raw["elev"][ground]),"non_ground_elevation_navd88_m":qstats(raw["elev"][nonground]),"non_ground_height_above_manifest_ground_min_m":qstats(raw["elev"][nonground]-manifest["building"]["source_ground_min_navd88_m"]),"interpretation_limit":"Non-ground returns are observations only. This audit does not classify individual returns as building versus vegetation and does not infer storeys or roof planes."}
+
+    checks={"identity_has_datasf_id":manifest["building"]["datasf_building_id"]==BUILDING_ID,"identity_has_osm_way":bool(manifest["building"].get("osm_way")),"footprint_loaded":poly.area>100,"street_edge_derived_from_footprint_and_road":street_edge["length_m"]>5,"reference_registry_has_multi_year_views":len(manifest["imagery"])>=5,"multiple_geotagged_cameras_registered":len(cameras)>=3,"raw_lidar_present":raw_path.exists(),"vertical_returns_kept_observational":True,"rejected_geometry_not_locked":all(term in manifest["not_locked"] for term in ["bay projection depths","window widths/heights","terrace depth","pergola dimensions"])}
+    unresolved=["Register image headings/intrinsics where recoverable; GPS alone does not solve a camera.","Mark common stable facade control points in at least three reference views.","Separate likely building returns from vegetation/occlusion before deriving vertical architectural bands.","Derive the garage/driveway threshold elevation from source-supported site-interface evidence.","Solve facade scale and projection depths with uncertainty from registered multi-view correspondences.","Produce measured elevation/depth controls before any B4 Minecraft shell is authorized."]
+    report={"schema_version":1,"gate":"1040_B0_SOURCE_TRUTH","result":"BLOCKED" if unresolved else "PASS","building":{"datasf_building_id":BUILDING_ID,"osm_way":rec.get("osm_way"),"address":f'{rec.get("address")} {rec.get("street")}','footprint_area_m2_derived':float(poly.area),"centroid_local_m":[float(poly.centroid.x),float(poly.centroid.y)]},"street_facing_edge":street_edge,"registered_cameras":cameras,"lidar":lidar,"checks":checks,"unresolved":unresolved,"geometry_generation_authorized":False}
+    (OUT/"Lombard_1040_B0_Source_Truth_v027.json").write_text(json.dumps(report,indent=2)+"\n")
+
+    pts=list(road.coords)+list(poly.exterior.coords)+[(c["local_x_m"],c["local_z_m"]) for c in cameras]
+    minx=min(p[0] for p in pts)-4;maxx=max(p[0] for p in pts)+4;minz=min(p[1] for p in pts)-4;maxz=max(p[1] for p in pts)+4;W,H=1600,900
+    def px(x,z):return (int(60+(x-minx)/max(1e-9,maxx-minx)*(W-120)),int(60+(z-minz)/max(1e-9,maxz-minz)*(H-120)))
+    im=Image.new("RGB",(W,H),"white");d=ImageDraw.Draw(im)
+    d.line([px(x,z) for x,z in road.coords],fill=(153,84,74),width=8)
+    d.polygon([px(x,z) for x,z in poly.exterior.coords],fill=(220,224,223),outline=(35,52,58),width=4)
+    d.line([px(*street_edge["a"]),px(*street_edge["b"])],fill=(20,104,156),width=10)
+    cx,cz=poly.centroid.x,poly.centroid.y
+    for c in cameras:
+        p=px(c["local_x_m"],c["local_z_m"]);d.ellipse((p[0]-7,p[1]-7,p[0]+7,p[1]+7),fill=(52,116,66));d.line([p,px(cx,cz)],fill=(120,160,126),width=2);d.text((p[0]+10,p[1]-8),c["date"],fill=(30,60,35))
+    d.text((50,20),"1040 Lombard B0 source truth — registered footprint, road, and geotagged reference cameras",fill=(25,35,40))
+    d.text((50,H-32),"Blue = derived street-facing footprint edge. Green = camera GPS positions. QA only; not architectural geometry.",fill=(55,65,70))
+    im.save(OUT/"Lombard_1040_B0_Camera_Plan_v027.png")
+
+    md=["# 1040 Lombard B0 source-truth audit","",f"**Result: {report['result']}**","",f"- DataSF building: {BUILDING_ID}",f"- Derived footprint area: {poly.area:.2f} m²",f"- Derived street-facing footprint edge: {street_edge['length_m']:.3f} m",f"- Geotagged reference cameras registered: {len(cameras)}",f"- Raw LiDAR points inside footprint: {int(inside.sum())}","","## Unresolved before geometry",""]+[f"- {x}" for x in unresolved]
+    (OUT/"Lombard_1040_B0_Source_Truth_v027.md").write_text("\n".join(md)+"\n")
+    print(json.dumps({"result":report["result"],"checks":checks,"unresolved_count":len(unresolved),"output":str(OUT.relative_to(ROOT))},indent=2))
+
+if __name__=="__main__":main()
