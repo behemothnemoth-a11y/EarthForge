@@ -2,8 +2,8 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "HOUSE_1040_SOURCE_FIRSTPASS_V032_REVIEW",
-  "milestone": "LOMBARD_1040_SOURCE_FIRSTPASS_V032",
+  "status": "HOUSE_1040_STANDALONE_LAB_DIAGNOSTIC",
+  "milestone": "LOMBARD_1040_BUILDING_LAB_V001",
   "scope": "Accepted Lombard public realm/access context plus provisional source-led 1040 first-pass architecture for Minecraft review; unresolved photo-proportioned dimensions remain non-truth.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,22 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/house_1040_source_firstpass_v032/Lombard_1040_Source_FirstPass_Astra_v032.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_1040_source_firstpass_v032.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_1040_building_lab_v001.py",
   "review_gate": {
-    "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the richer provisional first architectural pass of 1040 Lombard before further source refinement or fine detail.",
+    "required": "ISOLATED_SOURCE_AND_VISUAL_REWORK",
+    "accepted": false,
+    "integration_allowed": false,
     "notes": [
-      "v032 supersedes v031 as the active visual candidate; v031 remains a registration-only check.",
-      "Check whole-house silhouette, garage relationship, lower projected bay, upper set-back bay, broad right body, recessed left entry, terrace fascia and open pergola.",
-      "Photo-proportioned subdivisions/depths are candidates with recorded confidence, not survey truth.",
-      "The enclosed body stops at the terrace deck; only the open rooftop structure reaches the source upper envelope.",
-      "Public realm and neighboring buildings must remain unchanged.",
-      "Do not advance into fine trim/vegetation until this massing/facade hierarchy passes."
+      "v032 rejected by user.",
+      "Lab v001 is a diagnostic baseline, not approved architecture.",
+      "Use a new scratch area; do not paste into Lombard."
     ]
   },
-  "active_focus_config": "projects/lombard_sf/house_1040_firstpass_focus_v032.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/house_1040_source_firstpass_v032/Lombard_1040_Source_FirstPass_v032_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/building_labs/1040_lombard/lab_v001.json",
+  "active_reference_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "source_truth_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "rejected_review_artifacts": [
     {
@@ -111,6 +109,12 @@
       "artifact": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Front_Massing_Astra_v026.litematic",
       "status": "rejected_interpretation_first_massing",
       "reason": "Although 3D, the massing still assigned bay, entry, terrace and pergola dimensions before a registered multi-view/source-measurement gate. User requested complete removal and a data-first restart."
+    },
+    {
+      "review_id": "LOMBARD_1040_SOURCE_FIRSTPASS_V032",
+      "status": "rejected_by_user",
+      "artifact": "projects/lombard_sf/outputs/house_1040_source_firstpass_v032/Lombard_1040_Source_FirstPass_Astra_v032.litematic",
+      "reason": "User rejected appearance and requested a standalone building lab using EarthForge building tooling."
     }
   ],
   "superseded_review_artifacts": [

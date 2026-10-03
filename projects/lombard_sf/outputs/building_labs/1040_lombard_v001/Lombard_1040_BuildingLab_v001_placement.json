@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "mode": "standalone_scratch_area_only",
+  "rotation": 0,
+  "mirror": "none",
+  "region_size_blocks": [
+    13,
+    13,
+    20
+  ],
+  "suggested_empty_test_area_blocks": [
+    20,
+    20,
+    25
+  ],
+  "origin": "Choose a new empty scratch-area origin; do NOT use the Lombard registration origin.",
+  "registration_marker_offset_blocks": [
+    0,
+    0,
+    0
+  ],
+  "building_front_origin_offset_m": [
+    1,
+    0,
+    2
+  ],
+  "building_directions": {
+    "photo_right": "+X",
+    "inward": "+Z",
+    "front_faces": "-Z"
+  },
+  "replace_blocks": "ALL including air, only in the empty scratch area",
+  "integration_allowed": false
+}

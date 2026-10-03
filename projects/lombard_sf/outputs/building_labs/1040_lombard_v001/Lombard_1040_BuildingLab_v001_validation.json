@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "lab_id": "LOMBARD_1040_BUILDING_LAB_V001",
+  "status": "PASS",
+  "file": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001.litematic",
+  "sha256": "0ae27ccb01d6f0b24bf3bb5898cef55f29bab3696fcda7affa63df7ad7c18a18",
+  "branch": "codex/lombard-1040-building-lab",
+  "standalone": true,
+  "lombard_context_included": false,
+  "region_position": [
+    0,
+    0,
+    0
+  ],
+  "region_size": [
+    13,
+    13,
+    20
+  ],
+  "footprint_area_m2": 177.20842492902057,
+  "frontage_m": 10.934756432120318,
+  "max_depth_m": 17.832733,
+  "height_m": 12.625,
+  "body_top_m": 9.7,
+  "micro_host_blocks": 1074,
+  "micro_occupied_cells": 768526,
+  "facade_canvas_cells": 192446,
+  "facade_feature_counts": {
+    "sloped": 13,
+    "round": 0,
+    "boxes": 822
+  },
+  "materials": [
+    "astra_microblocks:rgb_17262c",
+    "astra_microblocks:rgb_203743",
+    "astra_microblocks:rgb_2b4551",
+    "astra_microblocks:rgb_3b4a50",
+    "astra_microblocks:rgb_82aec2",
+    "astra_microblocks:rgb_91b9ca",
+    "astra_microblocks:rgb_a7cdd9",
+    "astra_microblocks:rgb_e7e4da"
+  ],
+  "checks": {
+    "exact_block_map": true,
+    "exact_astra_cells_and_materials": true,
+    "astra_host_count": true,
+    "astra_microcell_decode": true,
+    "micro_only_above_ground": true,
+    "no_glass": true,
+    "source_footprint_area": true,
+    "source_frontage": true,
+    "continuous_facade_canvas": true,
+    "lower_window_void": true,
+    "upper_window_void": true,
+    "right_window_void": true
+  },
+  "review_targets": [
+    "whole-house standalone silhouette",
+    "lower bay versus upper bay depth",
+    "broad right body proportion",
+    "garage and recessed left entry",
+    "open window voids / no vertical striping",
+    "terrace railing and pergola depth",
+    "side/rear footprint shape"
+  ],
+  "visual_status": "NEEDS_REWORK",
+  "known_visual_defects": [
+    "Oversized diagonal braces dominate the facade.",
+    "A diagonal member crosses the upper-right opening.",
+    "Facade ratios still inherit rejected v032 provisional estimates; not new measurements.",
+    "Full-depth flat cap and side/rear envelope remain unverified."
+  ],
+  "integration_status": "BLOCKED_VISUAL_QA_AND_SOURCE_REVIEW"
+}

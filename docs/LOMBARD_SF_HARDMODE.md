@@ -1,8 +1,8 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: 1040 Lombard richer source-led first pass v032
+## Active work on this branch: isolated 1040 diagnostic lab
 
-v031 proved the source footprint/registering but was intentionally too conservative to exercise EarthForge's architectural first-pass capability. v032 is now the active **provisional** Minecraft review candidate. It starts from accepted v024, removes the entire old 1040 placeholder, then rebuilds the persistent facade/body hierarchy supported across the dedicated 2008/2009/2013/2014/2019 reference set: recessed left entry, street garage, lower projecting central bay, upper set-back bay, broad right vertical body, terrace fascia, open rail and pergola. Structured footprint/site/absolute-envelope controls are high-confidence; facade subdivisions are photo-proportioned and depth offsets are lower-confidence review candidates. See `docs/LOMBARD_1040_SOURCE_FIRSTPASS_V032.md`. Stop for Minecraft flyaround before further refinement.
+Branch: `codex/lombard-1040-building-lab`. The user rejected v032 and requested a standalone house schematic using EarthForge building tooling. The active lab is `projects/lombard_sf/building_labs/1040_lombard/project.json`. Read its README before generating or installing. Lab v001 uses the shared continuous `FacadeCanvas`, but is a DIAGNOSTIC baseline with known visual defects and inherited unaccepted v032 ratios. Serialization PASS is not visual/source acceptance. Integration into Lombard remains BLOCKED. Use a new empty scratch area, never the old Lombard placement origin. The `codex/lombard-sf-hardmode` branch and Minecraft world are unchanged.
 
 
 ## Historical review: integrated realism v020

@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "lab_id": "LOMBARD_1040_BUILDING_LAB_V001",
+  "branch": "codex/lombard-1040-building-lab",
+  "target": {
+    "building_id": "201006.0032105",
+    "address": "1040 Lombard Street",
+    "mblr": "SF0068010"
+  },
+  "mode": "single_building_truth_lab_micro_depth",
+  "normalized_frame": {
+    "units": "meters",
+    "front_edge": "d=0",
+    "u_axis": "photo-left to photo-right along verified DataSF street-facing edge",
+    "d_axis": "positive inward from street-facing edge",
+    "y_axis": "positive up from accepted driveway datum",
+    "front_origin_lombard_local_m": [
+      76.68966116209049,
+      -26.416462344583124
+    ],
+    "uvec_lombard_local": [
+      0.9849215948456739,
+      -0.1730013063726815
+    ],
+    "inward_normal_lombard_local": [
+      -0.1730013063726815,
+      -0.9849215948456739
+    ],
+    "frontage_m": 10.934756432120318,
+    "max_depth_m": 17.832733
+  },
+  "footprint_ud_m": [
+    [
+      9.642705,
+      17.832733
+    ],
+    [
+      0.565047,
+      17.816858
+    ],
+    [
+      0.577232,
+      10.76368
+    ],
+    [
+      0.514514,
+      10.762929
+    ],
+    [
+      0.566389,
+      6.843177
+    ],
+    [
+      0.569552,
+      6.841291
+    ],
+    [
+      0.583953,
+      6.841442
+    ],
+    [
+      0.590431,
+      3.101881
+    ],
+    [
+      -0.000701,
+      3.102115
+    ],
+    [
+      -0.002506,
+      0.001549
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      10.934756,
+      0.0
+    ],
+    [
+      10.934706,
+      2.917117
+    ],
+    [
+      11.020616,
+      2.917206
+    ],
+    [
+      11.016613,
+      5.356741
+    ],
+    [
+      11.013072,
+      5.359029
+    ],
+    [
+      9.716626,
+      5.356425
+    ],
+    [
+      9.711406,
+      8.69933
+    ],
+    [
+      11.01079,
+      8.701886
+    ],
+    [
+      11.00297,
+      13.299263
+    ],
+    [
+      10.999428,
+      13.30155
+    ],
+    [
+      9.653718,
+      13.29907
+    ],
+    [
+      9.646005,
+      17.830599
+    ]
+  ],
+  "absolute_controls": {
+    "driveway_datum_source": "accepted v024 driveway immediately outside 1040 frontage",
+    "driveway_datum_lombard_micro_y": -308,
+    "source_envelope_height_m": 12.625,
+    "body_top_candidate_m": 9.7,
+    "pergola_top_candidate_m": 12.45
+  },
+  "facade_candidate": {
+    "source_manifest": "projects/lombard_sf/source_manifests/1040_lombard_photo_measurements_v032.json",
+    "main_wall_inward_m": 0.65,
+    "garage_face_inward_m": 0.55,
+    "lower_bay_face_inward_m": 0.05,
+    "upper_bay_face_inward_m": 0.32,
+    "right_body_face_inward_m": 0.3,
+    "entry_back_inward_m": 1.2,
+    "zones_u": {
+      "entry": [
+        0.0,
+        0.13
+      ],
+      "central_bay": [
+        0.13,
+        0.6
+      ],
+      "right_body": [
+        0.6,
+        0.98
+      ],
+      "garage": [
+        0.14,
+        0.54
+      ]
+    },
+    "vertical_m": {
+      "garage_head": 1.74,
+      "lower_window_sill": 2.76,
+      "lower_window_head": 4.97,
+      "upper_window_sill": 6.55,
+      "upper_window_head": 8.05,
+      "terrace_fascia_bottom": 8.6,
+      "terrace_deck": 9.7,
+      "railing_top": 10.88,
+      "pergola_top": 12.45
+    }
+  },
+  "materials": {
+    "body": "astra_microblocks:rgb_91b9ca",
+    "body_alt": "astra_microblocks:rgb_82aec2",
+    "frame": "astra_microblocks:rgb_203743",
+    "frame_alt": "astra_microblocks:rgb_2b4551",
+    "window_frame": "astra_microblocks:rgb_e7e4da",
+    "garage": "astra_microblocks:rgb_a7cdd9",
+    "roof": "astra_microblocks:rgb_3b4a50",
+    "shadow": "astra_microblocks:rgb_17262c"
+  },
+  "rules": [
+    "Standalone schematic contains only 1040 plus a registration marker.",
+    "No Lombard public realm, landscaping, neighbor geometry or inherited building cells.",
+    "Above-ground building geometry is Astra microblocks only.",
+    "Windows are open voids with microblock frames/mullions; no glass in lab v001.",
+    "Facade modules are authored continuously across host boundaries.",
+    "Major depth hierarchy must remain readable from 3/4 view.",
+    "Photo-proportioned dimensions remain provisional until reviewed.",
+    "Integration back to Lombard may occur only after isolated lab acceptance."
+  ],
+  "diagnostic_provenance": {
+    "footprint": "DataSF 201006.0032105 normalized by rigid transform; no shape redesign.",
+    "facade": "Carries rejected v032 provisional ratios ONLY to isolate authoring/export defects; not accepted source truth.",
+    "shared_code": "pipeline/microblocks/facade_canvas.py is actually imported and invoked.",
+    "limits": "Not an automated surveyed reconstruction; no fit to registered reference-camera measurements is claimed."
+  }
+}

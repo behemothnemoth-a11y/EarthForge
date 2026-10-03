@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "lab_id": "LOMBARD_1040_BUILDING_LAB_V001",
+  "status": "V001_DIAGNOSTIC_REVIEW",
+  "active_spec": "projects/lombard_sf/building_labs/1040_lombard/lab_v001.json",
+  "active_artifact": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001.litematic",
+  "integration_target_branch": "codex/lombard-sf-hardmode",
+  "integration_policy": "accepted standalone building only; apply normalized-frame transform back to Lombard",
+  "active_validation": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_validation.json",
+  "active_front_render": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_front.png",
+  "active_plan_render": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_plan.png",
+  "integration_transform": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_integration_transform.json",
+  "visual_status": "NEEDS_REWORK",
+  "geometry_accepted": false
+}
