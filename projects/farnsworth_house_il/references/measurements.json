@@ -1,0 +1,40 @@
+{
+  "schema_version": "farnsworth-dimension-ledger-v1",
+  "status": "partial_transcription_pending_independent_review",
+  "source_register": "source_manifest.json",
+  "generation_allowed": false,
+  "conversion": {"metres_per_inch": 0.0254, "metres_per_foot": 0.3048, "rounding_policy": "Preserve exact source-unit fractions; convert without snapping to the Minecraft grid.", "accuracy_warning": "Displayed decimal precision is conversion precision, not a measured tolerance."},
+  "measurements": [
+    {"id": "upper_plan_length", "feature": "Overall upper plan east-west leader", "source": "D03", "location": "topmost overall dimension", "source_feet": 77, "source_inches": "4 1/8", "total_inches": 928.125, "metres": 23.574375, "printed_metric_metres": 23.57, "status": "visually_transcribed_and_chain_checked", "boundary_status": "Confirm leader endpoints versus roof, glazing and outer column faces before geometry approval."},
+    {"id": "upper_plan_depth", "feature": "Overall upper plan north-south leader", "source": "D03", "location": "right-side overall dimension", "source_feet": 28, "source_inches": "8", "total_inches": 344, "metres": 8.7376, "printed_metric_metres": 8.74, "status": "visually_transcribed", "boundary_status": "Cross-check external column extent separately; do not use every reported width as the same boundary."},
+    {"id": "lower_plan_length", "feature": "Lower terrace east-west overall leader", "source": "D03", "location": "bottom overall dimension", "source_feet": 55, "source_inches": "3", "total_inches": 663, "metres": 16.8402, "printed_metric_metres": 16.84, "status": "visually_transcribed"},
+    {"id": "lower_stair_width", "feature": "Lower stair width in plan", "source": "D03", "location": "lower terrace southern dimension chain at stair", "source_feet": 12, "source_inches": "0 1/4", "total_inches": 144.25, "metres": 3.66395, "status": "visually_transcribed", "boundary_status": "Check tread stone and stringer boundaries against D07 before generating."},
+    {"id": "upper_west_overhang", "source": "D03", "location": "top longitudinal chain, western outer edge to first support axis", "total_inches": 67.875, "metres": 1.724025, "status": "visually_transcribed"},
+    {"id": "upper_west_bay", "source": "D03", "location": "top longitudinal chain, first to second support axis", "total_inches": 264, "metres": 6.7056, "status": "visually_transcribed"},
+    {"id": "upper_middle_bay", "source": "D03", "location": "top longitudinal chain, second to third support axis", "total_inches": 264.375, "metres": 6.715125, "status": "visually_transcribed"},
+    {"id": "upper_east_bay", "source": "D03", "location": "top longitudinal chain, third to fourth support axis", "total_inches": 264.25, "metres": 6.71195, "status": "visually_transcribed"},
+    {"id": "upper_east_overhang", "source": "D03", "location": "top longitudinal chain, fourth support axis to eastern outer edge", "total_inches": 67.625, "metres": 1.717675, "status": "visually_transcribed"}
+  ],
+  "checks_completed": [
+    {"id": "upper_longitudinal_chain", "method": "Exact rational arithmetic on transcribed inch values", "parts": ["upper_west_overhang", "upper_west_bay", "upper_middle_bay", "upper_east_bay", "upper_east_overhang"], "sum_inches": 928.125, "overall_inches": 928.125, "residual_inches": 0, "result": "pass", "limits": "Checks arithmetic consistency, not accuracy of the survey or independent correctness of every transcription."},
+    {"id": "metric_conversion", "method": "Exact rational multiplication by 127/5000 metres per inch", "result": "pass_for_listed_measurements"}
+  ],
+  "conflicts": [
+    {"id": "C01", "feature": "Upper overall length", "drawing_measurement": "upper_plan_length", "report_values": [{"source": "REPORT", "pdf_page_1_based": 7, "printed_page": "6", "feet": 77, "inches": "3", "metres": 23.5458}, {"source": "REPORT", "pdf_page_1_based": 42, "printed_page": "39", "feet": 77, "inches": "3", "metres": 23.5458}], "difference_metres": 0.028575, "status": "unresolved", "next_action": "Independently reread D03 and compare endpoint definitions with D04/D05. Keep both source statements; do not average."},
+    {"id": "C02", "feature": "Upper north-south extent", "drawing_measurement": "upper_plan_depth", "report_values": [{"source": "REPORT", "pdf_page_1_based": 7, "printed_page": "6", "feet": 28, "inches": "8", "metres": 8.7376}, {"source": "REPORT", "pdf_page_1_based": 42, "printed_page": "39", "feet": 29, "inches": "4 1/2", "metres": 8.9535}], "difference_metres": 0.2159, "status": "unresolved_boundary_definition_possible", "next_action": "Check whether outer column faces versus floor/glass edges explain the different values. This is a hypothesis, not an established resolution."},
+    {"id": "C03", "feature": "Grade, terrace, floor and roof levels", "sources": [{"source": "REPORT", "pdf_page_1_based": 7, "printed_page": "6"}, {"source": "REPORT", "pdf_page_1_based": 42, "printed_page": "39"}, {"source": "REPORT", "pdf_page_1_based": 43, "printed_page": "40"}], "status": "unresolved", "next_action": "Use explicit level leaders and a named datum from D04/D05/D07. Old and later prose describe different heights; never combine underside, finished-floor, parapet and approximate grade levels."},
+    {"id": "C04", "feature": "Wardrobe presence", "sources": ["D03", "P22", "CAPTIONS"], "status": "documented_temporal_difference_not_geometry_error", "next_action": "Keep furniture out of the first structural pass. Ask for baseline approval before choosing wardrobe presence."}
+  ],
+  "unverified_required_before_structural_generation": [
+    "Independent review of the transcribed D03 dimensions and their endpoints",
+    "Lower terrace depth and offset relative to upper platform",
+    "Explicit floor, terrace, roof and parapet levels in one vertical datum",
+    "Slab-edge depths and column sections from D08",
+    "Stair rises, goings, tread thicknesses and attachment details from D07",
+    "Glazing perimeter, door location and pane divisions from D03/D04/D05/D08",
+    "Roof silhouette and service-core visibility in the selected historical baseline",
+    "Metric local axes, physical anchor and isolated export placement",
+    "Existing exporter capability and honest limitations for thin/translucent geometry"
+  ],
+  "user_review": {"baseline_approved": false, "dimensions_approved": false, "structural_generation_approved": false}
+}
