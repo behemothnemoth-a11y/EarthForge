@@ -7,9 +7,10 @@ on:
         description: Artifact target
         required: true
         type: choice
-        default: lombard_1040_reset_v027
+        default: lombard_1040_shell_v031
         options:
           - lombard_1040_reset_v027
+          - lombard_1040_shell_v031
   push:
     branches:
       - "codex/**"
@@ -18,6 +19,7 @@ on:
       - "requirements-ci.txt"
       - "tools/ci/build_artifact.py"
       - "pipeline/reconstruction/generate_lombard_1040_reset_v027.py"
+      - "pipeline/reconstruction/generate_lombard_1040_shell_v031.py"
       - "pipeline/reconstruction/generate_lombard_access_tree_realism_v024.py"
       - "pipeline/reconstruction/generate_lombard_neighborhood_v018.py"
       - "pipeline/reconstruction/generate_lombard_realism_v020.py"
@@ -30,7 +32,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: earthforge-artifact-${{ github.ref }}-${{ github.event.inputs.target || 'lombard_1040_reset_v027' }}
+  group: earthforge-artifact-${{ github.ref }}-${{ github.event.inputs.target || 'lombard_1040_shell_v031' }}
   cancel-in-progress: true
 
 jobs:
@@ -38,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      TARGET: ${{ github.event.inputs.target || 'lombard_1040_reset_v027' }}
+      TARGET: ${{ github.event.inputs.target || 'lombard_1040_shell_v031' }}
     steps:
       - name: Checkout exact revision
         uses: actions/checkout@v4
@@ -57,6 +59,7 @@ jobs:
         run: |
           python -m py_compile tools/ci/build_artifact.py
           python -m py_compile pipeline/reconstruction/generate_lombard_1040_reset_v027.py
+          python -m py_compile pipeline/reconstruction/generate_lombard_1040_shell_v031.py
 
       - name: Build and validate allowlisted artifact
         run: python tools/ci/build_artifact.py "$TARGET"
