@@ -9,6 +9,7 @@ from pathlib import Path
 from collections import defaultdict
 import cv2
 import numpy as np
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[2]
 PROJECT=ROOT/"projects"/"lombard_sf"
@@ -90,10 +91,49 @@ def main():
     tracks=tracks[:250]
     for i,t in enumerate(tracks,1):t["candidate_id"]=f"MT{i:03d}"
 
+    # Ephemeral visual review sheet. Source images remain in the gitignored private cache;
+    # this downscaled overlay is uploaded only as workflow evidence.
+    manifest=json.loads((PROJECT/"source_manifests/1040_lombard_source_truth_v027.json").read_text())
+    meta={m["date"]:m for m in manifest["imagery"]}
+    obs_by_img=defaultdict(list)
+    for t in tracks:
+        for o in t["observations"]:
+            obs_by_img[o["image_index"]].append((t["candidate_id"],o["pixel"]))
+    TILE_W,TILE_H=760,530
+    sheet=Image.new("RGB",(TILE_W*2,TILE_H*3),(238,238,233))
+    sd=ImageDraw.Draw(sheet)
+    try:
+        font=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",18)
+        smallfont=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",13)
+    except Exception:
+        font=smallfont=None
+    for idx,d0 in enumerate(data):
+        ref=d0["ref"];src=Image.open(ROOT/ref["cache_path"]).convert("RGB")
+        maxw,maxh=TILE_W-20,TILE_H-72
+        scale=min(maxw/src.width,maxh/src.height)
+        nw,nh=max(1,round(src.width*scale)),max(1,round(src.height*scale))
+        tile=src.resize((nw,nh),Image.Resampling.LANCZOS)
+        td=ImageDraw.Draw(tile)
+        for cid,pix in obs_by_img.get(idx,[]):
+            x=float(pix[0])*scale;y=float(pix[1])*scale
+            rr=11
+            td.ellipse((x-rr,y-rr,x+rr,y+rr),outline=(255,45,25),width=4)
+            td.rectangle((x+12,y-12,x+72,y+9),fill=(255,245,230))
+            td.text((x+15,y-11),cid,fill=(130,10,0),font=smallfont)
+        ox=(idx%2)*TILE_W+(TILE_W-nw)//2
+        oy=(idx//2)*TILE_H+30
+        sheet.paste(tile,(ox,oy))
+        m=meta.get(ref["date"],{})
+        sd.text(((idx%2)*TILE_W+10,(idx//2)*TILE_H+5),f'{ref["date"]} — {m.get("artist","")} / {m.get("license","")}',fill=(25,35,40),font=font)
+        sd.text(((idx%2)*TILE_W+10,(idx//2)*TILE_H+TILE_H-28),"Red IDs = machine track candidates only; not accepted control points.",fill=(60,60,60),font=smallfont)
+    overlay_path=OUT/"Lombard_1040_Multiview_Track_Candidates_v028_contact.jpg"
+    sheet.save(overlay_path,quality=88)
+
     report={"schema_version":1,"status":"MACHINE_PROPOSALS_ONLY",
             "method":{"detector":"SIFT","ratio_test":0.72,"pair_geometry":"fundamental matrix RANSAC","ransac_px":1.6,
                       "min_track_views":3,"warning":"Candidates can land on vegetation/repeated texture. Human/source review is mandatory before copying any point into the canonical control-point manifest."},
             "images":[{"index":i,"date":d["ref"]["date"],"title":d["ref"]["title"],"dimensions":d["shape"],"keypoints":len(d["kp"])} for i,d in enumerate(data)],
+            "review_overlay":str(overlay_path.relative_to(ROOT)),
             "pair_stats":pair_stats,"candidate_track_count":len(tracks),"tracks":tracks}
     path=OUT/"Lombard_1040_Multiview_Track_Candidates_v028.json"
     path.write_text(json.dumps(report,indent=2)+"\n")
