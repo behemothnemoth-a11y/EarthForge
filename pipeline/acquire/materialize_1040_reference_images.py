@@ -4,7 +4,7 @@ Original images stay under the gitignored references/private tree. Only a
 metadata/hash resolution report is written to the generated B0 output bundle.
 """
 from __future__ import annotations
-import hashlib, json
+import hashlib, json, time
 from pathlib import Path
 import requests
 from PIL import Image
@@ -26,6 +26,29 @@ def sha256(path:Path)->str:
 def safe_name(title:str)->str:
     return "".join(c if c.isalnum() or c in "._-" else "_" for c in title)
 
+def download_with_backoff(session, url, path):
+    clean=url.split("?",1)[0]
+    last=None
+    for attempt in range(7):
+        try:
+            with session.get(clean,stream=True,timeout=120,headers={"Referer":"https://commons.wikimedia.org/"}) as r:
+                if r.status_code==429:
+                    wait=float(r.headers.get("Retry-After") or min(60,5*(2**attempt)))
+                    print(f"Wikimedia rate limit for {path.name}; waiting {wait:.0f}s",flush=True)
+                    time.sleep(wait);continue
+                r.raise_for_status()
+                with path.open("wb") as f:
+                    for chunk in r.iter_content(1024*1024):
+                        if chunk:f.write(chunk)
+                return
+        except requests.RequestException as exc:
+            last=exc
+            if attempt==6:break
+            wait=min(60,3*(2**attempt))
+            print(f"Reference download retry {attempt+1}/7 for {path.name}: {exc}; waiting {wait}s",flush=True)
+            time.sleep(wait)
+    raise RuntimeError(f"Could not download {clean}: {last}")
+
 def main():
     manifest=json.loads(MANIFEST.read_text(encoding="utf-8"))
     CACHE.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)
@@ -45,11 +68,8 @@ def main():
         info=pages[0]["imageinfo"][0]
         path=CACHE/safe_name(title)
         if not path.exists() or path.stat().st_size!=int(info["size"]):
-            with session.get(info["url"],stream=True,timeout=120) as r:
-                r.raise_for_status()
-                with path.open("wb") as f:
-                    for chunk in r.iter_content(1024*1024):
-                        if chunk:f.write(chunk)
+            download_with_backoff(session,info["url"],path)
+            time.sleep(2.0)
         with Image.open(path) as im:
             dims=[int(im.width),int(im.height)]
         expected=[int(x) for x in item["dimensions"]]
