@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "package": "1040_lombard_control_points_v028",
+  "status": "ANNOTATION_REQUIRED",
+  "purpose": "Stable multi-view architectural landmarks for camera registration and dimension solving. Definitions are source observations, not Minecraft geometry.",
+  "rules": [
+    "Use stable building corners/joints, not vegetation, shadows, people, parked cars, or temporary objects.",
+    "A point is measurement-eligible only after pixel coordinates are independently recorded in at least three usable views.",
+    "Depth solving requires points on more than one architectural plane; a single facade homography is insufficient for projecting bays/terrace depth.",
+    "Rejected v025/v026 geometry must never be used as a control-point source."
+  ],
+  "minimum_gate": {
+    "points_with_three_or_more_observations": 8,
+    "geotagged_views": 3,
+    "planes_represented": 3
+  },
+  "points": [
+    {
+      "id": "CP01",
+      "name": "garage_opening_top_left",
+      "plane": "garage/front",
+      "stability": "high",
+      "notes": "Use masonry/door-frame corner, not door panel seam.",
+      "observations": {}
+    },
+    {
+      "id": "CP02",
+      "name": "garage_opening_top_right",
+      "plane": "garage/front",
+      "stability": "high",
+      "notes": "Use opening/frame corner.",
+      "observations": {}
+    },
+    {
+      "id": "CP03",
+      "name": "garage_opening_bottom_left",
+      "plane": "garage/front",
+      "stability": "medium",
+      "notes": "Threshold can be partly occluded; record only when visible.",
+      "observations": {}
+    },
+    {
+      "id": "CP04",
+      "name": "garage_opening_bottom_right",
+      "plane": "garage/front",
+      "stability": "medium",
+      "notes": "Threshold can be partly occluded; record only when visible.",
+      "observations": {}
+    },
+    {
+      "id": "CP05",
+      "name": "lower_projecting_bay_right_front_corner",
+      "plane": "lower_bay/front-return",
+      "stability": "high",
+      "notes": "Vertical corner separating central bay face from right return.",
+      "observations": {}
+    },
+    {
+      "id": "CP06",
+      "name": "lower_projecting_bay_right_upper_corner",
+      "plane": "lower_bay/front-return",
+      "stability": "high",
+      "notes": "Same vertical corner at upper slab/fascia joint.",
+      "observations": {}
+    },
+    {
+      "id": "CP07",
+      "name": "upper_projecting_bay_right_front_corner",
+      "plane": "upper_bay/front-return",
+      "stability": "high",
+      "notes": "Right front corner of upper projecting volume.",
+      "observations": {}
+    },
+    {
+      "id": "CP08",
+      "name": "terrace_fascia_front_right_corner",
+      "plane": "terrace/front-return",
+      "stability": "high",
+      "notes": "Structural fascia corner directly below open terrace.",
+      "observations": {}
+    },
+    {
+      "id": "CP09",
+      "name": "pergola_front_right_top_joint",
+      "plane": "pergola/front-return",
+      "stability": "high",
+      "notes": "Top structural joint, not vine edge.",
+      "observations": {}
+    },
+    {
+      "id": "CP10",
+      "name": "right_vertical_bay_window_top_right",
+      "plane": "right_vertical_bay",
+      "stability": "high",
+      "notes": "Outer frame corner of stable upper right window.",
+      "observations": {}
+    },
+    {
+      "id": "CP11",
+      "name": "right_vertical_bay_window_bottom_right",
+      "plane": "right_vertical_bay",
+      "stability": "high",
+      "notes": "Outer frame corner of same stable window.",
+      "observations": {}
+    },
+    {
+      "id": "CP12",
+      "name": "facade_right_outer_vertical_corner_at_terrace_floor",
+      "plane": "building/right_outer",
+      "stability": "high",
+      "notes": "Persistent building corner at terrace/fascia datum.",
+      "observations": {}
+    }
+  ]
+}
