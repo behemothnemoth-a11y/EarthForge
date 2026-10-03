@@ -1,0 +1,13 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review the richer source-led first architectural pass of 1040 Lombard before any further measurement/detail refinement.",
+  "notes": [
+    "This supersedes v031 as the active first-pass review candidate; v031 remains a registration check.",
+    "Check the whole-house silhouette and body height against the real references and neighboring buildings.",
+    "Check that the street facade reads as garage + lower projected window bay + upper set-back window bay + broad right vertical body.",
+    "Check that the left entry is recessed and the rooftop structure reads as an open terrace/pergola rather than a full-height wall.",
+    "Check lower-bay projection versus the upper bay and right body from oblique angles.",
+    "Photo-proportioned subdivisions and depth offsets are still candidate measurements; flag anything visibly wrong before we refine.",
+    "Public realm and neighboring buildings must remain unchanged."
+  ]
+}

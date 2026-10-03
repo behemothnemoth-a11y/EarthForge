@@ -7,10 +7,11 @@ on:
         description: Artifact target
         required: true
         type: choice
-        default: lombard_1040_shell_v031
+        default: lombard_1040_firstpass_v032
         options:
           - lombard_1040_reset_v027
           - lombard_1040_shell_v031
+          - lombard_1040_firstpass_v032
   push:
     branches:
       - "codex/**"
@@ -20,6 +21,7 @@ on:
       - "tools/ci/build_artifact.py"
       - "pipeline/reconstruction/generate_lombard_1040_reset_v027.py"
       - "pipeline/reconstruction/generate_lombard_1040_shell_v031.py"
+      - "pipeline/reconstruction/generate_lombard_1040_source_firstpass_v032.py"
       - "pipeline/reconstruction/generate_lombard_access_tree_realism_v024.py"
       - "pipeline/reconstruction/generate_lombard_neighborhood_v018.py"
       - "pipeline/reconstruction/generate_lombard_realism_v020.py"
@@ -27,12 +29,13 @@ on:
       - "projects/lombard_sf/outputs/neighborhood_blockout_v018/**"
       - "projects/lombard_sf/project.json"
       - "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json"
+      - "projects/lombard_sf/source_manifests/1040_lombard_photo_measurements_v032.json"
 
 permissions:
   contents: read
 
 concurrency:
-  group: earthforge-artifact-${{ github.ref }}-${{ github.event.inputs.target || 'lombard_1040_shell_v031' }}
+  group: earthforge-artifact-${{ github.ref }}-${{ github.event.inputs.target || 'lombard_1040_firstpass_v032' }}
   cancel-in-progress: true
 
 jobs:
@@ -40,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      TARGET: ${{ github.event.inputs.target || 'lombard_1040_shell_v031' }}
+      TARGET: ${{ github.event.inputs.target || 'lombard_1040_firstpass_v032' }}
     steps:
       - name: Checkout exact revision
         uses: actions/checkout@v4
@@ -60,6 +63,7 @@ jobs:
           python -m py_compile tools/ci/build_artifact.py
           python -m py_compile pipeline/reconstruction/generate_lombard_1040_reset_v027.py
           python -m py_compile pipeline/reconstruction/generate_lombard_1040_shell_v031.py
+          python -m py_compile pipeline/reconstruction/generate_lombard_1040_source_firstpass_v032.py
 
       - name: Build and validate allowlisted artifact
         run: python tools/ci/build_artifact.py "$TARGET"

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "package": "1040_lombard_photo_measurements_v032",
+  "status": "PHOTO_PROPORTION_CANDIDATE",
+  "purpose": "Source-bounded proportions for a richer first Minecraft pass. These measurements describe persistent visible architectural hierarchy; they are not survey dimensions.",
+  "primary_reference": {
+    "date": "2008-07-11",
+    "title": "1040 Lombard Street, San Francisco (July 2008).jpg",
+    "reason": "Most nearly frontal dedicated view with long focal equivalent (56 mm), clear garage, both enclosed facade levels, terrace fascia/rail and pergola.",
+    "original_dimensions": [
+      2448,
+      3264
+    ],
+    "review_derivative_dimensions": [
+      825,
+      1100
+    ],
+    "facade_vertical_control": {
+      "driveway_threshold_y_px": {
+        "value": 965,
+        "uncertainty_px": 10
+      },
+      "garage_door_head_y_px": {
+        "value": 855,
+        "uncertainty_px": 12
+      },
+      "lower_bay_sill_y_px": {
+        "value": 790,
+        "uncertainty_px": 12
+      },
+      "lower_bay_head_y_px": {
+        "value": 650,
+        "uncertainty_px": 12
+      },
+      "interlevel_band_y_px": {
+        "value": 605,
+        "uncertainty_px": 12
+      },
+      "upper_bay_sill_y_px": {
+        "value": 550,
+        "uncertainty_px": 12
+      },
+      "upper_bay_head_y_px": {
+        "value": 455,
+        "uncertainty_px": 12
+      },
+      "terrace_fascia_bottom_y_px": {
+        "value": 420,
+        "uncertainty_px": 12
+      },
+      "terrace_deck_front_y_px": {
+        "value": 350,
+        "uncertainty_px": 12
+      },
+      "railing_top_y_px": {
+        "value": 275,
+        "uncertainty_px": 15
+      },
+      "pergola_top_y_px": {
+        "value": 165,
+        "uncertainty_px": 15
+      }
+    },
+    "facade_horizontal_control": {
+      "left_visible_building_edge_x_px": {
+        "value": 220,
+        "uncertainty_px": 20,
+        "confidence": "low_due_tree_and_entry_occlusion"
+      },
+      "central_bay_left_x_px": {
+        "value": 276,
+        "uncertainty_px": 12
+      },
+      "central_bay_right_x_px": {
+        "value": 540,
+        "uncertainty_px": 12
+      },
+      "garage_left_x_px": {
+        "value": 281,
+        "uncertainty_px": 12
+      },
+      "garage_right_x_px": {
+        "value": 507,
+        "uncertainty_px": 12
+      },
+      "right_outer_building_edge_x_px": {
+        "value": 775,
+        "uncertainty_px": 8
+      }
+    },
+    "scale_policy": "Vertical candidate subdivisions are mapped between driveway threshold and source-controlled pergola/first-return envelope. Horizontal fractions are mapped to the DataSF source street-facing edge. Perspective and occlusion uncertainty are retained."
+  },
+  "cross_checks": [
+    {
+      "date": "2009-06-26",
+      "supports": [
+        "central lower bay projects materially ahead of garage/main wall",
+        "upper bay is recessed relative to lower bay",
+        "right vertical body is broad, not a narrow strip",
+        "terrace fascia overhang and open railing/pergola"
+      ]
+    },
+    {
+      "date": "2013-08-03",
+      "supports": [
+        "same two enclosed facade levels over garage",
+        "same broad right vertical body",
+        "same open rooftop structure"
+      ]
+    },
+    {
+      "date": "2014-05-07",
+      "supports": [
+        "same vertical hierarchy and garage relationship"
+      ]
+    },
+    {
+      "date": "2019-07",
+      "supports": [
+        "persistent lower/upper central window groups",
+        "broad right vertical body with narrow upper window",
+        "terrace fascia/railing/pergola geometry persists"
+      ]
+    }
+  ],
+  "derived_candidate_proportions": {
+    "front_zones": {
+      "entry_recess_u": [
+        0,
+        0.13
+      ],
+      "central_bay_u": [
+        0.13,
+        0.6
+      ],
+      "right_vertical_body_u": [
+        0.6,
+        0.98
+      ],
+      "garage_opening_u": [
+        0.14,
+        0.54
+      ]
+    },
+    "vertical_m_above_driveway": {
+      "garage_door_head": 1.74,
+      "lower_bay_sill": 2.76,
+      "lower_bay_head": 4.97,
+      "interlevel_band": 5.68,
+      "upper_bay_sill": 6.55,
+      "upper_bay_head": 8.05,
+      "terrace_fascia_bottom": 8.6,
+      "terrace_deck": 9.7,
+      "railing_top": 10.88,
+      "pergola_top": 12.45
+    },
+    "depth_m_from_source_front_edge": {
+      "lower_bay_face": 0.05,
+      "upper_bay_face": 0.32,
+      "right_vertical_body_face": 0.3,
+      "garage_face": 0.55,
+      "main_wall": 0.65,
+      "entry_back_wall": 1.2,
+      "terrace_visible_depth": 2.1
+    }
+  },
+  "confidence": {
+    "footprint_and_front_edge": "high_structured_source",
+    "vertical_absolute_envelope": "medium_high_source_control",
+    "vertical_subdivisions": "medium_photo_proportion_cross_checked",
+    "horizontal_zone_fractions": "medium_photo_proportion_occlusion_on_left",
+    "depth_offsets": "low_medium_oblique_photo_proportion"
+  },
+  "prohibitions": [
+    "Do not treat candidate depth offsets as survey dimensions.",
+    "Do not reuse rejected v025/v026 geometry as evidence.",
+    "Do not infer interiors or final rear roof form from these facade references.",
+    "Do not promote this first-pass architecture without Minecraft flyaround review."
+  ]
+}

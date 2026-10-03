@@ -1,8 +1,8 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: 1040 Lombard source reset v027
+## Active review: 1040 Lombard richer source-led first pass v032
 
-The user rejected v026 and requested a complete architectural reset. v020, v025 and v026 are not building truth. 1040 is returned to source acquisition: no accepted house geometry, no inherited bay/terrace/window dimensions, and no image-first massing. The reset generator removes the prior 1040 envelope/facade from the accepted v024 public-realm/access context without inventing replacement terrain. The active gate is the source-truth package in `projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json`. See `docs/LOMBARD_1040_SOURCE_RESET_V027.md`. Do not generate a replacement house until B0 source truth passes.
+v031 proved the source footprint/registering but was intentionally too conservative to exercise EarthForge's architectural first-pass capability. v032 is now the active **provisional** Minecraft review candidate. It starts from accepted v024, removes the entire old 1040 placeholder, then rebuilds the persistent facade/body hierarchy supported across the dedicated 2008/2009/2013/2014/2019 reference set: recessed left entry, street garage, lower projecting central bay, upper set-back bay, broad right vertical body, terrace fascia, open rail and pergola. Structured footprint/site/absolute-envelope controls are high-confidence; facade subdivisions are photo-proportioned and depth offsets are lower-confidence review candidates. See `docs/LOMBARD_1040_SOURCE_FIRSTPASS_V032.md`. Stop for Minecraft flyaround before further refinement.
 
 
 ## Historical review: integrated realism v020
@@ -322,9 +322,21 @@ For any source-first building reset:
 - register multiple views and derive facade scale/depth with documented uncertainty before export;
 - distinguish stable architecture from vegetation/occlusion by comparing references across dates;
 - produce plan/elevation/depth QA diagrams with known, derived and unresolved dimensions visibly separated;
-- require a source-truth review before any Minecraft massing candidate exists.
+- require source-truth review before promotion; any earlier Minecraft massing must satisfy the provisional-first-pass rule below and remain explicitly non-truth.
 
 For 1040 the mandatory sequence is B0 acquisition/identity truth → B1 site-interface truth → B2 outer-volume controls → B3 facade measurement → B4 shell massing flyaround → B5 openings/major trim → B6 fine Astra/material/vegetation detail. Rejected v020/v025/v026 dimensions may not be carried forward unless independently re-derived.
+
+### Provisional architectural first-pass rule
+
+EarthForge may create a **provisional first-pass Minecraft candidate before every facade dimension is fully solved** when the user explicitly authorizes that review and all of the following are true:
+- structured identity, footprint, coordinate registration and site/access relationship are already established;
+- an absolute height/envelope control exists and its limitations are recorded;
+- major architectural topology persists across multiple independent reference views/dates;
+- every unsurveyed subdivision or depth is explicitly marked photo-proportioned/candidate with confidence;
+- rejected geometry is removed rather than reused as an implicit source;
+- the candidate cannot be promoted to truth until the unresolved source/measurement gates and Minecraft flyaround are satisfied.
+
+The purpose is to exercise the repo's ability to produce a useful first visual pass without collapsing into either guesswork or an uninformative empty shell. v031 is the canonical over-conservative case; v032 is the first application of this provisional-first-pass rule.
 
 ## Current sequencing directive — public realm before buildings
 

@@ -30,6 +30,14 @@ TARGETS = {
         "placement": "Lombard_1040_Source_Shell_Astra_v031_placement.json",
         "required_status": "PASS",
     },
+    "lombard_1040_firstpass_v032": {
+        "generator": "pipeline/reconstruction/generate_lombard_1040_source_firstpass_v032.py",
+        "output_dir": "projects/lombard_sf/outputs/house_1040_source_firstpass_v032",
+        "artifact": "Lombard_1040_Source_FirstPass_Astra_v032.litematic",
+        "validation": "Lombard_1040_Source_FirstPass_Astra_v032_validation.json",
+        "placement": "Lombard_1040_Source_FirstPass_Astra_v032_placement.json",
+        "required_status": "PASS",
+    },
 }
 
 

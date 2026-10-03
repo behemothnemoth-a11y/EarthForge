@@ -1,0 +1,105 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50022,
+  "tile_entities": 49901,
+  "sha256": "90dbeb2ff7a9dcc004365b25dc1e57cc7c5de630323721fdaaec6a86bea09051",
+  "status": "PASS",
+  "validation": {
+    "declared_1040_scope_only": true,
+    "public_realm_cells_untouched": true,
+    "all_old_1040_placeholder_removed": true,
+    "all_parent_cells_outside_declared_edits_preserved": true,
+    "driveway_datum_supported": true,
+    "source_front_width_10_93m": true,
+    "body_stops_below_source_cap": true,
+    "open_structure_reaches_source_envelope": true,
+    "exact_litematica": true,
+    "exact_astra": true,
+    "vanilla_preserved": true
+  },
+  "parent": "v024 accepted public-realm/access context",
+  "parent_sha256": "eb5731983fe865b534e5aee840c6c92d9e4b3c0f4a7214f02cb820c8650a9bd2",
+  "building_id": "201006.0032105",
+  "address": "1040 Lombard Street",
+  "source_footprint_area_m2": 177.20842379397493,
+  "front_width_m": 10.934756432120318,
+  "driveway_datum_samples": 697,
+  "driveway_floor_micro_y": -308,
+  "source_cap_micro_y": -106,
+  "source_total_height_m": 12.625,
+  "photo_measurement_manifest": "projects\\lombard_sf\\source_manifests\\1040_lombard_photo_measurements_v032.json",
+  "body_top_m": 9.7,
+  "railing_top_m": 10.88,
+  "pergola_top_m": 12.45,
+  "preserved_context_collisions": 19100,
+  "changed_microcells": 993481,
+  "changes": {
+    "remove_entire_old_1040": 711738,
+    "body_side_rear_shell": 341159,
+    "provisional_body_top_cap": 44906,
+    "recessed_main_wall": 37264,
+    "recessed_entry": 1716,
+    "entry_return": 962,
+    "garage_surround": 2271,
+    "garage_door": 3172,
+    "lower_bay_return": 1966,
+    "lower_bay_slab": 1580,
+    "lower_projecting_bay": 6292,
+    "upper_bay_return": 861,
+    "upper_bay_slab": 794,
+    "upper_recessed_bay": 6204,
+    "right_vertical_body": 15417,
+    "terrace_fascia": 4471,
+    "front_terrace_deck": 5231,
+    "open_front_railing": 1109,
+    "open_right_railing": 355,
+    "pergola_post": 1182,
+    "pergola_depth_beam": 882,
+    "pergola_front_back_header": 1896
+  },
+  "confidence": {
+    "footprint_and_front_edge": "high_structured_source",
+    "vertical_absolute_envelope": "medium_high_source_control",
+    "vertical_subdivisions": "medium_photo_proportion_cross_checked",
+    "horizontal_zone_fractions": "medium_photo_proportion_occlusion_on_left",
+    "depth_offsets": "low_medium_oblique_photo_proportion"
+  },
+  "geometry_claims": [
+    "DataSF source footprint and registration",
+    "accepted v024 driveway datum",
+    "source absolute first-return envelope",
+    "persistent facade hierarchy across 2008/2009/2013/2014/2019 references"
+  ],
+  "candidate_only": [
+    "facade horizontal fractions",
+    "vertical subdivisions",
+    "bay/recess depth offsets",
+    "provisional flat body-top cap"
+  ],
+  "explicit_non_claims": [
+    "interior layout",
+    "foundation truth",
+    "final rear roof form",
+    "survey-grade window dimensions",
+    "survey-grade bay depths"
+  ],
+  "review": "USER_MINECRAFT_FLYAROUND_REQUIRED"
+}
