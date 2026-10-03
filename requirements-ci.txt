@@ -3,4 +3,5 @@ scipy
 shapely
 pyproj
 Pillow
-laspy[lazrs]\nrequests\n
+laspy[lazrs]
+requests
