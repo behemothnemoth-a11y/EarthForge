@@ -15,6 +15,7 @@ OUT=PROJECT/"outputs"/"house_1040_source_truth_v027"
 BUILDING_ID="201006.0032105"
 REFREG=OUT/"Lombard_1040_Reference_Resolution_v027.json"
 CP_PATH=PROJECT/"source_manifests/1040_lombard_control_points_v028.json"
+LIDAR_CLASS=OUT/"Lombard_1040_LiDAR_Surface_Classification_v028.json"
 
 def qstats(values):
     if len(values)==0:return {"count":0}
@@ -45,6 +46,7 @@ def main():
     manifest=json.loads((PROJECT/"source_manifests/1040_lombard_source_truth_v027.json").read_text())
     cp=json.loads(CP_PATH.read_text())
     refreg=json.loads(REFREG.read_text()) if REFREG.exists() else None
+    lidar_class=json.loads(LIDAR_CLASS.read_text()) if LIDAR_CLASS.exists() else None
 
     rec=next(b for b in buildings["buildings"] if b["sf16_bldgid"]==BUILDING_ID)
     geom=shape(rec["geometry_local"]);poly=max(geom.geoms,key=lambda g:g.area) if hasattr(geom,"geoms") else geom
@@ -114,6 +116,7 @@ def main():
         "control_point_schema_present":len(cp.get("points",[]))>=8,
         "control_point_measurement_gate_met":cpstat["gate_passed"],
         "raw_lidar_materialized":raw_materialized,
+        "lidar_surface_proxy_available":bool(lidar_class and lidar_class.get("cell_count",0)>20),
         "vertical_returns_kept_observational":True,
         "rejected_geometry_not_locked":all(term in manifest["not_locked"] for term in ["bay projection depths","window widths/heights","terrace depth","pergola dimensions"])
     }
@@ -122,9 +125,12 @@ def main():
     if intrinsic_count<4:unresolved.append("Recover usable focal/intrinsic metadata for enough reference cameras.")
     if not cpstat["gate_passed"]:unresolved.append("Annotate stable facade control points: at least 8 points in 3+ views spanning 3+ architectural planes.")
     if not raw_materialized:unresolved.append("Materialize the public raw LiDAR ROI/source on the cloud runner.")
+    if not lidar_class:
+        unresolved.append("Run the observational LiDAR local-roughness classifier before deriving vertical architectural bands.")
+    else:
+        unresolved.append("Cross-check planar LiDAR candidates against multi-year imagery before treating any return as building rather than vegetation.")
     unresolved += [
         "Solve camera heading/pitch/roll from stable multi-view correspondences; GPS/bearing-to-building is only a prior.",
-        "Separate likely building returns from vegetation/occlusion before deriving vertical architectural bands.",
         "Derive the garage/driveway threshold elevation from source-supported site-interface evidence.",
         "Solve facade scale and projection depths with uncertainty from registered multi-view correspondences.",
         "Produce measured elevation/depth controls before any B4 Minecraft shell is authorized."
@@ -139,7 +145,12 @@ def main():
         "reference_resolution":{"resolved":ref_ok,"count":refreg.get("count") if refreg else 0,
                                 "intrinsic_metadata_views":intrinsic_count,
                                 "report":str(REFREG.relative_to(ROOT))},
-        "control_points":cpstat,"lidar":lidar,"checks":checks,"unresolved":unresolved,
+        "control_points":cpstat,"lidar":lidar,
+        "lidar_surface_classification":{"available":bool(lidar_class),"report":str(LIDAR_CLASS.relative_to(ROOT)),
+            "label_counts":lidar_class.get("label_counts") if lidar_class else None,
+            "planar_candidate_fraction":lidar_class.get("planar_candidate_fraction") if lidar_class else None,
+            "interpretation_limit":"A planar proxy is evidence triage only and never authorizes roof/storey geometry."},
+        "checks":checks,"unresolved":unresolved,
         "geometry_generation_authorized":False
     }
     (OUT/"Lombard_1040_B0_Source_Truth_v027.json").write_text(json.dumps(report,indent=2)+"\n")
