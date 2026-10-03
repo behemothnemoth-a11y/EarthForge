@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "package": "1040_lombard_candidate_track_review_v029",
+  "status": "PROVISIONAL_SOURCE_REVIEW",
+  "policy": "This file records visual triage of machine correspondence candidates. It does not populate canonical control-point observations and does not authorize geometry.",
+  "reviewed_sources": [
+    "Lombard_1040_Multiview_Track_Candidates_v028_contact.jpg",
+    "Lombard_1040_Corner_Track_Candidates_v029_contact.jpg"
+  ],
+  "promising": [
+    {
+      "candidate_id": "CT001",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Consistent lower-facade/window-grid structural corner across 2008, 2009 and 2013 views; no obvious vegetation anchor."
+    },
+    {
+      "candidate_id": "CT002",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Consistent lower/right facade structural corner across 2009, 2013 and 2019; suitable for seeded local refinement."
+    },
+    {
+      "candidate_id": "CT003",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Consistent central upper facade/timber-window junction across 2008, 2013 and 2014."
+    },
+    {
+      "candidate_id": "CT004",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Consistent right-side upper facade/window-frame junction across 2008, 2013 and 2014."
+    },
+    {
+      "candidate_id": "CT005",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Second nearby right-side upper structural junction with coherent relative placement across 2008, 2013 and 2014."
+    },
+    {
+      "candidate_id": "CT006",
+      "method": "corner",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Upper/right structural corner persists across 2013, 2014 and 2019."
+    },
+    {
+      "candidate_id": "MT001",
+      "method": "sift",
+      "view_count": 4,
+      "review": "promising",
+      "reason": "Only current four-view generic track; remains in the lower facade/window-frame region across 2008, 2009, 2014 and 2019."
+    },
+    {
+      "candidate_id": "MT009",
+      "method": "sift",
+      "view_count": 3,
+      "review": "promising",
+      "reason": "Strong persistent top-right outer/pergola-edge structural point across 2008, 2013 and 2014."
+    }
+  ],
+  "rejected": [
+    {
+      "candidate_id": "MT002",
+      "reason": "Cross-view location shifts from upper facade to garage/lower region; correspondence is not structurally coherent."
+    },
+    {
+      "candidate_id": "MT004",
+      "reason": "Cross-view location shifts between garage/right facade/road edge; not a stable architectural point."
+    },
+    {
+      "candidate_id": "MT005",
+      "reason": "Cross-view placement is inconsistent and likely mixes structural and occlusion texture."
+    },
+    {
+      "candidate_id": "MT006",
+      "reason": "Mixes mid-facade and pergola/top structure across views."
+    },
+    {
+      "candidate_id": "MT008",
+      "reason": "One observation lands near ground/sidewalk while others are at upper-right structure."
+    },
+    {
+      "candidate_id": "MT010",
+      "reason": "Tracks vegetation/occlusion region rather than a stable building landmark."
+    }
+  ],
+  "unresolved": [
+    "Map each promising track to a named architectural landmark or reject it after closer crop review.",
+    "Refine each observation locally to a repeatable corner/joint with subpixel coordinates.",
+    "Require accepted points to span at least three architectural planes before camera/depth solving.",
+    "Do not copy any observation into the canonical control-point manifest until the named landmark is confirmed."
+  ],
+  "geometry_generation_authorized": false
+}
