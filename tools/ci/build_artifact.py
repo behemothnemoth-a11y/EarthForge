@@ -22,6 +22,14 @@ TARGETS = {
         "placement": "Lombard_1040_Source_Reset_Astra_v027_placement.json",
         "required_status": "PASS",
     },
+    "lombard_1040_shell_v031": {
+        "generator": "pipeline/reconstruction/generate_lombard_1040_shell_v031.py",
+        "output_dir": "projects/lombard_sf/outputs/house_1040_shell_v031",
+        "artifact": "Lombard_1040_Source_Shell_Astra_v031.litematic",
+        "validation": "Lombard_1040_Source_Shell_Astra_v031_validation.json",
+        "placement": "Lombard_1040_Source_Shell_Astra_v031_placement.json",
+        "required_status": "PASS",
+    },
 }
 
 
