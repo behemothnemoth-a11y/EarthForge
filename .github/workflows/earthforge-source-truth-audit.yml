@@ -11,6 +11,7 @@ on:
       - "pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py"
       - "pipeline/reconstruction/classify_lombard_1040_lidar_v028.py"
       - "pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py"
+      - "pipeline/reconstruction/propose_lombard_1040_corner_tracks_v029.py"
       - "pipeline/acquire/materialize_lombard_lidar_roi.py"
       - "pipeline/acquire/materialize_1040_reference_images.py"
       - "projects/lombard_sf/poc_001/l0_source_truth_v001.json"
@@ -61,6 +62,7 @@ jobs:
           python -m py_compile pipeline/acquire/materialize_1040_reference_images.py
           python -m py_compile pipeline/reconstruction/classify_lombard_1040_lidar_v028.py
           python -m py_compile pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py
+          python -m py_compile pipeline/reconstruction/propose_lombard_1040_corner_tracks_v029.py
           python -m py_compile pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
 
       - name: Materialize canonical public LiDAR ROI
@@ -75,6 +77,9 @@ jobs:
 
       - name: Propose multi-view feature tracks
         run: python pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py
+
+      - name: Propose structural corner tracks
+        run: python pipeline/reconstruction/propose_lombard_1040_corner_tracks_v029.py
 
       - name: Classify 1040 LiDAR surface roughness
         run: python pipeline/reconstruction/classify_lombard_1040_lidar_v028.py
