@@ -1,8 +1,8 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: 1040 Lombard 3D front massing v026
+## Active review: 1040 Lombard source reset v027
 
-The v025 street-facade skeleton is rejected as a flat architectural interpretation. v026 restarts 1040 from the accepted v024 context while preserving the verified footprint, 10.93 m front edge and driveway datum. Dedicated 2009/2013/2019 photographs support a recessed entry/main wall, two projecting central bay volumes, a separate narrow right bay, and a genuinely open terrace/pergola. v026 builds those as 3D shell geometry; fine timber, vegetation, side/rear completion and interiors remain deferred. v024 tree morphology remains a known deferred visual issue. See docs/LOMBARD_1040_MASSING_V026.md. Stop for flyaround.
+The user rejected v026 and requested a complete architectural reset. v020, v025 and v026 are not building truth. 1040 is returned to source acquisition: no accepted house geometry, no inherited bay/terrace/window dimensions, and no image-first massing. The reset generator removes the prior 1040 envelope/facade from the accepted v024 public-realm/access context without inventing replacement terrain. The active gate is the source-truth package in `projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json`. See `docs/LOMBARD_1040_SOURCE_RESET_V027.md`. Do not generate a replacement house until B0 source truth passes.
 
 
 ## Historical review: integrated realism v020
@@ -308,6 +308,23 @@ their dependent cells, and validate exact old/new scope plus both export
 readbacks. Do not replace the accepted road/frame with a newer candidate merely
 because its data are newer. See `docs/LOMBARD_TERRAIN_REPAIR_V016.md` for the
 reproduced failure, evidence and narrowly corrected review artifact.
+
+## Building-specific source-first reset rule — 1040 canonical case
+
+A verified building footprint and a recognizable photograph are not enough to authorize architectural massing. 1040 Lombard is the canonical failure case for interpretation-first house generation.
+
+For any source-first building reset:
+- remove rejected building geometry rather than iteratively decorating it;
+- keep the accepted site/public-realm parent separate from rejected architecture;
+- establish identity, footprint, parcel/access relationship, raw elevation controls, reference registry and camera metadata before geometry;
+- treat LiDAR first returns as observations to classify, not automatic roof/storey geometry;
+- use street photos to establish identity, topology and feature correspondence, but do not read dimensions directly from perspective;
+- register multiple views and derive facade scale/depth with documented uncertainty before export;
+- distinguish stable architecture from vegetation/occlusion by comparing references across dates;
+- produce plan/elevation/depth QA diagrams with known, derived and unresolved dimensions visibly separated;
+- require a source-truth review before any Minecraft massing candidate exists.
+
+For 1040 the mandatory sequence is B0 acquisition/identity truth → B1 site-interface truth → B2 outer-volume controls → B3 facade measurement → B4 shell massing flyaround → B5 openings/major trim → B6 fine Astra/material/vegetation detail. Rejected v020/v025/v026 dimensions may not be carried forward unless independently re-derived.
 
 ## Current sequencing directive — public realm before buildings
 
