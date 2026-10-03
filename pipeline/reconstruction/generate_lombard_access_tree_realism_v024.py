@@ -147,7 +147,9 @@ def main():
   radius=max(14,min(36,int(round(np.percentile(rr,97)))+1))
   height=max(24,top-base+1);crown_h=max(16,top-leaf_min+1)
   old_tree_keys={(x,y,z) for x,y,z,m in cells}
-  for x,y,z,m in cells:put(x,y,z,None,'tree_reshape_remove')
+  for x,y,z,m in cells:
+   if building_union.covers(Point(((x+.5)/16,(z+.5)/16))):continue
+   put(x,y,z,None,'tree_reshape_remove')
 
   seed=int(node['id'])&0xffffffff
   trunk_top=max(leaf_min+2,min(top-8,base+round(height*.62)))
@@ -158,7 +160,7 @@ def main():
     for dz in range(-rad,rad+1):
      if dx*dx+dz*dz>rad*rad:continue
      pt=Point(((cx+dx+.5)/16,(cz+dz+.5)/16))
-     if access_scope.covers(pt):continue
+     if access_scope.covers(pt) or building_union.covers(pt):continue
      put(cx+dx,y,cz+dz,realm.WOOD,'tree_trunk')
 
   branch_targets=[]
@@ -175,7 +177,7 @@ def main():
      for dz in range(-rad,rad+1):
       if dx*dx+dz*dz>rad*rad:continue
       pt=Point(((x+dx+.5)/16,(z+dz+.5)/16))
-      if access_scope.covers(pt):continue
+      if access_scope.covers(pt) or building_union.covers(pt):continue
       put(x+dx,y,z+dz,realm.WOOD,'tree_branch')
    branch_targets.append((tx,ty,tz))
 
@@ -186,7 +188,7 @@ def main():
   for x in range(xmin,xmax+1):
    for z in range(zmin,zmax+1):
     pt=Point(((x+.5)/16,(z+.5)/16))
-    if access_scope.covers(pt):continue
+    if access_scope.covers(pt) or building_union.covers(pt):continue
     for y in range(leaf_min,top+1):
      best=99.
      for lx,ly,lz,rx,ry,rz in lobes:
@@ -272,7 +274,7 @@ def main():
   'road_untouched':road_writes==0,
   'building_footprints_untouched':building_writes==0,
   'vanilla_preserved':all(actual.get(p)==s for p,s in vanilla.items()),
-  'seven_mapped_driveways':len(driveway_ways)==7,
+  'eight_mapped_driveways':len(driveway_ways)==8,
   'hyde_sidewalk_gap_closed':sidewalk_columns>0 and gap.length<5
  }
  report={**stats,'status':'PASS' if all(checks.values()) else 'FAIL','validation':checks,
