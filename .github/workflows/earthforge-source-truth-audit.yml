@@ -10,10 +10,11 @@ on:
       - "requirements-ci.txt"
       - "pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py"
       - "pipeline/acquire/materialize_lombard_lidar_roi.py"
+      - "pipeline/acquire/materialize_1040_reference_images.py"
       - "projects/lombard_sf/poc_001/l0_source_truth_v001.json"
       - "projects/lombard_sf/poc_001/l2_building_source_truth_v002.json"
       - "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json"
-      - "projects/lombard_sf/downloads/raw/lombard_poc001_lidar_roi_v001.npz"
+      - "projects/lombard_sf/source_manifests/1040_lombard_control_points_v028.json"
 
 permissions:
   contents: read
@@ -25,7 +26,7 @@ concurrency:
 jobs:
   audit-1040:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout exact revision
         uses: actions/checkout@v4
@@ -46,14 +47,24 @@ jobs:
           path: projects/lombard_sf/downloads/raw/lombard_poc001_lidar_roi_v001.npz
           key: lombard-lidar-roi-v001-${{ hashFiles('pipeline/acquire/materialize_lombard_lidar_roi.py', 'projects/lombard_sf/poc_001/l0_source_truth_v001.json') }}
 
+      - name: Restore 1040 reference-original cache
+        uses: actions/cache@v4
+        with:
+          path: projects/lombard_sf/references/private/1040_source_v027
+          key: lombard-1040-refs-v027-${{ hashFiles('pipeline/acquire/materialize_1040_reference_images.py', 'projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json') }}
+
       - name: Compile acquisition and audit
         run: |
           python -m py_compile pipeline/acquire/materialize_lombard_lidar_roi.py
+          python -m py_compile pipeline/acquire/materialize_1040_reference_images.py
           python -m py_compile pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
 
       - name: Materialize canonical public LiDAR ROI
         if: ${{ !hashFiles('projects/lombard_sf/downloads/raw/lombard_poc001_lidar_roi_v001.npz') }}
         run: python pipeline/acquire/materialize_lombard_lidar_roi.py
+
+      - name: Resolve and verify canonical 1040 reference originals
+        run: python pipeline/acquire/materialize_1040_reference_images.py
 
       - name: Run B0 source-truth audit
         run: python pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
@@ -68,3 +79,14 @@ jobs:
           path: projects/lombard_sf/outputs/house_1040_source_truth_v027/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Write B0 summary
+        if: always()
+        run: |
+          echo "## 1040 Lombard B0 Source Truth" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f projects/lombard_sf/outputs/house_1040_source_truth_v027/Lombard_1040_B0_Source_Truth_v027.md ]; then
+            cat projects/lombard_sf/outputs/house_1040_source_truth_v027/Lombard_1040_B0_Source_Truth_v027.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Audit report was not produced." >> "$GITHUB_STEP_SUMMARY"
+          fi
