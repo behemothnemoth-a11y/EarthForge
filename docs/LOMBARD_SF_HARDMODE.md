@@ -1,8 +1,8 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: landscape + site connectivity v023
+## Active review: access + tree realism v024
 
-The user accepted v022 and requested completion of Lombard's remaining landscaping before more building work. Load `landscape_completion_v023/Lombard_Landscape_Completion_Astra_v023.litematic`. This pass adds botanical mass only above existing supported green ground, closes the visibly unfinished upper site-band connection, audits all mapped trees, and freezes every occupied v022 cell. See `docs/LOMBARD_LANDSCAPE_COMPLETION_V023.md`. Stop for flyaround before architecture resumes.
+v023 landscape density is accepted. The current candidate resolves eight source-mapped driveway corridors, closes the mapped upper sidewalk endpoint gap, and reshapes existing mapped trees for more realistic trunks/branches/crowns without moving source locations. Buildings remain frozen. See `docs/LOMBARD_ACCESS_TREE_REALISM_V024.md`. Stop for flyaround before architecture resumes.
 
 ## Historical review: integrated realism v020
 

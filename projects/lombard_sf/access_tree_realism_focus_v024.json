@@ -1,0 +1,11 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review mapped driveway access, upper sidewalk closure, and tree morphology realism.",
+  "notes": [
+    "8 OSM service=driveway centerlines are modeled at a documented nominal 2.75 m width",
+    "the 3.68 m gap between mapped upper footway endpoints is explicitly connected",
+    "mapped tree positions remain fixed while trunks, branching, and crowns are reshaped",
+    "road, buildings, registration and undeclared terrain remain frozen",
+    "same placement; rotation 0; mirror none; replace ALL including air"
+  ]
+}

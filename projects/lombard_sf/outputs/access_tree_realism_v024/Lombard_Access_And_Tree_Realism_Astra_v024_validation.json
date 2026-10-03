@@ -1,0 +1,258 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50192,
+  "tile_entities": 50071,
+  "sha256": "802f61062078ee32b7054e92cb830146891a64a5eef1a2ab51224994692f9a9b",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "access_scope_only": true,
+    "tree_scope_only": true,
+    "road_untouched": true,
+    "building_footprints_untouched": true,
+    "vanilla_preserved": true,
+    "eight_mapped_driveways": true,
+    "hyde_sidewalk_gap_closed": true
+  },
+  "parent_sha256": "1ad5e17fa6af4bf8d9135f0867026f52889bcb0bc0cfe482ff89de2e804b98b0",
+  "changes": {
+    "driveway_clearance": 142049,
+    "driveway_surface": 40798,
+    "top_sidewalk_surface": 987,
+    "top_sidewalk_clearance": 51,
+    "tree_reshape_remove": 1815489,
+    "tree_trunk": 13915,
+    "tree_branch": 7103,
+    "tree_crown": 678856
+  },
+  "driveways": {
+    "count": 8,
+    "osm_ids": [
+      "951848647",
+      "1011562121",
+      "1011562122",
+      "1011562123",
+      "1011562124",
+      "1011562125",
+      "1011562126",
+      "1011562127"
+    ],
+    "width_m": 2.75,
+    "width_basis": "explicit v024 nominal single-car access width; OSM supplies centerline/topology but no width",
+    "surface_columns": 40798,
+    "rail_cells_cut_at_access_crossings": 1274,
+    "retaining_cells_cut_at_access_crossings": 0
+  },
+  "hyde_sidewalk": {
+    "osm_crossing": "691835290",
+    "osm_sidewalk": "691835289",
+    "source_gap_m": 3.679781699735596,
+    "surface_columns_written": 3616,
+    "resolution": "explicit connector between nearest mapped endpoints inside existing sidewalk/ground support"
+  },
+  "trees": {
+    "mapped_nodes_considered": 29,
+    "trees_reshaped": 19,
+    "audit": [
+      {
+        "osm_id": "13819996871",
+        "parent_tree_cells": 75716,
+        "height_m": 4.3125,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -248,
+        "top_y_cells": -180,
+        "rebuilt_tree_cells": 29674
+      },
+      {
+        "osm_id": "13819996872",
+        "parent_tree_cells": 67089,
+        "height_m": 3.125,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -241,
+        "top_y_cells": -192,
+        "rebuilt_tree_cells": 24047
+      },
+      {
+        "osm_id": "13819996873",
+        "parent_tree_cells": 73189,
+        "height_m": 3.75,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -380,
+        "top_y_cells": -321,
+        "rebuilt_tree_cells": 24542
+      },
+      {
+        "osm_id": "13819996874",
+        "parent_tree_cells": 67273,
+        "height_m": 3.5625,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -339,
+        "top_y_cells": -283,
+        "rebuilt_tree_cells": 24644
+      },
+      {
+        "osm_id": "13819996875",
+        "parent_tree_cells": 77558,
+        "height_m": 4.375,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -266,
+        "top_y_cells": -197,
+        "rebuilt_tree_cells": 29840
+      },
+      {
+        "osm_id": "13819996876",
+        "parent_tree_cells": 107259,
+        "height_m": 5.75,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -282,
+        "top_y_cells": -191,
+        "rebuilt_tree_cells": 38738
+      },
+      {
+        "osm_id": "13819996877",
+        "parent_tree_cells": 147439,
+        "height_m": 7.6875,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -328,
+        "top_y_cells": -206,
+        "rebuilt_tree_cells": 53914
+      },
+      {
+        "osm_id": "13819996878",
+        "parent_tree_cells": 65927,
+        "height_m": 3.75,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -272,
+        "top_y_cells": -213,
+        "rebuilt_tree_cells": 24659
+      },
+      {
+        "osm_id": "13819996879",
+        "parent_tree_cells": 54182,
+        "height_m": 3.6875,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -267,
+        "top_y_cells": -209,
+        "rebuilt_tree_cells": 25034
+      },
+      {
+        "osm_id": "13819996880",
+        "parent_tree_cells": 118070,
+        "height_m": 6.375,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -190,
+        "top_y_cells": -89,
+        "rebuilt_tree_cells": 22953
+      },
+      {
+        "osm_id": "13819996881",
+        "parent_tree_cells": 89987,
+        "height_m": 4.8125,
+        "old_crown_radius_m": 2.25,
+        "trunk_base_y_cells": -224,
+        "top_y_cells": -148,
+        "rebuilt_tree_cells": 55086
+      },
+      {
+        "osm_id": "13819996882",
+        "parent_tree_cells": 91027,
+        "height_m": 5.0,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -151,
+        "top_y_cells": -72,
+        "rebuilt_tree_cells": 35769
+      },
+      {
+        "osm_id": "13819996883",
+        "parent_tree_cells": 81566,
+        "height_m": 4.4375,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -150,
+        "top_y_cells": -80,
+        "rebuilt_tree_cells": 30729
+      },
+      {
+        "osm_id": "13819996884",
+        "parent_tree_cells": 70676,
+        "height_m": 3.75,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -127,
+        "top_y_cells": -68,
+        "rebuilt_tree_cells": 24711
+      },
+      {
+        "osm_id": "13819996885",
+        "parent_tree_cells": 74371,
+        "height_m": 4.3125,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -107,
+        "top_y_cells": -39,
+        "rebuilt_tree_cells": 29309
+      },
+      {
+        "osm_id": "13819996886",
+        "parent_tree_cells": 73014,
+        "height_m": 3.75,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -211,
+        "top_y_cells": -152,
+        "rebuilt_tree_cells": 25115
+      },
+      {
+        "osm_id": "13819996888",
+        "parent_tree_cells": 188012,
+        "height_m": 11.6875,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -515,
+        "top_y_cells": -329,
+        "rebuilt_tree_cells": 65029
+      },
+      {
+        "osm_id": "13819996889",
+        "parent_tree_cells": 169636,
+        "height_m": 8.5625,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -495,
+        "top_y_cells": -359,
+        "rebuilt_tree_cells": 63623
+      },
+      {
+        "osm_id": "13819996890",
+        "parent_tree_cells": 131975,
+        "height_m": 7.0,
+        "old_crown_radius_m": 1.8125,
+        "trunk_base_y_cells": -475,
+        "top_y_cells": -364,
+        "rebuilt_tree_cells": 51440
+      }
+    ],
+    "policy": "mapped locations fixed; morphology rebuilt inside existing parent height/radius envelopes; no species claim"
+  },
+  "preserved": [
+    "crooked-road surface and endpoint roads",
+    "building envelopes/facades",
+    "registration marker",
+    "terrain elevations outside declared access corrections",
+    "unsupported/missing tree sites remain absent"
+  ],
+  "review": "USER_MINECRAFT_FLYAROUND_REQUIRED"
+}

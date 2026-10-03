@@ -2,8 +2,8 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "LANDSCAPE_COMPLETION_V023_REVIEW",
-  "milestone": "LOMBARD_LANDSCAPE_COMPLETION_V023",
+  "status": "ACCESS_TREE_REALISM_V024_REVIEW",
+  "milestone": "LOMBARD_ACCESS_TREE_REALISM_V024",
   "scope": "Accepted crooked public corridor and existing endpoint streets, plus source-led surrounding building envelopes and immediate ground context; plain materials.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,20 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/landscape_completion_v023/Lombard_Landscape_Completion_Astra_v023.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_landscape_completion_v023.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/access_tree_realism_v024/Lombard_Access_And_Tree_Realism_Astra_v024.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_access_tree_realism_v024.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review completed supported landscaping and the upper site-band connection before resuming building work.",
+    "purpose": "Review source-mapped driveway access, the Hyde/top sidewalk connection, and realistic tree morphology before returning to buildings.",
     "notes": [
-      "upper green/site band should read as continuous landscaping",
-      "full-block hedge/shrub/flower density should read layered rather than carpet-like",
-      "tree placement and crown scale",
-      "road/sidewalks/stairs/rails/retaining/buildings must remain unchanged"
+      "check the formerly landscaped cut-throughs now read as believable driveways",
+      "confirm the upper sidewalk is physically continuous",
+      "judge tree trunks/branching/crown silhouettes at player scale",
+      "road/pavers/accepted buildings must remain unchanged"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/landscape_completion_focus_v023.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/landscape_completion_v023/Lombard_Landscape_Completion_v023_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/access_tree_realism_focus_v024.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/access_tree_realism_v024/Lombard_Access_Tree_Realism_v024_reference_sheet.jpg",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
