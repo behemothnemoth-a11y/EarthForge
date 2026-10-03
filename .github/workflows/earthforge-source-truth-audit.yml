@@ -9,6 +9,7 @@ on:
       - ".github/workflows/earthforge-source-truth-audit.yml"
       - "requirements-ci.txt"
       - "pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py"
+      - "pipeline/acquire/materialize_lombard_lidar_roi.py"
       - "projects/lombard_sf/poc_001/l0_source_truth_v001.json"
       - "projects/lombard_sf/poc_001/l2_building_source_truth_v002.json"
       - "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json"
@@ -39,8 +40,20 @@ jobs:
       - name: Install audit dependencies
         run: python -m pip install -r requirements-ci.txt
 
-      - name: Compile audit
-        run: python -m py_compile pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
+      - name: Restore canonical Lombard LiDAR ROI cache
+        uses: actions/cache@v4
+        with:
+          path: projects/lombard_sf/downloads/raw/lombard_poc001_lidar_roi_v001.npz
+          key: lombard-lidar-roi-v001-${{ hashFiles('pipeline/acquire/materialize_lombard_lidar_roi.py', 'projects/lombard_sf/poc_001/l0_source_truth_v001.json') }}
+
+      - name: Compile acquisition and audit
+        run: |
+          python -m py_compile pipeline/acquire/materialize_lombard_lidar_roi.py
+          python -m py_compile pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
+
+      - name: Materialize canonical public LiDAR ROI
+        if: ${{ !hashFiles('projects/lombard_sf/downloads/raw/lombard_poc001_lidar_roi_v001.npz') }}
+        run: python pipeline/acquire/materialize_lombard_lidar_roi.py
 
       - name: Run B0 source-truth audit
         run: python pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
