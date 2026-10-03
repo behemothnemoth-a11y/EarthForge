@@ -53,7 +53,14 @@
       "camera_model": "Samsung S85",
       "focal_length_mm": 9.3,
       "focal_35mm_equiv_mm": 56,
-      "commons_sha1_hex": "709e1da162059cd2c6a60c818212a291a156d9aa"
+      "commons_sha1_hex": "709e1da162059cd2c6a60c818212a291a156d9aa",
+      "analysis_roi_norm": [
+        0.2,
+        0.04,
+        0.94,
+        0.96
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     },
     {
       "date": "2009-06-26",
@@ -77,7 +84,14 @@
       "camera_model": "Nikon COOLPIX S10",
       "focal_length_mm": 6.3,
       "focal_35mm_equiv_mm": 38,
-      "commons_sha1_hex": "b44dc8a52ed5570a59e6b21adcd727285e882e2e"
+      "commons_sha1_hex": "b44dc8a52ed5570a59e6b21adcd727285e882e2e",
+      "analysis_roi_norm": [
+        0.28,
+        0,
+        0.995,
+        0.96
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     },
     {
       "date": "2013-08-03",
@@ -102,7 +116,14 @@
       "camera_model": "Apple iPhone 4S",
       "focal_length_mm": 4.28,
       "focal_35mm_equiv_mm": 35,
-      "commons_sha1_hex": "e21f49ea468ec93eef4a437cdae7dccdae1a184c"
+      "commons_sha1_hex": "e21f49ea468ec93eef4a437cdae7dccdae1a184c",
+      "analysis_roi_norm": [
+        0.35,
+        0.03,
+        0.995,
+        0.91
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     },
     {
       "date": "2013-08-27",
@@ -121,7 +142,14 @@
       ],
       "camera_model": "Canon PowerShot S100",
       "focal_length_mm": 5.2,
-      "commons_sha1_hex": "80c514b80be2c1c542029d20a0bef2a35e710718"
+      "commons_sha1_hex": "80c514b80be2c1c542029d20a0bef2a35e710718",
+      "analysis_roi_norm": [
+        0.44,
+        0,
+        0.995,
+        0.96
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     },
     {
       "date": "2014-05-07",
@@ -144,7 +172,14 @@
       ],
       "camera_model": "HTC Nexus One",
       "focal_length_mm": 4.31,
-      "commons_sha1_hex": "e64c942ddf64954a16d3df8b9e12f51f20c5623e"
+      "commons_sha1_hex": "e64c942ddf64954a16d3df8b9e12f51f20c5623e",
+      "analysis_roi_norm": [
+        0.34,
+        0.08,
+        0.995,
+        0.91
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     },
     {
       "date": "2019-07",
@@ -167,7 +202,14 @@
       "camera": [
         37.802182,
         -122.418766
-      ]
+      ],
+      "analysis_roi_norm": [
+        0.34,
+        0.02,
+        0.995,
+        0.96
+      ],
+      "analysis_roi_note": "Broad human-reviewed house-interest crop for feature detection only. It is not a measured facade boundary and must not be used as geometry."
     }
   ],
   "locked_truth": [
@@ -205,7 +247,8 @@
     "exact_original_dimensions_required": true,
     "originals_location": "projects/lombard_sf/references/private/1040_source_v027/",
     "originals_committed": false,
-    "derived_metadata_output": "projects/lombard_sf/outputs/house_1040_source_truth_v027/Lombard_1040_Reference_Resolution_v027.json"
+    "derived_metadata_output": "projects/lombard_sf/outputs/house_1040_source_truth_v027/Lombard_1040_Reference_Resolution_v027.json",
+    "analysis_roi_policy": "Broad source-image ROIs may constrain feature detection to the visible 1040 structure. ROI edges are analysis metadata only, never architectural dimensions."
   },
   "control_point_package": "projects/lombard_sf/source_manifests/1040_lombard_control_points_v028.json"
 }
