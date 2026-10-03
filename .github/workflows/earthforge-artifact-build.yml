@@ -1,0 +1,91 @@
+name: EarthForge Artifact Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Artifact target
+        required: true
+        type: choice
+        default: lombard_1040_reset_v027
+        options:
+          - lombard_1040_reset_v027
+  push:
+    branches:
+      - "codex/**"
+    paths:
+      - ".github/workflows/earthforge-artifact-build.yml"
+      - "requirements-ci.txt"
+      - "tools/ci/build_artifact.py"
+      - "pipeline/reconstruction/generate_lombard_1040_reset_v027.py"
+      - "pipeline/reconstruction/generate_lombard_access_tree_realism_v024.py"
+      - "pipeline/reconstruction/generate_lombard_neighborhood_v018.py"
+      - "pipeline/reconstruction/generate_lombard_realism_v020.py"
+      - "projects/lombard_sf/outputs/access_tree_realism_v024/**"
+      - "projects/lombard_sf/outputs/neighborhood_blockout_v018/**"
+      - "projects/lombard_sf/project.json"
+      - "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: earthforge-artifact-${{ github.ref }}-${{ github.event.inputs.target || 'lombard_1040_reset_v027' }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TARGET: ${{ github.event.inputs.target || 'lombard_1040_reset_v027' }}
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install reconstruction dependencies
+        run: python -m pip install -r requirements-ci.txt
+
+      - name: Compile generator and CI wrapper
+        run: |
+          python -m py_compile tools/ci/build_artifact.py
+          python -m py_compile pipeline/reconstruction/generate_lombard_1040_reset_v027.py
+
+      - name: Build and validate allowlisted artifact
+        run: python tools/ci/build_artifact.py "$TARGET"
+
+      - name: Run core codec tests
+        run: |
+          python tools/test_litematic_codec.py
+          python tools/test_astra_microblock_codec.py
+
+      - name: Run ground-support regression tests
+        run: python -m unittest discover -s tests -p test_ground_support.py -v
+
+      - name: Upload review bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: earthforge-${{ env.TARGET }}-${{ github.sha }}
+          path: dist/artifacts/${{ env.TARGET }}/
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 6
+
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "## EarthForge Artifact Build" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Target: `$TARGET`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: `$GITHUB_SHA`" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f "dist/artifacts/$TARGET/SHA256_MANIFEST.json" ]; then
+            echo "- Bundle manifest generated: yes" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "- Bundle manifest generated: no" >> "$GITHUB_STEP_SUMMARY"
+          fi
