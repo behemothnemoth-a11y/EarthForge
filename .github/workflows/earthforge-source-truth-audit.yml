@@ -10,6 +10,7 @@ on:
       - "requirements-ci.txt"
       - "pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py"
       - "pipeline/reconstruction/classify_lombard_1040_lidar_v028.py"
+      - "pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py"
       - "pipeline/acquire/materialize_lombard_lidar_roi.py"
       - "pipeline/acquire/materialize_1040_reference_images.py"
       - "projects/lombard_sf/poc_001/l0_source_truth_v001.json"
@@ -59,6 +60,7 @@ jobs:
           python -m py_compile pipeline/acquire/materialize_lombard_lidar_roi.py
           python -m py_compile pipeline/acquire/materialize_1040_reference_images.py
           python -m py_compile pipeline/reconstruction/classify_lombard_1040_lidar_v028.py
+          python -m py_compile pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py
           python -m py_compile pipeline/reconstruction/audit_lombard_1040_source_truth_v027.py
 
       - name: Materialize canonical public LiDAR ROI
@@ -67,6 +69,12 @@ jobs:
 
       - name: Resolve and verify canonical 1040 reference originals
         run: python pipeline/acquire/materialize_1040_reference_images.py
+
+      - name: Install multi-view matching dependency
+        run: python -m pip install opencv-python-headless
+
+      - name: Propose multi-view feature tracks
+        run: python pipeline/reconstruction/propose_lombard_1040_multiview_tracks_v028.py
 
       - name: Classify 1040 LiDAR surface roughness
         run: python pipeline/reconstruction/classify_lombard_1040_lidar_v028.py
