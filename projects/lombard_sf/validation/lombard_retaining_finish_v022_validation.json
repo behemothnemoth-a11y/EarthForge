@@ -1,0 +1,90 @@
+{
+  "palette": {
+    "face": [
+      [
+        118,
+        115,
+        106
+      ],
+      [
+        130,
+        126,
+        118
+      ],
+      [
+        147,
+        143,
+        134
+      ],
+      [
+        175,
+        168,
+        159
+      ]
+    ],
+    "cap": [
+      [
+        136,
+        133,
+        122
+      ],
+      [
+        148,
+        144,
+        134
+      ]
+    ]
+  },
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50476,
+  "tile_entities": 50355,
+  "sha256": "24ef693d460065f95b5192e7439d8dd03ae1d72a3b90423ffd4328bb97849a9f",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "material_only": true,
+    "scope_only": true,
+    "v021_values_on_v009_cells_preserved": true,
+    "vanilla_preserved": true
+  },
+  "parent_sha256": "172a0b021699f125df2f448680caebbc6c106b619530f55376f03d34ff1b9742",
+  "changed_microcells": 17418,
+  "changed_columns": 7194,
+  "changes": {
+    "retaining_upper_face_finish": 10224,
+    "retaining_coping_finish": 7194
+  },
+  "road_cells_checked": 962398,
+  "road_mismatches_vs_v021_parent": 0,
+  "protected_v009_write_overlap": 0,
+  "reference": {
+    "file": "projects\\lombard_sf\\references\\private\\wikimedia_commons\\033_Lombard_Street_Cherry_Blossom.jpg.jpg",
+    "sha256": "f14224d3c79844000e8a7ae1f9e25743aea4123cc2674fa8c8b146a26ec2547d",
+    "page": "https://commons.wikimedia.org/wiki/File:Lombard_Street_Cherry_Blossom.jpg",
+    "artist": "Cornflower123",
+    "license": "CC0",
+    "interpretation": "Low retaining/planter concrete color family and lighter top coping only; photograph illumination is not calibrated albedo."
+  },
+  "preserved": [
+    "all occupancy",
+    "v021 parent values at every accepted v009 road/curb cell",
+    "sidewalks",
+    "stairs and rails",
+    "planting",
+    "buildings",
+    "registration"
+  ],
+  "review": "USER_FLYAROUND_REQUIRED"
+}

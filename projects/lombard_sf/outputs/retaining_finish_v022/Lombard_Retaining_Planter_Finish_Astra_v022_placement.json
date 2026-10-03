@@ -1,0 +1,6 @@
+{
+  "placement_origin": "same Lombard player-feet origin",
+  "rotation": 0,
+  "mirror": "none",
+  "replace_blocks": "ALL including air"
+}

@@ -307,3 +307,7 @@ their dependent cells, and validate exact old/new scope plus both export
 readbacks. Do not replace the accepted road/frame with a newer candidate merely
 because its data are newer. See `docs/LOMBARD_TERRAIN_REPAIR_V016.md` for the
 reproduced failure, evidence and narrowly corrected review artifact.
+
+## Current sequencing directive — public realm before buildings
+
+After v021, the user explicitly chose to continue detailing Lombard itself before resuming architectural work. Building envelopes/facades remain frozen during these passes. Continue one reviewable public-realm detail layer at a time, preserving accepted geometry unless the current gate explicitly authorizes a change.

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "project_id": "lombard_sf",
+  "focus_id": "LOMBARD_RETAINING_FINISH_V022",
+  "parent": "projects/lombard_sf/outputs/road_finish_v021/Lombard_Road_Joins_And_Pavers_Astra_v021.litematic",
+  "material_only": true,
+  "changed_microcells": 17418,
+  "changed_columns": 7194,
+  "changes": {
+    "retaining_upper_face_finish": 10224,
+    "retaining_coping_finish": 7194
+  },
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "material_only": true,
+    "scope_only": true,
+    "v021_values_on_v009_cells_preserved": true,
+    "vanilla_preserved": true
+  },
+  "reference": {
+    "file": "projects\\lombard_sf\\references\\private\\wikimedia_commons\\033_Lombard_Street_Cherry_Blossom.jpg.jpg",
+    "sha256": "f14224d3c79844000e8a7ae1f9e25743aea4123cc2674fa8c8b146a26ec2547d",
+    "page": "https://commons.wikimedia.org/wiki/File:Lombard_Street_Cherry_Blossom.jpg",
+    "artist": "Cornflower123",
+    "license": "CC0",
+    "interpretation": "Low retaining/planter concrete color family and lighter top coping only; photograph illumination is not calibrated albedo."
+  },
+  "palette": {
+    "face": [
+      [
+        118,
+        115,
+        106
+      ],
+      [
+        130,
+        126,
+        118
+      ],
+      [
+        147,
+        143,
+        134
+      ],
+      [
+        175,
+        168,
+        159
+      ]
+    ],
+    "cap": [
+      [
+        136,
+        133,
+        122
+      ],
+      [
+        148,
+        144,
+        134
+      ]
+    ]
+  },
+  "preserved": [
+    "all occupancy",
+    "v021 parent values at every accepted v009 road/curb cell",
+    "sidewalks",
+    "stairs and rails",
+    "planting",
+    "buildings",
+    "registration"
+  ],
+  "reference_bundle": "projects/lombard_sf/outputs/retaining_finish_v022/Lombard_Retaining_Finish_v022_reference_sheet.jpg",
+  "review_focus": [
+    "coping",
+    "upper retaining faces",
+    "concrete variation",
+    "curved planter-edge read"
+  ]
+}
