@@ -1,0 +1,62 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50204,
+  "tile_entities": 50083,
+  "sha256": "4e2f2ad5e7e8bc09a41ae9ec54721dad1d998b126d1251f39f4b722d0837e7e8",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "declared_1040_front_scope_only": true,
+    "all_parent_cells_outside_declared_edits_preserved": true,
+    "vanilla_preserved": true,
+    "source_front_width_10_93m": true
+  },
+  "parent_sha256": "eb5731983fe865b534e5aee840c6c92d9e4b3c0f4a7214f02cb820c8650a9bd2",
+  "building_id": "201006.0032105",
+  "address": "1040 Lombard Street",
+  "front_edge_m": 10.934756432120318,
+  "envelope_height_m": 12.625,
+  "changed_microcells": 119622,
+  "changes": {
+    "top_terrace_rail": 11334,
+    "top_terrace_open": 9724,
+    "blue_panel_and_timber": 56536,
+    "entry_back": 1845,
+    "entry_recess": 2542,
+    "window_recess": 9881,
+    "window_frame_or_glass": 17503,
+    "garage": 10257
+  },
+  "source_basis": {
+    "footprint": "DataSF building footprint 201006.0032105 + OSM address match 1040 Lombard Street",
+    "street_photo": "Wikimedia Commons Lombard Street (10064415846), Andrew Napier, CC BY 2.0",
+    "interpretation": "Opening and timber proportions are photo-proportioned; not measured facade survey dimensions."
+  },
+  "explicitly_deferred": [
+    "bay/projection depth verification",
+    "roof/pergola geometry",
+    "side and rear facades",
+    "interior",
+    "bougainvillea facade vegetation"
+  ],
+  "review": "USER_MINECRAFT_FLYAROUND_REQUIRED"
+}

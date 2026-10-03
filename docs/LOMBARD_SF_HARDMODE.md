@@ -1,8 +1,8 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: access + tree realism v024
+## Active review: 1040 Lombard street facade v025
 
-v023 landscape density is accepted. The current candidate resolves eight source-mapped driveway corridors, closes the mapped upper sidewalk endpoint gap, and reshapes existing mapped trees for more realistic trunks/branches/crowns without moving source locations. Buildings remain frozen. See `docs/LOMBARD_ACCESS_TREE_REALISM_V024.md`. Stop for flyaround before architecture resumes.
+The public-realm/access work is sufficiently advanced to begin architecture. The user selected the blue house first. v025 rebuilds only the source-identified 1040 Lombard road-facing facade from the DataSF/OSM footprint/address match and dedicated facade imagery; the rejected v020 glass-grid interpretation is not reused. The garage datum is tied to accepted v024 driveway surfaces rather than parcel-wide minimum ground. Roof, depth, side/rear facades and interiors remain deferred. v024 tree morphology remains visually unresolved and is explicitly deferred. See docs/LOMBARD_1040_FACADE_V025.md. Stop for flyaround.
 
 ## Historical review: integrated realism v020
 

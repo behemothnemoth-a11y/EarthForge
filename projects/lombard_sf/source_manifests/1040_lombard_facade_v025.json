@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "building": "1040 Lombard Street, San Francisco",
+  "datasf_building_id": "201006.0032105",
+  "osm_way": "262548811",
+  "address_match": "1040 Lombard Street",
+  "sources": [
+    {
+      "id": "datasf_osm_building_truth",
+      "path": "projects/lombard_sf/poc_001/l2_building_source_truth_v002.json",
+      "supports": [
+        "footprint",
+        "address match",
+        "absolute height envelope"
+      ],
+      "notes": "Street facade edge is the footprint edge closest to the accepted crooked-road alignment; measured length about 10.93 m."
+    },
+    {
+      "id": "napier_2013_overview",
+      "url": "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064415846).jpg",
+      "artist": "Andrew Napier",
+      "license": "CC BY 2.0",
+      "supports": [
+        "1040 identity",
+        "garage relationship",
+        "light-blue infill",
+        "dark framing",
+        "discrete window rhythm",
+        "upper terrace"
+      ]
+    },
+    {
+      "id": "1040_closeup_2013",
+      "url": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(August_2013)_close_up.jpg",
+      "artist": "Travel Coffee Book",
+      "license": "CC0",
+      "supports": [
+        "multi-lite window character",
+        "solid infill panels",
+        "dark diagonal/vertical framing",
+        "bougainvillea relationship"
+      ],
+      "usage": "cross-check only; not redistributed in repo"
+    },
+    {
+      "id": "1040_2019",
+      "url": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(July_2019)(48651567633).jpg",
+      "artist": "Pom' from France, European Union",
+      "license": "CC BY-SA 2.0",
+      "supports": [
+        "full facade hierarchy",
+        "upper open terrace/railing",
+        "right-side vertical window bay",
+        "framing proportions"
+      ],
+      "usage": "cross-check only; not redistributed in repo"
+    }
+  ],
+  "locked_observations": [
+    "not a glass curtain wall",
+    "light-blue solid wall/infill fields",
+    "dark blue structural/decorative framing",
+    "discrete white/multi-lite windows",
+    "street-level garage",
+    "open framed/railed upper terrace"
+  ],
+  "not_yet_locked": [
+    "exact bay projection depth",
+    "exact window dimensions",
+    "roof/pergola depth and rear geometry",
+    "side/rear facade detail",
+    "bougainvillea geometry"
+  ]
+}
