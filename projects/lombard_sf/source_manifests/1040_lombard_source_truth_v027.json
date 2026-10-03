@@ -49,7 +49,11 @@
         "historic facade hierarchy",
         "full-height massing",
         "terrace/pergola"
-      ]
+      ],
+      "camera_model": "Samsung S85",
+      "focal_length_mm": 9.3,
+      "focal_35mm_equiv_mm": 56,
+      "commons_sha1_hex": "709e1da162059cd2c6a60c818212a291a156d9aa"
     },
     {
       "date": "2009-06-26",
@@ -69,7 +73,11 @@
         "oblique depth evidence",
         "garage/entry relationship",
         "upper terrace"
-      ]
+      ],
+      "camera_model": "Nikon COOLPIX S10",
+      "focal_length_mm": 6.3,
+      "focal_35mm_equiv_mm": 38,
+      "commons_sha1_hex": "b44dc8a52ed5570a59e6b21adcd727285e882e2e"
     },
     {
       "date": "2013-08-03",
@@ -90,7 +98,11 @@
         "full facade hierarchy",
         "known camera position",
         "vertical registration candidate"
-      ]
+      ],
+      "camera_model": "Apple iPhone 4S",
+      "focal_length_mm": 4.28,
+      "focal_35mm_equiv_mm": 35,
+      "commons_sha1_hex": "e21f49ea468ec93eef4a437cdae7dccdae1a184c"
     },
     {
       "date": "2013-08-27",
@@ -106,7 +118,10 @@
         "window/timber detail",
         "bougainvillea occlusion map",
         "material boundaries"
-      ]
+      ],
+      "camera_model": "Canon PowerShot S100",
+      "focal_length_mm": 5.2,
+      "commons_sha1_hex": "80c514b80be2c1c542029d20a0bef2a35e710718"
     },
     {
       "date": "2014-05-07",
@@ -126,7 +141,10 @@
       "use": [
         "alternate oblique depth",
         "full facade proportions"
-      ]
+      ],
+      "camera_model": "HTC Nexus One",
+      "focal_length_mm": 4.31,
+      "commons_sha1_hex": "e64c942ddf64954a16d3df8b9e12f51f20c5623e"
     },
     {
       "date": "2019-07",
@@ -142,6 +160,13 @@
         "modern facade cross-check",
         "terrace/pergola",
         "right-side bay"
+      ],
+      "camera_model": "Canon EOS 400D DIGITAL",
+      "focal_length_mm": 18,
+      "commons_sha1_hex": "84dd1b90db4ecea98b927a9d73856c3583099d29",
+      "camera": [
+        37.802182,
+        -122.418766
       ]
     }
   ],
@@ -174,5 +199,13 @@
     "derive projection depths from oblique multi-view correspondences",
     "classify LiDAR first returns into building versus vegetation before using vertical bands",
     "produce plan/elevation/depth uncertainty diagrams before any Minecraft building export"
-  ]
+  ],
+  "reference_resolution_policy": {
+    "source": "Wikimedia Commons imageinfo API + documented file metadata",
+    "exact_original_dimensions_required": true,
+    "originals_location": "projects/lombard_sf/references/private/1040_source_v027/",
+    "originals_committed": false,
+    "derived_metadata_output": "projects/lombard_sf/outputs/house_1040_source_truth_v027/Lombard_1040_Reference_Resolution_v027.json"
+  },
+  "control_point_package": "projects/lombard_sf/source_manifests/1040_lombard_control_points_v028.json"
 }
