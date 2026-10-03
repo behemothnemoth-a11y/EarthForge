@@ -63,3 +63,7 @@ This is deliberately more detailed than the town-wide generator.
 If the facade still fails to resemble the reference at this scale, the gap is
 not simply "add more detail." The generated gap report identifies which
 pipeline capabilities we need next.
+
+## Source discovery before architectural inference
+
+Apply `docs/BUILDING_DRAWING_AND_REUSE_DISCOVERY.md` at the start of each real-building lab: architectural drawings first, third-party schematics/models separately. Record unresolved access and missing sheets without claiming absence or accepting inferred dimensions. For 1040, the current record is `projects/lombard_sf/building_labs/1040_lombard/source_discovery_v001.json`.

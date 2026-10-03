@@ -11,5 +11,8 @@
   "active_plan_render": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_plan.png",
   "integration_transform": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001_integration_transform.json",
   "visual_status": "NEEDS_REWORK",
-  "geometry_accepted": false
+  "geometry_accepted": false,
+  "source_discovery_manifest": "projects/lombard_sf/building_labs/1040_lombard/source_discovery_v001.json",
+  "architectural_drawing_discovery_status": "INCOMPLETE",
+  "existing_asset_discovery_status": "INCOMPLETE"
 }

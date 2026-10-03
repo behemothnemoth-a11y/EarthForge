@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "building_id": "201006.0032105",
+  "address": "1040 Lombard Street, San Francisco",
+  "parcel_search_key": "0068-010",
+  "checked_on": "2026-10-03",
+  "status": "INCOMPLETE",
+  "purpose": "Blueprint-first acquisition; separate existing schematic/model reuse discovery.",
+  "repo_audit": {
+    "found_precedents": [
+      "docs/FORT_GARRY_MAIN_FLOOR_INTERIOR_V001.md",
+      "docs/REDFIELD_ACQUISITION.md"
+    ],
+    "finding": "Existing plan-based and archival precedents were found, but no explicit 1040 architectural-drawing search ledger or general required drawing/reuse discovery check was found in the inspected guidance and code."
+  },
+  "architectural_drawings": {
+    "status": "INCOMPLETE",
+    "verified_candidates": [],
+    "search_queries": [
+      "\"1040 Lombard\" \"plans\"",
+      "\"1040 Lombard\" \"floor plan\"",
+      "\"1040 Lombard\" \"permit\"",
+      "\"1040 Lombard\" site:sfplanning.org",
+      "\"1040 Lombard\" drawings",
+      "\"0068/010\" plans Lombard",
+      "\"1040 Lombard Street\" \"plans\""
+    ],
+    "result": "Initial web results included address-matched property-summary pages and photographs, but no verified drawing sheet. Many results were unrelated; discovery coverage is not complete.",
+    "checked_routes": [
+      {
+        "url": "https://sfplanninggis.org/pim/",
+        "status": "PORTAL_VERIFIED_TARGET_RECORDS_NOT_RETRIEVED",
+        "finding": "Public UI exposes address/parcel search, historic preservation, planning applications and building permits. No property-specific plan set retrieved."
+      },
+      {
+        "url": "https://sfplanninggis.org/pim/help.html",
+        "status": "HELP_PAGE_RETRIEVED"
+      },
+      {
+        "url": "https://dbiweb02.sfgov.org/dbipts/",
+        "status": "PORTAL_RETRIEVED_TARGET_RECORDS_NOT_RETRIEVED",
+        "finding": "Linked by the official PIM additional-permits section."
+      }
+    ],
+    "access_limitations": [
+      "Some sf.gov and sfplanning.org page fetches failed or returned insufficient content. This is not evidence that records do not exist."
+    ],
+    "pending_routes": [
+      "Address/parcel-specific planning application attachments and permit drawings",
+      "DBI drawing availability and permitted public access",
+      "Address-matched architectural/historic archive catalog search",
+      "Identified architect/project publications or genuine address-matched floor plans"
+    ],
+    "priority_sheets": [
+      "street elevation",
+      "building section with vertical levels",
+      "floor plans showing bays and recesses",
+      "roof/terrace plan",
+      "site/garage threshold section"
+    ],
+    "no_absence_claim": true
+  },
+  "existing_schematics_and_models": {
+    "status": "INCOMPLETE",
+    "verified_candidates": [],
+    "search_queries": [
+      "\"1040 Lombard\" schematic Minecraft",
+      "\"Lombard Street\" \"Minecraft\" \"schematic\""
+    ],
+    "result": "No verified target-specific asset identified in the initial results. Dedicated catalogs have not been exhaustively checked.",
+    "source_authority": "Third-party interpretation until independently checked; never automatic geographic or architectural truth."
+  },
+  "public_reference_pages": [
+    "https://www.zillow.com/homedetails/1040-Lombard-St-San-Francisco-CA-94109/15064546_zpid/",
+    "https://www.redfin.com/CA/San-Francisco/1040-Lombard-St-94109/home/940231"
+  ],
+  "property_summary_limit": "These pages are property facts, not acquired blueprints or facade measurements.",
+  "actions_not_taken": [
+    "No paid records ordered",
+    "No agency/owner contact or request submission",
+    "No third-party asset imported",
+    "No building geometry regenerated",
+    "No site integration"
+  ],
+  "integration_status": "BLOCKED_VISUAL_QA_AND_SOURCE_REVIEW",
+  "geometry_accepted": false
+}

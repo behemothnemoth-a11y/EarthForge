@@ -15,3 +15,7 @@ reference material:
 
 This is a project policy designed to keep the repository portable and avoid
 mixing source licensing with generated project data.
+
+## Building drawings and reuse discovery
+
+For real-building reconstruction, perform the architectural blueprint/plan search and the separate existing schematic/model check in `docs/BUILDING_DRAWING_AND_REUSE_DISCOVERY.md`. Record the search outcome and feature-level applicability before using any result. This is an explicit acquisition check, not an automated retrieval service or a geometry-acceptance gate.

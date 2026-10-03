@@ -17,3 +17,7 @@ Visual/source acceptance: NEEDS_REWORK.
 Integration: BLOCKED.
 
 No Minecraft world files are edited by this lab. The codex/lombard-sf-hardmode branch is unchanged.
+
+## Blueprint-first acquisition
+
+The user clarified that real architectural blueprints are the primary additional source to search. Existing schematics/models remain a separate useful check. Follow `docs/BUILDING_DRAWING_AND_REUSE_DISCOVERY.md`; the initial search is recorded in `source_discovery_v001.json` as INCOMPLETE, with no verified plan set or reusable asset acquired. No absence claim or geometry promotion is made.
