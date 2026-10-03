@@ -97,10 +97,17 @@ def main():
             "pair_stats":pair_stats,"candidate_track_count":len(tracks),"tracks":tracks}
     path=OUT/"Lombard_1040_Multiview_Track_Candidates_v028.json"
     path.write_text(json.dumps(report,indent=2)+"\n")
-    print(json.dumps({"candidate_tracks":len(tracks),
-                      "tracks_5plus":sum(t["view_count"]>=5 for t in tracks),
-                      "tracks_4plus":sum(t["view_count"]>=4 for t in tracks),
-                      "pair_inliers":sum(p["ransac_inliers"] for p in pair_stats),
-                      "output":str(path.relative_to(ROOT))},indent=2))
+    summary={"candidate_tracks":len(tracks),
+             "tracks_5plus":sum(t["view_count"]>=5 for t in tracks),
+             "tracks_4plus":sum(t["view_count"]>=4 for t in tracks),
+             "pair_inliers":sum(p["ransac_inliers"] for p in pair_stats),
+             "top_tracks":[{"candidate_id":t["candidate_id"],"view_count":t["view_count"],
+                            "mean_match_distance":t["mean_match_distance"],
+                            "observations":[{"date":o["date"],"image_index":o["image_index"],
+                                             "normalized":[round(o["normalized"][0],6),round(o["normalized"][1],6)]}
+                                            for o in t["observations"]]}
+                           for t in tracks[:20]],
+             "output":str(path.relative_to(ROOT))}
+    print(json.dumps(summary,indent=2))
 
 if __name__=="__main__":main()
