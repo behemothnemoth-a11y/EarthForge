@@ -25,7 +25,6 @@ def main():
     source=parent.OUT/f'{parent.NAME}.litematic'
     blocks,hosts=read(source,parent.REGION)
     vanilla={p:s for p,s in blocks.items() if p not in hosts}
-    original={p:(v.original,v.cells.copy()) for p,v in hosts.items()}
     env=json.loads((buildings.OUT/'building_envelopes.geojson').read_text())
     feat=next(f for f in env['features'] if str(f['properties']['id'])==BUILDING_ID)
     geom=shape(feat['geometry'])
@@ -48,6 +47,10 @@ def main():
         if hmaxx<minx or hminx>maxx or hmaxz<minz or hminz>maxz:continue
         if hy*16+15<floor-4 or hy*16>cap+4:continue
         candidate_hosts.append((p,v))
+    # Only the physically intersecting hosts need a preservation snapshot.
+    # Snapshotting every v024 Astra host duplicates hundreds of millions of
+    # Python cell references and is unnecessary for a bounded reset.
+    original={p:(v.original,v.cells.copy()) for p,v in candidate_hosts}
     for p,v in candidate_hosts:
         for i,m in enumerate(v.cells.copy()):
             if m not in old1040:continue
