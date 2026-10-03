@@ -1,10 +1,10 @@
 {
   "schema_version": 10,
   "project_id": "lombard_sf",
-  "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "HOUSE_1040_MASSING_V026_REVIEW",
-  "milestone": "LOMBARD_1040_MASSING_V026",
-  "scope": "Accepted crooked public corridor and existing endpoint streets, plus source-led surrounding building envelopes and immediate ground context; plain materials.",
+  "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
+  "status": "HOUSE_1040_SOURCE_TRUTH_V027",
+  "milestone": "LOMBARD_1040_SOURCE_RESET_V027",
+  "scope": "Accepted Lombard public realm/access context; 1040 Lombard architecture reset to source-truth acquisition with no accepted building geometry.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
     "working_crs": "NAD83(2011) / San Francisco CS13 meters (EPSG:7131) preferred for city geometry",
@@ -42,23 +42,15 @@
     "enabled": true,
     "block": "minecraft:yellow_concrete",
     "placement_reference": "player_feet",
-    "placement_origin": [
-      0,
-      0,
-      0
-    ],
-    "registration_block_offset": [
-      0,
-      -1,
-      0
-    ],
+    "placement_origin": [0,0,0],
+    "registration_block_offset": [0,-1,0],
     "rotation": 0,
     "mirror": "none",
     "preserve_across_revisions": true
   },
   "microblocks": {
     "minimum_astra_version": "0.7.0",
-    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and fa\u00e7ade detail; vanilla blocks remain default bulk mass.",
+    "use_policy": "Aggressive only where sub-block fidelity materially improves curves, slopes, curb transitions, stairs, wall caps, planter edges, railings, and façade detail; vanilla blocks remain default bulk mass.",
     "validation": "exact Astra block-entity and microcell readback required"
   },
   "validation": {
@@ -70,22 +62,22 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Front_Massing_Astra_v026.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_1040_massing_v026.py",
+  "active_review_artifact": null,
+  "active_generator": "pipeline/reconstruction/generate_lombard_1040_reset_v027.py",
   "review_gate": {
-    "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the rebuilt 3D front massing of 1040 Lombard before any fine timber/vegetation/detail work.",
+    "required": "1040_SOURCE_TRUTH_REVIEW",
+    "purpose": "Re-establish 1040 Lombard from source data and registered references before any new Minecraft building geometry is generated.",
     "notes": [
-      "v025 is rejected; do not compare v026 as a trim-only revision.",
-      "Check that the house now reads as real depth: recessed entry/wall plane, projecting lower and upper bays, and separate narrow right bay.",
-      "Check garage scale and vertical floor count: garage + two main living-bay levels, not three giant glass floors.",
-      "Check that the terrace is genuinely open and the pergola reads as posts/beams rather than a solid fence.",
-      "Fine timber pattern, decorative rail loops, bougainvillea, full side/rear architecture, interiors and final roof/rear massing remain deferred.",
-      "The odd v024 trees are still a known deferred issue."
+      "v020, v025 and v026 architecture are rejected as geometry.",
+      "The reset artifact must contain no 1040 building geometry; its cleared footprint is workflow state, not terrain truth.",
+      "Review DataSF/OSM identity, footprint, camera/reference registry, LiDAR classification, driveway/garage threshold evidence and multi-view control points.",
+      "No facade, bay, roof, terrace, window or timber dimensions may be inherited from rejected artifacts without independent re-derivation.",
+      "Odd v024 tree morphology remains a separate deferred issue."
     ]
   },
-  "active_focus_config": "projects/lombard_sf/house_1040_massing_focus_v026.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Massing_v026_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
+  "active_reference_bundle": null,
+  "source_truth_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
@@ -94,10 +86,22 @@
       "reason": "Full stair systems were generated before the reconstruction had physically expanded out to support them; floating/outboard stairs violated the road-outward workflow."
     },
     {
+      "review_id": "LOMBARD_1040_REALISM_V020",
+      "artifact": "projects/lombard_sf/outputs/realism_v020/Lombard_Realism_Astra_v020.litematic",
+      "status": "rejected_1040_architectural_interpretation",
+      "reason": "The blue 1040 facade interpretation was not source-measured and must not be reused as building truth."
+    },
+    {
       "review_id": "LOMBARD_1040_FACADE_V025",
       "artifact": "projects/lombard_sf/outputs/house_1040_facade_v025/Lombard_1040_Facade_Skeleton_Astra_v025.litematic",
       "status": "rejected_flat_architectural_interpretation",
-      "reason": "Minecraft flyaround showed a flat decorated sheet: oversized planar windows, excessive timber lines, fence-like top structure and no bay/entry/terrace depth. Keep source registration and driveway datum lessons, not facade geometry."
+      "reason": "Minecraft flyaround showed a flat decorated sheet: oversized planar windows, excessive timber lines, fence-like top structure and no reliable source-measured depth."
+    },
+    {
+      "review_id": "LOMBARD_1040_MASSING_V026",
+      "artifact": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Front_Massing_Astra_v026.litematic",
+      "status": "rejected_interpretation_first_massing",
+      "reason": "Although 3D, the massing still assigned bay, entry, terrace and pergola dimensions before a registered multi-view/source-measurement gate. User requested complete removal and a data-first restart."
     }
   ],
   "superseded_review_artifacts": [
