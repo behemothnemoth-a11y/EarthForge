@@ -35,17 +35,40 @@ class UF:
 def main():
     if not REFREG.exists():raise SystemExit("Reference resolution report missing")
     refs=json.loads(REFREG.read_text())["references"]
+    manifest=json.loads((PROJECT/"source_manifests/1040_lombard_source_truth_v027.json").read_text())
+    meta={m["date"]:m for m in manifest["imagery"]}
     data=[]
-    sift=cv2.SIFT_create(nfeatures=4500,contrastThreshold=.025,edgeThreshold=12)
+    sift=cv2.SIFT_create(nfeatures=5500,contrastThreshold=.022,edgeThreshold=12)
     for idx,ref in enumerate(refs):
         path=ROOT/ref["cache_path"]
-        im=cv2.imread(str(path),cv2.IMREAD_GRAYSCALE)
-        if im is None:raise SystemExit(f"Could not read {path}")
-        h,w=im.shape;scale=min(1.0,MAX_DIM/max(h,w))
-        small=cv2.resize(im,(round(w*scale),round(h*scale)),interpolation=cv2.INTER_AREA) if scale<1 else im
-        kp,des=sift.detectAndCompute(small,None)
-        data.append({"ref":ref,"kp":kp,"des":des,"scale":scale,"shape":[w,h]})
-        print(f"{idx} {ref['date']} keypoints={len(kp)} scale={scale:.4f}",flush=True)
+        color=cv2.imread(str(path),cv2.IMREAD_COLOR)
+        if color is None:raise SystemExit(f"Could not read {path}")
+        h,w=color.shape[:2];scale=min(1.0,MAX_DIM/max(h,w))
+        small_color=cv2.resize(color,(round(w*scale),round(h*scale)),interpolation=cv2.INTER_AREA) if scale<1 else color
+        small=cv2.cvtColor(small_color,cv2.COLOR_BGR2GRAY)
+        sh,sw=small.shape
+        item=meta.get(ref["date"],{})
+        roi=item.get("analysis_roi_norm",[0,0,1,1])
+        x0=max(0,min(sw-1,round(float(roi[0])*sw)));y0=max(0,min(sh-1,round(float(roi[1])*sh)))
+        x1=max(x0+1,min(sw,round(float(roi[2])*sw)));y1=max(y0+1,min(sh,round(float(roi[3])*sh)))
+        mask=np.zeros((sh,sw),dtype=np.uint8);mask[y0:y1,x0:x1]=255
+
+        # Lombard's bougainvillea/trees dominate naive feature matching. Suppress
+        # saturated green and magenta pixels (plus a small dilation halo) so SIFT
+        # preferentially proposes persistent building/window/frame features.
+        hsv=cv2.cvtColor(small_color,cv2.COLOR_BGR2HSV)
+        hh,ss,vv=cv2.split(hsv)
+        green=((hh>=25)&(hh<=95)&(ss>=55))
+        magenta=((hh>=135)&(hh<=179)&(ss>=60))
+        vegetation=(green|magenta).astype(np.uint8)*255
+        vegetation=cv2.dilate(vegetation,np.ones((9,9),np.uint8),iterations=1)
+        mask[vegetation>0]=0
+
+        kp,des=sift.detectAndCompute(small,mask)
+        data.append({"ref":ref,"kp":kp,"des":des,"scale":scale,"shape":[w,h],
+                     "mask":mask,"roi_norm":roi,
+                     "masked_fraction":float((mask==0).sum()/mask.size)})
+        print(f"{idx} {ref['date']} keypoints={len(kp)} scale={scale:.4f} masked={data[-1]['masked_fraction']:.3f}",flush=True)
 
     uf=UF();edges=[];pair_stats=[]
     bf=cv2.BFMatcher(cv2.NORM_L2)
@@ -93,8 +116,6 @@ def main():
 
     # Ephemeral visual review sheet. Source images remain in the gitignored private cache;
     # this downscaled overlay is uploaded only as workflow evidence.
-    manifest=json.loads((PROJECT/"source_manifests/1040_lombard_source_truth_v027.json").read_text())
-    meta={m["date"]:m for m in manifest["imagery"]}
     obs_by_img=defaultdict(list)
     for t in tracks:
         for o in t["observations"]:
@@ -131,8 +152,11 @@ def main():
 
     report={"schema_version":1,"status":"MACHINE_PROPOSALS_ONLY",
             "method":{"detector":"SIFT","ratio_test":0.72,"pair_geometry":"fundamental matrix RANSAC","ransac_px":1.6,
-                      "min_track_views":3,"warning":"Candidates can land on vegetation/repeated texture. Human/source review is mandatory before copying any point into the canonical control-point manifest."},
-            "images":[{"index":i,"date":d["ref"]["date"],"title":d["ref"]["title"],"dimensions":d["shape"],"keypoints":len(d["kp"])} for i,d in enumerate(data)],
+                      "min_track_views":3,
+                      "feature_mask":"human-reviewed broad 1040 ROI + saturated green/magenta vegetation suppression with 9px dilation at analysis scale",
+                      "warning":"ROIs and masks are analysis aids only. Candidates can still be wrong or land on repeated texture; human/source review is mandatory before copying any point into the canonical control-point manifest."},
+            "images":[{"index":i,"date":d["ref"]["date"],"title":d["ref"]["title"],"dimensions":d["shape"],"keypoints":len(d["kp"]),
+                       "analysis_roi_norm":d["roi_norm"],"masked_fraction":d["masked_fraction"]} for i,d in enumerate(data)],
             "review_overlay":str(overlay_path.relative_to(ROOT)),
             "pair_stats":pair_stats,"candidate_track_count":len(tracks),"tracks":tracks}
     path=OUT/"Lombard_1040_Multiview_Track_Candidates_v028.json"
