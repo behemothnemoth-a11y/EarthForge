@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "source_package": "1040_lombard_source_truth_v027",
+  "building": {
+    "address": "1040 Lombard Street, San Francisco, CA 94109",
+    "datasf_building_id": "201006.0032105",
+    "mblr": "SF0068010",
+    "osm_way": "262548811",
+    "centroid_local_m": [
+      80.567,
+      -35.894
+    ],
+    "footprint_area_m2": 177.21,
+    "source_ground_min_navd88_m": 65.54,
+    "source_peak_first_return_navd88_m": 82.33,
+    "source_ground_to_peak_m": 16.79,
+    "source_height_median_m": 12.1,
+    "osm_height_m": 12,
+    "source_caution": "First-return/height statistics are outer-envelope controls only; vegetation can contaminate roof inference."
+  },
+  "public_record_crosscheck": {
+    "authority": "secondary aggregation of public/county records; not geometric truth",
+    "facts": [
+      "APN 0068-010",
+      "reported 3 stories",
+      "reported 3,680 sq ft",
+      "reported year built 1911",
+      "reported single-family/1 dwelling unit",
+      "reported lot about 4,704-4,726 sq ft"
+    ],
+    "discrepancy": "OSM/source-truth bundle labels building_type=apartments while secondary public-record aggregators describe one dwelling unit. Do not resolve this silently; architecture geometry does not depend on the use label."
+  },
+  "imagery": [
+    {
+      "date": "2008-07-11",
+      "title": "1040 Lombard Street, San Francisco (July 2008).jpg",
+      "artist": "LEONARDO DASILVA",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(July_2008).jpg",
+      "dimensions": [
+        2448,
+        3264
+      ],
+      "camera": [
+        37.802159,
+        -122.418707
+      ],
+      "use": [
+        "historic facade hierarchy",
+        "full-height massing",
+        "terrace/pergola"
+      ]
+    },
+    {
+      "date": "2009-06-26",
+      "title": "1040 Lombard Street, San Francisco (June 2009).jpg",
+      "artist": "Sławek Zawadzki",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(June_2009).jpg",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "camera": [
+        37.802165,
+        -122.418816
+      ],
+      "use": [
+        "oblique depth evidence",
+        "garage/entry relationship",
+        "upper terrace"
+      ]
+    },
+    {
+      "date": "2013-08-03",
+      "title": "1040 Lombard Street, San Francisco (August 2013).jpg",
+      "artist": "dronepicr",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(August_2013).jpg",
+      "dimensions": [
+        2448,
+        3264
+      ],
+      "camera": [
+        37.802088,
+        -122.419126
+      ],
+      "camera_altitude_m": 75.606,
+      "use": [
+        "full facade hierarchy",
+        "known camera position",
+        "vertical registration candidate"
+      ]
+    },
+    {
+      "date": "2013-08-27",
+      "title": "1040 Lombard Street, San Francisco (August 2013) close up.jpg",
+      "artist": "Travel Coffee Book",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(August_2013)_close_up.jpg",
+      "dimensions": [
+        4000,
+        2664
+      ],
+      "use": [
+        "window/timber detail",
+        "bougainvillea occlusion map",
+        "material boundaries"
+      ]
+    },
+    {
+      "date": "2014-05-07",
+      "title": "1040 Lombard Street, San Francisco (May 2014).jpg",
+      "artist": "Dan Dascalescu",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(May_2014).jpg",
+      "dimensions": [
+        1920,
+        2560
+      ],
+      "camera": [
+        37.802264,
+        -122.4187
+      ],
+      "camera_altitude_m": 48,
+      "use": [
+        "alternate oblique depth",
+        "full facade proportions"
+      ]
+    },
+    {
+      "date": "2019-07",
+      "title": "1040 Lombard Street, San Francisco (July 2019)(48651567633).jpg",
+      "artist": "Pom' from France, European Union",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(July_2019)(48651567633).jpg",
+      "dimensions": [
+        2496,
+        2496
+      ],
+      "use": [
+        "modern facade cross-check",
+        "terrace/pergola",
+        "right-side bay"
+      ]
+    }
+  ],
+  "locked_truth": [
+    "DataSF/OSM identity match",
+    "source footprint polygon",
+    "street-facing edge determined spatially from accepted road",
+    "driveway exists from source-mapped service=driveway topology",
+    "house is multi-level on a steep site",
+    "street photographs consistently show light-blue infill with dark timber/framing, a garage, discrete window groups, and an open upper structure"
+  ],
+  "not_locked": [
+    "street facade floor elevations",
+    "story heights",
+    "bay projection depths",
+    "window widths/heights",
+    "garage width/height",
+    "entry depth",
+    "terrace depth",
+    "pergola dimensions",
+    "roof/rear geometry",
+    "side facade geometry",
+    "interior layout"
+  ],
+  "next_derivations": [
+    "cache original-resolution reference images privately",
+    "register photo camera positions/headings into the Lombard local frame where metadata permits",
+    "mark common facade control points across 2008/2009/2013/2014/2019 views",
+    "solve facade elevation scale from the source footprint frontage rather than eyeballing",
+    "derive projection depths from oblique multi-view correspondences",
+    "classify LiDAR first returns into building versus vegetation before using vertical bands",
+    "produce plan/elevation/depth uncertainty diagrams before any Minecraft building export"
+  ]
+}
