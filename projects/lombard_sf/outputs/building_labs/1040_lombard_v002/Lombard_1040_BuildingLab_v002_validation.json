@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "lab_id": "LOMBARD_1040_BUILDING_LAB_V002",
+  "status": "PASS",
+  "file": "projects/lombard_sf/outputs/building_labs/1040_lombard_v002/Lombard_1040_BuildingLab_v002.litematic",
+  "sha256": "29630dc9b4ccd069374e60dfd75edaed7b93c88a7600e0d0b4d39b2f2bea9557",
+  "branch": "codex/lombard-1040-building-lab",
+  "standalone": true,
+  "lombard_context_included": false,
+  "region_position": [
+    0,
+    0,
+    0
+  ],
+  "region_size": [
+    13,
+    13,
+    20
+  ],
+  "footprint_area_m2": 177.20842492902057,
+  "frontage_m": 10.934756432120318,
+  "max_depth_m": 17.832733,
+  "height_m": 12.625,
+  "body_top_m": 9.7,
+  "micro_host_blocks": 1035,
+  "micro_occupied_cells": 760827,
+  "facade_canvas_cells": 184747,
+  "facade_feature_counts": {
+    "sloped": 15,
+    "round": 0,
+    "boxes": 86
+  },
+  "materials": [
+    "astra_microblocks:rgb_17262c",
+    "astra_microblocks:rgb_203743",
+    "astra_microblocks:rgb_2b4551",
+    "astra_microblocks:rgb_3b4a50",
+    "astra_microblocks:rgb_82aec2",
+    "astra_microblocks:rgb_91b9ca",
+    "astra_microblocks:rgb_94b6c1",
+    "astra_microblocks:rgb_a7cdd9",
+    "astra_microblocks:rgb_e7e4da"
+  ],
+  "checks": {
+    "exact_block_map": true,
+    "exact_astra_cells_and_materials": true,
+    "astra_host_count": true,
+    "astra_microcell_decode": true,
+    "micro_only_above_ground": true,
+    "no_glass": true,
+    "source_footprint_area": true,
+    "source_frontage": true,
+    "continuous_facade_canvas": true,
+    "lower_window_all_panes_clear": true,
+    "upper_window_all_panes_clear": true,
+    "right_window_all_panes_clear": true,
+    "trim_aperture_intersections_zero": true,
+    "registered_non_facade_geometry_preserved": true,
+    "photo_handedness_correct": true
+  },
+  "parent_sha256": "0ae27ccb01d6f0b24bf3bb5898cef55f29bab3696fcda7affa63df7ad7c18a18",
+  "registered_changed_microcells": 17391,
+  "out_of_scope_changes": 0,
+  "aperture_audit": [
+    {
+      "name": "lower",
+      "pane_rays": 1953,
+      "decoded_samples": 74214,
+      "blocked_samples": 0
+    },
+    {
+      "name": "upper",
+      "pane_rays": 832,
+      "decoded_samples": 27456,
+      "blocked_samples": 0
+    },
+    {
+      "name": "right",
+      "pane_rays": 272,
+      "decoded_samples": 9248,
+      "blocked_samples": 0
+    }
+  ],
+  "trim_aperture_intersections": 0,
+  "normalized_x_reflection_cell_sum": 206,
+  "review_targets": [
+    "whole-house standalone silhouette",
+    "lower bay versus upper bay depth",
+    "broad right body proportion",
+    "garage and recessed left entry",
+    "open window voids / no vertical striping",
+    "terrace railing and pergola depth",
+    "side/rear footprint shape"
+  ],
+  "visual_status": "REVIEW_REQUIRED_NOT_ACCEPTED",
+  "resolved_diagnostics": [
+    "Photo-facing handedness",
+    "Square-brush diagonal inflation",
+    "Trim crossing window apertures"
+  ],
+  "known_visual_defects": [
+    "Facade ratios and low garage opening remain inherited provisional estimates, not new measurements.",
+    "Full-depth cap, side/rear shape, terrace depth and precise opening dimensions remain source-unresolved."
+  ],
+  "integration_status": "BLOCKED_VISUAL_QA_AND_SOURCE_REVIEW"
+}

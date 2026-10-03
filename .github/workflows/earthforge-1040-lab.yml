@@ -1,0 +1,48 @@
+name: EarthForge 1040 Lab QA and Download
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/lombard-1040-building-lab]
+    paths:
+      - '.github/workflows/earthforge-1040-lab.yml'
+      - 'pipeline/microblocks/facade_canvas.py'
+      - 'pipeline/reconstruction/generate_lombard_1040_building_lab_v002.py'
+      - 'tests/test_facade_stroke_guard.py'
+      - 'projects/lombard_sf/building_labs/1040_lombard/**'
+      - 'projects/lombard_sf/outputs/building_labs/1040_lombard_v002/**'
+permissions:
+  contents: read
+concurrency:
+  group: 1040-lab-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run facade regressions
+        run: python -m unittest discover -s tests -p test_facade_stroke_guard.py -v
+      - name: Compile candidate generator
+        run: python -m py_compile pipeline/reconstruction/generate_lombard_1040_building_lab_v002.py
+      - name: Verify checked-in candidate and machine gates
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path('projects/lombard_sf/outputs/building_labs/1040_lombard_v002')
+          r=json.loads((p/'Lombard_1040_BuildingLab_v002_validation.json').read_text())
+          assert r['status']=='PASS' and r['checks'] and all(v is True for v in r['checks'].values())
+          a=p/'Lombard_1040_BuildingLab_v002.litematic'
+          assert hashlib.sha256(a.read_bytes()).hexdigest()==r['sha256']
+          print('Exact checked-in candidate hash verified; user acceptance remains pending.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: earthforge-1040-lab-v002-${{ github.sha }}
+          path: projects/lombard_sf/outputs/building_labs/1040_lombard_v002/
+          retention-days: 30
+          if-no-files-found: error

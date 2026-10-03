@@ -1,3 +1,7 @@
+# Current pass: v002
+
+See `docs/LOMBARD_1040_BUILDING_LAB_V002.md`. v002 fixes view handedness and facade framing only. v001 is preserved as the diagnostic parent; no site integration.
+
 # 1040 Lombard isolated diagnostic lab
 
 ## Scope

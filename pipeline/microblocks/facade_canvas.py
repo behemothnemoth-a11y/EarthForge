@@ -107,3 +107,42 @@ class FacadeCanvas:
                 hosts[key]=astra.MicroVolume()
             hosts[key].set(lx,ly,lz,material)
         return hosts
+
+
+    def stroke_uy(self, d0, d1, u0, y0, u1, y1, width, material,
+                  clip=None, exclude=()):
+        """Fixed normal-width, butt-ended stroke; half-open architectural masks.
+
+        Unlike line_uy's square brush, width is the full perpendicular width in
+        microcells and does not inflate on diagonals. Sample cell centres.
+        clip/exclude rectangles use (u0, u1, y0, y1); no geometry inferred here.
+        Returns the written cell coordinates for independent feature auditing.
+        """
+        if not math.isfinite(width) or width <= 0:
+            raise ValueError("Stroke width must be positive and finite")
+        if not all(math.isfinite(v) for v in (u0,y0,u1,y1)):
+            raise ValueError("Non-finite stroke endpoint")
+        du,dy=u1-u0,y1-y0
+        ll=du*du+dy*dy
+        if ll==0 or d1<=d0:
+            return set()
+        radius=width/2
+        out=set()
+        for u in range(max(0,math.floor(min(u0,u1)-radius)),min(self.width,math.ceil(max(u0,u1)+radius))):
+            for y in range(max(0,math.floor(min(y0,y1)-radius)),min(self.height,math.ceil(max(y0,y1)+radius))):
+                pu,py=u+.5,y+.5
+                if clip and not (clip[0]<=pu<clip[1] and clip[2]<=py<clip[3]):
+                    continue
+                if any(a<=pu<b and c<=py<e for a,b,c,e in exclude):
+                    continue
+                t=((pu-u0)*du+(py-y0)*dy)/ll
+                if not 0<=t<=1:
+                    continue
+                normal=abs((pu-u0)*dy-(py-y0)*du)/math.sqrt(ll)
+                if normal>=radius:
+                    continue
+                for d in range(int(d0),int(d1)):
+                    self.set(d,y,u,material)
+                    out.add((d,y,u))
+        self.feature_counts["sloped"]+=1
+        return out

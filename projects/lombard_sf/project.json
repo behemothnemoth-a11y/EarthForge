@@ -2,9 +2,9 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "HOUSE_1040_STANDALONE_LAB_DIAGNOSTIC",
-  "milestone": "LOMBARD_1040_BUILDING_LAB_V001",
-  "scope": "Accepted Lombard public realm/access context plus provisional source-led 1040 first-pass architecture for Minecraft review; unresolved photo-proportioned dimensions remain non-truth.",
+  "status": "HOUSE_1040_STANDALONE_LAB_V002_REVIEW",
+  "milestone": "LOMBARD_1040_BUILDING_LAB_V002",
+  "scope": "Isolated 1040 lab only; Lombard integration blocked. Current layer: orientation and facade framing correction, not acceptance of inherited dimensions.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
     "working_crs": "NAD83(2011) / San Francisco CS13 meters (EPSG:7131) preferred for city geometry",
@@ -70,19 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/building_labs/1040_lombard_v001/Lombard_1040_BuildingLab_v001.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_1040_building_lab_v001.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/building_labs/1040_lombard_v002/Lombard_1040_BuildingLab_v002.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_1040_building_lab_v002.py",
   "review_gate": {
-    "required": "ISOLATED_SOURCE_AND_VISUAL_REWORK",
+    "required": "USER_MINECRAFT_ISOLATED_FLYAROUND",
     "accepted": false,
     "integration_allowed": false,
     "notes": [
-      "v032 rejected by user.",
-      "Lab v001 is a diagnostic baseline, not approved architecture.",
-      "Use a new scratch area; do not paste into Lombard."
+      "Correct source-facing left/right",
+      "Narrow panel framing and clear windows",
+      "Inherited body/roof and dimensions remain unresolved",
+      "Main Lombard branch and world untouched"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/building_labs/1040_lombard/lab_v001.json",
+  "active_focus_config": "projects/lombard_sf/building_labs/1040_lombard/lab_v002.json",
   "active_reference_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "source_truth_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "rejected_review_artifacts": [

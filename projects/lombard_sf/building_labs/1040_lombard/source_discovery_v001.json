@@ -83,5 +83,20 @@
     "No site integration"
   ],
   "integration_status": "BLOCKED_VISUAL_QA_AND_SOURCE_REVIEW",
-  "geometry_accepted": false
+  "geometry_accepted": false,
+  "followup_checks": [
+    {
+      "date": "2026-10-03",
+      "pass": "lab_v002",
+      "queries": [
+        "\"1040 Lombard\" (blueprints OR \"floor plan\" OR \"elevation\" OR drawings)",
+        "\"1040 LOMBARD\" \"0068\" (permit OR plans)",
+        "San Francisco request copies building plans [sf.gov]",
+        "\"1040 Lombard\" schematic [planetminecraft.com]"
+      ],
+      "result": "No verified target drawing or reusable asset retrieved. Search returned property summaries and substantial off-target material; coverage remains incomplete.",
+      "geometry_authority_gained": false,
+      "no_absence_claim": true
+    }
+  ]
 }

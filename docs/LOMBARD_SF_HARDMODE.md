@@ -1,3 +1,7 @@
+# Current isolated review: 1040 Building Lab v002
+
+The active lab artifact is in `projects/lombard_sf/building_labs/1040_lombard/project.json`. See `docs/LOMBARD_1040_BUILDING_LAB_V002.md`. Source-facing handedness and framing are corrected; dimensions/massing remain provisional. No full-site edits or integration. Earlier review entries below are historical.
+
 # Lombard SF Hard-Mode Reconstruction
 
 ## Active work on this branch: isolated 1040 diagnostic lab

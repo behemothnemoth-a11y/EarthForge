@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "DO_NOT_APPLY_UNTIL_STANDALONE_ACCEPTED",
+  "normalized_frame": {
+    "units": "meters",
+    "front_edge": "d=0",
+    "u_axis": "photo-left to photo-right along verified DataSF street-facing edge",
+    "d_axis": "positive inward from street-facing edge",
+    "y_axis": "positive up from accepted driveway datum",
+    "front_origin_lombard_local_m": [
+      76.68966116209049,
+      -26.416462344583124
+    ],
+    "uvec_lombard_local": [
+      0.9849215948456739,
+      -0.1730013063726815
+    ],
+    "inward_normal_lombard_local": [
+      -0.1730013063726815,
+      -0.9849215948456739
+    ],
+    "frontage_m": 10.934756432120318,
+    "max_depth_m": 17.832733
+  },
+  "standalone_offsets_micro": {
+    "u_margin": 16,
+    "front_margin": 32,
+    "x_reflection_cell_sum": 206
+  },
+  "inverse_cell_center_formula": {
+    "u_m": "(x_reflection_cell_sum - x_micro - u_margin + 0.5)/16",
+    "d_m": "(z_micro - front_margin + 0.5)/16",
+    "y_m": "(y_micro+0.5)/16"
+  },
+  "lombard_target": {
+    "branch": "codex/lombard-sf-hardmode",
+    "driveway_datum_micro_y": -308,
+    "front_origin_lombard_local_m": [
+      76.68966116209049,
+      -26.416462344583124
+    ],
+    "uvec_lombard_local": [
+      0.9849215948456739,
+      -0.1730013063726815
+    ],
+    "inward_normal_lombard_local": [
+      -0.1730013063726815,
+      -0.9849215948456739
+    ]
+  },
+  "rule": "Transform accepted standalone u/d/y microcells back into the locked Lombard frame; never re-infer placement by eye."
+}
