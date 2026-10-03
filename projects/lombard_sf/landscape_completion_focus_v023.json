@@ -1,0 +1,11 @@
+{
+  "required": "USER_MINECRAFT_FLYAROUND",
+  "purpose": "Review completed supported landscaping and the upper site-band connection before resuming building work.",
+  "notes": [
+    "Inspect the upper green/site band highlighted at the end of the v022 flyaround: it should now read as continuous landscaping.",
+    "Check full-block hedge/shrub/flower density and make sure it reads layered rather than carpet-like.",
+    "Check tree placement and crown scale; 18 prior mapped trees are frozen and one additional supported mapped tree is added.",
+    "Road, pavers, curbs, sidewalks, stairs, rails, retaining edges and every building envelope must look unchanged.",
+    "Same placement; rotation 0; mirror none; replace ALL including air."
+  ]
+}

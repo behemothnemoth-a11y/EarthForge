@@ -1,22 +1,22 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: road joins and pavers v021
+## Active review: landscape + site connectivity v023
 
-Load `road_finish_v021/Lombard_Road_Joins_And_Pavers_Astra_v021.litematic`. See `docs/LOMBARD_ROAD_FINISH_V021.md` for source diagnosis, explicit geometry exceptions and mandatory regression checks. Blue facade interpretation is rejected and unchanged for this road-focused review. Older active statements below are historical. Stop for flyaround.
+The user accepted v022 and requested completion of Lombard's remaining landscaping before more building work. Load `landscape_completion_v023/Lombard_Landscape_Completion_Astra_v023.litematic`. This pass adds botanical mass only above existing supported green ground, closes the visibly unfinished upper site-band connection, audits all mapped trees, and freezes every occupied v022 cell. See `docs/LOMBARD_LANDSCAPE_COMPLETION_V023.md`. Stop for flyaround before architecture resumes.
 
 ## Historical review: integrated realism v020
 
 The current candidate is `realism_v020/Lombard_Realism_Astra_v020.litematic`. See `docs/LOMBARD_REALISM_V020.md` for changes, source limitations and mandatory audits. Older active-review statements below are historical. Accepted pavement occupancy is preserved, with a narrowly recorded paint recoloring exception. Stop for the user flyaround after installing the validated candidate.
 
-## Active review — landscape forms v019
+## Active review ï¿½ landscape forms v019
 
 The next realism pass refines existing bed plants and tree crowns with simple materials. It preserves v018 buildings and all non-botanical geometry. See `docs/LOMBARD_LANDSCAPE_REALISM_V019.md`; individual plant placement remains illustrative. Architectural details, ground-support gaps and paint overlays remain outstanding.
 
-## Current scope update — surrounding blockout v018
+## Current scope update ï¿½ surrounding blockout v018
 
 The user now authorizes surrounding buildings and their immediate site context with simple materials; photoreal texturing remains deferred. This explicitly supersedes the no-houses limit for the v018 candidate. Preserve v017 as the accepted public-corridor baseline. See `docs/LOMBARD_NEIGHBORHOOD_BLOCKOUT_V018.md`.
 
-## Current authorized milestone — complete no-house v1 (v017)
+## Current authorized milestone ï¿½ complete no-house v1 (v017)
 
 The user explicitly expanded the v016 terrain-only task to the whole crooked public corridor and the existing 50m Hyde/Leavenworth sections, without houses. The active artifact is now `public_realm_v1/Lombard_Complete_No_Houses_V1_Astra_v017.litematic`. Earlier single-layer stop instructions are historical; the next gate is the assembled v1 flyaround. See `docs/LOMBARD_PUBLIC_REALM_V1.md`. Preserve the accepted road cells and boundary-non-geometry rule. Always run the decoded pedestrian audit: mapped stair traces can conflict with the accepted road footprint, so counting stair ways alone does not establish continuity. Record original and modeled traces for any local reconciliation.
 

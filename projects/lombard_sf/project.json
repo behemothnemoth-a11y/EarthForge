@@ -2,8 +2,8 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "RETAINING_FINISH_V022_REVIEW",
-  "milestone": "LOMBARD_RETAINING_FINISH_V022",
+  "status": "LANDSCAPE_COMPLETION_V023_REVIEW",
+  "milestone": "LOMBARD_LANDSCAPE_COMPLETION_V023",
   "scope": "Accepted crooked public corridor and existing endpoint streets, plus source-led surrounding building envelopes and immediate ground context; plain materials.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,20 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/retaining_finish_v022/Lombard_Retaining_Planter_Finish_Astra_v022.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_retaining_finish_v022.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/landscape_completion_v023/Lombard_Landscape_Completion_Astra_v023.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_landscape_completion_v023.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review material-only coping and upper-face refinement on existing retaining/planter edges before any more building work.",
+    "purpose": "Review completed supported landscaping and the upper site-band connection before resuming building work.",
     "notes": [
-      "coping brightness and continuity",
-      "whether concrete variation reads naturally rather than noisy",
-      "hairpin edge realism against references",
-      "road, sidewalks, stairs, planting and buildings must remain visually unchanged"
+      "upper green/site band should read as continuous landscaping",
+      "full-block hedge/shrub/flower density should read layered rather than carpet-like",
+      "tree placement and crown scale",
+      "road/sidewalks/stairs/rails/retaining/buildings must remain unchanged"
     ]
   },
-  "active_focus_config": "projects/lombard_sf/retaining_finish_focus_v022.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/retaining_finish_v022/Lombard_Retaining_Finish_v022_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/landscape_completion_focus_v023.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/landscape_completion_v023/Lombard_Landscape_Completion_v023_reference_sheet.jpg",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",

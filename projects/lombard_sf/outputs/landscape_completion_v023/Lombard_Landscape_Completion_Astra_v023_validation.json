@@ -1,0 +1,216 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50676,
+  "tile_entities": 50555,
+  "sha256": "1ad5e17fa6af4bf8d9135f0867026f52889bcb0bc0cfe482ff89de2e804b98b0",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "parent_occupied_cells_preserved": true,
+    "additions_only_into_parent_air": true,
+    "vanilla_preserved": true,
+    "mapped_tree_sources_only": true
+  },
+  "parent_sha256": "24ef693d460065f95b5192e7439d8dd03ae1d72a3b90423ffd4328bb97849a9f",
+  "candidate_plain_green_columns": 141657,
+  "connector_columns_vegetated": 100543,
+  "groundcover_cells_added": 541289,
+  "bloom_cells_added": 32100,
+  "mapped_tree_nodes": 29,
+  "existing_mapped_trees_preserved": 18,
+  "mapped_trees_added": 1,
+  "mapped_trees_without_supported_green_base": 10,
+  "tree_audit": [
+    {
+      "osm_id": "7895122668",
+      "status": "no_supported_green_base",
+      "nearest_m": 120.39647028833676
+    },
+    {
+      "osm_id": "7895122669",
+      "status": "no_supported_green_base",
+      "nearest_m": 116.80739189695237
+    },
+    {
+      "osm_id": "10270097851",
+      "status": "no_supported_green_base",
+      "nearest_m": 121.92175775497186
+    },
+    {
+      "osm_id": "10270097852",
+      "status": "no_supported_green_base",
+      "nearest_m": 49.43914686419654
+    },
+    {
+      "osm_id": "10270097853",
+      "status": "no_supported_green_base",
+      "nearest_m": 43.916131145801366
+    },
+    {
+      "osm_id": "10270097854",
+      "status": "no_supported_green_base",
+      "nearest_m": 42.75317826780896
+    },
+    {
+      "osm_id": "10270097855",
+      "status": "no_supported_green_base",
+      "nearest_m": 29.05828344817268
+    },
+    {
+      "osm_id": "10270097856",
+      "status": "no_supported_green_base",
+      "nearest_m": 51.93564833302094
+    },
+    {
+      "osm_id": "10270097857",
+      "status": "no_supported_green_base",
+      "nearest_m": 59.97093602188895
+    },
+    {
+      "osm_id": "13819996871",
+      "status": "preserved_existing",
+      "nearest_m": 0.01646101279161931
+    },
+    {
+      "osm_id": "13819996872",
+      "status": "preserved_existing",
+      "nearest_m": 0.03546838267059381
+    },
+    {
+      "osm_id": "13819996873",
+      "status": "preserved_existing",
+      "nearest_m": 0.05594213135105041
+    },
+    {
+      "osm_id": "13819996874",
+      "status": "preserved_existing",
+      "nearest_m": 0.055917163204379235
+    },
+    {
+      "osm_id": "13819996875",
+      "status": "preserved_existing",
+      "nearest_m": 0.027524116932011417
+    },
+    {
+      "osm_id": "13819996876",
+      "status": "preserved_existing",
+      "nearest_m": 0.4336699563625227
+    },
+    {
+      "osm_id": "13819996877",
+      "status": "preserved_existing",
+      "nearest_m": 0.06395262643984448
+    },
+    {
+      "osm_id": "13819996878",
+      "status": "preserved_existing",
+      "nearest_m": 0.02198655810898363
+    },
+    {
+      "osm_id": "13819996879",
+      "status": "preserved_existing",
+      "nearest_m": 0.03104373848911724
+    },
+    {
+      "osm_id": "13819996880",
+      "status": "preserved_existing",
+      "nearest_m": 0.020991803435170382
+    },
+    {
+      "osm_id": "13819996881",
+      "status": "added_from_mapped_source",
+      "height_m": 4.762992858886719,
+      "nearby_non_ground_returns": 44,
+      "nearest_green_m": 0.8502722873047412
+    },
+    {
+      "osm_id": "13819996882",
+      "status": "preserved_existing",
+      "nearest_m": 0.011357506995190078
+    },
+    {
+      "osm_id": "13819996883",
+      "status": "preserved_existing",
+      "nearest_m": 0.03927297440966437
+    },
+    {
+      "osm_id": "13819996884",
+      "status": "preserved_existing",
+      "nearest_m": 0.009603214646380543
+    },
+    {
+      "osm_id": "13819996885",
+      "status": "preserved_existing",
+      "nearest_m": 0.01671463759518228
+    },
+    {
+      "osm_id": "13819996886",
+      "status": "preserved_existing",
+      "nearest_m": 0.023241943443847935
+    },
+    {
+      "osm_id": "13819996887",
+      "status": "no_supported_green_base",
+      "nearest_m": 4.692307815034823
+    },
+    {
+      "osm_id": "13819996888",
+      "status": "preserved_existing",
+      "nearest_m": 0.04071502061335462
+    },
+    {
+      "osm_id": "13819996889",
+      "status": "preserved_existing",
+      "nearest_m": 0.027949256280177796
+    },
+    {
+      "osm_id": "13819996890",
+      "status": "preserved_existing",
+      "nearest_m": 0.014747402536188042
+    }
+  ],
+  "changed_parent_occupied_cells": [],
+  "preserved": [
+    "v022 road/curb/pavers",
+    "sidewalks",
+    "stairs/landings/rails",
+    "retaining/planter finish",
+    "all building envelopes and facade placeholders",
+    "registration marker",
+    "all pre-existing occupied microcells"
+  ],
+  "sources": [
+    {
+      "file": "022_Lombard_Street_10064478253_.jpg.jpg",
+      "use": "full-block landscape rhythm only"
+    },
+    {
+      "file": "024_Lombard_Street_5102863893_.jpg.jpg",
+      "use": "garden density/tree massing character only"
+    },
+    {
+      "file": "033_Lombard_Street_Cherry_Blossom.jpg.jpg",
+      "use": "upper garden edge continuity only"
+    }
+  ],
+  "review": "USER_MINECRAFT_FLYAROUND_REQUIRED"
+}
