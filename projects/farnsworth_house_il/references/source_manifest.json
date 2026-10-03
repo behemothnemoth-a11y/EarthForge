@@ -1,0 +1,53 @@
+{
+  "schema_version": "farnsworth-reference-register-v1",
+  "project": "farnsworth_house_il",
+  "retrieved_on": "2026-10-03",
+  "status": "reference_only_not_runtime_project_configuration",
+  "catalog": {
+    "id": "loc-il0323",
+    "survey": "HABS IL-1105",
+    "title": "Edith Farnsworth House, 14520 River Road, Plano, Kendall County, IL",
+    "url": "https://www.loc.gov/item/il0323/",
+    "metadata_url": "https://www.loc.gov/item/il0323/?fo=json",
+    "counts": {"photographs": 32, "measured_drawings": 8, "data_pages_catalog": 54, "photo_caption_pages": 3},
+    "site_locator": {"latitude": 41.63502, "longitude": -88.53574, "use": "locator_only_not_surveyed_anchor", "vertical_datum": null},
+    "rights_url": "https://www.loc.gov/rr/print/res/114_habs.html",
+    "rights_summary": "LOC reports no known restrictions for US-government-made images, but copied material may be restricted. Do not generalize that advisory to every item.",
+    "redistribution_policy": "URLs and factual metadata only. No raw source scans or photographs committed. Assess individual rights before redistribution."
+  },
+  "baseline": {
+    "proposed": "HABS 2009 documentation campaign, submitted 2010",
+    "approved": false,
+    "evidence": "REPORT, PDF page 55 / printed page 52; CAPTIONS, PDF page 2",
+    "drawing_attribution": "Measured drawings completed by National Trust employees Jenna Cellini, Elizabeth Milnarik and Brad Roeder, according to the report.",
+    "photo_attribution": "Selected photos 11-32: Leslie Schwartz, 2009. Earlier photos 1-10: Jack E. Boucher, February 1971.",
+    "warning": "Do not combine furniture, screens, temporary repairs or site details from different dates without a recorded decision."
+  },
+  "reports": [
+    {"id": "REPORT", "title": "HABS historical and architectural report with addendum", "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/data/il0323data.pdf", "pdf_pages_observed": 55, "reviewed": "Architectural descriptions, dimension conflicts and project-information page; historical material is not a current-condition survey."},
+    {"id": "CAPTIONS", "title": "HABS index to photographs", "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/data/il0323cap.pdf", "pdf_pages_observed": 3, "reviewed": "Photographers, years, view directions and wardrobe-absence note."}
+  ],
+  "drawings": [
+    {"id": "D01", "sheet": 1, "title": "Title Sheet & Site Map", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00001a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00001a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D02", "sheet": 2, "title": "Site Evolution", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00002a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00002a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D03", "sheet": 3, "title": "Plan", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00003a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00003a.tif", "preview_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0300/il0323/sheet/00003v.jpg", "review_status": "whole_preview_and_high_resolution_dimension_crops_visually_checked", "master_pixels_observed": [7200, 4800], "warning": "Ledger is a partial transcription, not complete digitization."},
+    {"id": "D04", "sheet": 4, "title": "South & North Elevations", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00004a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00004a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D05", "sheet": 5, "title": "West & East Elevations and Sections", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00005a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00005a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D06", "sheet": 6, "title": "Plan and North, East and South Elevations of Core, and Section", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00006a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00006a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D07", "sheet": 7, "title": "Bathroom Elevations, Wardrobe Plans & Details, and Stair Section Details", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00007a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00007a.tif", "review_status": "indexed_not_dimension_checked"},
+    {"id": "D08", "sheet": 8, "title": "Details of Walls, Window and Columns", "url": "https://www.loc.gov/resource/hhh.il0323.sheet.00008a", "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0300/il0323/sheet/00008a.tif", "review_status": "indexed_not_dimension_checked"}
+  ],
+  "selected_photographs": [
+    {"id": "P11", "number": 11, "digital_id": "397645p", "view": "Rear north facade from north", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397645p"},
+    {"id": "P12", "number": 12, "digital_id": "397646p", "view": "East facade from east with scale bar", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397646p"},
+    {"id": "P14", "number": 14, "digital_id": "397648p", "view": "Front south facade from southeast", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397648p"},
+    {"id": "P15", "number": 15, "digital_id": "397649p", "view": "West facade from west", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397649p"},
+    {"id": "P18", "number": 18, "digital_id": "397652p", "view": "Front and upper terrace from southwest on lower terrace", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397652p"},
+    {"id": "P19", "number": 19, "digital_id": "397653p", "view": "Entry from southwest corner of upper terrace", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397653p"},
+    {"id": "P22", "number": 22, "digital_id": "397656p", "view": "Living room from west", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397656p", "state_warning": "Wardrobe explicitly absent at photography; plan still depicts it."},
+    {"id": "P29", "number": 29, "digital_id": "397663p", "view": "Kitchen from east", "url": "https://www.loc.gov/resource/hhh.il0323.photos.397663p"}
+  ],
+  "photograph_review_status": "Captions indexed and directions verified against caption PDF; full visual inspection and camera matching still pending.",
+  "photo_preview_base_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0300/il0323/photos/",
+  "photo_preview_rule": "Append digital_id + v.jpg, for example 397645pv.jpg. These preview variants are present in the retrieved LOC resource metadata."
+}
