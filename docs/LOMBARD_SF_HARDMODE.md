@@ -1,8 +1,9 @@
 # Lombard SF Hard-Mode Reconstruction
 
-## Active review: 1040 Lombard street facade v025
+## Active review: 1040 Lombard 3D front massing v026
 
-The public-realm/access work is sufficiently advanced to begin architecture. The user selected the blue house first. v025 rebuilds only the source-identified 1040 Lombard road-facing facade from the DataSF/OSM footprint/address match and dedicated facade imagery; the rejected v020 glass-grid interpretation is not reused. The garage datum is tied to accepted v024 driveway surfaces rather than parcel-wide minimum ground. Roof, depth, side/rear facades and interiors remain deferred. v024 tree morphology remains visually unresolved and is explicitly deferred. See docs/LOMBARD_1040_FACADE_V025.md. Stop for flyaround.
+The v025 street-facade skeleton is rejected as a flat architectural interpretation. v026 restarts 1040 from the accepted v024 context while preserving the verified footprint, 10.93 m front edge and driveway datum. Dedicated 2009/2013/2019 photographs support a recessed entry/main wall, two projecting central bay volumes, a separate narrow right bay, and a genuinely open terrace/pergola. v026 builds those as 3D shell geometry; fine timber, vegetation, side/rear completion and interiors remain deferred. v024 tree morphology remains a known deferred visual issue. See docs/LOMBARD_1040_MASSING_V026.md. Stop for flyaround.
+
 
 ## Historical review: integrated realism v020
 

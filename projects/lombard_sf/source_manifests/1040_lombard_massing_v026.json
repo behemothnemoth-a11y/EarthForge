@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "building": "1040 Lombard Street",
+  "datasf_building_id": "201006.0032105",
+  "osm_way": "262548811",
+  "geometry_status": "photo-proportioned 3D front massing candidate inside measured footprint/height controls",
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(June_2009).jpg",
+      "author": "S\u0142awek Zawadzki",
+      "license": "CC BY-SA 3.0",
+      "supports": [
+        "recessed west entry",
+        "two projecting central window bays",
+        "narrow east vertical bay",
+        "garage relation",
+        "open terrace/pergola depth"
+      ]
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(August_2013).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "supports": [
+        "asymmetric front hierarchy",
+        "garage",
+        "bay returns",
+        "dark timber/light blue infill",
+        "upper open terrace"
+      ]
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:1040_Lombard_Street,_San_Francisco_(July_2019)(48651567633).jpg",
+      "author": "Pom'",
+      "license": "CC BY-SA 2.0",
+      "supports": [
+        "clear shallow bay projections",
+        "narrow right bay",
+        "terrace rail",
+        "pergola posts/beams"
+      ]
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Lombard_Street_(10064415846).jpg",
+      "author": "Andrew Napier",
+      "license": "CC BY 2.0",
+      "supports": [
+        "site relationship and 1040 identity"
+      ]
+    }
+  ],
+  "measured_controls": {
+    "street_front_edge_m": 10.934756432120318,
+    "driveway_datum_samples": 660,
+    "source_total_height_envelope_m": 12.625
+  },
+  "candidate_depths_m": {
+    "main_wall_recess": 0.55,
+    "lower_bay_face": 0.03,
+    "upper_bay_face": 0.0,
+    "right_bay_face": 0.13,
+    "entry_recess": 1.15,
+    "terrace_depth": 2.05
+  },
+  "candidate_heights_m": {
+    "terrace_deck": 9.2,
+    "railing_top": 10.45,
+    "pergola_top": 12.35
+  },
+  "caution": "Photos establish hierarchy and relative projection strongly; individual depth/height subdivisions are not survey dimensions and remain subject to flyaround/source refinement."
+}

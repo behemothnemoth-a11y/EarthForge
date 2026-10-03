@@ -2,8 +2,8 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block \u2014 Hyde to Leavenworth",
-  "status": "HOUSE_1040_FACADE_V025_REVIEW",
-  "milestone": "LOMBARD_1040_FACADE_V025",
+  "status": "HOUSE_1040_MASSING_V026_REVIEW",
+  "milestone": "LOMBARD_1040_MASSING_V026",
   "scope": "Accepted crooked public corridor and existing endpoint streets, plus source-led surrounding building envelopes and immediate ground context; plain materials.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -70,27 +70,34 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": "projects/lombard_sf/outputs/house_1040_facade_v025/Lombard_1040_Facade_Skeleton_Astra_v025.litematic",
-  "active_generator": "pipeline/reconstruction/generate_lombard_1040_facade_v025.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Front_Massing_Astra_v026.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_1040_massing_v026.py",
   "review_gate": {
     "required": "USER_MINECRAFT_FLYAROUND",
-    "purpose": "Review the first source-led architectural slice of 1040 Lombard: the street-facing facade identity and opening rhythm.",
+    "purpose": "Review the rebuilt 3D front massing of 1040 Lombard before any fine timber/vegetation/detail work.",
     "notes": [
-      "Judge the house against the reference: light-blue solid infill and dark framing, not a glass curtain wall.",
-      "Check garage level and overall facade height against the driveway/road context.",
-      "Check discrete multi-lite window rhythm and the open upper terrace/railing.",
-      "Public realm, trees, neighboring buildings, roof, sides, rear and interiors are outside this gate and must remain unchanged.",
-      "Bay/projection depth and roof/pergola geometry are intentionally deferred to later 1040 slices."
+      "v025 is rejected; do not compare v026 as a trim-only revision.",
+      "Check that the house now reads as real depth: recessed entry/wall plane, projecting lower and upper bays, and separate narrow right bay.",
+      "Check garage scale and vertical floor count: garage + two main living-bay levels, not three giant glass floors.",
+      "Check that the terrace is genuinely open and the pergola reads as posts/beams rather than a solid fence.",
+      "Fine timber pattern, decorative rail loops, bougainvillea, full side/rear architecture, interiors and final roof/rear massing remain deferred.",
+      "The odd v024 trees are still a known deferred issue."
     ]
   },
-  "active_focus_config": "projects/lombard_sf/house_1040_facade_focus_v025.json",
-  "active_reference_bundle": "projects/lombard_sf/outputs/house_1040_facade_v025/Lombard_1040_Facade_v025_reference_sheet.jpg",
+  "active_focus_config": "projects/lombard_sf/house_1040_massing_focus_v026.json",
+  "active_reference_bundle": "projects/lombard_sf/outputs/house_1040_massing_v026/Lombard_1040_3D_Massing_v026_reference_sheet.jpg",
   "rejected_review_artifacts": [
     {
       "review_id": "LOMBARD_STAIRS_V013",
       "artifact": "projects/lombard_sf/outputs/stairs_v013/Lombard_Stairs_Astra_v013.litematic",
       "status": "rejected_premature_layer",
       "reason": "Full stair systems were generated before the reconstruction had physically expanded out to support them; floating/outboard stairs violated the road-outward workflow."
+    },
+    {
+      "review_id": "LOMBARD_1040_FACADE_V025",
+      "artifact": "projects/lombard_sf/outputs/house_1040_facade_v025/Lombard_1040_Facade_Skeleton_Astra_v025.litematic",
+      "status": "rejected_flat_architectural_interpretation",
+      "reason": "Minecraft flyaround showed a flat decorated sheet: oversized planar windows, excessive timber lines, fence-like top structure and no bay/entry/terrace depth. Keep source registration and driveway datum lessons, not facade geometry."
     }
   ],
   "superseded_review_artifacts": [

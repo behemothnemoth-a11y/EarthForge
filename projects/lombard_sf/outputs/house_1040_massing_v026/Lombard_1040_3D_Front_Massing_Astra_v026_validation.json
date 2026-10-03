@@ -1,0 +1,81 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:gold_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 3,
+  "region_position": [
+    -6,
+    -40,
+    -49
+  ],
+  "region_size": [
+    215,
+    67,
+    108
+  ],
+  "volume": 1555740,
+  "non_air_blocks": 50153,
+  "tile_entities": 50032,
+  "sha256": "9c19aa3fc65706d3c10ee045646d55074f8077da18b4bbdbd1ce4ed8407429e2",
+  "status": "PASS",
+  "validation": {
+    "exact_litematica": true,
+    "exact_astra": true,
+    "declared_1040_front_scope_only": true,
+    "public_realm_cells_untouched": true,
+    "all_parent_cells_outside_declared_edits_preserved": true,
+    "vanilla_preserved": true,
+    "source_front_width_10_93m": true,
+    "driveway_datum_supported": true
+  },
+  "parent": "v024 (v025 rejected)",
+  "parent_sha256": "eb5731983fe865b534e5aee840c6c92d9e4b3c0f4a7214f02cb820c8650a9bd2",
+  "building_id": "201006.0032105",
+  "address": "1040 Lombard Street",
+  "front_width_m": 10.934756432120318,
+  "driveway_datum_samples": 660,
+  "source_total_height_m": 12.625,
+  "terrace_deck_m": 9.2,
+  "railing_top_m": 10.45,
+  "pergola_top_m": 12.35,
+  "changed_microcells": 304570,
+  "changes": {
+    "remove_old_1040_front": 212838,
+    "front_side_return": 27168,
+    "recessed_entry_back": 2904,
+    "terrace_deck": 4650,
+    "recessed_main_wall": 47952,
+    "entry_side_return": 1305,
+    "terrace_fascia": 4245,
+    "lower_bay_return": 1913,
+    "bay_slab": 2841,
+    "lower_bay_face": 8492,
+    "garage_plane": 7092,
+    "upper_bay_return": 2205,
+    "upper_bay_face": 6300,
+    "right_vertical_bay": 10836,
+    "pergola_post": 1450,
+    "pergola_depth_beam": 1020,
+    "pergola_header": 1812,
+    "open_front_railing": 1830,
+    "open_side_railing": 660
+  },
+  "source_interpretation": {
+    "June 2009": "projecting central bays, recessed entry, narrow right bay, open roof terrace/pergola",
+    "August 2013": "same hierarchy plus facade framing and garage relationship",
+    "July 2019": "clear terrace/pergola depth and asymmetric bay composition"
+  },
+  "deferred": [
+    "fine timber pattern",
+    "decorative metal railing loops",
+    "bougainvillea and facade vegetation",
+    "full side/rear architecture",
+    "interiors",
+    "final roof/rear massing"
+  ],
+  "review": "USER_MINECRAFT_FLYAROUND_REQUIRED"
+}
