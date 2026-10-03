@@ -16,6 +16,7 @@ BUILDING_ID="201006.0032105"
 REFREG=OUT/"Lombard_1040_Reference_Resolution_v027.json"
 CP_PATH=PROJECT/"source_manifests/1040_lombard_control_points_v028.json"
 LIDAR_CLASS=OUT/"Lombard_1040_LiDAR_Surface_Classification_v028.json"
+MULTIVIEW=OUT/"Lombard_1040_Multiview_Track_Candidates_v028.json"
 
 def qstats(values):
     if len(values)==0:return {"count":0}
@@ -47,6 +48,7 @@ def main():
     cp=json.loads(CP_PATH.read_text())
     refreg=json.loads(REFREG.read_text()) if REFREG.exists() else None
     lidar_class=json.loads(LIDAR_CLASS.read_text()) if LIDAR_CLASS.exists() else None
+    multiview=json.loads(MULTIVIEW.read_text()) if MULTIVIEW.exists() else None
 
     rec=next(b for b in buildings["buildings"] if b["sf16_bldgid"]==BUILDING_ID)
     geom=shape(rec["geometry_local"]);poly=max(geom.geoms,key=lambda g:g.area) if hasattr(geom,"geoms") else geom
@@ -117,13 +119,18 @@ def main():
         "control_point_measurement_gate_met":cpstat["gate_passed"],
         "raw_lidar_materialized":raw_materialized,
         "lidar_surface_proxy_available":bool(lidar_class and lidar_class.get("cell_count",0)>20),
+        "multiview_candidate_tracks_generated":bool(multiview and multiview.get("candidate_track_count",0)>0),
         "vertical_returns_kept_observational":True,
         "rejected_geometry_not_locked":all(term in manifest["not_locked"] for term in ["bay projection depths","window widths/heights","terrace depth","pergola dimensions"])
     }
     unresolved=[]
     if not ref_ok:unresolved.append("Resolve and dimension-check every canonical Wikimedia reference original on the cloud runner.")
     if intrinsic_count<4:unresolved.append("Recover usable focal/intrinsic metadata for enough reference cameras.")
-    if not cpstat["gate_passed"]:unresolved.append("Annotate stable facade control points: at least 8 points in 3+ views spanning 3+ architectural planes.")
+    if not cpstat["gate_passed"]:
+        if multiview and multiview.get("candidate_track_count",0)>0:
+            unresolved.append("Curate machine-proposed multi-view tracks into the canonical control-point manifest: at least 8 stable architectural points in 3+ views spanning 3+ planes.")
+        else:
+            unresolved.append("Generate and then curate stable facade control points: at least 8 points in 3+ views spanning 3+ architectural planes.")
     if not raw_materialized:unresolved.append("Materialize the public raw LiDAR ROI/source on the cloud runner.")
     if not lidar_class:
         unresolved.append("Run the observational LiDAR local-roughness classifier before deriving vertical architectural bands.")
@@ -145,7 +152,13 @@ def main():
         "reference_resolution":{"resolved":ref_ok,"count":refreg.get("count") if refreg else 0,
                                 "intrinsic_metadata_views":intrinsic_count,
                                 "report":str(REFREG.relative_to(ROOT))},
-        "control_points":cpstat,"lidar":lidar,
+        "control_points":cpstat,
+        "multiview_candidates":{"available":bool(multiview),
+            "report":str(MULTIVIEW.relative_to(ROOT)),
+            "candidate_track_count":multiview.get("candidate_track_count") if multiview else 0,
+            "tracks_4plus":sum(1 for t in multiview.get("tracks",[]) if t.get("view_count",0)>=4) if multiview else 0,
+            "interpretation_limit":"Machine tracks are annotation aids only. They are not architectural control points until curated into the canonical manifest."},
+        "lidar":lidar,
         "lidar_surface_classification":{"available":bool(lidar_class),"report":str(LIDAR_CLASS.relative_to(ROOT)),
             "label_counts":lidar_class.get("label_counts") if lidar_class else None,
             "planar_candidate_fraction":lidar_class.get("planar_candidate_fraction") if lidar_class else None,
@@ -176,6 +189,7 @@ def main():
         f"- Derived street-facing footprint edge: {street_edge['length_m']:.3f} m",
         f"- Canonical references resolved: {refreg.get('count') if refreg else 0}/{len(manifest['imagery'])}",
         f"- Geotagged camera priors: {len(cameras)}",f"- Views with focal metadata: {intrinsic_count}",
+        f"- Machine multi-view candidate tracks: {multiview.get('candidate_track_count',0) if multiview else 0}",
         f"- Control points meeting 3-view rule: {cpstat['eligible_point_count']}",
         f"- Raw LiDAR points inside footprint: {inside_count if inside_count is not None else 'not materialized'}",
         "","## Unresolved before geometry",""]+[f"- {x}" for x in unresolved]
