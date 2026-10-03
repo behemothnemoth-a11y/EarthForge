@@ -1,3 +1,7 @@
+# Current isolated review: 1040 Building Lab v003
+
+See `docs/LOMBARD_1040_BUILDING_LAB_V003.md` and the lab project.json. Front assemblies are rebuilt using the successful Redfield/410 methods; broader source dimensions remain unresolved and integration remains blocked. Earlier headings below are historical.
+
 # Current isolated review: 1040 Building Lab v002
 
 The active lab artifact is in `projects/lombard_sf/building_labs/1040_lombard/project.json`. See `docs/LOMBARD_1040_BUILDING_LAB_V002.md`. Source-facing handedness and framing are corrected; dimensions/massing remain provisional. No full-site edits or integration. Earlier review entries below are historical.

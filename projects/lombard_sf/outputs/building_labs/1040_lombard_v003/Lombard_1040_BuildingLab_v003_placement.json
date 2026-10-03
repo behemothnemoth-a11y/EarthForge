@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "standalone": true,
+  "rotation": 0,
+  "mirror": "none",
+  "front_faces": "-Z",
+  "placement": "new empty scratch area, NOT full Lombard origin",
+  "marker_local_block": [
+    0,
+    0,
+    0
+  ],
+  "minimum_empty_area_blocks": [
+    20,
+    20,
+    25
+  ],
+  "replace_blocks": "ALL only inside the isolated empty lab area",
+  "orientation_change": "v001 had mirrored photo-facing X; v002 is internally corrected",
+  "source_frame_unchanged": true,
+  "integration_allowed": false,
+  "artifact_version": "v003"
+}

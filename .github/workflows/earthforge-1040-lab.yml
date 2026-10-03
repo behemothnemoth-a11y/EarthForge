@@ -6,10 +6,10 @@ on:
     paths:
       - '.github/workflows/earthforge-1040-lab.yml'
       - 'pipeline/microblocks/facade_canvas.py'
-      - 'pipeline/reconstruction/generate_lombard_1040_building_lab_v002.py'
+      - 'pipeline/reconstruction/generate_lombard_1040_building_lab_v003.py'
       - 'tests/test_facade_stroke_guard.py'
       - 'projects/lombard_sf/building_labs/1040_lombard/**'
-      - 'projects/lombard_sf/outputs/building_labs/1040_lombard_v002/**'
+      - 'projects/lombard_sf/outputs/building_labs/1040_lombard_v003/**'
 permissions:
   contents: read
 concurrency:
@@ -27,22 +27,22 @@ jobs:
       - name: Run facade regressions
         run: python -m unittest discover -s tests -p test_facade_stroke_guard.py -v
       - name: Compile candidate generator
-        run: python -m py_compile pipeline/reconstruction/generate_lombard_1040_building_lab_v002.py
+        run: python -m py_compile pipeline/reconstruction/generate_lombard_1040_building_lab_v003.py
       - name: Verify checked-in candidate and machine gates
         run: |
           python - <<'PY'
           import hashlib,json
           from pathlib import Path
-          p=Path('projects/lombard_sf/outputs/building_labs/1040_lombard_v002')
-          r=json.loads((p/'Lombard_1040_BuildingLab_v002_validation.json').read_text())
+          p=Path('projects/lombard_sf/outputs/building_labs/1040_lombard_v003')
+          r=json.loads((p/'Lombard_1040_BuildingLab_v003_validation.json').read_text())
           assert r['status']=='PASS' and r['checks'] and all(v is True for v in r['checks'].values())
-          a=p/'Lombard_1040_BuildingLab_v002.litematic'
+          a=p/'Lombard_1040_BuildingLab_v003.litematic'
           assert hashlib.sha256(a.read_bytes()).hexdigest()==r['sha256']
           print('Exact checked-in candidate hash verified; user acceptance remains pending.')
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: earthforge-1040-lab-v002-${{ github.sha }}
-          path: projects/lombard_sf/outputs/building_labs/1040_lombard_v002/
+          name: earthforge-1040-lab-v003-${{ github.sha }}
+          path: projects/lombard_sf/outputs/building_labs/1040_lombard_v003/
           retention-days: 30
           if-no-files-found: error

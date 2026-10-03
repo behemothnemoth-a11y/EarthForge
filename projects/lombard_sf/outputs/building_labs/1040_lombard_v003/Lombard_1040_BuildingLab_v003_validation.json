@@ -1,0 +1,84 @@
+{
+  "palette": [
+    "minecraft:air",
+    "astra_microblocks:test_host[orientation=0]",
+    "minecraft:yellow_concrete"
+  ],
+  "bits_per_block": 2,
+  "region_position": [
+    0,
+    0,
+    0
+  ],
+  "region_size": [
+    13,
+    13,
+    20
+  ],
+  "volume": 3380,
+  "non_air_blocks": 1072,
+  "tile_entities": 1071,
+  "sha256": "920323d5e79b96a8f168f63ceaac4eeeb058d60a74aa1114056d16b8e892d992",
+  "status": "PASS",
+  "checks": {
+    "exact_block_map": true,
+    "exact_astra": true,
+    "all_changes_in_front_scope": true,
+    "all_window_assemblies_clear_except_glazing": true,
+    "source_footprint_unchanged": true,
+    "parent_not_modified": true,
+    "one_connected_opaque_structure": true
+  },
+  "changed_microcells": 256379,
+  "outside_scope_changes": 0,
+  "apertures": [
+    {
+      "name": "lower_main",
+      "pane_rays": 1288,
+      "bad_rays": 0
+    },
+    {
+      "name": "upper_main",
+      "pane_rays": 768,
+      "bad_rays": 0
+    },
+    {
+      "name": "right_upper",
+      "pane_rays": 221,
+      "bad_rays": 0
+    },
+    {
+      "name": "right_lower",
+      "pane_rays": 880,
+      "bad_rays": 0
+    }
+  ],
+  "features": {
+    "upper_frieze_diagonal": 3,
+    "bay_face": 3,
+    "terrace_fascia": 1,
+    "sill_lip": 6,
+    "fascia_panel_stile": 7,
+    "sill_underface": 6,
+    "vertical_member": 5,
+    "main_wall": 1,
+    "bay_horizontal_return": 6,
+    "photo_panel_diagonal": 7,
+    "bay_right_return": 3,
+    "fascia_cap": 2,
+    "bay_left_return": 3,
+    "fascia_cross": 4
+  },
+  "parent_sha256": "29630dc9b4ccd069374e60dfd75edaed7b93c88a7600e0d0b4d39b2f2bea9557",
+  "visual_status": "USER_REVIEW_REQUIRED",
+  "geometry_accepted": false,
+  "integration_allowed": false,
+  "limits": [
+    "Exact storey heights and facade depths",
+    "Rear and roof design",
+    "Terrace dimensions",
+    "Occluded structure and current alterations",
+    "Blueprint set not acquired"
+  ],
+  "glazing_policy": "Replaces the old no-glass diagnostic with accepted Redfield native glazing; no claim of matched optical properties."
+}

@@ -1,3 +1,7 @@
+# Current review: v003 architectural assemblies
+
+See `docs/LOMBARD_1040_BUILDING_LAB_V003.md` and the lab project.json. Front assemblies are rebuilt using the successful Redfield/410 methods; broader source dimensions remain unresolved and integration remains blocked. Earlier headings below are historical.
+
 # Current pass: v002
 
 See `docs/LOMBARD_1040_BUILDING_LAB_V002.md`. v002 fixes view handedness and facade framing only. v001 is preserved as the diagnostic parent; no site integration.
