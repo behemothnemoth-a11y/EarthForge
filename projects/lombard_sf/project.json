@@ -2,8 +2,8 @@
   "schema_version": 10,
   "project_id": "lombard_sf",
   "name": "Lombard Street Crooked Block — Hyde to Leavenworth",
-  "status": "HOUSE_1040_SOURCE_TRUTH_V027",
-  "milestone": "LOMBARD_1040_SOURCE_RESET_V027",
+  "status": "HOUSE_1040_SHELL_V031_REVIEW",
+  "milestone": "LOMBARD_1040_SOURCE_SHELL_V031",
   "scope": "Accepted Lombard public realm/access context; 1040 Lombard architecture reset to source-truth acquisition with no accepted building geometry.",
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -42,8 +42,16 @@
     "enabled": true,
     "block": "minecraft:yellow_concrete",
     "placement_reference": "player_feet",
-    "placement_origin": [0,0,0],
-    "registration_block_offset": [0,-1,0],
+    "placement_origin": [
+      0,
+      0,
+      0
+    ],
+    "registration_block_offset": [
+      0,
+      -1,
+      0
+    ],
     "rotation": 0,
     "mirror": "none",
     "preserve_across_revisions": true
@@ -62,20 +70,20 @@
     "discrepancies_recorded_not_hidden": true,
     "licensed_raw_imagery": "private/ignored; commit URLs, IDs, metadata, measurements, and derived geometry only"
   },
-  "active_review_artifact": null,
-  "active_generator": "pipeline/reconstruction/generate_lombard_1040_reset_v027.py",
+  "active_review_artifact": "projects/lombard_sf/outputs/house_1040_shell_v031/Lombard_1040_Source_Shell_Astra_v031.litematic",
+  "active_generator": "pipeline/reconstruction/generate_lombard_1040_shell_v031.py",
   "review_gate": {
-    "required": "1040_SOURCE_TRUTH_REVIEW",
-    "purpose": "Re-establish 1040 Lombard from source data and registered references before any new Minecraft building geometry is generated.",
+    "required": "USER_MINECRAFT_FLYAROUND",
+    "purpose": "Review 1040 Lombard's conservative source shell for footprint registration, site relationship, and absolute scale only.",
     "notes": [
-      "v020, v025 and v026 architecture are rejected as geometry.",
-      "The reset artifact must contain no 1040 building geometry; its cleared footprint is workflow state, not terrain truth.",
-      "Review DataSF/OSM identity, footprint, camera/reference registry, LiDAR classification, driveway/garage threshold evidence and multi-view control points.",
-      "No facade, bay, roof, terrace, window or timber dimensions may be inherited from rejected artifacts without independent re-derivation.",
-      "Odd v024 tree morphology remains a separate deferred issue."
+      "Judge footprint placement against the accepted driveway and Lombard context.",
+      "Judge overall envelope height against the street and neighboring buildings.",
+      "Do not judge facade appearance; the shell is intentionally neutral and hollow.",
+      "No roof form, storey lines, openings, bays, terrace, pergola, foundation or facade styling is asserted.",
+      "Public realm and neighboring buildings must remain unchanged."
     ]
   },
-  "active_focus_config": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
+  "active_focus_config": "projects/lombard_sf/house_1040_shell_focus_v031.json",
   "active_reference_bundle": null,
   "source_truth_bundle": "projects/lombard_sf/source_manifests/1040_lombard_source_truth_v027.json",
   "rejected_review_artifacts": [
